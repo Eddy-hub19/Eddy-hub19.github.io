@@ -2,16 +2,13 @@
     0% {
       color: teal;
     }
-
     50% {
       color: black;
     }
-
     100% {
       color: green;
     }
   }
-
   .black-white {
-    animation: color-change 5s infinite;
+    animation: color-change 1s infinite;
   }
