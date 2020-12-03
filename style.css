@@ -12,3 +12,7 @@
   .black-white {
    animation: color-change 5s infinite;
   }
+body {
+   text-align: center;
+   background-color: gray;
+}
