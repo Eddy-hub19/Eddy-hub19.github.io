@@ -10,6 +10,7 @@
     }
   }
   .black-white {
+   font-size: 60px;
    animation: color-change 5s infinite;
   }
 body {
