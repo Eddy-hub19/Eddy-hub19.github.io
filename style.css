@@ -1,0 +1,39 @@
+body {
+  font-family: Georgia;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+p {
+  margin: 0 0 12px 0;
+}
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+h2 {
+  font-size: 32px;
+  border: 1px;
+  border-bottom-style: solid;
+  border-color: gray;
+  margin: 0 0 8px 0;
+}
+h3 {
+  font-weight: 400px;
+}
+#header {
+   margin: 0 0 32px 0;
+   text-align: center;
+}
+#header .header-title {
+  font-size: 18px;
+  border: none;
+  margin: 0 0 10px 0;
+}
+#footer {
+  margin: 64px;
+  text-align: center;
+}
