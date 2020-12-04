@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: RosyBrown;
+  background-color: LightSlateGray;
 }
 p {
   margin: 0 0 12px 0;
@@ -24,7 +24,7 @@ h2 {
 }
 h3 {
   font-weight: 400px;
-  color: DarkSlateGray;
+  color: MintCream;
 }
 #header {
    margin: 0 0 32px 0;
