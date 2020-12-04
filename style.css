@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #6B7A89;
+  background-color: aliceblue;
 }
 p {
   margin: 0 0 12px 0;
@@ -16,10 +16,11 @@ h1 {
   margin: 0;
 }
 h2 {
+  color: darkolivegreen;
   font-size: 32px;
   border: 1px;
   border-bottom-style: solid;
-  border-color: #000;
+  border-color: coral;
   margin: 0 0 8px 0;
 }
 h3 {
