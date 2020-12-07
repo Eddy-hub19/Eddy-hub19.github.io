@@ -54,6 +54,5 @@ h3 {
     animation: color-change 5s infinite;
   }
 li {
-  color: #74BAD0;
-  font-family: cursive;
+  color: red;
 }
