@@ -2,10 +2,8 @@ body {
   background-image: url(fon.jpg);
   font-family: Georgia, sans-serif;
   font-size: 16px;
-  margin: 150 px;
   max-width: 600px;
   line-height: 1.5;
-  padding-top: 150px;
   padding-bottom: 32px;
 }
 p {
