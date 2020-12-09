@@ -21,22 +21,6 @@ h2 {
   border: 1px;
   margin: 0 0 8px 0;
 }
-h3 {
-  font-weight: 400px;
-}
-#header {
-   margin: 0 0 32px 0;
-   text-align: center;
-}
-#header .header-title {
-  font-size: 18px;
-  border: none;
-  margin: 0 0 10px 0;
-}
-#footer {
-  margin: 64px;
-  text-align: center;
-}
 @keyframes color-change {
     0% {
       color: red;
