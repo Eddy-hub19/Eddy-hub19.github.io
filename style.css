@@ -4,8 +4,9 @@ body {
   font-size: 16px;
   max-width: 600px;
   line-height: 1.5;
+  padding-top: 65;
   padding-bottom: 32px;
-  text-align: center;
+  margin: 64px;
 }
 p {
   margin: 0 0 12px 0;
