@@ -4,9 +4,9 @@ body {
   font-size: 16px;
   max-width: 600px;
   line-height: 1.5;
-  padding-top: 60;
-  padding-bottom: 150px;
-  margin: 80px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  margin: 100px;
 }
 p {
   margin: 0 0 12px 0;
