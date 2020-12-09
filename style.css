@@ -5,6 +5,7 @@ body {
   max-width: 600px;
   line-height: 1.5;
   padding-bottom: 32px;
+  text-align: center;
 }
 p {
   margin: 0 0 12px 0;
