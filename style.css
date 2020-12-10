@@ -1,4 +1,6 @@
 body {
+  text-align: center;
+  margin-right: 150px;
   background-image: url(fon.jpg);
 }
 @keyframes color-change {
@@ -28,4 +30,7 @@ body {
   100% {
     font-size: 20px;
   }
+}
+.anim {
+  animation: font-change 5s infinite;
 }
