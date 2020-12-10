@@ -1,8 +1,7 @@
 body {
-  text-shadow: royalblue;
+  text-shadow: black;
   background-image: url(fon.jpg);
   padding: 180px;
-  margin: 150px;
 }
 
 @keyframes color-change {
