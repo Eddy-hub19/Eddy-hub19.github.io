@@ -1,8 +1,7 @@
 body {
   width*height: auto;
   text-align: center;
-  center
-  margin-right: 150px;
+  center: animation;
   background-image: url(fon.jpg);
 }
 @keyframes color-change {
