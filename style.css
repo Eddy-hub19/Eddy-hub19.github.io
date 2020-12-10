@@ -1,32 +1,16 @@
 body {
   background-image: url(fon.jpg);
-  font-family: Georgia, sans-serif;
-  font-size: 16px;
-  max-width: 600px;
-  line-height: 1.5;
-  padding-top: 50px;
-  margin: 150px 150px 250px 450px ;
-}
-p {
-  margin: 0 0 12px 0;
-}
-h1 {
-  font-size: 36px;
-  margin: 0;
-}
-h2 {
-  color: white;
-  font-size: 32px;
-  border: 1px;
-  margin: 0 0 8px 0;
 }
 @keyframes color-change {
     0% {
       color: red;
     }
-    50% {
-      color: black;
+    25% {
+      color: plum;
     }
+    50% {
+      color:royalblue;
+    } 
     100% {
       color: green;
     }
