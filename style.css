@@ -1,7 +1,6 @@
 body {
   text-shadow: black;
   background-image: url(pic/);
-  padding: 20;
 }
 @keyframes color-change {
   0% {
@@ -33,4 +32,5 @@ body {
 }
 .anim {
   animation: font-change 5s infinite;
+  color: rosybrown;
 }
