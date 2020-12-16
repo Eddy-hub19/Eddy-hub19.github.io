@@ -1,0 +1,858 @@
+* [33mcommit e849e875877046dfeb5799a5a0d165e0e3adc1a5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Mon Dec 14 12:44:54 2020 +0200
+[31m|[m 
+[31m|[m     change file
+[31m|[m 
+* [33mcommit 606fffed6c7dd2e4a9bf285c454a66136320863f[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Mon Dec 14 12:42:09 2020 +0200
+[31m|[m 
+[31m|[m     new file
+[31m|[m 
+* [33mcommit 96f3824bf78e0679d7d602ef0e50f640c5a85b1b[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Fri Dec 11 14:28:59 2020 +0200
+[31m|[m 
+[31m|[m     delete
+[31m|[m 
+* [33mcommit 2da57b2e73a122857bed425ada17f7d698fbcc5d[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Fri Dec 11 12:46:16 2020 +0200
+[31m|[m 
+[31m|[m     add file info
+[31m|[m 
+* [33mcommit fdcab6194d2f6ebe650e2a0bce8b2c4df59eb17b[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Fri Dec 11 12:43:27 2020 +0200
+[31m|[m 
+[31m|[m     delete
+[31m|[m 
+* [33mcommit 7fc64d1347ee97a0c3956f2276d82f3b36daf4f1[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Fri Dec 11 11:43:33 2020 +0200
+[31m|[m 
+[31m|[m     add NEW
+[31m|[m 
+* [33mcommit 31325348c493114e9dc37cfeae439bedba2871eb[m
+[31m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[31m|[m Date:   Thu Dec 10 21:35:56 2020 +0200
+[31m|[m 
+[31m|[m     href
+[31m|[m   
+*   [33mcommit d85eef074bc87f5b42fb2e0ff19065ae1345617b[m
+[32m|[m[33m\[m  Merge: 0659a90 d698f46
+[32m|[m [33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[32m|[m [33m|[m Date:   Thu Dec 10 21:29:28 2020 +0200
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Merge branch 'main' of github.com:Eddy-hub19/Eddy-hub19.github.io into main
+[32m|[m [33m|[m 
+[32m|[m * [33mcommit d698f46239665b2513d97ce96785381e75ad3cd6[m
+[32m|[m [33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[32m|[m [33m|[m Date:   Thu Dec 10 21:17:41 2020 +0200
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Update home.html
+[32m|[m [33m|[m 
+* [33m|[m [33mcommit 0659a900edcdc675e354d570097bbf1d116279a4[m
+[33m|[m[33m/[m  Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m   Date:   Thu Dec 10 21:29:24 2020 +0200
+[33m|[m   
+[33m|[m       new file and change
+[33m|[m 
+* [33mcommit bf5382f4e15b17dfa521c041d0852155d579d413[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 21:06:29 2020 +0200
+[33m|[m 
+[33m|[m     new change
+[33m|[m 
+* [33mcommit 3c485015048648135a98b104e27746d5053a5e3c[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 20:59:27 2020 +0200
+[33m|[m 
+[33m|[m     change
+[33m|[m 
+* [33mcommit 88d6b30ed224fdda61f0fd0cbce8cc374274b106[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 20:54:27 2020 +0200
+[33m|[m 
+[33m|[m     add button
+[33m|[m 
+* [33mcommit 2c9125a97060ce44b5107e7a1e41dc9cd388b7cf[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 20:47:32 2020 +0200
+[33m|[m 
+[33m|[m     -
+[33m|[m 
+* [33mcommit 9fc5461b3a6542a02195f20be5bac18b42a845d7[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 20:42:53 2020 +0200
+[33m|[m 
+[33m|[m     change
+[33m|[m 
+* [33mcommit 7aeef2579a1011c206097a407f1411530b37a0c1[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 10 20:28:22 2020 +0200
+[33m|[m 
+[33m|[m     Update style
+[33m|[m 
+* [33mcommit 2621f92010b633a5e8e1af344f48c80a039cff08[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 10 20:06:23 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 314b7e034738b173a403f9786f1cf0b57baf6a34[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 10 19:44:36 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit bcd25f9af98fe73d6d8784100976d862d2c30eec[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 18:45:49 2020 +0200
+[33m|[m 
+[33m|[m     change
+[33m|[m 
+* [33mcommit 082a6feb84c2f937c4eaa1949b2dc7d5796887d4[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 18:45:15 2020 +0200
+[33m|[m 
+[33m|[m     change anim/add
+[33m|[m 
+* [33mcommit 3c5dd9a843ac9642453fa76f22fa4d48d3d4da49[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 10 17:46:12 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 7d214190e557a9ff5079ab0d288e01aef11f1520[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 17:40:44 2020 +0200
+[33m|[m 
+[33m|[m     change anim
+[33m|[m 
+* [33mcommit bbac91f76afa718c6ef91c1611fc2969da9406c8[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 16:14:07 2020 +0200
+[33m|[m 
+[33m|[m     change animation
+[33m|[m 
+* [33mcommit 5054571d5599d7089755d001d342ad0f5a15ff4a[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Thu Dec 10 16:06:59 2020 +0200
+[33m|[m 
+[33m|[m     change
+[33m|[m 
+* [33mcommit 7fd8db13f7ea4c2a5c2b202c0711e541a7c9770e[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Wed Dec 9 20:35:16 2020 +0200
+[33m|[m 
+[33m|[m     change title
+[33m|[m 
+* [33mcommit e8711856031ce74c8a92c0c1b6413212666c079e[m
+[33m|[m Author: Seakn Eduard <sekaneduard@gmail.com>
+[33m|[m Date:   Wed Dec 9 20:32:16 2020 +0200
+[33m|[m 
+[33m|[m     test
+[33m|[m 
+* [33mcommit 974a8f91d4c7a08d61fb193f5c08e9062677e287[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:44:50 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit f476daa4a541ff2c999a2e9c14d73786b3f01df0[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:30:31 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 92adfb5eafc8c6e79c662eba92e58feaf865b2af[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:19:14 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 29d2ab30f011e6011df2b6e109743475e4d004dc[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:18:14 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 5cfe125c9dc8e17e383afeb660de9e1bb3537011[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:17:07 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 2e28b4089632be41d553c08e04358ad38218739a[m
+[33m|[m Author: Eduard <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 18:14:34 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 14e911693f29c8c59650d49e4d993f3512048b85[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:53:20 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit c826edfc8729363e772c23f262df4ab7d2e51349[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:52:44 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 7aba2e7cb776d8e2ce74883caa88ab52b7863faf[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:50:50 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit dbf7f78bc509f1dbae2c3958ae709996bea834b8[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:48:39 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 1c8c05411ba6b811405447cc6f0fa0af17de97aa[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:46:49 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 568cae88d3a1b7d6ad162b76f0d2a4252e01e184[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:45:59 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 2642678b773435691ad5fea9be3a5fd4ff9de4f8[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:39:10 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit bfc8fa885d4afb055dfe2316d8be7198cc780503[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:37:46 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 4bfabf8a8a781895ac02a61d485ed8b62188cb23[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:28:42 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 1750a61cdec202e99178a5d5de88fac9e7ac8966[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 15:27:02 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit d7cb73a2dfd94bed3a0b9167568bac288fc15f60[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 14:59:12 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 2fb4db0c3a2b656d6dc09742d3806086585267a9[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 14:57:16 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 73f2485ab6822254055df139735271cb68a659d7[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 14:54:39 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit a32b58e68b7d8ddbc95991e10580a6c8845d6b42[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 11:56:43 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 7ae024b6a70e8c6758ea93c821ea44ff00c56f75[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 9 11:51:32 2020 +0200
+[33m|[m 
+[33m|[m     Add files via upload
+[33m|[m 
+* [33mcommit ed9e18dd8ea59dd75c27103944c9b39751cd83fe[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Mon Dec 7 09:01:06 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 0099aa6e78833ce4a111751979d977128426b17d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Mon Dec 7 08:58:27 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 89911fb4b4f0cf6f49cdccb5a686735650a561b8[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 12:29:11 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 7105c11dd019d90973cbd640c49c171f7e63054e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 02:09:52 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit c5301a28d7fc9de74e847b6fad2f64894f7ca175[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 01:02:23 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit bc659709070c595186e5f277390e53e0763088ad[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 01:00:53 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 508294e099233d757ccbfa29f7609a082abeb91b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:58:05 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 764f9b4e585a2dcbe34e651fe785837ef82f341d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:50:00 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 04485cd44c3a61fe8be8fab3ffb63117c356c00d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:39:58 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit df152d629596f21e7a7c0c69415790a2982d9812[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:38:25 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 1675daf805bcf17ad00cf534a070c0c9abf11ea6[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:37:24 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 617b97e568dd44d1db71f0573f7b98e872283315[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:35:08 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit f53fa9cf69a7b2b0d16af836893f5f421a6b9d75[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:26:27 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 6793636d3720dfb4b941f2459938e2798ecb0e53[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:15:18 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 21881516aa5b76f11eb71f0ab0e3b9496bc7c850[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:12:31 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 9a332d2bbb864558f8d9e3d745f83a18ea50c198[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:11:19 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 0b165b080fe5a72a6012397ae078594e90f900e1[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:06:24 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit e3dec328c86b33cbcd9d5901fc73bc38ae05845e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Sat Dec 5 00:00:10 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit c482f75a3f35bfcc7c81662e34a062ea419aecf6[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:52:45 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 66b659b8c6ca67d8105162c66e62ec4f74de4c6c[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:44:09 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 734236e43e5c4a44f7fd5c72568343beb08c9fb6[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:37:47 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 514aec910a5c4871858ebec18b647a179bff3273[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:36:17 2020 +0200
+[33m|[m 
+[33m|[m     Update README.md
+[33m|[m 
+* [33mcommit 79aa80b496c3fdb1b7f5f851777d5e868ffd68fc[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:35:18 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit fe8f477c7636adfd4aa39db18433249724310f24[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:31:17 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit a48746b298b90e9cce64f59f173c7b632b052b24[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:28:00 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 1985c643a4c5924f90611f57ba1888c9cd69c67b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 23:15:37 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 83795685b507117980e1360ee712bcd41ab0a9c7[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:49:42 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 723436422d11a132151745a5c5b44ea97df013f0[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:41:41 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit c56533ad6ca988068c8a6bd269bc35f925d51875[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:27:56 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 9a72bd441afba41817cd618331f04bcfd82bfafa[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:26:15 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit d77f6a5cd0f858282341d960d3ca6889c9406b6b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:25:07 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 41a1b8743749aad8aa969eacff4f7c01eab82c2e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:20:37 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 250350cc94966e04f350737c3f0aa52f412b8f8b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:03:42 2020 +0200
+[33m|[m 
+[33m|[m     Create README.md
+[33m|[m 
+* [33mcommit 93293767080052470ef22c1c6cb6436834ec4310[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:03:13 2020 +0200
+[33m|[m 
+[33m|[m     Delete README.md
+[33m|[m 
+* [33mcommit 433fd21dc6327af6a3931ab9181641ae2cb08f47[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 18:02:51 2020 +0200
+[33m|[m 
+[33m|[m     Delete _config.yml
+[33m|[m 
+* [33mcommit 566120caa654adae99951d0973e947559e938c9e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:34:56 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit f0c9edd83f9c529d8240a1474ab7441506c62035[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:34:05 2020 +0200
+[33m|[m 
+[33m|[m     Update README.md
+[33m|[m 
+* [33mcommit 5649ec9bb77a1121c17f362eb009312d501e5855[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:32:59 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit ce454bcc396884cb0772af98d13eb589f7f01cc2[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:32:18 2020 +0200
+[33m|[m 
+[33m|[m     Update README.md
+[33m|[m 
+* [33mcommit a563c199ecabdabdcf74ca0316741243c4cb305b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:29:54 2020 +0200
+[33m|[m 
+[33m|[m     Set theme jekyll-theme-cayman
+[33m|[m 
+* [33mcommit 2bff1fe82a18b8b0e27611a2877b6e76f4fd8058[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:23:15 2020 +0200
+[33m|[m 
+[33m|[m     Create style.css
+[33m|[m 
+* [33mcommit a42eaab53786014dece43bc42225956b715a0b2e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:22:37 2020 +0200
+[33m|[m 
+[33m|[m     Create index.html
+[33m|[m 
+* [33mcommit 560aefe3cf0ca8e078bd68c04162f655a4573405[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:17:40 2020 +0200
+[33m|[m 
+[33m|[m     Delete style.css
+[33m|[m 
+* [33mcommit 9fdad849b0ec55c0067cec008e770e6b55524426[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 17:17:31 2020 +0200
+[33m|[m 
+[33m|[m     Delete file.html
+[33m|[m 
+* [33mcommit e0551e2339ebd26ad4deb21d41bc5ace5e8599df[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 16:22:36 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 8b1f2532737467efaf9b769d56f5af76bb821e3b[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 16:17:37 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 2ac56ece651ae1bcbe7c6bd4ecc726a938972b53[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 16:12:14 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit f74ff1da3d49de80295241bc39be5d2525ef0bc4[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:25:16 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 11cb16c3f3e58ed32e03ca8dd8f9a025140c2add[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:22:44 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit f1d3ea514b881105a3dd152c8645e08095336cb3[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:20:51 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 59ebc32129eea00331da7fd28795a6a3487bfbf6[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:14:39 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit db82f2e9e886119de9b2b33935b9d9e0919caa4d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:09:40 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 169c254c359255417d99f555e391bd6abd861e66[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Fri Dec 4 00:06:45 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit ece14a7daa7a7550c9ec14a60e361bb0e349fef5[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 23:43:26 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 7339f229a088580438d8bb4ec75e8233c3c3cfe6[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 23:42:15 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 69b57b4eeced55d0e61adff44f76a6f7af17345f[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 23:01:34 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit c01fabd407f96cf35e90e1719d14c44c3875d81f[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:55:04 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit eb430aab18abc14cf0ed9a635da6b1cec84bf83e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:54:06 2020 +0200
+[33m|[m 
+[33m|[m     Create README.md
+[33m|[m 
+* [33mcommit 228cfe10eb2182cd3fc788d7126c766ff9ad862c[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:40:13 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 47a6e220d850995fb8708f637afbeab0dd326809[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:39:59 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 5a072c90a5a7e8da62cd1d3f9c272fce00c4a77e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:37:48 2020 +0200
+[33m|[m 
+[33m|[m     Update file.html
+[33m|[m 
+* [33mcommit 23092d808eb9f42911f0822a07c1bf23f27a39ed[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:32:08 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit 6f94bd4d1a2c2d4855149c76fffee0eeb59cdf05[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 22:24:43 2020 +0200
+[33m|[m 
+[33m|[m     Update style.css
+[33m|[m 
+* [33mcommit a6dd63100546a43b88e04dc09fa328989836b001[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 20:27:53 2020 +0200
+[33m|[m 
+[33m|[m     Delete README.md
+[33m|[m 
+* [33mcommit 5500680efb8a7bba18691129459c65c084f25596[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 16:22:18 2020 +0200
+[33m|[m 
+[33m|[m     Add files via upload
+[33m|[m 
+* [33mcommit 3abbefe8d27e84f29d72dd76e8ee8c2d6709993e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Thu Dec 3 00:14:31 2020 +0200
+[33m|[m 
+[33m|[m     Delete first.html
+[33m|[m 
+* [33mcommit ba1ba308dabfcf6d9648a811a8d358423554c0d0[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:56:15 2020 +0200
+[33m|[m 
+[33m|[m     Update first.html
+[33m|[m 
+* [33mcommit 8eb45a3f12c4b024b7736a9c3c4c9c1baad8b719[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:49:27 2020 +0200
+[33m|[m 
+[33m|[m     Update first.html
+[33m|[m 
+* [33mcommit f74af19738eb41034544ae073160ea71d0a104af[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:48:34 2020 +0200
+[33m|[m 
+[33m|[m     Update first.html
+[33m|[m 
+* [33mcommit 04db5f4d2e0088554496f279e39ff1cfff03cf64[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:48:14 2020 +0200
+[33m|[m 
+[33m|[m     Create first.html
+[33m|[m 
+* [33mcommit e67b75ddb33ecb3365adef284ec2559544f72571[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:47:40 2020 +0200
+[33m|[m 
+[33m|[m     Delete my.html
+[33m|[m 
+* [33mcommit a0b66fc89ab7b28c316ce1da39b9fb96e02c77e5[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 23:39:16 2020 +0200
+[33m|[m 
+[33m|[m     Update my.html
+[33m|[m 
+* [33mcommit 1500e68f8eac2175fe9f78ea40739bcc05f9b5c5[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 22:27:40 2020 +0200
+[33m|[m 
+[33m|[m     Update my.html
+[33m|[m 
+* [33mcommit 0a4130ba10df6f7b9ee051d500f9282812cb9f90[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 21:34:37 2020 +0200
+[33m|[m 
+[33m|[m     Update my.html
+[33m|[m 
+* [33mcommit 7bc603e864ada86e6467f761bbbc635dacd459f9[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 21:30:01 2020 +0200
+[33m|[m 
+[33m|[m     Delete style.css
+[33m|[m 
+* [33mcommit b61d433bf006b639566cb5e5979895cd02302c8d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 21:27:09 2020 +0200
+[33m|[m 
+[33m|[m     Add files via upload
+[33m|[m 
+* [33mcommit 2196592b79bf921049e1dc6f7b7048946f79b0cd[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 21:01:28 2020 +0200
+[33m|[m 
+[33m|[m     Create README.md
+[33m|[m 
+* [33mcommit 699b731d028c35686696ba30c77aba9171ff383e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 20:51:59 2020 +0200
+[33m|[m 
+[33m|[m     Delete greetings.yml
+[33m|[m 
+* [33mcommit 1fce165f2ecbc4cc7c4b7eccb9ffc50878fb8240[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 20:51:44 2020 +0200
+[33m|[m 
+[33m|[m     Delete README.md
+[33m|[m 
+* [33mcommit 61f709c8cbd13925b19abfa96c098aef262d9b82[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 20:51:37 2020 +0200
+[33m|[m 
+[33m|[m     Delete main.css
+[33m|[m 
+* [33mcommit 87ba3794aab8b8f5ed0a73c1ad83d759925adda8[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 20:51:16 2020 +0200
+[33m|[m 
+[33m|[m     Delete index.html
+[33m|[m 
+* [33mcommit 3093863f4e9d44944697cf49de9825640169a865[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 18:16:09 2020 +0200
+[33m|[m 
+[33m|[m     Create greetings.yml
+[33m|[m 
+* [33mcommit fdb68a9b6dbf569d7791442e786b3b900d304e7f[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 18:09:49 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 3c820eeace9dd8d2e58e18ed9fe7585f0191e4c4[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 18:06:42 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit cd7c6f1d09f9bd7107a416f206729153c6a5d2f8[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 18:01:48 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 0bba604875fe720709341aa1d623af920255aa79[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 17:48:57 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit 2cdcb5ea6a23e88baa88c30819c62c680b6ffa37[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 17:47:45 2020 +0200
+[33m|[m 
+[33m|[m     Add files
+[33m|[m 
+* [33mcommit ad66842cc9faa1f0334b0359d13ca5d26f331791[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 17:20:45 2020 +0200
+[33m|[m 
+[33m|[m     Update main.css
+[33m|[m 
+* [33mcommit 1ff7f681252daf122c2b19e3246eda7c6eea420f[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 17:13:00 2020 +0200
+[33m|[m 
+[33m|[m     Create README.md
+[33m|[m 
+* [33mcommit 93f728fc127712250c23d78286b5a9fed7b0037e[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 17:10:30 2020 +0200
+[33m|[m 
+[33m|[m     Update main.css
+[33m|[m 
+* [33mcommit 393fccebc48d5b018c3ce91229e6cb8fd7d699c7[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 16:56:08 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit c0cdc7ed1667621d5d8027c7566e170057f3075d[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 16:05:36 2020 +0200
+[33m|[m 
+[33m|[m     Update index.html
+[33m|[m 
+* [33mcommit c59c388d7d6a245278e2e2064e195eafb38d447a[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 15:59:14 2020 +0200
+[33m|[m 
+[33m|[m     Add files via upload
+[33m|[m 
+* [33mcommit b8bc212893af415c6aeb18ce512fd21fe2203fbc[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 15:44:31 2020 +0200
+[33m|[m 
+[33m|[m     Delete style.css
+[33m|[m 
+* [33mcommit 8e79dbd44b5d8229012ea0f4f9cdbc1b47d65c85[m
+[33m|[m Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+[33m|[m Date:   Wed Dec 2 15:43:05 2020 +0200
+[33m|[m 
+[33m|[m     Delete index.html
+[33m|[m 
+* [33mcommit 31776929571dd62f9679361ec4731f314bd6c2e8[m
+  Author: Eddy-hub19 <75374150+Eddy-hub19@users.noreply.github.com>
+  Date:   Wed Dec 2 15:27:25 2020 +0200
+  
+      Add files via upload
