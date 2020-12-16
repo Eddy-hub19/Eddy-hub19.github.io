@@ -1,6 +1,7 @@
 body {
   text-shadow: black;
   background-image: url(pic/darkness.png);
+  padding: 180px;
 }
 @keyframes color-change {
   0% {
