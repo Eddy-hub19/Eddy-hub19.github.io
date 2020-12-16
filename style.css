@@ -18,6 +18,7 @@ body {
 }
 .black-white {
   animation: color-change 5s infinite;
+  text-align: center;
 }
 @keyframes font-change {
   0% {
