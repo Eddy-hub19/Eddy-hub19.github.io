@@ -1,6 +1,6 @@
 body {
   text-shadow: black;
-  background-image: url(home-curve1.png);
+  background-image: url(pic/home-curve1.png);
   padding: 180px;
 }
 @keyframes color-change {
