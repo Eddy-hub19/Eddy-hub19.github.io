@@ -24,8 +24,8 @@
   height: 730px;
   left: 1040px;
   top: 934px;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), #000000;
   background-image: url(new-collection.png);
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(.jpg), #000000;
 }
 .new-season {
   position: absolute;
