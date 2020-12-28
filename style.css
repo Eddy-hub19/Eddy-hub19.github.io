@@ -1,37 +1,5 @@
-body {
-  text-shadow: black;
-  background-image: url(pic/darkness.png);
-}
-@keyframes color-change {
-  0% {
-    color: red;
-  }
-  25% {
-    color: white;
-  }
-  75% {
-    color: cornflowerblue;
-  }
-  100% {
-    color: green;
-  }
-}
-.black-white {
-  animation: color-change 5s infinite;
-  text-align: center;
-}
-@keyframes font-change {
-  0% {
-    font-size: 20px;
-  }
-  50% {
-    font-size: 60px;
-  }
-  100% {
-    font-size: 20px;
-  }
-}
-.anim {
-  animation: font-change 5s infinite;
-  color: rosybrown;
+.conteiner {
+  background-color: slategray;
+  width: 1970px;
+  height: 4357px;
 }
