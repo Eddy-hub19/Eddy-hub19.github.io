@@ -25,5 +25,14 @@
   height: 730px;
   left: 1040px;
   top: 934px;
+  background-image: url(new-collection.png);
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(.jpg), #000000;
+}
+.new-season {
+  position: absolute;
+  width: 1040px;
+  height: 730px;
+  left: 0px;
+  top: 934px;
+  background: #000000;
 }
