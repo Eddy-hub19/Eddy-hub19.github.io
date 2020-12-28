@@ -1,5 +1,6 @@
 .conteiner {
-  background-color: slategray;
+  border: 2px solid black;
+  background-color: darkslategray;
   width: 1970px;
-  height: 4357px;
+  height: 44px;
 }
