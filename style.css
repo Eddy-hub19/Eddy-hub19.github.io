@@ -19,3 +19,11 @@
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(.jpg);
   background-image:url(img/first-screen.png)
 }
+.new-collection {
+  position: absolute;
+  width: 880px;
+  height: 730px;
+  left: 1040px;
+  top: 934px;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(.jpg), #000000;
+}
