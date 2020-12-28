@@ -35,3 +35,11 @@
   top: 934px;
   background: #000000;
 }
+.watch {
+  position: absolute;
+  width: 260px;
+  height: 325px;
+  left: 80px;
+  top: 1166px;
+  background: #191B1C;
+}
