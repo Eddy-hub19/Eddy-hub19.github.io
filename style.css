@@ -1,8 +1,22 @@
-* a{
+* a {
   text-decoration: none;
   box-sizing: border-box;
 }
-/*1 block*/
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0F0F0F;
+  }
+  100% {
+    color: white;
+  }
+}
+.black-white {
+  animation: color-change 5s infinite;
+}
+/*1 block/ HEADER */
 .top-line {
   margin: 0;
   position: absolute;
@@ -72,7 +86,7 @@
   text-align: right;
   color: #969696;
   }
-  /* 2 block */
+  /* 2 block/ HEADER */
 .second-line {
   /* visibility: hidden; */
   position: absolute;
@@ -160,7 +174,7 @@
   left: 1493px;
   top: 73px;  
 }
-  /* 3 block */
+  /* 3 block/ MAIN */
 .first-screen {
   position: absolute;
   width: 1920px;
@@ -172,7 +186,7 @@
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(img/first-screen.png)
 }
-.frame{
+.frame1{
   position: absolute;
   width: 320px;
   height: 320px;
@@ -195,7 +209,6 @@
   height: 86px;
   left: 867px;
   top: 377px;
-  margin-left: -40px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
   font-weight: bold;
@@ -233,7 +246,7 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* 4 block*/
+/* 4 block/ SeCtION #new-collection*/
 .new-collection {
   /* visibility: hidden; */
   margin: 0;
@@ -306,10 +319,10 @@ h3 {
   /* white */
   border: 1px solid #FFFFFF;
 }
-  /* 5 block*/
+  /* 5 block/ SECTion #new-season*/
 .new-season {
-  margin: 0;
-  border: 2px solid black;
+  /* visibility: hidden; */
+  /* border: 1px solid black; */
   position: absolute;
   width: 1040px;
   height: 730px;
@@ -318,6 +331,7 @@ h3 {
   background:black;
 }
 .season {
+  /* visibility: hidden; */
   position: absolute;
   width: 376px;
   height: 39px;
@@ -354,7 +368,8 @@ h3 {
 .place3 {
   left: 700px;
 }
-.wtch1, .wtch2 {
+.wtch1, .wtch2, .wtch3 {
+  /* visibility: hidden; */
   position: absolute;
   width: 215px;
   height: 214px;
@@ -367,25 +382,22 @@ h3 {
   background: url(img/watch-hand2.png);
 }
 .wtch3 {
-  position: absolute;
-  width: 215px;
-  height: 214px;
   left: 723px;
-  top: 1221px;
   background: url(img/watch-hand3.png);
 }
 .wt1, .wt2, .wt3 {
-  display: flex;
+  text-align: inherit;
   position: absolute;
   width: 140px;
   height: 24px;
   left: 80px;
   top: 1516px;
   font-family: Playfair Display;
-  font-style: normal;
+  font-style: normal;  
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px; /*18px*/
   line-height: 24px;
+  /* identical to box height */
   color: #FFFFFF;
 }
 .wt2 {
@@ -394,7 +406,7 @@ h3 {
 .wt3 {
   left: 700px;
 }
-.n1 {
+.n1, .n2, .n3 {
   position: absolute;
   width: 92px;
   height: 21px;
@@ -407,19 +419,398 @@ h3 {
   line-height: 21px;
   color: #D0D0D0;
 }
-.n2, .n3 {
+.n2 {
+  left: 390px;
+}
+.n3 {
+  left: 700px;
+}
+  /* 6 block/ #collection-2018*/
+.collection-2018 {
+    /* collection-2018 */
+  position: absolute;
+  width: 1920px;
+  height: 600px;
+  top: 1664px;
+  left: 0px;
+}
+.rectangle8 {
+    /* rectangle 8 */
+  position: absolute;
+  width: 1040px;
+  height: 600px;
+  left: 880px;
+  top: 1664px;
+  background: #000000;
+}
+.rectangle9 {
+    /* Rectangle 9 */
+  position: absolute;
+  width: 880px;
+  height: 600px;
+  left: 0px;
+  top: 1664px;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
+  background-image: url(img/collection-2018.png);
+}
+.text-collection-2018 {
+    /* коллекция 2018 */
+    position: absolute;
+    width: 376px;
+    height: 39px;
+    left: 1212px;
+    top: 1764px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+}
+.line-collection {
+  position: absolute;
+  width: 120px;
+  height: 0px;
+  left: 1340px;
+  top: 1843px;
+  border: 1px solid #FFFFFF;
+}
+.text2-collection-2018 {
+  position: absolute;
+  width: 471px;
+  height: 173px;
+  left: 1165px;
+  top: 1883px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  text-align: center;
+  color: #FFFFFF;
+}
+.frame2 {
+  /* Frame 2 */
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 28px;
+  position: absolute;
+  width: 311px;
+  height: 47px;
+  left: 1245px;
+  top: 2117px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: white;
+}
+.txt-frame {
+  position: static;
+  width: 255px;
+  height: 23px;
+  left: 28px;
+  top: 12px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+/*7 block/ #new-goods*/
+.new-goods {
+    /* new-goods */
+  position: absolute;
+  width: 1920px;
+  height: 1289px;
+  left: 0px;
+  top: 2264px;
+  background: #000000;
+}
+.new-arrivals {
+    /* новые поступления */
+  position: absolute;
+  width: 440px;
+  height: 48px;
+  left: 740px;
+  top: 2384px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.line3 {
+  /* Line 3 */
+  position: absolute;
+  width: 120px;
+  height: 0px;
+  left: 900px;
+  top: 2472px;
+  border: 1px solid #FFFFFF;
+}
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+  position: absolute;
+  width: 260px;
+  height: 325px;
+  left: 405px;
+  top: 2553px;
+  background: #191B1C;
+}
+.p2 {
+  left: 688px;
+}
+.p3 {
+  left: 971px;
+}
+.p4{
+  left: 1254px;
+}
+.p5 {
+  top: 2998px;
+  left: 405px;
+}
+.p6 {
+  top: 2998px;
+  left: 688px;
+}
+.p7 {
+  top: 2998px;
+  left: 971px;
+}
+.p8 {
+  top: 2998px;
+  left: 1254px;
+}
+.h:hover {
+  border: 2px solid white;
+  background-color: rgba(16, 63, 70, 0.527);
+}
+.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 {
+  position: absolute;
+  width: 215px;
+  height: 214px;
+  left: 428px;
+  top: 2608px;
+  background: url(img/watch-hand1.png);
+}
+.w2 {
+  left: 711px;
+}
+.w3 {
+  left: 994px;
+}
+.w4 {
+  left: 1277px;
+}
+.w5 {
+  top: 3053px;
+}
+.w6 {
+  top: 3053px;
+  left: 711px;
+}
+.w7 {
+  top: 3053px;
+  left: 994px;
+}
+.w8 {
+  top: 3053px;
+  left: 1277px;
+}
+.louis1, .louis2, .louis3, .louis4, .lo5, .lo6, .lo7, .lo8 {
+  /* Louis XVI ATHOS */
+  position: absolute;
+  width: 140px;
+  height: 24px;
+  left: 405px;
+  top: 2903px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.louis2 {
+  left: 688px;
+}
+.louis3 {
+  left: 971px;
+}
+.louis4 {
+  left: 1254px;
+}
+.lo5 {
+  top: 3348px;
+  left: 405px;
+}
+.lo6 {
+  top: 3348px;
+  left: 688px;
+}
+.lo7 {
+  top: 3348px;
+  left: 971px;
+}
+.lo8 {
+  top: 3348px;
+  left: 1254px;
+}
+.text-rub1, .text-rub2, .text-rub3, .text-rub4, .text-rub5, .text-rub6, .text-rub7, .text-rub8{
   position: absolute;
   width: 92px;
   height: 21px;
-  left: 390px;
-  top: 1550px;
+  left: 405px;
+  top: 2937px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  /* light-gray */
   color: #D0D0D0;
 }
-.n3 {
-  left: 700px;
+.text-rub2 {
+  left: 688px;
+}
+.text-rub3 {
+  left: 971px;
+}
+.text-rub4 {
+  left: 1254px;
+}
+.text-rub5 {
+  left: 405px;
+  top: 3382px;
+}
+.text-rub6 {
+  left: 688px;
+  top: 3382px;
+}
+.text-rub7 {
+  left: 971px;
+  top: 3382px;
+}
+.text-rub8 {
+  left: 1254px;
+  top: 3382px;
+}
+.ractangle-brand {
+    /* our-brands */
+  position: absolute;
+  width: 1920px;
+  height: 362px;
+  left: 0px;
+  top: 3553px;
+  background: #0F0F0F;
+}
+.our-brand {
+  position: absolute;
+  width: 289px;
+  height: 48px;
+  left: 816px;
+  top: 3613px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.line-brand {
+  position: absolute;
+  width: 120px;
+  height: 0px;
+  left: 900px;
+  top: 3701px;
+  border: 1px solid #FFFFFF;
+}
+.brand1, .brand2, .brand3, .brand4{
+  position: absolute;
+  width: 255px;
+  height: 94px;
+  left: 405px;
+  top: 3741px;
+  background: url(img/brand.png);
+}
+.brand2 {
+  left: 690px;
+}
+.brand3 {
+  left: 975px;
+}
+.brand4 {
+  left: 1260px;
+}
+.images {
+  position: absolute;
+  width: 1920px;
+  height: 400px;
+  left: 0px;
+  top: 3909px;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url(img/shadow-img.png), #C4C4C4;
+}
+.last-line {
+    /* last-line */
+  position: absolute;
+  width: 1920px;
+  height: 50px;
+  left: 0px;
+  top: 4307px;
+  background: #0F0F0F;
+}
+.rights {
+  position: absolute;
+  width: 155px;
+  height: 16px;
+  left: 405px;
+  top: 4324px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* light-gray */
+  color: #D0D0D0;
+}
+.fligma {
+  position: absolute;
+  width: 155px;
+  height: 16px;
+  left: 1360px;
+  top: 4324px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: right;
+  text-decoration-line: underline;
+  /* light-gray */
+  color: #D0D0D0;
+}
+.hov:hover {
+  color: red;
 }
