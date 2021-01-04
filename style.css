@@ -217,6 +217,7 @@
   line-height: 96px;
   text-align: center;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 i {
   position: absolute;
