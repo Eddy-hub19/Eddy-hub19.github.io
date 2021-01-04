@@ -205,7 +205,7 @@
 }
 .word {
   position: absolute;
-  margin-left: -40px;
+  /* margin-left: -40px; */
   width: 185px;
   height: 86px;
   left: 867px;
@@ -764,7 +764,7 @@ h3 {
 .brand4 {
   left: 1260px;
 }
-.images {
+.picture {
   position: absolute;
   width: 1920px;
   height: 400px;
@@ -772,6 +772,62 @@ h3 {
   top: 3909px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url(img/shadow-img.png), #C4C4C4;
 }
+.txt-store-footer {
+  position: absolute;
+  width: 151px;
+  height: 32px;
+  left: 405px;
+  top: 3989px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
+}
+.category {
+    /* Категории */
+  position: absolute;
+  width: 142px;
+  height: 32px;
+  left: 785px;
+  top: 3989px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
+}
+.newsletter {
+      /* РАссылка */
+  position: absolute;
+  width: 131px;
+  height: 32px;
+  left: 1165px;
+  top: 3989px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
+}
+
+
+
+
+
+
 .last-line {
     /* last-line */
   position: absolute;
