@@ -205,7 +205,7 @@
 }
 .word {
   position: absolute;
-  /* margin-left: -40px; */
+  margin-left: -40px;
   width: 185px;
   height: 86px;
   left: 867px;
