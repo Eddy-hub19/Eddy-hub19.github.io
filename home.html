@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOME </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
+    <style>
+        * a {
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        @keyframes color-change {
+            0% {
+                color: white;
+            }
+
+            50% {
+                color: #0F0F0F;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        .black-white {
+            animation: color-change 5s infinite;
+        }
+
+        @keyframes border-change {
+            0% {
+                color: red;
+            }
+
+            50% {
+                color: black;
+            }
+
+            100% {
+                color: white;
+            }
+        }
+
+        .border-change {
+            animation: border-change 5s infinite;
+        }
+
+        /*1 block/ HEADER */
+        .top-line {
+            margin: 0;
+            position: absolute;
+            width: 1920px;
+            height: 44px;
+            left: 0px;
+            top: 0px;
+            background: #0F0F0F;
+        }
+
+        .phone {
+            position: absolute;
+            left: 8.33%;
+            right: 8.17%;
+            top: 8.33%;
+            bottom: 8.33%;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 405px;
+            top: 14px;
+        }
+
+        .tel {
+            position: absolute;
+            width: 355px;
+            height: 16px;
+            left: 436px;
+            top: 14px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: white;
+        }
+
+        .register,
+        .vector {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            left: 1384px;
+            top: 15px;
+        }
+
+        .vector {
+            position: absolute;
+            left: 29.17%;
+            right: 16.67%;
+            top: 8.33%;
+            bottom: 8.33%;
+        }
+
+        .pointer {
+            position: absolute;
+            left: 12.5%;
+            right: 31.25%;
+            top: 29.17%;
+            bottom: 29.17%;
+        }
+
+        .reg {
+            position: absolute;
+            width: 107px;
+            height: 16px;
+            left: 1408px;
+            top: 14px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            color: white;
+        }
+
+        /* 2 block/ HEADER */
+        .second-line {
+            /* visibility: hidden; */
+            position: absolute;
+            width: 1920px;
+            height: 80px;
+            left: 0px;
+            top: 44px;
+            background: #0F0F0F;
+        }
+
+        .text {
+            position: absolute;
+            width: 104px;
+            height: 49px;
+            left: 405px;
+            top: 59px;
+            font-family: Post No Bills Jaffna;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            color: red;
+        }
+
+        .like-border {
+            position: absolute;
+            width: 136px;
+            height: 80px;
+            left: 978px;
+            top: 44px;
+            background: #1F1F1F;
+        }
+
+        .bt1 {
+            /*Button-Liked*/
+            position: absolute;
+            width: 96px;
+            height: 18px;
+            left: 998px;
+            top: 75px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        .bt2 {
+            /* private office*/
+            position: absolute;
+            width: 119px;
+            height: 18px;
+            left: 1134px;
+            top: 75px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            /* Все символы текста становятся пропи*/
+            text-transform: uppercase;
+            color: #969696;
+            line-height: 18px;
+        }
+
+        .bt3 {
+            position: absolute;
+            width: 78px;
+            height: 18px;
+            left: 1293px;
+            top: 75px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #969696;
+            line-height: 18px;
+        }
+
+        .store {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 1431px;
+            top: 73px;
+        }
+
+        .search {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 1493px;
+            top: 73px;
+        }
+
+        /* 3 block/ MAIN */
+        .first-screen {
+            position: absolute;
+            width: 1920px;
+            height: 810px;
+            left: 0px;
+            top: 124px;
+            /* Не повторять */
+            background-repeat: no-repeat;
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
+            background-image: url(img/first-screen.png)
+        }
+        .word {
+            position: absolute;
+            /* margin-left: -40px; */
+            width: 185px;
+            height: 86px;
+            left: 867px;
+            top: 377px;
+            font-family: Post No Bills Jaffna;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 96px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        i {
+            position: absolute;
+            width: 180px;
+            height: 44px;
+            left: 869px;
+            top: 466px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        h4 {
+            position: absolute;
+            width: 730px;
+            height: 96px;
+            left: 595px;
+            top: 684px;
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="#top-inline">
+        <div class="top-line">
+            <div class="nav"></div>
+            <img class="phone" src="img/phone.png" alt="phone">
+            <a class="tel" href=tel:88121234567>8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00 </a>
+            <div class="register">
+                <img class="vector" src="img/wector.png" alt="">
+                <img class="pointer" src="img/arrow.png" alt="">
+            </div>
+            <a class="reg" href="#">Войти / Регистрация</a>
+        </div>
+        <section id="#second-line">
+            <div class="second-line"></div>
+            <div class="text">PORTEN</div>
+            <div class="like-border"></div>
+            <a class="hov bt1" href="#">Понравилось</a>
+            <a class="hov bt2" href="#">Личный кабинет</a>
+            <a class="hov bt3" href="#">Настройки</a>
+            <a href="#">
+                <img class="store" src="img/store.png" alt="store"></a>
+            <a href="#">
+                <img class="search" src="img/search.png" alt="search"></a>
+        </section>
+    </header>
+    <main>
+        <div class="first-screen"></div>
+        <div class="frame1"></div>
+        <div class="lihv black-white word">porten</div>
+        <div class="line"></div>
+        <h4 class="border-change">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Purus interdum purus, est tortor pulvinar ut in.
+            Fringilla a diam enim sed justo, sed iaculis sagittis.
+            Tortor id eu interdum nec ut iaculis.
+            Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi.
+            Tortor nibh magna feugiat id nunc, dui nisl viverra.
+        </h4>
+    </main>
+</body>
+
+</html>
