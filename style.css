@@ -1,6 +1,8 @@
 * a {
   text-decoration: none;
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 @keyframes color-change {
   0% {
@@ -15,6 +17,9 @@
 }
 .black-white {
   animation: color-change 5s infinite;
+}
+.hov:hover {
+  color: red;
 }
 /*1 block/ HEADER */
 .top-line {
@@ -765,13 +770,22 @@ h3 {
 .brand4 {
   left: 1260px;
 }
+.footer {
+  position: absolute;
+  width: 1920px;
+  height: 400px;
+  left: 0px;
+  top: 3909px;
+  background-color: #0F0F0F;
+}
 .picture {
   position: absolute;
   width: 1920px;
   height: 400px;
   left: 0px;
   top: 3909px;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url(img/shadow-img.png), #C4C4C4;
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
+  background-image: url(/img/shadow.png), #C4C4C4;
 }
 .txt-store-footer {
   position: absolute;
@@ -823,12 +837,95 @@ h3 {
   /* white */
   color: #FFFFFF;
 }
-
-
-
-
-
-
+.txt-lorem, .textlorem {
+  position: absolute;
+  width: 350px;
+  height: 147px;
+  left: 405px;
+  top: 4061px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  color: #FFFFFF;
+}
+.textlorem {
+  height: 42px;
+  left: 1165px;
+}
+.input {
+  position: absolute;
+  width: 210px;
+  height: 42px;
+  left: 1165px;
+  top: 4140px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.but-watch1, .but-watch2, .but-watch3, .but-watch4, .but-watch5 {
+      /* Auto Layout */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  width: 70px;
+  height: 41px;
+  left: 786px;
+  top: 4061px;
+  background: #0F0F0F;
+}
+.but-watch2 {
+  width: 98px;
+  left: 876px;
+}
+.but-watch3 {
+  width: 79px;
+  left: 994px;
+}
+.but-watch4 {
+  width: 164px;
+  top: 4122px;
+}
+.but-watch5 {
+  width: 91px;
+  height: 41px;
+  left: 970px;
+  top: 4122px;
+}
+.watch-txt, .bracelets, .belts, .jewelry, .cufflinks {
+    /* часы/ браслеты/ ремни/ ювелирные изделия/ запонки*/
+  position: static;
+  width: 30px;
+  height: 21px;
+  left: 20px;
+  top: 10px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D0D0D0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+.bracelets {
+  width: 58px;
+}
+.belts {
+  width: 39px;
+}
+.jewelry {
+  position: static;
+  width: 124px;
+}
+.cufflinks {
+  position: static;
+  width: 51px;
+}
 .last-line {
     /* last-line */
   position: absolute;
@@ -868,7 +965,4 @@ h3 {
   text-decoration-line: underline;
   /* light-gray */
   color: #D0D0D0;
-}
-.hov:hover {
-  color: red;
 }
