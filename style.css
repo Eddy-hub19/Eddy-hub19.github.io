@@ -926,6 +926,47 @@ h3 {
   position: static;
   width: 51px;
 }
+.rectagle-input {
+  position: absolute;
+  width: 210px;
+  height: 42px;
+  left: 1150px;
+  top: 4140px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.bt-input {
+      /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  position: absolute;
+  width: 140px;
+  height: 46px;
+  left: 1375px;
+  top: 4142px;
+  background: #0F0F0F
+}
+.subscribe {
+  position: static;
+  width: 100px;
+  height: 21px;
+  left: 20px;
+  top: 10px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14spx;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
 .last-line {
     /* last-line */
   position: absolute;
