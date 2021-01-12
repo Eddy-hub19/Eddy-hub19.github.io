@@ -16,19 +16,26 @@
 <body>
   <header id="#top-inline">
     <div class="top-line">
+      <!-- порожній тег, потрібно видалити -->
       <div class="nav"></div>
       <img class="phone" src="img/phone.png" alt="phone">
+      <!-- тут правильніше зробити список ul де посилання буде тільки телефон, а інші елементи просто текст-->
       <a class="tel" href=tel:88121234567>8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00 </a>
       <div class="register">
+        <!-- тут треба обєднати дві картинки в одну -->
         <img class="vector" src="img/wector.png" alt="">
         <img class="pointer" src="img/arrow.png" alt="">
       </div>
+      <!-- тут повинно бути два посилання всередині списку ul -->
       <a class="reg" href="#">Войти / Регистрация</a>
     </div>
     <section id="#second-line">
       <div class="second-line"></div>
+      <!-- назва сайту зазвичай повинна бути в <h1> -->
       <div class="text">PORTEN</div>
+      <!-- цей порожній тег не потрібен, зроби щоб при ховері на посилання нижче вони отримували поведінку цього діва -->
       <div class="like-border"></div>
+      <!-- цей список посилань повинен бути не насипом а всередині тегів nav або ul -->
       <a class="hov bt1" href="home.html">Понравилось</a>
       <a class="hov bt2" href="#">Личный кабинет</a>
       <a class="hov bt3" href="#">Настройки</a>
@@ -39,11 +46,14 @@
     </section>
   </header>
   <main>
+    <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
     <div class="first-screen"></div>
-    <div class="frame1"></div>
-    <div class="black-white word">porten</div>
-    <div class="line"></div>
-    <i>санкт-петербург</i>
+    <!--<div class="frame"> все що нижче до 55 рядка повинно бути в окремому діві а не насипом -->
+      <div class="frame1"></div>
+      <div class="black-white word">porten</div>
+      <div class="line"></div>
+      <i>санкт-петербург</i>
+    <!-- </div> -->
     <h4>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Purus interdum purus, est tortor pulvinar ut in.
@@ -54,20 +64,31 @@
     </h4>
   </main>
   <section id="#new-collection">
-    <div class="new-collection"></div>
-    <div class="txt-collection">Новая коллекция</div>
+    <div class="new-collection"></div><!-- без цього діва можна обійтися і дати бекграунд батьківському тегу section id="#new-collection"-->
+    <!-- для всіх заголовків треба використовувати відповідні теги а не діви в даному випадку h3 -->
+    <div class="txt-collection">Новая коллекция</div> 
     <div class="line1"></div>
     <a href="#">
       <button class="button">
-        <h3>Каталог</h3></a>
+        <h3>Каталог</h3></a><!-- не в правильному місці закрито а, і тег а тут не потрібен , так само як h3, достатньо лише button -->
     </button>
   </section>
   <section id="new-season">
+    <!-- та сама проблема описана в 67 рядку -->
     <div class="new-season"></div>
+    <!-- та сама проблема описана в 68 рядку -->
     <div class="season">Сезон 2020/21</div>
     <div class="line-season"></div>
   </section>
   <article>
+    <!-- знову насип елементів, а повинно бути три елемента списку відповідно до дизайну, приклад нижче
+    <div class="item">
+      <img class="photo"></img>
+      <a class="title" href="#">Louis XVI ATHOS</a>
+      <p class="price">165 000 руб.</p>
+    </div>
+    назви класів описують що в них є і не треба створювати 100500 як в тебе wtch1,wtch2,wtch100500
+    -->
     <div class="h place1"></div>
     <div class="wtch1"></div>
     <a class="wt1"> Louis XVI ATHOS </a>
@@ -82,6 +103,7 @@
     <p class="n3"> 165 000 руб. </p>
   </article>
   <section id="#collection-2018">
+    <!-- ці два діва нижче можна видалити і додати бекграунд, див. коментар в 69 рядку -->
     <div class="rectangle8"></div>
     <div class="rectangle9"></div>
     <div class="text-collection-2018">Коллекия 2018</div>
@@ -94,6 +116,7 @@
       volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam
       egestas leo orci pharetra sed diam.
     </p>
+    <!-- це має бути лише кнопка а не купа тегів -->
     <a href id="#top-inline">
       <div class="frame2">
         <p class="txt-frame">Посмотреть коллекцию</p>
@@ -101,6 +124,8 @@
     </a>
   </section>
   <article>
+    <!-- початок насипу, проблема що тут має бути список товарів, проблема описана в 84 рядку, потрібно переробити  -->
+    <!-- має бути 8 дівів\товарів в списку -->
     <section id="new-goods">
       <div class="new-goods"></div>
       <div class="black-white new-arrivals">Новые поступления</div>
@@ -144,16 +169,22 @@
     </section>
   </article>
   <section>
+    <!-- див. коментар в 67 рядку -->
     <div class="ractangle-brand"></div>
+    <!-- див. рядок 68 -->
     <div class="black-white our-brand">Наши Бренды</div>
     <div class="line-brand"></div>
+    <!-- список брендів повинен бути посиланнями з картинками -->
+    <!-- <a href="#"><img src="brand.jpg" alt="brand-name"></a> -->
     <div class="brand1"></div>
     <div class="brand2"></div>
     <div class="brand3"></div>
     <div class="brand4"></div>
   </section>
   <footer>
+    <!-- див. коментар в 67 рядку -->
     <img src="img/shadow.png" class="picture">
+    <!-- ця секція не зовсім корекнтна оскілбки у нас не меню а 3 окремі блоки -->
     <section>
       <div class="nav">
         <a href="#" class="txt-store-footer">о магазине</a>
@@ -162,6 +193,13 @@
       </div>
     </section>
     <section>
+      <!-- насип елементів а має бути список
+      <nav>
+        <a>часы</a>
+        <a>браслеты</a>
+        ...
+      </nav> 
+    -->
       <button class="but-watch1">
         <p class="watch-txt"> часы </p>
         <button class="but-watch2">
@@ -189,13 +227,16 @@
         nibh.
       </div>
     </section>
+    <!-- тут має бути форма <form> а не секція -->
     <section>
       <input class="rectagle-input" type="text">
       <button class="bt-input">
+        <!-- посилання не повинні огортатися кнопками або те або інше -->
         <a href="#" class="subscribe">Подписаться</a>
       </button>
     </section>
     <div class="last-line"></div>
+    <!-- тільки частину нижче я б відніс до footer -->
     <a href="#" class="rights">© 2020 Все права защищены</a>
     <p class="fligma">Сделано Figma.info</p>
   </footer>
