@@ -1,59 +1,27 @@
 * a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 auto;
 }
-/* .big-container { */
-    /* width: 1920px; */
-    /* height: 4357px;  */
-    /* background-color: red; */
-/* } */
-@keyframes color-change {
-  0% {
-    color: white;
-  }
-  50% {
-    color: #0F0F0F;
-  }
-  100% {
-    color: white;
-  }
-}
-.black-white {
-  animation: color-change 5s infinite;
-}
-.hov:hover {
-  color: red;
+ul, li {
+  list-style-type: none
 }
 /*1 block/ HEADER */
+.container-top-line{
+  display: flex;
+  justify-content: space-around;
+}
 .top-line {
+  padding: 10px;
+  width: 1920px;
   margin: 0;
   position: absolute;
   width: 1720px;
   height: 44px;
-  left: 0px;
-  top: 0px;
-  background: #000000;
-}
-.phone {
-  position: absolute;
-  left: 8.33%;
-  right: 8.17%;
-  top: 8.33%;
-  bottom: 8.33%;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 405px;
-  top: 14px;  
+  background-color: #000000;
 }
 .tel{
-  position: absolute;
-  width: 355px;
-  height: 16px;
-  left: 436px;
-  top: 14px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -61,152 +29,71 @@
   line-height: 16px;
   color: #969696;
 }
-.register, .vector{
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 1384px;
-  top: 15px;
-}
-.vector{
-  position: absolute;
-  left: 29.17%;
-  right: 16.67%;
-  top: 8.33%;
-  bottom: 8.33%;
-}
-.pointer {
-  position: absolute;
-  left: 12.5%;
-  right: 31.25%;
-  top: 29.17%;
-  bottom: 29.17%;
-}
 .reg{
-  position: absolute;
-  width: 107px;
-  height: 16px;
-  left: 1408px;
-  top: 14px;
+  padding: 0;
+  margin-top: 1px;
+  display: flex;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  text-align: right;
   color: #969696;
   }
   /* 2 block/ HEADER */
 .second-line {
+  line-height: 1.5;
+  width: 1920px;
   /* visibility: hidden; */
   position: absolute;
   width: 1720px;
   height: 80px;
-  left: 0px;
-  top: 44px;
   background: #0F0F0F;
 }
+.container-second-line {
+  display: flex;
+  justify-content: space-around;
+}
 .text {
-  position: absolute;
-  width: 104px;
-  height: 49px;
-  left: 405px;
-  top: 59px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   color: #FFFFFF;
 }
-.like-border {
-  position: absolute;
-  width: 136px;
-  height: 80px;
-  left: 978px;
-  top: 44px;
-  background: #1F1F1F;
-}
-.bt1{
-    /*Button-Liked*/
-    position: absolute;
-    width: 96px;
-    height: 18px;
-    left: 998px;
-    top: 75px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.bt2 {
-    /* private office*/
-  position: absolute;
-  width: 119px;
-  height: 18px;
-  left: 1134px;
-  top: 75px;
+/* .like-border {
+  background: #1F1F1F;  -- для Ховера
+} */
+.bt1, .bt2, .bt3{
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  /* Все символы текста становятся прописными (верхний регистр). */
+  /* Все символы текст/а становятся прописными (верхний регистр). */
   text-transform: uppercase;
   color: #969696;
   line-height: 18px;
-}
-.bt3 {
-  position: absolute;
-  width: 78px;
-  height: 18px;
-  left: 1293px;
-  top: 75px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #969696;
-  line-height: 18px;
-}
-.store {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left: 1431px;
-  top: 73px;  
-}
-.search {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left: 1493px;
-  top: 73px;  
 }
   /* 3 block/ MAIN */
+  
 .first-screen {
+  width: 1920px;
+  visibility: hidden;
   position: absolute;
   width: 1720px;
   height: 810px;
-  left: 0px;
-  top: 124px;
-    /* Не повторять */
+  margin-top: 90px;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(img/first-screen.png)
 }
-.frame1{
-  position: absolute;
+.frame {
   width: 320px;
   height: 320px;
-  left: 800px;
-  top: 284px;
   border: 4px solid #FFFFFF;
   box-sizing: border-box;
 }
 .line {
-  position: absolute;
   width: 179px;
   height: 0px;
   left: 870px;
@@ -214,12 +101,8 @@
   border: 2px solid #FFFFFF;
 }
 .word {
-  position: absolute;
-  margin-left: -40px;
   width: 185px;
   height: 86px;
-  left: 867px;
-  top: 377px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
   font-weight: bold;
@@ -230,7 +113,6 @@
   text-transform: uppercase;
 }
 i {
-  position: absolute;
   width: 180px;
   height: 44px;
   left: 869px;
@@ -244,7 +126,6 @@ i {
   color: #FFFFFF;
 }
 h4{
-  position: absolute;
   width: 730px;
   height: 96px;
   left: 595px;
@@ -260,9 +141,7 @@ h4{
 }
 /* 4 block/ SeCtION #new-collection*/
 .new-collection {
-  /* visibility: hidden; */
   margin: 0;
-  position: absolute;
   width: 880px;
   height: 730px;
   left: 1040px;
@@ -276,8 +155,6 @@ h4{
   flex-direction: row;
   align-items: center;
   padding: 12px 28px;
-  position: absolute;
-  width: 138px;
   height: 47px;
   left: 1411px;
   top: 1517px;
@@ -286,7 +163,6 @@ h4{
   box-sizing: border-box;
 }
 .txt-collection {
-  position: absolute;
   width: 376px;
   height: 39px;
   left: 1292px;
@@ -323,7 +199,6 @@ h3 {
   margin: 10px 0px;
 }
 .line1 {
-  position: absolute;
   width: 120px;
   height: 0px;
   left: 1421px;
@@ -335,7 +210,6 @@ h3 {
 .new-season {
   /* visibility: hidden; */
   /* border: 1px solid black; */
-  position: absolute;
   width: 1040px;
   height: 730px;
   left: 0px;
@@ -344,7 +218,6 @@ h3 {
 }
 .season {
   /* visibility: hidden; */
-  position: absolute;
   width: 376px;
   height: 39px;
   left: 332px;
@@ -359,7 +232,6 @@ h3 {
   color: #FFFFFF;
 }
 .line-season {
-  position: absolute;
   width: 120px;
   height: 0px;
   left: 460px;
@@ -367,7 +239,6 @@ h3 {
   border: 1px solid #FFFFFF;
 }
 .place1, .place2, .place3 {
-  position: absolute;
   width: 260px;
   height: 325px;
   left: 80px;
@@ -382,7 +253,6 @@ h3 {
 }
 .wtch1, .wtch2, .wtch3 {
   /* visibility: hidden; */
-  position: absolute;
   width: 215px;
   height: 214px;
   left: 103px;
@@ -399,7 +269,6 @@ h3 {
 }
 .wt1, .wt2, .wt3 {
   text-align: inherit;
-  position: absolute;
   width: 140px;
   height: 24px;
   left: 80px;
@@ -419,7 +288,6 @@ h3 {
   left: 700px;
 }
 .n1, .n2, .n3 {
-  position: absolute;
   width: 92px;
   height: 21px;
   left: 80px;
@@ -440,6 +308,7 @@ h3 {
   /* 6 block/ #collection-2018*/
 .collection-2018 {
     /* collection-2018 */
+  width: 1920px;
   position: absolute;
   width: 1720px;
   height: 600px;
@@ -448,7 +317,6 @@ h3 {
 }
 .rectangle8 {
     /* rectangle 8 */
-  position: absolute;
   width: 1040px;
   height: 600px;
   left: 880px;
@@ -457,7 +325,6 @@ h3 {
 }
 .rectangle9 {
     /* Rectangle 9 */
-  position: absolute;
   width: 880px;
   height: 600px;
   left: 0px;
@@ -467,7 +334,6 @@ h3 {
 }
 .text-collection-2018 {
     /* коллекция 2018 */
-    position: absolute;
     width: 376px;
     height: 39px;
     left: 1212px;
@@ -483,15 +349,13 @@ h3 {
     color: #FFFFFF;
 }
 .line-collection {
-  position: absolute;
   width: 120px;
   height: 0px;
   left: 1340px;
   top: 1843px;
   border: 1px solid #FFFFFF;
 }
-.text2-collection-2018 {
-  position: absolute;
+.text2-collection-2018 { 
   width: 471px;
   height: 173px;
   left: 1165px;
@@ -512,7 +376,6 @@ h3 {
   flex-direction: row;
   align-items: center;
   padding: 12px 28px;
-  position: absolute;
   width: 311px;
   height: 47px;
   left: 1245px;
@@ -543,7 +406,11 @@ h3 {
   margin: 10px 0px;
 }
 /*7 block/ #new-goods*/
+
+
+
 .new-goods {
+  width: 1920px;
     /* new-goods */
   position: absolute;
   width: 1720px;
@@ -554,7 +421,6 @@ h3 {
 }
 .new-arrivals {
     /* новые поступления */
-  position: absolute;
   width: 440px;
   height: 48px;
   left: 740px;
@@ -571,7 +437,6 @@ h3 {
 }
 .line3 {
   /* Line 3 */
-  position: absolute;
   width: 120px;
   height: 0px;
   left: 900px;
@@ -579,7 +444,6 @@ h3 {
   border: 1px solid #FFFFFF;
 }
 .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
-  position: absolute;
   width: 260px;
   height: 325px;
   left: 405px;
@@ -616,7 +480,6 @@ h3 {
   background-color: rgba(16, 63, 70, 0.527);
 }
 .w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 {
-  position: absolute;
   width: 215px;
   height: 214px;
   left: 428px;
@@ -649,7 +512,6 @@ h3 {
 }
 .louis1, .louis2, .louis3, .louis4, .lo5, .lo6, .lo7, .lo8 {
   /* Louis XVI ATHOS */
-  position: absolute;
   width: 140px;
   height: 24px;
   left: 405px;
@@ -687,7 +549,6 @@ h3 {
   left: 1254px;
 }
 .text-rub1, .text-rub2, .text-rub3, .text-rub4, .text-rub5, .text-rub6, .text-rub7, .text-rub8{
-  position: absolute;
   width: 92px;
   height: 21px;
   left: 405px;
@@ -727,6 +588,7 @@ h3 {
 }
 .ractangle-brand {
     /* our-brands */
+  width: 1920px;
   position: absolute;
   width: 1720px;
   height: 362px;
@@ -735,7 +597,6 @@ h3 {
   background: #0F0F0F;
 }
 .our-brand {
-  position: absolute;
   width: 289px;
   height: 48px;
   left: 816px;
@@ -751,7 +612,6 @@ h3 {
   color: #FFFFFF;
 }
 .line-brand {
-  position: absolute;
   width: 120px;
   height: 0px;
   left: 900px;
@@ -759,7 +619,6 @@ h3 {
   border: 1px solid #FFFFFF;
 }
 .brand1, .brand2, .brand3, .brand4{
-  position: absolute;
   width: 255px;
   height: 94px;
   left: 405px;
@@ -776,6 +635,7 @@ h3 {
   left: 1260px;
 }
 .footer {
+  width: 1920px;
   position: absolute;
   width: 1720px;
   height: 400px;
@@ -784,6 +644,7 @@ h3 {
   background-color: #0F0F0F;
 }
 .picture {
+  width: 1920px;
   position: absolute;
   width: 1720px;
   height: 400px;
@@ -792,8 +653,7 @@ h3 {
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
   background-image: url(/img/shadow.png), #C4C4C4;
 }
-.txt-store-footer {
-  position: absolute;
+.txt-store-foote {
   width: 151px;
   height: 32px;
   left: 405px;
@@ -809,45 +669,20 @@ h3 {
   color: #FFFFFF;
 }
 .category {
-    /* Категории */
-  position: absolute;
+    /*Категории*/
   width: 142px;
   height: 32px;
-  left: 785px;
-  top: 3989px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* white */
-  color: #FFFFFF;
-}
-.newsletter {
-      /* РАссылка */
-  position: absolute;
-  width: 131px;
-  height: 32px;
-  left: 1165px;
-  top: 3989px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* white */
   color: #FFFFFF;
 }
 .txt-lorem, .textlorem {
-  position: absolute;
   width: 350px;
   height: 147px;
-  left: 405px;
-  top: 4061px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -861,51 +696,25 @@ h3 {
   left: 1165px;
 }
 .input {
-  position: absolute;
   width: 210px;
   height: 42px;
-  left: 1165px;
-  top: 4140px;
   background: rgba(255, 255, 255, 0.4);
 }
-.but-watch1, .but-watch2, .but-watch3, .but-watch4, .but-watch5 {
-      /* Auto Layout */
-  position: absolute;
+.but-watch{
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 10px 20px;
   width: 70px;
   height: 41px;
   left: 786px;
   top: 4061px;
+  margin-left: 20px;
   background: #0F0F0F;
-}
-.but-watch2 {
-  width: 98px;
-  left: 876px;
-}
-.but-watch3 {
-  width: 79px;
-  left: 994px;
-}
-.but-watch4 {
-  width: 164px;
-  top: 4122px;
-}
-.but-watch5 {
-  width: 91px;
-  height: 41px;
-  left: 970px;
-  top: 4122px;
-}
-.watch-txt, .bracelets, .belts, .jewelry, .cufflinks {
-    /* часы/ браслеты/ ремни/ ювелирные изделия/ запонки*/
+
+  /* часы/ браслеты/ ремни/ ювелирные изделия/ запонки*/
   position: static;
   width: 30px;
   height: 21px;
-  left: 20px;
-  top: 10px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -931,12 +740,9 @@ h3 {
   position: static;
   width: 51px;
 }
-.rectagle-input {
-  position: absolute;
+.rectagle-inpu {
   width: 210px;
   height: 42px;
-  left: 1150px;
-  top: 4140px;
   background: rgba(255, 255, 255, 0.4);
 }
 .bt-input {
@@ -944,10 +750,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 20px;
-  position: absolute;
-  width: 140px;
-  height: 46px;
+  padding: 10px 20;
   left: 1375px;
   top: 4142px;
   background: #0F0F0F
@@ -956,8 +759,6 @@ h3 {
   position: static;
   width: 100px;
   height: 21px;
-  left: 20px;
-  top: 10px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -974,19 +775,18 @@ h3 {
 }
 .last-line {
     /* last-line */
+<<<<<<< HEAD
+  width: 1920px;
+=======
   position: absolute;
   width: 1720px;
+>>>>>>> 26a7d4c30ef8eacd49f75b80bcc0ff462ff74fcd
   height: 50px;
-  left: 0px;
-  top: 4307px;
   background: #0F0F0F;
 }
 .rights {
-  position: absolute;
   width: 155px;
   height: 16px;
-  left: 405px;
-  top: 4324px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -996,11 +796,8 @@ h3 {
   color: #D0D0D0;
 }
 .fligma {
-  position: absolute;
   width: 155px;
   height: 16px;
-  left: 1360px;
-  top: 4324px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -1011,5 +808,9 @@ h3 {
   text-decoration-line: underline;
   /* light-gray */
   color: #D0D0D0;
+<<<<<<< HEAD
+}
+=======
 }
 @media all and(max-width: ) {}
+>>>>>>> 26a7d4c30ef8eacd49f75b80bcc0ff462ff74fcd
