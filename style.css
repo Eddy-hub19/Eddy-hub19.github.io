@@ -10,7 +10,6 @@ ul, li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 40px;
 }
 .top-line {
   width: 1920px;
@@ -48,7 +47,7 @@ ul, li {
   align-items: center;
 }
 .text {
-  margin-right: -405px;
+  margin-right: -120px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
   font-weight: bold;
@@ -78,6 +77,7 @@ ul, li {
   width: 1920px;
   visibility: hidden;
   height: 810px;
+  margin-top: 140px;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(img/first-screen.png)
