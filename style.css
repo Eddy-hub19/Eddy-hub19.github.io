@@ -1,6 +1,12 @@
 * a {
   text-decoration: none;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }
 ul, li {
   list-style-type: none
@@ -73,7 +79,7 @@ ul, li {
   margin-left: 40px;
 }
   /* 3 block/ MAIN */
-  .container-first-screen {
+.container-first-screen {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -104,10 +110,7 @@ ul, li {
 .word{
   margin-left: 65px;
   margin-top: 93px;
-  width: 185px;
-  height: 86px;
   font-family: Post No Bills Jaffna;
-  font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 96px;
@@ -134,55 +137,31 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.container-new-collection
- .new-collection {
-  margin: 0;
+.container-new-collection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.new-collection {
+  float: right;
   width: 880px;
   height: 730px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
   background-image: url(img/new-collection.png);
 }
 .button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 12px 28px;
   height: 47px;
   border: 1px solid #FFFFFF;
   background: center;
-  box-sizing: border-box;
 }
 .txt-collection {
-  width: 376px;
-  height: 39px;
   font-family: Playfair Display;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  text-align: center;
   text-transform: uppercase;
   color:  #FFFFFF;
-}
-h3 {
-  position: static;
-  width: 82px;
-  height: 23px;
-  left: 28px;
-  top: 12px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
 }
 .line1 {
   width: 120px;
@@ -190,11 +169,14 @@ h3 {
   border: 1px solid #FFFFFF;
 }
 .new-season {
+  margin: 0;
+  margin-bottom: 500px;
   width: 1040px;
   height: 730px;
-  background:black;
+  background: #0F0F0F;
 }
 .season {
+  margin: 0;
   width: 376px;
   height: 39px;
   font-family: Playfair Display;
@@ -212,6 +194,7 @@ h3 {
   border: 1px solid #FFFFFF;
 }
 .place1, .place2, .place3 {
+  background-color: red;
   width: 260px;
   height: 325px;
   background: #191B1C;
@@ -236,7 +219,6 @@ h3 {
   background: url(img/watch-hand3.png);
 }
 .wt1, .wt2, .wt3 {
-  text-align: inherit;
   width: 140px;
   height: 24px;
   left: 80px;

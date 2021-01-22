@@ -14,24 +14,23 @@
 </head>
 
 <body>
-    <header id="#">
-        <div class="top-line">
-            <div class="container-top-line">
-                <!-- тут правильніше зробити список ul де посилання буде тільки телефон, а інші елементи просто текст-->
-                <nav>
-                    <img class="phone" src="img/phone.png" alt="phone">
-                    <a class="tel" href=tel:88121234567>8 (812) 123-45-67</a>
-                    <a class="tel">| Работаем 7 дней в неделю | 9:00 — 18:00</a>
-                    <!-- тут треба обєднати дві картинки в одну -->
-                </nav>
-                <!-- тут повинно бути два посилання всередині списку ul -->
-                <ul class="reg">
-                    <img class="vector" src="img/wector.png" alt="vector">
-                    <img class="pointer" src="img/arrow.png" alt="poitner">
-                    <li><a class="reg" href="#"> Войти /</a></li>
-                    <li><a class="reg" href="#"> Регистрация </a></li>
-                </ul>
-            </div>
+    <header class="top-line">
+        <div class="container-top-line">
+            <!-- тут правильніше зробити список ul де посилання буде тільки телефон, а інші елементи просто текст-->
+            <nav>
+                <img class="phone" src="img/phone.png" alt="phone">
+                <a class="tel" href=tel:88121234567>8 (812) 123-45-67</a>
+                <a class="tel">| Работаем 7 дней в неделю | 9:00 — 18:00</a>
+                <!-- тут треба обєднати дві картинки в одну -->
+            </nav>
+            <!-- тут повинно бути два посилання всередині списку ul -->
+            <ul class="reg">
+                <img class="vector" src="img/wector.png" alt="vector">
+                <img class="pointer" src="img/arrow.png" alt="poitner">
+                <li><a class="reg" href="#"> Войти /</a></li>
+                <li><a class="reg" href="#"> Регистрация </a></li>
+            </ul>
+        </div>
         </div>
         <section class="second-line">
             <div class="container-second-line">
@@ -50,27 +49,24 @@
     </header>
     <main>
         <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
-        <section class="first-screen">
-            <div class="container3">
-                <!--<div class="frame"> все що нижче до 55 рядка повинно бути в окремому діві а не насипом -->
+        <section class="container-first-screen first-screen">
                 <div class="frame1">
-                    <div class="word">porten</div>
-                    <div class="line">
-                        <i>санкт-петербург</i>
+                    <div class="word">porten
+                        <div class="line">
+                            <div class="s">санкт-петербург</div>
+                        </div>
                     </div>
-                    <!-- </div> -->
                 </div>
-                <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Purus interdum purus, est tortor pulvinar ut in.
-                    Fringilla a diam enim sed justo, sed iaculis sagittis.
-                    Tortor id eu interdum nec ut iaculis.
-                    Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi.
-                    Tortor nibh magna feugiat id nunc, dui nisl viverra.
-                </h4>
-            </div>
+            <h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Purus interdum purus, est tortor pulvinar ut in.
+                Fringilla a diam enim sed justo, sed iaculis sagittis.
+                Tortor id eu interdum nec ut iaculis.
+                Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi.
+                Tortor nibh magna feugiat id nunc, dui nisl viverra.
+            </h4>
+        </section>
     </main>
-    </section>
     <section class="new-collection">
         <!-- без цього діва можна обійтися і дати бекграунд батьківському тегу section id="#new-collection"-->
         <!-- для всіх заголовків треба використовувати відповідні теги а не діви в даному випадку h3 -->
@@ -95,18 +91,21 @@
     </div>
     назви класів описують що в них є і не треба створювати 100500 як в тебе wtch1,wtch2,wtch100500
     -->
-        <div class="h place1"></div>
-        <div class="wtch1"></div>
-        <a class="wt1"> Louis XVI ATHOS </a>
-        <p class="n1"> 165 000 руб. </p>
-        <div class="h place2"></div>
-        <div class="wtch2"></div>
-        <a class="wt2"> Louis XVI ATHOS </a>
-        <p class="n2"> 165 000 руб. </p>
-        <div class="h place3"></div>
-        <div class="wtch3"></div>
-        <a class="wt3"> Louis XVI ATHOS </a>
-        <p class="n3"> 165 000 руб. </p>
+        <div class="h place1">
+            <div class="wtch1"></div>
+            <a class="wt1"> Louis XVI ATHOS </a>
+            <p class="n1"> 165 000 руб. </p>
+        </div>
+        <div class="h place2">
+            <div class="wtch2"></div>
+            <a class="wt2"> Louis XVI ATHOS </a>
+            <p class="n2"> 165 000 руб. </p>
+        </div>
+        <div class="h place3">
+            <div class="wtch3"></div>
+            <a class="wt3"> Louis XVI ATHOS </a>
+            <p class="n3"> 165 000 руб. </p>
+        </div>
     </article>
     <section class="collection-2018">
         <!-- ці два діва нижче можна видалити і додати бекграунд, див. коментар в 69 рядку -->
@@ -248,7 +247,7 @@
         <div class="last-line"></div>
         <!-- тільки частину нижче я б відніс до footer -->
         <a href="#" class="rights">© 2020 Все права защищены</a>
-        <p class="fligma">Сделано Figma.info</p>
+        <p class="figma">Сделано Figma.info</p>
     </footer>
 </body>
 

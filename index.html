@@ -50,13 +50,13 @@
     <main>
         <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
         <section class="container-first-screen first-screen">
-                <div class="frame1">
-                    <div class="word">porten
-                        <div class="line">
-                            <div class="s">санкт-петербург</div>
-                        </div>
+            <div class="frame1">
+                <div class="word">porten
+                    <div class="line">
+                        <div class="s">санкт-петербург</div>
                     </div>
                 </div>
+            </div>
             <h4>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Purus interdum purus, est tortor pulvinar ut in.
@@ -67,19 +67,31 @@
             </h4>
         </section>
     </main>
-    <section class="new-collection">
-        <!-- без цього діва можна обійтися і дати бекграунд батьківському тегу section id="#new-collection"-->
-        <!-- для всіх заголовків треба використовувати відповідні теги а не діви в даному випадку h3 -->
-        <h3 class="txt-collection">Новая коллекция</h3>
-        <div class="line1"></div>
-        <button a class="button">Каталог</button>
-        <!-- не в правильному місці закрито а, і тег а тут не потрібен , так само як h3, достатньо лише button -->
-    </section>
+    <div class="container-new-collection">
+        <section class="new-collection">
+            <h3 class="txt-collection">Новая коллекция</h3>
+            <button class="button">Каталог</button>
+            <div class="line1"></div>
+        </section>
+    </div>
     <section class="new-season">
-        <!-- та сама проблема описана в 67 рядку -->
-        <!-- та сама проблема описана в 68 рядку -->
         <div class="season">Сезон 2020/21
             <div class="line-season"></div>
+            <div class="h place1">
+                <div class="wtch1"></div>
+                <a class="wt1"> Louis XVI ATHOS </a>
+                <p class="n1"> 165 000 руб. </p>
+            </div>
+            <div class="h place2">
+                <div class="wtch2"></div>
+                <a class="wt2"> Louis XVI ATHOS </a>
+                <p class="n2"> 165 000 руб. </p>
+            </div>
+            <div class="h place3">
+                <div class="wtch3"></div>
+                <a class="wt3"> Louis XVI ATHOS </a>
+                <p class="n3"> 165 000 руб. </p>
+            </div>
         </div>
     </section>
     <article>
@@ -91,21 +103,6 @@
     </div>
     назви класів описують що в них є і не треба створювати 100500 як в тебе wtch1,wtch2,wtch100500
     -->
-        <div class="h place1">
-            <div class="wtch1"></div>
-            <a class="wt1"> Louis XVI ATHOS </a>
-            <p class="n1"> 165 000 руб. </p>
-        </div>
-        <div class="h place2">
-            <div class="wtch2"></div>
-            <a class="wt2"> Louis XVI ATHOS </a>
-            <p class="n2"> 165 000 руб. </p>
-        </div>
-        <div class="h place3">
-            <div class="wtch3"></div>
-            <a class="wt3"> Louis XVI ATHOS </a>
-            <p class="n3"> 165 000 руб. </p>
-        </div>
     </article>
     <section class="collection-2018">
         <!-- ці два діва нижче можна видалити і додати бекграунд, див. коментар в 69 рядку -->
