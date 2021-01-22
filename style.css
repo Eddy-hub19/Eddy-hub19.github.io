@@ -10,6 +10,7 @@ ul, li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 40px;
 }
 .top-line {
   width: 1920px;
@@ -17,6 +18,7 @@ ul, li {
   background-color: #000000;
 }
 .tel{
+  margin-left: 6px; 
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +27,7 @@ ul, li {
   color: #969696;
 }
 .reg{
+  margin-left: 4px;
   display: flex;
   font-family: PT Sans;
   font-style: normal;
@@ -45,6 +48,7 @@ ul, li {
   align-items: center;
 }
 .text {
+  margin-right: -405px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
   font-weight: bold;
@@ -55,6 +59,7 @@ ul, li {
   background: #1F1F1F;  -- для Ховера
 } */
 .bt1, .bt2, .bt3{
+  margin-left: 40px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -63,6 +68,9 @@ ul, li {
   text-transform: uppercase;
   color: #969696;
   line-height: 18px;
+}
+.search, .store {
+    margin-left: 40px;
 }
   /* 3 block/ MAIN */
   
