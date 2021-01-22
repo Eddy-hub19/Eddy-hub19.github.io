@@ -47,6 +47,7 @@ ul, li {
   align-items: center;
 }
 .text {
+  margin-top: 15px;
   margin-right: -120px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
@@ -57,7 +58,7 @@ ul, li {
 /* .like-border {
   background: #1F1F1F;  -- для Ховера
 } */
-.bt1, .bt2, .bt3{
+.bt{
   margin-left: 40px;
   font-family: PT Sans;
   font-style: normal;
@@ -69,31 +70,40 @@ ul, li {
   line-height: 18px;
 }
 .search, .store {
-    margin-left: 40px;
+  margin-left: 40px;
 }
   /* 3 block/ MAIN */
-  
+  .container-first-screen {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  }
 .first-screen {
+  margin: 0;
+  padding: 0;
   width: 1920px;
-  visibility: hidden;
   height: 810px;
-  margin-top: 140px;
+  margin-top: 75px;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(img/first-screen.png)
 }
-.frame {
+.frame1 {
+  margin: 0;
+  padding: 0;
   width: 320px;
   height: 320px;
   border: 4px solid #FFFFFF;
-  box-sizing: border-box;
 }
 .line {
   width: 179px;
   height: 0px;
   border: 2px solid #FFFFFF;
 }
-.word {
+.word{
+  margin-left: 65px;
+  margin-top: 93px;
   width: 185px;
   height: 86px;
   font-family: Post No Bills Jaffna;
@@ -101,19 +111,15 @@ ul, li {
   font-weight: bold;
   font-size: 64px;
   line-height: 96px;
-  text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-i {
-  width: 180px;
-  height: 44px;
+.s {
+  margin-left: 15px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
+  font-size: 19px;
   color: #FFFFFF;
 }
 h4{
@@ -128,7 +134,7 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
+.container-new-collection
  .new-collection {
   margin: 0;
   width: 880px;
