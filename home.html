@@ -4,326 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HOME </title>
+    <title> ~PORTEN~ </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
-    <style>
-        * a {
-            text-decoration: none;
-            box-sizing: border-box;
-        }
-
-        @keyframes color-change {
-            0% {
-                color: white;
-            }
-
-            50% {
-                color: #0F0F0F;
-            }
-
-            100% {
-                color: red;
-            }
-        }
-
-        .black-white {
-            animation: color-change 5s infinite;
-        }
-
-        @keyframes border-change {
-            0% {
-                color: red;
-            }
-
-            50% {
-                color: black;
-            }
-
-            100% {
-                color: white;
-            }
-        }
-
-        .border-change {
-            animation: border-change 5s infinite;
-        }
-
-        /*1 block/ HEADER */
-        .top-line {
-            margin: 0;
-            position: absolute;
-            width: 1920px;
-            height: 44px;
-            left: 0px;
-            top: 0px;
-            background: #0F0F0F;
-        }
-
-        .phone {
-            position: absolute;
-            left: 8.33%;
-            right: 8.17%;
-            top: 8.33%;
-            bottom: 8.33%;
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            left: 405px;
-            top: 14px;
-        }
-
-        .tel {
-            position: absolute;
-            width: 355px;
-            height: 16px;
-            left: 436px;
-            top: 14px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            color: white;
-        }
-
-        .register,
-        .vector {
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            left: 1384px;
-            top: 15px;
-        }
-
-        .vector {
-            position: absolute;
-            left: 29.17%;
-            right: 16.67%;
-            top: 8.33%;
-            bottom: 8.33%;
-        }
-
-        .pointer {
-            position: absolute;
-            left: 12.5%;
-            right: 31.25%;
-            top: 29.17%;
-            bottom: 29.17%;
-        }
-
-        .reg {
-            position: absolute;
-            width: 107px;
-            height: 16px;
-            left: 1408px;
-            top: 14px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: right;
-            color: white;
-        }
-
-        /* 2 block/ HEADER */
-        .second-line {
-            /* visibility: hidden; */
-            position: absolute;
-            width: 1920px;
-            height: 80px;
-            left: 0px;
-            top: 44px;
-            background: #0F0F0F;
-        }
-
-        .text {
-            position: absolute;
-            width: 104px;
-            height: 49px;
-            left: 405px;
-            top: 59px;
-            font-family: Post No Bills Jaffna;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 36px;
-            color: red;
-        }
-
-        .like-border {
-            position: absolute;
-            width: 136px;
-            height: 80px;
-            left: 978px;
-            top: 44px;
-            background: #1F1F1F;
-        }
-
-        .bt1 {
-            /*Button-Liked*/
-            position: absolute;
-            width: 96px;
-            height: 18px;
-            left: 998px;
-            top: 75px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-        }
-
-        .bt2 {
-            /* private office*/
-            position: absolute;
-            width: 119px;
-            height: 18px;
-            left: 1134px;
-            top: 75px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            /* Все символы текста становятся пропи*/
-            text-transform: uppercase;
-            color: #969696;
-            line-height: 18px;
-        }
-
-        .bt3 {
-            position: absolute;
-            width: 78px;
-            height: 18px;
-            left: 1293px;
-            top: 75px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #969696;
-            line-height: 18px;
-        }
-
-        .store {
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            left: 1431px;
-            top: 73px;
-        }
-
-        .search {
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            left: 1493px;
-            top: 73px;
-        }
-
-        /* 3 block/ MAIN */
-        .first-screen {
-            position: absolute;
-            width: 1920px;
-            height: 810px;
-            left: 0px;
-            top: 124px;
-            /* Не повторять */
-            background-repeat: no-repeat;
-            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
-            background-image: url(img/first-screen.png)
-        }
-        .word {
-            position: absolute;
-            margin-left: -40px;
-            width: 185px;
-            height: 86px;
-            left: 867px;
-            top: 377px;
-            font-family: Post No Bills Jaffna;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 96px;
-            text-align: center;
-            color: #FFFFFF;
-            text-transform: uppercase;
-        }
-
-        i {
-            position: absolute;
-            width: 180px;
-            height: 44px;
-            left: 869px;
-            top: 466px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 22px;
-            line-height: 28px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-
-        h4 {
-            position: absolute;
-            width: 730px;
-            height: 96px;
-            left: 595px;
-            top: 684px;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 150%;
-            text-align: center;
-            text-transform: uppercase;
-            color: #FFFFFF;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="#top-inline">
+    <header id="#">
         <div class="top-line">
-            <div class="nav"></div>
-            <img class="phone" src="img/phone.png" alt="phone">
-            <a class="tel" href=tel:88121234567>8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00 </a>
-            <div class="register">
-                <img class="vector" src="img/wector.png" alt="">
-                <img class="pointer" src="img/arrow.png" alt="">
+            <div class="container-top-line">
+                <!-- тут правильніше зробити список ul де посилання буде тільки телефон, а інші елементи просто текст-->
+                <nav>
+                    <img class="phone" src="img/phone.png" alt="phone">
+                    <a class="tel" href=tel:88121234567>8 (812) 123-45-67</a>
+                    <a class="tel">| Работаем 7 дней в неделю | 9:00 — 18:00</a>
+                    <!-- тут треба обєднати дві картинки в одну -->
+                </nav>
+                <!-- тут повинно бути два посилання всередині списку ul -->
+                <ul class="reg">
+                    <img class="vector" src="img/wector.png" alt="vector">
+                    <img class="pointer" src="img/arrow.png" alt="poitner">
+                    <li><a class="reg" href="#"> Войти /</a></li>
+                    <li><a class="reg" href="#"> Регистрация </a></li>
+                </ul>
             </div>
-            <a class="reg" href="#">Войти / Регистрация</a>
         </div>
-        <section id="#second-line">
-            <div class="second-line"></div>
-            <div class="text">PORTEN</div>
-            <div class="like-border"></div>
-            <a class="hov bt1" href="index.html">Главная</a>
-            <a class="hov bt2" href="index.html">Личный кабинет</a>
-            <a class="hov bt3" href="index.html">Настройки</a>
-            <a href="#">
-                <img class="store" src="img/store.png" alt="store"></a>
-            <a href="#">
-                <img class="search" src="img/search.png" alt="search"></a>
+        <section class="second-line">
+            <div class="container-second-line">
+                <!-- назва сайту зазвичай повинна бути в <h1> -->
+                <a class="text">PORTEN</a>
+                <!-- цей порожній тег не потрібен, зроби щоб при ховері на посилання нижче вони отримували поведінку цього діва -->
+                <nav>
+                    <a class="bt1" href="home.html">Понравилось</a>
+                    <a class="bt2" href="index.html">Личный кабинет</a>
+                    <a class="bt3" href="home.html">Настройки</a>
+                    <a href="#"><img class="store" src="img/store.png" alt="store"></a>
+                    <a href="#"><img class="search" src="img/search.png" alt="search"></a>
+                </nav>
+            </div>
         </section>
     </header>
     <main>
-        <div class="first-screen"></div>
-        <div class="frame1"></div>
-        <div class="lihv black-white word">porten</div>
-        <div class="line"></div>
-        <h4 class="border-change">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Purus interdum purus, est tortor pulvinar ut in.
-            Fringilla a diam enim sed justo, sed iaculis sagittis.
-        </h4>
+        <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
+        <section class="first-screen">
+            <div class="container3">
+                <!--<div class="frame"> все що нижче до 55 рядка повинно бути в окремому діві а не насипом -->
+                <div class="frame1">
+                    <div class="word">porten</div>
+                    <div class="line">
+                        <i>санкт-петербург</i>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Purus interdum purus, est tortor pulvinar ut in.
+                    Fringilla a diam enim sed justo, sed iaculis sagittis.
+                    Tortor id eu interdum nec ut iaculis.
+                    Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi.
+                    Tortor nibh magna feugiat id nunc, dui nisl viverra.
+                </h4>
+            </div>
     </main>
+    </section>
+    <section class="new-collection">
+        <!-- без цього діва можна обійтися і дати бекграунд батьківському тегу section id="#new-collection"-->
+        <!-- для всіх заголовків треба використовувати відповідні теги а не діви в даному випадку h3 -->
+        <h3 class="txt-collection">Новая коллекция</h3>
+        <div class="line1"></div>
+        <button a class="button">Каталог</button>
+        <!-- не в правильному місці закрито а, і тег а тут не потрібен , так само як h3, достатньо лише button -->
+    </section>
+    <section class="new-season">
+        <!-- та сама проблема описана в 67 рядку -->
+        <!-- та сама проблема описана в 68 рядку -->
+        <div class="season">Сезон 2020/21
+            <div class="line-season"></div>
+        </div>
+    </section>
+    <article>
+        <!-- знову насип елементів, а повинно бути три елемента списку відповідно до дизайну, приклад нижче
+    <div class="item">
+      <img class="photo"></img>
+      <a class="title" href="#">Louis XVI ATHOS</a>
+      <p class="price">165 000 руб.</p>
+    </div>
+    назви класів описують що в них є і не треба створювати 100500 як в тебе wtch1,wtch2,wtch100500
+    -->
+        <div class="h place1"></div>
+        <div class="wtch1"></div>
+        <a class="wt1"> Louis XVI ATHOS </a>
+        <p class="n1"> 165 000 руб. </p>
+        <div class="h place2"></div>
+        <div class="wtch2"></div>
+        <a class="wt2"> Louis XVI ATHOS </a>
+        <p class="n2"> 165 000 руб. </p>
+        <div class="h place3"></div>
+        <div class="wtch3"></div>
+        <a class="wt3"> Louis XVI ATHOS </a>
+        <p class="n3"> 165 000 руб. </p>
+    </article>
+    <section class="collection-2018">
+        <!-- ці два діва нижче можна видалити і додати бекграунд, див. коментар в 69 рядку -->
+        <div class="rectangle8"></div>
+        <div class="rectangle9"></div>
+        <div class="text-collection-2018">Коллекия 2018</div>
+        <div class="line-collection"></div>
+        <p class="text2-collection-2018">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu.
+            Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna
+            consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum
+            dictum
+            aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam
+            natoque
+            volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a
+            aliquam
+            egestas leo orci pharetra sed diam.
+        </p>
+        <!-- це має бути лише кнопка а не купа тегів -->
+            <div class="frame2">
+                <button class="txt-frame">Посмотреть коллекцию</button>
+    </section>
+    <article>
+        <!-- початок насипу, проблема що тут має бути список товарів, проблема описана в 84 рядку, потрібно переробити  -->
+        <!-- має бути 8 дівів\товарів в списку -->
+        <section id="new-goods">
+            <div class="new-goods"></div>
+            <div class="black-white new-arrivals">Новые поступления</div>
+            <div class="line3"></div>
+            <div class="h p1"></div>
+            <div class="h p2"></div>
+            <div class="h p3"></div>
+            <div class="h p4"></div>
+            <div class="h p5"></div>
+            <div class="h p6"></div>
+            <div class="h p7"></div>
+            <div class="h p8"></div>
+        </section>
+        <section>
+            <div class="w1"></div>
+            <div class="w2"></div>
+            <div class="w3"></div>
+            <div class="w4"></div>
+            <div class="w5"></div>
+            <div class="w6"></div>
+            <div class="w7"></div>
+            <div class="w8"></div>
+        </section>
+        <section class="loo">
+            <p class="louis1">Louis XVI ATHOS</p>
+            <p class="text-rub1">165 000 </p>
+            <p class="louis2">Louis XVI ATHOS</p>
+            <p class="text-rub2">165 000</p>
+            <p class="louis3">Louis XVI ATHOS</p>
+            <p class="text-rub3">165 000 руб</p>
+            <p class="louis4">Louis XVI ATHOS</p>
+            <p class="text-rub4">165 000 руб</p>
+            <p class="lo5">Louis XVI ATHOS</p>
+            <p class="text-rub5">165 000 руб</p>
+            <p class="lo6">Louis XVI ATHOS</p>
+            <p class="text-rub6">165 000 руб</p>
+            <p class="lo7">Louis XVI ATHOS</p>
+            <p class="text-rub7">165 000 руб</p>
+            <p class="lo8">Louis XVI ATHOS</p>
+            <p class="text-rub8">165 000 руб</p>
+        </section>
+    </article>
+    <section>
+        <!-- див. коментар в 67 рядку -->
+        <div class="ractangle-brand"></div>
+        <!-- див. рядок 68 -->
+        <div class="black-white our-brand">Наши Бренды</div>
+        <div class="line-brand"></div>
+        <!-- список брендів повинен бути посиланнями з картинками -->
+        <!-- <a href="#"><img src="brand.jpg" alt="brand-name"></a> -->
+        <div class="brand1"></div>
+        <div class="brand2"></div>
+        <div class="brand3"></div>
+        <div class="brand4"></div>
+    </section>
+    <footer>
+        <!-- див. коментар в 67 рядку -->
+        <img src="img/shadow.png" class="picture">
+        <!-- ця секція не зовсім корекнтна оскілбки у нас не меню а 3 окремі блоки -->
+        <section>
+            <div class="nav">
+                <a href="#" class="txt-store-footer">о магазине</a>
+                <a href="#" class="category">Категории</a>
+                <a href="#" class="newsletter">Рассылка</a>
+            </div>
+        </section>
+        <section>
+            <!-- насип елементів а має бути список
+      <nav>
+        <a>часы</a>
+        <a>браслеты</a>
+        ...
+      </nav> 
+    -->
+            <button class="but-watch1">
+                <p class="watch-txt"> часы </p>
+                <button class="but-watch2">
+                    <p class="bracelets"> браслеты </p>
+                    <button class="but-watch3">
+                        <p class="belts"> ремни </p>
+                        <button class="but-watch4">
+                            <p class="jewelry"> ювелирные изделия </p>
+                            <button class="but-watch5">
+                                <p class="cufflinks"> запонки </p>
+                            </button>
+        </section>
+        <section>
+            <div class="txt-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
+                nunc
+                nulla
+                nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et
+                et sed
+                turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in
+                sit
+                mi
+                ultrices nisi, nunc.
+            </div>
+            <div class="textlorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
+                nunc
+                nulla
+                nibh.
+            </div>
+        </section>
+        <!-- тут має бути форма <form> а не секція -->
+        <section>
+            <input class="rectagle-input" type="text">
+            <button class="bt-input">
+                <!-- посилання не повинні огортатися кнопками або те або інше -->
+                <a href="#" class="subscribe">Подписаться</a>
+            </button>
+        </section>
+        <div class="last-line"></div>
+        <!-- тільки частину нижче я б відніс до footer -->
+        <a href="#" class="rights">© 2020 Все права защищены</a>
+        <p class="fligma">Сделано Figma.info</p>
+    </footer>
 </body>
 
 </html>
