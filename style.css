@@ -16,8 +16,6 @@ ul, li {
   padding: 10px;
   width: 1920px;
   margin: 0;
-  position: absolute;
-  width: 1720px;
   height: 44px;
   background-color: #000000;
 }
@@ -45,8 +43,6 @@ ul, li {
   line-height: 1.5;
   width: 1920px;
   /* visibility: hidden; */
-  position: absolute;
-  width: 1720px;
   height: 80px;
   background: #0F0F0F;
 }
@@ -79,8 +75,6 @@ ul, li {
 .first-screen {
   width: 1920px;
   visibility: hidden;
-  position: absolute;
-  width: 1720px;
   height: 810px;
   margin-top: 90px;
   background-repeat: no-repeat;
@@ -96,8 +90,6 @@ ul, li {
 .line {
   width: 179px;
   height: 0px;
-  left: 870px;
-  top: 459px;
   border: 2px solid #FFFFFF;
 }
 .word {
@@ -115,8 +107,6 @@ ul, li {
 i {
   width: 180px;
   height: 44px;
-  left: 869px;
-  top: 466px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -128,8 +118,6 @@ i {
 h4{
   width: 730px;
   height: 96px;
-  left: 595px;
-  top: 684px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -139,25 +127,20 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* 4 block/ SeCtION #new-collection*/
-.new-collection {
+
+ .new-collection {
   margin: 0;
   width: 880px;
   height: 730px;
-  left: 1040px;
-  top: 934px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
   background-image: url(img/new-collection.png);
 }
 .button {
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px 28px;
   height: 47px;
-  left: 1411px;
-  top: 1517px;
   border: 1px solid #FFFFFF;
   background: center;
   box-sizing: border-box;
@@ -165,8 +148,6 @@ h4{
 .txt-collection {
   width: 376px;
   height: 39px;
-  left: 1292px;
-  top: 1418px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -174,10 +155,8 @@ h4{
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
-  /* white */
   color:  #FFFFFF;
 }
-  /* Каталог */
 h3 {
   position: static;
   width: 82px;
@@ -201,27 +180,16 @@ h3 {
 .line1 {
   width: 120px;
   height: 0px;
-  left: 1421px;
-  top: 1487px;
-  /* white */
   border: 1px solid #FFFFFF;
 }
-  /* 5 block/ SECTion #new-season*/
 .new-season {
-  /* visibility: hidden; */
-  /* border: 1px solid black; */
   width: 1040px;
   height: 730px;
-  left: 0px;
-  top: 934px;
   background:black;
 }
 .season {
-  /* visibility: hidden; */
   width: 376px;
   height: 39px;
-  left: 332px;
-  top: 1027px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -234,15 +202,11 @@ h3 {
 .line-season {
   width: 120px;
   height: 0px;
-  left: 460px;
-  top: 1116px;
   border: 1px solid #FFFFFF;
 }
 .place1, .place2, .place3 {
   width: 260px;
   height: 325px;
-  left: 80px;
-  top: 1166px;
   background: #191B1C;
 }
 .place2 {
@@ -252,11 +216,8 @@ h3 {
   left: 700px;
 }
 .wtch1, .wtch2, .wtch3 {
-  /* visibility: hidden; */
   width: 215px;
   height: 214px;
-  left: 103px;
-  top: 1221px;
   background: url(img/watch-hand1.png);
 }
 .wtch2 {
@@ -276,9 +237,8 @@ h3 {
   font-family: Playfair Display;
   font-style: normal;  
   font-weight: normal;
-  font-size: 17px; /*18px*/
+  font-size: 17px;
   line-height: 24px;
-  /* identical to box height */
   color: #FFFFFF;
 }
 .wt2 {
@@ -305,18 +265,13 @@ h3 {
 .n3 {
   left: 700px;
 }
-  /* 6 block/ #collection-2018*/
 .collection-2018 {
-    /* collection-2018 */
   width: 1920px;
-  position: absolute;
-  width: 1720px;
   height: 600px;
   top: 1664px;
   left: 0px;
 }
 .rectangle8 {
-    /* rectangle 8 */
   width: 1040px;
   height: 600px;
   left: 880px;
@@ -324,7 +279,6 @@ h3 {
   background: #000000;
 }
 .rectangle9 {
-    /* Rectangle 9 */
   width: 880px;
   height: 600px;
   left: 0px;
@@ -333,11 +287,8 @@ h3 {
   background-image: url(img/collection-2018.png);
 }
 .text-collection-2018 {
-    /* коллекция 2018 */
     width: 376px;
     height: 39px;
-    left: 1212px;
-    top: 1764px;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
@@ -345,41 +296,31 @@ h3 {
     line-height: 48px;
     text-align: center;
     text-transform: uppercase;
-    /* white */
     color: #FFFFFF;
 }
 .line-collection {
   width: 120px;
   height: 0px;
-  left: 1340px;
-  top: 1843px;
   border: 1px solid #FFFFFF;
 }
 .text2-collection-2018 { 
   width: 471px;
   height: 173px;
-  left: 1165px;
-  top: 1883px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  /* or 21px */
   text-align: center;
   color: #FFFFFF;
 }
 .frame2 {
-  /* Frame 2 */
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px 28px;
   width: 311px;
   height: 47px;
-  left: 1245px;
-  top: 2117px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   color: white;
@@ -399,55 +340,36 @@ h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 10px 0px;
 }
-/*7 block/ #new-goods*/
-
-
-
 .new-goods {
   width: 1920px;
-    /* new-goods */
-  position: absolute;
-  width: 1720px;
   height: 1289px;
-  left: 0px;
-  top: 2264px;
   background: #000000;
 }
 .new-arrivals {
-    /* новые поступления */
   width: 440px;
   height: 48px;
-  left: 740px;
-  top: 2384px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 .line3 {
-  /* Line 3 */
   width: 120px;
   height: 0px;
-  left: 900px;
-  top: 2472px;
   border: 1px solid #FFFFFF;
 }
 .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
   width: 260px;
   height: 325px;
-  left: 405px;
-  top: 2553px;
   background: #191B1C;
 }
 .p2 {
@@ -511,7 +433,6 @@ h3 {
   left: 1277px;
 }
 .louis1, .louis2, .louis3, .louis4, .lo5, .lo6, .lo7, .lo8 {
-  /* Louis XVI ATHOS */
   width: 140px;
   height: 24px;
   left: 405px;
@@ -558,7 +479,6 @@ h3 {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  /* light-gray */
   color: #D0D0D0;
 }
 .text-rub2 {
@@ -587,10 +507,7 @@ h3 {
   top: 3382px;
 }
 .ractangle-brand {
-    /* our-brands */
   width: 1920px;
-  position: absolute;
-  width: 1720px;
   height: 362px;
   left: 0px;
   top: 3553px;
@@ -606,7 +523,6 @@ h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -636,8 +552,6 @@ h3 {
 }
 .footer {
   width: 1920px;
-  position: absolute;
-  width: 1720px;
   height: 400px;
   left: 0px;
   top: 3909px;
@@ -645,8 +559,6 @@ h3 {
 }
 .picture {
   width: 1920px;
-  position: absolute;
-  width: 1720px;
   height: 400px;
   left: 0px;
   top: 3909px;
@@ -656,20 +568,15 @@ h3 {
 .txt-store-foote {
   width: 151px;
   height: 32px;
-  left: 405px;
-  top: 3989px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 32px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* white */
   color: #FFFFFF;
 }
 .category {
-    /*Категории*/
   width: 142px;
   height: 32px;
   font-family: Playfair Display;
@@ -688,12 +595,10 @@ h3 {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  /* or 21px */
   color: #FFFFFF;
 }
 .textlorem {
   height: 42px;
-  left: 1165px;
 }
 .input {
   width: 210px;
@@ -706,12 +611,9 @@ h3 {
   padding: 10px 20px;
   width: 70px;
   height: 41px;
-  left: 786px;
   top: 4061px;
   margin-left: 20px;
   background: #0F0F0F;
-
-  /* часы/ браслеты/ ремни/ ювелирные изделия/ запонки*/
   position: static;
   width: 30px;
   height: 21px;
@@ -746,13 +648,10 @@ h3 {
   background: rgba(255, 255, 255, 0.4);
 }
 .bt-input {
-      /* Auto Layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 20;
-  left: 1375px;
-  top: 4142px;
   background: #0F0F0F
 }
 .subscribe {
@@ -764,23 +663,15 @@ h3 {
   font-weight: normal;
   font-size: 14spx;
   line-height: 150%;
-  /* identical to box height, or 21px */
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 10px 0px;
 }
 .last-line {
-    /* last-line */
-<<<<<<< HEAD
   width: 1920px;
-=======
-  position: absolute;
-  width: 1720px;
->>>>>>> 26a7d4c30ef8eacd49f75b80bcc0ff462ff74fcd
   height: 50px;
   background: #0F0F0F;
 }
@@ -792,7 +683,6 @@ h3 {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  /* light-gray */
   color: #D0D0D0;
 }
 .fligma {
@@ -803,14 +693,7 @@ h3 {
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height */
   text-align: right;
   text-decoration-line: underline;
-  /* light-gray */
   color: #D0D0D0;
-<<<<<<< HEAD
 }
-=======
-}
-@media all and(max-width: ) {}
->>>>>>> 26a7d4c30ef8eacd49f75b80bcc0ff462ff74fcd
