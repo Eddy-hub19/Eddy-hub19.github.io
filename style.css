@@ -1,6 +1,4 @@
 * a {
-  margin: 0;
-  padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -11,11 +9,10 @@ ul, li {
 .container-top-line{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .top-line {
-  padding: 10px;
   width: 1920px;
-  margin: 0;
   height: 44px;
   background-color: #000000;
 }
@@ -28,8 +25,6 @@ ul, li {
   color: #969696;
 }
 .reg{
-  padding: 0;
-  margin-top: 1px;
   display: flex;
   font-family: PT Sans;
   font-style: normal;
@@ -40,15 +35,14 @@ ul, li {
   }
   /* 2 block/ HEADER */
 .second-line {
-  line-height: 1.5;
   width: 1920px;
-  /* visibility: hidden; */
   height: 80px;
   background: #0F0F0F;
 }
 .container-second-line {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .text {
   font-family: Post No Bills Jaffna;
@@ -76,7 +70,6 @@ ul, li {
   width: 1920px;
   visibility: hidden;
   height: 810px;
-  margin-top: 90px;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(img/first-screen.png)
@@ -685,7 +678,7 @@ h3 {
   line-height: 16px;
   color: #D0D0D0;
 }
-.fligma {
+.figma {
   width: 155px;
   height: 16px;
   font-family: PT Sans;
@@ -696,8 +689,4 @@ h3 {
   text-align: right;
   text-decoration-line: underline;
   color: #D0D0D0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f0d5c4b5a221d8b562e3d947148cd2a5d10908f0
