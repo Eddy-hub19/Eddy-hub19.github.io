@@ -30,7 +30,7 @@
 .top-line {
   margin: 0;
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 44px;
   left: 0px;
   top: 0px;
@@ -100,7 +100,7 @@
 .second-line {
   /* visibility: hidden; */
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 80px;
   left: 0px;
   top: 44px;
@@ -187,7 +187,7 @@
   /* 3 block/ MAIN */
 .first-screen {
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 810px;
   left: 0px;
   top: 124px;
@@ -441,7 +441,7 @@ h3 {
 .collection-2018 {
     /* collection-2018 */
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 600px;
   top: 1664px;
   left: 0px;
@@ -546,7 +546,7 @@ h3 {
 .new-goods {
     /* new-goods */
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 1289px;
   left: 0px;
   top: 2264px;
@@ -728,7 +728,7 @@ h3 {
 .ractangle-brand {
     /* our-brands */
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 362px;
   left: 0px;
   top: 3553px;
@@ -777,7 +777,7 @@ h3 {
 }
 .footer {
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 400px;
   left: 0px;
   top: 3909px;
@@ -785,7 +785,7 @@ h3 {
 }
 .picture {
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 400px;
   left: 0px;
   top: 3909px;
@@ -975,7 +975,7 @@ h3 {
 .last-line {
     /* last-line */
   position: absolute;
-  width: 1920px;
+  width: 1720px;
   height: 50px;
   left: 0px;
   top: 4307px;
