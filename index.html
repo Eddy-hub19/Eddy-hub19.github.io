@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ~PORTEN~ </title>
+    <title class="title"> PORTEN </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,13 +49,9 @@
     <main>
         <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
         <section class="container-first-screen first-screen">
-            <div class="frame1">
-                <div class="container-word">
-                    <div class="word">porten
-                        <div class="line">
-                            <div class="s">санкт-петербург</div>
-                        </div>
-                    </div>
+            <div class="frame1 word ">porten
+                <div class="line">
+                    <div class="s">санкт-петербург</div>
                 </div>
             </div>
             <h4>
@@ -68,123 +64,121 @@
             </h4>
         </section>
     </main>
-    <div class="container-new-collection">
-        <section class="right">
+    <div class="container_for_right-left">
+        <section class="right container-right">
             <h3 class="txt-collection">Новая коллекция</h3>
-            <button class="button">Каталог</button>
             <div class="line1"></div>
+            <a href="#" class="button">Каталог</a>
+        </section>
+        <section class="left container-left">
+            <h2 class="season">Сезон 2020/21
+                <div class="line-season"></div>
+            </h2>
+            <div class="items">
+                <div class="h item">
+                    <div class="wtch">
+                        <img src="/img/watch-hand.svg" class="wtch"></img>
+                        <h3 class="watch-text"> Louis XVI ATHOS </h3>
+                        <p class="money"> 165 000 руб. </p>
+                    </div>
+                </div>
+                <div class="h item">
+                    <div class="wtch">
+                        <img src="/img/watch-hand.svg" class="wtch"></img>
+                        <h3 class="watch-text"> Louis XVI ATHOS </h3>
+                        <p class="money"> 165 000 руб. </p>
+                    </div>
+                </div>
+                <div class="h item">
+                    <div class="wtch">
+                        <img src="/img/watch-hand.svg" class="wtch"></img>
+                        <h3 class="watch-text"> Louis XVI ATHOS </h3>
+                        <p class="money"> 165 000 руб. </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
-    <section class="left">
-        <div class="container-new-season">
-            <div class="season">Сезон 2020/21
-                <div class="line-season"></div>
-                <div class="h place">
-                    <div class="wtch"></div>
-                    <a class="watch-text"> Louis XVI ATHOS </a>
-                    <p class="money"> 165 000 руб. </p>
-                </div>
-                <div class="h place">
-                    <div class="wtch"></div>
-                    <a class="watch-text"> Louis XVI ATHOS </a>
-                    <p class="money"> 165 000 руб. </p>
-                </div>
-                <div class="h place">
-                    <div class="wtch"></div>
-                    <a class="watch-text"> Louis XVI ATHOS </a>
-                    <p class="money"> 165 000 руб. </p>
-                </div>
+    <section class="container-collection-left_right">
+        <div class="img-collection2018"></div>
+        <div class="container-collection2018">
+            <div class="rectangle-2018">
+                <h1 class="txt-collection-2018">Коллекия 2018</h1>
+                <div class="line-collection"></div>
+                <p class="txt2-collection-2018">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui
+                    arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed
+                    scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi
+                    habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer.
+                    Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper
+                    scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam.
+                </p>
+                <button class="frame-collection2018">посмотреть коллекцию</button>
             </div>
         </div>
     </section>
     <article>
-        <!-- знову насип елементів, а повинно бути три елемента списку відповідно до дизайну, приклад нижче
-    <div class="item">
-      <img class="photo"></img>
-      <a class="title" href="#">Louis XVI ATHOS</a>
-      <p class="price">165 000 руб.</p>
-    </div>
-    назви класів описують що в них є і не треба створювати 100500 як в тебе wtch1,wtch2,wtch100500
-    -->
-    </article>
-    <section class="collection-2018">
-        <!-- ці два діва нижче можна видалити і додати бекграунд, див. коментар в 69 рядку -->
-        <div class="rectangle8"></div>
-        <div class="rectangle9"></div>
-        <div class="text-collection-2018">Коллекия 2018</div>
-        <div class="line-collection"></div>
-        <p class="text2-collection-2018">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu.
-            Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna
-            consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum
-            dictum
-            aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam
-            natoque
-            volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a
-            aliquam
-            egestas leo orci pharetra sed diam.
-        </p>
-        <!-- це має бути лише кнопка а не купа тегів -->
-        <div class="frame2">
-            <button class="txt-frame">Посмотреть коллекцию</button>
-    </section>
-    <article>
-        <!-- початок насипу, проблема що тут має бути список товарів, проблема описана в 84 рядку, потрібно переробити  -->
         <!-- має бути 8 дівів\товарів в списку -->
-        <section id="new-goods">
-            <div class="new-goods"></div>
+        <div class="new-goods">
             <div class="black-white new-arrivals">Новые поступления</div>
             <div class="line3"></div>
-            <div class="h p1"></div>
-            <div class="h p2"></div>
-            <div class="h p3"></div>
-            <div class="h p4"></div>
-            <div class="h p5"></div>
-            <div class="h p6"></div>
-            <div class="h p7"></div>
-            <div class="h p8"></div>
-        </section>
-        <section>
-            <div class="w1"></div>
-            <div class="w2"></div>
-            <div class="w3"></div>
-            <div class="w4"></div>
-            <div class="w5"></div>
-            <div class="w6"></div>
-            <div class="w7"></div>
-            <div class="w8"></div>
-        </section>
-        <section class="loo">
-            <p class="louis1">Louis XVI ATHOS</p>
-            <p class="text-rub1">165 000 </p>
-            <p class="louis2">Louis XVI ATHOS</p>
-            <p class="text-rub2">165 000</p>
-            <p class="louis3">Louis XVI ATHOS</p>
-            <p class="text-rub3">165 000 руб</p>
-            <p class="louis4">Louis XVI ATHOS</p>
-            <p class="text-rub4">165 000 руб</p>
-            <p class="lo5">Louis XVI ATHOS</p>
-            <p class="text-rub5">165 000 руб</p>
-            <p class="lo6">Louis XVI ATHOS</p>
-            <p class="text-rub6">165 000 руб</p>
-            <p class="lo7">Louis XVI ATHOS</p>
-            <p class="text-rub7">165 000 руб</p>
-            <p class="lo8">Louis XVI ATHOS</p>
-            <p class="text-rub8">165 000 руб</p>
-        </section>
+            <div class="container-new-goods">
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+            </div>
+            <div class="container-new-gooods">
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+                <div class="h itemm">
+                    <img src="/img/watch-hand.svg">
+                    <h2 class="louis">Louis XVI ATHOS</h2>
+                    <p class="text-rub">165 000 </p>
+                </div>
+            </div>
+        </div>
     </article>
     <section>
-        <!-- див. коментар в 67 рядку -->
         <div class="ractangle-brand"></div>
         <!-- див. рядок 68 -->
         <div class="black-white our-brand">Наши Бренды</div>
         <div class="line-brand"></div>
         <!-- список брендів повинен бути посиланнями з картинками -->
         <!-- <a href="#"><img src="brand.jpg" alt="brand-name"></a> -->
-        <div class="brand1"></div>
-        <div class="brand2"></div>
-        <div class="brand3"></div>
-        <div class="brand4"></div>
+        <a href="#"><img src="/img/brand.svg" alt="brand-name"></a>
+        <a href="#"><img src="/img/brand.svg" alt="brand-name"></a>
+        <a href="#"><img src="/img/brand.svg" alt="brand-name"></a>
+        <a href="#"><img src="/img/brand.svg" alt="brand-name"></a>
     </section>
     <footer>
         <!-- див. коментар в 67 рядку -->
@@ -219,18 +213,23 @@
         </section>
         <section>
             <div class="txt-lorem">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
+                lectus
                 nunc
                 nulla
-                nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et
+                nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat,
+                tellus
+                et
                 et sed
-                turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in
+                turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna
+                fames in
                 sit
                 mi
                 ultrices nisi, nunc.
             </div>
             <div class="textlorem">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
+                lectus
                 nunc
                 nulla
                 nibh.

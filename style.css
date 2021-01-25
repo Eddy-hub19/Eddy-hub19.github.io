@@ -103,16 +103,16 @@ ul, li {
   width: 320px;
   height: 320px;
   border: 4px solid #FFFFFF;
-}
-.line {
-  height: 0px;
-  border: 2px solid #FFFFFF;
-}
-.container-word {
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  flex-direction: column;
+  align-items: center;
 }
+.line {
+  width: 179px;
+  height: 0px;
+  border: 2px solid #FFFFFF;
+} 
 .word{
   font-family: Post No Bills Jaffna;
   font-weight: bold;
@@ -121,11 +121,11 @@ ul, li {
   text-transform: uppercase;
 }
 .s {
-  margin-left: 15px;
+  padding-left: 15px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
-  line-height: 28px;
+  line-height: 30px;
   font-size: 19px;
   color: #FFFFFF;
 }
@@ -143,19 +143,19 @@ h4{
 }
  .container_for_right-left {
   display: flex;
+  flex-direction: row-reverse;
 } 
+.container-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .right {
-  float: right;
   width: 880px;
   height: 730px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
   background-image: url(img/new-collection.svg);
-}
-.button {
-  padding: 12px 28px;
-  height: 47px;
-  border: 1px solid #FFFFFF;
-  background: center;
 }
 .txt-collection {
   font-family: Playfair Display;
@@ -166,26 +166,37 @@ h4{
   color:  #FFFFFF;
 }
 .line1 {
+  margin-top: 30px;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
 }
-.container-new-season {
+.button {
+  margin-top: 42px;
+  padding: 12px 28px;
+  height: 47px;
+  border: 1px solid #FFFFFF;
+  background: center;
+  text-align: center;
+  font-family: PT Sans;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.container-left {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .left {
-  margin: 0;
-  margin-bottom: 500px;
   width: 1040px;
   height: 730px;
   background: #0F0F0F;
 }
 .season {
-  display: flex;
-  margin: 0;
-  width: 376px;
-  height: 39px;
+  margin-top: 93px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -196,34 +207,39 @@ h4{
   color: #FFFFFF;
 }
 .line-season {
+  margin: auto;
+  margin-top: 50px;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
 }
-.place{
-  margin-right: 20px;
+.items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-left: 50px;
   width: 260px;
   height: 325px;
   background: #191B1C;
 }
 .wtch{
+  margin: 0 auto;
   width: 215px;
   height: 214px;
-  background: url(img/watch-hand.svg);
 }
 .watch-text{
-  width: 140px;
-  height: 24px;
   font-family: Playfair Display;
   font-style: normal;  
   font-weight: normal;
   font-size: 17px;
-  line-height: 24px;
   color: #FFFFFF;
 }
 .money{
-  width: 92px;
-  height: 21px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -231,30 +247,27 @@ h4{
   line-height: 21px;
   color: #D0D0D0;
 }
-.collection-2018 {
-  width: 1920px;
-  height: 600px;
+.container-collection-left_right {
+  display: flex;
+  flex-direction: row;
 }
-.rectangle8 {
-  visibility: hidden;
-  width: 1040px;
-  height: 600px;
-  left: 880px;
-  top: 1664px;
-  background: #000000;
-}
-.rectangle9 {
-  visibility: hidden;
+.img-collection2018 {
   width: 880px;
   height: 600px;
-  left: 0px;
-  top: 1664px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
   background-image: url(img/collection-2018.svg)
 }
-.text-collection-2018 {
-  width: 376px;
-  height: 39px;
+.rectangle-2018 {
+  width: 1040px;
+  height: 600px;
+  background: #191B1C;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.txt-collection-2018 {
+  margin-top: 100px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -265,11 +278,13 @@ h4{
   color: #FFFFFF;
 }
 .line-collection {
+  margin-bottom: 40px;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
 }
-.text2-collection-2018 { 
+.txt2-collection-2018 { 
+  margin-bottom: 40px;
   width: 471px;
   height: 173px;
   font-family: PT Sans;
@@ -280,45 +295,26 @@ h4{
   text-align: center;
   color: #FFFFFF;
 }
-.frame2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 28px;
+.frame-collection2018 {
+  margin-bottom: 100px;
   width: 311px;
   height: 47px;
   border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  color: white;
-}
-.txt-frame {
-  position: static;
-  width: 255px;
-  height: 23px;
-  left: 28px;
-  top: 12px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  background: black;
   color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
+  text-transform: uppercase;
 }
 .new-goods {
   width: 1920px;
   height: 1289px;
-  background: #000000;
+  background: #191B1C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .new-arrivals {
-  width: 440px;
-  height: 48px;
+  margin-top: 120px;
+  background: #191B1C;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -329,117 +325,39 @@ h4{
   color: #FFFFFF;
 }
 .line3 {
+  margin-top: 40px;
+  margin-left: 46%;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
 }
-.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+.container-new-goods, .container-new-gooods{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -120px;
+}
+.itemm{
+  margin-left: 23px;
+  margin-top: 40px;
   width: 260px;
   height: 325px;
   background: #191B1C;
-}
-.p2 {
-  left: 688px;
-}
-.p3 {
-  left: 971px;
-}
-.p4{
-  left: 1254px;
-}
-.p5 {
-  top: 2998px;
-  left: 405px;
-}
-.p6 {
-  top: 2998px;
-  left: 688px;
-}
-.p7 {
-  top: 2998px;
-  left: 971px;
-}
-.p8 {
-  top: 2998px;
-  left: 1254px;
 }
 .h:hover {
   border: 2px solid white;
   background-color: rgba(16, 63, 70, 0.527);
 }
-.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 {
-  width: 215px;
-  height: 214px;
-  left: 428px;
-  top: 2608px;
-  background: url(img/watch-hand.svg);
-}
-.w2 {
-  left: 711px;
-}
-.w3 {
-  left: 994px;
-}
-.w4 {
-  left: 1277px;
-}
-.w5 {
-  top: 3053px;
-}
-.w6 {
-  top: 3053px;
-  left: 711px;
-}
-.w7 {
-  top: 3053px;
-  left: 994px;
-}
-.w8 {
-  top: 3053px;
-  left: 1277px;
-}
-.louis1, .louis2, .louis3, .louis4, .lo5, .lo6, .lo7, .lo8 {
-  width: 140px;
-  height: 24px;
-  left: 405px;
-  top: 2903px;
+.louis{
+  margin: 0;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
 }
-.louis2 {
-  left: 688px;
-}
-.louis3 {
-  left: 971px;
-}
-.louis4 {
-  left: 1254px;
-}
-.lo5 {
-  top: 3348px;
-  left: 405px;
-}
-.lo6 {
-  top: 3348px;
-  left: 688px;
-}
-.lo7 {
-  top: 3348px;
-  left: 971px;
-}
-.lo8 {
-  top: 3348px;
-  left: 1254px;
-}
-.text-rub1, .text-rub2, .text-rub3, .text-rub4, .text-rub5, .text-rub6, .text-rub7, .text-rub8{
-  width: 92px;
-  height: 21px;
-  left: 405px;
-  top: 2937px;
+.text-rub{
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -447,43 +365,14 @@ h4{
   line-height: 21px;
   color: #D0D0D0;
 }
-.text-rub2 {
-  left: 688px;
-}
-.text-rub3 {
-  left: 971px;
-}
-.text-rub4 {
-  left: 1254px;
-}
-.text-rub5 {
-  left: 405px;
-  top: 3382px;
-}
-.text-rub6 {
-  left: 688px;
-  top: 3382px;
-}
-.text-rub7 {
-  left: 971px;
-  top: 3382px;
-}
-.text-rub8 {
-  left: 1254px;
-  top: 3382px;
-}
-.ractangle-brand {
+/* .ractangle-brand {
   width: 1920px;
   height: 362px;
-  left: 0px;
-  top: 3553px;
   background: #0F0F0F;
-}
+} */
 .our-brand {
   width: 289px;
   height: 48px;
-  left: 816px;
-  top: 3613px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -505,7 +394,7 @@ h4{
   height: 94px;
   left: 405px;
   top: 3741px;
-  background: url(img/brand.png);
+  background: url(img/brand.svg);
 }
 .brand2 {
   left: 690px;
