@@ -84,7 +84,7 @@ ul, li {
   /* 3 block/ MAIN */
 .container-first-screen {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   }
@@ -105,14 +105,13 @@ ul, li {
   border: 4px solid #FFFFFF;
 }
 .line {
-  width: 179px;
   height: 0px;
   border: 2px solid #FFFFFF;
 }
 .container-word {
   display: flex;
   justify-content: center;
-  align-content: center;
+  margin-top: 25%;
 }
 .word{
   font-family: Post No Bills Jaffna;
@@ -126,6 +125,7 @@ ul, li {
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
+  line-height: 28px;
   font-size: 19px;
   color: #FFFFFF;
 }
@@ -141,11 +141,10 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
- .container-new-collection {
+ .container_for_right-left {
   display: flex;
-  justify-content: flex-end;
 } 
-.new-collection {
+.right {
   float: right;
   width: 880px;
   height: 730px;
@@ -173,9 +172,9 @@ h4{
 }
 .container-new-season {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-.new-season {
+.left {
   margin: 0;
   margin-bottom: 500px;
   width: 1040px;
@@ -183,6 +182,7 @@ h4{
   background: #0F0F0F;
 }
 .season {
+  display: flex;
   margin: 0;
   width: 376px;
   height: 39px;
@@ -250,19 +250,19 @@ h4{
   left: 0px;
   top: 1664px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
-  background-image: url(img/collection-2018.svg
+  background-image: url(img/collection-2018.svg)
 }
 .text-collection-2018 {
-    width: 376px;
-    height: 39px;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  width: 376px;
+  height: 39px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 .line-collection {
   width: 120px;
