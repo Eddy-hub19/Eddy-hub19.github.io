@@ -8,6 +8,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
 ul, li {
   list-style-type: none
 }
@@ -19,7 +23,6 @@ ul, li {
 }
 .top-line {
   width: 1920px;
-  height: 44px;
   background-color: #000000;
 }
 .tel{
@@ -90,10 +93,9 @@ ul, li {
   padding: 0;
   width: 1920px;
   height: 810px;
-  margin-top: 75px;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
-  background-image:url(img/first-screen.png)
+  background-image:url(/img/first-screen.svg)
 }
 .frame1 {
   margin: 0;
@@ -107,13 +109,15 @@ ul, li {
   height: 0px;
   border: 2px solid #FFFFFF;
 }
+.container-word {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .word{
-  margin-left: 65px;
-  margin-top: 93px;
   font-family: Post No Bills Jaffna;
   font-weight: bold;
   font-size: 64px;
-  line-height: 96px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -137,17 +141,16 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.container-new-collection {
+ .container-new-collection {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-}
+} 
 .new-collection {
   float: right;
   width: 880px;
   height: 730px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
-  background-image: url(img/new-collection.png);
+  background-image: url(img/new-collection.svg);
 }
 .button {
   padding: 12px 28px;
@@ -167,6 +170,10 @@ h4{
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
+}
+.container-new-season {
+  display: flex;
+  justify-content: space-around;
 }
 .new-season {
   margin: 0;
@@ -193,36 +200,20 @@ h4{
   height: 0px;
   border: 1px solid #FFFFFF;
 }
-.place1, .place2, .place3 {
-  background-color: red;
+.place{
+  margin-right: 20px;
   width: 260px;
   height: 325px;
   background: #191B1C;
 }
-.place2 {
-  left: 390px;
-}
-.place3 {
-  left: 700px;
-}
-.wtch1, .wtch2, .wtch3 {
+.wtch{
   width: 215px;
   height: 214px;
-  background: url(img/watch-hand1.png);
+  background: url(img/watch-hand.svg);
 }
-.wtch2 {
-  left: 413px;
-  background: url(img/watch-hand2.png);
-}
-.wtch3 {
-  left: 723px;
-  background: url(img/watch-hand3.png);
-}
-.wt1, .wt2, .wt3 {
+.watch-text{
   width: 140px;
   height: 24px;
-  left: 80px;
-  top: 1516px;
   font-family: Playfair Display;
   font-style: normal;  
   font-weight: normal;
@@ -230,17 +221,9 @@ h4{
   line-height: 24px;
   color: #FFFFFF;
 }
-.wt2 {
-  left: 390px;
-}
-.wt3 {
-  left: 700px;
-}
-.n1, .n2, .n3 {
+.money{
   width: 92px;
   height: 21px;
-  left: 80px;
-  top: 1550px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -248,19 +231,12 @@ h4{
   line-height: 21px;
   color: #D0D0D0;
 }
-.n2 {
-  left: 390px;
-}
-.n3 {
-  left: 700px;
-}
 .collection-2018 {
   width: 1920px;
   height: 600px;
-  top: 1664px;
-  left: 0px;
 }
 .rectangle8 {
+  visibility: hidden;
   width: 1040px;
   height: 600px;
   left: 880px;
@@ -268,12 +244,13 @@ h4{
   background: #000000;
 }
 .rectangle9 {
+  visibility: hidden;
   width: 880px;
   height: 600px;
   left: 0px;
   top: 1664px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
-  background-image: url(img/collection-2018.png);
+  background-image: url(img/collection-2018.svg
 }
 .text-collection-2018 {
     width: 376px;
@@ -395,7 +372,7 @@ h4{
   height: 214px;
   left: 428px;
   top: 2608px;
-  background: url(img/watch-hand1.png);
+  background: url(img/watch-hand.svg);
 }
 .w2 {
   left: 711px;

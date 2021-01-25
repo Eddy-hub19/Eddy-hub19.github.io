@@ -18,15 +18,14 @@
         <div class="container-top-line">
             <!-- тут правильніше зробити список ul де посилання буде тільки телефон, а інші елементи просто текст-->
             <nav>
-                <img class="phone" src="img/phone.png" alt="phone">
+                <img class="phone" src="img/phone.svg" alt="phone">
                 <a class="tel" href=tel:88121234567>8 (812) 123-45-67</a>
                 <a class="tel">| Работаем 7 дней в неделю | 9:00 — 18:00</a>
                 <!-- тут треба обєднати дві картинки в одну -->
             </nav>
             <!-- тут повинно бути два посилання всередині списку ul -->
             <ul class="reg">
-                <img class="vector" src="img/wector.png" alt="vector">
-                <img class="pointer" src="img/arrow.png" alt="poitner">
+                <img class="vector" src="/img/vector.svg" alt="vector">
                 <li><a class="reg" href="#"> Войти /</a></li>
                 <li><a class="reg" href="#"> Регистрация </a></li>
             </ul>
@@ -35,14 +34,14 @@
         <section class="second-line">
             <div class="container-second-line">
                 <!-- назва сайту зазвичай повинна бути в <h1> -->
-                <a class="text">PORTEN</a>
+                <h1 class="text">PORTEN</h1>
                 <!-- цей порожній тег не потрібен, зроби щоб при ховері на посилання нижче вони отримували поведінку цього діва -->
                 <nav>
                     <a class="bt" href="home.html">Понравилось</a>
                     <a class="bt" href="index.html">Личный кабинет</a>
                     <a class="bt" href="home.html">Настройки</a>
-                    <a href="#"><img class="store" src="img/store.png" alt="store"></a>
-                    <a href="#"><img class="search" src="img/search.png" alt="search"></a>
+                    <a href="#"><img class="store" src="img/store.svg" alt="store"></a>
+                    <a href="#"><img class="search" src="img/search.svg" alt="search"></a>
                 </nav>
             </div>
         </section>
@@ -51,9 +50,11 @@
         <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
         <section class="container-first-screen first-screen">
             <div class="frame1">
-                <div class="word">porten
-                    <div class="line">
-                        <div class="s">санкт-петербург</div>
+                <div class="container-word">
+                    <div class="word">porten
+                        <div class="line">
+                            <div class="s">санкт-петербург</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,22 +76,24 @@
         </section>
     </div>
     <section class="new-season">
-        <div class="season">Сезон 2020/21
-            <div class="line-season"></div>
-            <div class="h place1">
-                <div class="wtch1"></div>
-                <a class="wt1"> Louis XVI ATHOS </a>
-                <p class="n1"> 165 000 руб. </p>
-            </div>
-            <div class="h place2">
-                <div class="wtch2"></div>
-                <a class="wt2"> Louis XVI ATHOS </a>
-                <p class="n2"> 165 000 руб. </p>
-            </div>
-            <div class="h place3">
-                <div class="wtch3"></div>
-                <a class="wt3"> Louis XVI ATHOS </a>
-                <p class="n3"> 165 000 руб. </p>
+        <div class="container-new-season">
+            <div class="season">Сезон 2020/21
+                <div class="line-season"></div>
+                <div class="h place">
+                    <div class="wtch"></div>
+                    <a class="watch-text"> Louis XVI ATHOS </a>
+                    <p class="money"> 165 000 руб. </p>
+                </div>
+                <div class="h place">
+                    <div class="wtch"></div>
+                    <a class="watch-text"> Louis XVI ATHOS </a>
+                    <p class="money"> 165 000 руб. </p>
+                </div>
+                <div class="h place">
+                    <div class="wtch"></div>
+                    <a class="watch-text"> Louis XVI ATHOS </a>
+                    <p class="money"> 165 000 руб. </p>
+                </div>
             </div>
         </div>
     </section>
@@ -185,7 +188,7 @@
     </section>
     <footer>
         <!-- див. коментар в 67 рядку -->
-        <img src="img/shadow.png" class="picture">
+        <img src="img/footer.svg" class="picture">
         <!-- ця секція не зовсім корекнтна оскілбки у нас не меню а 3 окремі блоки -->
         <section>
             <div class="nav">
