@@ -108,7 +108,7 @@ ul, li {
   flex-direction: column;
   align-items: center;
 }
-.line {
+.linee {
   width: 179px;
   height: 0px;
   border: 2px solid #FFFFFF;
@@ -220,9 +220,8 @@ h4{
   align-items: center;
 }
 .item{
+  border: 2px solid #191B1C;;
   margin: 0 auto;
-  padding: 0 auto;
-  margin-left: 50px;
   width: 260px;
   height: 325px;
   background: #191B1C;
@@ -305,12 +304,14 @@ h4{
   text-transform: uppercase;
 }
 .new-goods {
+  margin: 0 auto;
   width: 1920px;
   height: 1289px;
-  background: #191B1C;
+  background: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 }
 .new-arrivals {
   margin-top: 120px;
@@ -324,32 +325,34 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.line3 {
+ .line{
   margin-top: 40px;
-  margin-left: 46%;
+  margin-bottom: 40px;
+  height: 0;
   width: 120px;
-  height: 0px;
   border: 1px solid #FFFFFF;
 }
-.container-new-goods, .container-new-gooods{
+.container-new-goods{
+  margin-bottom: 150px;
+  width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -120px;
-}
+  flex-wrap: wrap;
+  margin-left: 8%;
+} 
 .itemm{
-  margin-left: 23px;
-  margin-top: 40px;
+  margin-right: 23px;
+  margin-top: 80px;
+  border: 2px solid #191B1C;
+  background: #191B1C;
   width: 260px;
   height: 325px;
-  background: #191B1C;
 }
-.h:hover {
+.make-border:hover {
   border: 2px solid white;
   background-color: rgba(16, 63, 70, 0.527);
 }
 .louis{
-  margin: 0;
+  margin-top: 35px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -365,14 +368,21 @@ h4{
   line-height: 21px;
   color: #D0D0D0;
 }
-/* .ractangle-brand {
+.ractangle-brand {
   width: 1920px;
   height: 362px;
-  background: #0F0F0F;
-} */
-.our-brand {
-  width: 289px;
-  height: 48px;
+  background:#0F0F0F;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.for-brand, .brandd {
+  display: flex;
+  margin-right: 30px;
+}
+ .our-brand{
+  margin-bottom: 60px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -381,48 +391,21 @@ h4{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-}
+} 
 .line-brand {
+  margin-bottom: 30px;
   width: 120px;
   height: 0px;
-  left: 900px;
-  top: 3701px;
   border: 1px solid #FFFFFF;
-}
-.brand1, .brand2, .brand3, .brand4{
-  width: 255px;
-  height: 94px;
-  left: 405px;
-  top: 3741px;
-  background: url(img/brand.svg);
-}
-.brand2 {
-  left: 690px;
-}
-.brand3 {
-  left: 975px;
-}
-.brand4 {
-  left: 1260px;
-}
-.footer {
-  width: 1920px;
-  height: 400px;
-  left: 0px;
-  top: 3909px;
-  background-color: #0F0F0F;
 }
 .picture {
   width: 1920px;
   height: 400px;
-  left: 0px;
-  top: 3909px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
-  background-image: url(/img/shadow.png), #C4C4C4;
+  background-image: url(/img/footer.svg);
 }
-.txt-store-foote {
-  width: 151px;
-  height: 32px;
+.for_a_store{
+  margin-top: 80px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -431,9 +414,24 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.container-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+.container-for-watch {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.but-watch {
+  display: flex;
+}
 .category {
-  width: 142px;
-  height: 32px;
+  margin-top: 80px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -442,7 +440,18 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.txt-lorem, .textlorem {
+.newsletter {
+  margin-top: 80px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.txt-lorem{
+  margin-top: 40px;
   width: 350px;
   height: 147px;
   font-family: PT Sans;
@@ -452,87 +461,20 @@ h4{
   line-height: 150%;
   color: #FFFFFF;
 }
-.textlorem {
-  height: 42px;
-}
-.input {
-  width: 210px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.4);
-}
-.but-watch{
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  width: 70px;
-  height: 41px;
-  top: 4061px;
-  margin-left: 20px;
-  background: #0F0F0F;
-  position: static;
-  width: 30px;
-  height: 21px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: #D0D0D0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
-}
-.bracelets {
-  width: 58px;
-}
-.belts {
-  width: 39px;
-}
-.jewelry {
-  position: static;
-  width: 124px;
-}
-.cufflinks {
-  position: static;
-  width: 51px;
-}
-.rectagle-inpu {
-  width: 210px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.4);
-}
-.bt-input {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20;
-  background: #0F0F0F
-}
 .subscribe {
-  position: static;
-  width: 100px;
-  height: 21px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14spx;
-  line-height: 150%;
-  letter-spacing: 0.05em;
   color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
 }
 .last-line {
   width: 1920px;
   height: 50px;
-  background: #0F0F0F;
+  /* background: #0F0F0F; */
+  background: red;
 }
 .rights {
-  width: 155px;
-  height: 16px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -541,14 +483,11 @@ h4{
   color: #D0D0D0;
 }
 .figma {
-  width: 155px;
-  height: 16px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
-  text-align: right;
-  text-decoration-line: underline;
+  text-align: center;
   color: #D0D0D0;
 }
