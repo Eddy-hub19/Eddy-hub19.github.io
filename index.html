@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- <audio autoplay loop>
+        <source src="/music/Lost.mp3" type="audio/mpeg">
+    </audio> -->
     <header class="top-line">
         <div class="container-top-line">
             <nav>
@@ -30,13 +33,11 @@
         </div>
         <section class="second-line">
             <div class="container-second-line">
-                <!-- назва сайту зазвичай повинна бути в <h1> -->
                 <a class="text">PORTEN</a>
-                <!-- цей порожній тег не потрібен, зроби щоб при ховері на посилання нижче вони отримували поведінку цього діва -->
-                <nav>
-                    <a class="bt" href="home.html">Понравилось</a>
-                    <a class="bt" href="index.html">Личный кабинет</a>
-                    <a class="bt" href="about.html">Настройки</a>
+                <nav class="container-flex">
+                    <a class="style-button bt" href="home.html">Понравилось</a>
+                    <a class="style-button bt" href="index.html">Личный кабинет</a>
+                    <a class="style-button bt" href="about.html">Настройки</a>
                     <a href="#"><img class="store" src="img/store.svg" alt="store"></a>
                     <a href="#"><img class="search" src="img/search.svg" alt="search"></a>
                 </nav>
@@ -44,14 +45,13 @@
         </section>
     </header>
     <main>
-        <!-- тут можна зробити тег section з backround image який всередині буде мати контент а не насипом як зараз -->
         <section class="container-first-screen first-screen">
             <div class="frame1 word ">porten
                 <div class="linee">
                     <div class="s">санкт-петербург</div>
                 </div>
             </div>
-            <h4>
+            <h4 class="txt-porten">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Purus interdum purus, est tortor pulvinar ut in.
                 Fringilla a diam enim sed justo, sed iaculis sagittis.
@@ -72,21 +72,21 @@
                 <div class="line-season"></div>
             </h2>
             <div class="items">
-                <div class="h item">
+                <div class="make-border item">
                     <div class="wtch">
                         <img src="/img/watch-hand.svg" class="wtch"></img>
                         <h3 class="watch-text"> Louis XVI ATHOS </h3>
                         <p class="money"> 165 000 руб. </p>
                     </div>
                 </div>
-                <div class="h item">
+                <div class="make-border item">
                     <div class="wtch">
                         <img src="/img/watch-hand.svg" class="wtch"></img>
                         <h3 class="watch-text"> Louis XVI ATHOS </h3>
                         <p class="money"> 165 000 руб. </p>
                     </div>
                 </div>
-                <div class="h item">
+                <div class="make-border item">
                     <div class="wtch">
                         <img src="/img/watch-hand.svg" class="wtch"></img>
                         <h3 class="watch-text"> Louis XVI ATHOS </h3>
@@ -180,43 +180,41 @@
             </div>
             <div class="container-for-watch">
                 <h2 class="category">Категории
-                    <button class="but-watch">
-                        <p class="watch-txt"> часы </p>
-                    </button>
-                    <button class="but-watch">
-                        <p class="bracelets"> браслеты </p>
-                    </button>
-                    <button class="but-watch">
-                        <p class="belts"> ремни </p>
-                    </button>
-                    <button class="but-watch">
-                        <p class="jewelry"> ювелирные изделия </p>
-                    </button>
-                    <button class="but-watch">
-                        <p class="but-cufflinks"> запонки </p>
-                    </button>
+                    <div class="container-for-menu">
+                        <button class="button-watch">
+                            <p class="watch-txt"> часы </p>
+                        </button>
+                        <button class="button-watch">
+                            <p class="bracelets"> браслеты </p>
+                        </button>
+                        <button class="button-watch">
+                            <p class="belts"> ремни </p>
+                        </button>
+                        <button class="button-watch">
+                            <p class="jewelry"> ювелирные изделия </p>
+                        </button>
+                        <button class="button-watch">
+                            <p class="but-cufflinks"> запонки </p>
+                        </button>
+                    </div>
                 </h2>
             </div>
-
             <div class="newsletter">Рассылка
+                <h5 class="txt-lorem-ispum">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
+                    nunc nulla nibh.
+                </h5>
                 <div class="container-for-newsletter">
-                    <h4 class="txt-lorem-ispum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper
-                        viverra nunc cursus tortor
-                        lectus nunc nulla nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper
-                        viverra nunc cursus tortor lectus nunc nulla nibh.</h4>
-                    <div class="container-subscribe">
-                        <input class="rectangle-input" type="email">
-                        <!-- <button class="subscribe">Подписаться</button> -->
+                    <form class="container-subscribe">
+                        <input class="rectangle-input" type="email" placeholder='Ваша почта..'>
                         <button class="subscribe">Подписаться</button>
-                    </div>
+                    </form>
                 </div>
             </div>
     </section>
-    <footer>
-        <div class="last-line">
-            <a href="#" class="rights">© 2020 Все права защищены</a>
-            <p class="figma">Сделано Figma.info</p>
-        </div>
+    <footer class="last-line">
+        <a href="#" class="rights">© 2020 Все права защищены</a>
+        <div class="figma">Сделано Figma.info</div>
     </footer>
 </body>
 
