@@ -404,6 +404,12 @@ h4{
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
   background-image: url(/img/footer.svg);
 }
+.container-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
 .for_a_store{
   margin-top: 80px;
   font-family: Playfair Display;
@@ -414,21 +420,31 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.container-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  text-transform: uppercase;
+.txt-lorem {
+  margin-top: 40px;
+  width: 350px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
 }
 .container-for-watch {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.but-watch {
+.container-for-input {
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.container-subscribe {
+  display: flex;
+  flex-direction: row;
 }
 .category {
   margin-top: 80px;
@@ -440,6 +456,11 @@ h4{
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.but-watch {
+  margin-top: 3px;
+  display: flex;
+  justify-content: flex-end;
+}
 .newsletter {
   margin-top: 80px;
   font-family: Playfair Display;
@@ -449,24 +470,41 @@ h4{
   line-height: 32px;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.txt-lorem{
+.container-for-newsletter{
   margin-top: 40px;
-  width: 350px;
-  height: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+.txt-lorem-ispum {
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #FFFFFF;
 }
-.subscribe {
+.rectangle-input{
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14spx;
-  color: #FFFFFF;
+  font-size: 20px;
+  color: indianred;
+  width: 210px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
 }
 .last-line {
   width: 1920px;
