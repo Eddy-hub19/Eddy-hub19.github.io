@@ -1,4 +1,4 @@
-* a {
+* a{
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
@@ -75,7 +75,7 @@ ul, li {
 }
 .style-button:hover {
     background: #191B1C;
-    color: white;
+    color: red;
 }
 .container-flex {
   display: flex;
@@ -366,7 +366,7 @@ ul, li {
 }
 .make-border:hover {
   border: 2px solid white;
-  background-color: rgba(16, 63, 70, 0.527);
+  background-color: brown;
 }
 .louis{
   margin-top: 35px;
@@ -558,4 +558,29 @@ ul, li {
   line-height: 16px;
   text-decoration-line: underline;
   color: #D0D0D0;
+}
+#bar {
+  /* Положение */
+  top: -4.1em;
+  right: 2em;
+   /* Поля */
+  padding: .5em;
+  /* Отступы */
+  margin: 0;
+ /* Абсолютное позиционирование */
+  position: absolute;
+   /* Ширина */
+  width: 4em;
+  /* Цвет фона */
+  background: #333;
+  /* Цвет текста */
+  color: white;
+  /* Выравнивание по центру */
+  text-align: center;
+  /* Переход */
+  transition: top 1.5s ease-out 0.5s;
+}
+
+#bar:hover {
+  top: 0;
 }
