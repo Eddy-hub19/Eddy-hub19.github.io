@@ -152,8 +152,10 @@ ul, li {
 }
 
 .txt-of-word {
+  margin-left: 200px;
   font: 19px/30px PT Sans;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .txt-porten {
@@ -442,7 +444,7 @@ ul, li {
   text-transform: uppercase;
 }
 
-.txt-lorem p {
+.txt-lorem, p {
   width: 350px;
   font: 13px/150% PT Sans;
   color: #FFFFFF;
@@ -478,7 +480,7 @@ ul, li {
   margin: 20px 20px 0 0;
 }
 
-.newsletter h2 {
+.newsletter, p {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
@@ -493,7 +495,7 @@ ul, li {
   font: 24px/32px Playfair Display;
 }
 
-.newsletter p {
+.newsletter, p {
   width: 350px;
   height: 42px;
   font: 14px/150% PT Sans;
@@ -554,7 +556,7 @@ ul, li {
   text-align: center;
 }
 
-@keyframes font-change {
+@keyframes color-change {
   0% {
     color: #0F0F0F;
   }
@@ -566,5 +568,8 @@ ul, li {
   }
 }
 .anim {
-  animation: font-change 4s infinite;
+  animation: color-change 4s infinite;
+}
+.anim2s {
+  animation: color-change 6s infinite;
 }
