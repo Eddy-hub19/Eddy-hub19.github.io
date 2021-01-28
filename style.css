@@ -367,7 +367,6 @@ ul, li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-right: 23px;
   margin-top: 80px;
   border: 2px solid #191B1C;
@@ -443,7 +442,7 @@ ul, li {
   text-transform: uppercase;
 }
 
-.txt-lorem, p {
+.txt-lorem p {
   width: 350px;
   font: 13px/150% PT Sans;
   color: #FFFFFF;
@@ -557,17 +556,15 @@ ul, li {
 
 @keyframes font-change {
   0% {
-    font-size: 20px;
+    color: #0F0F0F;
   }
   50% {
-    font-size: 60px;
+    color: #FFFFFF;
   }
   100% {
-    font-size: 20px;
+    color: #0f0f0f;
   }
 }
-
 .anim {
-  animation: font-change 5s infinite;
-  color: rosybrown;
+  animation: font-change 4s infinite;
 }
