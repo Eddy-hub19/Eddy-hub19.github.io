@@ -20,19 +20,23 @@
     <header class="top-line">
         <div class="container-top-line">
             <nav>
+              <!-- better to move this img inside next <a> tag -->
                 <img class="phone" src="img/phone.svg" alt="phone">
                 <a class="tel" href=tel:88121234567>8 (812) 123-45-67</a>
                 <a class="tel">| Работаем 7 дней в неделю | 9:00 — 18:00</a>
             </nav>
             <ul class="reg">
+              <!-- same here check line 23 comment -->
                 <img class="vector" src="/img/vector.svg" alt="vector">
                 <li><a class="reg" href="#"> Войти /</a></li>
                 <li><a class="reg" href="#"> Регистрация </a></li>
             </ul>
         </div>
+        <!-- unused closed tag; -->
         </div>
         <section class="second-line">
             <div class="container-second-line">
+                <!-- this should be inside h1 or h2 -->
                 <a class="text">PORTEN</a>
                 <nav class="container-flex">
                     <a class="style-button bt" href="home.html">Понравилось</a>
@@ -46,6 +50,7 @@
     </header>
     <main>
         <section class="container-first-screen first-screen">
+            <!-- should be inside header tags h1 and h2 -->
             <div class="frame1 word ">porten
                 <div class="linee">
                     <div class="s">санкт-петербург</div>
@@ -100,6 +105,7 @@
         <div class="img-collection2018"></div>
         <div class="container-collection2018">
             <div class="rectangle-2018">
+                <!-- h1 should be only one in the page only for logo/brand text "Porten" -->
                 <h1 class="txt-collection-2018">Коллекия 2018</h1>
                 <div class="line-collection"></div>
                 <p class="txt2-collection-2018">
@@ -110,6 +116,7 @@
                     Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper
                     scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam.
                 </p>
+                <!-- its better to use tag <a> here buttons mostly used inside forms -->
                 <button class="frame-collection2018">посмотреть коллекцию</button>
             </div>
         </div>
@@ -118,6 +125,7 @@
         <h1 class="new-arrivals">Новые поступления</h1>
         <div class="line"></div>
         <div class="container-new-goods">
+            <!-- name mistake itemm => item  -->
             <div class="make-border itemm">
                 <img src="/img/watch-hand.svg">
                 <h2 class="louis">Louis XVI ATHOS</h2>
@@ -161,6 +169,7 @@
         </div>
     </article>
     <div class="ractangle-brand">
+        <!-- should not be h1, h2 might be -->
         <h1 class="our-brand">Наши Бренды</h1>
         <div class="line-brand"></div>
         <div class="for-brand">
@@ -172,7 +181,9 @@
     </div>
     <section class="picture">
         <div class="container-menu">
+          <!-- "о магазине" should be inside header tag h2 or h3 -->
             <div class="for_a_store">о магазине
+              <!-- for text better to use tag <p> -->
                 <h2 class="txt-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc
                     cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse.
                     Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio
@@ -180,6 +191,7 @@
             </div>
             <div class="container-for-watch">
                 <h2 class="category">Категории
+                    <!-- all next content should not be inside h2, should be after h2 -->
                     <div class="container-for-menu">
                         <button class="button-watch">
                             <p class="watch-txt"> часы </p>
@@ -199,21 +211,26 @@
                     </div>
                 </h2>
             </div>
+            <!-- same problem, check comment on the line 184 -->
             <div class="newsletter">Рассылка
                 <h5 class="txt-lorem-ispum">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus
                     nunc nulla nibh.
                 </h5>
+                <!-- no need for extra div here, you could have only form here -->
                 <div class="container-for-newsletter">
                     <form class="container-subscribe">
                         <input class="rectangle-input" type="email" placeholder='Ваша почта..'>
+                        <!-- button should have property: type="submit" -->
                         <button class="subscribe">Подписаться</button>
                     </form>
                 </div>
             </div>
     </section>
     <footer class="last-line">
+        <!-- next line should be inside <p> -->
         <a href="#" class="rights">© 2020 Все права защищены</a>
+        <!-- next line should be a link to figma site -->
         <div class="figma">Сделано Figma.info</div>
     </footer>
 </body>

@@ -34,6 +34,7 @@ ul, li {
   line-height: 16px;
   color: #969696;
 }
+/* next class a lot of same styles that has ".tel" so use this for both of them  */
 .reg{
   margin-left: 4px;
   display: flex;
@@ -57,6 +58,7 @@ ul, li {
 }
 .text {
   margin-top: 15px;
+  /* it's bad practise to use negative margins, try to use positive "margin-left"*/
   margin-right: -120px;
   font-family: Post No Bills Jaffna;
   font-style: normal;
@@ -110,6 +112,7 @@ ul, li {
   padding: 0;
   width: 1920px;
   height: 810px;
+  /* you could all background inside one property "background" */
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image:url(/img/first-screen.svg)
@@ -125,6 +128,7 @@ ul, li {
   flex-direction: column;
   align-items: center;
 }
+/* rename .linee => .line */
 .linee {
   width: 179px;
   height: 0px;
@@ -137,6 +141,7 @@ ul, li {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+/* all class names should be descriptive, use full word name */
 .s {
   padding-left: 15px;
   font-family: PT Sans;
@@ -171,6 +176,7 @@ ul, li {
 .right {
   width: 880px;
   height: 730px;
+  /* same here combine to one line */
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
   background-image: url(img/new-collection.svg);
 }
@@ -243,6 +249,7 @@ ul, li {
   height: 325px;
   background: #191B1C;
 }
+/* rename wtch => watch */
 .wtch{
   margin: 0 auto;
   width: 215px;
@@ -271,6 +278,7 @@ ul, li {
   width: 880px;
   height: 600px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
+  /* combine into one line */
   background-image: url(img/collection-2018.svg)
 }
 .rectangle-2018 {
@@ -345,6 +353,8 @@ ul, li {
  .line{
   margin-top: 40px;
   margin-bottom: 40px;
+  /* you could combine previous 2 line into 1 line : 
+  margin: 40px 0 */
   height: 0;
   width: 120px;
   border: 1px solid #FFFFFF;
@@ -358,6 +368,7 @@ ul, li {
   align-items: center;
   /* justify-content: center; */
 } 
+/* rename itemmm => item  and remove unsused code lines 373-376*/
 .itemm{
   /* display: flex;
   flex-direction: column;
@@ -365,6 +376,7 @@ ul, li {
   align-items: center; */
   margin-right: 23px;
   margin-top: 80px;
+  /* combine margins into one line */
   border: 2px solid #191B1C;
   background: #191B1C;
   width: 260px;
@@ -381,6 +393,8 @@ ul, li {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  /* combine all font props into one line everywhere */
+  /* font: 18px/24px Playfair Display; */
   color: #FFFFFF;
 }
 .text-rub{
@@ -389,6 +403,7 @@ ul, li {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  /* combine all font props */
   color: #D0D0D0;
 }
 .ractangle-brand {
@@ -411,6 +426,7 @@ ul, li {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
+  /* combine all font props */
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -425,6 +441,7 @@ ul, li {
   width: 1920px;
   height: 400px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
+  /* combine to one line */
   background-image: url(/img/footer.svg);
 }
 .container-menu {
@@ -440,6 +457,7 @@ ul, li {
   font-weight: normal;
   font-size: 22px;
   line-height: 32px;
+  /* combine all font props */
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -450,6 +468,7 @@ ul, li {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
+  /* combine all font props */
   color: #FFFFFF;
   text-transform: none;
   margin-top: 40px;
@@ -465,6 +484,7 @@ ul, li {
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
+  /* combine all font props */
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 80px;
@@ -485,19 +505,21 @@ ul, li {
   padding: 10px 20px;
   margin-top: 20px;
   margin-right: 20px;
+  /* combine all margins into one line*/
 }
 .newsletter {
   margin-left: 50px;
   margin-top: 80px;
+  /* combine all margins into one line*/
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
+  /* combine all fonts props one line*/
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   text-transform: uppercase;
 }
 .container-for-newsletter{
@@ -515,6 +537,7 @@ ul, li {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
+  /* same here */
   text-transform: none;
 }
 .rectangle-input{
@@ -554,8 +577,10 @@ ul, li {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  /* combine fonts */
   color: #D0D0D0;
 }
+/* reuse same props with ".rights" */
 .figma {
   font-family: PT Sans;
   font-style: normal;
@@ -563,5 +588,6 @@ ul, li {
   font-size: 12px;
   line-height: 16px;
   text-decoration-line: underline;
+  /* combine fonts */
   color: #D0D0D0;
 }
