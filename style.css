@@ -138,7 +138,6 @@ ul, li {
   text-transform: uppercase;
 }
 .s {
-  padding-left: 15px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -183,7 +182,7 @@ ul, li {
   color:  #FFFFFF;
 }
 .line1 {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
@@ -204,8 +203,9 @@ ul, li {
 }
 .container-left {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .left {
   width: 1040px;
@@ -213,7 +213,6 @@ ul, li {
   background: #0F0F0F;
 }
 .season {
-  margin-top: 93px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -224,7 +223,6 @@ ul, li {
   color: #FFFFFF;
 }
 .line-season {
-  margin: auto;
   margin-top: 50px;
   width: 120px;
   height: 0px;
@@ -238,7 +236,7 @@ ul, li {
 }
 .item{
   border: 2px solid #191B1C;;
-  margin: 0 auto;
+  margin-right: 50px;
   width: 260px;
   height: 325px;
   background: #191B1C;
@@ -565,3 +563,29 @@ ul, li {
   text-decoration-line: underline;
   color: #D0D0D0;
 }
+.color-change {
+  animation: color-change 5s infinite;
+  text-align: center;
+}
+@keyframes font-change {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+.anim {
+  animation: font-change 5s infinite;
+  color: rosybrown;
+}
+/* audio, source {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background: red;
+  background-color: red;
+} */

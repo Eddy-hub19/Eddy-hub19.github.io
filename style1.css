@@ -1,4 +1,4 @@
-* a{
+* a {
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
@@ -75,7 +75,7 @@ ul, li {
 }
 .style-button:hover {
     background: #191B1C;
-    color: red;
+    color: white;
 }
 .container-flex {
   display: flex;
@@ -138,7 +138,6 @@ ul, li {
   text-transform: uppercase;
 }
 .s {
-  padding-left: 15px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -183,7 +182,7 @@ ul, li {
   color:  #FFFFFF;
 }
 .line1 {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 120px;
   height: 0px;
   border: 1px solid #FFFFFF;
@@ -204,8 +203,9 @@ ul, li {
 }
 .container-left {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .left {
   width: 1040px;
@@ -213,7 +213,6 @@ ul, li {
   background: #0F0F0F;
 }
 .season {
-  margin-top: 93px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -224,7 +223,6 @@ ul, li {
   color: #FFFFFF;
 }
 .line-season {
-  margin: auto;
   margin-top: 50px;
   width: 120px;
   height: 0px;
@@ -238,7 +236,7 @@ ul, li {
 }
 .item{
   border: 2px solid #191B1C;;
-  margin: 0 auto;
+  margin-right: 50px;
   width: 260px;
   height: 325px;
   background: #191B1C;
@@ -355,8 +353,14 @@ ul, li {
   display: flex;
   flex-wrap: wrap;
   margin-left: 8%;
+  align-items: center;
+  /* justify-content: center; */
 } 
 .itemm{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   margin-right: 23px;
   margin-top: 80px;
   border: 2px solid #191B1C;
@@ -366,7 +370,7 @@ ul, li {
 }
 .make-border:hover {
   border: 2px solid white;
-  background-color: brown;
+  background-color: rgba(16, 63, 70, 0.527);
 }
 .louis{
   margin-top: 35px;
@@ -519,7 +523,7 @@ ul, li {
   background: rgba(255, 255, 255, 0.4);
 }
 ::placeholder {
-  color: ivory;
+  color: white;
 }
 .container-subscribe {
   display: flex;
@@ -559,28 +563,22 @@ ul, li {
   text-decoration-line: underline;
   color: #D0D0D0;
 }
-#bar {
-  /* Положение */
-  top: -4.1em;
-  right: 2em;
-   /* Поля */
-  padding: .5em;
-  /* Отступы */
-  margin: 0;
- /* Абсолютное позиционирование */
-  position: absolute;
-   /* Ширина */
-  width: 4em;
-  /* Цвет фона */
-  background: #333;
-  /* Цвет текста */
-  color: white;
-  /* Выравнивание по центру */
+.color-change {
+  animation: color-change 5s infinite;
   text-align: center;
-  /* Переход */
-  transition: top 1.5s ease-out 0.5s;
 }
-
-#bar:hover {
-  top: 0;
+@keyframes font-change {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+.anim {
+  animation: font-change 5s infinite;
+  color: rosybrown;
 }
