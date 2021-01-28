@@ -38,6 +38,9 @@ ul, li {
   margin-right: 10px;
   line-height: 16px;
 }
+.vector {
+  margin-right: 6px;
+}
 .reg{
   margin-left: 4px;
   display: flex;
@@ -73,7 +76,7 @@ ul, li {
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background: black;
+  background: #0F0F0F;
   color: white;
   padding: 25px;
 }
