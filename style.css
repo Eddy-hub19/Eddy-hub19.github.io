@@ -281,7 +281,7 @@ ul, li {
 .rectangle-2018 {
   width: 1040px;
   height: 600px;
-  background: #191B1C;
+  background: black;
   display: flex;
   align-items: center;
   flex-direction: column;
