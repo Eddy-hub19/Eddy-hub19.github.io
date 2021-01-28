@@ -34,6 +34,10 @@ ul, li {
   line-height: 16px;
   color: #969696;
 }
+.phone {
+  margin-right: 10px;
+  line-height: 16px;
+}
 .reg{
   margin-left: 4px;
   display: flex;
@@ -582,10 +586,3 @@ ul, li {
   animation: font-change 5s infinite;
   color: rosybrown;
 }
-/* audio, source {
-  position: absolute;
-  width: 200px;
-  height: 20px;
-  background: red;
-  background-color: red;
-} */
