@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -15,8 +16,9 @@ body {
   margin: 0 auto;
 }
 
-ul, li {
-  list-style-type: none
+ul,
+li {
+  list-style-type: none;
 }
 
 /*1 block/ HEADER */
@@ -47,10 +49,13 @@ ul, li {
   margin-right: 6px;
 }
 
-.reg {
-  margin-left: 4px;
+.registration {
   display: flex;
   font: 12px/16px PT Sans;
+}
+.registration a {
+  margin-left: 4px;
+  display: flex;
   color: #969696;
 }
 
@@ -59,7 +64,7 @@ ul, li {
 .second-line {
   width: 1920px;
   height: 80px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
 
 .container-second-line {
@@ -70,7 +75,7 @@ ul, li {
 
 .text {
   font: normal bold 36px Post No Bills Jaffna;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 15px;
   margin-left: 25%;
 }
@@ -80,13 +85,13 @@ ul, li {
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background: #0F0F0F;
+  background: #0f0f0f;
   color: white;
   padding: 25px;
 }
 
 .style-button:hover {
-  background: #191B1C;
+  background: #191b1c;
   color: white;
 }
 
@@ -105,26 +110,23 @@ ul, li {
   color: #969696;
 }
 
-.search, .store {
+.search,
+.store {
   margin-left: 35px;
 }
 
 /* 3 block/ MAIN */
 
-.container-first-screen {
+.first-screen {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.first-screen {
   margin: 0;
   padding: 0;
   width: 1920px;
   height: 810px;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
-  background-image: url(/img/first-screen.svg)
+  background: url(/img/first-screen.jpg);
 }
 
 .frame {
@@ -132,7 +134,7 @@ ul, li {
   padding: 0;
   width: 320px;
   height: 320px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -142,19 +144,19 @@ ul, li {
 .line-first-screen {
   width: 179px;
   height: 0px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
-.word {
+.logo {
+  margin: 0;
   font: bold 64px Post No Bills Jaffna;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .txt-of-word {
-  margin-left: 200px;
   font: 19px/30px PT Sans;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -164,7 +166,7 @@ ul, li {
   font: 16px/150% PT Sans;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .container_for_right-left {
@@ -189,14 +191,14 @@ ul, li {
 .txt-collection {
   font: normal bold 36px/48px Playfair Display;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .line1 {
   margin-bottom: 30px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .button {
@@ -205,8 +207,8 @@ ul, li {
   margin-top: 42px;
   padding: 12px 28px;
   height: 47px;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   font: 18px/23px PT Sans;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -222,21 +224,21 @@ ul, li {
 .left {
   width: 1040px;
   height: 730px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
 
 .season {
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .line-season {
   margin-top: 50px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .items {
@@ -247,11 +249,11 @@ ul, li {
 }
 
 .item-season {
-  border: 2px solid #191B1C;
+  border: 2px solid #191b1c;
   margin-right: 50px;
   width: 260px;
   height: 325px;
-  background: #191B1C;
+  background: #191b1c;
 }
 
 .watch {
@@ -262,12 +264,12 @@ ul, li {
 
 .watch-text {
   font: 17px Playfair Display;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .money {
   font: normal bold 16px/21px Playfair Display;
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .container-collection-left_right {
@@ -279,7 +281,7 @@ ul, li {
   width: 880px;
   height: 600px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
-  background-image: url(img/collection-2018.svg)
+  background-image: url(img/collection-2018.svg);
 }
 
 .rectangle-2018 {
@@ -297,14 +299,14 @@ ul, li {
   font: 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .line-collection {
   margin-bottom: 40px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .txt2-collection-2018 {
@@ -313,16 +315,16 @@ ul, li {
   height: 173px;
   font: 14px/150% PT Sans;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .frame-collection2018 {
   margin-bottom: 100px;
   width: 311px;
   height: 47px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: black;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 12px;
   text-align: center;
   text-transform: uppercase;
@@ -340,12 +342,12 @@ ul, li {
 }
 
 .new-arrivals {
-  background: #191B1C;
+  background: #191b1c;
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   margin-top: 120px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .line-new-arrivals {
@@ -353,7 +355,7 @@ ul, li {
   margin-bottom: 40px;
   height: 0;
   width: 120px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .container-new-goods {
@@ -371,8 +373,8 @@ ul, li {
   justify-content: center;
   margin-right: 23px;
   margin-top: 80px;
-  border: 2px solid #191B1C;
-  background: #191B1C;
+  border: 2px solid #191b1c;
+  background: #191b1c;
   width: 260px;
   height: 325px;
 }
@@ -384,12 +386,12 @@ ul, li {
 
 .louis {
   margin: 35px 100px 0 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font: 18px/24px Playfair Display;
 }
 
 .text-rub {
-  color: #D0D0D0;
+  color: #d0d0d0;
   margin-right: 100px;
   font: normal bold 16px/21px Playfair Display;
 }
@@ -401,10 +403,11 @@ ul, li {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
 
-.for-brand, .brandd {
+.for-brand,
+.brandd {
   display: flex;
   margin-right: 30px;
 }
@@ -414,14 +417,14 @@ ul, li {
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .line-brand {
   margin-bottom: 30px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .picture {
@@ -436,19 +439,21 @@ ul, li {
   justify-content: center;
   align-items: flex-start;
 }
-
-.for_a_store {
-  margin: 80px 83px;
-  font: 22px/32px Playfair Display;
-  color: #FFFFFF;
+.container-menu h2 {
+  margin-top: 80px;
+  line-height: 18px;
   text-transform: uppercase;
+  font: 22px/32px Playfair Display;
+  color: white;
 }
-
-.txt-lorem, p {
+.for_a_store {
+  margin-right: 83px;
+  color: #ffffff;
   width: 350px;
+}
+.for_a_store p {
   font: 13px/150% PT Sans;
-  color: #FFFFFF;
-  text-transform: none;
+  /* color: #ffffff; */
   margin-top: 40px;
 }
 
@@ -459,9 +464,6 @@ ul, li {
 
 .category {
   font: 24px/32px Playfair Display;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-top: 80px;
 }
 
 .container-for-menu {
@@ -475,31 +477,21 @@ ul, li {
 
 .button-watch {
   color: white;
-  background: #0F0F0F;
+  background: #0f0f0f;
   padding: 25px 20px;
   margin: 20px 20px 0 0;
 }
 
-.newsletter, p {
+.newsletter {
   display: flex;
-  flex-direction: column;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font: 24px/32px Playfair Display;
-  text-transform: uppercase;
-}
-
-.newsletter h2 {
-  margin-top: 80px;
-  color: #FFFFFF;
-  font: 24px/32px Playfair Display;
-}
-
-.newsletter, p {
   width: 350px;
-  height: 42px;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.newsletter p {
+  margin-top: 20px;
   font: 14px/150% PT Sans;
-  text-transform: none;
 }
 
 .rectangle-input {
@@ -526,7 +518,7 @@ ul, li {
   flex-direction: row;
   align-items: center;
   padding: 10px 20px;
-  background: #0F0F0F;
+  background: #0f0f0f;
   color: white;
 }
 
@@ -536,19 +528,19 @@ ul, li {
   align-items: center;
   width: 1920px;
   height: 50px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
 
 .rights {
   margin-right: 200px;
   font: 12px/16px PT Sans;
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .figma {
   font: normal bold 12px/16px PT Sans;
   text-decoration-line: underline;
-  color: #D0D0D0;
+  color: #d0d0d0;
 }
 
 .color-change {
@@ -558,18 +550,18 @@ ul, li {
 
 @keyframes color-change {
   0% {
-    color: #0F0F0F;
+    color: #0f0f0f;
   }
   50% {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   100% {
     color: #0f0f0f;
   }
 }
-.anim {
+.animation {
   animation: color-change 4s infinite;
 }
-.anim2s {
+.animation6s {
   animation: color-change 6s infinite;
 }
