@@ -241,7 +241,7 @@ ul, li {
   justify-content: center;
   align-items: center;
 }
-.item{
+.item-season{
   border: 2px solid #191B1C;;
   margin-right: 50px;
   width: 260px;
@@ -323,6 +323,8 @@ ul, li {
   border: 1px solid #FFFFFF;
   background: black;
   color: #FFFFFF;
+  padding-top: 12px;
+  text-align: center;
   text-transform: uppercase;
 }
 .new-goods {
@@ -363,7 +365,7 @@ ul, li {
   align-items: center;
   /* justify-content: center; */
 } 
-.itemm{
+.item-new-goods{
   /* display: flex;
   flex-direction: column;
   justify-content: center;
