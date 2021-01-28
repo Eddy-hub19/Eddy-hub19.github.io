@@ -132,7 +132,7 @@ ul, li {
   flex-direction: column;
   align-items: center;
 }
-.linee {
+.line-first-screen {
   width: 179px;
   height: 0px;
   border: 2px solid #FFFFFF;
@@ -349,7 +349,7 @@ ul, li {
   text-transform: uppercase;
   color: #FFFFFF;
 }
- .line{
+ .line-new-arrivals{
   margin-top: 40px;
   margin-bottom: 40px;
   height: 0;
@@ -466,7 +466,6 @@ ul, li {
   flex-direction: column;
 }
 .category {
-  margin-left: -30px;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -494,7 +493,6 @@ ul, li {
   margin-right: 20px;
 }
 .newsletter {
-  margin-left: 50px;
   margin-top: 80px;
   font-family: Playfair Display;
   font-style: normal;
@@ -502,16 +500,16 @@ ul, li {
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  text-transform: uppercase;
 }
-.container-for-newsletter{
-  margin-top: 40px;
+.container-newsletter {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
 }
 .txt-lorem-ispum {
   width: 350px;
