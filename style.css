@@ -34,11 +34,7 @@ ul, li {
 
 .tel {
   margin-left: 6px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+  font: 12px/16px PT Sans;
   color: #969696;
 }
 
@@ -54,11 +50,7 @@ ul, li {
 .reg {
   margin-left: 4px;
   display: flex;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+  font: 12px/16px PT Sans;
   color: #969696;
 }
 
@@ -77,13 +69,10 @@ ul, li {
 }
 
 .text {
-  margin-top: 15px;
-  margin-right: -120px;
-  font-family: Post No Bills Jaffna;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
+  font: normal bold 36px Post No Bills Jaffna;
   color: #FFFFFF;
+  margin-top: 15px;
+  margin-left: 25%;
 }
 
 .style-button {
@@ -111,14 +100,9 @@ ul, li {
 }
 
 .bt {
-  font-size: 14px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  /* Все символы текст/а становятся прописными (верхний регистр). */
+  font: 14px/18px PT Sans;
   text-transform: uppercase;
   color: #969696;
-  line-height: 18px;
 }
 
 .search, .store {
@@ -139,12 +123,11 @@ ul, li {
   padding: 0;
   width: 1920px;
   height: 810px;
-  background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
   background-image: url(/img/first-screen.svg)
 }
 
-.frame1 {
+.frame {
   margin: 0;
   padding: 0;
   width: 320px;
@@ -163,30 +146,20 @@ ul, li {
 }
 
 .word {
-  font-family: Post No Bills Jaffna;
-  font-weight: bold;
-  font-size: 64px;
+  font: bold 64px Post No Bills Jaffna;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.s {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 30px;
-  font-size: 19px;
+.txt-of-word {
+  font: 19px/30px PT Sans;
   color: #FFFFFF;
 }
 
 .txt-porten {
   width: 730px;
   height: 96px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
+  font: 16px/150% PT Sans;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -212,10 +185,7 @@ ul, li {
 }
 
 .txt-collection {
-  font-family: Playfair Display;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -228,16 +198,14 @@ ul, li {
 }
 
 .button {
+  background: center;
+  text-align: center;
   margin-top: 42px;
   padding: 12px 28px;
   height: 47px;
   border: 1px solid #FFFFFF;
-  background: center;
-  text-align: center;
-  font-family: PT Sans;
   color: #FFFFFF;
-  font-size: 18px;
-  line-height: 23px;
+  font: 18px/23px PT Sans;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -256,11 +224,7 @@ ul, li {
 }
 
 .season {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -282,33 +246,25 @@ ul, li {
 
 .item-season {
   border: 2px solid #191B1C;
-  ;
   margin-right: 50px;
   width: 260px;
   height: 325px;
   background: #191B1C;
 }
 
-.wtch {
+.watch {
   margin: 0 auto;
   width: 215px;
   height: 214px;
 }
 
 .watch-text {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
+  font: 17px Playfair Display;
   color: #FFFFFF;
 }
 
 .money {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  font: normal bold 16px/21px Playfair Display;
   color: #D0D0D0;
 }
 
@@ -336,11 +292,7 @@ ul, li {
 
 .txt-collection-2018 {
   margin-top: 100px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
+  font: 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -357,11 +309,7 @@ ul, li {
   margin-bottom: 40px;
   width: 471px;
   height: 173px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font: 14px/150% PT Sans;
   text-align: center;
   color: #FFFFFF;
 }
@@ -390,15 +338,11 @@ ul, li {
 }
 
 .new-arrivals {
-  margin-top: 120px;
   background: #191B1C;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 120px;
   color: #FFFFFF;
 }
 
@@ -417,14 +361,13 @@ ul, li {
   flex-wrap: wrap;
   margin-left: 8%;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .item-new-goods {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   margin-right: 23px;
   margin-top: 80px;
   border: 2px solid #191B1C;
@@ -439,32 +382,25 @@ ul, li {
 }
 
 .louis {
-  margin-top: 35px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
+  margin: 35px 100px 0 0;
   color: #FFFFFF;
+  font: 18px/24px Playfair Display;
 }
 
 .text-rub {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
   color: #D0D0D0;
+  margin-right: 100px;
+  font: normal bold 16px/21px Playfair Display;
 }
 
 .ractangle-brand {
   width: 1920px;
   height: 362px;
-  background: #0F0F0F;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  background: #0F0F0F;
 }
 
 .for-brand, .brandd {
@@ -474,11 +410,7 @@ ul, li {
 
 .our-brand {
   margin-bottom: 60px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -506,14 +438,12 @@ ul, li {
 
 .for_a_store {
   margin: 80px 83px;
-  /* margin-right: 83px;
-  margin-top: 80px; */
   font: 22px/32px Playfair Display;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.txt-lorem {
+.txt-lorem, p {
   width: 350px;
   font: 13px/150% PT Sans;
   color: #FFFFFF;
@@ -522,7 +452,7 @@ ul, li {
 }
 
 .container-for-watch {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -549,22 +479,24 @@ ul, li {
   margin: 20px 20px 0 0;
 }
 
-.newsletter {
+.newsletter h2 {
   display: flex;
   flex-direction: column;
-  font: 24px/32px Playfair Display;
   color: #FFFFFF;
+  text-transform: uppercase;
+  font: 24px/32px Playfair Display;
+  text-transform: uppercase;
 }
 
 .newsletter h2 {
   margin-top: 80px;
   color: #FFFFFF;
+  font: 24px/32px Playfair Display;
 }
 
 .newsletter p {
   width: 350px;
   height: 42px;
-  font-family: PT Sans;
   font: 14px/150% PT Sans;
   text-transform: none;
 }
@@ -588,8 +520,10 @@ ul, li {
 }
 
 .subscribe {
+  border: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 10px 20px;
   background: #0F0F0F;
   color: white;
@@ -606,20 +540,12 @@ ul, li {
 
 .rights {
   margin-right: 200px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+  font: 12px/16px PT Sans;
   color: #D0D0D0;
 }
 
 .figma {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
+  font: normal bold 12px/16px PT Sans;
   text-decoration-line: underline;
   color: #D0D0D0;
 }
