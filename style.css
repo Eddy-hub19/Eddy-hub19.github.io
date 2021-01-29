@@ -24,35 +24,37 @@ li {
 
 .container-top-line {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: #000000;
+  margin-left: 406.33px;
 }
 
 .top-line {
+  width: 100%;
+  height: 124px;
   background-color: #000000;
-}
-
-.tel {
-  margin-left: 6px;
-  font: 12px/16px PT Sans;
-  color: #969696;
 }
 
 .phone {
   margin-right: 16.31px;
 }
 
+.tel {
+  font: 12px/16px PT Sans;
+  color: #969696;
+  vertical-align: center;
+}
+
 .vector {
-  margin-right: 6px;
+  margin-right: 11px;
 }
 
 .registration {
   display: flex;
+  margin-left: 591px;
   font: 12px/16px PT Sans;
 }
 .registration a {
-  margin-left: 4px;
+  margin-left: 5px;
   display: flex;
   color: #969696;
 }
@@ -61,17 +63,28 @@ li {
 
 .second-line {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   color: #ffffff;
 }
 .second-line h1 {
   color: #ffffff;
   font: normal bold 36px Post No Bills Jaffna;
+  margin-left: 405px;
+  margin-bottom: 23px;
 }
 .second-line nav {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-left: 469px;
+}
+.bt {
+  font: 14px/18px PT Sans;
+  text-transform: uppercase;
+  color: #969696;
+  margin-bottom: 20px;
+  margin-left: 9px;
 }
 .style-button {
   display: flex;
@@ -82,21 +95,18 @@ li {
   color: white;
   padding: 10px;
 }
-
 .style-button:hover {
   background: #191b1c;
   color: white;
 }
 
-.bt {
-  font: 14px/18px PT Sans;
-  text-transform: uppercase;
-  color: #969696;
-}
-
-.search,
 .store {
-  margin-left: 35px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.search {
+  margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 /* 3 block/ MAIN */
@@ -112,6 +122,7 @@ li {
   height: 810px;
   background: no-repeat;
   background: url(/img/first-screen.jpg);
+  padding-top: 29px;
 }
 
 .frame {
@@ -125,19 +136,17 @@ li {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .frame h2 {
   margin: 0;
-  font: bold 64px Post No Bills Jaffna;
+  font: bold 64px/1 Post No Bills Jaffna;
   text-transform: uppercase;
-}
-.frame div {
-  width: 179px;
-  height: 0px;
-  border: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 .frame h3 {
-  font: 19px/30px PT Sans;
+  margin: 0;
+  font: 22px/28px PT Sans;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -147,6 +156,7 @@ li {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 49px;
 }
 
 .right-left {
@@ -156,7 +166,7 @@ li {
 
 .right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
   height: 730px;
@@ -167,9 +177,10 @@ li {
 }
 .right h3 {
   font: normal bold 36px/48px Playfair Display;
+  margin-bottom: 21px;
 }
 .right a {
-  margin-top: 42px;
+  margin-bottom: 101px;
   padding: 12px 28px;
   height: 47px;
   border: 1px solid #ffffff;
@@ -178,7 +189,7 @@ li {
   letter-spacing: 0.1em;
 }
 .right div {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   width: 120px;
   height: 0px;
   border: 1px solid #ffffff;
@@ -212,7 +223,7 @@ li {
 }
 
 .items {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,24 +232,28 @@ li {
 .item-season {
   border: 2px solid #191b1c;
   margin-right: 50px;
+  margin-bottom: -13px;
   width: 260px;
   height: 325px;
   background: #191b1c;
 }
 
 .watch {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 22px;
+  margin-bottom: 30px;
   width: 215px;
+  margin-left: 22px;
+  margin-bottom: 30px;
 }
-
-.watch-text {
+.watch h3 {
   font: 17px Playfair Display;
   color: #ffffff;
 }
-
-.money {
+.watch p {
   font: normal bold 16px/21px Playfair Display;
   color: #d0d0d0;
+  margin-top: 37px;
 }
 
 .collection-left_right {
@@ -263,7 +278,7 @@ li {
   justify-content: flex-start;
 }
 .rectangle h2 {
-  margin-top: 100px;
+  margin-top: 111px;
   font: 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
@@ -282,7 +297,18 @@ li {
   text-align: center;
   color: #ffffff;
 }
-
+.rectangle a {
+  margin-bottom: 100px;
+  width: 311px;
+  height: 47px;
+  border: 1px solid #ffffff;
+  background: black;
+  color: #ffffff;
+  padding-top: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+}
 .frame-collection2018 {
   margin-bottom: 100px;
   width: 311px;
@@ -320,11 +346,12 @@ li {
 }
 
 .container-new-goods {
-  width: 1200px;
+  width: 1300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 59px;
 }
 .container-new-goods h2 {
   margin: 80px 100px 0 0;
@@ -364,6 +391,7 @@ li {
   display: flex;
 }
 .ractangle-brand h2 {
+  margin-top: 104px;
   margin-bottom: 60px;
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
@@ -373,11 +401,11 @@ li {
 
 .for-brand,
 .brand {
-  margin-right: 30px;
+  margin-right: 16px;
 }
 
 .line-brand {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   width: 120px;
   height: 0px;
   border: 1px solid #ffffff;
@@ -454,6 +482,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 40px;
 }
 .container-subscribe input {
   color: black;
