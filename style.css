@@ -12,6 +12,7 @@ body {
 }
 
 body {
+  border: 1px solid blue;
   width: 1920px;
   margin: 0 auto;
 }
@@ -27,10 +28,12 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #000000;
+  border: 1px solid yellow;
 }
 
 .top-line {
-  width: 1920px;
+  border: 1px solid red;
   background-color: #000000;
 }
 
@@ -42,7 +45,6 @@ li {
 
 .phone {
   margin-right: 10px;
-  line-height: 16px;
 }
 
 .vector {
@@ -62,12 +64,7 @@ li {
 /* 2 block/ HEADER */
 
 .second-line {
-  width: 1920px;
-  height: 80px;
-  background: #0f0f0f;
-}
-
-.container-second-line {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,8 +73,7 @@ li {
 .text {
   font: normal bold 36px Post No Bills Jaffna;
   color: #ffffff;
-  margin-top: 15px;
-  margin-left: 25%;
+  margin: 15px, 0, 0, 25px;
 }
 
 .style-button {
@@ -118,14 +114,16 @@ li {
 /* 3 block/ MAIN */
 
 .first-screen {
+  border: 3px solid green;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 1920px;
+  width: 100%;
   height: 810px;
+  background: no-repeat;
   background: url(/img/first-screen.jpg);
 }
 
@@ -162,7 +160,6 @@ li {
 
 .txt-porten {
   width: 730px;
-  height: 96px;
   font: 16px/150% PT Sans;
   text-align: center;
   text-transform: uppercase;
@@ -179,13 +176,12 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 730px;
 }
 
 .right {
   width: 880px;
-  height: 730px;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
-  background-image: url(img/new-collection.svg);
+  background-image: url(img/new-collection.png);
 }
 
 .txt-collection {
@@ -219,11 +215,11 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 730px;
 }
 
 .left {
   width: 1040px;
-  height: 730px;
   background: #0f0f0f;
 }
 
@@ -259,7 +255,6 @@ li {
 .watch {
   margin: 0 auto;
   width: 215px;
-  height: 214px;
 }
 
 .watch-text {
@@ -275,19 +270,19 @@ li {
 .container-collection-left_right {
   display: flex;
   flex-direction: row;
+  background: no-repeat;
+  background-image: url(img/collection-2018.jpg);
+  height: 600px;
 }
 
 .img-collection2018 {
   width: 880px;
-  height: 600px;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
-  background-image: url(img/collection-2018.svg);
 }
-
-.rectangle-2018 {
+.container-collection2018 {
   width: 1040px;
-  height: 600px;
   background: black;
+}
+.rectangle-2018 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -312,7 +307,6 @@ li {
 .txt2-collection-2018 {
   margin-bottom: 40px;
   width: 471px;
-  height: 173px;
   font: 14px/150% PT Sans;
   text-align: center;
   color: #ffffff;
@@ -331,9 +325,6 @@ li {
 }
 
 .new-goods {
-  margin: 0 auto;
-  width: 1920px;
-  height: 1289px;
   background: black;
   display: flex;
   flex-direction: column;
@@ -351,19 +342,17 @@ li {
 }
 
 .line-new-arrivals {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px, 0;
   height: 0;
   width: 120px;
   border: 1px solid #ffffff;
 }
 
 .container-new-goods {
-  margin-bottom: 150px;
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8%;
+  justify-content: center;
   align-items: center;
 }
 
@@ -371,12 +360,11 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 40px;
   margin-right: 23px;
-  margin-top: 80px;
   border: 2px solid #191b1c;
   background: #191b1c;
   width: 260px;
-  height: 325px;
 }
 
 .make-border:hover {
@@ -385,7 +373,7 @@ li {
 }
 
 .louis {
-  margin: 35px 100px 0 0;
+  margin: 80px 100px 0 0;
   color: #ffffff;
   font: 18px/24px Playfair Display;
 }
@@ -397,7 +385,7 @@ li {
 }
 
 .ractangle-brand {
-  width: 1920px;
+  width: 100%;
   height: 362px;
   display: flex;
   align-items: center;
@@ -407,7 +395,7 @@ li {
 }
 
 .for-brand,
-.brandd {
+.brand {
   display: flex;
   margin-right: 30px;
 }
@@ -428,7 +416,7 @@ li {
 }
 
 .picture {
-  width: 1920px;
+  width: 100%;
   height: 400px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
   background-image: url(/img/footer.svg);
@@ -526,7 +514,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1920px;
+  width: 100%;
   height: 50px;
   background: #0f0f0f;
 }
@@ -562,6 +550,17 @@ li {
 .animation {
   animation: color-change 4s infinite;
 }
+@keyframes color-change-brown {
+  0% {
+    color: #0f0f0f;
+  }
+  50% {
+    color: teal;
+  }
+  100% {
+    color: #0f0f0f;
+  }
+}
 .animation6s {
-  animation: color-change 6s infinite;
+  animation: color-change-brown 6s infinite;
 }
