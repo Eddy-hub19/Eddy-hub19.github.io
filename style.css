@@ -1,20 +1,18 @@
-* a {
+a {
   text-decoration: none;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
-  border: 1px solid blue;
   width: 1920px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 ul,
@@ -29,11 +27,9 @@ li {
   justify-content: space-around;
   align-items: center;
   background-color: #000000;
-  border: 1px solid yellow;
 }
 
 .top-line {
-  border: 1px solid red;
   background-color: #000000;
 }
 
@@ -68,14 +64,21 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.text {
-  font: normal bold 36px Post No Bills Jaffna;
   color: #ffffff;
-  margin: 15px, 0, 0, 25px;
 }
-
+.second-line h1 {
+  color: #ffffff;
+  font: normal bold 36px Post No Bills Jaffna;
+  /* margin: 15px, 0, 0, 25px; */
+}
+.second-line nav {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: row; */
+  /* width: 540px;
+  height: 80px; */
+}
 .style-button {
   display: flex;
   justify-content: center;
@@ -83,21 +86,12 @@ li {
   white-space: nowrap;
   background: #0f0f0f;
   color: white;
-  padding: 25px;
+  padding: 10px;
 }
 
 .style-button:hover {
   background: #191b1c;
   color: white;
-}
-
-.container-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 540px;
-  height: 80px;
 }
 
 .bt {
@@ -114,7 +108,6 @@ li {
 /* 3 block/ MAIN */
 
 .first-screen {
-  border: 3px solid green;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -137,27 +130,23 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: #ffffff;
 }
-
-.line-first-screen {
+.frame h2 {
+  margin: 0;
+  font: bold 64px Post No Bills Jaffna;
+  text-transform: uppercase;
+}
+.frame p {
   width: 179px;
   height: 0px;
   border: 2px solid #ffffff;
 }
-
-.logo {
-  margin: 0;
-  font: bold 64px Post No Bills Jaffna;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.txt-of-word {
+.frame h3 {
   font: 19px/30px PT Sans;
   color: #ffffff;
   text-transform: uppercase;
 }
-
 .txt-porten {
   width: 730px;
   font: 16px/150% PT Sans;
@@ -166,40 +155,26 @@ li {
   color: #ffffff;
 }
 
-.container_for_right-left {
+.right-left {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.container-right {
+.right {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 730px;
-}
-
-.right {
   width: 880px;
-  background-image: url(img/new-collection.png);
-}
-
-.txt-collection {
-  font: normal bold 36px/48px Playfair Display;
-  text-transform: uppercase;
   color: #ffffff;
+  background-image: url(img/new-collection.png);
+  text-transform: uppercase;
 }
-
-.line1 {
-  margin-bottom: 30px;
-  width: 120px;
-  height: 0px;
-  border: 1px solid #ffffff;
+.right h3 {
+  font: normal bold 36px/48px Playfair Display;
 }
-
-.button {
-  background: center;
-  text-align: center;
+.right a {
   margin-top: 42px;
   padding: 12px 28px;
   height: 47px;
@@ -207,7 +182,13 @@ li {
   color: #ffffff;
   font: 18px/23px PT Sans;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+}
+
+.line1 {
+  margin-bottom: 30px;
+  width: 120px;
+  height: 0px;
+  border: 1px solid #ffffff;
 }
 
 .container-left {
@@ -267,7 +248,7 @@ li {
   color: #d0d0d0;
 }
 
-.container-collection-left_right {
+.collection-left_right {
   display: flex;
   flex-direction: row;
   background: no-repeat;
@@ -330,6 +311,7 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: #ffffff;
 }
 
 .new-arrivals {
@@ -355,7 +337,16 @@ li {
   justify-content: center;
   align-items: center;
 }
-
+.container-new-goods h2 {
+  margin: 80px 100px 0 0;
+  color: #ffffff;
+  font: 18px/24px Playfair Display;
+}
+.container-new-goods p {
+  color: #d0d0d0;
+  margin-right: 100px;
+  font: normal bold 16px/21px Playfair Display;
+}
 .item-new-goods {
   display: flex;
   flex-direction: column;
@@ -372,18 +363,6 @@ li {
   background-color: rgba(16, 63, 70, 0.527);
 }
 
-.louis {
-  margin: 80px 100px 0 0;
-  color: #ffffff;
-  font: 18px/24px Playfair Display;
-}
-
-.text-rub {
-  color: #d0d0d0;
-  margin-right: 100px;
-  font: normal bold 16px/21px Playfair Display;
-}
-
 .ractangle-brand {
   width: 100%;
   height: 362px;
@@ -393,19 +372,20 @@ li {
   justify-content: flex-start;
   background: #0f0f0f;
 }
-
-.for-brand,
-.brand {
+.ractangle-brand {
   display: flex;
-  margin-right: 30px;
 }
-
-.our-brand {
+.ractangle-brand h2 {
   margin-bottom: 60px;
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.for-brand,
+.brand {
+  margin-right: 30px;
 }
 
 .line-brand {
@@ -416,9 +396,7 @@ li {
 }
 
 .picture {
-  width: 100%;
   height: 400px;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.616));
   background-image: url(/img/footer.svg);
 }
 
@@ -441,7 +419,6 @@ li {
 }
 .for_a_store p {
   font: 13px/150% PT Sans;
-  /* color: #ffffff; */
   margin-top: 40px;
 }
 
@@ -514,7 +491,6 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
   height: 50px;
   background: #0f0f0f;
 }
@@ -549,18 +525,4 @@ li {
 }
 .animation {
   animation: color-change 4s infinite;
-}
-@keyframes color-change-brown {
-  0% {
-    color: #0f0f0f;
-  }
-  50% {
-    color: teal;
-  }
-  100% {
-    color: #0f0f0f;
-  }
-}
-.animation6s {
-  animation: color-change-brown 6s infinite;
 }
