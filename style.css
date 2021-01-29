@@ -4,81 +4,97 @@
   margin: 0;
   padding: 0;
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
 body {
-    width: 1920px;
-    margin: 0 auto;
+  width: 1920px;
+  margin: 0 auto;
 }
-ul, li {
-  list-style-type: none
+
+ul,
+li {
+  list-style-type: none;
 }
+
 /*1 block/ HEADER */
-.container-top-line{
+
+.container-top-line {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .top-line {
   width: 1920px;
   background-color: #000000;
 }
-.tel{
-  margin-left: 6px; 
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+
+.tel {
+  margin-left: 6px;
+  font: 12px/16px PT Sans;
   color: #969696;
 }
-/* next class a lot of same styles that has ".tel" so use this for both of them  */
-.reg{
+
+.phone {
+  margin-right: 10px;
+  line-height: 16px;
+}
+
+.vector {
+  margin-right: 6px;
+}
+
+.registration {
+  display: flex;
+  font: 12px/16px PT Sans;
+}
+.registration a {
   margin-left: 4px;
   display: flex;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
   color: #969696;
-  }
-  /* 2 block/ HEADER */
+}
+
+/* 2 block/ HEADER */
+
 .second-line {
   width: 1920px;
   height: 80px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
+
 .container-second-line {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .text {
+  font: normal bold 36px Post No Bills Jaffna;
+  color: #ffffff;
   margin-top: 15px;
-  /* it's bad practise to use negative margins, try to use positive "margin-left"*/
-  margin-right: -120px;
-  font-family: Post No Bills Jaffna;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  color: #FFFFFF;
+  margin-left: 25%;
 }
-.style-button{
+
+.style-button {
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  background: black;
+  background: #0f0f0f;
   color: white;
   padding: 25px;
 }
+
 .style-button:hover {
-    background: #191B1C;
-    color: white;
+  background: #191b1c;
+  color: white;
 }
+
 .container-flex {
   display: flex;
   justify-content: center;
@@ -87,92 +103,84 @@ ul, li {
   width: 540px;
   height: 80px;
 }
-.bt{
-  font-size: 14px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  /* Все символы текст/а становятся прописными (верхний регистр). */
+
+.bt {
+  font: 14px/18px PT Sans;
   text-transform: uppercase;
   color: #969696;
-  line-height: 18px;
 }
-.search, .store {
+
+.search,
+.store {
   margin-left: 35px;
 }
-  /* 3 block/ MAIN */
-.container-first-screen {
+
+/* 3 block/ MAIN */
+
+.first-screen {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  }
-.first-screen {
   margin: 0;
   padding: 0;
   width: 1920px;
   height: 810px;
-  /* you could all background inside one property "background" */
-  background-repeat: no-repeat;
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
-  background-image:url(/img/first-screen.svg)
+  background: url(/img/first-screen.jpg);
 }
-.frame1 {
+
+.frame {
   margin: 0;
   padding: 0;
   width: 320px;
   height: 320px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-/* rename .linee => .line */
-.linee {
+
+.line-first-screen {
   width: 179px;
   height: 0px;
-  border: 2px solid #FFFFFF;
-} 
-.word{
-  font-family: Post No Bills Jaffna;
-  font-weight: bold;
-  font-size: 64px;
-  color: #FFFFFF;
+  border: 2px solid #ffffff;
+}
+
+.logo {
+  margin: 0;
+  font: bold 64px Post No Bills Jaffna;
+  color: #ffffff;
   text-transform: uppercase;
 }
-/* all class names should be descriptive, use full word name */
-.s {
-  padding-left: 15px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 30px;
-  font-size: 19px;
-  color: #FFFFFF;
+
+.txt-of-word {
+  font: 19px/30px PT Sans;
+  color: #ffffff;
+  text-transform: uppercase;
 }
-.txt-porten{
+
+.txt-porten {
   width: 730px;
   height: 96px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
+  font: 16px/150% PT Sans;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
- .container_for_right-left {
+
+.container_for_right-left {
   display: flex;
   flex-direction: row-reverse;
-} 
+}
+
 .container-right {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .right {
   width: 880px;
   height: 730px;
@@ -180,154 +188,149 @@ ul, li {
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), white;
   background-image: url(img/new-collection.svg);
 }
+
 .txt-collection {
-  font-family: Playfair Display;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-transform: uppercase;
-  color:  #FFFFFF;
+  color: #ffffff;
 }
+
 .line1 {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
+
 .button {
+  background: center;
+  text-align: center;
   margin-top: 42px;
   padding: 12px 28px;
   height: 47px;
-  border: 1px solid #FFFFFF;
-  background: center;
-  text-align: center;
-  font-family: PT Sans;
-  color: #FFFFFF;
-  font-size: 18px;
-  line-height: 23px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font: 18px/23px PT Sans;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
 .container-left {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
+
 .left {
   width: 1040px;
   height: 730px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
+
 .season {
-  margin-top: 93px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
 .line-season {
-  margin: auto;
   margin-top: 50px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
+
 .items {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.item{
-  border: 2px solid #191B1C;;
-  margin: 0 auto;
+
+.item-season {
+  border: 2px solid #191b1c;
+  margin-right: 50px;
   width: 260px;
   height: 325px;
-  background: #191B1C;
+  background: #191b1c;
 }
-/* rename wtch => watch */
-.wtch{
+
+.watch {
   margin: 0 auto;
   width: 215px;
   height: 214px;
 }
-.watch-text{
-  font-family: Playfair Display;
-  font-style: normal;  
-  font-weight: normal;
-  font-size: 17px;
-  color: #FFFFFF;
+
+.watch-text {
+  font: 17px Playfair Display;
+  color: #ffffff;
 }
-.money{
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: #D0D0D0;
+
+.money {
+  font: normal bold 16px/21px Playfair Display;
+  color: #d0d0d0;
 }
+
 .container-collection-left_right {
   display: flex;
   flex-direction: row;
 }
+
 .img-collection2018 {
   width: 880px;
   height: 600px;
   background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)) #000000;
-  /* combine into one line */
-  background-image: url(img/collection-2018.svg)
+  background-image: url(img/collection-2018.svg);
 }
+
 .rectangle-2018 {
   width: 1040px;
   height: 600px;
-  background: #191B1C;
+  background: black;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .txt-collection-2018 {
   margin-top: 100px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
+  font: 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
 .line-collection {
   margin-bottom: 40px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
-.txt2-collection-2018 { 
+
+.txt2-collection-2018 {
   margin-bottom: 40px;
   width: 471px;
   height: 173px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font: 14px/150% PT Sans;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
 .frame-collection2018 {
   margin-bottom: 100px;
   width: 311px;
   height: 47px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: black;
-  color: #FFFFFF;
+  color: #ffffff;
+  padding-top: 12px;
+  text-align: center;
   text-transform: uppercase;
 }
+
 .new-goods {
   margin: 0 auto;
   width: 1920px;
@@ -338,105 +341,95 @@ ul, li {
   justify-content: flex-start;
   align-items: center;
 }
+
 .new-arrivals {
-  margin-top: 120px;
-  background: #191B1C;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  background: #191b1c;
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  margin-top: 120px;
+  color: #ffffff;
 }
- .line{
+
+.line-new-arrivals {
   margin-top: 40px;
   margin-bottom: 40px;
   /* you could combine previous 2 line into 1 line : 
   margin: 40px 0 */
   height: 0;
   width: 120px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
-.container-new-goods{
+
+.container-new-goods {
   margin-bottom: 150px;
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 8%;
   align-items: center;
-  /* justify-content: center; */
-} 
-/* rename itemmm => item  and remove unsused code lines 373-376*/
-.itemm{
-  /* display: flex;
+}
+
+.item-new-goods {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
   margin-right: 23px;
   margin-top: 80px;
-  /* combine margins into one line */
-  border: 2px solid #191B1C;
-  background: #191B1C;
+  border: 2px solid #191b1c;
+  background: #191b1c;
   width: 260px;
   height: 325px;
 }
+
 .make-border:hover {
   border: 2px solid white;
   background-color: rgba(16, 63, 70, 0.527);
 }
-.louis{
-  margin-top: 35px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  /* combine all font props into one line everywhere */
-  /* font: 18px/24px Playfair Display; */
-  color: #FFFFFF;
+
+.louis {
+  margin: 35px 100px 0 0;
+  color: #ffffff;
+  font: 18px/24px Playfair Display;
 }
-.text-rub{
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  /* combine all font props */
-  color: #D0D0D0;
+
+.text-rub {
+  color: #d0d0d0;
+  margin-right: 100px;
+  font: normal bold 16px/21px Playfair Display;
 }
+
 .ractangle-brand {
   width: 1920px;
   height: 362px;
-  background:#0F0F0F;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  background: #0f0f0f;
 }
-.for-brand, .brandd {
+
+.for-brand,
+.brandd {
   display: flex;
   margin-right: 30px;
 }
- .our-brand{
+
+.our-brand {
   margin-bottom: 60px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
-  /* combine all font props */
+  font: normal bold 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-} 
+  color: #ffffff;
+}
+
 .line-brand {
   margin-bottom: 30px;
   width: 120px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
+
 .picture {
   width: 1920px;
   height: 400px;
@@ -444,150 +437,135 @@ ul, li {
   /* combine to one line */
   background-image: url(/img/footer.svg);
 }
+
 .container-menu {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.for_a_store{
-  margin-right: 83px;
+.container-menu h2 {
   margin-top: 80px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 32px;
-  /* combine all font props */
-  color: #FFFFFF;
+  line-height: 18px;
   text-transform: uppercase;
+  font: 22px/32px Playfair Display;
+  color: white;
 }
-.txt-lorem {
+.for_a_store {
+  margin-right: 83px;
+  color: #ffffff;
   width: 350px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  /* combine all font props */
-  color: #FFFFFF;
-  text-transform: none;
+}
+.for_a_store p {
+  font: 13px/150% PT Sans;
+  /* color: #ffffff; */
   margin-top: 40px;
 }
+
 .container-for-watch {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
+
 .category {
-  margin-left: -30px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  /* combine all font props */
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-top: 80px;
+  font: 24px/32px Playfair Display;
 }
+
 .container-for-menu {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  width: 360px;
+  align-content: center;
+  width: 365px;
   height: 100px;
-  margin-top: 24px;
+  margin-top: 40px;
 }
+
 .button-watch {
-  display: flex;
-  flex-direction: row;
   color: white;
-  background: #0F0F0F;
-  padding: 10px 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-  /* combine all margins into one line*/
+  background: #0f0f0f;
+  padding: 25px 20px;
+  margin: 20px 20px 0 0;
 }
+
 .newsletter {
-  margin-left: 50px;
-  margin-top: 80px;
-  /* combine all margins into one line*/
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  /* combine all fonts props one line*/
-  color: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-}
-.container-for-newsletter{
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.txt-lorem-ispum {
   width: 350px;
-  height: 42px;
-  margin-top: 40px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  /* same here */
-  text-transform: none;
+  flex-direction: column;
+  color: #ffffff;
 }
-.rectangle-input{
-  font-size: 18px;
+
+.newsletter p {
+  margin-top: 20px;
+  font: 14px/150% PT Sans;
+}
+
+.rectangle-input {
   color: black;
   width: 210px;
   height: 42px;
+  font-size: 18px;
   background: rgba(255, 255, 255, 0.4);
 }
+
 ::placeholder {
   color: white;
 }
+
 .container-subscribe {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .subscribe {
+  border: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 10px 20px;
-  background: #0F0F0F;
+  background: #0f0f0f;
   color: white;
 }
+
 .last-line {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 1920px;
   height: 50px;
-  background: #0F0F0F;
+  background: #0f0f0f;
 }
-.rights{
+
+.rights {
   margin-right: 200px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  /* combine fonts */
-  color: #D0D0D0;
+  font: 12px/16px PT Sans;
+  color: #d0d0d0;
 }
-/* reuse same props with ".rights" */
+
 .figma {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
+  font: normal bold 12px/16px PT Sans;
   text-decoration-line: underline;
-  /* combine fonts */
-  color: #D0D0D0;
+  color: #d0d0d0;
+}
+
+.color-change {
+  animation: color-change 5s infinite;
+  text-align: center;
+}
+
+@keyframes color-change {
+  0% {
+    color: #0f0f0f;
+  }
+  50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #0f0f0f;
+  }
+}
+.animation {
+  animation: color-change 4s infinite;
+}
+.animation6s {
+  animation: color-change 6s infinite;
 }
