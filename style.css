@@ -137,7 +137,7 @@ li {
   font: bold 64px Post No Bills Jaffna;
   text-transform: uppercase;
 }
-.frame p {
+.frame div {
   width: 179px;
   height: 0px;
   border: 2px solid #ffffff;
@@ -183,8 +183,7 @@ li {
   font: 18px/23px PT Sans;
   letter-spacing: 0.1em;
 }
-
-.line1 {
+.right div {
   margin-bottom: 30px;
   width: 120px;
   height: 0px;
@@ -256,36 +255,33 @@ li {
   height: 600px;
 }
 
-.img-collection2018 {
+.img-2018 {
   width: 880px;
 }
-.container-collection2018 {
+.collection2018 {
   width: 1040px;
   background: black;
 }
-.rectangle-2018 {
+.rectangle {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
-
-.txt-collection-2018 {
+.rectangle h2 {
   margin-top: 100px;
   font: 36px/48px Playfair Display;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
-
-.line-collection {
+.rectangle div {
   margin-bottom: 40px;
   width: 120px;
   height: 0px;
   border: 1px solid #ffffff;
 }
-
-.txt2-collection-2018 {
+.rectangle p {
   margin-bottom: 40px;
   width: 471px;
   font: 14px/150% PT Sans;
@@ -313,8 +309,7 @@ li {
   align-items: center;
   color: #ffffff;
 }
-
-.new-arrivals {
+.new-goods h2 {
   background: #191b1c;
   font: normal bold 36px/48px Playfair Display;
   text-align: center;
@@ -323,7 +318,7 @@ li {
   color: #ffffff;
 }
 
-.line-new-arrivals {
+.line-new-goods {
   margin: 40px, 0;
   height: 0;
   width: 120px;
@@ -439,8 +434,7 @@ li {
   height: 100px;
   margin-top: 40px;
 }
-
-.button-watch {
+.container-for-menu a {
   color: white;
   background: #0f0f0f;
   padding: 25px 20px;
@@ -459,14 +453,6 @@ li {
   font: 14px/150% PT Sans;
 }
 
-.rectangle-input {
-  color: black;
-  width: 210px;
-  height: 42px;
-  font-size: 18px;
-  background: rgba(255, 255, 255, 0.4);
-}
-
 ::placeholder {
   color: white;
 }
@@ -476,8 +462,14 @@ li {
   flex-direction: row;
   justify-content: center;
 }
-
-.subscribe {
+.container-subscribe input {
+  color: black;
+  width: 210px;
+  height: 42px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.container-subscribe button {
   border: none;
   display: flex;
   flex-direction: row;
