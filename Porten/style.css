@@ -69,7 +69,7 @@ li {
 }
 .second-line h1 {
   color: #ffffff;
-  font: normal bold 36px Post No Bills Jaffna;
+  font: normal bold 36px PT Sans;
   margin-left: 405px;
   margin-bottom: 23px;
 }
@@ -121,7 +121,7 @@ li {
   width: 100%;
   height: 810px;
   background: no-repeat;
-  background: url(/img/first-screen.jpg);
+  background: url(/Porten/img/first-screen.jpg);
   padding-top: 29px;
 }
 
@@ -140,7 +140,7 @@ li {
 }
 .frame h2 {
   margin: 0;
-  font: bold 64px/1 Post No Bills Jaffna;
+  font: bold 64px/1 PT Sans;
   text-transform: uppercase;
   border-bottom: 2px solid #ffffff;
 }
@@ -413,7 +413,7 @@ li {
 
 .picture {
   height: 400px;
-  background-image: url(/img/footer.svg);
+  background-image: url(/Porten/img/footer.svg);
 }
 
 .container-menu {
