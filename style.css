@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  background: gray;
+  width: 100%;
+}
+.header__class {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gainsboro;
+}
+.header__class h1 {
+  color: black;
+  font-family: sans-serif;
+  margin-left: 15em;
+  font-size: 50px;
+  text-shadow: red;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  display: flex;
+  text-decoration: row;
+  background: teal;
+}
+.projects {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+.projects a {
+  color: white;
+  padding: 15px;
+  margin-left: 30px;
+  border: 1px solid black;
+  background: black;
+  font-size: 30px;
+  font-family: sans-serif;
+}
