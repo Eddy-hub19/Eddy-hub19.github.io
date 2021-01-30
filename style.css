@@ -1,21 +1,32 @@
 body {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0 auto;
   background: gray;
-  width: 100%;
+  width: 1720;
+  background: no-repeat;
+  background-image: url(/img-eddy/more_bereg_minimalizm_100029_1920x1080.jpg);
 }
 .header__class {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: gainsboro;
 }
 .header__class h1 {
   color: black;
-  font-family: sans-serif;
-  margin-left: 15em;
+  font-family: "Indie Flower", cursive;
+  margin-left: 1em;
   font-size: 50px;
-  text-shadow: red;
+}
+.header__class h2 {
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-size: 4em;
+}
+.header__class img {
+  width: 40px;
 }
 ul,
 li {
@@ -29,14 +40,76 @@ button {
 .projects {
   display: flex;
   justify-content: flex-end;
+  align-content: flex-start;
   color: black;
 }
 .projects a {
-  color: white;
+  color: gray;
   padding: 15px;
   margin-left: 30px;
-  border: 1px solid black;
-  background: black;
   font-size: 30px;
   font-family: sans-serif;
+}
+
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+.animation {
+  animation: color-change 4s infinite;
+}
+.header__main {
+  display: flex;
+  justify-content: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+.header__main h3 {
+ color: gray;
+ font-size: 40px;
+}
+#bar {
+  /* Положение */
+  top: -2.1em;
+  right: 2em;
+   /* Поля */
+  padding: .5em;
+  /* Отступы */
+  margin: 0;
+ /* Абсолютное позиционирование */
+  position: absolute;
+   /* Ширина */
+  width: 10em;
+  /* Цвет фона */
+  background: gray;
+  /* Цвет текста */
+  color: white;
+  /* Выравнивание по центру */
+  text-align: center;
+  /* Переход */
+  transition: top 1.5s ease-out 0.5s;
+}
+
+#bar:hover {
+  top: 0;
+}
+.social-networks {
+  font-family: 'Shadows Into Light', cursive;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 50px;
+}
+footer {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
 }

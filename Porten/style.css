@@ -519,11 +519,6 @@ li {
   color: #d0d0d0;
 }
 
-.color-change {
-  animation: color-change 5s infinite;
-  text-align: center;
-}
-
 @keyframes color-change {
   0% {
     color: #0f0f0f;
