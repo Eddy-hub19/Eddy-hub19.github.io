@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0 auto;
   background: gray;
-  width: 1720;
+  width: 1263px;
   background: no-repeat;
   background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
 }
@@ -39,6 +39,7 @@ button {
 }
 .projects {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-content: flex-start;
   color: black;
