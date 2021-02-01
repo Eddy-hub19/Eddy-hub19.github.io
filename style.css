@@ -6,7 +6,7 @@ body {
   background: gray;
   width: 1720;
   background: no-repeat;
-  background-image: url(/img-eddy/more_bereg_minimalizm_100029_1920x1080.jpg);
+  background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
 }
 .header__class {
   display: flex;
