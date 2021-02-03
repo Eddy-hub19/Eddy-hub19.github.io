@@ -1,20 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(/img/minimalism.jpg);
-  }
-  .header__container {
-    margin-left: 50px;
-    display: flex;
-    flex-flow: column;
-  }
-  .header__container h1 {
-      color: brown;
-      font-size: 40px;
-      font-family:monospace;
-  }
-  .Ingradients {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url(/img/minimalism.jpg);
+}
+.header__container {
+  margin-left: 50px;
+  display: flex;
+  flex-flow: column;
+}
+.header__container h1 {
+  color: brown;
+  font-size: 40px;
+  font-family: monospace;
+}
+.alarm {
+  display: flex;
+  position: absolute;
+  left: 350px;
+  top: 100px;
+  color: black;
+  font-size: 20px;
+}
+.Ingradients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 75px;
+}
