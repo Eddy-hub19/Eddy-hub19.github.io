@@ -8,6 +8,9 @@ body {
   background: no-repeat;
   background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
 }
+html {
+  scroll-behavior: smooth;
+}
 .header__class {
   display: flex;
   justify-content: space-between;
