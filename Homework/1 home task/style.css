@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/minimalism.jpg);
+  }
+  .header__container {
+    margin-left: 50px;
+    display: flex;
+    flex-flow: column;
+  }
+  .header__container h1 {
+      color: brown;
+      font-size: 40px;
+      font-family:monospace;
+  }
+  .Ingradients {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
