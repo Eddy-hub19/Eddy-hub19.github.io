@@ -40,19 +40,17 @@ button {
   text-decoration: row;
   background: teal;
 }
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: flex-start;
+.projects { 
   color: black;
+  margin: 0;
+  padding: 0;
 }
 .projects a {
   color: gray;
-  padding: 15px;
-  margin-left: 30px;
   font-size: 30px;
   font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
 }
 
 @keyframes color-change {
