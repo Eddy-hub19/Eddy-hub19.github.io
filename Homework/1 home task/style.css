@@ -27,3 +27,17 @@ body {
   justify-content: center;
   padding-left: 75px;
 }
+.box {
+  width: 200px;
+  height: 200px;
+  border: black;
+  background: cornflowerblue;
+  float: right;
+  margin: 50px 0 0 160px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.change-color:hover {
+  background: red;
+}
