@@ -81,7 +81,7 @@ button {
 }
 #bar {
   /* Положение */
-  top: -9.6em;
+  top: -9.8em;
   right: 2em;
   /* Поля */
   padding: 0.5em;
@@ -104,6 +104,7 @@ button {
 #bar:hover {
   top: 0;
 }
+
 footer {
   color: white;
   display: flex;
