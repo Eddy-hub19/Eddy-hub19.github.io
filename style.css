@@ -1,9 +1,6 @@
 body {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0 auto;
-  background: gray;
   width: 1920px;
   background: no-repeat;
   background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
@@ -13,44 +10,49 @@ html {
 }
 .header__class {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
   color: gainsboro;
 }
 .header__class h1 {
   color: black;
   font-family: "Indie Flower", cursive;
-  margin-left: 1em;
   font-size: 50px;
 }
 .header__class h2 {
   color: black;
   font-family: "Indie Flower", cursive;
   font-size: 4em;
+  margin-right: 125px;
 }
-.header__class img {
-  width: 40px;
+.header_main {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 35px;
+  font-family: 'Indie Flower';
+}
+select {
+  position: relative;
+  bottom: 80px;
+  left: 90px;
+  color: white;
+  background-color: rgb(49, 61, 73);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25px;
+  width: 200px;
+  margin-right: 10em;
+  border-radius: 20px;
+}
+.img-im {
+  position: absolute;
+  left: 800px;
 }
 ul,
 li {
   list-style: none;
-}
-button {
-  display: flex;
-  text-decoration: row;
-  background: teal;
-}
-.projects { 
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-.projects a {
-  color: gray;
-  font-size: 30px;
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
 }
 
 @keyframes color-change {
@@ -64,23 +66,14 @@ button {
     color: white;
   }
 }
+
 .animation {
   animation: color-change 4s infinite;
-}
-.header__main {
-  display: flex;
-  justify-content: center;
-  font-family: "Shadows Into Light", cursive;
-  height: 600px;
-}
-.header__main h3 {
-  color: gray;
-  font-size: 40px;
 }
 #bar {
   /* Положение */
   top: -9.8em;
-  right: 16em;
+  right: 110em;
   /* Поля */
   padding: 0.5em;
   /* Отступы */
@@ -90,13 +83,14 @@ button {
   /* Ширина */
   width: 10em;
   /* Цвет фона */
-  background: gray;
+  background: rgb(101, 126, 150);
   /* Цвет текста */
   color: white;
   /* Выравнивание по центру */
   text-align: center;
   /* Переход */
   transition: top 1.5s ease-out 0.5s;
+  border-radius: 40px;
 }
 
 #bar:hover {
@@ -104,7 +98,11 @@ button {
 }
 
 footer {
+  position: absolute;
+  left: 45%;
+  top: 750px;
   color: white;
+  /*
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
