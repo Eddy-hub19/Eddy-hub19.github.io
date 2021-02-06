@@ -1,3 +1,45 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .header {
-    background: red;
+  border: 5px solid black;
+  width: 1920px;
+  height: 100px;
+  background: lightblue;
+}
+.sector-1 {
+  display: flex;
+  flex-direction: column;
+}
+.hero-sidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.hero {
+  width: 400px;
+  height: 300px;
+  background-color: pink;
+}
+.sidebar {
+  width: 400px;
+  height: 500px;
+  background: rgb(67, 119, 25);
+}
+.main-content {
+  width: 200px;
+  height: 200px;
+  background: orange;
+}
+.extra-content {
+  width: 200px;
+  height: 200px;
+  background: gray;
 }
