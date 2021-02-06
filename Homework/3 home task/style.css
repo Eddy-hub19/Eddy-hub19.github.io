@@ -1,0 +1,24 @@
+body {
+  background: rgba(55, 71, 44, 0.233);
+  color: white;
+}
+.navbar {
+  background: rgb(36, 153, 173) !important;
+}
+.navbar-light .navbar-brand {
+  color: white;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+img {
+  background-color: bisque;
+}
+.card-body {
+  background: rgb(206, 80, 80);
+}
+.btn-primary {
+  background-color: gray;
+}
