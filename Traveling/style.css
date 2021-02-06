@@ -103,15 +103,6 @@ li {
     width: 300px;
     padding-left: 23px;
 }
-.bg-footer {
-    height: 90px;
-    width: 100%;
-    background: teal;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* .bg {
     position: absolute;
     width: 928px;
@@ -124,7 +115,7 @@ li {
     margin-top: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .contact-form h2 {
@@ -133,18 +124,62 @@ li {
     font-weight: bold;
     font-size: 72px;
     line-height: 96px;
+    margin-right: 500px;
 }
 .forms {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+::placeholder {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #c4c4c4;
+}
 input {
     width: 505px;
     height: 54px;
     margin-top: 27.5px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: black
 }
 textarea {
     width: 505px;
     height: 186px;
+    margin-top: 27.5px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: black
+}
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+.submit {
+    width: 295px;
+    height: 55.5px;
+    margin-top: 37.5px;
+    background: #30abae;
+    border-radius: 3px;
+}
+.bg-footer {
+  height: 90px;
+  width: 100%;
+  background: teal;
+  margin-top: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
