@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-}
 a {
   text-decoration: none;
 }
@@ -109,7 +107,7 @@ li {
 .bg {
   width: 928px;
   height: 742px;
-  background:url(/Traveling/img/light.png) left center center no-repeat;
+  /* background:url(/Traveling/img/light.png) left center center no-repeat; */
 }
 .contact-form {
   margin-top: 36px;
