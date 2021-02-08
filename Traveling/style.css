@@ -106,13 +106,17 @@ li {
   width: 300px;
   padding-left: 23px;
 }
+.bg {
+  width: 928px;
+  height: 742px;
+  background:url(/Traveling/img/light.png) left center center no-repeat;
+}
 .contact-form {
   margin-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(/Traveling/img/light.png);
 }
 .contact-form h2 {
   font-family: Playfair Display;
