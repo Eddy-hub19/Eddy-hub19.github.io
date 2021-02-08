@@ -105,9 +105,8 @@ li {
   padding-left: 23px;
 }
 .bg {
-  width: 928px;
-  height: 742px;
-  /* background:url(/Traveling/img/light.png) left center center no-repeat; */
+  background: red;
+
 }
 .contact-form {
   margin-top: 36px;
@@ -115,6 +114,7 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+    background:url(/Traveling/img/light.png) left bottom no-repeat;
 }
 .contact-form h2 {
   font-family: Playfair Display;

@@ -1,18 +1,16 @@
 @media screen and (max-width: 480px) {
   .header-top {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    width: 576px;
     height: 83px;
   }
   .header-image {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .header-image img {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   .nav {
     display: none;
@@ -20,4 +18,17 @@
   .items {
     display: none;
   }
+  .header-main {
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 1087px;
+    height: 772px;
+    background: url(/Traveling/img/mobile-img/Photo.png) center center no-repeat, #c4c4c4;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .youtube {
+        display: none;
+    }
 }
