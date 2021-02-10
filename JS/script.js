@@ -117,7 +117,7 @@
 // alert(mathResult);
 // document.write('<a href="https://matemonline.com/dh/tablica-stepenej/">Піднесення до степення</a>');
 
-// 10. - - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+// 10. -  За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 //         let a = 100; let b = '100'; let c = true;
 
 //         let a = ("100");
@@ -127,7 +127,7 @@
 
 
 
-//- Поставте відповідний оператор в виразах що б вийшов відповідний результат.
+// 11. - Поставте відповідний оператор в виразах що б вийшов відповідний результат.
 // В однакових виразаї не використовувати однакові оператори!!!
 // 5 ? 6 -> true
 // 5 ? 6 -> false
@@ -168,20 +168,20 @@
 
 // - Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.
 
-//   console.log(132 > 100 && 45 < 12 ); //false                                                true|false
-//   console.log(34 > 33 && 23 < 90 ); //false                                          true|false + на - = false 
-//   console.log(99 > 100 && 45 > 12 ); //false                                                 false|true
-//   console.log(132 > 100 || 45 < 12 ); //true                                                 true|false
-//   console.log(111 > 11 || 45 < 111 ); //true                                                 true|true
-//   console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); //true      (true|true) = true | (true|false)=true
-//   console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) ); //false      (true|true) = true | (true\false) = false
-//   console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); //false   (true|false)= false| (true|false) = false
-//   console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 )); //false      (true|true) = true | (false|true) = false
-//   console.log(!!'-1'); //true 
-//   console.log(!!-1); //true
-//   console.log(!!'0'); //true
-//   console.log(!!'null'); //true 
-//   console.log(!!'undefined'); //true
-//   console.log(!!(3/'owu')); //false
-//   console.log((111 > 11 || 45 < 111) ||  !!'0'); //true
-//   console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); //false
+  console.log(132 > 100 && 45 < 12 ); //false                                                true|false
+  console.log(34 > 33 && 23 < 90 ); //false!true                                          true|false + на - = false 
+  console.log(99 > 100 && 45 > 12 ); //false                                                 false|true
+  console.log(132 > 100 || 45 < 12 ); //true                                                 true|false
+  console.log(111 > 11 || 45 < 111 ); //true                                                 true|true
+  console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); //true      (true|true) = true | (true|false)=true
+  console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) ); //true      (true|true) = true | (true\false) = false
+  console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); //false   (true|false)= false| (true|false) = false
+  console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 )); //false!true      (true|true) = true | (false|true) = false
+  console.log(!!'-1'); //true 
+  console.log(!!-1); //true
+  console.log(!!'0'); //true
+  console.log(!!'null'); //true 
+  console.log(!!'undefined'); //true
+  console.log(!!(3/'owu')); //false
+  console.log((111 > 11 || 45 < 111) ||  !!'0'); //true
+  console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); //false
