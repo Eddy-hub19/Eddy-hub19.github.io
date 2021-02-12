@@ -278,8 +278,8 @@
 
 // Математичні оператори
 
-// console.log(true+2);
-// console.log(false+2);
+// console.log(true + 2);
+// console.log(false + 2);
 // console.log(10 + "1");
 // console.log(10 - "1");
 
@@ -289,7 +289,15 @@
 // console.log(age / "5");
 // //////////////////////////
 
+// Оператор перевірки типу 'typeof'
+
 // console.log(typeof age);
 // console.log(typeof true);
 // console.log(typeof "Hello");
 // console.log(typeof NaN);
+
+
+//if (i % 2 != 0) - Умова перевірки на не парне число
+
+// if(i % 2 == 0) Умова перевірки на парне число
+
