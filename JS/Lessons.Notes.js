@@ -274,7 +274,7 @@
 // document.write((2+2)*2);
 // document.write('<hr>');
 // document.write(10 % 3);
- //////////////////////////
+//////////////////////////
 
 // Математичні оператори
 
@@ -300,4 +300,433 @@
 //if (i % 2 != 0) - Умова перевірки на не парне число
 
 // if(i % 2 == 0) Умова перевірки на парне число
+
+// IF - ELSE - IF
+
+// let res = num % 2; // = 0 Если остаток от деления будет эквивалентен 0 это означает,что число парное 
+// let res = num % 2; // != Если остаток от деления будет не эквивалентен 0 то он будет парным 
+
+
+// let num = 10;
+
+// if (num % 11 ==0) {
+//     console.log('Even'); //even - парное
+// } else {
+//     console.log('odd'); //odd - не парное
+// }
+
+// Светофор
+
+// let color = 'green';
+// if (color == 'green') {
+//     console.log('go');
+// } else if (color == 'yellow') {
+//     console.log('wait');
+// } else if (color == 'red') {
+//     console.log('stop');
+// }else {
+//     console.log('default');
+// }
+
+// let num = 68;
+
+// if (num % 2 == 0 || num % 3 == 0) {
+//     console.log('this number is multiple 2 & 3');
+// }
+
+// SWITCH
+
+// let password = ('25818')
+// switch (password) {
+//     case '25818':
+//         console.log('case1');
+//         break;
+//     case '1111':
+//         console.log('case2');
+//         break;
+//     case '2222':
+//         console.log('case3');
+//         break;
+//     default:
+//         console.log('def');
+// }
+
+//OBJECT
+
+// let obj = {
+//     name: 'Ed',
+//     age: 20,
+//     exp: '5 mouth',
+//     wife: {
+//         name: 'Anya',
+//         age: 18
+//     }
+// };
+
+// console.log(obj.wife.name);
+// let key = 'name';
+// console.log(obj['wife'][key]); // Асоциитивные массивы
+// obj.age= 21;
+// console.log(obj);
+// obj.newProperty = 'new prop';
+// obj['newProperty'] = 'new prop';
+// console.log(obj);
+// delete obj.newProperty;
+// console.log(obj);
+
+
+
+// Примитивы и сылочные типы данных
+
+// let a = 10
+// let b = a * 2;
+// console.log(a, b);
+// console.log(a);
+// let user1 = {
+//     name: 'Vasya' 
+// };
+
+// let user2 = user1;
+// user2.name = 'Petya'
+// console.log(user1);
+
+// FOR OF
+
+// let users = [
+//     { name: 'vasya', age: 31, status: false }, // 0
+//     { name: 'petya', age: 30, status: true }, // 1
+//     { name: 'kolya', age: 29, status: true }, // 2
+//     { name: 'olya', age: 28, status: false }, // 3
+//     { name: 'max', age: 30, status: true }, // 4..
+//     { name: 'anya', age: 31, status: false },
+//     { name: 'oleg', age: 28, status: false },
+//     { name: 'andrey', age: 29, status: true },
+//     { name: 'masha', age: 30, status: true },
+//     { name: 'olya', age: 31, status: false },
+//     { name: 'max', age: 31, status: true },
+// ]
+// console.log(users[0]);
+// console.log(users[2]);
+// console.log(users[3]);
+// console.log(users[4]);
+// console.log(users[5]);
+// console.log(users[6]);
+// console.log(users[7]);
+// console.log(users[8]);
+// console.log(users[9]);
+// console.log(users[10]);
+
+
+// FOR OF
+
+// for (let x of users) {
+//     console.log('Hello');
+//     console.log(x);
+// }
+
+// FOR EACH
+
+// Он идёт от начала и до конца.цыкл всегда идёт от начала и до конца
+
+// Использование фильтрации буллинга например TRUE
+// Почему не надо делать сравнения здесь,потому,что статус уже будет TRUE или FALSE
+
+// for (const user of users) {
+//     if (user.status == true {
+//         console.log(user);
+//     }
+// }
+
+// for (const user of users) {
+//     if (user.status) {
+//         console.log(user);
+//     }
+// }
+
+// Использование фильтрации буллинга например FALSE
+
+// for (const user of users) {
+//     if (!user.status) {
+//         console.log(user);
+//     }
+// }
+
+// let a = 0
+// a = a + 1; более динaмичнa можно Множить _*_ и  Делить _/_
+// a += 1; в таком примере можно только декриминтировать или инкриминтировать
+// a ++; --a
+// ++ a; a--
+// console.log(a); 
+// let a = 0;
+// let b = ++a; Если впереди префикс ++ тогда она инкриминтирует
+// console.log(b);
+
+// FOR
+
+// let users = [
+//     { name: 'vasya', age: 31, status: false }, // 0
+//     { name: 'petya', age: 30, status: true }, // 1
+//     { name: 'kolya', age: 29, status: true }, // 2
+//     { name: 'olya', age: 28, status: false }, // 3
+//     { name: 'max', age: 30, status: true }, // 4..
+//     { name: 'anya', age: 31, status: false }, // 5
+//     { name: 'oleg', age: 28, status: false }, // 6
+//     { name: 'andrey', age: 29, status: true }, // 7
+//     { name: 'masha', age: 30, status: true }, // 8
+//     { name: 'olya', age: 31, status: false }, // 9
+//     { name: 'max', age: 31, status: true }, // 10
+// ]
+
+// for (let index = 0; index < users.length; index++) {
+//     if (users[index].age > 30) {
+//         console.log(users[index]);
+//     }
+// }
+
+//WHILE
+
+// let users = [
+//     { name: 'vasya', age: 31, status: false }, // 0
+//     { name: 'petya', age: 30, status: true }, // 1
+//     { name: 'kolya', age: 29, status: true }, // 2
+//     { name: 'olya', age: 28, status: false }, // 3
+//     { name: 'max', age: 30, status: true }, // 4..
+//     { name: 'anya', age: 31, status: false }, // 5
+//     { name: 'oleg', age: 28, status: false }, // 6
+//     { name: 'andrey', age: 29, status: true }, // 7
+//     { name: 'masha', age: 30, status: true }, // 8
+//     { name: 'olya', age: 31, status: false }, // 9
+//     { name: 'max', age: 31, status: true }, // 10
+// ]
+
+// let index = 0;
+// while (index < users.length) {
+//     console.log(users[index]);
+//     index++;
+// }
+
+// let users = [
+//     { name: 'vasya', age: 31, status: false }, // 0
+//     { name: 'petya', age: 30, status: true }, // 1
+//     { name: 'kolya', age: 29, status: true }, // 2
+//     { name: 'olya', age: 28, status: false }, // 3
+//     { name: 'max', age: 30, status: true }, // 4..
+//     { name: 'anya', age: 31, status: false }, // 5
+//     { name: 'oleg', age: 28, status: false }, // 6
+//     { name: 'andrey', age: 29, status: true }, // 7
+//     { name: 'masha', age: 30, status: true }, // 8
+//     { name: 'olya', age: 31, status: false }, // 9
+//     { name: 'max', age: 31, status: true }, // 10
+// ];
+// console.log(users);
+// users.push(1, 2, 3, 4);
+// users.shift();
+// users.pop();
+// users.pop();
+// console.log(users);
+// users.reverse();
+// users.splice(1, 2, {name: 'kokos'});
+
+// let sliceArray = users.slice(0,4)
+// console.log(sliceArray);
+// console.log(users);
+
+// let indexOf = users.indexOf({name: 'vasya', age: 31, status: false })
+// console.log(indexOf);
+
+// function add(a, b) {
+//     return a + b;
+// }
+// function minus(a, b) {
+//     return a - b;
+// }
+// function multiply(a, b) {
+//     return a * b;
+// }
+
+// ФУНКЦИИИ
+
+// ДЕКЛАРИРОВАНИЕ
+
+// let x = calculator(10, 20, '*')
+// console.log(x);
+
+// function calculator(a, b, action) {
+//     console.log(arguments);
+//     let result;
+//     if (action == '+') {
+//         result = add(a, b);
+//     } else if (action == '-') {
+//         result = minus(a, b);
+//     } else if (action == '*') {
+//         result = multiply(a, b);
+//     }
+//     return result;
+// }
+
+// Выражение
+
+// let foo = function (x, y) {
+//     return x + y * x
+// }
+
+// console.log(foo);
+// let bar = foo;
+// let quest = bar;
+// console.log(quest(10, 20));
+
+// (function (a) {
+//     console.log('self invoke', a);
+//     //return undefined;
+// }
+// )('args');
+
+// let user = {
+//     name: 'vasya',
+//     greeting: function () {
+//         console.log('Hello my name is', this.name);
+//     }
+// }
+// user.greeting();
+
+// let user2 = {
+//     name: 'petya',
+//     greeting: function () {
+//         console.log('Hello my name is', this.name); // Контекст
+//     }
+// }
+// user2.greeting();
+
+
+// let user = {
+//     name: 'Vasya',
+//     greeting: function () {
+//         console.log(`Hello my name is - ${this.name}`); // этот способ лучше
+//         // console.log("Hello my name is", this.name);
+//         // console.log("Hello my name is" + this.name);
+//     }
+// }
+
+// user.greeting();
+
+// let userJSON = JSON.stringify(user); // JSON Формат строки который приспособлен для передачи информации но не поведений
+// console.log(user);
+// console.log(/*typeof*/ userJSON);
+
+// let parse = JSON.parse(userJSON);
+// console.log(parse);
+
+// Функции Масcивов
+
+let users = [
+    { name: 'vasya', age: 31, status: false }, // 0
+    { name: 'petya', age: 30, status: true }, // 1
+    { name: 'kolya', age: 29, status: true }, // 2
+    { name: 'olya', age: 28, status: false }, // 3
+    { name: 'max', age: 30, status: true }, // 4..
+    { name: 'anya', age: 31, status: false }, // 5
+    { name: 'oleg', age: 28, status: false }, // 6
+    { name: 'andrey', age: 29, status: true }, // 7
+    { name: 'masha', age: 30, status: true }, // 8
+    { name: 'olya', age: 31, status: false }, // 9
+    { name: 'max', age: 31, status: true }, // 10
+];
+
+// let userFilter = users.filter(function (user, index, array) {
+//     console.log(user, index, array);
+//     // if (user.age > 30) {
+//     //     return true;
+//     // }
+//     return user.age > 30;
+// }); console.log(userFilter);
+
+// -- SORT --
+
+// let sort = users.sort(function (userCurrent, userNext) {
+//     // console.log(userCurrent, userNext);
+//     return userNext.age - userCurrent.age ; // 
+// })
+// console.log(sort);
+
+// -- MAP --
+
+// let map = users.map(function (user /*index, array*/) {
+//     user.age = user.age + 20;
+//     return user;
+// });
+// console.log(map);
+
+// -- FIND --
+
+// let find = users.find(function (user) {
+//     return user.name == 'vasya'
+// })
+// console.log(find);
+
+// -- SOME --
+
+// let some = users.some(function (user) {
+//     return user.age > 30;
+// })
+// console.log(some);
+
+// -- EVERY --
+
+// let every = users.every(function (user) {
+//     return user.age > 25;
+// })
+// console.log(every);
+
+// -- REDUCE --
+
+// let reduce = [10, 20, 30, 40].reduce(function (a, b) {
+//     console.log(a, b);
+//     return a + b;
+// })
+
+// console.log(reduce);
+
+// CALLBACK
+
+// function calculate(a, b, callback) {
+//     let result = callback(a, b);
+//     return result;
+// }
+
+// let res = calculate(10, 20, function (a, b) {
+//     return 10 + 20;
+// })
+// console.log(res);
+
+// INCREMENT
+
+// function outer() {
+//     let x = 0;
+
+//     return function () {
+//         return ++x;
+//     }
+// }
+// let returnedIncrement = outer();
+// console.log(returnedIncrement());
+// console.log(returnedIncrement());
+
+// PRiVAT
+
+// function privatVarObjectGeneretor(params) {
+//     let obj = {
+//         name: 'vasya'
+//     }
+//     return {
+//         getName: function () {
+//             return obj.name
+//         },
+//         setName: function (newName) {
+//             obj.name = newName;
+//         }
+//     }
+// }
+// let obj1 = privatVarObjectGeneretor();
+// obj1.setName('Petya');
+// console.log(obj1.getName());
 
