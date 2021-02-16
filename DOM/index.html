@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .queen {
+      background: cadetblue;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>DOM</h1>
+    <div id="target">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium impedit saepe sequi nemo ullam culpa sit
+      ab quisquam aperiam voluptas reprehenderit quam modi, ad, at, vitae alias neque totam?
+    </div>
+    <div class="acdc">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quos fugiat repellat accusamus earum omnis quidem
+      dolorem ratione atque minus maxime iure neque quas veritatis consectetur porro cumque optio similique iusto
+      deserunt! Nam cum praesentium odio exercitationem consequuntur maxime dignissimos!
+    </div>
+    <script>
+        // // Заміна (document.write) Побудова структури
+        // let div = document.createElement('div'); // Створити елемент
+        // div.innerText = ' DOM '  // Наповнити інфою
+        // div.style.background="silver"; // Можна стилізувати
+        // div.classList.add('target');    // Можна давати класси
+
+        // document.body.appendChild(div); // Додати дочірній елемент
+
+      // let user = {
+      //   name: "vasya",
+      //   age: 123,
+      //   wife: {
+      //     name: "anna",
+      //     age: 18,
+      //     status: false,
+      //     parents: [
+      //       { type: "father", name: "max", age: 65 },
+      //       { type: "mather", name: "olga", age: 60 },
+      //     ],
+      //   },
+      // };
+      //   console.log(user.wife.parents[1].name);
+      //   for (const parent of user.wife.parents) {
+      //     console.log(parent);
+      //   }
+      // Сегмент для того,щоб провірити,яка кількість філдів існує в об`єкті
+      //   let userKeys = [];
+      //   for (let fieldName in user) {
+      //     console.log(fieldName);
+      //     userKeys.push(fieldName);
+      //   }
+      //   let keys = Object.keys(user);
+      //   console.log(keys);
+
+      // REFERENSE
+
+      //   console.log(user);
+      //   let user2 = user;
+      //   user2.status = true; //Ярлик
+
+      //   let i = 0;
+      //   let a = i;
+      //   a++;
+      //   console.log(a);
+      //   console.log(i);
+
+      //   console.log(document.head);
+      //   console.log(document.body);
+      //   console.log(document.body.children);
+      //   console.log(document.body.children[0]);
+
+      //Костилятіна))
+
+      //   let target = document.getElementById("target");
+      //   console.log(target);
+      //   target.innerText = 'DOM DOm'
+      //   target.style.background = 'red';
+      //   target.style.marginTop = '50px';
+
+      //   let divlist = document.getElementsByTagName("div");
+      //   console.log(divlist);
+
+      //   for (const divElement of divlist) {
+      //     divElement.innerText = "!!!!!!!!!!!!!!!!!!!";
+      //   }
+
+      //   target.classList.add("queen");
+      //   target.classList.remove("queen");
+      //   console.log(classlist);
+
+      //   let acdcList = document.getElementsByClassName("acdc");
+      //   for (const acdcElement of acdcList) {
+      //     acdcElement.classList.add("queen");
+      //     acdcElement.classList.add("queen1");
+      //     acdcElement.classList.add("queen2");
+      //   }
+      //   console.log(acdcList);
+    </script>
+  </body>
+</html>
