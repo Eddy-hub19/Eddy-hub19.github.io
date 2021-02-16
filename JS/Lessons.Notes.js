@@ -730,3 +730,67 @@ let users = [
 // obj1.setName('Petya');
 // console.log(obj1.getName());
 
+// for (let i = arr1.length - 1; i >= 0; i--) { //-- Зворотній фор
+//     const bElement = b[i]
+// }
+
+// Фор ін витягує тільки назву ключа, !не значення! ФОР Ін працює тільки для об`єкстів
+
+// let user = { name: 'vasya', age: 123, status: false };
+// for (const key in user) {
+//     console.log(key, user[key]);
+// }   
+
+// const arr1 = [11, 22, 33, 44]
+// for (const number of arr1) {
+//     if (number > 20) {
+//         console.log(number);
+//     }
+// }
+
+
+// for (let i = 0; i < 5; i++) /* Зовнішній цикл */ {
+//     for (let j = 0; j < 3; j++) /* Внутршіній цикл */ {
+//         console.log(i, j);
+//     }
+// }
+
+
+// for (let i = 0; i < 2; i++) /* Зовнішній цикл */ {
+//     for (let j = 0; j < 60; j++) /* Внутршіній цикл */ {
+//         console.log(i, j);
+//     }
+// }
+
+// SIBLING  ELEMENTS IN ARRAY
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i]);     // curent element
+//     console.log(arr1[i - 1]); // next sibling
+//     console.log(arr1[i + 1]); // previous sibling
+// }
+
+// SWAP EVERY 3
+
+// let arr1 = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100100, 200200]
+
+// for (let i = 0; i < arr1.length; i++) { Через Іф зробив через кожний третій
+//     if (i % 3 == 0 && i != 0) {
+//        arr1[i] = 'qwertyuiop'
+//     }
+// }
+
+// for (let i = 0; i < arr1.length; i += 3) {
+//    arr1[1] = 'qwerty'
+//    console.log(arr1);
+// }
+
+//SPLICE
+
+// let splicedElements = arr1.splice(0, 2, 'Ed', 'Areal');
+// console.log(arr1, splicedElements);\
+
+// SLICE
+
+// let segment = arr1.slice(3, 6);
+// console.log(segment, arr1);
