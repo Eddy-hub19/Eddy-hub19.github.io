@@ -618,19 +618,19 @@
 
 // Функции Масcивов
 
-let users = [
-    { name: 'vasya', age: 31, status: false }, // 0
-    { name: 'petya', age: 30, status: true }, // 1
-    { name: 'kolya', age: 29, status: true }, // 2
-    { name: 'olya', age: 28, status: false }, // 3
-    { name: 'max', age: 30, status: true }, // 4..
-    { name: 'anya', age: 31, status: false }, // 5
-    { name: 'oleg', age: 28, status: false }, // 6
-    { name: 'andrey', age: 29, status: true }, // 7
-    { name: 'masha', age: 30, status: true }, // 8
-    { name: 'olya', age: 31, status: false }, // 9
-    { name: 'max', age: 31, status: true }, // 10
-];
+// let users = [
+//     { name: 'vasya', age: 31, status: false }, // 0
+//     { name: 'petya', age: 30, status: true }, // 1
+//     { name: 'kolya', age: 29, status: true }, // 2
+//     { name: 'olya', age: 28, status: false }, // 3
+//     { name: 'max', age: 30, status: true }, // 4..
+//     { name: 'anya', age: 31, status: false }, // 5
+//     { name: 'oleg', age: 28, status: false }, // 6
+//     { name: 'andrey', age: 29, status: true }, // 7
+//     { name: 'masha', age: 30, status: true }, // 8
+//     { name: 'olya', age: 31, status: false }, // 9
+//     { name: 'max', age: 31, status: true }, // 10
+// ];
 
 // let userFilter = users.filter(function (user, index, array) {
 //     console.log(user, index, array);
