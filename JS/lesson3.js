@@ -334,9 +334,13 @@
 // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
 // Записати цей об'єкт в новий масив
 // Частковий приклад реультату:
-// let usersWithCities = 
-//[{id: 1, name: 'vasya', age: 31, status: false, address: 
-//{user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+let usersWithCities = [{
+    id: 1,
+    name: 'vasya',
+    age: 31,
+    status: false,
+    address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}
+}]
 
 let usersWithId = [
     { id: 1, name: 'vasya', age: 31, status: false },
@@ -351,25 +355,8 @@ let citiesWithId = [
     { user_id: 4, country: 'USA', city: 'Miami' },
 ]
 
-// let result = [];
-
-// for (let i = 0; i < usersWithId.length; i++) {
-//     result.push(usersWithId[i])
-//     console.log(usersWithId[i]);
-// }
-// let newObject
-
-// let formsForUser = [
-//     { id: 1, name: 'vasya', age: 31, status: false },
-//     { id: 2, name: 'petya', age: 30, status: true },
-//     { id: 3, name: 'kolya', age: 29, status: true },
-//     { id: 4, name: 'olya', age: 28, status: false },
-// ];
-// formsForUser.push({adress: 'Ukraine'});
-// console.log(formsForUser);
-// console.log(formsForUser);
-
-// let user = users.find(item => item.id == 1);
+// let user = citiesWithId.find(item => item.id == 1);
+// console.log("test: ", user);
 
 //1.Пройтись по циклу першого массива(userWithId) !
 //2.Створити новий об`єкт який включає всі властивості першого массиву(name,age,status)
