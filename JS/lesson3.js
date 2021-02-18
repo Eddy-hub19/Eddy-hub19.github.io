@@ -1,5 +1,62 @@
-// 1 - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
+// let users = [{
+//     name: 'vasya',
+//     age: 31,
+//     status: false,
+//     address: { city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1 }
+// }, {
+//     name: 'petya',
+//     age: 30,
+//     status: true,
+//     address: { city: 'New York', country: 'USA', street: 'East str', houseNumber: 21 }
+// }, {
+//     name: 'kolya',
+//     age: 29,
+//     status: true,
+//     address: { city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78 }
+// }, {
+//     name: 'olya',
+//     age: 28,
+//     status: false,
+//     address: { city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56 }
+// }, {
+//     name: 'max',
+//     age: 30,
+//     status: true,
+//     address: { city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39 }
+// }, {
+//     name: 'anya',
+//     age: 31,
+//     status: false,
+//     address: { city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5 }
+// }, {
+//     name: 'oleg',
+//     age: 28,
+//     status: false,
+//     address: { city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90 }
+// }, {
+//     name: 'andrey',
+//     age: 29,
+//     status: true,
+//     address: { city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33 }
+// }, {
+//     name: 'masha',
+//     age: 30,
+//     status: true,
+//     address: { city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1 }
+// }, {
+//     name: 'olya',
+//     age: 31,
+//     status: false,
+//     address: { city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4 }
+// }, {
+//     name: 'max',
+//     age: 31,
+//     status: true,
+//     address: { city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45 }
+// }];
 
+
+// 1 - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 // let person = {
 //     person1: 'Max', age: 20, status: true,
 //     person2: 'Petya', age: 25, status: false,
@@ -9,7 +66,6 @@
 // };
 
 // 2 - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
-
 
 // let webDevelopers = {
 //     nickname: 'Max',
@@ -222,8 +278,111 @@
 // { name: 'max', age: 30, status: true, skills: ['mysql', ',mongo'] }];
 
 // for (let i = 0; i < users.length; i++) {
-//     console.log(i);
-//     for (const j in users.length) {
-//         console.log(users[j]);
+//     console.log(users[i]);
+//     for (let j = 0; j < users[j].skills.length; j++) {
+//         console.log(users[i].skills[j]);
 //     }
 // }
+
+
+//19 - За допомоги циклу проітерувати  масив users, записати кожного юзера в свій блок за допомоги document.createElement. Всі данні в одному блоці.
+//20 - За допомоги циклу проітерувати  масив users, записати кожного юзера в свій блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+//21 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+//18 - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+
+// let result = [];
+// for (let i = 0; i < users.length; i++) {
+//     result.push(users[i].address);
+//     console.log(users[i].address);
+// };
+// let map = users.map(function (user) {
+// console.log(user.address);
+//     return user.address.city;
+// });
+// console.log(map);
+// console.log(result);
+
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в свiй блок за допомоги document.createElement. Всі данні в одному блоці.
+// let createBlock = document.createElement('ul');
+
+// for (let j = 0; j < users.length; j++) {
+//     let createBlock = document.createElement('ul');
+//     createBlock.innerHTML = `<li>${users[j].name}</li> `;
+//     document.body.append(createBlock);
+// }
+
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в свій блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+
+// for (let j = 0; j < users.length; j++) {
+//     let createBlock = document.createElement('ul');
+//     createBlock.innerHTML = `<li>${users[j].name} 
+//     <ul> 
+//         <li>age : ${users[j].age}</li> 
+//         <li>status : ${users[j].status}</li> 
+//         <li>address : ${users[j].address.country}, ${users[j].address.city}, ${users[j].address.street}</li> 
+//      </ul> 
+
+//      </li> `;
+//     document.body.append(createBlock);
+// }
+
+// - Дано 2 масиви з рівною кількістю об'єктів.
+// Масиви:
+//  let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+//  let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+// Записати цей об'єкт в новий масив
+// Частковий приклад реультату:
+// let usersWithCities = 
+//[{id: 1, name: 'vasya', age: 31, status: false, address: 
+//{user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+
+let usersWithId = [
+    { id: 1, name: 'vasya', age: 31, status: false },
+    { id: 2, name: 'petya', age: 30, status: true },
+    { id: 3, name: 'kolya', age: 29, status: true },
+    { id: 4, name: 'olya', age: 28, status: false },
+];
+let citiesWithId = [
+    { user_id: 3, country: 'USA', city: 'Portland' },
+    { user_id: 1, country: 'Ukraine', city: 'Ternopil' },
+    { user_id: 2, country: 'Poland', city: 'Krakow' },
+    { user_id: 4, country: 'USA', city: 'Miami' },
+]
+
+// let result = [];
+
+// for (let i = 0; i < usersWithId.length; i++) {
+//     result.push(usersWithId[i])
+//     console.log(usersWithId[i]);
+// }
+// let newObject
+
+// let formsForUser = [
+//     { id: 1, name: 'vasya', age: 31, status: false },
+//     { id: 2, name: 'petya', age: 30, status: true },
+//     { id: 3, name: 'kolya', age: 29, status: true },
+//     { id: 4, name: 'olya', age: 28, status: false },
+// ];
+// formsForUser.push({adress: 'Ukraine'});
+// console.log(formsForUser);
+// console.log(formsForUser);
+
+// let user = users.find(item => item.id == 1);
+
+//1.Пройтись по циклу першого массива(userWithId) !
+//2.Створити новий об`єкт який включає всі властивості першого массиву(name,age,status)
+//3.Додати властивість адрес до нового об`єкту створенного вище
+//4.Адресу знайти за допомою методу (find) find по user_id в массиві citiesWithId
+//5.Вставити новий об`єкст в result
+
+// let users = [
+//     {id: 1, name: "Вася"},
+//     {id: 2, name: "Петя"},
+//     {id: 3, name: "Маша"}
+//   ];
+
+//   let user = users.find(item => item.id == 1);
+
+//   alert(user.name); // Вася
