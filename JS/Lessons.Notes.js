@@ -145,6 +145,7 @@
 
 
 // //Цикл для тоого,що пройтись по всьому
+
 // // Якщо треба пробігтись від старту до кінця,можно використовувати цей цикл
 // for (const name of names) {
 //     console.log(name);
@@ -648,7 +649,7 @@
 // })
 // console.log(sort);
 
-// -- MAP --
+// -- MAP -- це щось схоже до циклу,але тут важливу роль відіграє return
 
 // let map = users.map(function (user /*index, array*/) {
 //     user.age = user.age + 20;
@@ -677,7 +678,7 @@
 // })
 // console.log(every);
 
-// -- REDUCE --
+// -- REKUCE --
 
 // let reduce = [10, 20, 30, 40].reduce(function (a, b) {
 //     console.log(a, b);
