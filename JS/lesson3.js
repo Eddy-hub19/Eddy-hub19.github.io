@@ -334,42 +334,52 @@
 // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
 // Записати цей об'єкт в новий масив
 // Частковий приклад реультату:
-let usersWithCities = [{
-    id: 1,
-    name: 'vasya',
-    age: 31,
-    status: false,
-    address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}
-}]
+// let usersWithCities = [{
+//     id: 1,
+//     name: 'vasya',
+//     age: 31,
+//     status: false,
+//     address: { user_id: 1, country: 'Ukraine', city: 'Ternopil' }
+// }]
 
-let usersWithId = [
-    { id: 1, name: 'vasya', age: 31, status: false },
-    { id: 2, name: 'petya', age: 30, status: true },
-    { id: 3, name: 'kolya', age: 29, status: true },
-    { id: 4, name: 'olya', age: 28, status: false },
-];
-let citiesWithId = [
-    { user_id: 3, country: 'USA', city: 'Portland' },
-    { user_id: 1, country: 'Ukraine', city: 'Ternopil' },
-    { user_id: 2, country: 'Poland', city: 'Krakow' },
-    { user_id: 4, country: 'USA', city: 'Miami' },
-]
+// let usersWithId = [
+//     { id: 1, name: 'vasya', age: 31, status: false },
+//     { id: 2, name: 'petya', age: 30, status: true },
+//     { id: 3, name: 'kolya', age: 29, status: true },
+//     { id: 4, name: 'olya', age: 28, status: false },
+// ];
+// let citiesWithId = [
+//     { user_id: 3, country: 'USA', city: 'Portland' },
+//     { user_id: 1, country: 'Ukraine', city: 'Ternopil' },
+//     { user_id: 2, country: 'Poland', city: 'Krakow' },
+//     { user_id: 4, country: 'USA', city: 'Miami' },
+// ]
 
-// let user = citiesWithId.find(item => item.id == 1);
-// console.log("test: ", user);
+// let map = users.map(function (user) {
+// console.log(user.address);
+//     return user.address.city;
+// });
+// console.log(map);
+
+
+// let result = [];
+
+// for (let i = 0; i < usersWithId.length; i++) {
+//     let test = citiesWithId.find(item => item.user_id == usersWithId[i].id);
+//     // console.log(address);
+//     let newObj = {
+//         id: usersWithId[i].id,
+//         name: usersWithId[i].name,
+//         age: usersWithId[i].age,
+//         status: usersWithId[i].status,
+//         address: test,
+//     }
+//     result.push(newObj);
+// }
+// console.log(result);
 
 //1.Пройтись по циклу першого массива(userWithId) !
 //2.Створити новий об`єкт який включає всі властивості першого массиву(name,age,status)
 //3.Додати властивість адрес до нового об`єкту створенного вище
 //4.Адресу знайти за допомою методу (find) find по user_id в массиві citiesWithId
 //5.Вставити новий об`єкст в result
-
-// let users = [
-//     {id: 1, name: "Вася"},
-//     {id: 2, name: "Петя"},
-//     {id: 3, name: "Маша"}
-//   ];
-
-//   let user = users.find(item => item.id == 1);
-
-//   alert(user.name); // Вася
