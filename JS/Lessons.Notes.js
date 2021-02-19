@@ -795,3 +795,78 @@
 
 // let segment = arr1.slice(3, 6);
 // console.log(segment, arr1);
+
+
+// RECURSION - Переполняет стэк,как работает рекурсия способность функции вызвать себя в себе самой же
+
+// function foo(start) {
+//     if (start < 10) {
+//         console.log(start);
+//         start++;
+//         foo(start);
+//     }
+// }
+// foo(0)
+
+// DOM - DOCUMENT/OBJECT/MODEL
+
+// Кожний тег сприймається,як об*єкт
+// Типів Узлів є 12 але використовується тільки 3.. Текст,Коментарій і Елемент
+
+// console.log(document.body.children[2].children); /*- 1 способ получать значения*/
+// console.log(document.body.childNodes[5]);
+
+// document.getElementsByTagName !!!
+
+// let lis = document.getElementsByTagName('li') /* Первый способ получить по тегу*/
+// console.log(lis);
+// let index = 0
+// for (const li of lis) {
+//     li.setAttribute('id', 'newId-' + index);
+//     index++
+//     li.style.background = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`;
+//     li.innerText = 'new data' + index;
+// }
+
+// getElementsByClassName !!!
+
+// let lis = document.getElementsByClassName('list') /* Второй способ получить по тегу*/
+// console.log(lis);
+// let index = 0
+// for (const li of lis) {
+//     li.setAttribute('id', 'newId-' + index);
+//     index++
+//     li.style.background = `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)})`;
+//     li.innerText = 'new data' + index;
+// }
+
+// let sendInput = document.getElementById('send');
+// sendInput.style.background = 'teal';
+
+// let company = document.getElementsByClassName('company')[0];
+// // company.classList.add('newClass'); спосіб добавити
+// // company.classList.remove('newClass'); спосіб удалити
+// // console.log(company.classList.contains.company); спосіб взнати чи є клас чи ні
+// console.log(company.classList);
+// company.classList.toggle('xxx'); // Якщо не існує цього класу,то його створити
+
+// let lists = document.querySelector("li"); // Поиск по тегу 'li'
+// console.log(lists);
+
+// parentElement - дозволяє побачити хто батько в цього елемента
+
+// let divElement = document.createElement('div'); // Створювати елементи
+// divElement.innerHTML = '<em>hello</em>';
+
+// divElement.style.background = 'silver';
+// // .cloneNode - Для того,щоб зробити клон
+// document.body.appendChild(divElement)
+// document.body.appendChild(divElement.cloneNode(true));
+// document.body.appendChild(divElement.cloneNode(true));
+
+// // document.body.insertBefore(divElement, document.getElementById('send')); // таким образом мы опеределяем позицию
+
+// // Чем innerHTML отличается от innerText тем,что innerHTML считывает атрибут и что он делает,а innerText - нет!))
+
+// let button = document.getElementById('send')
+// console.log(button.parentElement);
