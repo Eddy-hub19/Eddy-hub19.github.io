@@ -354,6 +354,7 @@
 //     { user_id: 2, country: 'Poland', city: 'Krakow' },
 //     { user_id: 4, country: 'USA', city: 'Miami' },
 // ]
+// ------------------------------------------------------------------------------------
 // usersWithId.push({address: citiesWithId.country})
 // // let findTest = citiesWithId.find(item => item.user_id == usersWithId.id);
 // let map = usersWithId.map(function (user /*index, array*/) {
@@ -361,7 +362,7 @@
 //     return user;
 // });
 // console.log(map);
-
+// ------------------------------------------------------------------------------------
 // let result = [];
 
 // for (let i = 0; i < usersWithId.length; i++) {
@@ -383,3 +384,28 @@
 //3.Додати властивість адрес до нового об`єкту створенного вище
 //4.Адресу знайти за допомою методу (find) find по user_id в массиві citiesWithId
 //5.Вставити новий об`єкст в result
+
+
+// створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
+
+let target1 = document.getElementById('target');
+let target2 = document.getElementsByTagName('div');
+let target3 = document.getElementsByClassName('target');
+console.log(target1);
+console.log(target2);
+console.log(target3);
+
+// - змінити цей текст використовуючи селектори id, class,  tag
+
+target1.innerText = 'EDDYYYYY';
+target2.innerText = 'sjsjsjs'
+target3.innerText = 'sjsjsjs'
+// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+target.style.width = '500px'
+target.style.height = '200px'
+// - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+// - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+
+
