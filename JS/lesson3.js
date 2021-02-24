@@ -354,13 +354,13 @@
 //     { user_id: 2, country: 'Poland', city: 'Krakow' },
 //     { user_id: 4, country: 'USA', city: 'Miami' },
 // ]
-
-// let map = users.map(function (user) {
-// console.log(user.address);
-//     return user.address.city;
+// usersWithId.push({address: citiesWithId.country})
+// // let findTest = citiesWithId.find(item => item.user_id == usersWithId.id);
+// let map = usersWithId.map(function (user /*index, array*/) {
+//     user.address = citiesWithId;
+//     return user;
 // });
 // console.log(map);
-
 
 // let result = [];
 
