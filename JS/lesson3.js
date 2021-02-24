@@ -388,24 +388,97 @@
 
 // створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
 
-let target1 = document.getElementById('target');
-let target2 = document.getElementsByTagName('div');
-let target3 = document.getElementsByClassName('target');
-console.log(target1);
-console.log(target2);
-console.log(target3);
+// let target1 = document.getElementById('target');
+// let target2 = document.getElementsByTagName('div');
+// let target3 = document.getElementsByClassName('target');
+// let elementNodeListOf = document.querySelector('#target');
+// console.log(target1);
+// console.log(target2);
+// console.log(elementNodeListOf);
 
 // - змінити цей текст використовуючи селектори id, class,  tag
 
-target1.innerText = 'EDDYYYYY';
-target2.innerText = 'sjsjsjs'
-target3.innerText = 'sjsjsjs'
+// target1.innerText = 'EDDYYYYY';
+// target2.innerText = 'sjsjsjs';
+// elementNodeListOf.innerText = 'redredredred';
+
 // - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
-target.style.width = '500px'
-target.style.height = '200px'
+
+// target.style.width = '50px';
+// target.style.height = '20px';
 // - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+
+// let createBlock = document.createElement('table');
+// createBlock.innerHTML = `
+// <table border="1">
+//         <tr>
+//           <td>1</td>
+//           <td>2</td>
+//           <td>3</td>
+//         </tr>
+//     </table> `;
+// document.body.append(createBlock);
+
 // - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+
+// for (let i = 0; i < 10; i++) {
+
+//     let createBlock = document.createElement('table.tr');
+//     createBlock.innerHTML = `
+//     <table border="1">
+//         <tr>
+//           <td>1</td>
+//           <td>2</td>
+//           <td>3</td>
+//         </tr>`;
+//     document.body.append(createBlock);
+// }
+
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+
+// for (let i = 0; i < 10; i++) {
+
+//     let createBlock = document.createElement('table.tr');
+//     createBlock.innerHTML = `
+//     <table border="1">
+//         <tr>
+//           <td>1</td>
+//           <td>2</td>
+//           <td>3</td>
+//         </tr>`;
+//     createBlock.style.color = 'blue'
+//     document.body.append(createBlock);
+
+//     for (let j = 0; j < 5; j++) {
+//         let createBlockTable = document.createElement('td');
+//         createBlockTable.innerHTML = `
+//           <td>1</td>`
+//         document.body.appendChild(createBlockTable);
+//     };
+// }
+
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
 
+// let n = prompt('Введите число рядов');
+// let m = prompt('Введите число ячеек');
 
+// for (let i = 0; i < n; i++) {
+
+//     let createBlock = document.createElement('table.tr');
+//     createBlock.innerHTML = `
+//         <table border="1">
+//             <tr>
+//               <td>1</td>
+//               <td>2</td>
+//               <td>3</td>
+//             </tr>`;
+//     createBlock.style.color = 'red'
+//     document.body.append(createBlock);
+
+//     for (let j = 0; j < m; j++) {
+//         let createBlockTable = document.createElement('td');
+//         createBlockTable.innerHTML = `<td>${m}</td>`
+//         createBlockTable.style.color = 'blue'
+//         document.body.appendChild(createBlockTable);
+//     };
+// }
