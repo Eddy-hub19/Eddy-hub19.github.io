@@ -482,3 +482,18 @@
 //         document.body.appendChild(createBlockTable);
 //     };
 // }
+
+// --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
+//  - знайти всі елементі, які мають class
+//  - знайти всі параграфи ,та змінити текст на hello oktenweb!
+//  - знайти всі div та змінити ім колір на червоний
+
+let classElement = document.getElementsByClassName('header__class', 'header_main');
+console.log(classElement);
+let paragraphElement = document.getElementsByTagName('p')
+console.log(paragraphElement);
+let divElement = document.getElementsByTagName('div')
+console.log(divElement);
+
+let querySelectorClass = document.querySelectorAll('.classs')
+console.log(querySelectorClass);

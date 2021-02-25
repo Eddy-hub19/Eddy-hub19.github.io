@@ -870,3 +870,118 @@
 
 // let button = document.getElementById('send')
 // console.log(button.parentElement);
+
+// ----------------------------------------------------------------------------------
+
+// STRING FUNCTION
+// let str = 'okten is cool';
+// let replaceAll = str.replaceAll('o', '0');
+// console.log(replaceAll); // 0kten is c00l
+// console.log(str.toUpperCase());
+
+//FUNCTIONS
+
+document.write(<div>'Hello'</div>) // Що треба зробити для тоого,щоб не копіювати
+document.write(<div>'test'</div>)
+document.write(<div>'Bye'</div>)
+
+// Для цього є функції,якщо більше чим 2 copypast треба обгортати в функцію
+
+function foobar() {
+    document.write(<div>'Hello'</div>)
+    document.write(<div>'test'</div>)
+    document.write(<div>'Bye'</div>)
+}
+foobar(); // Працюй Функція
+
+foobar(); // Працюй
+
+foobar(); // Працюй
+
+// Ми перевикористовуєм одну і ту ж функцію і не копіпастим
+
+// Переходим на ДОМ структуру
+
+// function createDOMElement() {
+//     let element = document.createElement('div');
+//     element.innerText = 'hello world';
+//     document.body.appendChild(element);
+// }
+
+// Argument цее зміна в контексті моєї функції
+// Ячейка для тоого,щоб потім її заповнювати
+// Можна добавляти багато аргументів,та класти туди будьякі типи елементів
+
+// function createDOMElement(tag, txt /*Аргумент*/) {
+//     let element = document.createElement('tag')
+//     element.innerText = 'txt';
+//     document.body.appendChild(element)
+// }
+
+// createDOMElement('div', okten is cool); //Працюй,але заміни на блок
+// createDOMElement('h2', hello world);
+
+
+//FUNCTIONS RETURN
+
+// Можна описувати різні формули
+
+// function calcPerimetr(a, b) {
+//     let result = (a + b) * 2;
+//     console.log(result);
+//     // return undefined;
+//     return result;   // RETURN - потрібен для тоого,щоб я міг користуватись результатами функції надалі
+// }
+
+// // calcPerimetr(100, 20); // 600 // Не можна далі використовувати,ця функція видаляє все після себе
+
+// let perimeter1 = calcPerimetr(100, 200);
+// let perimeter2 = calcPerimetr(200, 300);
+
+// let perimeter = calcPerimetr(perimeter1, perimeter2);
+// console.log(perimeter);
+
+// function calculator(a, b, action) {
+//     let result;
+//     if (action == '+') {
+//         result = a + b;
+//     } else if (action === '-') {
+//         result = a - b;
+//     }
+//     return result;
+// }
+
+// let res1 = calculator(10,20, '+')
+// console.log(res1);
+
+
+// ЗОЛОТЕ ПРАВИЛО - Чи збираюсь я використовувати результат функції,так то пишу return.якщо ні не пишу
+
+// Функція це ліфт а Аргументи - це кнопки ліфта 
+
+//SCOPE
+
+
+
+//FUNC WITH FUNC
+
+
+//HOISTING
+
+
+//FUNC EXPRESSION
+
+
+//ORROW
+
+
+//ARGUMENTS
+
+
+//RECURCION
+
+
+//SELFINVOKE
+
+
+//LOCAL FUNCTION
