@@ -354,11 +354,11 @@
 //     { user_id: 2, country: 'Poland', city: 'Krakow' },
 //     { user_id: 4, country: 'USA', city: 'Miami' },
 // ]
-// ------------------------------------------------------------------------------------
-// usersWithId.push({address: citiesWithId.country})
-// // let findTest = citiesWithId.find(item => item.user_id == usersWithId.id);
+// // ------------------------------------------------------------------------------------
+
 // let map = usersWithId.map(function (user /*index, array*/) {
-//     user.address = citiesWithId;
+//     let findTest = citiesWithId.find(item => item.user_id == user.id);
+//     user.address = findTest;
 //     return user;
 // });
 // console.log(map);
@@ -421,18 +421,19 @@
 
 // - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
 
+// let table = document.createElement('table');
+
 // for (let i = 0; i < 10; i++) {
 
-//     let createBlock = document.createElement('table.tr');
+//     let createBlock = document.createElement('tr');
 //     createBlock.innerHTML = `
-//     <table border="1">
-//         <tr>
 //           <td>1</td>
 //           <td>2</td>
-//           <td>3</td>
-//         </tr>`;
-//     document.body.append(createBlock);
+//           <td>3</td>`;
+//     table.appendChild(createBlock);
 // }
+
+// document.body.appendChild(table);
 
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
 
@@ -488,12 +489,11 @@
 //  - знайти всі параграфи ,та змінити текст на hello oktenweb!
 //  - знайти всі div та змінити ім колір на червоний
 
-let classElement = document.getElementsByClassName('header__class', 'header_main');
+let classElement = document.querySelectorAll('*[class]')
 console.log(classElement);
-let paragraphElement = document.getElementsByTagName('p')
-console.log(paragraphElement);
-let divElement = document.getElementsByTagName('div')
-console.log(divElement);
-
-let querySelectorClass = document.querySelectorAll('.classs')
-console.log(querySelectorClass);
+// let paragraphElement = document.getElementsByTagName('p')
+// console.log(paragraphElement);
+// let divElement = document.getElementsByTagName('div')
+// console.log(divElement);
+// let querySelectorClass = document.querySelectorAll('.classs')
+// console.log(querySelectorClass);

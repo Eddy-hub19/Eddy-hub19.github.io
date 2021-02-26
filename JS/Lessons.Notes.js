@@ -959,29 +959,141 @@ foobar(); // Працюй
 
 // Функція це ліфт а Аргументи - це кнопки ліфта 
 
+// function printArray(array) {
+//     for (const arrayElement of array) {
+//         console.log(arrayElement);
+//     }
+// }
+
+// let cars = [
+//     { brand: 'Audi', yearOfIssue: 1912, power: 5700, color: 'black' },
+//     { brand: 'Duo', yearOfIssue: 1920, power: 5700, color: 'white' },
+//     { brand: 'Lamborghini', yearOfIssue: 1922, power: 5700, color: 'green' },
+//     { brand: 'Mercedes', yearOfIssue: 1932, power: 5700, color: 'red' },
+//     { brand: 'BMW', yearOfIssue: 1942, power: 5700, color: 'yellow' },
+//     { brand: 'Volkswagen', yearOfIssue: 1512, power: 5700, color: 'blue' },
+//     { brand: 'Ferrari', yearOfIssue: 2000, power: 5700, color: 'black' },
+//     { brand: 'Nissan', yearOfIssue: 2005, power: 5700, color: 'pink' },
+//     { brand: 'Ford', yearOfIssue: 2006, power: 5700, color: 'red' },
+//     { brand: 'Toyota', yearOfIssue: 2010, power: 5700, color: 'black' }
+// ]
+// printArray(cars);
+
 //SCOPE
 
+// function scopeDemo() { // Все,що виводиться не в тілі функції буде помирати
+//     let a = 100500;
+//     var b = 200600;
+// }
+// console.log(a, b); // undefined
 
+// //FUNC WITH FUNC
 
-//FUNC WITH FUNC
+// // Використання однією функції іншою
+// // Функція в функції
 
+// function add(a, b) {
+//     return a + b;
+// }
+// function minus(a, b) {
+//     return a - b;
+// }
 
-//HOISTING
+// function calculate(a, b, action) {
+//     // debugger - Можна зупиняти роботу двіжка і дивитись пошагово
+//     if (action === '+') {
+//         return add(a, b);
+//     }else if (action === '-') {
+//         return minus (a,b);
+//     }
+//     return 'EROR';
+// }
+// calculate(100,200, '+'); // 300
 
+//HOISTING 
+
+//Всплытие
+
+// Функції в хості вспливають на самий верх
+
+// hoist(); // Можна викликати функцію навіть до того,як її створили
+// function hoist() {}
 
 //FUNC EXPRESSION
 
+// let expressionFunc = function (a, b, c) { // Це вже об`єкт
+//     console.log('test');
+// };
+// expressionFunc(10,20,30);
 
 //ORROW
 
+// =>  стрілочна дія
+
+// let expressionFunc = (a, b, c) => { // стрілочна функція
+//     console.log('test');
+// };
+// expressionFunc(10, 20, 30);
+
+// // Упростити
+// let expressionFunc = () => { console.log('test'); };
+// expressionFunc(10, 20, 30);
+
+// // Ще можна упростити
+// let expressionFunc = a => console.log(a); // Якщо один аргумент можна не ставити дужки
+// expressionFunc('hello');
+
+// let expressionFunc = (a, b) => {
+//     let result = a + b;
+//     console.log(result);
+//     return result;
+// };
+// let num = expressionFunc(10, 20);
+
+// let expressionFunc = (a, b) => /*return*/ a + b;
+// let num = expressionFunc(10, 20);
+// console.log(num); //30
 
 //ARGUMENTS
 
-
-//RECURCION
-
-
-//SELFINVOKE
+// function calc(arguments) { // Неважливо скільки аргументів
+//     let bascket = 0;
+//     for (const argument of object) { // Перегрузка методів
+//         bascket += argument;
+//     }
+// }
+// calc(10, 20, 30, 40); // Все йде пошаблонно
+// calc(10, 20, 30, 40, 50);
+// calc(100, 200, 300, -40, 50,5);
 
 
 //LOCAL FUNCTION
+
+// function outer() {
+//     function local() {
+//         console.log('test');
+//     }
+//     local();
+// }
+
+//SELFINVOKE
+
+// В index.html створив button 
+// {/* <button onclick="clickX"> press me </button> */ }
+
+// function clickX() {
+//     console.log('clik');
+// }
+
+//RECURCION
+
+// function increment(num) { // Сама себе викликає кожний раз
+//     if (num > 10) {
+//         return;
+//     }
+//     num++; //Збільшуєм на одиницю
+//     console.log(num);
+//     increment(num);
+// }
+
+// increment(0);
