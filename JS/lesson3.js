@@ -489,8 +489,8 @@
 //  - знайти всі параграфи ,та змінити текст на hello oktenweb!
 //  - знайти всі div та змінити ім колір на червоний
 
-let classElement = document.querySelectorAll('*[class]')
-console.log(classElement);
+// let classElement = document.querySelectorAll('*[class]')
+// console.log(classElement);
 // let paragraphElement = document.getElementsByTagName('p')
 // console.log(paragraphElement);
 // let divElement = document.getElementsByTagName('div')

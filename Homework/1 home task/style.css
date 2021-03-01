@@ -1,43 +1,40 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url(/img/minimalism.jpg);
+    padding: 0;
+    margin: 0 auto;
+    width: 1920px;
+    background: no-repeat;
+    background-image: url(/img/nature.jpg);
 }
-.header__container {
-  margin-left: 50px;
-  display: flex;
-  flex-flow: column;
+
+div>h1 {
+    font-family: "Reggae One", cursive;
+    display: flex;
+    justify-content: center;
+    background: silver;
 }
-.header__container h1 {
-  color: brown;
-  font-size: 40px;
-  font-family: monospace;
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
 }
-.alarm {
-  display: flex;
-  position: absolute;
-  left: 350px;
-  top: 100px;
-  color: black;
-  font-size: 20px;
+
+audio {
+    width: 300px;
+    background: black;
 }
-.Ingradients {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 75px;
+
+@keyframes margin-change {
+    0% {
+        color: red;
+        margin-right: 2px;
+    }
+    50% {
+        color: silver;
+        margin-left: 50%;
+    }
 }
-.box {
-  width: 200px;
-  height: 200px;
-  border: black;
-  background: cornflowerblue;
-  float: left;
-  margin: 50px 0 0 160px;
-  font-size: 50px;
-  color: white;
-  text-align: center;
-}
-.change-color:hover {
-  background: red;
+
+.animation {
+    animation: margin-change 15s infinite;
 }
