@@ -396,7 +396,7 @@
 // console.log(target2);
 // console.log(elementNodeListOf);
 
-// - змінити цей текст використовуючи селектори id, class,  tag
+// змінити цей текст використовуючи селектори id, class, tag
 
 // target1.innerText = 'EDDYYYYY';
 // target2.innerText = 'sjsjsjs';
@@ -408,17 +408,12 @@
 // target.style.height = '20px';
 // - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
 
-// let createBlock = document.createElement('table');
+// let createBlock = document.createElement('tr');
 // createBlock.innerHTML = `
-// <table border="1">
-//         <tr>
 //           <td>1</td>
 //           <td>2</td>
-//           <td>3</td>
-//         </tr>
-//     </table> `;
-// document.body.append(createBlock);
-
+//           <td>3</td>`;
+// document.body.appendChild(createBlock);
 // - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
 
 // let table = document.createElement('table');
@@ -437,63 +432,133 @@
 
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
 
+// let table = document.createElement('table');
+
 // for (let i = 0; i < 10; i++) {
 
-//     let createBlock = document.createElement('table.tr');
+//     let createBlock = document.createElement('tr');
 //     createBlock.innerHTML = `
-//     <table border="1">
-//         <tr>
 //           <td>1</td>
 //           <td>2</td>
-//           <td>3</td>
-//         </tr>`;
-//     createBlock.style.color = 'blue'
-//     document.body.append(createBlock);
-
-//     for (let j = 0; j < 5; j++) {
-//         let createBlockTable = document.createElement('td');
-//         createBlockTable.innerHTML = `
-//           <td>1</td>`
-//         document.body.appendChild(createBlockTable);
-//     };
+//           <td>3</td>`;
+//     table.appendChild(createBlock);
 // }
+// document.body.appendChild(table);
+
+// let table = document.createElement('table');
+
+// for (let i = 0; i < 10; i++) {
+//     let createBlock = document.createElement('tr')
+//     table.appendChild(createBlock);
+
+//     for (let i = 0; i < 5; i++) {
+//         let createBlock1 = document.createElement('td')
+//         createBlock1.innerHTML = `<td>1</td>`
+//         table.appendChild(createBlock1);
+//     }
+// }
+// document.body.appendChild(table);
 
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
 
 // let n = prompt('Введите число рядов');
 // let m = prompt('Введите число ячеек');
 
+// let table = document.createElement('table');
+
 // for (let i = 0; i < n; i++) {
+//     let createBlock = document.createElement('tr')
+//     table.appendChild(createBlock);
 
-//     let createBlock = document.createElement('table.tr');
-//     createBlock.innerHTML = `
-//         <table border="1">
-//             <tr>
-//               <td>1</td>
-//               <td>2</td>
-//               <td>3</td>
-//             </tr>`;
-//     createBlock.style.color = 'red'
-//     document.body.append(createBlock);
-
-//     for (let j = 0; j < m; j++) {
-//         let createBlockTable = document.createElement('td');
-//         createBlockTable.innerHTML = `<td>${m}</td>`
-//         createBlockTable.style.color = 'blue'
-//         document.body.appendChild(createBlockTable);
-//     };
+//     for (let i = 0; i < m; i++) {
+//         let createBlock1 = document.createElement('td')
+//         createBlock1.innerHTML = `<td>1</td>`
+//         table.appendChild(createBlock1);
+//         createBlock1.style.color = 'red'
+//     }
 // }
+// document.body.appendChild(table);
 
 // --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 //  - знайти всі елементі, які мають class
 //  - знайти всі параграфи ,та змінити текст на hello oktenweb!
 //  - знайти всі div та змінити ім колір на червоний
 
-// let classElement = document.querySelectorAll('*[class]')
-// console.log(classElement);
-// let paragraphElement = document.getElementsByTagName('p')
-// console.log(paragraphElement);
-// let divElement = document.getElementsByTagName('div')
-// console.log(divElement);
-// let querySelectorClass = document.querySelectorAll('.classs')
-// console.log(querySelectorClass);
+// let classElement1 = document.querySelectorAll('*[class]');
+// console.log(classElement1);
+
+// let classElement2 = document.getElementsByTagName('p');
+// classElement2.innerText = 'text';
+
+// let classElement3 = document.querySelectorAll('div');
+// console.log(classElement3);
+
+// ---------------------Вирішення Задач з відео---------------------------
+
+// const getElementsByTagName = document.getElementsByTagName('*');
+
+// for (let tag of getElementsByTagName) {
+//     if (tag.getAttribute('id')) {
+//         console.log(tag);
+//     }
+// }
+
+// const elementNodeListOf = document.querySelectorAll(selectors `[id]`);
+// console.log(elementNodeListOf);
+
+// const getElementsByTagName = document.getElementsByTagName(`p`);
+// for (let tag of getElementsByTagName) {
+//     tag.innerText = 'Okten Web'
+// }
+
+// const getElementsByTagName = document.getElementsByTagName(`div`);
+// for (let tag of getElementsByTagName) {
+//     tag.style.background = 'red'
+// }
+
+
+// - є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
+// створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
+// Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+
+// -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
+// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+
+// let rules = [{
+//         title: 'Первое правило Бойцовского клуба.',
+//         body: 'Никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Второе правило Бойцовского клуба.',
+//         body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Третье правило Бойцовского клуба.',
+//         body: 'В схватке участвуют только двое.'
+//     },
+//     {
+//         title: 'Четвертое правило Бойцовского клуба.',
+//         body: 'Не более одного поединка за один раз.'
+//     },
+//     {
+//         title: 'Пятое правило Бойцовского клуба.',
+//         body: 'Бойцы сражаются без обуви и голые по пояс.'
+//     },
+//     {
+//         title: 'Шестое правило Бойцовского клуба.',
+//         body: 'Поединок продолжается столько, сколько потребуется.'
+//     },
+//     {
+//         title: 'Седьмое правило Бойцовского клуба.',
+//         body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+//     },
+//     {
+//         title: 'Восьмое и последнее правило Бойцовского клуба.',
+//         body: 'Новичок обязан принять бой.'
+//     },
+
+// ];
+
+// const arraysH2 = document.getElementsByTagName('h2');
+// document.getElementById

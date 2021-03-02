@@ -881,22 +881,22 @@
 
 //FUNCTIONS
 
-document.write(<div>'Hello'</div>) // Що треба зробити для тоого,щоб не копіювати
-document.write(<div>'test'</div>)
-document.write(<div>'Bye'</div>)
+// document.write(<div>'Hello'</div>) // Що треба зробити для тоого,щоб не копіювати
+// document.write(<div>'test'</div>)
+// document.write(<div>'Bye'</div>)
 
-// Для цього є функції,якщо більше чим 2 copypast треба обгортати в функцію
+// // Для цього є функції,якщо більше чим 2 copypast треба обгортати в функцію
 
-function foobar() {
-    document.write(<div>'Hello'</div>)
-    document.write(<div>'test'</div>)
-    document.write(<div>'Bye'</div>)
-}
-foobar(); // Працюй Функція
+// function foobar() {
+//     document.write(<div>'Hello'</div>)
+//     document.write(<div>'test'</div>)
+//     document.write(<div>'Bye'</div>)
+// }
+// foobar(); // Працюй Функція
 
-foobar(); // Працюй
+// foobar(); // Працюй
 
-foobar(); // Працюй
+// foobar(); // Працюй
 
 // Ми перевикористовуєм одну і ту ж функцію і не копіпастим
 
