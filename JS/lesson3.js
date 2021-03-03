@@ -521,9 +521,22 @@
 // створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
 // Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
+
+// const arraysH2 = document.getElementsByTagName('h2');
+// const content = document.getElementById('content');
+// const ul = document.createElement('ul');
+// for (let h2 of arraysH2) {
+//     const li = document.createElement('li');
+//     li.innerText = h2.innerText;
+//     ul.appendChild(li);
+// }
+// content.appendChild(ul);
+
+
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 // При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 // Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+
 
 // let rules = [{
 //         title: 'Первое правило Бойцовского клуба.',
@@ -560,5 +573,9 @@
 
 // ];
 
-// const arraysH2 = document.getElementsByTagName('h2');
-// document.getElementById
+// НАпоминалка
+// <div id="wrap">
+// <div class="rules rule1">
+//     <h2>Первое правило Бойцовского клуба.</h2>
+//     <p>Никому не рассказывать о Бойцовском клубе.</p>
+// </div>
