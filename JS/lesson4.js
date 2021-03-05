@@ -4,40 +4,75 @@
 
 // function array() {
 //     console.log(people);
-//     return array;
 // }
+// array();
+
+// let array = [1, 2, 3, 4, 5, 6, 7];
+
+// function printArray(arr) {
+//     console.log(arr);
+//     for (const arrElement of arr) {
+//         console.log(arrElement);
+//     }
+// }
+// printArray(array);
 
 // // - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
 
-// const randomNumber = Math.random();
-
-// function randomValue() {
-//     array.push(randomNumber)
+// function createArray(length, min, max) {
+//     // debugger
+//     let arrayRandom = [];
+//     for (let i = 0; i < length; i++) {
+//         arrayRandom.push(Math.floor(Math.random() * (max - min) + min));
+//     }
+//     return arrayRandom;
 // }
-// randomValue()
-
+// const array1 = createArray(10, 10, 100);
+// printArray(array1)
 
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
 
-// function MathNumber(a, b, c) {
-//     Math.min(a, b, c)
+// function returnMinFromThree(a, b, c) {
+//     let min;
+//     let max;
+//     if (a <= b && a <= c) min = a;
+//     if (b <= a && b <= c) min = b;
+//     if (c <= b && c <= a) min = c;
+//     console.log('min');
+//     return min;
 // }
-// MathNumber(20, 56, 90);
+// const mathMin = returnMinFromThree(31, 10, -10);
+// console.log(mathMin);
+
 
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
 
-// function maxNumber(a, b, c) {
-//     let result = Math.max(a, b, c)
-//     return result
+// function returnMaxFromThree(a, b, c) {
+//     if (a >= b && a >= c) max = a;
+//     if (b >= a && b >= c) max = b;
+//     if (c >= b && c >= a) max = c;
+//     console.log('max');
+//     return max;
 // }
-// maxNumber(2, -6, 1, 200);
-
-// let randomNumber = Math.max(-3, 5, -15, 0, 12);
-// console.log(randomNumber);
+// const mathMax = returnMaxFromThree(90, 100, 50);
+// console.log(mathMax);
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 
-
+// function returnMinPrintMax() {
+//     // console.log(arguments); // аргумент,який можна ітерувати,як масив
+//     let min = arguments[0]
+//     let max = arguments[0]
+//     for (const item of arguments) {
+//         if (item > max) max = item;
+//         if (item < min) min = item;
+//     }
+//     console.log('max', max);
+//     return min
+// }
+// const min = returnMinPrintMax(10, 2, 3, 4, 5, 6);
+// console.log('----------------');
+// console.log('min', min);
 // - створити функцію яка виводить масив
 
 // let users = ['Audi', 'Reno', 'Masda'];
@@ -48,9 +83,46 @@
 // array();
 
 // - створити функцію яка повертає найбільше число з масиву
+
+
+// const myFunc = (array) => {
+//     let max = array[0];
+//     for (const item of array) {
+//         if (max < item) max = item
+//     }
+//     return max;
+// }
+// const myFunc1 = myFunc([1, 2, 3, 4, 5])
+// console.log(myFunc1);
+
 // - створити функцію яка повертає найменьше число з масиву
+
+// const myFunc = (array) => {
+//     let max = array[0];
+//     for (const item of array) {
+//         if (max > item) max = item
+//     }
+//     return max;
+// }
+// const myFunc1 = myFunc([1, 2, 3, 4, 5])
+// console.log(myFunc1);
+
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
+
+// function average(array) {
+//     let sum = 0
+//     for (const item of array) {
+//         sum += item;
+//     }
+//     return sum / array.lenght;
+// }
+// const average1 = average([2, 2, 2, 2])
+// console.log('average1', average1);
+
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+
+
 // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
 // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
 // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
