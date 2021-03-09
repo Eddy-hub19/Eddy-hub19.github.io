@@ -875,6 +875,13 @@
 
 // STRING FUNCTION
 // let str = 'okten is cool';
-// let replaceAll = str.replaceAll('o', '0');
+// let replaceAll = str.replaceAll('o', '0'); // Заміняє слова 
 // console.log(replaceAll); // 0kten is c00l
 // console.log(str.toUpperCase());
+
+// let [a, b, c] = [11, 22, 33];
+// console.log(a, b, c);
+
+// let arr = [22, 33, 44];
+// let arr2 = [...arr, 55, 66]; //Робимо диструктурований масив
+// console.log(arr2);
