@@ -839,3 +839,23 @@
 //     },
 
 // ];
+
+// function wrap() {
+
+// for (let i = 0; i < rules.length; i++) {
+//     const rule = rules[i];
+//     const div = document.createElement('div')
+//     const h2 = document.createElement('h2')
+//     const p = document.createElement('p')
+//     div.className = ` rules rules${i+1}`;
+//     h2.innerText = rule.title;
+//     p.innerText = rule.body;
+//     div.appendChild(h2);
+//     div.appendChild(p);
+
+//     wrap.appendChild(div)
+// }
+
+// document.body.appendChild(wrap);
+
+// }
