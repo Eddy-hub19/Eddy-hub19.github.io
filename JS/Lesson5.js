@@ -8,29 +8,28 @@
  //  -опис дії атрибуту
  //  інформацію брати з htmlbook.ru
 
- //  function Tag(titleOfTag, action, attrs) {
- //      this.titleOfTag = titleOfTag;
- //      this.action = action;
- //      this.attrs = attrs;
- //  }
- //  let title = '<a>';
- //  let action = 'Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок.';
+ function Tag(title, action, attrs) {
+     this.test = title;
+     this.test2 = action;
+     this.test3 = attrs;
+ }
+ let title = '<a>';
+ let action = 'Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок.';
 
- //  let atributes = [
- //      { titleOfAttr: 'accesskey', actionOfAttr: `Активация ссылки с помощью комбинации клавиш.` },
- //      { titleOfAttr: 'coords', actionOfAttr: `Устанавливает координаты активной области.` },
- //      { titleOfAttr: 'download', actionOfAttr: `Предлагает скачать указанный по ссылке файл.` },
- //  ]
+ let atributes = [
+     { titleOfAttr: 'accesskey', actionOfAttr: `Активация ссылки с помощью комбинации клавиш.` },
+     { titleOfAttr: 'coords', actionOfAttr: `Устанавливает координаты активной области.` },
+     { titleOfAttr: 'download', actionOfAttr: `Предлагает скачать указанный по ссылке файл.` },
+ ]
 
- //  let arrays = ['div', 'h1', 'span', 'input'];
+ let pushObject = new Tag(title, action, atributes);
+ console.log(pushObject);
 
- //  for (const array of arrays) {
- //      atributes.push(array);
- //  }
-
- //  let pushObject = new Tag(title, action, atributes);
- //  console.log(pushObject);
-
+ let h1 = new Tag(
+     '<h1>',
+     'тег заголовку першого рівня', [{ titleOfAttr: 'class', actionOfAttr: 'клас це атрибут,який дозволяє робити вибірку елемента в css' }]
+ );
+ console.log(h1);
  //  - Таким чином описати теги
  //  -a
  //  -div
@@ -52,43 +51,6 @@
  //         {/*...*/},
  //        
  //    }
- // ============================================
-
- // ==============================================
- // 3. - Створити класс  для об'єкту який описує теги
- // Властивості
- //  -назва тегу
- //  - опис його дій
- //  - масив з атрибутами (2-3 атрибути максимум)
- //  Кожен атрибут описати як окремий який буде містити
- //  -назву атрибуту
- //  -опис дії атрибуту
- //  інформацію брати з htmlbook.ru
-
- // 4. - Таким чином описати теги
- //  -a
- //  -div
- //  -h1
- //  -span
- //  -input
- //  -form
- //  -option
- //  -select
- //  Приклад результату
- //    {
- //         titleOfTag: 'area',
- //         action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
- //         attrs: [
- //         {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
- //         {/*some props and values*/},
- //         {/*...*/},
- //         {/*...*/},
- //         ]
-
- //    }
- // ==============================================
-
-
 
  // ==============================================
  // 5 - Створити об'єкт car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:

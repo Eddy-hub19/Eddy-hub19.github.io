@@ -227,7 +227,6 @@
 //ARGUMENTS
 //overload
 
-
 // НЕ працює!
 
 // function twoArgs(a, b) {
