@@ -113,7 +113,7 @@
  //              console.log(` brand: ${this.brand}; model: ${this.model}; year: ${this.year}; maxSpeed: ${this.maxSpeed}; engineCapacity: ${this.engineCapacity}`);
  //          },
  //          this.increaseMaxSpeed = function(newSpeed) {
- //              this.maxSpeed = newSpeed
+ //              this.maxSpeed += newSpeed
  //          },
  //          this.changeYear = function(newValue) {
  //              this.year = newValue
@@ -239,3 +239,47 @@
 
  //  let test = array.find(item => item.footSize == prince.shoe);
  //  console.log(test);
+
+
+ //  class Human {
+ //      constructor(name, age) {
+ //          this.name = name || 'No Name';
+ //          this.age = age || 'No age';
+ //      }
+ //  }
+ //  class Cinderella extends Human {
+ //      constructor(name, age, footSize) {
+ //          super(name, age);
+ //          this.footSize = footSize || 'No FootSize'
+ //      }
+ //  }
+ //  class Prince extends Human {
+ //      constructor(name, age, shoeSize) {
+ //          super(name, age);
+ //          this.shoeSize = shoeSize || 'No shoeSize'
+ //      }
+ //      findCinderell(array) {
+ //          let find = null;
+ //          find = array.find(item => item.footSize === this.shoeSize);
+ //      }
+ //  }
+ //  find
+ //      ?
+ //      console.log('My cinderella name ' + find.name) :
+ //      console.log('I not find my cinderell')
+
+ //  let olya = new Cinderella(`Olya`, 18, 35);
+ //  let rosa = new Cinderella(`Rosa`, 16, 32);
+ //  let moka = new Cinderella(`Moka`, 14, 31);
+ //  let losa = new Cinderella(`Losa`, 20, 39);
+ //  let lora = new Cinderella(`Lora`, 19, 40);
+ //  let kida = new Cinderella(`Kida`, 21, 33);
+ //  let ella = new Cinderella(`Ella`, 17, 36);
+ //  let tilly = new Cinderella(`Tilly`, 27, 38);
+ //  let linda = new Cinderella(`Linda`, 25, 35);
+ //  let lina = new Cinderella(`Lina`, 28, 42);
+
+ //  let arrayCinderell = [olya, rosa, moka, losa, lora, kida, ella, tilly, linda, lina];
+
+ //  const princ = new Prince('Ivan', 19, 39);
+ //  princ.findCinderell(arrayCinderell);
