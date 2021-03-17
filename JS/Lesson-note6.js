@@ -29,7 +29,7 @@ import users from './users.js'
 //     if (value.name == 'max') {
 //         value.id = 'unique'
 //     } else {
-//         value.id = index; // тут ми можем ставити свох значення такі,як id = 100,роибити рандом Math.random() і по INDEX
+//         value.id = index; // тут ми можем ставити свої значення такі,як id = 100,робити рандом Math.random() і по INDEX
 //     }
 //     return value;
 // })
@@ -42,19 +42,19 @@ import users from './users.js'
 // console.log(find);
 
 
-let usersWithAdress = [
-    { id: 1, name: 'vasya', age: 31, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
-    { id: 2, name: 'petya', age: 30, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 11 } },
-    { id: 3, name: 'kolya', age: 29, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 121 } },
-    { id: 4, name: 'olya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 90 } },
-    { id: 5, name: 'max', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 115 } },
-    { id: 6, name: 'anya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 2 } },
-    { id: 7, name: 'oleg', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 22 } },
-    { id: 8, name: 'andrey', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 43 } },
-    { id: 9, name: 'masha', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 12 } },
-    { id: 10, name: 'olya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
-    { id: 11, name: 'max', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 121 } },
-];
+// let usersWithAdress = [
+//     { id: 1, name: 'vasya', age: 31, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
+//     { id: 2, name: 'petya', age: 30, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 11 } },
+//     { id: 3, name: 'kolya', age: 29, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 121 } },
+//     { id: 4, name: 'olya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 90 } },
+//     { id: 5, name: 'max', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 115 } },
+//     { id: 6, name: 'anya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 2 } },
+//     { id: 7, name: 'oleg', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 22 } },
+//     { id: 8, name: 'andrey', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 43 } },
+//     { id: 9, name: 'masha', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 12 } },
+//     { id: 10, name: 'olya', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
+//     { id: 11, name: 'max', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 121 } },
+// ];
 
 
 // console.log(usersWithAdress.filter(user => user.address.number > 50));
