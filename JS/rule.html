@@ -7,7 +7,10 @@
 </head>
 
 <body>
-    <div id="content"></div>
+
+    <h1></h1>
+
+    <!-- <div id="content"></div>
     <h1>Правила бойцовского клуба</h1>
     <div id="wrap">
         <div class="rules rule1">
@@ -44,9 +47,24 @@
             <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
             <p>Новичок обязан принять бой.</p>
         </div>
-    </div>
+    </div> -->
 
-    <script src="/JS/lesson3.js"></script>
+    <!-- <script src="/JS/lesson3.js"></script> -->
+    <script>
+        console.log(location);
+        console.log(location.search);
+        let url = new URL(location);
+        console.log(url);
+        let name = url.searchParams.get('name')
+        console.log(name);
+        let surname = url.searchParams.get('surname');
+        console.log(surname)
+        let full = url.searchParams.get('full');
+        console.log(JSON.parse(full));
+        let h1 = document.getElementsByTagName('h1')[0];
+        h1.innerText = `${name} ${surname}`
+    </script>
+
 </body>
 
 </html>

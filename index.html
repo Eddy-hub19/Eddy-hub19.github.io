@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div id="clock"></div>
     <ul id="bar">
         <li>
             <a href="https://github.com/Eddy-hub19"><img src="https://img.icons8.com/fluent/48/000000/github.png" /> </a>
@@ -37,17 +38,23 @@
         <option value="/Homework/2 home task/index.html">2 home task</option>
         <option value="/Homework/3 home task/index.html">3 home task</option>
         <option value="/Homework/4 home task/index.html">4 home task</option>
-        <option value="/JS/main.html">Site for doc.writing</option>
       </select>
     </header>
     <div class="header_main">
-        <h3>My name is Eduard Sekan I`m 20 years old and i`m <i>PROGRAMMER</i></h3>
+        <h3>My name is Eduard Sekan I`m 20 years old and i`m a<i>PROGRAMMER</i></h3>
     </div>
     <img class="img-im" src="/img/I.jpg" alt="i am" />
     <footer>
         <p>© 2021 Все права защищены</p>
     </footer>
     <script>
+        let clock = document.getElementById('clock');
+
+        let clock = document.getElementById('clock');
+        setInterval(() => {
+            let date = new Date();
+            clock.innerText = date.getHours() + " " + date.getUTCMinutes() + " " + date.getUTCSeconds();
+        });
         // function createBlock() {
         //     let createElement = document.createElement('div');
         //     createElement.innerHTML = ('<h1>Hello Owu');

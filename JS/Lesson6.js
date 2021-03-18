@@ -24,6 +24,10 @@
 // let res = arrayElement(array)
 // console.log(res);
 
+// let array = [15, 0, 2, 3, -10, 65, -2, 58];
+// let newArray = array.sort((a, b) => b - a)
+// console.log(newArray);
+
 // -- при помощи filter получить числа кратные 3
 
 // let newArr = array.filter(function(num) {
@@ -31,11 +35,17 @@
 // })
 // console.log(newArr);
 
+// let newArray = array.filter(value => value % 3 === 0 && value !== 0);
+// console.log(newArray);
+
 // -- при помощи filter получить числа кратные 10
 
 // let newArr = array.filter(function(num) {
 //     return num % 10 === 0;
 // })
+// console.log(newArr);
+
+// let newArr = array.filter(value => value % 10 === 0 && value != 0);
 // console.log(newArr);
 
 // -- перебрать (проитерировать) массив при помощи foreach()
@@ -47,9 +57,7 @@
 
 // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
 
-// let map = array.map((value) => {
-//     return value * 3
-// })
+// let map = array.map(value => value * 3);
 // console.log(map);
 
 // let result = array.map(function(item, index, array) {
@@ -80,6 +88,13 @@
 // let res = arrays.sort((a, b) => a.length < b.length ? 1 : -1)
 // console.log(res);
 
+// let res = arrays.sort((a, b) => {
+//     if (a.toLowerCase() > b.toLowerCase()) return 1;
+//     if (a.toLowerCase() < b.toLowerCase()) return -1;
+//     return 0;
+// })
+// console.log(res);
+
 // -- отфильтровать слова длиной менее 4х символов
 
 // let arrFilter = arrays.filter((item) => {
@@ -88,6 +103,9 @@
 //         return true
 //     }
 // })
+// console.log(arrFilter);
+
+// let arrFilter = arrays.filter(item => item.length < 4)
 // console.log(arrFilter);
 
 // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
@@ -162,6 +180,15 @@
 // }
 
 // console.log(calculator(a, b, c, (a, b, c) => a * b - c));
+
+
+// function calculate(a, b, callback) {
+//     return callback(a, b);
+// }
+// let result = calculate(20, 20, function(a, b) {
+//     return a + b
+// })
+// console.log(result);
 
 // =============================================
 // =============================================
@@ -497,3 +524,30 @@
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
 // Answer: MinIndex = 3, MaxIndex = 6.
+
+// arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14];
+
+// function findFirstAndLast(array, el) {
+
+//     let min = null;
+//     let max = null;
+//     for (let index = 0; index < array.length; index++) {
+//         if (array[index] === el) {
+//             if (!min) min = index; 
+//             max = index;
+//         }
+//     }
+//     min !== null ?
+//         console.log(`Answer: MinIndex = ${min}, MaxIndex = ${max}`) : console.log(-1);
+// }
+
+// findFirstAndLast(arr, 4)
+
+
+// function findFirstAndLast(array, element) {
+//     let min = array.indexOf(element)
+//     let max = array.LastindexOf(element)
+//     console.log(`Answer: MinIndex = ${min}, MaxIndex = ${max}`);
+// }
+
+// findFirstAndLast(arr, 4)

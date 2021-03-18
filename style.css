@@ -10,6 +10,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#clock {
+    display: flex;
+    justify-content: center;
+    background: rgb(80, 156, 175);
+    color: lavenderblush;
+    font-size: 30px;
+}
+
 .header__class {
     display: flex;
     flex-direction: row-reverse;
