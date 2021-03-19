@@ -10,13 +10,14 @@ html {
     scroll-behavior: smooth;
 }
 
-#clock {
+
+/* #clock {
     position: relative;
-    left: 48%;
+    left: 2%;
     color: rgb(49, 61, 73);
-    font-size: 35px;
+    font-size: 55px;
     font-family: 'Indie Flower';
-}
+} */
 
 .header__class {
     display: flex;
