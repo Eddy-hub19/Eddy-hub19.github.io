@@ -25,26 +25,62 @@
 
 //     });
 
-let usersBlock = document.getElementById('clock')
+// let usersBlock = document.getElementById('clock')
 
-fetch('https://api.sampleapis.com/futurama/characters')
-    .then(response => response.json())
-    .then(heroes => {
-        for (const hero of heroes) {
-            let info = document.createElement('p');
-            let anchor = document.createElement('a');
-            anchor.href =
-                `rule.html?name=${hero.name.first}&surname=${hero.name.last}&full=${JSON.stringify(hero)}`;
-            anchor.innerText = 'info'
+// fetch('https://api.sampleapis.com/futurama/characters')
+//     .then(response => response.json())
+//     .then(heroes => {
+//         for (const hero of heroes) {
+//             let info = document.createElement('p');
+//             let anchor = document.createElement('a');
+//             anchor.href =
+//                 `rule.html?name=${hero.name.first}&surname=${hero.name.last}&full=${JSON.stringify(hero)}`;
+//             anchor.innerText = 'info'
 
-            info.appendChild(anchor)
+//             info.appendChild(anchor)
 
-            let img = document.createElement('img')
-            img.src = hero.images.main
+//             let img = document.createElement('img')
+//             img.src = hero.images.main
 
-            usersBlock.appendChild(info)
-            usersBlock.appendChild(img)
-        }
-    })
+//             usersBlock.appendChild(info)
+//             usersBlock.appendChild(img)
+//         }
+//     })
 
-console.log(location);
+// console.log(location);
+
+
+//Поместить в файл рулс
+// console.log(location);
+// console.log(location.search);
+// let url = new URL(location);
+// console.log(url);
+// let name = url.searchParams.get('name')
+// console.log(name);
+// let surname = url.searchParams.get('surname');
+// console.log(surname)
+// let full = url.searchParams.get('full');
+// console.log(JSON.parse(full));
+// let h1 = document.getElementsByTagName('h1')[0];
+// h1.innerText = `${name} ${surname}`
+
+
+/*Создайте асинхронную функцию getUsers(names), которая получает на вход массив логинов пользователей GitHub, 
+запрашивает у GitHub информацию о них и возвращает массив объектов-пользователей.
+
+Информация о пользователе GitHub с логином USERNAME 
+доступна по ссылке: https://api.github.com/users/USERNAME.*/
+
+// fetch('https://api.github.com/users')
+//     .then(response => response.json())
+//     .then(commits => console.log(commits));
+
+
+// fetch('https://api.github.com/users')
+//     .then(response => response.json())
+//     .then(commits => {
+//         for (const res of commits) {
+//             let result = res
+//             console.log(result);
+//         }
+//     });

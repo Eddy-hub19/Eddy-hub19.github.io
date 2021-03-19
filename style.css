@@ -11,11 +11,11 @@ html {
 }
 
 #clock {
-    display: flex;
-    justify-content: center;
-    background: rgb(80, 156, 175);
-    color: lavenderblush;
-    font-size: 30px;
+    position: relative;
+    left: 48%;
+    color: rgb(49, 61, 73);
+    font-size: 35px;
+    font-family: 'Indie Flower';
 }
 
 .header__class {

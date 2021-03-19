@@ -49,11 +49,9 @@
     </footer>
     <script>
         let clock = document.getElementById('clock');
-
-        let clock = document.getElementById('clock');
         setInterval(() => {
             let date = new Date();
-            clock.innerText = date.getHours() + " " + date.getUTCMinutes() + " " + date.getUTCSeconds();
+            clock.innerText = date.getHours() + ":" + date.getUTCMinutes() + ":" + date.getUTCSeconds();
         });
         // function createBlock() {
         //     let createElement = document.createElement('div');
