@@ -1,40 +1,24 @@
 body {
-    padding: 0;
-    margin: 0 auto;
-    width: 1920px;
-    background: no-repeat;
-    background-image: url(/img/nature.jpg);
+  background: rgba(55, 71, 44, 0.233);
+  color: white;
 }
-
-div>h1 {
-    font-family: "Reggae One", cursive;
-    display: flex;
-    justify-content: center;
-    background: silver;
+.navbar {
+  background: rgb(36, 153, 173) !important;
 }
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
+.navbar-light .navbar-brand {
+  color: white;
 }
-
-audio {
-    width: 300px;
-    background: black;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
 }
-
-@keyframes margin-change {
-    0% {
-        color: red;
-        margin-right: 2px;
-    }
-    50% {
-        color: silver;
-        margin-left: 50%;
-    }
+img {
+  background-color: bisque;
 }
-
-.animation {
-    animation: margin-change 15s infinite;
+.card-body {
+  background: rgb(206, 80, 80);
+}
+.btn-primary {
+  background-color: gray;
 }
