@@ -1,0 +1,47 @@
+* {
+  margin: 0, auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav > a {
+  margin-left: 32px;
+}
+nav > a:hover,:active {
+    color: red;
+}
+.nav_right {
+    margin-left: 351px;
+}
+body {
+  width: 1440px;
+  height: 100%;
+  overflow: hidden;
+}
+.header_top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.img_top {
+  margin-left: 340px;
+}
+.link_top {
+  display: flex;
+  margin-left: 66px;
+}   
+.line_top {
+    margin-left: 37px;
+}
+.line2_top {
+    margin-left: 20px;
+}
+.first-screen {
+  background: center no-repeat;
+  background-image: url(/UGMONK/img/Rectangle.png);
+  width: 1980px;
+  height: 600px;
+}
