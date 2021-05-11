@@ -4,7 +4,7 @@
     margin: 0 auto;
     width: 100%;
     background: no-repeat;
-    background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
+    background-image: url(/img/mountain_Europe_3840x2400.jpg);
   }
   .header__class {
     display: flex;
@@ -19,7 +19,7 @@
     font-size: 20px;
   }
   .header__class h2 {
-    color: black;
+    color: white;
     font-family: "Indie Flower", cursive;
     font-size: 20px;
   }
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: gray;
+    color: white;
     font-size: 20px;
     font-family: "Indie Flower";
     margin-left: 25px;

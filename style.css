@@ -3,11 +3,21 @@ body {
   margin: 0 auto;
   width: 1920px;
   background: no-repeat;
-  background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg);
+  /* background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg); */
+  /* background-image: url(/img/nature.jpg); */
+  background: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+summary {
+  display: flex;
+  justify-content: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 /* #clock {
@@ -27,13 +37,12 @@ html {
 }
 
 .header__class h1 {
-  color: black;
   font-family: "Indie Flower", cursive;
   font-size: 50px;
 }
 
 .header__class h2 {
-  color: black;
+  color: rgb(184 209 232);
   font-family: "Indie Flower", cursive;
   font-size: 4em;
   margin-right: 125px;
@@ -42,7 +51,7 @@ html {
 .header_main {
   display: flex;
   justify-content: center;
-  color: gray;
+  color: white;
   font-size: 35px;
   font-family: "Indie Flower";
 }
@@ -64,6 +73,8 @@ select {
 .img-im {
   position: absolute;
   left: 862px;
+  margin-top: 7px;
+  width: 221px;
 }
 
 ul,
