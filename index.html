@@ -18,83 +18,70 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/media.css" />
   </head>
-
+  
   <body>
     <ul id="bar">
       <li>
         <a href="https://github.com/Eddy-hub19"
-          ><img src="https://img.icons8.com/fluent/48/000000/github.png" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/eduardsekan/"
-          ><img
-            src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
-            alt="icon-facebook"
-        /></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/ed_sekan20/">
-          <img
-            src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-            alt="icon-instagram"
-          />
-        </a>
-      </li>
-      <div class="arrow">&darr;</div>
-    </ul>
-    <header class="header__class">
-      <h1 class="animation">SEKAN EDDY</h1>
-      <h2>WEB-Developer</h2>
-      <select onchange="top.location=this.value">
-        <option value="index.html">HOME</option>
-        <option value="Porten/index.html">PORTEN</option>
-        <option value="/Traveling/index.html">Traveling</option>
-        <option value="/canvas.html">Drown</option>
-        <option value="/Homework/1 home task/index.html">1 home task</option>
-        <option value="/Homework/2 home task/index.html">2 home task</option>
-      </select>
-    </header>
-    <div class="header_main">
-      <h3>
-        My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
-      </h3>
+        ><img src="https://img.icons8.com/fluent/48/000000/github.png" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/eduardsekan/"
+      ><img
+      src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
+      alt="icon-facebook"
+      /></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/ed_sekan20/">
+        <img
+        src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+        alt="icon-instagram"
+        />
+      </a>
+    </li>
+    <div class="arrow">&darr;</div>
+  </ul>
+  <header class="header__class">
+    <h1 class="animation">SEKAN EDDY</h1>
+    <div class="rocket">
+      <img src="/img/Comet.svg">
     </div>
-    <!-- <details>
-      <summary>Click my photo</summary>
-      <img class="img-im" src="/img/I.jpg" alt="i am" />
-    </details> -->
-    <br />
-    <div class="block">
-      <div class="blue"></div>
-    </div>
-    <div class="block">
-      <div class="green"></div>
-    </div>
-    <footer>
-      <p>© 2021 Все права защищены</p>
-    </footer>
-    <script>
-      //   <div id="clock"></div>
-      // let clock = document.getElementById('clock');
-      // setInterval(() => {
-      //     let date = new Date();
-      //     clock.innerText = date.getHours() + ":" + date.getUTCMinutes() + ":" + date.getUTCSeconds();
-      // });
-      // function createBlock() {
-      //     let createElement = document.createElement('div');
-      //     createElement.innerHTML = ('<h1> test </h1>');
-      //     createElement.style.color = 'blue'
-      //     document.body.appendChild(createElement);
-      // }
-      // createBlock();
-      // window.addEventListener("scroll", function() {
-      //     let scrollPos = window.scrollY;
-      //     console.log(scrollPos);
-      //     if (scrollPos > 0) {
-      //         header__class.classlist.add('red');
-      //     }
-      // });
-    </script>
+    <h2>WEB-Developer</h2>
+    <select onchange="top.location=this.value">
+      <option value="index.html">HOME</option>
+      <option value="Porten/index.html">PORTEN</option>
+      <option value="/Traveling/index.html">Traveling</option>
+      <option value="/canvas.html">Drown</option>
+      <option value="/Homework/1 home task/index.html">1 home task</option>
+      <option value="/Homework/2 home task/index.html">2 home task</option>
+    </select>
+  </header>
+  <div class="header_main">
+    <h3>
+      My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
+    </h3>
+  </div>
+  <!-- <details>
+    <summary>Click my photo</summary>
+    <img class="img-im" src="/img/I.jpg" alt="i am" />
+  </details> -->
+  <br />
+</div>
+<footer>
+  <p>© 2021 Все права защищены</p>
+</footer>
+<script>
+  function createBlock(color) {
+    let createElement = document.createElement("div");
+    createElement.innerHTML =
+    ' <details><summary>Click my photo</summary><img class="img-im" src="/img/I.jpg" alt="i am" /></details>';
+    createElement.style.color = color;
+    document.body.appendChild(createElement);
+  }
+  createBlock("white");
+  </script>
   </body>
-</html>
+  </html>
+  

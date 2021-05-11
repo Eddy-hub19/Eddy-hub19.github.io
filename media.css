@@ -4,7 +4,7 @@
     margin: 0 auto;
     width: 100%;
     background: no-repeat;
-    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
+    background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
   }
   .header__class {
     display: flex;
@@ -102,11 +102,12 @@
   /* My animation for loading */
 
   .block {
-    border: 3px solid;
+    /* border: 3px solid; */
     height: 27px;
     border-radius: 40px;
     background: linear-gradient(#65696d 0%, #8e9298 50%, #8e9298 100%);
     margin: 35px;
+    text-align: right;
   }
 
   .blue,
@@ -140,5 +141,8 @@
     border-bottom-right-radius: 30px;
     transition: width 2s linear;
     border-top-right-radius: 30px;
+  }
+  .img-im {
+    display: none;
   }
 }

@@ -99,8 +99,8 @@ li {
 }
 
 #bar {
-  /* Положение */
   top: -9.8em;
+  /* Положение */
   right: 110em;
   /* Поля */
   padding: 0.5em;
@@ -124,6 +124,15 @@ li {
 #bar:hover {
   top: 0;
 }
+
+.rocket {
+  width: 50px;
+  height: 10px;
+  position: relative;
+  animation-name: example;
+  transform: rotate(220deg);
+}
+
 
 footer {
   position: absolute;
