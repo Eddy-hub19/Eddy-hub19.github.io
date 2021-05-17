@@ -3,8 +3,6 @@ body {
   margin: 0 auto;
   width: 1920px;
   /* background: no-repeat; */
-  /* background-image: url(/img/more_bereg_minimalizm_100029_1920x1080.jpg); */
-  /* background-image: url(/img/nature.jpg); */
   background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
 }
 
@@ -19,14 +17,6 @@ summary {
   font-size: 30px;
   cursor: pointer;
 }
-
-/* #clock {
-    position: relative;
-    left: 2%;
-    color: rgb(49, 61, 73);
-    font-size: 55px;
-    font-family: 'Indie Flower';
-} */
 
 .header__class {
   display: flex;
@@ -125,14 +115,24 @@ li {
   top: 0;
 }
 
-.rocket {
-  width: 50px;
-  height: 10px;
-  position: relative;
-  animation-name: example;
-  transform: rotate(220deg);
+@keyframes rocket-fly {
+  0% {
+    left: 0px;
+  }
+    100% {
+    left: 100%;
+  }
 }
 
+.fly {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  left: 20px;
+  transform: rotate(220deg);
+  animation-name: rocket-fly;
+  animation-duration: 2.5s;
+}
 
 footer {
   position: absolute;
