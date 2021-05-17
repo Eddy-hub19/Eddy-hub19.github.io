@@ -12,13 +12,13 @@ html {
   scroll-behavior: smooth;
 }
 
-summary {
+/* summary {
   display: flex;
   justify-content: center;
   font-family: "Indie Flower", cursive;
   font-size: 30px;
   cursor: pointer;
-}
+} */
 
 .header__class {
   display: flex;
@@ -92,23 +92,14 @@ li {
 
 #bar {
   top: -9.8em;
-  /* Положение */
   right: 110em;
-  /* Поля */
   padding: 0.5em;
-  /* Отступы */
   margin: 0;
-  /* Абсолютное позиционирование */
   position: absolute;
-  /* Ширина */
   width: 10em;
-  /* Цвет фона */
   background: rgb(101, 126, 150);
-  /* Цвет текста */
   color: white;
-  /* Выравнивание по центру */
   text-align: center;
-  /* Переход */
   transition: top 1.5s ease-out 0.5s;
   border-radius: 40px;
 }
