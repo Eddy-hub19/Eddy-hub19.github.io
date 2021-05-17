@@ -10,11 +10,12 @@ a {
 nav > a {
   margin-left: 32px;
 }
-nav > a:hover,:active {
+nav > a:hover :active {
     color: red;
 }
 .nav_right {
     margin-left: 351px;
+    /* border-right: 1px solid black; */
 }
 body {
   width: 1440px;
@@ -24,10 +25,11 @@ body {
 .header_top {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
-.img_top {
-  margin-left: 340px;
+.logo {
+  margin-left: 380px;
 }
 .link_top {
   display: flex;
