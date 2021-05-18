@@ -44,11 +44,11 @@
     <div class="arrow">&darr;</div>
   </ul>
   <header class="header__class">
-    <h1 class="animation">SEKAN EDDY</h1>
+    <h1 class="animation"> Smart-Edek </h1>
+    <h2>SEKAN EDDY</h2>
     <div class="fly">
       <img src="/img/Comet.svg">
     </div>
-    <h2>WEB-Developer</h2>
     <select onchange="top.location=this.value">
       <option value="index.html">HOME</option>
       <option value="Porten/index.html">PORTEN</option>
@@ -62,10 +62,13 @@
     <h3>
       My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
     </h3>
+    <button class="theme-button">
+       Change Team 
+      <span><img class="img" src="/img/sun-eclipse.svg" alt=""></span>
+      </button>
   </div>
   <!-- <details>
     <summary></summary>
-    <img class="img-im" src="/img/I.jpg" alt="i am" />
   </details> -->
   <br />
 </div>
@@ -73,15 +76,13 @@
   <p>© 2021 Все права защищены</p>
 </footer>
 <script>
-  // function createBlock(color) {
-  //   let createElement = document.createElement("div");
-  //   createElement.innerHTML =
-  //   ' <details><summary></summary><img class="img-im" src="/img/I.jpg" alt="i am" /></details>';
-  //   createElement.style.color = color;
-  //   document.body.appendChild(createElement);
-  // }
-  // createBlock("white");
-  </script>
-  </body>
-  </html>
+  let header = document.querySelector('body');
+  let themeButton = document.querySelector('.theme-button');
+
+  themeButton.onclick = function() {
+    header.classList.toggle('dark-theme')
+  };
+</script>
+</body>
+</html>
   

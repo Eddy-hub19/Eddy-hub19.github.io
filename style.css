@@ -5,20 +5,11 @@ body {
   background: no-repeat;
   background-size: 100%;
   background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
-  /* background-image: url(/img/sky.jpg); */
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* summary {
-  display: flex;
-  justify-content: center;
-  font-family: "Indie Flower", cursive;
-  font-size: 30px;
-  cursor: pointer;
-} */
 
 .header__class {
   display: flex;
@@ -34,7 +25,7 @@ html {
 }
 
 .header__class h2 {
-  color: rgb(184 209 232);
+  color: rgb(116 147 177);
   font-family: "Indie Flower", cursive;
   font-size: 4em;
   margin-right: 125px;
@@ -62,11 +53,11 @@ select {
   border-radius: 20px;
 }
 
-.img-im {
+.img {
   position: absolute;
-  left: 862px;
-  margin-top: 7px;
-  width: 221px;
+  left: -55px;
+  right: 73px;
+  bottom: 1px;
 }
 
 ul,
@@ -125,6 +116,21 @@ li {
   transform: rotate(220deg);
   animation-name: rocket-fly;
   animation-duration: 2.5s;
+}
+
+.dark-theme {
+  background-image: url(/img/sky.jpg);
+}
+
+.theme-button {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 70px;
+  height: 50px;
+  color: rgb(48, 142, 219);
+  background: rgb(34, 51, 66);
+  border-radius: 40px;
 }
 
 footer {
