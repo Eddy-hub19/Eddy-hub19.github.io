@@ -18,71 +18,98 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/media.css" />
   </head>
-  
+
   <body>
     <ul id="bar">
       <li>
         <a href="https://github.com/Eddy-hub19"
-        ><img src="https://img.icons8.com/fluent/48/000000/github.png" />
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/eduardsekan/"
-      ><img
-      src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
-      alt="icon-facebook"
-      /></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/ed_sekan20/">
-        <img
-        src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-        alt="icon-instagram"
-        />
-      </a>
-    </li>
-    <div class="arrow">&darr;</div>
-  </ul>
-  <header class="header__class">
-    <h1 class="animation"> Smart-Edek </h1>
-    <h2>SEKAN EDDY</h2>
-    <div class="fly">
-      <img src="/img/Comet.svg">
-    </div>
-    <select onchange="top.location=this.value">
-      <option value="index.html">HOME</option>
-      <option value="Porten/index.html">PORTEN</option>
-      <option value="/Traveling/index.html">Traveling</option>
-      <option value="/canvas.html">Drown</option>
-      <option value="/Homework/1 home task/index.html">1 home task</option>
-      <option value="/Homework/2 home task/index.html">2 home task</option>
-    </select>
-  </header>
-  <div class="header_main">
-    <h3>
-      My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
-    </h3>
-    <button class="theme-button">
-       Change Team 
-      <span><img class="img" src="/img/sun-eclipse.svg" alt=""></span>
+          ><img src="https://img.icons8.com/fluent/48/000000/github.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/eduardsekan/"
+          ><img
+            src="https://img.icons8.com/fluent/48/000000/facebook-new.png"
+            alt="icon-facebook"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/ed_sekan20/">
+          <img
+            src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+            alt="icon-instagram"
+          />
+        </a>
+      </li>
+      <div class="arrow">&darr;</div>
+    </ul>
+    <header class="header__class">
+      <h1 class="animation">Smart-Edek</h1>
+      <h2>SEKAN EDDY</h2>
+      <div class="fly">
+        <img src="/img/Comet.svg" />
+      </div>
+      <select onchange="top.location=this.value">
+        <option value="index.html">HOME</option>
+        <option value="Porten/index.html">PORTEN</option>
+        <option value="/Traveling/index.html">Traveling</option>
+        <option value="/canvas.html">Drown</option>
+        <option value="/Homework/1 home task/index.html">1 home task</option>
+        <option value="/Homework/2 home task/index.html">2 home task</option>
+      </select>
+    </header>
+    <div class="header_main">
+      <h3>
+        My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
+      </h3>
+      <button class="theme-button">
+        Change Team
+        <span><img class="img" src="/img/sun-eclipse.svg" alt="" /></span>
       </button>
-  </div>
-  <!-- <details>
+    </div>
+    <div class="container">
+      <h1 class="inner-heading">Test form</h1>
+      <p class="subscription-message"></p>
+
+      <form action="https://eddy-hub19.github.io/" method="POST" class="subscription">
+        <div class="subscription-inner">
+          <label class="subscription-label" for="subscription-email"></label>
+          <input
+            type="email"
+            class="subscription-email"
+            placeholder="your@email.com"
+            required
+            id="subscription-email"
+          />
+          <button class="button subscription-button" type="submit">
+            Подписаться
+          </button>
+        </div>
+      </form>
+      <!-- <details>
     <summary></summary>
   </details> -->
-  <br />
-</div>
-<footer>
-  <p>© 2021 Все права защищены</p>
-</footer>
-<script>
-  let header = document.querySelector('body');
-  let themeButton = document.querySelector('.theme-button');
+      <br />
+    </div>
+    <footer>
+      <p>© 2021 Все права защищены</p>
+    </footer>
+    <script>
+      let header = document.querySelector("body");
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.onclick = function () {
+        header.classList.toggle("dark-theme");
+      };
 
-  themeButton.onclick = function() {
-    header.classList.toggle('dark-theme')
-  };
-</script>
-</body>
+      let message = document.querySelector(".subscription-message");
+      let form = document.querySelector(".subscription");
+      let email = document.querySelector(".subscription-email");
+
+      form.onsubmit = function (evt) {
+        evt.preventDefault();
+        message.textContent =
+          "Адрес " + email.value + " добавлен в список получателей рассылки.";
+      };
+    </script>
+  </body>
 </html>
-  
