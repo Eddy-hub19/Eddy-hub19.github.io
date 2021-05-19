@@ -139,3 +139,35 @@ footer {
   top: 750px;
   color: white;
 }
+
+/* form */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+}
+
+.inner-heading {
+  color: rgb(220, 227, 233);
+  font-size: 25px;
+  font-family: "Indie Flower", cursive;
+}
+form  button {
+  background: red;
+  font-size: 25px;
+  color: white;
+}
+.subscription-message {
+  color: rgb(216, 216, 216);
+  background: rgba(88, 88, 88, 0.541);
+  font-size: 20px;
+  font-family: "Indie Flower";
+}
+.subscription-email {
+  font-size: 25px;
+}
