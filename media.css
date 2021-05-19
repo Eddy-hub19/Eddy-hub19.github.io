@@ -9,19 +9,17 @@
   .header__class {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-right: 70px;
     color: gainsboro;
   }
   .header__class h1 {
-    color: black;
-    font-family: "Indie Flower", cursive;
-    font-size: 20px;
+    display: none;
   }
   .header__class h2 {
     color: white;
     font-family: "Indie Flower", cursive;
-    font-size: 20px;
+    font-size: 24px;
   }
   .header_main {
     display: flex;
@@ -45,12 +43,6 @@
     width: 120px;
     height: 25px;
     border-radius: 20px;
-  }
-  .img-im {
-    display: none;
-    position: absolute;
-    bottom: 180px;
-    left: 20px;
   }
   ul,
   li {
@@ -98,51 +90,36 @@
     top: 750px;
     color: white;
   }
-
-  /* My animation for loading */
-
-  .block {
-    /* border: 3px solid; */
-    height: 27px;
-    border-radius: 40px;
-    background: linear-gradient(#65696d 0%, #8e9298 50%, #8e9298 100%);
-    margin: 35px;
-    text-align: right;
+  .img {
+    width: 43px;
+    position: absolute;
+    left: -55px;
+    right: 73px;
+    bottom: 1px;
   }
 
-  .blue,
-  .green {
-    width: 30%;
-    height: 27px;
-    background: #19b1f1;
-    background: linear-gradient(#19b1f1, #1160dc, #19b1f1);
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.5);
-  }
+  /* form */
 
-  .blue {
-    background: #00c9ffa6;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
   }
-
-  .blue:hover {
-    width: 100%;
-    border-bottom-right-radius: 30px;
-    transition: width 5s linear;
-    border-top-right-radius: 30px;
+  .container {
+    margin-top: 150px;
   }
-
-  .green {
-    background: #00806c8c;
+  .subscription-message {
+    color: black;
+    background: #99b0b5;
+    font-family: Arial, Helvetica, sans-serif;
   }
-
-  .green:hover {
-    width: 100%;
-    border-bottom-right-radius: 30px;
-    transition: width 2s linear;
-    border-top-right-radius: 30px;
+  .subscription-email {
+    font-size: 15px;
   }
-  .img-im {
-    display: none;
+  form button {
+    font-size: 15px;
+  }
+  .dark-theme {
+    background-image: url(/img/nature.jpg)
   }
 }
