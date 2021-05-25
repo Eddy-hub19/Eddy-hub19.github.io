@@ -46,7 +46,7 @@ let friends = [
 
 // console.log(friends);
 
-let userFilter = friends.filter(function (friend) {
-  return friend.age >= 20;
-});
-console.log(userFilter);
+// let userFilter = friends.filter(function (friend) {
+//   return friend.age >= 20;
+// });
+// console.log(userFilter);
