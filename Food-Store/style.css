@@ -1,35 +1,126 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: black;
 }
 
-ul {
-  list-style: none;
+ul li {
+    list-style: none;
 }
 
-.header_top {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  left: 0px;
-  top: 0px;
-  background: #c2e8ce;
+.warning {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #c2e8ce;
 }
 
-p {
-  display: flex;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: #1f1f1f;
+.warning p {
+    display: flex;
+    align-items: center;
+    margin-left: 458px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+.vector {
+    margin-left: 386px;
+}
+
+.head {
+    height: 113px;
+}
+
+.head a {
+    margin-left: 49px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.img-search {
+    margin-left: 145px;
+}
+
+.main {
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/brooke-lark-08bOYnH_r_E-unsplash\ 1.png);
+}
+
+.main h1 {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #1f1f1f;
+    margin: 125px 55px 5px 50px;
+}
+
+.main h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 39px;
+    color: #1f1f1f;
+    margin: 5px 55px;
+}
+
+.main button {
+    width: 200px;
+    height: 45px;
+    background: #ff8126;
+    border-radius: 5px;
+    color: white;
+    margin: 40px 61px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 580px;
+    background: white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 412px;
+}
+
+.item {
+    width: 270px;
+    height: 332px;
+    left: 55px;
+    top: 845px;
+    background: #f7f5f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
 }
