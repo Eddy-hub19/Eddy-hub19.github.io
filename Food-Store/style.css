@@ -75,6 +75,7 @@ nav {
     flex-direction: column;
     background-repeat: no-repeat;
     background-image: url(/Food-Store/img/brooke-lark-08bOYnH_r_E-unsplash\ 1.png);
+    padding: 60px;
 }
 
 .main h1 {
@@ -108,7 +109,9 @@ nav {
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     height: 580px;
     background: white;
 }
@@ -131,11 +134,72 @@ main {
     border-radius: 20px;
 }
 
-.inf_section {
+.item h4 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1F1F1F;
+}
+
+.wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
+}
+
+.wrap button {
+    width: 230px;
+    height: 40px;
+    background: #FF8126;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.inf_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: white; */
     width: 100%;
     height: 418px;
 }
+
+.right_left {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    position: absolute;
+    width: 570px;
+    height: 855px;
+    left: 642px;
+    top: 1583px;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/markus-spiske-jHrW-l7NWfw-unsplash\ 1.png);
+}
+
+.our_partner {
+    position: absolute;
+    height: 395px;
+    background-image: url(/Food-Store/img/Our\ Partner.png);
+}
+
+
+/* footer {
+    background-image: url(/Food-Store/img/Tell\ a\ Frind.png);
+    position: absolute;
+    width: 1280px;
+    height: 260px;
+} */
