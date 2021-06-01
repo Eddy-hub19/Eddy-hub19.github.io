@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 body {
   width: 1280px;
@@ -19,6 +20,14 @@ a {
 
 ul li {
   list-style: none;
+}
+
+.list li:before {
+  content: url(/Food-Store/img/Vector\ 5.svg);
+  min-width: 10px;
+  height: 25px;
+  background: #ff8126;
+  border-radius: 50%;
 }
 
 .warning {
@@ -49,12 +58,12 @@ ul li {
   top: 17px;
 }
 
-.head {
-  height: 113px;
-}
-
-.head a {
-  margin-left: 49px;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
 }
 
 nav {
@@ -63,22 +72,81 @@ nav {
   margin-left: 55px;
 }
 
-.img-search {
-  margin-left: 145px;
+nav a {
+  margin-right: 40px;
 }
 
-.main {
-  height: 500px;
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+  background-image: url(/Food-Store/img/Vector\ 2.svg);
+}
+.top_menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu1 {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url(/Food-Store/img/search.svg);
+}
+.menu2 {
+  width: 24px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url(/Food-Store/img/profile.svg);
+}
+
+.menu3 {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url(/Food-Store/img/cart.svg);
+}
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.circle {
+  position: absolute;
+  min-width: 16px;
+  height: 16px;
+  left: 1210px;
+  top: 93px;
+  text-align: center;
+  background: #ff8126;
+  border-radius: 50%;
+  font-family: "Poppins" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 0 2px;
+}
+
+.main_page {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/brooke-lark-08bOYnH_r_E-unsplash\ 1.png);
+  background: url(/Food-Store/img/main.png);
+  box-shadow: -5px 4px 11px -3px #000000;
   padding: 60px;
 }
 
-.main h1 {
+.main_page h1 {
   font-family: "Cormorant", serif;
   font-style: normal;
   font-weight: bold;
@@ -88,7 +156,7 @@ nav {
   margin: 125px 55px 5px 50px;
 }
 
-.main h2 {
+.main_page h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -98,13 +166,14 @@ nav {
   margin: 5px 55px;
 }
 
-.main button {
+.main_page button {
   width: 200px;
   height: 45px;
   background: #ff8126;
   border-radius: 5px;
   color: white;
   margin: 40px 61px;
+  border: none;
 }
 
 main {
@@ -113,7 +182,6 @@ main {
   align-items: center;
   flex-direction: column;
   height: 580px;
-  background: white;
 }
 
 .wrapper {
@@ -124,6 +192,29 @@ main {
   flex-wrap: wrap;
   width: 1170px;
   height: 412px;
+  margin-top: 58px;
+}
+
+.wrapper h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 40px;
+  margin-left: 5px;
+}
+
+.wrapper b {
+  color: #ff8126;
+  margin-left: 10px;
+}
+
+.wrap_item {
+  display: flex;
+  justify-content: center;
 }
 
 .item {
@@ -132,6 +223,7 @@ main {
   background: #f7f5f0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  margin-left: 30px;
 }
 
 .item h4 {
@@ -150,6 +242,29 @@ main {
   align-items: center;
 }
 
+.price {
+  display: flex;
+  flex-direction: row;
+}
+
+.cost_color {
+  font-family: "Poppins" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ff8126;
+}
+
+.line_through {
+  margin-left: 10px;
+  color: gray;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: "Poppins" sans-serif;
+  text-decoration: line-through;
+}
+
 .wrap button {
   width: 230px;
   height: 40px;
@@ -157,43 +272,72 @@ main {
   border-radius: 5px;
   color: white;
   margin-top: 20px;
+  border: none;
 }
 
 .inf_section {
   text-align: center;
   width: 100%;
-  border: 2px solid red;
+  padding: 0 55px;
+}
+
+.inf_section h2 {
+  margin: 40px 0 80px 0;
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
 }
 .wrap-info {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  border: 2px solid orange;
 }
 .info-item {
   width: 210px;
+  margin-right: 30px;
+  text-align: left;
 }
 
-/* .right_left {
+.right_left {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 55px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+.right {
+  display: flex;
+  margin-top: 50px;
+}
+.our_parther {
+  margin-top: 1000px;
   display: flex;
   justify-content: center;
-} */
-
-/* .right {
-  position: absolute;
+  align-self: center;
+  width: 100%;
+  height: 395px;
+  background-image: url(/Food-Store/img/Bg\ Our\ Partner.png);
+}
+.sections {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 55px;
+}
+.section_left {
+  display: flex;
   width: 570px;
-  height: 855px;
-  left: 642px;
-  top: 1583px;
-  background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/markus-spiske-jHrW-l7NWfw-unsplash\ 1.png);
-} */
-
-/* footer {
-    background-image: url(/Food-Store/img/Tell\ a\ Frind.png);
-    position: absolute;
-    width: 1280px;
-    height: 260px;
-} */
+  height: 432px;
+  background-image: url(/Food-Store/img/section-left.png);
+}
+.section_right {
+  display: flex;
+  justify-content: flex-end;
+}
