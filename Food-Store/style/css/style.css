@@ -18,7 +18,7 @@ ul li {
   list-style: none;
 }
 .list li:before {
-  content: url(/Food-Store/img/Vector\ 5.svg);
+  content: url(img/Vector\ 5.svg);
   padding: 2px 7px;
   background: #ff8126;
   border-radius: 50%;
@@ -69,7 +69,7 @@ nav a {
   display: inline-block;
   width: 10px;
   height: 7px;
-  background-image: url(/Food-Store/img/Vector\ 2.svg);
+  background-image: url(img/Vector\ 2.svg);
 }
 .top_menu {
   display: flex;
@@ -79,19 +79,19 @@ nav a {
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/search.svg);
+  background-image: url(img/search.svg);
 }
 .menu2 {
   width: 24px;
   height: 30px;
   background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/profile.svg);
+  background-image: url(img/profile.svg);
 }
 .menu3 {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/cart.svg);
+  background-image: url(img/cart.svg);
 }
 .round {
   display: flex;
@@ -126,7 +126,7 @@ nav a {
   align-items: flex-start;
   flex-direction: column;
   background-repeat: no-repeat;
-  background: url(/Food-Store/img/main.png);
+  background: url(img/main.png);
   box-shadow: -5px 4px 11px -3px #000000;
   padding: 60px;
 }
@@ -315,7 +315,7 @@ nav a {
   align-self: center;
   width: 100%;
   height: 395px;
-  background-image: url(/Food-Store/img/Bg\ Our\ Partner.png);
+  background-image: url(img/Bg\ Our\ Partner.png);
   align-content: center;
   flex-wrap: wrap;
   flex-direction: column;
@@ -399,7 +399,7 @@ nav a {
 .section_right {
   display: flex;
   background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/section-left.png);
+  background-image: url(img/section-left.png);
   width: 1720px;
   height: 432px;
 }
@@ -437,7 +437,7 @@ nav a {
   height: 260px;
   display: flex;
   flex-direction: column;
-  background-image: url(/Food-Store/img/Bg\ Tell\ a\ Frind.png);
+  background-image: url(img/Bg\ Tell\ a\ Frind.png);
 }
 .comunication h4 {
   font-family: "Cormorant", serif;
