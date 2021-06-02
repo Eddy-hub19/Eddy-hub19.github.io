@@ -181,8 +181,6 @@ nav a {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 1170px;
-  height: 412px;
   margin-top: 58px;
 }
 
@@ -377,9 +375,14 @@ nav a {
   height: 45px;
   background: #ff8126;
   border-radius: 5px;
-  color: white;
   border: none;
   margin-bottom: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
 }
 .sections {
   display: flex;
@@ -495,7 +498,6 @@ nav a {
   font-size: 40px;
   line-height: 48px;
   text-align: center;
-
   color: #1f1f1f;
   margin: 40px 0 60px 0;
 }
