@@ -22,7 +22,7 @@ gulp.task("less", function() {
         .src("./less/style.less")
         .pipe(autoprefixer())
         .pipe(less())
-        .pipe(gulp.dest("./src/css/test.css"));
+        .pipe(gulp.dest("./css"));
 });
 
 gulp.task("watch", function() {
