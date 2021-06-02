@@ -15,5 +15,8 @@
     "bugs": {
         "url": "https://github.com/Eddy-hub19/Eddy-hub19.github.io/issues"
     },
-    "homepage": "https://github.com/Eddy-hub19/Eddy-hub19.github.io#readme"
+    "homepage": "https://github.com/Eddy-hub19/Eddy-hub19.github.io#readme",
+    "dependencies": {
+        "gulp": "^4.0.2"
+    }
 }
