@@ -13,7 +13,7 @@ gulp.task("server", function() {
     gulp.watch("*.html").on("change", browserSync.reload);
 });
 
-gulp.task("style", function() {
+gulp.task("styles", function() {
     return gulp.src("less/style.less");
 });
 
@@ -22,7 +22,7 @@ gulp.task("less", function() {
         .src("./less/style.less")
         .pipe(autoprefixer())
         .pipe(less())
-        .pipe(gulp.dest("src/main.css"));
+        .pipe(gulp.dest("./main.css"));
 });
 
 gulp.task("watch", function() {
