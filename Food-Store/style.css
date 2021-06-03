@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .warning {
     display: flex;
     justify-content: center;
@@ -7,10 +17,7 @@
     background: #c2e8ce;
 }
 
-.warning .p {
-    display: flex;
-    align-items: center;
-    margin-left: 458px;
+.warning p {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -20,63 +27,23 @@
     color: #1f1f1f;
 }
 
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+.warning .close-btn {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 55px;
+    top: 0;
 }
 
 .content_wrapper {
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background: #c2e8ce;
-    position: relative;
-    font-family: "Poppins";
-}
-
-content {
-    width: 1280px;
+    width: 1280px !important;
     margin: 0 auto;
     position: relative;
-}
-
-
-/* for food_info */
-
-.wrap_content {
-    width: 1280px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
 }
 
 a {
     text-decoration: none;
     color: black;
-}
-
-.warning.p {
-    display: flex;
-    align-items: center;
-    margin-left: 458px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: #1f1f1f;
 }
 
 ul li {
@@ -90,14 +57,6 @@ ul li {
     border-radius: 50%;
 }
 
-.vector {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 55px;
-    top: 17px;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -107,14 +66,14 @@ ul li {
     font-family: "Popins";
 }
 
-nav {
+.header nav {
     display: flex;
     align-items: center;
     margin-left: 55px;
     font-family: "Popins";
 }
 
-nav a {
+.header nav a {
     margin-right: 40px;
 }
 
@@ -181,33 +140,27 @@ nav a {
     padding: 0 2px;
 }
 
-.main_page {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-repeat: no-repeat;
+.banner {
     box-shadow: -5px 4px 11px -3px #000000;
     position: relative;
 }
 
-.main_page h1 {
+.banner .details {
     position: absolute;
+    left: 55px;
+    top: 125px;
+}
+
+.banner h1 {
     font-family: "Cormorant", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
     line-height: 61px;
     color: #1f1f1f;
-    left: 55px;
-    top: 125px;
 }
 
-.main_page h2 {
-    position: absolute;
-    width: 570px;
-    height: 30px;
-    left: 55px;
-    top: 192px;
+.banner h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
@@ -216,10 +169,7 @@ nav a {
     color: #1f1f1f;
 }
 
-.main_page button {
-    position: absolute;
-    left: 56px;
-    top: 276px;
+.banner button {
     width: 200px;
     height: 45px;
     background: #ff8126;
@@ -232,7 +182,7 @@ nav a {
     line-height: 27px;
 }
 
-.main_page .wrapper {
+.goods {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -241,7 +191,7 @@ nav a {
     margin-top: 58px;
 }
 
-.wrapper h2 {
+.goods h2 {
     display: flex;
     justify-content: center;
     font-family: "Cormorant", serif;
@@ -252,7 +202,7 @@ nav a {
     margin: 40px -22px 80px 0;
 }
 
-.wrapper b {
+.goods b {
     color: #ff8126;
     margin-left: 12px;
 }
@@ -324,7 +274,7 @@ nav a {
     text-align: center;
     width: 1280px;
     padding: 0 55px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .inf_section b {
@@ -341,7 +291,6 @@ nav a {
 }
 
 .wrap-info {
-    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -356,7 +305,7 @@ nav a {
 .food_info {
     display: flex;
     flex-direction: row-reverse;
-    margin: 55px;
+    margin: 0 auto 80px;
 }
 
 .left {
@@ -531,7 +480,7 @@ nav a {
 
 .bakery_quality {
     text-align: center;
-    margin: 80px 0 40px 0;
+    margin: 80px 0 80px 0;
 }
 
 .bakery_quality a {
@@ -622,91 +571,30 @@ nav a {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: baseline;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 57px 72px;
     background-repeat: no-repeat;
-    position: relative;
 }
 
-.img_pos_logo {
-    position: absolute;
-    left: 54px;
-    top: 29px;
+.footer_section {
+    margin-left: 83px;
 }
 
-.section1 nav {
+.footer_section nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.section1 h5 {
-    margin: 0 0 50px 55px;
+.footer_section h5 {
+    margin-bottom: 15px;
 }
 
-.section1 a {
+.footer_section a {
     margin-top: 8px;
     font-family: "Poppins";
     font-size: 15px;
     line-height: 22px;
     color: #3d3d3d;
-}
-
-.section2 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section2 a {
-    margin-top: 8px;
-    font-family: "Poppins";
-    font-size: 15px;
-    line-height: 22px;
-    color: #3d3d3d;
-}
-
-.section2 h5 {
-    margin: 0 107px 50px 59px;
-}
-
-.section3 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section3 h5 {
-    margin: 0px 28px 50px 55px;
-}
-
-.section3 a {
-    margin-top: 8px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
-    color: #3d3d3d;
-}
-
-.section4 {
-    margin: 0 69px 0px 18px;
-}
-
-.section5 {
-    margin-left: 35px;
-}
-
-.content_wrap_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: baseline;
-    padding: 57px 72px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin: 0 auto;
-    width: 1280px;
 }
