@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/css/style.css" />
+    <!-- <link rel="stylesheet" href="./style/less/style.css" /> -->
 </head>
 
 <body>
     <header>
         <div class="warning">
             <p>Free Delivery over $100. Gift with Purchase over $150</p>
-            <img class="vector" width="16" src="img/Vector 1.svg" alt="#" />
+            <img class="vector" width="16" src="img/cross.svg" alt="#" />
         </div>
         <div class="header">
             <a href="#logo"><img src="img/logo.svg" alt="logo" /></a>
@@ -29,10 +30,8 @@
                 <a href=" #Gifts&Bundles">Gifts & Bundles
                     <span class="arrow"></span>
                 </a>
-                <a href="#Our_Brands">Our Brands
-                </a>
-                <a href="#About_us">About Us
-                </a>
+                <a href="#Our_Brands">Our Brands</a>
+                <a href="#About_us">About Us</a>
             </nav>
             <div class="top_menu">
                 <div class="round">
@@ -51,8 +50,11 @@
             </div>
         </div>
     </header>
+    <!-- should be moved inside -->
     <div class="main_page">
         <!-- bg -->
+        <!-- should be img not styles -->
+        <img src="img/main.png" alt="">
         <h1>Support Your Local Artisans</h1>
         <h2>Discover brands and theit stories</h2>
         <button>Browse bands</button>
@@ -66,6 +68,7 @@
                         <img width="270px " height="160px " src="img/pizza.png" alt="Pepperoni Pizza" />
                         <h4>Pepperoni Pizza</h4>
                         <div class="price">
+                            <!-- better to have spans oinstead of p -->
                             <p class="cost_color">$19.99</p>
                             <p class="line_through">$24.99</p>
                         </div>
@@ -74,7 +77,7 @@
                 </div>
                 <div class="item ">
                     <div class="wrap">
-                        <img width="270px " height="160px " src="img/Baked Pancakes.png" alt="Baked Pancakes" />
+                        <img width="270px " height="160px " src="img/Baked-Pancakes.png" alt="Baked Pancakes" />
                         <h4>Baked Pancakes</h4>
                         <div class="price">
                             <p class="cost_color">$35.99</p>
@@ -96,7 +99,7 @@
                 </div>
                 <div class="item ">
                     <div class="wrap">
-                        <img width="270px " height="160px " src="img/Bunch of orange.png" alt="Bunch of Orange" />
+                        <img width="270px " height="160px " src="img/Bunch-of-orange.png" alt="Bunch of Orange" />
                         <h4>Bunch of Orange</h4>
                         <div class="price">
                             <p class="cost_color">$24.99</p>
@@ -107,10 +110,12 @@
                 </div>
             </div>
         </section>
-        <div class="inf_section">
+        <section class="inf_section">
+            <!-- all styles should be in style file -->
             <h2>Why Choose <b style="color: #FF8126">the Premium Bakery Quality</b></h2>
             <div class="wrap-info">
                 <div class="info-item">
+                    <!-- should be height as well -->
                     <img width="48px" src="img/telescope.svg" alt="">
                     <h3>Discover new flavours & people</h3>
                     <p>Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.</p>
@@ -138,12 +143,14 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- food-info -->
         <section class="right_left">
             <div class="right">
                 <img src="img/right.png" alt="grapes">
             </div>
             <div class="left">
+                <!--  no direct styles -->
                 <h3>Who Makes <b style="color:black">Your Food?</b> </h3>
                 <p>Our mission is to help grow the local food ecosystem in BC and across Canada. Why? </p>
                 <ul class="list">
@@ -159,6 +166,7 @@
             </div>
         </section>
     </main>
+    <!-- should be sections and moved to the main -->
     <article class="our_parther">
         <h2> Our Charity Partner, City Bakery </h2>
         <img width="100px" height="130px" src="img/logo-our-pathner.png" alt="">
@@ -181,9 +189,16 @@
     </article>
 
     <div class="bakery_quality">
+        <!-- should be a link -->
         <h2><i>@PremiumBakeryQuality</i> on Instagram</h2>
     </div>
-    <div class="rectangles">
+    <!-- should be totaly rewriyed, padding and shadows should be done by styles  -->
+    <div class="carousel">
+        <ul>
+            <li>
+                <a href=""><img src="img/arrow left.svg" alt=""></a>
+            </li>
+        </ul>
         <a href=""><img src="img/arrow left.svg" alt=""></a>
         <a href="#"> <img src="img/1.png" alt=""></a>
         <a href="#"> <img src="img/2.png" alt=""></a>
@@ -194,34 +209,37 @@
     </div>
 
     <div class="comunication">
-        <div class="tell_a_friend">
-            <h4> Tell a friend </h4>
-        </div>
-        <div class="com_item">
-            <a href="#"> <img src="img/facebook.svg" alt=""></a>
+        <h4 class="tell_a_friend"> Tell a friend </h4>
+        <!-- should be ul > li > a -->
+        <nav class="com_item">
+            <a href="#"> <img src="img/facebook.svg" alt="facebook"></a>
             <a href="#"> <img src="img/instagram.svg" alt=""> </a>
             <a href="#"> <img src="img/twitter.svg" alt=""> </a>
-            <a href="#"> <img src="img/whats app.svg" alt=""> </a>
+            <a href="#"> <img src="img/whatsapp.svg" alt=""> </a>
             <a href="#"> <img src="img/facebook.svg" alt=""> </a>
             <a href="#"> <img src="img/telegramm.svg" alt=""> </a>
-        </div>
+        </nav>
     </div>
 
     <footer>
+        <!-- should be wrapped inside div .logo -->
         <img class="img_pos_logo" src="img/logo.svg" alt="">
-        <div class="all_sections"></div>
-        <nav class="section1">
+        <!-- <div class="all_sections"></div> -->
+        <div class="section1">
             <h5>Occasions</h5>
-            <a class="section_font" href="#">Occasions</a>
-            <a class="section_font" href="#">Working From Home</a>
-            <a class="section_font" href="#">Snack Time</a>
-            <a class="section_font" href="#">Breakfast</a>
-            <a class="section_font" href="#">Vegan Life</a>
-            <a class="section_font" href="#">Baking</a>
-            <a class="section_font" href="#">Gifts & Bundles</a>
-            <a class="section_font" href="#">Easy Cooking</a>
-            <a class="section_font" href="#">All Products</a>
-        </nav>
+            <nav>
+                <a class="section_font" href="#">Occasions</a>
+                <a class="section_font" href="#">Working From Home</a>
+                <a class="section_font" href="#">Snack Time</a>
+                <a class="section_font" href="#">Breakfast</a>
+                <a class="section_font" href="#">Vegan Life</a>
+                <a class="section_font" href="#">Baking</a>
+                <a class="section_font" href="#">Gifts & Bundles</a>
+                <a class="section_font" href="#">Easy Cooking</a>
+                <a class="section_font" href="#">All Products</a>
+            </nav>
+        </div>
+        <!-- other sectioon should be re-writed like first section1 -->
         <nav class="section2">
             <h5>All Categories</h5>
             <a class="section_font" href="#">Baking</a>
@@ -246,6 +264,7 @@
             <a href="#">Spicy Heat Lover's Box</a>
             <a href="#">Snacking Sensations</a>
         </nav>
+        <!-- section4 for this - keep single style -->
         <div class="our_brands">
             <h5>Our Brands</h5>
         </div>

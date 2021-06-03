@@ -1,0 +1,5 @@
+1) icons desapered;
+2) position relative for absolute parents block;
+3) main menu dont have arrows anymore;
+4) fix all images;
+5) Who Makes Your Food? - icons are broken;
