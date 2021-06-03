@@ -7,5 +7,5 @@ gulp.task("less", function() {
         .src("./style/less/style.less")
         .pipe(less())
         .pipe(concat('style.css'))
-        .pipe(gulp.dest("./style/css"));
+        .pipe(gulp.dest("./style/"));
 });

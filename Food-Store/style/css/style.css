@@ -8,6 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* HEADER */
+
 .warning {
     display: flex;
     justify-content: center;
@@ -139,6 +142,12 @@ ul li {
     color: #ffffff;
     padding: 0 2px;
 }
+
+
+/* HEADER */
+
+
+/* MAIN */
 
 .banner {
     box-shadow: -5px 4px 11px -3px #000000;
@@ -568,6 +577,9 @@ ul li {
     margin-left: 30px;
 }
 
+
+/* MAIN */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -598,3 +610,6 @@ footer {
     line-height: 22px;
     color: #3d3d3d;
 }
+
+
+/* FOOTER */
