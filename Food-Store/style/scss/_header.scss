@@ -6,46 +6,46 @@
     height: 50px;
     background: #c2e8ce;
     p {
-      font-family: "Poppins", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 21px;
-      text-align: center;
-      color: #1f1f1f;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #1f1f1f;
     }
     .close-btn {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      right: 55px;
-      top: 0;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 55px;
+        top: 0;
     }
-  }
-  
-  .content_wrapper {
+}
+
+.content_wrapper {
     width: 1280px !important;
     margin: 0 auto;
     position: relative;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: black;
-  }
-  
-  ul li {
+}
+
+ul li {
     list-style: none;
-  }
-  
-  .list li:before {
+}
+
+.list li:before {
     content: url(/Food-Store/img/check-mark.svg);
     padding: 2px 7px;
     background: #ff8126;
     border-radius: 50%;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,51 +53,51 @@
     padding: 20px;
     font-family: "Popins";
     nav {
-      display: flex;
-      align-items: center;
-      margin-left: 55px;
-      font-family: "Popins";
+        display: flex;
+        align-items: center;
+        margin-left: 55px;
+        font-family: "Popins";
     }
     nav a {
-      margin-right: 40px;
+        margin-right: 40px;
     }
-  }
-  
-  .arrow {
+}
+
+.arrow {
     display: inline-block;
     width: 10px;
     height: 7px;
     background-image: url(/Food-Store/img/arrow-down.svg);
-  }
-  
-  .top_menu {
+}
+
+.top_menu {
     display: flex;
     justify-content: flex-end;
-  }
-  
-  .menu1 {
+}
+
+.menu1 {
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
     background-image: url(/Food-Store/img/search.svg);
-  }
-  
-  .menu2 {
+}
+
+.menu2 {
     width: 24px;
     height: 30px;
     background-repeat: no-repeat;
     background-image: url(/Food-Store/img/profile.svg);
-  }
-  
-  .menu3 {
+}
+
+.menu3 {
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-image: url(/Food-Store/img/cart.svg);
     position: relative;
-  }
-  
-  .round {
+}
+
+.round {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,9 +106,9 @@
     border: 1px solid #bfbfbf;
     border-radius: 50%;
     margin-left: 20px;
-  }
-  
-  .circle {
+}
+
+.circle {
     position: absolute;
     min-width: 16px;
     height: 16px;
@@ -124,4 +124,4 @@
     line-height: 16px;
     color: #ffffff;
     padding: 0 2px;
-  }
+}
