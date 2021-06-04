@@ -1,0 +1,61 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background: rgb(60, 133, 182);
+    }
+    .warning {
+        display: none;
+    }
+    header {
+        font-size: 23px;
+    }
+    .left {
+        margin: 15px 2px 0px 45px;
+    }
+    .left h3 {
+        font-size: 65px;
+    }
+    .left p {
+        font-size: 30px;
+    }
+    .our_parther {
+        display: none;
+    }
+    .section_left h3 {
+        font-size: 60px;
+        line-height: 66px;
+    }
+    .inf_section {
+        display: none;
+    }
+    .food_info {
+        display: none;
+    }
+    .sections {
+        margin: 110px auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background: rgb(32, 165, 154);
+    }
+    .warning {
+        width: 179%;
+    }
+    .header {
+        font-size: 22px;
+    }
+    .left {
+        margin: 0 0px -6px 54px;
+    }
+    .our_parther {
+        width: 179%;
+    }
+    .section_left p {
+        font-size: 21px;
+        font-family: "Poppins";
+    }
+    .comunication {
+        width: 80em;
+    }
+}
