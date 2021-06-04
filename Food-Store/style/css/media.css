@@ -7,11 +7,16 @@
     html {
         scroll-behavior: smooth;
         margin: 0 auto;
-        min-width: 320px;
+        min-width: 450px;
     }
     /* HEADER */
-    .content_wrapper {
+    .warning {
         display: none;
+    }
+    .content_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     a {
         text-decoration: none;
@@ -48,9 +53,8 @@
     }
     .top_menu {
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
-        margin-left: 350px;
+        margin-left: 135px;
     }
     .menu1 {
         width: 24px;
@@ -104,31 +108,31 @@
         box-shadow: -5px 4px 11px -3px #000000;
         position: relative;
     }
+    .img_banenr {
+        width: 150%;
+    }
     .banner .details {
         position: absolute;
-        left: 55px;
-        top: 125px;
+        left: 18px;
+        top: 5px;
     }
     .banner h1 {
-        display: none;
         font-family: "Cormorant", serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 50px;
-        line-height: 61px;
+        font-size: 24px;
+        line-height: 75px;
         color: #1f1f1f;
     }
     .banner h2 {
-        display: none;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 300;
-        font-size: 26px;
-        line-height: 39px;
+        font-size: 20px;
+        line-height: 50px;
         color: #1f1f1f;
     }
     .banner button {
-        display: none;
         width: 200px;
         height: 45px;
         background: #ff8126;
@@ -333,7 +337,7 @@
         display: flex;
         justify-content: space-around;
         align-self: center;
-        width: 152%;
+        width: 125%;
         height: 260px;
         background-image: url(/Food-Store/img/Bg-Our-Partner.png);
         align-content: center;
