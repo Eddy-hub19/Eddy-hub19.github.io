@@ -10,28 +10,8 @@
         min-width: 320px;
     }
     /* HEADER */
-    .warning {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 155%;
-        height: 50px;
-        background: #c2e8ce;
-        position: relative;
-    }
-    .warning p {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        line-height: 21px;
-        text-align: center;
-        color: #1f1f1f;
-    }
-    .warning .close-btn {
-        position: absolute;
-        width: 27px;
-        height: 14px;
-        left: 517px;
-        top: 17px;
+    .content_wrapper {
+        display: none;
     }
     a {
         text-decoration: none;
@@ -121,13 +101,10 @@
     /* HEADER */
     /* MAIN */
     .banner {
-        visibility: hidden;
-        display: none;
         box-shadow: -5px 4px 11px -3px #000000;
         position: relative;
     }
     .banner .details {
-        display: none;
         position: absolute;
         left: 55px;
         top: 125px;
