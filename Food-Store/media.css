@@ -1,55 +1,286 @@
 @media (min-width: 320px) and (max-width: 480px) {
     body {
-        background: rgb(60, 133, 182);
+        background: rgb(47, 122, 156);
+    }
+    .warning p {
+        font-size: 8px;
+    }
+    .warning .close-btn {
+        width: 8px;
+        height: 8px;
+    }
+    .header {
+        font-size: 22px;
+    }
+    .header nav {
+        font-size: 9px;
+        margin: 14px;
+    }
+    .header nav a {
+        margin-right: 10px;
+    }
+    .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+    }
+    .banner .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .banner .details {
+        left: 35px;
+        top: 26px;
+    }
+    .banner h1 {
+        font-size: 18px;
+        margin-top: -22px;
+    }
+    .banner h2 {
+        line-height: 28px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .banner button {
+        width: 100px;
+        height: 27px;
+        border-radius: 10px;
+        font-size: 11px;
+        line-height: 27px;
+    }
+    .img_banner {
+        width: 100%;
     }
     .warning {
-        display: none;
-    }
-    header {
-        font-size: 23px;
+        width: 100%;
     }
     .left {
-        margin: 15px 2px 0px 45px;
+        margin: 0 0px -6px 54px;
     }
     .left h3 {
-        font-size: 65px;
+        font-size: 35px;
+        line-height: 18px;
+        margin-top: 37px;
     }
-    .left p {
-        font-size: 30px;
+    .left button {
+        width: 215px;
+        height: 34px;
+        font-size: 15px;
     }
     .our_parther {
-        display: none;
+        width: 100%;
     }
-    .section_left h3 {
-        font-size: 60px;
-        line-height: 66px;
+    .our_parther button {
+        width: 298px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+    }
+    .our_parther h2 {
+        font-size: 33px;
+    }
+    .section_left p {
+        font-size: 21px;
+        font-family: "Poppins";
+    }
+    .comunication {
+        width: 100%;
+    }
+    .goods {
+        margin-top: 0;
+    }
+    .good h2 {
+        margin: 52px 0 30px 0;
+    }
+    .item {
+        width: 122px;
+        height: 190px;
+        margin-left: 10px;
     }
     .inf_section {
         display: none;
     }
-    .food_info {
+    .hidden_item {
         display: none;
     }
+    .item h4 {
+        font-size: 15px;
+    }
+    .cost_color {
+        font-size: 15px;
+    }
+    .line_through {
+        font-size: 12px;
+    }
+    .wrap-info {
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+    }
+    .wrap img {
+        width: 121px;
+        height: 75px;
+    }
+    .wrap button {
+        width: 105px;
+        height: 25px;
+        border-radius: 10px;
+        margin-top: 11px;
+    }
+    .inf_section {
+        width: auto;
+    }
+    .inf_section h2 {
+        margin: 46px 0 36px 0;
+        font-size: 28px;
+    }
+    .right {
+        display: block;
+    }
+    .right img {
+        width: 100%;
+    }
+    .list li {
+        font-size: 13px;
+    }
     .sections {
-        margin: 110px auto;
+        display: none;
+        /* flex-direction: column; */
+    }
+    .section_left h3 {
+        font-size: 40px;
+    }
+    .section_left b {
+        font-size: 24px;
+    }
+    .section_left p {
+        flex-wrap: wrap;
+        width: 38%;
+        font-weight: normal;
+    }
+    .section_right {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 432px;
+        width: 100% !important;
+    }
+    .section_left {
+        min-width: 100% !important;
+    }
+    .carousel {
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel_wrap {
+        width: 99px;
+        height: 112px;
+        padding: 2px;
+        margin: 3px;
+    }
+    .carousel_wrap img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94px;
+        height: 102px;
+    }
+    .comunication {
+        width: auto;
+    }
+    .comunication h4 {
+        font-size: 34px;
+    }
+    .com_item img {
+        width: 30px;
+    }
+    .bakery_quality a {
+        font-size: 17px;
+    }
+    .bakery_quality i {
+        font-size: 18px;
+    }
+    .footer_section h5 {
+        margin: 33px 19px 21px 0px;
+    }
+    footer {
+        display: none !important;
     }
 }
+
+
+/* tablet */
 
 @media (min-width: 481px) and (max-width: 767px) {
     body {
         background: rgb(32, 165, 154);
     }
-    .warning {
-        width: 179%;
-    }
     .header {
         font-size: 22px;
+    }
+    .header nav {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .header nav a {
+        margin-right: 10px;
+    }
+    .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+    }
+    .banner .content_wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .banner .details {
+        left: 35px;
+        top: 26px;
+    }
+    .banner h1 {
+        font-size: 33px;
+    }
+    .banner h2 {
+        line-height: 58px;
+    }
+    .img_banner {
+        width: 100%;
+    }
+    .warning {
+        width: 100%;
     }
     .left {
         margin: 0 0px -6px 54px;
     }
+    .left h3 {
+        font-size: 35px;
+        line-height: 18px;
+        margin-top: 37px;
+    }
+    .left button {
+        width: 215px;
+        height: 34px;
+        font-size: 15px;
+    }
     .our_parther {
-        width: 179%;
+        width: 100%;
+    }
+    .our_parther button {
+        width: 298px;
+        height: 36px;
+        border-radius: 22px;
+        font-size: 16px;
+    }
+    .our_parther h2 {
+        font-size: 33px;
     }
     .section_left p {
         font-size: 21px;
@@ -57,5 +288,116 @@
     }
     .comunication {
         width: 80em;
+    }
+    .goods {
+        margin-top: 0;
+    }
+    .good h2 {
+        margin: 52px 0 30px 0;
+    }
+    .item {
+        width: 158px;
+        height: 225px;
+        margin-left: 10px;
+    }
+    .item h4 {
+        font-size: 15px;
+    }
+    .cost_color {
+        font-size: 15px;
+    }
+    .line_through {
+        font-size: 12px;
+    }
+    .wrap-info {
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+    }
+    .wrap img {
+        width: 158px;
+        height: 105px;
+    }
+    .wrap button {
+        width: 111px;
+        height: 31px;
+        border-radius: 10px;
+        margin-top: 11px;
+    }
+    .inf_section {
+        width: auto;
+    }
+    .inf_section h2 {
+        margin: 46px 0 36px 0;
+        font-size: 28px;
+    }
+    .right {
+        display: block;
+    }
+    .right img {
+        width: 100%;
+    }
+    .list li {
+        font-size: 13px;
+    }
+    .sections {
+        display: none;
+        /* flex-direction: column; */
+    }
+    .section_left h3 {
+        font-size: 40px;
+    }
+    .section_left b {
+        font-size: 24px;
+    }
+    .section_left p {
+        flex-wrap: wrap;
+        width: 38%;
+        font-weight: normal;
+    }
+    .section_right {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 432px;
+        width: 100% !important;
+    }
+    .section_left {
+        min-width: 100% !important;
+    }
+    .carousel {
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel_wrap {
+        width: 99px;
+        height: 112px;
+        padding: 2px;
+        margin: 3px;
+    }
+    .carousel_wrap img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        height: 95px;
+    }
+    .comunication {
+        width: auto;
+    }
+    .bakery_quality a {
+        font-size: 30px;
+    }
+    .bakery_quality i {
+        font-size: 30px;
+    }
+    .footer_section h5 {
+        margin: 33px 19px 21px 0px;
+    }
+    footer {
+        display: none !important;
     }
 }
