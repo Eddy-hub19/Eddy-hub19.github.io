@@ -1,3 +1,6 @@
+$color-orange: #ff8126;
+$font-poppins: "Poppins";
+$font-cormorant: "Cormorant" serif;
 .warning {
     display: flex;
     justify-content: center;
@@ -6,14 +9,13 @@
     height: 50px;
     background: #c2e8ce;
     p {
-        font-family: "Poppins", sans-serif;
+        font-family: $font-poppins;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
         text-align: center;
-        // color: #1f1f1f;
-        color: $color;
+        color: #1f1f1f;
     }
     .close-btn {
         position: absolute;
@@ -42,7 +44,7 @@ ul li {
 .list li:before {
     content: url(/Food-Store/img/check-mark.svg);
     padding: 2px 7px;
-    background: #ff8126;
+    background: $color-orange;
     border-radius: 50%;
 }
 
@@ -52,12 +54,12 @@ ul li {
     align-items: center;
     align-content: center;
     padding: 20px;
-    font-family: "Poppins";
+    font-family: $font-poppins;
     nav {
         display: flex;
         align-items: center;
         margin-left: 55px;
-        font-family: "Poppins";
+        font-family: $font-poppins;
     }
     nav a {
         margin-right: 40px;
@@ -116,9 +118,9 @@ ul li {
     left: 26px;
     top: -16px;
     text-align: center;
-    background: #ff8126;
+    background: $color-orange;
     border-radius: 50%;
-    font-family: "Poppins";
+    font-family: $font-poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
