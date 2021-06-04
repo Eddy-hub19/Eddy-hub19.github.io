@@ -1,542 +1,61 @@
 @media (min-width: 320px) and (max-width: 480px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    body {
+        background: rgb(60, 133, 182);
     }
-    html {
-        scroll-behavior: smooth;
-        margin: 0 auto;
-        min-width: 450px;
-    }
-    /* HEADER */
     .warning {
         display: none;
     }
-    .content_wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    header {
+        font-size: 23px;
     }
-    .logo {
+    .left {
+        margin: 15px 2px 0px 45px;
+    }
+    .left h3 {
+        font-size: 65px;
+    }
+    .left p {
+        font-size: 30px;
+    }
+    .our_parther {
         display: none;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    ul li {
-        list-style: none;
-    }
-    .list li:before {
-        content: url(/Food-Store/img/check-mark.svg);
-        padding: 2px 7px;
-        background: #ff8126;
-        border-radius: 50%;
-    }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        padding: 20px;
-        font-family: "Popins";
-        flex-direction: row;
-    }
-    .header nav {
-        display: none;
-    }
-    .header nav a {
-        margin-right: 40px;
-    }
-    .arrow {
-        display: inline-block;
-        width: 10px;
-        height: 7px;
-        background-image: url(/Food-Store/img/arrow-down.svg);
-    }
-    .top_menu {
-        display: flex;
-        justify-content: flex-end;
-        margin-left: 135px;
-    }
-    .menu1 {
-        width: 24px;
-        height: 24px;
-        background-repeat: no-repeat;
-        background-image: url(/Food-Store/img/search.svg);
-    }
-    .menu2 {
-        width: 24px;
-        height: 30px;
-        background-repeat: no-repeat;
-        background-image: url(/Food-Store/img/profile.svg);
-    }
-    .menu3 {
-        width: 30px;
-        height: 30px;
-        background-repeat: no-repeat;
-        background-image: url(/Food-Store/img/cart.svg);
-        position: relative;
-    }
-    .round {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        border: 1px solid #bfbfbf;
-        border-radius: 50%;
-        margin-left: 20px;
-    }
-    .circle {
-        position: absolute;
-        min-width: 16px;
-        height: 16px;
-        left: 26px;
-        top: -16px;
-        text-align: center;
-        background: #ff8126;
-        border-radius: 50%;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 9px;
-        line-height: 16px;
-        color: #ffffff;
-        padding: 0 2px;
-    }
-    /* HEADER */
-    /* MAIN */
-    .banner {
-        box-shadow: -5px 4px 11px -3px #000000;
-        position: relative;
-    }
-    .img_banenr {
-        width: 150%;
-    }
-    .banner .details {
-        position: absolute;
-        left: 20px;
-        top: 2px;
-    }
-    .banner h1 {
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 75px;
-        color: #1f1f1f;
-    }
-    .banner h2 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 50px;
-        color: #1f1f1f;
-    }
-    .banner button {
-        width: 200px;
-        height: 45px;
-        background: #ff8126;
-        border-radius: 5px;
-        color: white;
-        border: none;
-        font-family: "Poppins";
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .goods {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
-    .goods h2 {
-        display: flex;
-        justify-content: center;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 40px;
-        /* margin: 40px -22px 80px 0; */
-    }
-    .goods b {
-        color: #ff8126;
-        margin-left: 12px;
-    }
-    .wrap_item {
-        display: flex;
-        justify-content: center;
-    }
-    .item {
-        width: 120px;
-        height: 195px;
-        background: #f7f5f0;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        margin-left: 16px;
-    }
-    .item h4 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 27px;
-        text-align: center;
-        color: #1f1f1f;
-    }
-    .item .wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .item .price {
-        display: flex;
-        flex-direction: row;
-    }
-    .cost_color {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 36px;
-        color: #ff8126;
-    }
-    .line_through {
-        margin-left: 10px;
-        color: gray;
-        font-size: 10px;
-        line-height: 36px;
-        font-weight: 600;
-        font-family: "Poppins";
-        text-decoration: line-through;
-    }
-    .wrap button {
-        width: 80px;
-        height: 25px;
-        background: #ff8126;
-        border-radius: 5px;
-        color: white;
-        margin-top: 2px;
-        border: none;
+    .section_left h3 {
+        font-size: 60px;
+        line-height: 66px;
     }
     .inf_section {
         display: none;
-        text-align: center;
-        padding: 0 55px;
-        /* margin: 40px auto; */
-        margin: 100px auto;
-    }
-    .inf_section b {
-        color: #ff8126;
-    }
-    .inf_section h2 {
-        display: none;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 48px;
-    }
-    .wrap-info {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-    .wrap img {
-        width: 120px;
-        height: 100px;
-    }
-    .info-item {
-        margin-right: 15px;
-        text-align: left;
-        font-family: "Popins";
     }
     .food_info {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 0 auto 80px;
-    }
-    .left {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        align-items: flex-start;
-        margin: 0 40px 10px 0;
-    }
-    .left h3 {
         display: none;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        color: #ff8126;
-    }
-    .left p {
-        display: none;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-        color: #1f1f1f;
-        margin-top: 40px;
-    }
-    .left b {
-        display: none;
-        color: black;
-    }
-    .left button {
-        display: none;
-        width: 270px;
-        height: 45px;
-        background: #ff8126;
-        border-radius: 5px;
-        color: white;
-        border: none;
-        margin-top: 30px;
-        font-family: "Popins";
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .list li {
-        display: none;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
-        color: #1f1f1f;
-        margin-top: 20px;
-    }
-    .right {
-        display: none;
-        display: flex;
-        margin-top: 50px;
-    }
-    .right {
-        display: none;
-    }
-    .our_parther {
-        display: flex;
-        justify-content: space-around;
-        align-self: center;
-        width: 125%;
-        height: 260px;
-        background-image: url(/Food-Store/img/Bg-Our-Partner.png);
-        align-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .our_parther h2 {
-        display: none;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        color: #ffffff;
-        margin-top: 60px;
-    }
-    .our_parther button {
-        width: 330px;
-        height: 45px;
-        background: #ff8126;
-        border-radius: 5px;
-        border: none;
-        margin-bottom: 60px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
-        color: #ffffff;
     }
     .sections {
-        display: flex;
-        flex-direction: row;
-        margin: 50px auto;
+        margin: 110px auto;
     }
-    .section_left {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        align-items: flex-start;
-        margin: 20px 31px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background: rgb(32, 165, 154);
     }
-    .section_left b {
-        color: black;
+    .warning {
+        width: 179%;
     }
-    .section_left h2 {
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        color: #1f1f1f;
+    .header {
+        font-size: 22px;
     }
-    .section_left h3 {
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        color: #ff8126;
+    .left {
+        margin: 0 0px -6px 54px;
+    }
+    .our_parther {
+        width: 179%;
     }
     .section_left p {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 21px;
         font-family: "Poppins";
-        color: #1f1f1f;
-        margin: 40px 0 20px 0;
-    }
-    .section_left button {
-        width: 140px;
-        height: 45px;
-        background: #ff8126;
-        border-radius: 5px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 27px;
-        color: white;
-        border: none;
-        margin-top: 30px;
-    }
-    .section_right {
-        display: flex;
-        justify-content: center;
-        background-repeat: no-repeat;
-        background-image: url(/Food-Store/img/section-left.png);
-        width: 1720px;
-        height: 432px;
-    }
-    .bakery_quality {
-        display: none;
-        text-align: center;
-        margin: 80px 0 80px 0;
-    }
-    .bakery_quality a {
-        display: none;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        text-decoration-line: underline;
-        color: #ff8126;
-    }
-    .bakery_quality h2 {
-        display: none;
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-    }
-    .bakery_quality i {
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        text-decoration: none;
-        color: black;
-    }
-    .carousel {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .carousel_wrap {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 186px;
-        height: 186px;
-        background: #ffffff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-        padding: 15px;
-        margin: 20px;
-    }
-    .carousel_wrap li {
-        margin-left: 40px;
     }
     .comunication {
-        width: 125%;
-        height: 270px;
-        display: flex;
-        background-image: url(/Food-Store/img/Bg-Tell-Friend.png);
+        width: 80em;
     }
-    .comunication h4 {
-        font-family: "Cormorant", serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        color: #1f1f1f;
-        margin: 40px 0 60px 0;
-    }
-    .tell_a_friend {
-        display: flex;
-        justify-content: center;
-    }
-    .com_item {
-        display: flex;
-        justify-content: center;
-    }
-    .com_item a {
-        margin-left: 30px;
-    }
-    /* MAIN */
-    footer {
-        display: none;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 57px 72px;
-        background-repeat: no-repeat;
-    }
-    footer .content_wrapper {
-        display: none;
-    }
-    .footer_section {
-        display: none;
-        margin-left: 83px;
-    }
-    .footer_section nav {
-        display: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .footer_section h5 {
-        display: none;
-        margin-bottom: 15px;
-    }
-    .footer_section a {
-        display: none;
-        margin-top: 8px;
-        font-family: "Poppins";
-        font-size: 15px;
-        line-height: 22px;
-        color: #3d3d3d;
-    }
-    /* FOOTER */
 }
