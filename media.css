@@ -1,125 +1,250 @@
-@media screen and (max-width: 480px) {
-  body {
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-    background: no-repeat;
-    background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
-  }
-  .header__class {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    margin-right: 70px;
-    color: gainsboro;
-  }
-  .header__class h1 {
-    display: none;
-  }
-  .header__class h2 {
-    color: white;
-    font-family: "Indie Flower", cursive;
-    font-size: 24px;
-  }
-  .header_main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: white;
-    font-size: 20px;
-    font-family: "Indie Flower";
-    margin-left: 25px;
-    margin-top: 26px;
-  }
-  select {
-    position: absolute;
-    left: 33%;
-    bottom: 72%;
-    color: white;
-    background-color: rgb(43, 69, 95);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 10px;
-    width: 120px;
-    height: 25px;
-    border-radius: 20px;
-  }
-  ul,
-  li {
-    list-style: none;
-  }
-  @keyframes color-change {
-    0% {
-      color: white;
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: no-repeat;
+        background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
     }
-    50% {
-      color: black;
+    .header__class {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-right: 70px;
+        color: gainsboro;
     }
-    100% {
-      color: white;
+    .header__class h1 {
+        display: none;
     }
-  }
-  .animation {
-    animation: color-change 4s infinite;
-  }
-  #bar {
-    position: absolute;
-    top: -4em;
-    padding: 0.5em;
-    left: 156px;
-    margin: 0;
-    width: 40px;
-    height: 80px;
-    background: rgb(101, 126, 150);
-    color: black;
-    transition: top 1.5s ease-out 0.5s;
-  }
-  .arrow {
-    font-size: 20px;
-  }
-  #bar:hover :active {
-    top: 0;
-    color: red;
-  }
-  li img {
-    width: 25px;
-  }
-  footer {
-    position: absolute;
-    left: 25%;
-    top: 750px;
-    color: white;
-  }
-  .img {
-    width: 43px;
-    position: absolute;
-    left: -55px;
-    right: 73px;
-    bottom: 1px;
-  }
+    .header__class h2 {
+        color: white;
+        font-family: "Indie Flower", cursive;
+        font-size: 24px;
+    }
+    .header_main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        font-size: 20px;
+        font-family: "Indie Flower";
+        margin-left: 25px;
+        margin-top: 26px;
+    }
+    select {
+        position: absolute;
+        left: 2%;
+        bottom: 58%;
+        color: white;
+        background-color: rgb(43, 69, 95);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 10px;
+        width: 120px;
+        height: 25px;
+        border-radius: 20px;
+    }
+    ul,
+    li {
+        list-style: none;
+    }
+    @keyframes color-change {
+        0% {
+            color: white;
+        }
+        50% {
+            color: black;
+        }
+        100% {
+            color: white;
+        }
+    }
+    .animation {
+        animation: color-change 4s infinite;
+    }
+    #bar {
+        position: absolute;
+        top: -4em;
+        padding: 0.5em;
+        left: 156px;
+        margin: 0;
+        width: 40px;
+        height: 80px;
+        background: rgb(101, 126, 150);
+        color: black;
+        transition: top 1.5s ease-out 0.5s;
+    }
+    .arrow {
+        font-size: 20px;
+    }
+    #bar:hover :active {
+        top: 0;
+        color: red;
+    }
+    li img {
+        width: 25px;
+    }
+    footer {
+        position: absolute;
+        left: 25%;
+        top: 750px;
+        color: white;
+    }
+    .img {
+        width: 43px;
+        position: absolute;
+        left: -55px;
+        right: 73px;
+        bottom: 1px;
+    }
+    /* form */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .container {
+        margin-top: 150px;
+    }
+    .subscription-message {
+        color: black;
+        background: #99b0b5;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .subscription-email {
+        font-size: 15px;
+    }
+    form button {
+        font-size: 15px;
+    }
+    .dark-theme {
+        background-image: url(/img/nature.jpg);
+    }
+}
 
-  /* form */
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-  }
-  .container {
-    margin-top: 150px;
-  }
-  .subscription-message {
-    color: black;
-    background: #99b0b5;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .subscription-email {
-    font-size: 15px;
-  }
-  form button {
-    font-size: 15px;
-  }
-  .dark-theme {
-    background-image: url(/img/nature.jpg)
-  }
+/* media 418/767 */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: no-repeat;
+        background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
+    }
+    .header__class {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-right: 70px;
+        color: gainsboro;
+    }
+    .header__class h1 {
+        display: none;
+    }
+    .header__class h2 {
+        color: white;
+        font-family: "Indie Flower", cursive;
+        font-size: 24px;
+    }
+    .header_main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        font-size: 20px;
+        font-family: "Indie Flower";
+        margin-left: 25px;
+        margin-top: 26px;
+    }
+    select {
+        position: absolute;
+        left: 46%;
+        bottom: 94%;
+        color: white;
+        background-color: rgb(43, 69, 95);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 10px;
+        width: 120px;
+        height: 25px;
+        border-radius: 20px;
+    }
+    ul,
+    li {
+        list-style: none;
+    }
+    @keyframes color-change {
+        0% {
+            color: white;
+        }
+        50% {
+            color: black;
+        }
+        100% {
+            color: white;
+        }
+    }
+    .animation {
+        animation: color-change 4s infinite;
+    }
+    #bar {
+        position: absolute;
+        top: -4em;
+        padding: 0.5em;
+        left: 156px;
+        margin: 0;
+        width: 40px;
+        height: 80px;
+        background: rgb(101, 126, 150);
+        color: black;
+        transition: top 1.5s ease-out 0.5s;
+    }
+    .arrow {
+        font-size: 20px;
+    }
+    #bar:hover :active {
+        top: 0;
+        color: red;
+    }
+    li img {
+        width: 25px;
+    }
+    footer {
+        position: absolute;
+        left: 25%;
+        top: 750px;
+        color: white;
+    }
+    .img {
+        width: 43px;
+        position: absolute;
+        left: -55px;
+        right: 73px;
+        bottom: 1px;
+    }
+    /* form */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .container {
+        margin-top: 150px;
+    }
+    .subscription-message {
+        color: black;
+        background: #99b0b5;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .subscription-email {
+        font-size: 15px;
+    }
+    form button {
+        font-size: 15px;
+    }
+    .dark-theme {
+        background-image: url(/img/nature.jpg);
+    }
 }
