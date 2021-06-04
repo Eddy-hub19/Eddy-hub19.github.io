@@ -1,593 +1,600 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-}
-body {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul li {
-  list-style: none;
-}
-
-.list li:before {
-  content: url(/Food-Store/img/Vector\ 5.svg);
-  padding: 2px 7px;
-  background: #ff8126;
-  border-radius: 50%;
+    scroll-behavior: smooth;
 }
 
 .warning {
-  display: flex;
-  width: 100%;
-  height: 50px;
-  background: #c2e8ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #c2e8ce;
 }
 
 .warning p {
-  display: flex;
-  align-items: center;
-  margin-left: 458px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: #1f1f1f;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #1f1f1f;
 }
 
-.vector {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  right: 55px;
-  top: 17px;
+.warning .close-btn {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 55px;
+    top: 0;
+}
+
+.content_wrapper {
+    width: 1280px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+.list li:before {
+    content: url(/Food-Store/img/check-mark.svg);
+    padding: 2px 7px;
+    background: #ff8126;
+    border-radius: 50%;
 }
 
 .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    font-family: "Popins";
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  margin-left: 55px;
+.header nav {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    font-family: "Popins";
 }
 
-nav a {
-  margin-right: 40px;
+.header nav a {
+    margin-right: 40px;
 }
 
 .arrow {
-  display: inline-block;
-  width: 10px;
-  height: 7px;
-  background-image: url(/Food-Store/img/Vector\ 2.svg);
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    background-image: url(/Food-Store/img/arrow-down.svg);
 }
+
 .top_menu {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu1 {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/search.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/search.svg);
 }
+
 .menu2 {
-  width: 24px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/profile.svg);
+    width: 24px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/profile.svg);
 }
 
 .menu3 {
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/cart.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/cart.svg);
+    position: relative;
 }
+
 .round {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border: 1px solid #bfbfbf;
-  border-radius: 50%;
-  margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #bfbfbf;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
 .circle {
-  position: absolute;
-  min-width: 16px;
-  height: 16px;
-  left: 1210px;
-  top: 93px;
-  text-align: center;
-  background: #ff8126;
-  border-radius: 50%;
-  font-family: "Poppins" sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 9px;
-  line-height: 16px;
-  color: #ffffff;
-  padding: 0 2px;
+    position: absolute;
+    min-width: 16px;
+    height: 16px;
+    left: 26px;
+    top: -16px;
+    text-align: center;
+    background: #ff8126;
+    border-radius: 50%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 0 2px;
 }
 
-.main_page {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background: url(/Food-Store/img/main.png);
-  box-shadow: -5px 4px 11px -3px #000000;
-  padding: 60px;
+.banner {
+    box-shadow: -5px 4px 11px -3px #000000;
+    position: relative;
 }
 
-.main_page h1 {
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
-  color: #1f1f1f;
-  margin: 125px 55px 5px 50px;
+.banner .details {
+    position: absolute;
+    left: 55px;
+    top: 125px;
 }
 
-.main_page h2 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 39px;
-  color: #1f1f1f;
-  margin: 5px 55px;
+.banner h1 {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #1f1f1f;
 }
 
-.main_page button {
-  width: 200px;
-  height: 45px;
-  background: #ff8126;
-  border-radius: 5px;
-  color: white;
-  margin: 40px 61px;
-  border: none;
+.banner h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 39px;
+    color: #1f1f1f;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 58px;
+.banner button {
+    width: 200px;
+    height: 45px;
+    background: #ff8126;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 }
 
-.wrapper h2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 33px;
-  line-height: 40px;
-  margin-left: 5px;
+.goods {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 58px;
 }
 
-.wrapper b {
-  color: #ff8126;
-  margin-left: 10px;
+.goods h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 40px;
+    margin: 40px -22px 80px 0;
+}
+
+.goods b {
+    color: #ff8126;
+    margin-left: 12px;
 }
 
 .wrap_item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .item {
-  width: 270px;
-  height: 332px;
-  background: #f7f5f0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  margin-left: 30px;
+    width: 270px;
+    height: 332px;
+    background: #f7f5f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-left: 30px;
 }
 
 .item h4 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #1f1f1f;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1f1f1f;
 }
 
-.wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.item .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.price {
-  display: flex;
-  flex-direction: row;
+.item .price {
+    display: flex;
+    flex-direction: row;
 }
 
 .cost_color {
-  font-family: "Poppins" sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ff8126;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ff8126;
 }
 
 .line_through {
-  margin-left: 10px;
-  color: gray;
-  line-height: 36px;
-  font-weight: 600;
-  font-family: "Poppins" sans-serif;
-  text-decoration: line-through;
+    margin-left: 10px;
+    color: gray;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-decoration: line-through;
 }
 
 .wrap button {
-  width: 230px;
-  height: 40px;
-  background: #ff8126;
-  border-radius: 5px;
-  color: white;
-  margin-top: 20px;
-  border: none;
+    width: 230px;
+    height: 40px;
+    background: #ff8126;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    border: none;
 }
 
 .inf_section {
-  text-align: center;
-  width: 100%;
-  padding: 0 55px;
+    text-align: center;
+    width: 1280px;
+    padding: 0 55px;
+    margin: 40px auto;
+}
+
+.inf_section b {
+    color: #ff8126;
 }
 
 .inf_section h2 {
-  margin: 40px 0 80px 0;
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-}
-.wrap-info {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.info-item {
-  width: 210px;
-  margin-right: 30px;
-  text-align: left;
+    margin: 40px 0 80px 0;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
 }
 
-.right_left {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 55px;
+.wrap-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-item {
+    width: 210px;
+    margin-right: 30px;
+    text-align: left;
+    font-family: "Popins";
+}
+
+.food_info {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto 80px;
 }
 
 .left {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: flex-start;
-  margin: 0 40px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+    margin: 0 40px 10px 0;
 }
 
 .left h3 {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ff8126;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #ff8126;
 }
 
 .left p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1f1f1f;
-  margin-top: 40px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1f1f1f;
+    margin-top: 40px;
 }
 
-.list li {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1f1f1f;
-  margin-top: 20px;
+.left b {
+    color: black;
 }
 
 .left button {
-  width: 270px;
-  height: 45px;
-  background: #ff8126;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  margin-top: 30px;
+    width: 270px;
+    height: 45px;
+    background: #ff8126;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-family: "Popins";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.list li {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1f1f1f;
+    margin-top: 20px;
 }
 
 .right {
-  display: flex;
-  margin-top: 50px;
+    display: flex;
+    margin-top: 50px;
 }
+
 .our_parther {
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  width: 100%;
-  height: 395px;
-  background-image: url(/Food-Store/img/Bg\ Our\ Partner.png);
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    height: 395px;
+    background-image: url(/Food-Store/img/Bg-Our-Partner.png);
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
 }
 
 .our_parther h2 {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 60px;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 60px;
 }
 
 .our_parther button {
-  width: 330px;
-  height: 45px;
-  background: #ff8126;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 60px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #ffffff;
+    width: 330px;
+    height: 45px;
+    background: #ff8126;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 60px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
 }
+
 .sections {
-  display: flex;
-  flex-direction: row;
-  margin: 55px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1280px;
 }
+
 .section_left {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: flex-start;
-  margin: 20px 31px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+    margin: 20px 31px;
 }
-.section_right {
-  display: flex;
-  background-repeat: no-repeat;
-  background-image: url(/Food-Store/img/section-left.png);
-  width: 1720px;
-  height: 432px;
+
+.section_left b {
+    color: black;
 }
 
 .section_left h2 {
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  color: #1f1f1f;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1f1f1f;
 }
 
 .section_left h3 {
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ff8126;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #ff8126;
 }
 
 .section_left p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Poppins";
-  color: #1f1f1f;
-  margin: 40px 0 20px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins";
+    color: #1f1f1f;
+    margin: 40px 0 20px 0;
 }
 
 .section_left button {
-  width: 140px;
-  height: 45px;
-  background: #ff8126;
-  border-radius: 5px;
-  font-family: "Poppins" sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: white;
-  border: none;
-  margin-top: 30px;
+    width: 140px;
+    height: 45px;
+    background: #ff8126;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+.section_right {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(/Food-Store/img/section-left.png);
+    width: 1720px;
+    height: 432px;
 }
 
 .bakery_quality {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin: 80px 0 80px 0;
 }
-.bakery_quality {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
+
+.bakery_quality a {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #ff8126;
+}
+
+.bakery_quality h2 {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
 }
 
 .bakery_quality i {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  text-decoration-line: underline;
-
-  color: #ff8126;
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-decoration: none;
+    color: black;
 }
 
-.rectangles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.carousel_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 186px;
+    height: 186px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    margin: 20px;
+}
+
+.carousel_wrap li {
+    margin-left: 40px;
+}
+
 .comunication {
-  margin-top: 80px;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  background-image: url(/Food-Store/img/Bg\ Tell\ a\ Frind.png);
+    margin-top: 80px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Food-Store/img/Bg-Tell-Friend.png);
+}
+
+.comunication h4 {
+    font-family: "Cormorant", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #1f1f1f;
+    margin: 40px 0 60px 0;
 }
 
 .tell_a_friend {
-  display: flex;
-  justify-content: center;
-}
-.comunication h4 {
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  color: #1f1f1f;
-  margin: 40px 0 60px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .com_item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 .com_item a {
-  margin-left: 30px;
+    margin-left: 30px;
 }
+
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 57px 72px;
-  background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 57px 72px;
+    background-repeat: no-repeat;
 }
 
-.img_pos_logo {
-  position: relative;
-  left: -25px;
-  right: 51px;
-  bottom: 185px;
+.footer_section {
+    margin-left: 83px;
 }
 
-.all_sections {
-  display: flex;
-  align-items: center;
-}
-.section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.footer_section nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.section1 h5 {
-  margin: 12px 0 61px 0;
+.footer_section h5 {
+    margin-bottom: 15px;
 }
 
-.section_font {
-  margin-top: 8px;
-  font-family: "Poppins";
-  font-size: 15px;
-  line-height: 22px;
-  color: #3d3d3d;
-}
-
-.section1 a {
-  margin-top: 8px;
-}
-
-.section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.section2 a {
-  margin-top: 8px;
-}
-
-.section2 h5 {
-  margin: 15px 0 60px 0;
-}
-
-.section3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.section3 h5 {
-  margin: 15px 0 60px 0;
-}
-
-.section3 a {
-  margin-top: 8px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  color: #3d3d3d;
-}
-
-.our_brands {
-  display: flex;
-  margin: 13px 84px 0 0;
-}
-.about_us {
-  display: flex;
-  margin: 13px 54px 0 0;
+.footer_section a {
+    margin-top: 8px;
+    font-family: "Poppins";
+    font-size: 15px;
+    line-height: 22px;
+    color: #3d3d3d;
 }
