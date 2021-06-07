@@ -15,7 +15,7 @@ header {
     flex-direction: column;
     text-align: center;
     color: white;
-    background: rgb(73 137 173);
+    /* background: rgb(73 137 173); */
     font-size: 25px;
     border-radius: 80px;
     box-shadow: 1px 21px 23px 14px rgba(34, 60, 80, 0.2);
@@ -50,7 +50,7 @@ ul li {
 }
 
 li:hover {
-    background: #181717;
+    background: darkcyan;
     transition: 2ms;
 }
 
@@ -81,18 +81,26 @@ li:hover {
 }
 
 .delete {
-    left: 407px;
+    top: 0px;
+    padding: 8px;
+    right: 410px;
     position: absolute;
     border-radius: 25px;
-    background: rgb(206, 126, 35);
-    border: none;
-    width: 50px;
+    border: 2px solid black;
     height: 28px;
+    background: none;
     color: white;
 }
 
 .delete:hover {
-    left: 400px;
-    background: red;
+    background: rgb(206, 126, 35);
     transition: 1s;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }

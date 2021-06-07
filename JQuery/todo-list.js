@@ -19,7 +19,7 @@ $("document").ready(function() {
         $tasksList.append(
             "<li>" +
             $taskInput.val() +
-            "<button class='delete'> &#10006</button></li>"
+            "<button class='delete'> &#10003</button></li>"
         );
 
         $taskInput.val("");
