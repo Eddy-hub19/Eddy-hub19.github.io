@@ -1,3 +1,7 @@
+body {
+    background: rgb(195, 188, 188);
+}
+
 header {
     display: flex;
     justify-content: center;
