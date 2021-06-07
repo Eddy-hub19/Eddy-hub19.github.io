@@ -2,6 +2,7 @@ $("document").ready(function() {
     let $tasksList = $("#tasksList");
     let $taskInput = $("#taskInput");
     let $notification = $("#notification");
+    let $lishka = $("#lishka");
 
     const displayNotification = function() {
         if (!$tasksList.children().length) {
@@ -18,13 +19,13 @@ $("document").ready(function() {
 
         $tasksList.append(
             "<li>" +
+            "<button class='add'> &#10003</button>" +
             $taskInput.val() +
-            "<button class='delete'> &#10003</button></li>"
+            "<button class='delete'> &#10007</button>  </li>"
         );
+        displayNotification();
 
         $taskInput.val("");
-
-        displayNotification();
 
         $(".delete").on("click", function() {
             let $parent = $(this).parent();
@@ -32,6 +33,14 @@ $("document").ready(function() {
                 $parent.remove();
             };
             btnDelete();
+        });
+
+        $(".add").on("click", function() {
+            let $parent = $(this).parent();
+            const btnCheck = function() {
+                $parent.addClass("done");
+            };
+            btnCheck();
         });
     });
     $("#todo-form").submit(function(event) {

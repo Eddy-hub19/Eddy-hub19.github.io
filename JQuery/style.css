@@ -1,3 +1,17 @@
+/* 1. title todo */
+
+
+/* 2. зробити людський дизайн
+3. Вернути ремув батон
+4. зробити дан стейт
+5. Локал Сторадж */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
 body {
     background: rgb(195, 188, 188);
 }
@@ -13,18 +27,16 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    color: white;
-    /* background: rgb(73 137 173); */
+    color: black;
     font-size: 25px;
-    border-radius: 80px;
+    border-radius: 20px;
     box-shadow: 1px 21px 23px 14px rgba(34, 60, 80, 0.2);
     max-width: 500px;
     min-height: 200px;
+    background: #ffffffb3;
 }
 
 #tasks {
-    border-radius: 30px;
     width: 500px;
     transition: 2s;
 }
@@ -35,22 +47,17 @@ header {
     background: rgb(110 129 142);
     border-radius: 20px;
     margin: 10px 80px;
+    color: white;
 }
 
 ul li {
-    max-width: 450px;
-    margin: 15px 14px 17px 0px;
-    border: 2px solid white;
-    border-radius: 50px;
-    background: #b79696;
+    margin: 17px 18px 15px 86px;
     list-style: none;
-    box-shadow: -22px 31px 50px -11px rgba(195, 0, 255, 0.31);
-    overflow: hidden;
-    position: sticky;
+    position: relative;
+    border-bottom: 1px solid rgb(78, 69, 69);
 }
 
 li:hover {
-    background: darkcyan;
     transition: 2ms;
 }
 
@@ -58,16 +65,15 @@ li:hover {
     width: 195px;
     height: 50px;
     border-radius: 26px;
-    background: #9e9e9e;
-    border: 2px solid darkcyan;
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 1px 21px 23px 14px rgba(34, 60, 80, 0.2);
-    color: rgb(220, 233, 47);
+    color: black;
     font-size: 20px;
     transition: 2s;
 }
 
 #taskAdd {
-    color: rgb(48, 180, 173);
+    color: rgb(239, 241, 241);
     border: 2px solid rgb(160, 144, 126);
     margin-top: 20px;
     width: 60px;
@@ -77,30 +83,43 @@ li:hover {
 }
 
 #taskAdd:hover {
-    background: rgb(64, 142, 173);
+    background: white;
+    color: black;
 }
 
-.delete {
+.add {
     top: 0px;
     padding: 8px;
-    right: 410px;
+    left: -40px;
     position: absolute;
     border-radius: 25px;
     border: 2px solid black;
     height: 28px;
-    background: none;
     color: white;
 }
 
+.delete {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: 350px;
+    bottom: 10px;
+}
+
 .delete:hover {
-    background: rgb(206, 126, 35);
-    transition: 1s;
+    background: rgb(255, 4, 4);
+}
+
+.done .add {
+    background: red;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     body {
-        width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+    #container {
+        width: 100%;
     }
 }
