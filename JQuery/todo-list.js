@@ -4,7 +4,7 @@ $("document").ready(function() {
     // localStorage.setItem('todos', JSON.stringify(tasksList));
 
 
-    // localStorage.setItem('#taskList', 'val()');
+    // localStorage.setItem('$tasksList', '');
 
     // localStorage.clear();
 
