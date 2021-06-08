@@ -34,16 +34,17 @@ function displayMessages() {
         </li>
         `;
         todo.innerHTML = displayMessage;
+        localStorage.setItem("todo", JSON.stringify(todoList));
     });
 }
 
 todo.addEventListener("change", function(event) {
-    let valueLabel = todo.querySelector(
-        "[for=" + event.target.getAttribute("id") + "]"
-    ).innerHTML
+    let idInput = event.target.getAttribute("id");
+    let valueLabel = todo.querySelector("[for=" + idInput + "]").innerHTML;
 
     todoList.forEach(function(item) {
         if (item.todo === valueLabel) {
+            console.log('checked');
             item.checked = !item.checked;
             localStorage.setItem("todo", JSON.stringify(todoList));
         }
