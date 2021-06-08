@@ -1,8 +1,12 @@
 $("document").ready(function() {
+    // LOCAL STORAGE
 
-    if (typeof localStorage === 'undefined') {
-        alert("localStorage не работает!");
-    }
+    // localStorage.setItem('todos', JSON.stringify(tasksList));
+
+
+    // localStorage.setItem('#taskList', 'val()');
+
+    // localStorage.clear();
 
     let $tasksList = $("#tasksList");
     let $taskInput = $("#taskInput");
@@ -20,7 +24,6 @@ $("document").ready(function() {
         if (!$taskInput.val()) {
             return false;
         }
-
         $tasksList.append(
             "<li>" +
             "<button class='add'> &#10003</button>" +
