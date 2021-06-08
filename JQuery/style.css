@@ -1,17 +1,8 @@
-/* 1. title todo */
-
-
-/* 2. зробити людський дизайн
-3. Вернути ремув батон
-4. зробити дан стейт
-5. Локал Сторадж */
-
 * {
     margin: 0;
     padding: 0;
 }
 
-html,
 body {
     background: rgb(195, 188, 188);
 }
@@ -111,15 +102,5 @@ li:hover {
 }
 
 .done .add {
-    background: red;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-    body {
-        height: auto;
-        margin: 0 auto;
-    }
-    #container {
-        width: 100%;
-    }
+    background: rgb(228, 148, 21);
 }
