@@ -30,6 +30,12 @@ addButton.addEventListener("click", function() {
     localStorage.setItem("todo", JSON.stringify(todoList));
 });
 
+function clickPress(e) {
+    if (e.keyCode == 13) {
+        ProgressEvent.default
+    }
+}
+
 function displayMessages() {
     let displayMessage = "";
 
