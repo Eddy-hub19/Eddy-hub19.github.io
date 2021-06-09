@@ -1,8 +1,8 @@
 $("document").ready(function() {
     // LOCAL STORAGE
 
-    // localStorage.setItem('todos', JSON.stringify(tasksList));
 
+    // localStorage.setItem('todo', JSON.stringify($todoForm));
 
     // localStorage.setItem('$tasksList', '');
 
@@ -11,6 +11,10 @@ $("document").ready(function() {
     let $tasksList = $("#tasksList");
     let $taskInput = $("#taskInput");
     let $notification = $("#notification");
+    // let $todoForm = $("#todo-form");
+
+    let todoList = []
+
 
     const displayNotification = function() {
         if (!$tasksList.children().length) {
