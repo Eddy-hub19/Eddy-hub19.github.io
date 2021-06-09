@@ -17,6 +17,10 @@ addButton.addEventListener("click", function() {
         checked: false,
     };
 
+    createNewTodo.submit(function(event) {
+        event.preventDefault()
+    })
+
     let inputs = document.querySelectorAll("input[type=text]");
 
     for (let i = 0; i < inputs.length; i++) {
@@ -29,12 +33,6 @@ addButton.addEventListener("click", function() {
 
     localStorage.setItem("todo", JSON.stringify(todoList));
 });
-
-function clickPress(e) {
-    if (e.keyCode == 13) {
-        ProgressEvent.default
-    }
-}
 
 function displayMessages() {
     let displayMessage = "";
