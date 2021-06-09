@@ -2,6 +2,8 @@ let addMessage = document.querySelector(".message"),
     addButton = document.querySelector(".add"),
     todo = document.querySelector(".todo");
 
+let createNewTodo = document.querySelector(".create_new_todo");
+
 let todoList = [];
 
 if (localStorage.getItem("todo")) {
@@ -15,6 +17,12 @@ addButton.addEventListener("click", function() {
         checked: false,
     };
 
+    let inputs = document.querySelectorAll("input[type=text]");
+
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = "";
+    }
+
     todoList.push(newTodo);
 
     displayMessages();
@@ -25,6 +33,10 @@ addButton.addEventListener("click", function() {
 function displayMessages() {
     let displayMessage = "";
 
+    if (todoList.length === 0) {
+        todo.innerHTML = displayMessage;
+    }
+
     todoList.forEach(function(item, i) {
         displayMessage += `
         <li>
@@ -32,7 +44,7 @@ function displayMessages() {
       item.checked ? "checked" : ""
     }>
             <label for='item_${i}'>${item.todo}</label>
-            <button id='item_${i}' class="delete" onclick="removeToDo(i)">&#10007</button>
+            <button id='item_${i}' class="delete" onclick="removeToDo(${i})">&#10006</button>
         </li>
         `;
         todo.innerHTML = displayMessage;
@@ -41,10 +53,9 @@ function displayMessages() {
 }
 
 function removeToDo(index) {
-    // 1) remove todo from the todoList;
-    // 2) update local storage with new todoList;
-    // 3) run displayMessages();
-
+    todoList.splice(index, 1);
+    localStorage.setItem("todo", JSON.stringify(todoList));
+    displayMessages();
 }
 
 todo.addEventListener("change", function(event) {

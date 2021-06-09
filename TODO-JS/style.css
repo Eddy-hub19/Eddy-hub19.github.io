@@ -8,11 +8,6 @@ body {
     padding-top: 50px;
 }
 
-.important {
-    font-weight: bold;
-    color: #a40e11;
-}
-
 .todo_list {
     max-width: 400px;
     display: block;
@@ -36,16 +31,20 @@ h1 {
 }
 
 input[type="text"] {
-    width: 376px;
+    width: 363px;
     padding: 10px;
 }
 
 button {
     margin-top: 10px;
-    width: 400px;
+    width: 384px;
     padding: 10px;
     cursor: pointer;
     background: darkgrey;
+}
+
+button:hover {
+    background: aliceblue;
 }
 
 .todo {
@@ -58,6 +57,7 @@ button {
     justify-content: space-between;
     padding: 1em;
     list-style-type: none;
+    align-items: center;
 }
 
 .todo li:not(:last-child) {
@@ -69,7 +69,7 @@ input[type="checkbox"] {
     position: absolute;
 }
 
-input[type="checkbox"],
+input,
 label {
     display: inline-block;
     vertical-align: middle;
@@ -104,11 +104,16 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .delete {
-    display: flex;
-    text-align: center;
-    font-size: 14px;
-    width: 56px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 10px;
-    background: rgb(132 132 139);
+}
+
+.delete:hover {
+    background: rgb(146, 79, 79);
+    color: white;
+}
+
+li .input:hover {
+    background: red;
 }
