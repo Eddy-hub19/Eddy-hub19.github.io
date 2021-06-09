@@ -54,6 +54,8 @@ button {
 }
 
 .todo li {
+    display: flex;
+    justify-content: space-between;
     padding: 1em;
     list-style-type: none;
 }
@@ -102,10 +104,7 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .delete {
-    position: absolute;
-    right: 12px;
     display: flex;
-    bottom: 10px;
     text-align: center;
     font-size: 14px;
     width: 56px;

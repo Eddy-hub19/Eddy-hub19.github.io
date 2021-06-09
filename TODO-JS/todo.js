@@ -28,14 +28,23 @@ function displayMessages() {
     todoList.forEach(function(item, i) {
         displayMessage += `
         <li>
-        <input type='checkbox' id='item_${i}' ${item.checked ? "checked" : ""}>
-        <label for='item_${i}'> ${item.todo}</label>
-        <button class="delete">&#10007</button> 
+            <input type='checkbox' id='item_${i}' ${
+      item.checked ? "checked" : ""
+    }>
+            <label for='item_${i}'>${item.todo}</label>
+            <button id='item_${i}' class="delete" onclick="removeToDo(i)">&#10007</button>
         </li>
         `;
         todo.innerHTML = displayMessage;
         localStorage.setItem("todo", JSON.stringify(todoList));
     });
+}
+
+function removeToDo(index) {
+    // 1) remove todo from the todoList;
+    // 2) update local storage with new todoList;
+    // 3) run displayMessages();
+
 }
 
 todo.addEventListener("change", function(event) {
@@ -44,7 +53,6 @@ todo.addEventListener("change", function(event) {
 
     todoList.forEach(function(item) {
         if (item.todo === valueLabel) {
-            console.log('checked');
             item.checked = !item.checked;
             localStorage.setItem("todo", JSON.stringify(todoList));
         }
