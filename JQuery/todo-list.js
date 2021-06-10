@@ -1,20 +1,18 @@
 $("document").ready(function() {
-    // LOCAL STORAGE
-
-
-    // localStorage.setItem('todo', JSON.stringify($todoForm));
-
-    // localStorage.setItem('$tasksList', '');
-
-    // localStorage.clear();
-
     let $tasksList = $("#tasksList");
     let $taskInput = $("#taskInput");
     let $notification = $("#notification");
+
+
+    // LOCAL STORAGE
+
+    // localStorage.clear();
+
     // let $todoForm = $("#todo-form");
 
-    let todoList = []
+    // localStorage.setItem('todo', JSON.stringify($todoList));
 
+    // let $todoList = [];
 
     const displayNotification = function() {
         if (!$tasksList.children().length) {
