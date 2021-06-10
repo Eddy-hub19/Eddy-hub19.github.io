@@ -48,8 +48,9 @@ ul li {
     background: #607d8b;
 }
 
-.remove-task {
-    border: 5px solid red;
+.remove-task::after {
+    content: 'x';
+    border: 2px solid red;
 }
 
 .form-control {
