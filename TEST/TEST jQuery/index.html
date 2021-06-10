@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ToDoList—to-do list</title>
+    <link rel="stylesheet" href="/TEST/TEST jQuery/style.css" />
+    <script type="text/javascript" src="/TEST/TEST jQuery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/TEST/TEST jQuery/todolist.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <label for="title">ToDoList</label>
+            <input type="text" id="title" name="title" placeholder="Add ToDo" required="required" autocomplete="off" />
+        </section>
+    </header>
+    <section>
+        <h2>Ongoing <span id="todocount"></span></h2>
+        <ol id="todolist" class="demo-box">
+            <!-- <li>
+                <input type="checkbox">
+                <p>123</p>
+                <a href="#"></a>
+            </li> -->
+        </ol>
+        <h2>Has been completed <span id="donecount"></span></h2>
+        <ul id="donelist"></ul>
+    </section>
+</body>
+
+</html>
