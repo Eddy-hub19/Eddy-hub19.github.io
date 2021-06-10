@@ -18,7 +18,7 @@
 
         <div class="form-inline new-task">
             <div class="form-group">
-                <input class="form-control" type="text" placeholder="Your Task" autofocus />
+                <input class="form-control" type="text" placeholder="Your Task" autofocus data-bind="textInput: newTaskTitle" />
             </div>
         </div>
 
@@ -29,21 +29,26 @@
         <div class="row">
             <div class="tasks">
                 <h3>Tasks</h3>
-                <div>
-                    <ul data-bind="foreach: ">
+                <div data-bind="visible: tasks().length">
+                    <ul data-bind="foreach: tasks">
                         <li>
                             <label>
-                                <input type="checkbox" />
-                                <span> Buy bread </span>
-                                <a class="remove-task" href="#"></a>
-                            </label>
+                  <input type="checkbox" />
+                  <span data-bind="text: title"></span>
+                  <a
+                    class="remove-task"
+                    href="#"
+                    data-bind="click:  $parent.removeTask"
+                  ></a>
+                </label>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div style="display: none">No tasks</div>
+        <div data-bind="visible: !tasks().length">No tasks</div>
         <script src="/Knockout/todo.js"></script>
+    </div>
 </body>
 
 </html>
