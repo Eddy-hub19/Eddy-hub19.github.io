@@ -50,7 +50,6 @@ ul li {
 
 .remove-task::after {
     content: 'x';
-    border: 2px solid red;
 }
 
 .form-control {
