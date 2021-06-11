@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knockout</title>
+    <script type="text/javascript" src="/KNOK TEST/knockout-3.5.1.js"></script>
+</head>
+
+<body>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <input class="new-todo" data-bind="value: current, valueUpdate: 'afterkeydown', enterKey: add" placeholder="What needs to be done?" autofocus />
+        </header>
+        <section class="main" data-bind="visible: todos().length">
+            <input id="toggle-all" class="toggle-all" data-bind="checked: allCompleted" type="checkbox" />
+            <label for="toggle-all">Mark all as complete</label>
+            <ul class="todo-list" data-bind="foreach: filteredTodos">
+                <li data-bind="css: { completed: completed, editing: editing }">
+                    <div class="view">
+                        <input class="toggle" data-bind="checked: completed" type="checkbox" />
+                        <label data-bind="text: title, event: { dblclick: $root.editItem }"></label>
+                        <button class="destroy" data-bind="click: $root.remove"></button>
+                    </div>
+                    <input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.saveEditing, escapeKey: $root.cancelEditing, selectAndFocus: editing, event: { blur: $root.saveEditing }" />
+                </li>
+            </ul>
+        </section>
+        <footer class="footer" data-bind="visible: completedCount() || remainingCount()">
+            <span class="todo-count">
+          <strong data-bind="text: remainingCount">0</strong>
+          <span data-bind="text: getLabel(remainingCount)"></span> left
+            </span>
+            <ul class="filters">
+                <li>
+                    <a data-bind="css: { selected: showMode() == 'all' }" href="#/all">All</a
+            >
+          </li>
+          <li>
+            <a
+              data-bind="css: { selected: showMode() == 'active' }"
+              href="#/active"
+              >Active</a
+            >
+          </li>
+          <li>
+            <a
+              data-bind="css: { selected: showMode() == 'completed' }"
+              href="#/completed"
+              >Completed</a
+            >
+          </li>
+        </ul>
+        <button
+          class="clear-completed"
+          data-bind="visible: completedCount, click: removeCompleted"
+        >
+          Clear completed
+        </button>
+      </footer>
+    </section>
+    <script src="/KNOK TEST/knock.js"></script>
+  </body>
+</html>

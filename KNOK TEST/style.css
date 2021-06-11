@@ -1,0 +1,8 @@
+body {
+    background: rgb(114, 106, 106);
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+}

@@ -1,22 +1,21 @@
 (function(ko) {
+    // function AppViewModel() {
+    //     let test = "todo"; // The name of the local storage
+    //     this.thingList = ko.observableArray();
 
-    function AppViewModel() {
-        let test = "todo"; // The name of the local storage
-        this.thingList = ko.observableArray();
+    //     // Load the stuff from local storage
+    //     let stuff = localStorage.getItem(test);
+    //     if (stuff) {
+    //         stuff = JSON.parse(actors);
 
-        // Load the stuff from local storage
-        let stuff = localStorage.getItem(test);
-        if (stuff) {
-            stuff = JSON.parse(actors);
-
-            for (let i = 0; i < stuff.length; i++) {
-                this.thingList.push(new Thing(stuff[i]));
-            }
-        }
-        this.thingList.subscribe(function() {
-            localStorage.setItem(test, ko.toJSON(this.thingList()));
-        }, this);
-    }
+    //         for (let i = 0; i < stuff.length; i++) {
+    //             this.thingList.push(new Thing(stuff[i]));
+    //         }
+    //     }
+    //     this.thingList.subscribe(function() {
+    //         localStorage.setItem(test, ko.toJSON(this.thingList()));
+    //     }, this);
+    // }
 
     const ChecklistVievModel = function(checklist) {
         // let self = this;
@@ -29,7 +28,7 @@
             this.checklist.addTask(this.newTaskTitle());
             this.newTaskTitle("");
             this.tasks(this.checklist.tasks);
-            AppViewModel()
+            AppViewModel();
         };
 
         this.removeTask = function(taskObject) {
@@ -49,7 +48,6 @@
 
             console.log(this.tasks);
         };
-        AppViewModel()
     };
 
     this.removeTask = function(id) {
@@ -79,4 +77,5 @@
         new ChecklistVievModel(checklist),
         document.getElementById("todoList")
     );
+
 })(ko);
