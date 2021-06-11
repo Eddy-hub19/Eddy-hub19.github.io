@@ -1,6 +1,25 @@
 (function(ko) {
+
+    function AppViewModel() {
+        let test = "todo"; // The name of the local storage
+        this.thingList = ko.observableArray();
+
+        // Load the stuff from local storage
+        let stuff = localStorage.getItem(test);
+        if (stuff) {
+            stuff = JSON.parse(actors);
+
+            for (let i = 0; i < stuff.length; i++) {
+                this.thingList.push(new Thing(stuff[i]));
+            }
+        }
+        this.thingList.subscribe(function() {
+            localStorage.setItem(test, ko.toJSON(this.thingList()));
+        }, this);
+    }
+
     const ChecklistVievModel = function(checklist) {
-        let self = this;
+        // let self = this;
 
         this.checklist = checklist;
         this.newTaskTitle = ko.observable("");
@@ -10,31 +29,14 @@
             this.checklist.addTask(this.newTaskTitle());
             this.newTaskTitle("");
             this.tasks(this.checklist.tasks);
+            AppViewModel()
         };
 
         this.removeTask = function(taskObject) {
-            self.checklist.removeTask(taskObject.id);
-            self.tasks(self.checklist.tasks);
+            this.checklist.removeTask(taskObject.id);
+            this.tasks(self.checklist.tasks);
         };
     };
-
-    // function AppViewModel() {
-    //     let THING_TAG = "todo"; // The name of the local storage
-    //     this.thingList = ko.observableArray();
-
-    //     // Load the stuff from local storage
-    //     let stuff = localStorage.getItem(THING_TAG);
-    //     if (stuff) {
-    //         stuff = JSON.parse(actors);
-
-    //         for (let i = 0; i < stuff.length; i++) {
-    //             this.thingList.push(new Thing(stuff[i]));
-    //         }
-    //     }
-    //     this.thingList.subscribe(function() {
-    //         localStorage.setItem(THING_TAG, ko.toJSON(this.thingList()));
-    //     }, this);
-    // }
 
     const Checklist = function() {
         this.tasks = [];
@@ -47,6 +49,7 @@
 
             console.log(this.tasks);
         };
+        AppViewModel()
     };
 
     this.removeTask = function(id) {
@@ -56,7 +59,7 @@
             this.tasks.splice(taskIndex, 1);
         }
     };
-    this.checkTask = function(id) {};
+    // this.checkTask = function(id) {};
 
     this.getIndexById = function(id, tasks) {
         let index;
