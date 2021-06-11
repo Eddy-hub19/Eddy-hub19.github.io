@@ -1,6 +1,5 @@
 (function(ko) {
     const ChecklistVievModel = function(checklist) {
-
         let self = this;
 
         this.checklist = checklist;
@@ -19,6 +18,24 @@
         };
     };
 
+    // function AppViewModel() {
+    //     let THING_TAG = "todo"; // The name of the local storage
+    //     this.thingList = ko.observableArray();
+
+    //     // Load the stuff from local storage
+    //     let stuff = localStorage.getItem(THING_TAG);
+    //     if (stuff) {
+    //         stuff = JSON.parse(actors);
+
+    //         for (let i = 0; i < stuff.length; i++) {
+    //             this.thingList.push(new Thing(stuff[i]));
+    //         }
+    //     }
+    //     this.thingList.subscribe(function() {
+    //         localStorage.setItem(THING_TAG, ko.toJSON(this.thingList()));
+    //     }, this);
+    // }
+
     const Checklist = function() {
         this.tasks = [];
 
@@ -35,7 +52,7 @@
     this.removeTask = function(id) {
         let taskIndex = this.getIndexById(id, this.tasks);
 
-        if (typeof taskIndex !== 'undefined') {
+        if (typeof taskIndex !== "undefined") {
             this.tasks.splice(taskIndex, 1);
         }
     };
@@ -49,9 +66,7 @@
                 index = i;
                 break;
             }
-
         }
-
         return index;
     };
 
