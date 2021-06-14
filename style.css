@@ -1,173 +1,230 @@
 body {
-  padding: 0;
-  margin: 0 auto;
-  width: 1920px;
-  background: no-repeat;
-  background-size: 100%;
-  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
+    padding: 0;
+    margin: 0 auto;
+    width: 1920px;
+    background: no-repeat;
+    background-size: 100%;
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .header__class {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  color: gainsboro;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: gainsboro;
 }
 
 .header__class h1 {
-  font-family: "Indie Flower", cursive;
-  font-size: 50px;
+    font-family: "Indie Flower", cursive;
+    font-size: 50px;
 }
 
 .header__class h2 {
-  color: rgb(116 147 177);
-  font-family: "Indie Flower", cursive;
-  font-size: 4em;
-  margin-right: 125px;
+    color: rgb(116 147 177);
+    font-family: "Indie Flower", cursive;
+    font-size: 4em;
+    margin-right: 125px;
 }
 
 .header_main {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 35px;
-  font-family: "Indie Flower";
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Indie Flower";
 }
 
 select {
-  position: relative;
-  bottom: 80px;
-  left: 90px;
-  color: white;
-  background-color: rgb(49, 61, 73);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 25px;
-  width: 200px;
-  margin-right: 10em;
-  border-radius: 20px;
+    position: relative;
+    bottom: 80px;
+    left: 90px;
+    color: white;
+    background-color: rgb(49, 61, 73);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    width: 200px;
+    margin-right: 10em;
+    border-radius: 20px;
 }
 
 .img {
-  position: absolute;
-  left: -55px;
-  right: 73px;
-  bottom: 1px;
+    position: absolute;
+    left: -55px;
+    right: 73px;
+    bottom: 1px;
 }
 
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 @keyframes color-change {
-  0% {
-    color: white;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: white;
-  }
+    0% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
 }
 
 .animation {
-  animation: color-change 4s infinite;
+    animation: color-change 4s infinite;
 }
 
 #bar {
-  top: -9.8em;
-  right: 110em;
-  padding: 0.5em;
-  margin: 0;
-  position: absolute;
-  width: 10em;
-  background: rgb(101, 126, 150);
-  color: white;
-  text-align: center;
-  transition: top 1.5s ease-out 0.5s;
-  border-radius: 40px;
+    top: -9.8em;
+    right: 110em;
+    padding: 0.5em;
+    margin: 0;
+    position: absolute;
+    width: 10em;
+    background: rgb(101, 126, 150);
+    color: white;
+    text-align: center;
+    transition: top 1.5s ease-out 0.5s;
+    border-radius: 40px;
 }
 
 #bar:hover {
-  top: 0;
+    top: 0;
 }
 
 @keyframes rocket-fly {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: 100%;
-  }
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 .fly {
-  width: 50px;
-  height: 10px;
-  position: absolute;
-  left: -70px;
-  transform: rotate(220deg);
-  animation-name: rocket-fly;
-  animation-duration: 2.5s;
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    left: -70px;
+    transform: rotate(220deg);
+    animation-name: rocket-fly;
+    animation-duration: 2.5s;
 }
 
 .dark-theme {
-  background-image: url(/img/sky.jpg);
+    background-image: url(/img/sky.jpg);
 }
 
 .theme-button {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  width: 70px;
-  height: 50px;
-  color: rgb(48, 142, 219);
-  background: rgb(34, 51, 66);
-  border-radius: 40px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 70px;
+    height: 50px;
+    color: rgb(48, 142, 219);
+    background: rgb(34, 51, 66);
+    border-radius: 40px;
 }
 
 footer {
-  position: absolute;
-  left: 45%;
-  top: 750px;
-  color: white;
+    position: absolute;
+    left: 45%;
+    top: 750px;
+    color: white;
 }
+
 
 /* form */
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 23px;
 }
 
 .inner-heading {
-  color: rgb(220, 227, 233);
-  font-size: 25px;
-  font-family: "Indie Flower", cursive;
+    color: rgb(220, 227, 233);
+    font-size: 25px;
+    font-family: "Indie Flower", cursive;
 }
-form  button {
-  background: red;
-  font-size: 25px;
-  color: white;
+
+form button {
+    background: red;
+    font-size: 25px;
+    color: white;
 }
+
 .subscription-message {
-  color: rgb(216, 216, 216);
-  background: rgba(88, 88, 88, 0.541);
-  font-size: 20px;
-  font-family: "Indie Flower";
+    color: rgb(216, 216, 216);
+    background: rgba(88, 88, 88, 0.541);
+    font-size: 20px;
+    font-family: "Indie Flower";
 }
+
 .subscription-email {
-  font-size: 25px;
+    font-size: 25px;
+}
+
+
+/*  /////// */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    /* max-width: 800px; */
+}
+
+
+/* дополнительные стили для этого примера */
+
+.slider__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    counter-reset: slide;
+}
+
+.slider__item {
+    margin: 20px;
+    position: relative;
+    counter-increment: slide;
+}
+
+.slider__item::after {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slider__control_prev {
+    width: 20px;
+    background: red;
+}
+
+.slider__control_next {
+    width: 20px;
+    background: red;
 }

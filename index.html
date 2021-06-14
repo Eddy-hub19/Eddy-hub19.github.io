@@ -9,10 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css" />
+    <!-- Подключаем JS слайдера -->
+    <!-- <script defer src="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js"></script> -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/media.css" />
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider(".slider", {
+            autoplay: true,
+            interval: 10000,
+        });
+    });
+</script>
 
 <body>
     <ul id="bar">
@@ -42,7 +55,7 @@
         <option value="/Traveling/index.html">Traveling</option>
         <option value="/canvas.html">Drown</option>
         <option value="/Homework/1 home task/index.html">1 home task</option>
-        <option value="/Homework/2 home task/index.html">2 home task</option> 
+        <option value="/Homework/2 home task/index.html">2 home task</option>
         <option value="/Food-Store/index.html">Food-Store</option>
         <option value="/JQuery/index.html">Todo-List-JQuery</option>
         <option value="/TODO-JS/index.html">Todo-List-JS</option>
@@ -58,11 +71,36 @@
         <span><img class="img" src="/img/sun-eclipse.svg" alt="" /></span>
       </button>
     </div>
-    <div class="container">
-        <h1 class="inner-heading">Test form</h1>
-        <p class="subscription-message"></p>
+    <!-- <a href="/test.html"> /// </a> -->
 
-        <form action="your@email.com" method="POST" class="subscription">
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <img class="img-fluid" src="/Folder for E-logic/Food-Store/img/1.png" alt="..." width="200" height="200" loading="lazy" />
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src="/Folder for E-logic/Food-Store/img/2.png" alt="..." width="200" height="200" loading="lazy" />
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src="/Folder for E-logic/Food-Store/img/3.png" alt="..." width="200" height="200" loading="lazy" />
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src="/Folder for E-logic/Food-Store/img/4.png" alt="..." width="200" height="200" loading="lazy" />
+                </div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+    </div>
+
+    <!-- //////// -->
+
+    <!-- <div class="container">
+        <h1 class="inner-heading">Test form</h1>
+        <p class="subscription-message"></p> -->
+
+    <!-- <form action="your@email.com" method="POST" class="subscription">
             <div class="subscription-inner">
                 <label class="subscription-label" for="subscription-email"></label>
                 <input type="email" class="subscription-email" placeholder="your@email.com" required id="subscription-email" />
@@ -70,12 +108,15 @@
             Подписаться
           </button>
             </div>
-        </form>
-        <!-- <details>
+        </form> -->
+    <!-- <details>
     <summary></summary>
   </details> -->
-        <br />
-    </div>
+    <!-- <br /> -->
+    <!-- </div> -->
+
+    <!-- //////// -->
+
     <footer>
         <p>© 2021 Все права защищены</p>
     </footer>
