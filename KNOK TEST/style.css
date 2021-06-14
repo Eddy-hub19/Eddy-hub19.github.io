@@ -51,4 +51,9 @@ ul li {
 .clear-completed {
     background: rgb(124, 122, 122);
     color: white;
+    margin-bottom: 20px;
+}
+
+.clear-completed:hover {
+    background: rgb(114, 69, 69);
 }
