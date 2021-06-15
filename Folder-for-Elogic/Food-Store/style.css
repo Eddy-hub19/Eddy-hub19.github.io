@@ -519,11 +519,10 @@ ul li {
     display: flex;
     justify-content: center;
     margin-top: 15%;
-    /* border: 2px solid red; */
+    position: relative;
 }
 
 .slider {
-    /* width: 196px; */
     height: 196px;
     display: flex;
     align-items: center;
@@ -536,6 +535,7 @@ ul li {
     display: flex;
     align-items: center;
     position: relative;
+    transition: all ease 1s;
 }
 
 .carousel-wrap {
@@ -545,10 +545,12 @@ ul li {
     padding: 15px;
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    /* border: 5px solid rgb(30, 109, 82); */
 }
 
 .slider-next {
+    position: absolute;
+    right: 280px;
+    top: 80px;
     width: 50px;
     height: 50px;
     border: none;
@@ -559,6 +561,9 @@ ul li {
 }
 
 .slider-prev {
+    position: absolute;
+    left: 280px;
+    top: 80px;
     width: 50px;
     height: 50px;
     border: none;
