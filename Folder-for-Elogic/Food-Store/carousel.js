@@ -17,3 +17,9 @@ document.querySelector(".slider-prev").addEventListener("click", function() {
     }
     sliderLine.style.left = -offset + "px";
 });
+
+const test = document.querySelector('.warning')
+
+document.querySelector(".close-btn").addEventListener("click", function() {
+    test.style.display = "none"
+})

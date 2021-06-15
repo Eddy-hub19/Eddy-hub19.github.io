@@ -270,6 +270,10 @@ ul li {
     border: none;
 }
 
+.wrap button:hover {
+    background: #903d01;
+}
+
 .inf_section {
     text-align: center;
     width: 1280px;
@@ -518,7 +522,7 @@ ul li {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -622,6 +626,14 @@ footer {
     margin-left: 83px;
 }
 
+.footer_section a {
+    margin-top: 8px;
+    font-family: "Poppins";
+    font-size: 15px;
+    line-height: 22px;
+    color: #3d3d3d;
+}
+
 .footer_section nav {
     display: flex;
     flex-direction: column;
@@ -630,12 +642,4 @@ footer {
 
 .footer_section h5 {
     margin-bottom: 15px;
-}
-
-.footer_section a {
-    margin-top: 8px;
-    font-family: "Poppins";
-    font-size: 15px;
-    line-height: 22px;
-    color: #3d3d3d;
 }
