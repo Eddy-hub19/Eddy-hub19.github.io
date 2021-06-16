@@ -5,7 +5,7 @@ const sliderLine = document.querySelector(".slider-line");
 document.querySelector(".slider-next").addEventListener("click", function() {
     offset = offset + 230;
     if (offset > 1000) {
-        offset = 0
+        offset = 0;
     }
     sliderLine.style.left = offset + "px";
 });
@@ -13,15 +13,15 @@ document.querySelector(".slider-next").addEventListener("click", function() {
 document.querySelector(".slider-prev").addEventListener("click", function() {
     offset = offset + 230;
     if (offset < 0) {
-        offset = 230
+        offset = 230;
     } else {
-        offset = 0
+        offset = 0;
     }
     sliderLine.style.left = -offset + "px";
 });
 
-const test = document.querySelector('.warning')
+const test = document.querySelector(".warning");
 
 document.querySelector(".close-btn").addEventListener("click", function() {
-    test.style.display = "none"
-})
+    test.style.display = "none";
+});
