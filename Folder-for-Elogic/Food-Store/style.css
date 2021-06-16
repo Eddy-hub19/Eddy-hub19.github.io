@@ -522,9 +522,77 @@ ul li {
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    overflow: hidden;
     position: relative;
 }
+
+.slick-slider {
+    min-width: 0;
+}
+
+.slick-slide img {
+    width: 186px;
+    height: 186px;
+}
+
+.slick-list {
+    width: 186px;
+    height: 186px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.slick-track {
+    width: 600px;
+    height: 186px;
+    display: flex;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 280px;
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-left.svg);
+}
+
+.slick-next {
+    position: absolute;
+    right: 280px;
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-right.svg);
+}
+
+
+/* 
 
 .slider {
     height: 196px;
@@ -555,32 +623,7 @@ ul li {
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
-
-.slider-next {
-    position: absolute;
-    right: 280px;
-    top: 80px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-right.svg);
-}
-
-.slider-prev {
-    position: absolute;
-    left: 280px;
-    top: 80px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-left.svg);
-}
+ */
 
 
 /* Slider */

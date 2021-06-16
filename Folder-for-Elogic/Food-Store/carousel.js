@@ -1,27 +1,41 @@
-offset = 0; // смещение от левого края
+    $(document).ready(function() {
 
-const sliderLine = document.querySelector(".slider-line");
+        $('.slider').slick();
 
-document.querySelector(".slider-next").addEventListener("click", function() {
-    offset = offset + 230;
-    if (offset > 1000) {
-        offset = 0;
-    }
-    sliderLine.style.left = offset + "px";
-});
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    })
 
-document.querySelector(".slider-prev").addEventListener("click", function() {
-    offset = offset + 230;
-    if (offset < 0) {
-        offset = 230;
-    } else {
-        offset = 0;
-    }
-    sliderLine.style.left = -offset + "px";
-});
 
-const test = document.querySelector(".warning");
 
-document.querySelector(".close-btn").addEventListener("click", function() {
-    test.style.display = "none";
-});
+    // offset = 0; // смещение от левого края
+
+    // const sliderLine = document.querySelector(".slider-line");
+
+    // document.querySelector(".slider-next").addEventListener("click", function() {
+    //     offset = offset + 230;
+    //     if (offset > 1000) {
+    //         offset = 0;
+    //     }
+    //     sliderLine.style.left = offset + "px";
+    // });
+
+    // document.querySelector(".slider-prev").addEventListener("click", function() {
+    //     offset = offset + 230;
+    //     if (offset < 0) {
+    //         offset = 230;
+    //     } else {
+    //         offset = 0;
+    //     }
+    //     sliderLine.style.left = -offset + "px";
+    // });
+
+    // const test = document.querySelector(".warning");
+
+    // document.querySelector(".close-btn").addEventListener("click", function() {
+    //     test.style.display = "none";
+    // });
