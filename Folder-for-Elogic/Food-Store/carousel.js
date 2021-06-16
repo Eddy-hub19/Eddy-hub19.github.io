@@ -11,9 +11,11 @@ document.querySelector(".slider-next").addEventListener("click", function() {
 });
 
 document.querySelector(".slider-prev").addEventListener("click", function() {
-    offset = offset - 230;
+    offset = offset + 230;
     if (offset < 0) {
-        offset = 1130
+        offset = 230
+    } else {
+        offset = 0
     }
     sliderLine.style.left = -offset + "px";
 });
