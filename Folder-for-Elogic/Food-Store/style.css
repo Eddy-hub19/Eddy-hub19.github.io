@@ -648,3 +648,18 @@ footer {
 .footer_section h5 {
     margin-bottom: 15px;
 }
+
+
+/*  BURGER  */
+
+.hamburger {
+    /* background-color: transparent; */
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+    /* background: red; */
+}
+
+.hamburger:focus {
+    outline: none;
+}
