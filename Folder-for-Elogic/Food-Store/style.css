@@ -520,6 +520,7 @@ ul li {
 /* Slider */
 
 .container {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -545,14 +546,13 @@ ul li {
 }
 
 .slick-list {
-    width: 186px;
     height: 186px;
     min-width: 0;
     overflow: hidden;
 }
 
 .slick-track {
-    width: 600px;
+    width: 600px !important;
     height: 186px;
     display: flex;
     overflow: hidden;
@@ -695,14 +695,24 @@ footer {
 
 /*  BURGER  */
 
-.hamburger {
-    /* background-color: transparent; */
-    border: 0;
+.hamburger::after {
     font-size: 30px;
-    cursor: pointer;
-    /* background: red; */
+    margin-left: 10px;
+    border: none;
 }
 
-.hamburger:focus {
+#hamburger {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span::after {
+    content: '\2261';
+    font-size: 70px;
+    width: 40px;
+}
+
+#hamburger:focus {
     outline: none;
 }
