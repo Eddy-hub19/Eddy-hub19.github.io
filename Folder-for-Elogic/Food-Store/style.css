@@ -519,49 +519,62 @@ ul li {
 
 /* Slider */
 
-.container {
-    /* width: 100%; */
+.wrap-slider {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
+    margin-top: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    position: relative;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+
+.slick-slider img {
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .slider {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin: 20px;
+    align-items: center;
+    width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .slick-slider {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
     min-width: 0;
-}
-
-.slick-slide img {
-    width: 186px;
-    height: 186px;
 }
 
 .slick-list {
-    height: 186px;
+    display: flex;
+    width: 500px;
     min-width: 0;
-    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .slick-track {
-    width: 600px !important;
-    height: 186px;
     display: flex;
-    overflow: hidden;
     min-width: 0;
 }
 
 .slick-prev {
     position: absolute;
-    left: 280px;
+    left: -50px;
     top: 80px;
     width: 50px;
     height: 50px;
@@ -577,7 +590,7 @@ ul li {
 
 .slick-next {
     position: absolute;
-    right: 280px;
+    right: -70px;
     top: 80px;
     width: 50px;
     height: 50px;
@@ -594,14 +607,6 @@ ul li {
 
 /* 
 
-.slider {
-    height: 196px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
 
 .slider-line {
     display: flex;
@@ -610,18 +615,13 @@ ul li {
     transition: all ease 1s;
 }
 
-.carousel-wrap:hover {
-    background: rgba(38, 146, 137, 0.678);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-}
-
 .carousel-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 15px;
     margin: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    
 }
  */
 
@@ -695,7 +695,8 @@ footer {
 
 /*  BURGER  */
 
-.hamburger::after {
+
+/* .hamburger::after {
     font-size: 30px;
     margin-left: 10px;
     border: none;
@@ -715,4 +716,4 @@ footer {
 
 #hamburger:focus {
     outline: none;
-}
+} */
