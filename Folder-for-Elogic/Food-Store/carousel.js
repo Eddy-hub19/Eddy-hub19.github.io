@@ -34,8 +34,8 @@ $(document).ready(function() {
 //     sliderLine.style.left = -offset + "px";
 // });
 
-// const test = document.querySelector(".warning");
+const test = document.querySelector(".warning");
 
-// document.querySelector(".close-btn").addEventListener("click", function() {
-//     test.style.display = "none";
-// });
+document.querySelector(".close-btn").addEventListener("click", function() {
+    test.style.display = "none";
+});
