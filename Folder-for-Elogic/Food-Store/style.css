@@ -610,7 +610,7 @@
     height: 260px;
     display: flex;
     flex-direction: column;
-    background-image: url(./img/Bg-Our-Partner.png);
+    background-image: url(/Folder-for-Elogic/Food-Store/img/Bg-Our-Partner.png);
   }
   
   .comunication h4 {
