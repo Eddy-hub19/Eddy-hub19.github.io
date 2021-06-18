@@ -22,7 +22,8 @@ p {
 
 .calc-row {
   cursor: pointer;
-  text-align: center;
+  text-align: left;
+  margin-left: 15px;
 }
 
 .calc-row div.screen {
