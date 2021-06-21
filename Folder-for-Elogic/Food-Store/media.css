@@ -1,7 +1,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
-  html,
-  body {
+
+  html,body {
     overflow-x: hidden;
+  }
+
+  .top_menu {
+    margin-top: 15px;
   }
 
   .hidden-item {
@@ -18,6 +22,7 @@
     font-size: 22px;
   }
   .header nav {
+    display: none;
     font-size: 9px;
     margin: 14px;
   }
@@ -219,7 +224,7 @@
 
   #hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 30px;
     border: none;
@@ -273,9 +278,9 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 435px;
-    height: 320px;
-    top: -45px;
+    width: 473px;
+    height: 286px;
+    top: -100px;
     display: flex;
     transition: all ease 2s;
     background: rgb(2, 0, 36);
@@ -285,6 +290,10 @@
       rgba(208, 213, 211, 1) 35%,
       rgba(0, 212, 255, 1) 100%
     );
+  }
+
+  nav {
+    display: none;
   }
 
   .menuLink {
@@ -301,7 +310,7 @@
   .slick-next .slick-arrow {
     display: none;
   }
-
+  
   .slick-list {
     display: flex;
     width: 400px;
@@ -322,8 +331,12 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* .hidden-item {
-      display: none;
-    } */
+    display: none;
+  } */
+
+  nav {
+    display: none;
+  }
 
   .header {
     font-size: 22px;
@@ -519,13 +532,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin: -25px 30px 0 13px;
   }
 
   /*  BURGER  */
 
   #hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 30px;
     border: none;
@@ -579,8 +593,9 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 665px;
+    width: 700px;
     height: 320px;
+    max-height: 295px;
     top: -35px;
     display: flex;
     transition: all ease 2s;
