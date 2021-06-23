@@ -1,9 +1,24 @@
-/*
-  1. Base
-*/
-/*
-  2. Components
-*/
+body {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(-134deg, #6c666e 0%, #faf7f6 100%);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+body div.example-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body div.example-container div.left {
+  width: 50%;
+}
+body div.example-container div.right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  visibility: hidden;
+}
+
 div#white-player {
   width: 100%;
   max-width: 375px;
@@ -47,7 +62,7 @@ div#white-player-center img.main-album-art {
   margin-top: 16px;
   margin-bottom: 50px;
   border-radius: 8px;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 23px 2px;
   width: 280px;
   height: 280px;
 }
@@ -79,9 +94,6 @@ div#white-player-center div.time-progress div#progress-container {
   position: relative;
   height: 20px;
   cursor: pointer;
-  /*
-        IE 11
-      */
 }
 div#white-player-center
   div.time-progress
@@ -105,38 +117,12 @@ div#white-player-center
   top: 8px;
   right: 0;
   width: 100%;
-  z-index: 60;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  z-index: 10;
   appearance: none;
   height: 4px;
   border-radius: 5px;
   background: transparent;
   border: none;
-  /* Needed for Firefox */
-}
-@media all and (-ms-high-contrast: none) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    progress#song-played-progress {
-    color: #fa6733;
-    border: none;
-    background-color: #e1e1e1;
-  }
-}
-@supports (-ms-ime-align: auto) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    progress#song-played-progress {
-    color: #fa6733;
-    border: none;
-  }
 }
 div#white-player-center
   div.time-progress
@@ -212,37 +198,7 @@ div#white-player-center
   progress::-ms-fill {
   border: none;
 }
-@-moz-document url-prefix() {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    progress#song-buffered-progress {
-    top: 9px;
-    border: none;
-  }
-}
-@media all and (-ms-high-contrast: none) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    progress#song-buffered-progress {
-    color: #78909c;
-    border: none;
-  }
-}
-@supports (-ms-ime-align: auto) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    progress#song-buffered-progress {
-    color: #78909c;
-    border: none;
-  }
-}
+
 div#white-player-center
   div.time-progress
   div#progress-container
@@ -362,75 +318,7 @@ div#white-player-center
   height: 0px;
   display: none;
 }
-@media all and (-ms-high-contrast: none) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider {
-    padding: 0px;
-  }
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider::-ms-thumb {
-    height: 15px;
-    width: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: -8px;
-  }
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider::-ms-track {
-    border-width: 15px 0;
-    border-color: transparent;
-  }
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider::-ms-fill-lower {
-    background: #e1e1e1;
-    border-radius: 10px;
-  }
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    *::-ms-backdrop,
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider::-ms-fill-upper {
-    background: #e1e1e1;
-    border-radius: 10px;
-  }
-}
-@supports (-ms-ime-align: auto) {
-  div#white-player-center
-    div.time-progress
-    div#progress-container
-    input[type="range"].amplitude-song-slider::-ms-thumb {
-    height: 15px;
-    width: 15px;
-    margin-top: 3px;
-  }
-}
+
 div#white-player-center
   div.time-progress
   div#progress-container
@@ -723,9 +611,9 @@ div.white-player-playlist-controls::after {
 }
 
 div.song-to-add {
-  width: 45%;
-  padding: 10px;
-  max-width: 250px;
+  width: 80%;
+  padding: 23px;
+  max-width: 200px;
 }
 div.song-to-add img {
   border-radius: 6px;
@@ -734,7 +622,6 @@ div.song-to-add img {
 }
 div.song-to-add a.add-to-playlist-button {
   background-color: white;
-  color: #cc5cad;
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
   text-align: center;
   max-width: 150px;
@@ -748,97 +635,11 @@ div.song-to-add a.add-to-playlist-button {
   cursor: pointer;
 }
 
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  div.song-to-add {
-    width: 40%;
-    padding: 5px;
-  }
-}
-/*
-    3. Layout
-  */
-body {
-  background-image: linear-gradient(
-    -134deg,
-    #c182dc 0%,
-    #fb7c62 94%,
-    #ff7c5b 100%
-  );
-  -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  line-height: 1.5;
-}
-body div.example-container {
-  width: 100%;
-  display: flex;
-}
-body div.example-container div.left {
-  width: 50%;
-}
-body div.example-container div.right {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media screen and (max-width: 39.9375em) {
-  body div.example-container {
-    flex-direction: column;
-  }
-  body div.example-container div.left {
-    width: 100%;
-  }
-  body div.example-container div.right {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  body div.right {
-    padding-left: 20px;
-  }
-}
-/*
-    4. Pages
-  */
-/*
-    5. Themes
-  */
-/*
-    6. Utils
-  */
-/*
-    7. Vendors
-  */
-/*
-    8. Animations
-  */
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  animation: rotate-center 0.6s ease-in-out both;
 }
 
-/* ----------------------------------------------
-   * Generated by Animista on 2019-3-25 18:39:54
-   * w: http://animista.net, t: @cssanimista
-   * ---------------------------------------------- */
-/**
-   * ----------------------------------------
-   * animation slide-in-top
-   * ----------------------------------------
-   */
-@-webkit-keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-10px);
@@ -857,45 +658,20 @@ body div.example-container div.right {
   animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-/* ----------------------------------------------
-   * Generated by Animista on 2019-3-25 18:45:17
-   * w: http://animista.net, t: @cssanimista
-   * ---------------------------------------------- */
-/**
-   * ----------------------------------------
-   * animation slide-out-top
-   * ----------------------------------------
-   */
-@-webkit-keyframes slide-out-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-}
 @keyframes slide-out-top {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
     opacity: 0;
   }
 }
-
-/*# sourceMappingURL=app.css.map */
 
 a.more-on-ssu {
   background-color: white;
-  color: #cc5cad;
+  color: #b968a2d5;
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
   text-align: center;
   max-width: 300px;
