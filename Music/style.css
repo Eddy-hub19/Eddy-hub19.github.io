@@ -5,7 +5,7 @@ body {
   line-height: 1.5;
 }
 body div.example-container {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -16,7 +16,7 @@ body div.example-container div.right {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 div#white-player {
@@ -404,11 +404,10 @@ div#white-player-controls div#repeat.amplitude-repeat-on {
 }
 
 div#white-player-playlist-container {
+  width: 397px;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: 58px;
+  left: 974px;
   background-color: white;
   z-index: 9999;
   display: none;
@@ -653,8 +652,6 @@ div.song-to-add a.add-to-playlist-button {
   }
 }
 .slide-out-top {
-  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
   animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
