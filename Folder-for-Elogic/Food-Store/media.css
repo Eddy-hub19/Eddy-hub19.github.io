@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 480px) {
-
-  html,body {
+  html,
+  body {
     overflow-x: hidden;
   }
 
@@ -278,9 +278,9 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 473px;
-    height: 286px;
-    top: -100px;
+    width: 467px;
+    height: 244px;
+    top: -45px;
     display: flex;
     transition: all ease 2s;
     background: rgb(2, 0, 36);
@@ -310,7 +310,7 @@
   .slick-next .slick-arrow {
     display: none;
   }
-  
+
   .slick-list {
     display: flex;
     width: 400px;
