@@ -711,9 +711,7 @@ a.more-on-ssu {
     margin-left: 50px;
   }
   div#white-player {
-    background: none;
-    /* background: #878787;  */
-    background: #cd1b1b63;
+    /* background: none; */
   }
   div#white-player-playlist-container {
     left: 0;
@@ -730,8 +728,5 @@ a.more-on-ssu {
   }
   div#white-player-playlist-container {
     left: 0;
-  }
-  body {
-    background: red;
   }
 }
