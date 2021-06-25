@@ -6,6 +6,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   line-height: 1.5;
+  margin: 0 auto;
 }
 
 body div.example-container {
@@ -707,12 +708,17 @@ a.more-on-ssu {
   body div.example-container div.right {
     display: none;
     width: 50%;
+    margin-left: 50px;
   }
   div#white-player {
     background: none;
+    /* background: #878787;  */
+    background: #cd1b1b63;
   }
   div#white-player-playlist-container {
     left: 0;
+    background-color: #b7b6b5;
+    width: 350px;
   }
 }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
