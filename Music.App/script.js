@@ -3,7 +3,7 @@ const songsToAdd = [
     name: "Terrain",
     artist: "pg.lost",
     album: "Key",
-    url: "https://521dimensions.com/songs/Terrain-pglost.mp3",
+    url: "/Music.App/music/cali.mp3",
     cover_art_url: "http://surl.li/xwou",
   },
   {

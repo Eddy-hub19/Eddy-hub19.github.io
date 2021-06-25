@@ -621,7 +621,8 @@ div.song-to-add {
 div.song-to-add img {
   border-radius: 6px;
   margin-top: 50px;
-  width: 100%;
+  width: 209px;
+  height: 200px;
 }
 div.song-to-add a.add-to-playlist-button {
   background-color: white;
@@ -709,9 +710,6 @@ a.more-on-ssu {
     display: none;
     width: 50%;
     margin-left: 50px;
-  }
-  div#white-player {
-    /* background: none; */
   }
   div#white-player-playlist-container {
     left: 0;
