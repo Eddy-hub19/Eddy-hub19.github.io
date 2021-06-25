@@ -695,18 +695,21 @@ a.more-on-ssu {
 }
 @media screen and (max-width: 39.9375em) {
   #bg {
-    width: 900px;
+    width: 500px;
   }
   body div.example-container {
     flex-direction: column;
   }
   body div.example-container div.left {
     width: 100%;
-    margin-left: 100px;
+    margin-left: 75px;
   }
   body div.example-container div.right {
     display: none;
     width: 50%;
+  }
+  div#white-player {
+    background: none;
   }
   div#white-player-playlist-container {
     left: 0;
