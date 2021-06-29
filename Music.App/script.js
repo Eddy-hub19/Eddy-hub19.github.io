@@ -10,7 +10,7 @@ const songsToAdd = [
     name: "Vorel",
     artist: "Russian Circles",
     album: "Guidance",
-    url: "https://521dimensions.com/songs/Vorel-RussianCircles.mp3",
+    url: "/Music.App/music/Dont-Cry.mp3",
     cover_art_url:
       "https://521dimensions.com/img/open-source/amplitudejs/album-art/guidance.jpg",
   },
@@ -18,7 +18,7 @@ const songsToAdd = [
     name: "Intro / Sweet Glory",
     artist: "Jimkata",
     album: "Die Digital",
-    url: "https://521dimensions.com/songs/IntroSweetGlory-Jimkata.mp3",
+    url: "/Music.App/music/Our-Last-Night.mp3",
     cover_art_url:
       "https://521dimensions.com/img/open-source/amplitudejs/album-art/die-digital.jpg",
   },
