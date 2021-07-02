@@ -1,0 +1,29 @@
+body {
+  background: #e8e8e8 url("../img/bg.png") 50% 130px no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+h1 {
+  max-width: 800px;
+}
+
+p {
+  max-width: 560px;
+  margin-top: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2642";
+  font-size: 40px;
+}

@@ -4,8 +4,8 @@
         margin: 0 auto;
         width: 100%;
         background: no-repeat;
-        /* background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg); */
-        background-image: url(/img/fire-bg.jpg);
+        background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
+        /* background-image: url(/img/fire-bg.jpg); */
     }
     .header__class {
         display: flex;
