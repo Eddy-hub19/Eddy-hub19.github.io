@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   background: #e8e8e8 url("../img/bg.png") 50% 130px no-repeat;
 }
@@ -26,4 +31,17 @@ ul li {
 ul li::before {
   content: "\2642";
   font-size: 40px;
+  color: green;
+}
+button {
+    text-align: center;
+    background: gray;
+    font-size: 30px;
+    color: white;
+}
+
+button::after {
+    content: '\266A';
+    font-size: 40px;
+    color: rgb(0, 89, 255);
 }
