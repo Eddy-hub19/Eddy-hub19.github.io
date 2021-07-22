@@ -4,7 +4,8 @@ body {
     width: 1920px;
     background: no-repeat;
     background-size: 100%;
-    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg);
+    background-image: url(/img/veeterzy.jpg);
+    /* background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg); */
     /* background-image: url(/img/fire-bg.jpg); */
 }
 
