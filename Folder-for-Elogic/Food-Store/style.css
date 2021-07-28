@@ -237,10 +237,10 @@
     align-items: center;
   }
   
-  .item .price {
-    display: flex;
-    flex-direction: row;
-  }
+    .item .price {
+      display: flex;
+      flex-direction: row;
+    }
   
   .cost_color {
     font-family: "Poppins";
