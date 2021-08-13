@@ -5,8 +5,6 @@ body {
     background: no-repeat;
     background-size: 100%;
     background-image: url(/img/veeterzy.jpg);
-    /* background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/03/02/283837/c80224a52170a32342120ec722001e95-1000.jpg); */
-    /* background-image: url(/img/fire-bg.jpg); */
 }
 
 html {
@@ -121,7 +119,7 @@ li {
 }
 
 .dark-theme {
-    background-image: url(/img/sky.jpg);
+    background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
 }
 
 .theme-button {
@@ -176,57 +174,4 @@ form button {
 
 .subscription-email {
     font-size: 25px;
-}
-
-
-/*  /////// */
-
-.slider {
-    display: flex;
-    justify-content: center;
-    /* max-width: 800px; */
-}
-
-
-/* дополнительные стили для этого примера */
-
-.slider__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    counter-reset: slide;
-}
-
-.slider__item {
-    margin: 20px;
-    position: relative;
-    counter-increment: slide;
-}
-
-.slider__item::after {
-    content: counter(slide);
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.img-fluid {
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-}
-
-.slider__control_prev {
-    width: 20px;
-    background: red;
-}
-
-.slider__control_next {
-    width: 20px;
-    background: red;
 }
