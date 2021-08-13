@@ -1,7 +1,6 @@
 body {
   padding: 0;
   margin: 0 auto;
-  width: 1920px;
   background: no-repeat;
   background-size: 100%;
   background-image: url(/img/veeterzy.jpg);
@@ -180,6 +179,8 @@ form button {
     display: flex;
     justify-content: center;
     font-family: monospace;
+    font-size: 40px;
+    font-weight: 600;
   }
   
   .typewriter-effect > .text {
