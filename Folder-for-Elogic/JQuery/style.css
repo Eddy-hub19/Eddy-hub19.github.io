@@ -1,106 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background: rgb(195, 188, 188);
-}
-
-header {
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    flex-direction: column-reverse;
 }
 
-#container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: black;
-    font-size: 25px;
-    border-radius: 20px;
-    box-shadow: 1px 21px 23px 14px rgba(34, 60, 80, 0.2);
-    max-width: 500px;
-    min-height: 200px;
-    background: #ffffffb3;
+form {
+    outline: 0;
+    height: 36px;
+    margin-top: 5%;
+    border: 3px solid #3b3b3b;
 }
 
-#tasks {
-    width: 500px;
-    transition: 2s;
-}
-
-#notification {
-    width: 339px;
-    height: 30px;
-    background: rgb(110 129 142);
-    border-radius: 20px;
-    margin: 10px 80px;
-    color: white;
-}
-
-ul li {
-    margin: 17px 18px 15px 86px;
-    list-style: none;
-    position: relative;
-    border-bottom: 1px solid rgb(78, 69, 69);
-}
-
-li:hover {
-    transition: 2ms;
-}
-
-#taskInput {
-    width: 195px;
-    height: 50px;
-    border-radius: 26px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 1px 21px 23px 14px rgba(34, 60, 80, 0.2);
-    color: black;
-    font-size: 20px;
-    transition: 2s;
-}
-
-#taskAdd {
-    color: rgb(239, 241, 241);
-    border: 2px solid rgb(160, 144, 126);
-    margin-top: 20px;
-    width: 60px;
-    height: 60px;
-    background: rgb(63, 90, 116);
-    border-radius: 20px;
-}
-
-#taskAdd:hover {
-    background: white;
-    color: black;
+input[type="text"] {
+    outline: 0;
+    width: 55%;
+    height: 32px;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 10px;
 }
 
 .add {
-    top: 0px;
-    padding: 8px;
-    left: -40px;
-    position: absolute;
-    border-radius: 25px;
-    border: 2px solid black;
-    height: 28px;
-    color: white;
+    outline: 0;
+    float: right;
+    width: 34%;
+    height: 36px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #3b3b3b;
 }
 
-.delete {
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    left: 350px;
-    bottom: 10px;
+ul {
+    padding: 0;
+    text-align: left;
+    list-style: none;
 }
 
-.delete:hover {
-    background: rgb(255, 4, 4);
+hr {
+    border-bottom: 0;
+    margin: 15px 0;
 }
 
-.done .add {
-    background: rgb(228, 148, 21);
+input[type="checkbox"] {
+    width: 30px;
+}
+
+.remove {
+    float: right;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
 }
