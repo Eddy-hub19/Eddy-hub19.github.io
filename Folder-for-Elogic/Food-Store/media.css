@@ -2,6 +2,7 @@
   html,
   body {
     overflow-x: hidden;
+    height: 100%;
   }
 
   .top_menu {
@@ -158,6 +159,11 @@
   .sections {
     display: none;
   }
+
+  .section_left {
+    min-width: 100% !important;
+  }
+
   .section_left h3 {
     font-size: 40px;
   }
@@ -179,9 +185,7 @@
     height: 432px;
     width: 100% !important;
   }
-  .section_left {
-    min-width: 100% !important;
-  }
+
   .carousel {
     display: flex;
     flex-direction: row;
