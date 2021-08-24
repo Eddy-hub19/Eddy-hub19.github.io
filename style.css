@@ -8,9 +8,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
-.header__class {
+.header-class {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -18,19 +19,19 @@ html {
   color: gainsboro;
 }
 
-.header__class h1 {
+.header-class h1 {
   font-family: "Indie Flower", cursive;
   font-size: 50px;
 }
 
-.header__class h2 {
+.header-class h2 {
   color: rgb(116 147 177);
   font-family: "Indie Flower", cursive;
   font-size: 4em;
   margin-right: 125px;
 }
 
-.header_main {
+.header-main {
   display: flex;
   justify-content: center;
   color: white;
@@ -50,13 +51,6 @@ select {
   width: 200px;
   margin-right: 10em;
   border-radius: 20px;
-}
-
-.img {
-  position: absolute;
-  left: -55px;
-  right: 73px;
-  bottom: 1px;
 }
 
 ul,
@@ -80,9 +74,13 @@ li {
   animation: color-change 4s infinite;
 }
 
+.bar-top{
+  position: relative;
+}
+
 #bar {
   top: -9.8em;
-  right: 110em;
+  right: 90%;
   padding: 0.5em;
   margin: 0;
   position: absolute;
@@ -95,7 +93,7 @@ li {
 }
 
 #bar:hover {
-  top: 0;
+  top: 20px;
 }
 
 @keyframes rocket-fly {
@@ -103,7 +101,7 @@ li {
     left: 0px;
   }
   100% {
-    left: 100%;
+    left: 99%;
   }
 }
 
@@ -111,14 +109,21 @@ li {
   width: 50px;
   height: 10px;
   position: absolute;
-  left: -70px;
+  left: -90px;
   transform: rotate(220deg);
   animation-name: rocket-fly;
-  animation-duration: 2.5s;
+  animation-duration: 2.9s;
 }
 
 .dark-theme {
   background-image: url(/img/wallpaperflare.com_wallpaper.jpg);
+}
+
+.img {
+  position: absolute;
+  left: -55px;
+  right: 73px;
+  bottom: 1px;
 }
 
 .theme-button {
@@ -132,49 +137,6 @@ li {
   border-radius: 40px;
 }
 
-footer {
-  position: absolute;
-  left: 45%;
-  top: 750px;
-  color: white;
-}
-
-/* form */
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 23px;
-}
-
-.inner-heading {
-  color: rgb(220, 227, 233);
-  font-size: 25px;
-  font-family: "Indie Flower", cursive;
-}
-
-form button {
-  /* background: red;
-  font-size: 25px;
-  color: white;
-}
-
-.subscription-message {
-  color: rgb(216, 216, 216);
-  background: rgba(88, 88, 88, 0.541);
-  font-size: 20px;
-  font-family: "Indie Flower";
-} */
-/* 
-.subscription-email {
-  font-size: 25px;
-} */
-
-
 .typewriter-effect {
     display: flex;
     justify-content: center;
@@ -185,7 +147,7 @@ form button {
   
   .typewriter-effect > .text {
     max-width: 0;
-    animation: typing 15s steps(var(--characters)) infinite;
+    animation: typing 10s steps(var(--characters)) infinite;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -212,4 +174,11 @@ form button {
     25% {
       opacity: 0;
     }
+  }
+
+  footer {
+    position: absolute;
+    left: 45%;
+    top: 750px;
+    color: white;
   }
