@@ -44,7 +44,7 @@ li {
   flex-wrap: wrap;
   width: 100%;
   height: 670px;
-  background: url(/Traveling/img/traveling.svg) center center no-repeat, #c4c4c4;
+  background: url(/Projects/Traveling/img/traveling.svg) center center no-repeat, #c4c4c4;
   background-size: cover;
 }
 .container-for-image h1 {
@@ -110,7 +110,7 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url(/Traveling/img/light.png) left bottom no-repeat;
+  background: url(/Projects/Traveling/img/light.png) left bottom no-repeat;
 }
 .contact-form h2 {
   font-family: Playfair Display;

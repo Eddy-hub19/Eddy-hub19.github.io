@@ -3,14 +3,14 @@ const songsToAdd = [
     name: "Terrain",
     artist: "pg.lost",
     album: "Key",
-    url: "/Music.App/music/cali.mp3",
-    cover_art_url: "http://surl.li/xwou",
+    url: "/Projects/Music.App/music/cali.mp3",
+    cover_art_url: "https://images.unsplash.com/photo-1552336658-762c1b1d9d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
   },
   {
     name: "Vorel",
     artist: "Russian Circles",
     album: "Guidance",
-    url: "/Music.App/music/Dont-Cry.mp3",
+    url: "/Projects/Music.App/music/Dont-Cry.mp3",
     cover_art_url:
       "https://521dimensions.com/img/open-source/amplitudejs/album-art/guidance.jpg",
   },
@@ -18,7 +18,7 @@ const songsToAdd = [
     name: "Intro / Sweet Glory",
     artist: "Jimkata",
     album: "Die Digital",
-    url: "/Music.App/music/Our-Last-Night.mp3",
+    url: "/Projects/Music.App/music/Our-Last-Night.mp3",
     cover_art_url:
       "https://521dimensions.com/img/open-source/amplitudejs/album-art/die-digital.jpg",
   },
@@ -52,15 +52,15 @@ Amplitude.init({
       name: "Risin' High (feat Raashan Ahmad)",
       artist: "Ancient Astronauts",
       album: "We Are to Answer",
-      url: "/Music.App/music/Black Atlass - Lie To Me.mp3",
-      cover_art_url: "http://surl.li/xwoc",
+      url: "/Projects/Music.App/music/Black Atlass - Lie To Me.mp3",
+      cover_art_url: "https://images.unsplash.com/photo-1552336658-762c1b1d9d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
     },
     {
       name: "Miamor",
       artist: "Adventure",
       album: "Mi",
-      url: "/Music.App/music/Miamor - adventure .mp3",
-      cover_art_url: "http://surl.li/xwny",
+      url: "/Projects/Music.App/music/Miamor - adventure .mp3",
+      cover_art_url: "https://images.unsplash.com/photo-1552336658-762c1b1d9d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
     },
     {
       name: "Anvil",
@@ -89,9 +89,7 @@ Amplitude.init({
   ],
 });
 
-/*
-    Shows the playlist
-  */
+/* Shows the playlist */
 document
   .getElementsByClassName("show-playlist")[0]
   .addEventListener("click", function () {
@@ -105,9 +103,7 @@ document
       "block";
   });
 
-/*
-    Hides the playlist
-  */
+/* Hides the playlist */
 document
   .getElementsByClassName("close-playlist")[0]
   .addEventListener("click", function () {
@@ -131,9 +127,7 @@ for (let i = 0; i < addToPlaylistButtons.length; i++) {
     appendToSongDisplay(songsToAdd[songToAddIndex], newIndex);
     Amplitude.bindNewElements();
 
-    /*
-        Removes the container that contained the add to playlist button.
-      */
+    /* Removes the container that contained the add to playlist button. */
     let songToAddRemove = document.querySelector(
       '.song-to-add[song-to-add="' + songToAddIndex + '"]'
     );
@@ -141,18 +135,12 @@ for (let i = 0; i < addToPlaylistButtons.length; i++) {
   });
 }
 
-/*
-    Appends the song to the display.
-  */
+/* Appends the song to the display. */
 function appendToSongDisplay(song, index) {
-  /*
-      Grabs the playlist element we will be appending to.
-    */
+  /* Grabs the playlist element we will be appending to. */
   let playlistElement = document.querySelector(".white-player-playlist");
 
-  /*
-      Creates the playlist song element
-    */
+  /* Creates the playlist song element */
   let playlistSong = document.createElement("div");
   playlistSong.setAttribute(
     "class",
@@ -160,46 +148,32 @@ function appendToSongDisplay(song, index) {
   );
   playlistSong.setAttribute("data-amplitude-song-index", index);
 
-  /*
-      Creates the playlist song image element
-    */
+  /* Creates the playlist song image element */
   let playlistSongImg = document.createElement("img");
   playlistSongImg.setAttribute("src", song.cover_art_url);
 
-  /*
-      Creates the playlist song meta element
-    */
+  /* Creates the playlist song meta element */
   let playlistSongMeta = document.createElement("div");
   playlistSongMeta.setAttribute("class", "playlist-song-meta");
 
-  /*
-      Creates the playlist song name element
-    */
+  /* Creates the playlist song name element */
   let playlistSongName = document.createElement("span");
   playlistSongName.setAttribute("class", "playlist-song-name");
   playlistSongName.innerHTML = song.name;
 
-  /*
-      Creates the playlist song artist album element
-    */
+  /* Creates the playlist song artist album element */
   let playlistSongArtistAlbum = document.createElement("span");
   playlistSongArtistAlbum.setAttribute("class", "playlist-song-artist");
   playlistSongArtistAlbum.innerHTML = song.artist + " &bull; " + song.album;
 
-  /*
-      Appends the name and artist album to the playlist song meta.
-    */
+  /* Appends the name and artist album to the playlist song meta. */
   playlistSongMeta.appendChild(playlistSongName);
   playlistSongMeta.appendChild(playlistSongArtistAlbum);
 
-  /*
-      Appends the song image and meta to the song element
-    */
+  /* Appends the song image and meta to the song element */
   playlistSong.appendChild(playlistSongImg);
   playlistSong.appendChild(playlistSongMeta);
 
-  /*
-      Appends the song element to the playlist
-    */
+  /* Appends the song element to the playlist */
   playlistElement.appendChild(playlistSong);
 }
