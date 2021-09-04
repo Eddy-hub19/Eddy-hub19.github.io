@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1920px;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    background: url(/Projects/Locus/img/image\ 1.png) no-repeat right;
+    width: 1920px;
+    height: auto;
+}
+
+nav a:hover {
+    border-bottom: 3px solid orange;
+}
