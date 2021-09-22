@@ -10,35 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
     <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/media.css" />
+    <!-- <link rel="stylesheet" href="/media.css" /> -->
+    
 </head>
 
 <body>
     <section class="bar-top">
-    <ul id="bar">
-        <li>
-            <a href="https://github.com/Eddy-hub19"><img src="https://img.icons8.com/fluent/48/000000/github.png" />
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/eduardsekan/"><img
-                    src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="icon-facebook" /></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/ed_sekan20/">
-                <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="icon-instagram" />
-            </a>
-        </li>
-        <div class="arrow">&darr;</div>
-    </ul>
+        <ul id="bar">
+            <li>
+                <a href="https://github.com/Eddy-hub19"><img src="https://img.icons8.com/fluent/48/000000/github.png" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/eduardsekan/"><img
+                        src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="icon-facebook" /></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ed_sekan20/">
+                    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="icon-instagram" />
+                </a>
+            </li>
+            <div class="arrow">&darr;</div>
+        </ul>
     </section>
     <header class="header-class">
         <h1 class="animation">Smart-Edek</h1>
         <h2>SEKAN EDDY</h2>
-        <div class="fly">
+        <!-- <div class="fly">
             <img src="/img/Comet.svg" />
-        </div>
+        </div> -->
         <!-- <select onchange="top.location=this.value">
             <option value="index.html">HOME</option>
             <option value="Porten/index.html">PORTEN</option>
@@ -54,27 +57,52 @@
     <div class="header-main">
         <h3>
             My name is Eduard Sekan I`m 20 years old and i`m a <i>PROGRAMMER</i>
-    </h3>
+        </h3>
         <button class="theme-button">
             Change theme
             <span><img class="img" src="/img/sun-eclipse.svg" alt="sun-eclipse" /></span>
         </button>
     </div>
+
     <div class="typewriter-effect">
         <div class="text" id="typewriter-text"></div>
-      </div>
+    </div>
+   
+    <main class="parallax">
+        <!-- bg -->
+        <h1>Be A Digital Innovator</h1>
+        <p>Digital technologies are disrupting old industries and creating new ones. This brings lots of opportunities,
+            but challenges as well. Are you ready for them?</p>
+        <button>Read More</button>
+        <h3>My projects</h3>
+</main>
+<div class="parallax main-content">
+    <h3>MY PROJECTS</h3>
+    <div class="carousel">
+        <img src="/Projects/New-sites/image/porten.png" alt="porten-site">
+        <img src="/Projects/New-sites/image/food-store.png" alt="food-store">
+        <img src="/Projects/New-sites/image/Music-app.png" alt="musc-app">
+    </div>
+</div>
 
-    <footer>
+    <!-- <footer>
         <p>© 2021 Все права защищены</p>
-    </footer>
-    <script src="/script.js"></script>
-    <script>
+    </footer> -->
+
+    <script type="text/javascript" src="/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/slick-1.8.1/slick/slick.js"></script>
+    <script src="/carousel.js"></script>
+
+    <!-- <script src="/script.js"></script> -->
+    <!-- <script>
         let header = document.querySelector("body");
         let themeButton = document.querySelector(".theme-button");
         themeButton.onclick = function () {
             header.classList.toggle("dark-theme");
         };
-    </script>
+    </script> -->
 </body>
 
 </html>

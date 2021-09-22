@@ -74,7 +74,7 @@ li {
   animation: color-change 4s infinite;
 }
 
-.bar-top{
+.bar-top {
   position: relative;
 }
 
@@ -138,47 +138,95 @@ li {
 }
 
 .typewriter-effect {
-    display: flex;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  
-  .typewriter-effect > .text {
-    max-width: 0;
-    animation: typing 10s steps(var(--characters)) infinite;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  
-  .typewriter-effect:after {
-    content: " |";
-    animation: blink 1s infinite;
-    animation-timing-function: step-end;
-  }
-  
-  @keyframes typing {
-    75%,
-    100% {
-      max-width: calc(var(--characters) * 1ch);
-    }
-  }
-  
-  @keyframes blink {
-    0%,
-    75%,
-    100% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: 600;
+}
 
-  footer {
-    position: absolute;
-    left: 45%;
-    top: 750px;
-    color: white;
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 10s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
   }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+main {
+  background: url(/Projects/New-sites/image/main.jpg) no-repeat center;
+  height: 1620px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  font-size: 34px;
+  color: white;
+  position: static;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content > h3{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  text-align: center;
+  color: black;
+  font-size: 80px;
+}
+
+main button {
+  margin-top: 20px;
+  width: 350px;
+  height: 35px;
+  color: white;
+  background: black;
+}
+
+/* Paralax */
+
+.parallax {
+  background-image: url(/img/veeterzy.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  width: 100%;
+  height: auto;
+  filter: blur(1.5px);
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
