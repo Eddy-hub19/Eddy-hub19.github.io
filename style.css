@@ -31,12 +31,31 @@ html {
   font-size: 4em;
 }
 
+.header-class > h3 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 0;
+  text-align: center;
+  color: black;
+  font-size: 55px;
+}
+
 .header-main {
   display: flex;
   justify-content: center;
   color: white;
   font-size: 35px;
   font-family: "Indie Flower";
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.read-more {
+  width: 450px;
+  height: 50px;
+  color: white;
+  background: black;
+  font-size: 25px;
 }
 
 select {
@@ -190,21 +209,12 @@ main {
   text-align: center;
 }
 
-.main-content > h3{
-  font-family:'Times New Roman', Times, serif;
+.main-content > h3 {
+  font-family: "Times New Roman", Times, serif;
   margin-top: 0;
   text-align: center;
   color: black;
   font-size: 55px;
-}
-
-main button {
-  margin-top: 20px;
-  width: 450px;
-  height: 50px;
-  color: white;
-  background: black;
-  font-size: 25px;
 }
 
 /* Paralax */
@@ -228,12 +238,12 @@ main button {
 }
 
 .slick-prev:before {
-  content: '←';
+  content: "←";
   font-size: 60px;
   margin-left: -40px;
 }
 .slick-next:before {
-  content: '→';
+  content: "→";
   font-size: 60px;
   margin-left: 10px;
 }
