@@ -178,7 +178,7 @@ li {
 
 main {
   background: url(/Projects/New-sites/image/main.jpg) no-repeat center;
-  height: 1620px;
+  height: 1220px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -192,19 +192,20 @@ main {
 }
 
 .main-content > h3{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   margin-top: 0;
   text-align: center;
   color: black;
-  font-size: 80px;
+  font-size: 55px;
 }
 
 main button {
   margin-top: 20px;
-  width: 350px;
-  height: 35px;
+  width: 450px;
+  height: 50px;
   color: white;
   background: black;
+  font-size: 25px;
 }
 
 /* Paralax */
@@ -216,14 +217,26 @@ main button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(0.3px);
 }
 
 /* Carousel */
 .carousel {
   display: flex;
-  width: 100%;
+  width: 50%;
   height: auto;
-  filter: blur(1.5px);
+  margin: 0 auto;
+}
+
+.slick-prev:before {
+  content: '←';
+  font-size: 60px;
+  margin-left: -40px;
+}
+.slick-next:before {
+  content: '→';
+  font-size: 60px;
+  margin-left: 10px;
 }
 
 footer {
