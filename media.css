@@ -1,209 +1,243 @@
 @media (min-width: 320px) and (max-width: 480px) {
-    body {
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-        background: no-repeat;
-        background-image: url(/img/veeterzy.jpg);
+  body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: no-repeat;
+    background-image: url(/img/veeterzy.jpg);
+  }
+  .header-class {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    /* margin-right: 70px; */
+    color: gainsboro;
+  }
+  .header-class h1 {
+    display: none;
+  }
+  .header-class h2 {
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-size: 24px;
+    display: none;
+  }
+  .header-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 20px;
+    font-family: "Indie Flower";
+    margin-left: 25px;
+    margin-top: 26px;
+  }
+  .header-main > h1 {
+    position: relative;
+    top: 40px;
+    right: 66px;
+    font-size: 20px;
+  }
+  .header-main > p {
+    position: relative;
+    top: 30px;
+    right: 12px;
+  }
+  .main-content > h3 {
+    font-size: 35px;
+  }
+  .slick-next:before {
+    font-size: 30px;
+  }
+  .slick-prev:before {
+    font-size: 30px;
+  }
+  select {
+    position: absolute;
+    left: 32%;
+    top: 215px;
+    bottom: 58%;
+    color: white;
+    background-color: rgb(43, 69, 95);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 20px;
+    z-index: 99;
+}
+  ul,
+  li {
+    list-style: none;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  @keyframes color-change {
+    0% {
+      color: white;
     }
-    .header__class {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        margin-right: 70px;
-        color: gainsboro;
+    50% {
+      color: black;
     }
-    .header__class h1 {
-        display: none;
+    100% {
+      color: white;
     }
-    .header__class h2 {
-        color: white;
-        font-family: "Indie Flower", cursive;
-        font-size: 24px;
-    }
-    .header_main {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        color: white;
-        font-size: 20px;
-        font-family: "Indie Flower";
-        margin-left: 25px;
-        margin-top: 26px;
-    }
-    select {
-        position: absolute;
-        left: 2%;
-        bottom: 58%;
-        color: white;
-        background-color: rgb(43, 69, 95);
-        border: 1px solid black;
-        text-align: center;
-        font-size: 10px;
-        width: 120px;
-        height: 25px;
-        border-radius: 20px;
-    }
-    ul,
-    li {
-        list-style: none;
-    }
-    @keyframes color-change {
-        0% {
-            color: white;
-        }
-        50% {
-            color: black;
-        }
-        100% {
-            color: white;
-        }
-    }
-    .animation {
-        animation: color-change 4s infinite;
-    }
-    #bar {
-        position: absolute;
-        top: -4em;
-        padding: 0.5em;
-        left: 156px;
-        margin: 0;
-        width: 40px;
-        height: 80px;
-        background: rgb(101, 126, 150);
-        color: black;
-        transition: top 1.5s ease-out 0.5s;
-    }
-    .arrow {
-        font-size: 20px;
-    }
-    #bar:hover :active {
-        top: 0;
-        color: red;
-    }
-    li img {
-        width: 25px;
-    }
-    footer {
-        position: absolute;
-        left: 25%;
-        top: 750px;
-        color: white;
-    }
-    .img {
-        width: 43px;
-        position: absolute;
-        left: -55px;
-        right: 73px;
-        bottom: 1px;
-    }
-    .dark-theme {
-        background-image: url(/img/nature.jpg);
-    }
+  }
+  .animation {
+    animation: color-change 4s infinite;
+  }
+  #bar {
+    position: absolute;
+    top: -4em;
+    padding: 0.5em;
+    left: 156px;
+    margin: 0;
+    width: 40px;
+    height: 80px;
+    background: rgb(101, 126, 150);
+    color: black;
+    transition: top 1.5s ease-out 0.5s;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+  #bar:hover :active {
+    top: 0;
+    color: red;
+  }
+  li img {
+    width: 25px;
+  }
+  footer {
+    position: absolute;
+    left: 25%;
+    top: 750px;
+    color: white;
+  }
+  .img {
+    width: 43px;
+    position: absolute;
+    left: -55px;
+    right: 73px;
+    bottom: 1px;
+  }
+  .dark-theme {
+    background-image: url(/img/nature.jpg);
+  }
+
+  footer {
+    display: none;
+  }
 }
 
 /* media 418/767 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    body {
-        padding: 0;
-        margin: 0 auto;
-        width: 100%;
-        background: no-repeat;
-        background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
+  body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: no-repeat;
+    background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
+  }
+  .header__class {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-right: 70px;
+    color: gainsboro;
+  }
+  .header__class h1 {
+    display: none;
+  }
+  .header__class h2 {
+    color: white;
+    font-family: "Indie Flower", cursive;
+    font-size: 24px;
+  }
+  .header_main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 20px;
+    font-family: "Indie Flower";
+    margin-left: 25px;
+    margin-top: 26px;
+  }
+  select {
+    position: absolute;
+    left: 32%;
+    top: 215px;
+    bottom: 58%;
+    color: white;
+    background-color: rgb(43, 69, 95);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 20px;
+    z-index: 99;
+}
+  ul,
+  li {
+    list-style: none;
+  }
+  @keyframes color-change {
+    0% {
+      color: white;
     }
-    .header__class {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        margin-right: 70px;
-        color: gainsboro;
+    50% {
+      color: black;
     }
-    .header__class h1 {
-        display: none;
+    100% {
+      color: white;
     }
-    .header__class h2 {
-        color: white;
-        font-family: "Indie Flower", cursive;
-        font-size: 24px;
-    }
-    .header_main {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        color: white;
-        font-size: 20px;
-        font-family: "Indie Flower";
-        margin-left: 25px;
-        margin-top: 26px;
-    }
-    select {
-        position: absolute;
-        left: 46%;
-        bottom: 94%;
-        color: white;
-        background-color: rgb(43, 69, 95);
-        border: 1px solid black;
-        text-align: center;
-        font-size: 10px;
-        width: 120px;
-        height: 25px;
-        border-radius: 20px;
-    }
-    ul,
-    li {
-        list-style: none;
-    }
-    @keyframes color-change {
-        0% {
-            color: white;
-        }
-        50% {
-            color: black;
-        }
-        100% {
-            color: white;
-        }
-    }
-    .animation {
-        animation: color-change 4s infinite;
-    }
-    #bar {
-        position: absolute;
-        top: -4em;
-        padding: 0.5em;
-        left: 156px;
-        margin: 0;
-        width: 40px;
-        height: 80px;
-        background: rgb(101, 126, 150);
-        color: black;
-        transition: top 1.5s ease-out 0.5s;
-    }
-    .arrow {
-        font-size: 20px;
-    }
-    #bar:hover :active {
-        top: 0;
-        color: red;
-    }
-    li img {
-        width: 25px;
-    }
-    footer {
-        position: absolute;
-        left: 25%;
-        top: 750px;
-        color: white;
-    }
-    .img {
-        width: 43px;
-        position: absolute;
-        left: -55px;
-        right: 73px;
-        bottom: 1px;
-    }
-    .dark-theme {
-        background-image: url(/img/nature.jpg);
-    }
+  }
+  .animation {
+    animation: color-change 4s infinite;
+  }
+  #bar {
+    position: absolute;
+    top: -4em;
+    padding: 0.5em;
+    left: 156px;
+    margin: 0;
+    width: 40px;
+    height: 80px;
+    background: rgb(101, 126, 150);
+    color: black;
+    transition: top 1.5s ease-out 0.5s;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+  #bar:hover :active {
+    top: 0;
+    color: red;
+  }
+  li img {
+    width: 25px;
+  }
+  footer {
+    position: absolute;
+    left: 25%;
+    top: 750px;
+    color: white;
+  }
+  .img {
+    width: 43px;
+    position: absolute;
+    left: -55px;
+    right: 73px;
+    bottom: 1px;
+  }
+  .dark-theme {
+    background-image: url(/img/nature.jpg);
+  }
 }
