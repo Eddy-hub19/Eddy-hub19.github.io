@@ -66,7 +66,7 @@
     height: 25px;
     border-radius: 20px;
     z-index: 99;
-}
+  }
   ul,
   li {
     list-style: none;
@@ -144,17 +144,17 @@
     background: no-repeat;
     background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
   }
-  .header__class {
+  .header-class {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     margin-right: 70px;
     color: gainsboro;
   }
-  .header__class h1 {
+  .header-class h1 {
     display: none;
   }
-  .header__class h2 {
+  .header-class h2 {
     color: white;
     font-family: "Indie Flower", cursive;
     font-size: 24px;
@@ -169,21 +169,7 @@
     margin-left: 25px;
     margin-top: 26px;
   }
-  select {
-    position: absolute;
-    left: 32%;
-    top: 215px;
-    bottom: 58%;
-    color: white;
-    background-color: rgb(43, 69, 95);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 10px;
-    width: 120px;
-    height: 25px;
-    border-radius: 20px;
-    z-index: 99;
-}
+
   ul,
   li {
     list-style: none;
@@ -224,12 +210,6 @@
   li img {
     width: 25px;
   }
-  footer {
-    position: absolute;
-    left: 25%;
-    top: 750px;
-    color: white;
-  }
   .img {
     width: 43px;
     position: absolute;
@@ -239,5 +219,49 @@
   }
   .dark-theme {
     background-image: url(/img/nature.jpg);
+  }
+
+  /* .dropbtn {
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 340px;
+    left: 0;
+    background-color: rgb(49, 61, 73);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 13px;
+    width: 110px;
+    border-radius: 20px;
+  } */
+
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 2px black solid;
+    left: 4.5rem;
+    top: -13px;
+    z-index: 1;
+    font-size: 25px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(9 28 46);
+    font-weight: normal;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #636c66;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  } */
+
+  footer {
+    position: absolute;
+    left: 25%;
+    top: 750px;
+    color: white;
   }
 }

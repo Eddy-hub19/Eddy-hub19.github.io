@@ -12,8 +12,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body class="parallax">
@@ -36,32 +36,52 @@
         </ul>
     </section>
     <header class="header-class">
-        
+
         <h1 class="animation">Smart-Edek</h1>
         <h2>SEKAN EDDY</h2>
-        <!-- <div class="fly">
-            <img src="/img/Comet.svg" />
-        </div> -->
-        <select onchange="top.location=this.value">
-            <option value="index.html">HOME</option>
-            <option value="/Projects/Porten/index.html">PORTEN</option>
-            <option value="/Projects/Traveling/index.html">Traveling</option>
-            <option value="/Projects/Food-Store/index.html">Food-Store</option>
-            <option value="/Projects/JQuery/index.html">Todo-List-JQuery</option>
-            <option value="/Projects/TODO-JS/index.html">Todo-List-JS</option>
-            <option value="/Projects/Knouckouut/inedx.html">Todo-List-Knockout</option>
-            <option value="/Projects/Music.App/index.html">Music App</option>
-            <!-- <option value="/Projects/My-story/home.html">My story</option> -->
-        </select>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="/Projects/Porten/index.html">PORTEN</a>
+                <a href="/Projects/Traveling/index.html">Traveling</a>
+                <a href="/Projects/Food-Store/index.html">Food-Store</a>
+                <a href="/Projects/JQuery/index.html">Todo-List-JQuery</a>
+                <a href="/Projects/TODO-JS/index.html">Todo-List-JS</a>
+                <a href="/Projects/Knouckouut/inedx.html">Todo-List-Knockout</a>
+                <a href="/Projects/Music.App/index.html">Music App</a>
+            </div>
+        </div>
     </header>
     <div class="header-main">
         <h1>My name is Eduard Sekan</h1>
         <p>I`m 20 years old and i`m a <i>PROGRAMMER</i></p>
-        <button class="read-more">Read More</button>
+        <details class="read-more">
+            <p>Учусь на Front-end developper
+                Эдуард Секан, 20 лет
+                Начал изучение один год назад
+                учился в Академии "ШАГ" так же проходил разные курсы такие как: 'Okten School', 'Hexlet', 'CodeBasic',
+                'HTML Academy'
+                Хобби:
+                Мне нравится играть на разных инструментах.
+                Музыка — прекрасный способ стирания мыслей
+                Так же увлекаюсь фотографиями и люблю смотреть на жизнь под разным ракурсом камеры</p>
+            <ul>
+                Good knowledge:
+                <li>Html</li>
+                <li>Css</li>
+                <ul>
+                    Basic knowledge:
+                    <li>JavaScript</li>
+                    <li>Magento 2.4.2</li>
+                    <li>PHP</li>
+                </ul>
+            </ul>
+        </details>
+
         <button class="theme-button">Change theme
-        <span>
-            <img class="img" src="/img/sun-eclipse.svg" alt="sun-eclipse" />
-        </span>
+            <span>
+                <img class="img" src="/img/sun-eclipse.svg" alt="sun-eclipse" />
+            </span>
         </button>
     </div>
     <main class="parallax">
@@ -75,25 +95,23 @@
             <img src="/Projects/New-sites/image/Music-app.png" alt="musc-app">
         </div>
     </div>
-
     <footer>
         <p>© 2021 Все права защищены</p>
     </footer>
-
     <script type="text/javascript" src="/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.js"></script>
     <script src="/carousel.js"></script>
+    <script src="/script.js"></script>
     <!-- <script>
-        let header = document.querySelector("body");
+        let header = document.querySelector("main");
         let themeButton = document.querySelector(".theme-button");
         themeButton.onclick = function () {
             header.classList.toggle("dark-theme");
         };
     </script> -->
-
-        <!-- <div class="typewriter-effect">
+    <!-- <div class="typewriter-effect">
         <div class="text" id="typewriter-text"></div>
     </div> -->
 </body>
