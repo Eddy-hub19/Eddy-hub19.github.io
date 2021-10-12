@@ -19,15 +19,13 @@
     font-size: 20px;
   }
   .header-class h2 {
-    color: white;
-    font-family: "Indie Flower", cursive;
-    font-size: 14px;
+    display: none;
   }
   .header-main {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Indie Flower";
   }
 
@@ -49,6 +47,11 @@
   .animation {
     animation: color-change 4s infinite;
   }
+
+  .bar-top {
+    display: none;
+  }
+
   #bar {
     position: absolute;
     top: -4em;
@@ -94,6 +97,7 @@
     font-size: 30px;
     filter: drop-shadow(2px 2px 5px black);
     color: rgb(211, 211, 211);
+    background: none !important;
     transition: 2s;
     -webkit-transition: 2s;
     -moz-transition: 2s;
@@ -101,13 +105,17 @@
     -o-transition: 2s;
   }
 
+  .read-more > ul li {
+    background:none;
+  }
+
   .dropbtn {
     color: white;
     padding: 16px;
     cursor: pointer;
     position: relative;
-    top: 230px;
-    left: 10px;
+    top: 10px;
+    left: 0;
     background-color: rgb(49, 61, 73);
     border: 1px solid black;
     text-align: center;
@@ -118,8 +126,8 @@
 
   .dropdown-content {
     border: 2px black solid;
-    left: 4.5rem;
-    top: -13px;
+    left: 0;
+    top: 70px;
     z-index: 1;
     font-size: 25px;
     min-width: 160px;
@@ -137,7 +145,7 @@
   }
 
   footer {
-    position: absolute;
+    text-align: center;
     color: white;
   }
 }
