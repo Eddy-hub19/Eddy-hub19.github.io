@@ -1,19 +1,22 @@
-a {
-  text-decoration: none;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
 * {
   box-sizing: border-box;
 }
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
 body {
   width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,
