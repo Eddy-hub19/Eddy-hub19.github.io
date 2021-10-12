@@ -1,57 +1,59 @@
 body {
+    background: rgb(202 203 202);
+    margin: 0 auto;
+    width: 100%;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+}
+
+.todoapp {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(64, 151, 108);
 }
 
-form {
-    outline: 0;
-    height: 36px;
-    margin-top: 5%;
-    border: 3px solid #3b3b3b;
+.header {
+    min-height: 150px;
+    text-align: center;
 }
 
-input[type="text"] {
-    outline: 0;
-    width: 55%;
-    height: 32px;
-    border: none;
-    font-size: 18px;
-    font-weight: normal;
-    padding-left: 10px;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-.add {
-    outline: 0;
-    float: right;
-    width: 34%;
-    height: 36px;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    background-color: #3b3b3b;
+ul li {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
 }
 
-ul {
-    padding: 0;
-    text-align: left;
-    list-style: none;
+.main {
+    min-width: 230px;
 }
 
-hr {
-    border-bottom: 0;
-    margin: 15px 0;
+.destroy::after {
+    content: "x";
 }
 
-input[type="checkbox"] {
-    width: 30px;
+.destroy:hover {
+    background: red;
 }
 
-.remove {
-    float: right;
-    cursor: pointer;
+.view {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
 }
 
-.completed {
-    text-decoration: line-through;
+.clear-completed {
+    background: rgb(124, 122, 122);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.clear-completed:hover {
+    background: rgb(114, 69, 69);
 }
