@@ -237,11 +237,7 @@ li {
 }
 
 .watch {
-  margin-left: 22px;
-  margin-bottom: 30px;
-  width: 215px;
-  margin-left: 22px;
-  margin-bottom: 30px;
+  margin-left: 20px;
 }
 .watch h3 {
   font: 17px Playfair Display;
@@ -368,6 +364,10 @@ li {
   border: 2px solid #191b1c;
   background: #191b1c;
   width: 260px;
+}
+
+.item-new-goods:hover{
+  background-color: rgba(16, 63, 70, 0.527);
 }
 
 .make-border:hover {
