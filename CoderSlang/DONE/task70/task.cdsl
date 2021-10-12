@@ -1,0 +1,45 @@
+{
+  "jsLectureId": 7,
+  "reward": 2,
+  "tutors": [
+    "Sigma",
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Positive thinking",
+      "description": [
+        "The second task is harder than the first. And there are also some things that you may be unfamiliar with.",
+        "Don't stress it. You just need to change the output string.",
+        "Start by running the code. Then make the necessary adjustments.",
+        "Run the code once again and when the output is correct, submit the task for verification.",
+        "",
+        "The program should print the string `I will become a JS developer in ** current year **!`",
+        "Make sure to substitute the `** current year **` section with the actual year and remove the quotes.",
+        "Example output: `I will become a JS developer in 2025!`",
+        "",
+        "P.S. Make the minimum amount of changes to the program!",
+        "If you have problems with this task,",
+        "please check out the FAQ at [learn.coderslang.com](https://learn.coderslang.com/faq)"
+      ]
+    },
+    "ru": {
+      "title": "Позитивное мышление",
+      "description": [
+        "Вторая задача сложнее первой. В ней есть некоторые вещи, которых ты еще можешь не знать.",
+        "Не переживай. Тебе нужно только изменить строку, которая выводится на экран.",
+        "Начни с запуска кода. Потом внеси изменения в программу и запусти код еще раз.",
+        "Когда на экране будет появляться правильное сообщение - отправляй задачу на проверку",
+        "",
+        "Программа должна вывести на экран строку `I will become a JS developer in ** current year **!`",
+        "Убедись, что часть строки `** current year **` заменена на текущий год.",
+        "Например: `I will become a JS developer in 2025!`",
+        "",
+        "P.S. Постарайся сделать минимальное количество изменений в программе!",
+        "Если у тебя возникли проблемы с этой задачей,",
+        "пожалуйста, прочти часто задаваемые вопросы на [learn.coderslang.com](https://learn.coderslang.com/ru/faq)"
+      ]
+    }
+  }
+}

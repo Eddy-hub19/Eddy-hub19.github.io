@@ -1,0 +1,36 @@
+{
+  "jsLectureId": 7,
+  "reward": 1,
+  "tutors": [
+    "Sigma",
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "First program",
+      "description": [
+        "The program is already functional. Just make sure you have set everything up correctly by pressing the `Run your code` button",
+        "",
+        "You should see the message `Hello, world!` on the screen.",
+        "Then press the `Submit task` button to verify the code on our server.",
+        "",
+        "If you see some weird errors or any other issues, do send us a en [email](mailto:welcome@coderslang.com) or a [Telegram](https://t.me/coderslang_chat) message",
+        "We'll help you."
+      ]
+    },
+    "ru": {
+      "title": "Первая программа",
+      "description": [
+        "Первое задание нужно для того, чтобы убедиться в правильной настройке Visual Studio Code и рабочего окружения.",
+        "Изменять код не нужно. Просто выполни его с помощью кнопки `Запустить код`",
+        "",
+        "Ты должен увидеть на экран сообщение `Hello, world!`",
+        "Если что-то пошло не так и появились ошибки, напиши нам на [почту](mailto:welcome@coderslang.com) или в [Телеграм](https://t.me/coderslang_ru_chat).",
+        "Мы поможем.",
+        "",
+        "После того как появится сообщение `Hello, world!` нажимай на `Проверить задачу`, чтобы проверить задачу на нашем сервере."
+      ]
+    }
+  }
+}
