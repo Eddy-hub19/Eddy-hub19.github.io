@@ -175,37 +175,8 @@ main {
   text-align: center;
   color: black;
   font-size: 55px;
+  filter: drop-shadow(2px 4px 6px black);
 }
-
-/* typewriter-effect */
-
-/* .typewriter-effect {
-  display: flex;
-  justify-content: center;
-  font-family: monospace;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.typewriter-effect > .text {
-  max-width: 0;
-  animation: typing 10s steps(var(--characters)) infinite;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.typewriter-effect:after {
-  content: " |";
-  animation: blink 1s infinite;
-  animation-timing-function: step-end;
-} */
-
-/* @keyframes typing {
-  75%,
-  100% {
-    max-width: calc(var(--characters) * 1ch);
-  }
-} */
 
 /* Paralax */
 
@@ -318,6 +289,38 @@ footer {
 (use JS to add this class to the 
 .dropdown-content container when the user 
 clicks on the dropdown button) */
+
 .show {
   display: block;
 }
+
+
+/* typewriter-effect */
+
+/* .typewriter-effect {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 10s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+} */
+
+/* @keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+} */
