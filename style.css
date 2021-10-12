@@ -53,14 +53,14 @@ html {
   width: 550px;
   height: 50px;
   color: white;
-  background: black;
   font-size: 25px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .read-more > p{
   font-size: 30px;
+  filter: drop-shadow(2px 4px 6px black);
   color: rgb(211, 211, 211);
- background: rgb(90, 87, 87);
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -68,26 +68,13 @@ html {
   -o-transition: 1s;
 }
 .read-more ul li {
+  filter: drop-shadow(2px 4px 6px black);
   font-size: 35px;
-  background: rgb(90, 87, 87);
   transition: 3s;
   -webkit-transition: 3s;
   -moz-transition: 3s;
   -ms-transition: 3s;
   -o-transition: 3s;
-}
-
-select {
-  position: relative;
-  bottom: 80px;
-  left: 90px;
-  color: white;
-  background-color: rgb(49, 61, 73);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 25px;
-  width: 200px;
-  border-radius: 20px;
 }
 
 ul,
@@ -134,7 +121,6 @@ li {
 }
 
 .dark-theme {
-  /* background-image: url(/img/wallpaperflare.com_wallpaper.jpg); */
   background-image: url(/img/nature.jpg);
 }
 
@@ -328,7 +314,10 @@ footer {
   background-color: rgb(153, 149, 149);
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu 
+(use JS to add this class to the 
+.dropdown-content container when the user 
+clicks on the dropdown button) */
 .show {
   display: block;
 }
