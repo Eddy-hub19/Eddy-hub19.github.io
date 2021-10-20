@@ -282,9 +282,9 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 467px;
+    width: 21rem;
     height: 244px;
-    top: -45px;
+    top: -40px;
     display: flex;
     transition: all ease 2s;
     background: rgb(2, 0, 36);

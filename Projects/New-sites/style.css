@@ -162,12 +162,12 @@ main button {
     justify-content: center;
 }
 
-/* .carousel div {
+.carousel div {
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-} */
+}
 
 .gallery {
     display: flex;
