@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -65,6 +66,7 @@ nav button {
   font-family: "Poppins";
   color: white;
   border-radius: 20px;
+  cursor: pointer;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -72,7 +74,7 @@ nav button {
 }
 
 nav a:hover {
-  border-bottom: 3px solid orange;
+  border-bottom: 5px solid orange;
 }
 
 .header-content {
@@ -86,10 +88,16 @@ nav a:hover {
   position: relative;
 }
 
-.right-content  img {
+.right-content img {
   position: relative;
   top: 9.2rem;
   right: 4rem;
+  background: #ccf0e6;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
 }
 
 .header-content h1 {
@@ -121,11 +129,35 @@ nav a:hover {
   top: 166px;
   left: 170px;
   background: #58a9a5;
+  color: white;
+  font-size: 30px;
   border-radius: 20px 20px 20px 0px;
   -webkit-border-radius: 20px 20px 20px 0px;
   -moz-border-radius: 20px 20px 20px 0px;
   -ms-border-radius: 20px 20px 20px 0px;
   -o-border-radius: 20px 20px 20px 0px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17.5rem;
+}
+
+section h2 {
+  font-size: 82px;
+  margin-bottom: 16px;
+}
+
+section p {
+  font-size: 47px;
+  width: 730px;
+  font-family: "Poppins";
+  text-align: center;
 }
 
 /* .our-project {
