@@ -92,12 +92,23 @@ nav a:hover {
   position: relative;
   top: 9.2rem;
   right: 4rem;
-  background: #ccf0e6;
   border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
+  width: 100%;
+  height: 100%;
+  background: #ccf0e6;
+  border-radius: 50%/10%;
+  position: relative;
+}
+
+.right-content > img::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5%/50%;
 }
 
 .header-content h1 {
@@ -149,16 +160,34 @@ section {
 }
 
 section h2 {
-  font-size: 82px;
+  font-size: 70px;
   margin-bottom: 16px;
 }
 
 section p {
-  font-size: 47px;
+  font-size: 30px;
   width: 730px;
   font-family: "Poppins";
   text-align: center;
 }
 
+.item-works {
+  display: flex;
+}
+
+.green-bg {
+  position: relative;
+  z-index: -2;
+}
+
+.item-works p {
+  position: absolute;
+  right: 42rem;
+  top: 91rem;
+  width: 470px;
+}
+
+.play {
+}
 /* .our-project {
 } */
