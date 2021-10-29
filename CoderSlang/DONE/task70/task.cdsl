@@ -20,8 +20,7 @@
         "Example output: `I will become a JS developer in 2025!`",
         "",
         "P.S. Make the minimum amount of changes to the program!",
-        "If you have problems with this task,",
-        "please check out the FAQ at [learn.coderslang.com](https://learn.coderslang.com/faq)"
+        "If you have problems with this task, please check out the FAQ at [learn.coderslang.com](https://learn.coderslang.com/faq)"
       ]
     },
     "ru": {
@@ -37,8 +36,7 @@
         "Например: `I will become a JS developer in 2025!`",
         "",
         "P.S. Постарайся сделать минимальное количество изменений в программе!",
-        "Если у тебя возникли проблемы с этой задачей,",
-        "пожалуйста, прочти часто задаваемые вопросы на [learn.coderslang.com](https://learn.coderslang.com/ru/faq)"
+        "Если у тебя возникли проблемы с этой задачей, пожалуйста, прочти часто задаваемые вопросы на [learn.coderslang.com](https://learn.coderslang.com/ru/faq)"
       ]
     }
   }
