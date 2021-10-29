@@ -1,0 +1,36 @@
+{
+  "jsLectureId": 9,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Readline-sync",
+      "description": [
+        "The code is broken.",
+        "",
+        "You need to install the module **readline-sync** and import it.",
+        "",
+        "Only one import string should be added to helper.js.",
+        "",
+        "Don't change solution.js.",
+        "P.S. This is an advanced task. Feel free to skip it."
+      ]
+    },
+    "ru": {
+      "title": "Readline-sync",
+      "description": [
+        "Код сломан.",
+        "",
+        "Ты должен установить модуль **readline-sync** с помощью npm и импортировать его.",
+        "",
+        "Только одна строка импорта должна быть добавлена в *helper.js*.",
+        "",
+        "Не изменяй solution.js.",
+        "P.S. Это продвинутая задача. Можешь пропустить ее, если хочешь."
+      ]
+    }
+  }
+}
