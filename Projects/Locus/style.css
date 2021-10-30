@@ -131,6 +131,7 @@ nav a:hover {
   line-height: 45px;
   margin: -7.2rem 11rem;
   color: #404242;
+  text-align: left;
 }
 
 .header-content button {
@@ -231,9 +232,45 @@ section p {
   bottom: 44px;
 }
 
-/* .our-project {
-} */
+.visual-home {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-.chromeperfectpixel-panel-container {
-  display: none;
+.visual-home h2 {
+  width: 487px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #1c2323;
+  margin-left: 0;
+}
+
+.visual-home p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 45px;
+  color: #486958;
+  text-align: left;
+}
+
+.our-project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.our-project h2,
+p {
+  text-align: center;
+}
+
+.our-project ul {
+  display: flex;
+  flex-direction: row;
 }
