@@ -5,7 +5,7 @@
     height: 100%;
   }
 
-  .top_menu {
+  .top-menu {
     margin-top: 15px;
   }
 
@@ -30,13 +30,13 @@
   .header nav a {
     margin-right: 10px;
   }
-  .content_wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100% !important;
   }
-  .banner .content_wrapper {
+  .banner .content-wrapper {
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -61,7 +61,7 @@
     font-size: 11px;
     line-height: 27px;
   }
-  .img_banner {
+  .img-banner {
     width: 100%;
   }
   .warning {
@@ -80,19 +80,19 @@
     height: 34px;
     font-size: 15px;
   }
-  .our_parther {
+  .our-parther {
     width: 100%;
   }
-  .our_parther button {
+  .our-parther button {
     width: 298px;
     height: 36px;
     border-radius: 22px;
     font-size: 16px;
   }
-  .our_parther h2 {
+  .our-parther h2 {
     font-size: 33px;
   }
-  .section_left p {
+  .section-left p {
     font-size: 21px;
     font-family: "Poppins";
   }
@@ -110,7 +110,7 @@
     height: 190px;
     margin-left: 10px;
   }
-  .inf_section {
+  .inf-section {
     display: none;
   }
   .hidden_item {
@@ -140,10 +140,10 @@
     border-radius: 10px;
     margin-top: 11px;
   }
-  .inf_section {
+  .inf-section {
     width: auto;
   }
-  .inf_section h2 {
+  .inf-section h2 {
     margin: 46px 0 36px 0;
     font-size: 28px;
   }
@@ -160,22 +160,22 @@
     display: none;
   }
 
-  .section_left {
+  .section-left {
     min-width: 100% !important;
   }
 
-  .section_left h3 {
+  .section-left h3 {
     font-size: 40px;
   }
-  .section_left b {
+  .section-left b {
     font-size: 24px;
   }
-  .section_left p {
+  .section-left p {
     flex-wrap: wrap;
     width: 38%;
     font-weight: normal;
   }
-  .section_right {
+  .section-right {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -190,13 +190,13 @@
     display: flex;
     flex-direction: row;
   }
-  .carousel_wrap {
+  .carousel-wrap {
     width: 99px;
     height: 112px;
     padding: 2px;
     margin: 3px;
   }
-  .carousel_wrap img {
+  .carousel-wrap img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,16 +209,16 @@
   .comunication h4 {
     font-size: 34px;
   }
-  .com_item img {
+  .com-item img {
     width: 30px;
   }
-  .bakery_quality a {
+  .bakery-quality a {
     font-size: 17px;
   }
-  .bakery_quality i {
+  .bakery-quality i {
     font-size: 18px;
   }
-  .footer_section h5 {
+  .footer-section h5 {
     margin: 33px 19px 21px 0px;
   }
   footer {
@@ -354,13 +354,13 @@
     visibility: hidden;
     margin-right: 10px;
   }
-  .content_wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100% !important;
   }
-  .banner .content_wrapper {
+  .banner .content-wrapper {
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -375,7 +375,7 @@
   .banner h2 {
     line-height: 58px;
   }
-  .img_banner {
+  .img-banner {
     width: 100%;
   }
   .warning {
@@ -394,19 +394,19 @@
     height: 34px;
     font-size: 15px;
   }
-  .our_parther {
+  .our-parther {
     width: 100%;
   }
-  .our_parther button {
+  .our-parther button {
     width: 298px;
     height: 36px;
     border-radius: 22px;
     font-size: 16px;
   }
-  .our_parther h2 {
+  .our-parther h2 {
     font-size: 33px;
   }
-  .section_left p {
+  .section-left p {
     font-size: 21px;
     font-family: "Poppins";
   }
@@ -427,10 +427,10 @@
   .item h4 {
     font-size: 15px;
   }
-  .cost_color {
+  .cost-color {
     font-size: 15px;
   }
-  .line_through {
+  .line-through {
     font-size: 12px;
   }
   .wrap-info {
@@ -448,10 +448,10 @@
     border-radius: 10px;
     margin-top: 11px;
   }
-  .inf_section {
+  .inf-section {
     width: auto;
   }
-  .inf_section h2 {
+  .inf-section h2 {
     margin: 46px 0 36px 0;
     font-size: 28px;
   }
@@ -467,18 +467,18 @@
   .sections {
     display: none;
   }
-  .section_left h3 {
+  .section-left h3 {
     font-size: 40px;
   }
-  .section_left b {
+  .section-left b {
     font-size: 24px;
   }
-  .section_left p {
+  .section-left p {
     flex-wrap: wrap;
     width: 38%;
     font-weight: normal;
   }
-  .section_right {
+  .section-right {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -488,20 +488,20 @@
     height: 432px;
     width: 100% !important;
   }
-  .section_left {
+  .section-left {
     min-width: 100% !important;
   }
   .carousel {
     display: flex;
     flex-direction: row;
   }
-  .carousel_wrap {
+  .carousel-wrap {
     width: 99px;
     height: 112px;
     padding: 2px;
     margin: 3px;
   }
-  .carousel_wrap img {
+  .carousel-wrap img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,13 +511,13 @@
   .comunication {
     width: auto;
   }
-  .bakery_quality a {
+  .bakery-quality a {
     font-size: 30px;
   }
-  .bakery_quality i {
+  .bakery-quality i {
     font-size: 30px;
   }
-  .footer_section h5 {
+  .footer-section h5 {
     margin: 33px 19px 21px 0px;
   }
   footer {
@@ -532,7 +532,7 @@
   .slick-prev {
     top: 50px;
   }
-  .top_menu {
+  .top-menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;

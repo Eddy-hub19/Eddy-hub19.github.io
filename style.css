@@ -197,6 +197,14 @@ main {
   margin: 0 auto;
 }
 
+.carousel img {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 .slick-prev:before {
   content: "←";
   font-size: 60px;
@@ -208,12 +216,7 @@ main {
   margin-left: 10px;
 }
 
-footer {
-  text-align: center;
-  color: white;
-}
-
-/* Click dropdown */
+/* DROPDOWN */
 
 /* Dropdown Button */
 .dropbtn {
@@ -285,42 +288,13 @@ footer {
   background-color: rgb(153, 149, 149);
 }
 
-/* Show the dropdown menu 
-(use JS to add this class to the 
-.dropdown-content container when the user 
-clicks on the dropdown button) */
+/* Show the dropdown menu */
 
 .show {
   display: block;
 }
 
-
-/* typewriter-effect */
-
-/* .typewriter-effect {
-  display: flex;
-  justify-content: center;
-  font-family: monospace;
-  font-size: 40px;
-  font-weight: 600;
+footer {
+  text-align: center;
+  color: white;
 }
-
-.typewriter-effect > .text {
-  max-width: 0;
-  animation: typing 10s steps(var(--characters)) infinite;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.typewriter-effect:after {
-  content: " |";
-  animation: blink 1s infinite;
-  animation-timing-function: step-end;
-} */
-
-/* @keyframes typing {
-  75%,
-  100% {
-    max-width: calc(var(--characters) * 1ch);
-  }
-} */
