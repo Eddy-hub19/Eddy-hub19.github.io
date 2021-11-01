@@ -7,5 +7,5 @@ const toUpperCase = (s) => {
 }
 
 export const createSamples = (s) => {
-  return s;
+  return toLowerCase(s) + toUpperCase(s);
 }
