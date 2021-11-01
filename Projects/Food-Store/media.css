@@ -282,7 +282,7 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 21rem;
+    width: 26rem;
     height: 244px;
     top: -40px;
     display: flex;
