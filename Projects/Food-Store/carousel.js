@@ -1,13 +1,13 @@
 $(document).ready(function () {
-    $(".carousel").slick({
-      slidesToShow: 2,
+    $(".slider").slick({
+      slidesToShow: 3,
       dots: true,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
-      accessibility: true,
-      mobileFirst: true,
       infinite: true,
+      autoplaySpeed: 2000,
+      // accessibility: true,
+      // mobileFirst: true,
     });
   });
   

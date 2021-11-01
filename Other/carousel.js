@@ -1,7 +1,8 @@
 $(".carousel").slick({
-  dots: false,
+  dots: true,
+  autoplay: true,
   infinite: true,
-  speed: 200,
+  autoplaySpeed: 2000,
   fade: true,
   cssEase: "linear",
 });
