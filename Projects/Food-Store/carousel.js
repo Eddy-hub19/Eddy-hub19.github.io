@@ -5,21 +5,24 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: true,
       infinite: true,
-      autoplaySpeed: 2000,
+      speed: 2000,
       accessibility: true,
-      mobileFirst: true,
+      centerMode: false,
+      useCSS: true,
     });
   });
   
   
+  // Show Hamburger menu
   const hamburger = document.querySelector('.hamburger')
   const menu = document.querySelector('.menu')
-  
-  
   hamburger.addEventListener('click', function ()  {
     menu.classList.toggle('show')
   })
-  
+
+// jQuery style
+
+  // Close warning class when user click on .close-btn
   const warning = document.querySelector(".warning");
   
   document.querySelector(".close-btn").addEventListener("click", function () {
