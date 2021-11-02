@@ -5,6 +5,8 @@ $(".carousel").slick({
   autoplaySpeed: 2000,
   fade: true,
   cssEase: "linear",
+  accessibility: true,
+  mobileFirst: true,
 });
 
 // const typeWriter = document.getElementById("typewriter-text");

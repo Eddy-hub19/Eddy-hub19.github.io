@@ -6,8 +6,8 @@ $(document).ready(function () {
       autoplay: true,
       infinite: true,
       autoplaySpeed: 2000,
-      // accessibility: true,
-      // mobileFirst: true,
+      accessibility: true,
+      mobileFirst: true,
     });
   });
   
