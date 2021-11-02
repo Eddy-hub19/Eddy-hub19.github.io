@@ -57,7 +57,7 @@ html {
   filter: drop-shadow(2px 4px 6px black);
 }
 
-.read-more > p{
+.read-more > p {
   font-size: 30px;
   filter: drop-shadow(2px 4px 6px black);
   color: rgb(211, 211, 211);
@@ -234,8 +234,8 @@ main {
   border-radius: 20px;
 }
 
-.dropbtn::after{
-  content: '\2304';
+.dropbtn::after {
+  content: "\2304";
   margin-left: 10px;
 }
 
@@ -256,7 +256,7 @@ main {
   display: none;
   position: absolute;
   border: 2px black solid;
-  left: 4.5rem;
+  left: 6.5rem;
   top: -13px;
   z-index: 1;
   font-size: 25px;
