@@ -181,13 +181,26 @@ section p {
 .item-works p {
   position: absolute;
   right: 8rem;
-  top: 80px;
+  top: 65px;
   width: 305px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  text-align: left;
+}
+
+.item-works h3 {
+  position: absolute;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: #486958;
+  right: 20rem;
+  top: 235px;
 }
 
 .green-bg {
@@ -233,10 +246,10 @@ section p {
 }
 
 .visual-home {
+  display: flex;
+  justify-content: space-around;
   margin-top: 150px;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .visual-home h2 {
@@ -257,6 +270,10 @@ section p {
   color: #486958;
   text-align: left;
 }
+.right-visual-inf {
+  position: relative;
+  right: 220px;
+}
 
 .our-project {
   display: flex;
@@ -265,12 +282,91 @@ section p {
   margin-top: 120px;
 }
 
-.our-project h2,
-p {
+.our-project h2 {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 70px;
   text-align: center;
+  color: #1c2323;
 }
 
-.our-project ul {
+.our-project p {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 81px;
+  text-align: center;
+  color: #404242;
+  margin-bottom: 140px;
+}
+
+.items {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
+}
+
+.item1 h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #58a9a5;
+}
+
+.item1 p {
+  width: 453px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #486958;
+}
+
+.item2 h3,
+.item3 h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #58a9a5;
+  margin-top: 35px;
+}
+
+.item2 p,
+.item3 p {
+  width: 453px;
+  top: 550px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #486958;
+}
+
+.item3 h3 {
+  margin-top: 0;
+}
+.testimonial {
+  margin-top: 250px;
+  font-size: 60px;
+  text-align: center;
+}
+.images-testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-company {
+  display: flex;
+  justify-content: center;
+}
+.about-right {
+  width: 997px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ccf0e6;
 }
