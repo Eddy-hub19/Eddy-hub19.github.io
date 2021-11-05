@@ -1,0 +1,1 @@
+export const strings = ["Ford", "BMW", "Fiat", 'Kia','Mers'];
