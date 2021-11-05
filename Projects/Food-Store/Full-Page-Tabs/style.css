@@ -36,8 +36,9 @@ html {
   z-index: 5;
 }
 
-.show {
- visibility: hidden;
+.delete {
+  visibility: hidden;
+  background: red;
 }
 
 #Occasions {
