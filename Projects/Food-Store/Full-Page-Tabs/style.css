@@ -1,0 +1,54 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body,
+html {
+  height: 50%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.tablink:hover {
+  background-color: rgb(240 240 240);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 50%;
+  width: 530px;
+}
+
+.full-page-tabs {
+  position: absolute;
+  right: 430px;
+  top: 45px;
+  z-index: 5;
+}
+
+.show {
+ visibility: hidden;
+}
+
+#Occasions {
+  background-color: rgb(31, 123, 139);
+}
+#All_Categories {
+  background-color: green;
+}
+#GiftsBundles {
+  background-color: #757598ba;
+}
+#Our_Brands {
+  background-color: rgba(194, 136, 29, 0.822);
+}
