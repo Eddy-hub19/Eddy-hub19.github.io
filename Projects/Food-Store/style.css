@@ -271,7 +271,7 @@ ul li {
 }
 
 .wrap button:hover {
-  background: #903d01;
+  background: rgb(29, 95, 100);
 }
 
 .inf-section {
@@ -558,7 +558,7 @@ ul li {
 
 .slick-list {
   display: flex;
-  width: 500px;
+  width: 1000px;
   min-width: 0;
   flex-direction: column;
   align-content: center;
@@ -585,7 +585,7 @@ ul li {
   overflow: hidden;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-left.svg);
+  background-image: url(/Projects/Food-Store/img/arrow-left.svg);
 }
 
 .slick-next {
@@ -602,7 +602,7 @@ ul li {
   white-space: nowrap;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-image: url(/Folder-for-Elogic/Food-Store/img/arrow-right.svg);
+  background-image: url(/Projects/Food-Store/img/arrow-right.svg);
 }
 
 .comunication {
@@ -610,7 +610,7 @@ ul li {
   height: 260px;
   display: flex;
   flex-direction: column;
-  background-image: url(/Folder-for-Elogic/Food-Store/img/Bg-Our-Partner.png);
+  background-image: url(/Projects/Food-Store/img/Bg-Our-Partner.png);
 }
 
 .comunication h4 {
@@ -657,6 +657,10 @@ footer {
   font-size: 15px;
   line-height: 22px;
   color: #3d3d3d;
+}
+
+.footer-section a:hover{
+  border-bottom: 1px solid black;
 }
 
 .footer-section nav {
@@ -725,4 +729,9 @@ footer {
 .menuLink:hover {
   color: rgba(10, 10, 10, 0.424);
   background: rgba(31, 182, 175, 0.664);
+}
+
+
+.banner button:hover,.left button:hover,.our-parther button:hover{
+  background: rgb(29, 95, 100);
 }
