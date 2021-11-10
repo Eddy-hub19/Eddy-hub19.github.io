@@ -1,29 +1,29 @@
-// Amplitude.init({
-//   songs: [
-//     {
-//       name: "Song Name 1",
-//       artist: "Artist Name",
-//       album: "Album Name",
-//       url: "https://521dimensions.com/song/Vorel-RussianCircles.mp3",
-//       cover_art_url:
-//         "https://media-exp3.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk",
-//     },
-//     {
-//       name: "Song Name 2",
-//       artist: "Artist Name",
-//       album: "Album Name",
-//       url: "/song/url.mp3",
-//       cover_art_url: "/cover/art/url.jpg",
-//     },
-//     {
-//       name: "Song Name 3",
-//       artist: "Artist Name",
-//       album: "Album Name",
-//       url: "/song/url.mp3",
-//       cover_art_url: "/cover/art/url.jpg",
-//     },
-//   ],
-// });
+Amplitude.init({
+  songs: [
+    {
+      name: "Song Name 1",
+      artist: "Artist Name",
+      album: "Album Name",
+      url: "https://521dimensions.com/song/Vorel-RussianCircles.mp3",
+      cover_art_url:
+        "https://media-exp3.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk",
+    },
+    {
+      name: "Song Name 2",
+      artist: "Artist Name",
+      album: "Album Name",
+      url: "/song/url.mp3",
+      cover_art_url: "/cover/art/url.jpg",
+    },
+    {
+      name: "Song Name 3",
+      artist: "Artist Name",
+      album: "Album Name",
+      url: "/song/url.mp3",
+      cover_art_url: "/cover/art/url.jpg",
+    },
+  ],
+});
 
 // set variables
 let currentSong = 0,
