@@ -89,10 +89,8 @@ nav a:hover {
 }
 
 .right-content img {
-  position: relative;
   top: 9.2rem;
   right: 4rem;
-  border-radius: 120px;
   width: 100%;
   height: 100%;
   background: #ccf0e6;
@@ -184,17 +182,15 @@ section p {
   top: 65px;
   width: 305px;
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   text-align: left;
 }
 
-.item-works h3 {
+.item-works a {
   position: absolute;
   font-family: "Poppins";
-  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 1;
@@ -404,45 +400,76 @@ section p {
   color: #486958;
 }
 
+footer {
+  display: flex;
+  min-height: 1200px;
+}
+
+footer h2 {
+  position: absolute;
+  top: 332rem;
+  left: 290px;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+footer p {
+  position: absolute;
+  top: 339rem;
+  left: 289px;
+  font-size: 25px;
+  font-family: "Poppins";
+  width: 400px;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 1109.24px;
   height: 450px;
-  left: 640px;
-  top: 240px;
+  width: 1070px;
   border: 5px solid #486958;
   border-radius: 20px;
   box-sizing: border-box;
   align-items: baseline;
   justify-content: space-around;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  margin: 15rem 42rem;
 }
 
 #GET-name,
 #GET-email {
   border: none;
   border-bottom: 5px solid black;
-  width: 150px;
+  width: 63rem;
+  margin: 0 46px;
+  font-size: 25px;
 }
 #GET-description {
   border-bottom: 1px solid black;
   margin: 30px -74px;
 }
 
-.label-description {
+label {
   display: flex;
+  margin: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #486958;
+}
+
+input:focus-visible {
+  height: 45px;
+  font-size: 30px;
 }
 
 #btn-submit {
   position: relative;
+  font-size: 25px;
   width: 271px;
   height: 80px;
-  left: 800px;
+  left: 780px;
+  bottom: 21px;
   background: #58a9a5;
   color: white;
   border-radius: 20px 20px 20px 0px;
@@ -451,20 +478,15 @@ form {
   -ms-border-radius: 20px 20px 20px 0px;
   -o-border-radius: 20px 20px 20px 0px;
 }
+/* hover */
 
-footer {
-  min-height: 1200px;
+#btn-submit:hover,
+.header-content button:hover,
+nav button:hover {
+  background: #185552;
 }
 
-footer h2 {
-  position: relative;
-  top: 330px;
-  font-size: 70px;
-  left: 120px;
-}
-footer p {
-  position: relative;
-  top: 370px;
-  left: 40px;
-  font-size: 25px;
+.bg-click-play:hover {
+  transition: auto;
+  transform: rotateZ(45deg);
 }
