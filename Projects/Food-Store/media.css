@@ -2,7 +2,7 @@
   html,
   body {
     overflow-x: hidden;
-    height: 100%;
+    height: 100% !important;
   }
 
   .top-menu {
@@ -282,7 +282,7 @@
   .menu.show {
     visibility: visible;
     left: 0;
-    width: 26rem;
+    width: 28rem;
     height: 244px;
     top: -40px;
     display: flex;
@@ -328,6 +328,9 @@
   }
   .slick-prev {
     display: none !important;
+  }
+  .tablink{
+    display: none;
   }
 }
 
@@ -619,5 +622,8 @@
   .menuLink:hover {
     color: rgba(10, 10, 10, 0.424);
     background: rgba(31, 182, 175, 0.664);
+  }
+  .tablink{
+    display: none;
   }
 }
