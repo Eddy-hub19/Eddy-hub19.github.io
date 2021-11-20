@@ -1,0 +1,71 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        width: 100% !important;
+        margin: 0 auto;
+        overflow-x: none;
+    }
+
+    .container-top-line{
+        display: none;
+    }
+
+    .second-line nav {
+        display: none;
+    }
+
+    .first-screen{
+        background-size: cover;
+        width: auto;
+    }
+
+    .frame{
+        width: 120px;
+        height: 120px;
+    }
+
+    .frame h2{
+        font: bold 26px/1 PT Sans;
+    }
+
+    .frame h3{
+        font: 12px/28px PT Sans;
+    }
+
+    .txt-porten{
+        width: 200px;
+        font: 14px/130% PT Sans;
+    }
+
+    .right-left{
+        width: auto;
+    }
+
+    .right{
+        width: auto;
+        height: 370px;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rectangle {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        align-items: flex-start;
+    }
+
+    .container-new-goods{
+        width: auto;
+    }
+
+    .new-goods h2{
+        font: normal bold 30px/48px Playfair Display;
+    }
+    .for_a_store{
+        margin: 0 13px;
+        width: 350px;
+    }
+}
