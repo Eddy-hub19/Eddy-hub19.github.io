@@ -478,7 +478,7 @@ input:focus-visible {
   -ms-border-radius: 20px 20px 20px 0px;
   -o-border-radius: 20px 20px 20px 0px;
 }
-/* hover */
+/* HOVER */
 
 #btn-submit:hover,
 .header-content button:hover,
