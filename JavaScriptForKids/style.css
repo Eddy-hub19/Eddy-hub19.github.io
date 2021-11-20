@@ -23,3 +23,7 @@ textarea {
   top: 530px;
   left: 230px;
 }
+
+details {
+    text-align: center;
+}
