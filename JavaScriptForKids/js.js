@@ -149,7 +149,7 @@ let codeWord8 = "сильный";
 let codeWord9 = '❤'
 
 console.log(
-  codeWord1[2] + //т
+    codeWord1[2] + //т
     codeWord2[5] + //ы
     codeWord7[3] + //
     codeWord3[0] + // м
