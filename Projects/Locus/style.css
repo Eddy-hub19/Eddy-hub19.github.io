@@ -490,3 +490,12 @@ nav button:hover {
   transition: auto;
   transform: rotateZ(45deg);
 }
+
+.item-works a:hover{
+  border-bottom: 2px solid black;
+  transition: 2c;
+  -webkit-transition: 2c;
+  -moz-transition: 2c;
+  -ms-transition: 2c;
+  -o-transition: 2c;
+}
