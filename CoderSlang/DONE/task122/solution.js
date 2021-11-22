@@ -22,5 +22,5 @@ const globalPandemic = {
   evilFactor: 3,
 }
 
-console.log(getLesserEvil(globalWarming, globalPandemic));
-console.log(getLesserEvil(aiThreat, globalPandemic));
+console.log(getLesserEvil(globalWarming, globalPandemic)); // 3
+console.log(getLesserEvil(aiThreat, globalPandemic)); //1

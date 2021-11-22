@@ -1,5 +1,9 @@
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media (min-width: 320px) and (max-width: 480px) {
     body {
         width: 100%;
     }
+    header nav{
+        display: none;
+    }
+
 }
