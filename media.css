@@ -4,7 +4,7 @@
     margin: 0 auto;
     width: 100%;
     background: no-repeat;
-    background-image: url(/img/veeterzy.jpg);
+    background-image: url(/img/Big-forest.jpg);
   }
   .header-class {
     flex-direction: row;
@@ -110,7 +110,7 @@
     bottom: 1px;
   }
   .dark-theme {
-    background-image: url(/img/nature.jpg);
+    background-image: url(/img/veeterzy.jpg);
   }
 
   .dropdown {

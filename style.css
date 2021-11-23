@@ -121,7 +121,7 @@ li {
 }
 
 .dark-theme {
-  background-image: url(/img/nature.jpg);
+  background-image: url(/img/Big-forest.jpg);
 }
 
 .img {
@@ -155,7 +155,6 @@ li {
 }
 
 main {
-  background: url(/Projects/New-sites/image/main.jpg) no-repeat center;
   height: 1000px;
   display: flex;
   align-items: center;
@@ -178,11 +177,9 @@ main {
   filter: drop-shadow(2px 4px 6px black);
 }
 
-/* Paralax */
+/* Change-theme */
 
-.parallax {
-  background-image: url(/img/veeterzy.jpg);
-  min-height: 500px;
+.change-theme {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

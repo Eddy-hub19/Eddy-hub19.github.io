@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/media.css" />
 </head>
 
-<body class="parallax">
+<body class="change-theme">
     <section class="bar-top">
         <ul id="bar">
             <li>
@@ -87,10 +87,10 @@
             </span>
         </button>
     </div>
-    <main class="parallax">
+    <main>
         <!-- bg -->
     </main>
-    <div class="parallax main-content">
+    <div class="main-content">
         <h3>MY PROJECTS</h3>
         <div class="carousel">
             <img src="/Projects/New-sites/image/porten.png" alt="porten-site">
@@ -108,7 +108,7 @@
     <script src="/Other/carousel.js"></script>
     <script src="/Other/script.js"></script>
     <script>
-        let header = document.querySelector("main");
+        let header = document.querySelector(".change-theme");
         let themeButton = document.querySelector(".theme-button");
         themeButton.onclick = function () {
             header.classList.toggle("dark-theme");
