@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 204,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Align right",
+      "description": [
+        "In the `index.html` file you will find some paragraphs about JS.",
+        "Read them and align each one to the right."
+      ]
+    },
+    "ru": {
+      "title": "Выровнять вправо",
+      "description": [
+        "В файле `index.html` ты найдешь несколько параграфов про JS.",
+        "Прочитай их и каждый выровняй по правому краю."
+      ]
+    }
+  }
+}

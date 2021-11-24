@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 202,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "London, London, London",
+      "description": [
+        "Each article should have a heading",
+        "Add level 2 heading to the article about London",
+        "This heading should contain further text: 'London is the capital of Great Britain'"
+      ]
+    },
+    "ru": {
+      "title": "London, London, London",
+      "description": [
+        "У каждой статьи должен быть заголовок",
+        "Добавь заголовок 2-го уровня к статье про Лондон",
+        "Этот заголовок должен быть следующим: 'London is the capital of Great Britain'"
+      ]
+    }
+  }
+}

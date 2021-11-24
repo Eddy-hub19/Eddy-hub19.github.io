@@ -1,0 +1,23 @@
+{
+  "jsLectureId": 204,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "New tab",
+      "description": [
+        "Add an attribute to the link in the `index.html` file to open it in a new tab"
+      ]
+    },
+    "ru": {
+      "title": "Новая вкладка",
+      "description": [
+        "Добавь к ссылке в файле `index.html` атрибут для открытия ее в новой вкладке"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 202,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Let me introduce myself",
+      "description": [
+        "Time to get to know you better.",
+        "Add one more paragraph where you can tell a little about yourself",
+        "Add lever 3 header with your name at the beginning",
+        "Feel free to add any text you like"
+      ]
+    },
+    "ru": {
+      "title": "Разрешите представится",
+      "description": [
+        "Время познакомится поближе",
+        "- Добавь еще один параграф, где расскажешь немного о себе",
+        "- Добавь заголовок 3-го уровня со своим именем в самом начале",
+        "Текст выбери самостоятельно."
+      ]
+    }
+  }
+}

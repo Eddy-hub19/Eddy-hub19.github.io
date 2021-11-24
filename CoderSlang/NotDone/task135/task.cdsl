@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 13,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Max element in the array",
+      "description": [
+        "Implement a function **maxElement** that takes an array and returns its maximum element."
+      ]
+    },
+    "ru": {
+      "title": "Максимальный элемент массива",
+      "description": [
+        "Реализуй функцию **maxElement**, которая принимает массив и возвращает максимальный элемент."
+      ]
+    }
+  }
+}

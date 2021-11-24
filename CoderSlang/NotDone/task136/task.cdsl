@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 13,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Sum it up",
+      "description": [
+        "Implement **getTotal** function in helper.js",
+        "",
+        "It should return the sum of all elements in the array.",
+        "",
+        "Array will only contain numbers."
+      ]
+    },
+    "ru": {
+      "title": "Сумма элементов массива",
+      "description": [
+        "Реализуй функцию **getTotal** в файле helper.js.",
+        "",
+        "Она должна вернуть сумму всех элементов массива.",
+        "",
+        "Массив будет содержать только числа."
+      ]
+    }
+  }
+}

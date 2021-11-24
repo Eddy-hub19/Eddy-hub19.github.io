@@ -1,0 +1,40 @@
+{
+  "jsLectureId": 13,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Power it up",
+      "description": [
+        "Implement a function **pow** in *helper.js* that takes two numbers and",
+        "returns the first number raised to the power of second number. Examples:",
+        "",
+        "pow(2, 2) // 4",
+        "pow(2, 0) // 1",
+        "pow(0, 2) // 0",
+        "",
+        "You can't use *Math.pow*",
+        "Make sure you're handling well situations where one of `x` or `y` is very big and the other is very small, particularly 0 or 1.",
+        "You shouldn't waste computational resources in this case."
+      ]
+    },
+    "ru": {
+      "title": "Возведение в степень",
+      "description": [
+        "Реализуй функцию **pow** в *helper.js*, которая примет два числа",
+        "и вернет первое число возведенное в степень второго числа. Например:",
+        "",
+        "pow(2, 2) // 4",
+        "pow(2, 0) // 1",
+        "pow(0, 2) // 0",
+        "",
+        "Нельзя использовать встроенную функцию *Math.pow*",
+        "Убедись, что ты хорошо обрабатываешь ситуации, когда один из парамеров очень большое число, а другой - 0 или 1.",
+        "Нам достаточно одного действия, чтобы определить результат и не стоит тратить вычислительные ресурсы зря в таких случаях."
+      ]
+    }
+  }
+}

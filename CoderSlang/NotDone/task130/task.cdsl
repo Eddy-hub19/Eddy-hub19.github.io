@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 13,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Fix the while loop",
+      "description": [
+        "Fix the function **myLoop** to make sure it prints numbers from 0 to 99 to the screen using the \"while\" loop"
+      ]
+    },
+    "ru": {
+      "title": "Исправь цикл while",
+      "description": [
+        "Исправь функцию **myLoop** чтобы она печатала на экран числа от 0 to 99 с помощью цикла \"while\""
+      ]
+    }
+  }
+}

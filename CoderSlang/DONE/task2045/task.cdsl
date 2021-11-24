@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 204,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Learn JS",
+      "description": [
+        "Someone has added an `a` tag with a link to cool resource, but this link doesn't work.",
+        "Fix the reference and make sure everything works fine."
+      ]
+    },
+    "ru": {
+      "title": "Учить JS",
+      "description": [
+        "Кто-то добавил тег `a` со ссылкой на крутой ресурс, но эта ссылка не работает.",
+        "Исправь атрибут ссылки, чтобы все работало как нужно."
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 204,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Relative links #3",
+      "description": [
+        "Web site consists of two pages: `Main page` and `Courses list`.",
+        "`Main page` is `index.html` and it has a link to the `Courses list`.",
+        "`Courses list` has a link to the `Main page`, but it's incomplete.",
+        "Add correct `href` attribute to navigate from the `Courses list` to the `Main page`"
+      ]
+    },
+    "ru": {
+      "title": "Относительные ссылки #3",
+      "description": [
+        "Веб-сайт состоит из двух страниц: `Main page` и `Courses list`.",
+        "`Main page` - это `index.html`, и на ней есть ссылка на `Courses list`.",
+        "На странице `Courses list` есть ссылка на `Main page`, но она не закончена.",
+        "Добавь правильный атрибут `href` для перехода со страницы `Courses list` на страницу `Main page`"
+      ]
+    }
+  }
+}

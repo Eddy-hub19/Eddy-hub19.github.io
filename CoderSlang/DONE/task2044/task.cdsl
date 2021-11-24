@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 204,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Broken image",
+      "description": [
+        "Someone has added an image tag to our website.",
+        "However, neither the path to the image, nor the `alt` attribute were not provided.",
+        "Add the path to the picture - `https://learn.coderslang.com/js-test-13.png`",
+        "Add alternative text to the picture - `JS code snippet`"
+      ]
+    },
+    "ru": {
+      "title": "Сломанная картинка",
+      "description": [
+        "Кто-то попробовал добавить картинку на наш сайт.",
+        "Но не указал ни путь, ни альтернативный текст.",
+        "Добавь путь к картинке - `https://learn.coderslang.com/js-test-13.png`",
+        "Добавь альтернативный текст к картинке - `JS code snippet`"
+      ]
+    }
+  }
+}

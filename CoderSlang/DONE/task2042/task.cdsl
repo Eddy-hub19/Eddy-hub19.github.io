@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 204,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Colored lines",
+      "description": [
+        "Let's decorate the page a little.",
+        "Make the first separator line red.",
+        "And make the second line green."
+      ]
+    },
+    "ru": {
+      "title": "Цветные линии",
+      "description": [
+        "Давай немного украсим страницу.",
+        "Сделай первую линию-разделитель красного цвета (red).",
+        "А вторую линию - зеленого (green)."
+      ]
+    }
+  }
+}

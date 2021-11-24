@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 204,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Relative links #2",
+      "description": [
+        "There's a single link in `index.html`.",
+        "It should redirect the user to `list.html` file in `courses` folder.",
+        "Don't change the anchor text for this link.",
+        "",
+        "Then, add one more link. Its anchor text `Tags list`.",
+        "It should redirect the user to `list.html` file in `tags` folder."
+      ]
+    },
+    "ru": {
+      "title": "Относительные ссылки #2",
+      "description": [
+        "В `index.html` уже добавлена ​​одна ссылка.",
+        "Эта ссылка должна перенаправлять пользователя к файлу `list.html` в папке `courses`.",
+        "Не меняй текст этой ссылки.",
+        "",
+        "Добавь еще одну ссылку c текстом `Tags list`.",
+        "Она должна перенаправлять пользователя к файлу `list.html` в папке `tags`."
+      ]
+    }
+  }
+}

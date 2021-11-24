@@ -1,0 +1,28 @@
+{
+  "jsLectureId": 13,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Localization",
+      "description": [
+        "Fix the function `getLocale`.",
+        "",
+        "It should return `userConfig.locale` if it's found in `knownLocales`.",
+        "Otherwise, it should return the string `en`."
+      ]
+    },
+    "ru": {
+      "title": "Локализация",
+      "description": [
+        "Почини функцию `getLocale`.",
+        "",
+        "Она должна вернуть `userConfig.locale` только если значение этого поля найдено в `knownLocales`.",
+        "Иначе - `en`."
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 203,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "My blog",
+      "description": [
+        "Add two nested paragraphs to each <div>",
+        "You can write any text to your own blog."
+      ]
+    },
+    "ru": {
+      "title": "Мой блог",
+      "description": [
+        "Добавь по два вложенных параграфа в каждый <div>",
+        "Ты можете написать любой текст в свой блог"
+      ]
+    }
+  }
+}

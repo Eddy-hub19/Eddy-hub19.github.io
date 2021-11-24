@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 13,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Positive thinking",
+      "description": [
+        "Implement **positiveElements** function in helper.js",
+        "",
+        "It should accept an array and return a new one that consists only of the positive elements from the original array.",
+        "",
+        "Original array shouldn't be modified."
+      ]
+    },
+    "ru": {
+      "title": "Позитивное мышление",
+      "description": [
+        "Реализуй функцию **positiveElements** в файле helper.js.",
+        "",
+        "Она должна принять массив, сформировать и вернуть новый состоящий только из положительных элементов начального массива.",
+        "",
+        "Оригинальный массив изменять нельзя."
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 203,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Emphasis on text #3",
+      "description": [
+        "Make all text in `index.html` both italic and bold using the tags `<i>` and `<b>`",
+        "Don't change the content"
+      ]
+    },
+    "ru": {
+      "title": "Акцент на тесте #3",
+      "description": [
+        "Сделай весь текст в `index.html` одновременно жирным и курсивом используя теги `<i>` и `<b>`",
+        "Не изменяй содержимое"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 203,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Emphasis on text #2",
+      "description": [
+        "Make all text in `index.html` italic",
+        "Don't change the content"
+      ]
+    },
+    "ru": {
+      "title": "Акцент на тесте #2",
+      "description": [
+        "Сделай весь текст в `index.html` курсивом",
+        "Не изменяй содержимое"
+      ]
+    }
+  }
+}

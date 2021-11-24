@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 201,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Go for it!",
+      "description": [
+        "Change the text of the `<h1>` header.",
+        "It should become `In 3 months I will become a JS developer!`"
+      ]
+    },
+    "ru": {
+      "title": "Давай!",
+      "description": [
+        "Измени текст заголовка `<h1>`.",
+        "Он должен вывести на экран строку `In 3 months I will become a JS developer!`"
+      ]
+    }
+  }
+}

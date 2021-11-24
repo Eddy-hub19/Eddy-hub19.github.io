@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 204,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Image width",
+      "description": [
+        "The picture is too wide.",
+        "Limit the image width to 50px."
+      ]
+    },
+    "ru": {
+      "title": "Ширина картинки",
+      "description": [
+        "Картинка слишком широкая.",
+        "Ограничь ширину картинки до 50px."
+      ]
+    }
+  }
+}

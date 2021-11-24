@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 202,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Time to revise",
+      "description": [
+        "In the file `index.html` you will find some material to revise.",
+        "You need to improve the readability of the text a little.",
+        "Add a horizontal separator line after each paragraph except the last one"
+      ]
+    },
+    "ru": {
+      "title": "Время для повторения",
+      "description": [
+        "В файле `index.html` ты найдешь материл для повторения.",
+        "Тебе нужно немного улучшить читаемость текста.",
+        "Добавь горизонтальную линию-разделитель после каждого параграфа, кроме последнего"
+      ]
+    }
+  }
+}

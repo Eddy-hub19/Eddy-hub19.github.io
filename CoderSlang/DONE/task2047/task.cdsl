@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 204,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Relative links #1",
+      "description": [
+        "You have two files: `index.html` and `coursesList.html`",
+        "In `index.html` you have a link to courses list which you can find in another file",
+        "Provide correct relative link from `index.html` to `coursesList.html`"
+      ]
+    },
+    "ru": {
+      "title": "Относительные ссылки #1",
+      "description": [
+        "У тебя есть два файла: `index.html` и `coursesList.html`",
+        "В `index.html` у тебя есть ссылка на список курсов, которые находятся во втором файле",
+        "Укажи правильную относительную ссылку с `index.html` на `courseList.html`"
+      ]
+    }
+  }
+}
