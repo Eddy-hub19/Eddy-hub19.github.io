@@ -12,7 +12,10 @@ function openPage(pageName, elmnt, color) {
     tablinks[i].style.backgroundColor = "";
   }
 
+  // Hide elements
+
   // Show the specific tab content
+
   document.getElementById(pageName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
@@ -21,5 +24,3 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 // document.getElementById("defaultOpen").click();
-
-

@@ -37,8 +37,10 @@ html {
 }
 
 .delete {
-  visibility: hidden;
-  background: red;
+  display: none;
+}
+.show {
+  display: none;
 }
 
 #Occasions {
