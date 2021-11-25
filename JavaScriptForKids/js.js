@@ -138,4 +138,23 @@
 
 // codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
 
+// let i = 0;          // создаем переменную i с начальным значением 0
+// while (i < 20) {    // пока значение i меньше 10, выполняем код в фигурных скобках
+//   console.log(i);   // печатаем на экран текущее значение i
+//   i = i + 1;        // увеличиваем i на 1, или иначе можно было написать i = i + 1
+// }
 
+const stock = [
+  { title: "fork", price: 10 },
+  { title: "spoon", price: 15 },
+  { title: "knife", price: 20 },
+  { title: "plate", price: 5 },
+];
+
+const printStock = (stock) => {
+  for (let i = 0; i < stock.length; i++) {
+    console.log(stock[i]);
+  }
+};
+
+printStock(stock)
