@@ -144,17 +144,38 @@
 //   i = i + 1;        // увеличиваем i на 1, или иначе можно было написать i = i + 1
 // }
 
-const stock = [
-  { title: "fork", price: 10 },
-  { title: "spoon", price: 15 },
-  { title: "knife", price: 20 },
-  { title: "plate", price: 5 },
-];
+// const stock = [
+//   { title: "fork", price: 10 },
+//   { title: "spoon", price: 15 },
+//   { title: "knife", price: 20 },
+//   { title: "plate", price: 5 },
+// ];
 
-const printStock = (stock) => {
-  for (let i = 0; i < stock.length; i++) {
-    console.log(stock[i]);
-  }
-};
+// const printStock = (stock) => {
+//   for (let i = 0; i < stock.length; i++) {
+//     console.log(stock[i]);
+//   }
+// };
 
-printStock(stock)
+// printStock(stock)
+
+
+// const positiveElements = (arr) => {
+//   let newArr = [];
+//   let positiveArr = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       newArr.push(arr[i]);
+//       console.log(newArr);
+//     }else{
+//       positiveArr.push(arr[i]);
+//       console.log(positiveArr);
+//     }
+//   }
+//   return newArr;
+// };
+
+// const arr = [ 10, -10, 20, -55, 1, 5, 12, -15, 0 ];
+
+// console.log(`${positiveElements(arr)}`); // [10, 20, 1, 5, 12]
