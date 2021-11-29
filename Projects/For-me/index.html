@@ -9,27 +9,18 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <video preload="auto" width="100%" height="100%" controls autoplay='autoplay'>
-            <source src="/Projects/For-me/video_for_interior_designer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            Тег video не поддерживается вашим браузером. 
-            <a href="/Projects/For-me/video_for_interior_designer.mp4" download>Скачать файл</a>
-           </video>
-    </div>
-
-    <!-- <header>
-         <div class="typing-demo">
-            🌸 Звуки Сакуры 🌸
+    <header>
+        <div class="typewriter-effect">
+            <div class="text" id="typewriter-text"></div>
         </div>
-        Hizumi Yakimata - Mather's Miko<br>
-        Hiroku Yakimata - Father's Miko<br>
-        Miko Yakimata - daughter<br>
-        Kumiko San - son's San<br>
-        Однажды в одной стране, жила девочка. 
-        Она выбежала очень рана посмотреть, как туман царит над большим морем.
-        Как плывут каноэ сквозь густой туман.. 
-        Но девочка любила подходить к реке.
-    </header> -->
+    </header>
 </body>
+
+<script>
+    const typeWriter = document.getElementById('typewriter-text');
+    const text = " 🌸 Sakura Sounds 🌸 "
+    typeWriter.innerHTML = text;
+    typeWriter.style.setProperty('--characters', text.length);
+</script>
 
 </html>
