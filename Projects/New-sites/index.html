@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/Projects/New-sites/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link href="light-theme.css" rel="stylesheet" id="theme-link">
     <link rel="stylesheet" type="text/css" href="/Projects/New-sites/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/Projects/New-sites/slick-1.8.1/slick/slick-theme.css" />
 </head>
 
-<body>
+<body class="light-theme">
     <header>
         <span><a href="#">Smart-Edek</a></span>
         <nav>
@@ -38,7 +40,7 @@
         <h1>Be A Digital Innovator</h1>
         <p>Digital technologies are disrupting old industries and creating new ones. This brings lots of opportunities,
             but challenges as well. Are you ready for them?</p>
-        <button>Read More</button>
+        <button class="btn-toggle" id="#theme-link">Переключатель тёмной темы</button>
     </main>
     <!-- paralax-->
     <div class="content-wrap">
@@ -70,17 +72,18 @@
             </div>
         </div>
     </div>
-    
+
     <div class="carousel">
         <img src="/Projects/New-sites/image/porten.png" alt="porten-site">
         <img src="/Projects/New-sites/image/food-store.png" alt="food-store">
         <img src="/Projects/New-sites/image/Music-app.png" alt="musc-app">
     </div>
 
-    <script type="text/javascript" src="/Projects/New-sites/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="/Projects/New-sites/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/Projects/New-sites/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="/Projects/New-sites/carousel.js"></script>
+    <script type="text/javascript" src="/Projects/New-sites/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/Projects/New-sites/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Projects/New-sites/js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/Projects/New-sites/js/theme.js"></script>
+    <script src="/Projects/New-sites/js/carousel.js"></script>
 </body>
 
 </html>

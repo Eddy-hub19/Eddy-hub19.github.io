@@ -7,16 +7,14 @@
 body html {
   width: 1920px;
   margin: 0 auto;
-  /* background: darkgray; */
+}
+
+body > a {
+  text-decoration: none;
 }
 
 ul > li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 header {
@@ -82,6 +80,10 @@ main {
   background-size: cover;
 }
 
+.parallax p {
+  width: 860px;
+}
+
 main button {
   margin-top: 20px;
   width: 350px;
@@ -94,11 +96,8 @@ main button {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  /* The image used */
   background-image: url("/Projects/New-sites/image/footer.jpg");
-  /* Set a specific height */
   min-height: 500px;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
