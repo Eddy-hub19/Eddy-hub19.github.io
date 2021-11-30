@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 14,
+  "reward": 1,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Capitalize first word",
+      "description": [
+        "Implement the function capitalizeFirstWord(s).",
+        "",
+        "It should accept a string, turn the first letter of its first word to uppercase and return the result."
+      ]
+    },
+    "ru": {
+      "title": "С большой буквы",
+      "description": [
+        "Реализуй функцию capitalizeFirstWord(s).",
+        "",
+        "Она должна принять строку, перевести первую букву первого слова в верхний регистр и вернуть результат.",
+        "Так, capitalizeFirstWord('привет') вернет 'Привет'."
+      ]
+    }
+  }
+}

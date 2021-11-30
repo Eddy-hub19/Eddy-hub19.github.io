@@ -1,16 +1,16 @@
-.wrapper {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  width: 100%;
+  /* color: rosybrown; */
+  background: linear-gradient(
+    45deg, black, transparent);
 }
-
 header {
-  background: url(/Projects/For-me/spring_sakura_flower_blossom_floral_japanese_cherry_icon_127307.svg) no-repeat;
+  background: url(/Projects/For-me/spring_sakura_flower_blossom_floral_japanese_cherry_icon_127307.svg)
+    no-repeat;
   width: 100%;
   height: 85vh;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: center;
   font-family: monospace;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .typewriter-effect > .text {
@@ -54,7 +54,22 @@ header {
   }
 }
 
-.icons {
-  position: absolute;
-  z-index: -2;
+ul li {
+  list-style: none;
+}
+
+main {
+  margin-top: 150px;
+  background: url(/Projects/For-me/temple_japan_landmark_travel_architecture_traditional_ancient_icon_127306.svg) no-repeat;
+  /* background-size: cover; */
+}
+
+main > ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 30px;
+  box-shadow: -5px -5px 5px -5px rgb(34 60 80 / 60%) inset;
 }

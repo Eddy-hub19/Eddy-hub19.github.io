@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 14,
+  "reward": 1,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Escape characters",
+      "description": [
+        "Fix the constants to make sure that correct messages are logged to the screen.",
+        "",
+        "- `stringWithNewline` should be printed on a single line and display \\n on the screen",
+        "- inside of the `stringWithQuotes` each word should be wrapped in single quotes",
+        "- `stringWithEmojis` should display emojis properly in the beginning and the end"
+      ]
+    },
+    "ru": {
+      "title": "Экранирование",
+      "description": [
+        "Исправь константы, чтобы на экран были выведены правильные сообщения.",
+        "",
+        "- `stringWithNewline` должна быть напечатана на одной строке и вывести на экран \\n",
+        "- внутри `stringWithQuotes` каждое слово должно быть обернуто в одинарные кавычки",
+        "- `stringWithEmojis` при выводе на экран должна содержать в себе две эмоджи. Крестик в начале и грустное лицо в конце"
+      ]
+    }
+  }
+}

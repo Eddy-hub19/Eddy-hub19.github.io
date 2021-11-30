@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 205,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "List of skills",
+      "description": [
+        "We have a list of what will you know by the end of this course.",
+        "But wait, you need to add one more technology that's missing.",
+        "Check out the lecture once again and add the proper list element.",
+        "Don't change other technologies."
+      ]
+    },
+    "ru": {
+      "title": "Список знаний",
+      "description": [
+        "Мы создали список технологий, которые ты выучишь на этом уровне.",
+        "Но подожди, одной обязательной технологии не хватает!",
+        "Прочитай лекцию еще раз и добавь нужный элемент в список.",
+        "Не изменяй другие технологии."
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 14,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Capitalize Each Word",
+      "description": [
+        "Implement the function capitalizeEachWord(s).",
+        "",
+        "It should accept a string, turn the first letter of each word to uppercase and return the result."
+      ]
+    },
+    "ru": {
+      "title": "Каждое Слово С Большой Буквы",
+      "description": [
+        "Реализуй функцию capitalizeEachWord(s).",
+        "",
+        "Она должна принять строку, перевести первую букву каждого слова в верхний регистр и вернуть результат."
+      ]
+    }
+  }
+}
