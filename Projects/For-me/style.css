@@ -5,7 +5,8 @@
   justify-content: center;
 }
 
-header{
+header {
+  background: url(/Projects/For-me/spring_sakura_flower_blossom_floral_japanese_cherry_icon_127307.svg) no-repeat;
   width: 100%;
   height: 85vh;
   display: flex;
@@ -51,4 +52,9 @@ header{
   25% {
     opacity: 0;
   }
+}
+
+.icons {
+  position: absolute;
+  z-index: -2;
 }
