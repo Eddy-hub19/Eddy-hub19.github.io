@@ -1,8 +1,13 @@
 body {
   width: 100%;
-  /* color: rosybrown; */
-  background: linear-gradient(
-    45deg, black, transparent);
+  background: linear-gradient(45deg, black, transparent);
+  font-family: "Nanum Pen Script", cursive;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 header {
   background: url(/Projects/For-me/spring_sakura_flower_blossom_floral_japanese_cherry_icon_127307.svg)
@@ -10,14 +15,13 @@ header {
   width: 100%;
   height: 85vh;
   display: flex;
-  justify-content: right;
-  align-items: center;
+  justify-content: center;
 }
 
 .typewriter-effect {
   display: flex;
   justify-content: center;
-  font-family: monospace;
+  font-family: "Nanum Pen Script", cursive;
   font-size: 40px;
 }
 
@@ -60,7 +64,8 @@ ul li {
 
 main {
   margin-top: 150px;
-  background: url(/Projects/For-me/temple_japan_landmark_travel_architecture_traditional_ancient_icon_127306.svg) no-repeat;
+  background: url(/Projects/For-me/temple_japan_landmark_travel_architecture_traditional_ancient_icon_127306.svg)
+    no-repeat;
   /* background-size: cover; */
 }
 
@@ -72,4 +77,29 @@ main > ul li {
   font-size: 30px;
   margin: 30px;
   box-shadow: -5px -5px 5px -5px rgb(34 60 80 / 60%) inset;
+}
+
+.chapters {
+  margin-top: 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  background: white;
+}
+
+.parallax {
+  margin-top: 73.6rem;
+  background: url(/Projects/For-me/bamboo_nature_tree_plant_leaf_branch_forest_icon_127294.svg);
+  background-size: cover;
+  height: 1800px;
+  background-attachment: fixed;
+  filter: hue-rotate(86deg);
+  /* filter: opacity(0.5); */
+  /* -webkit-filter: opacity(0.5), hue-rotate(86deg); */
+}
+.parallax p {
+  text-align: center;
+  font-size: 35px;
+  font-family: monospace;
 }
