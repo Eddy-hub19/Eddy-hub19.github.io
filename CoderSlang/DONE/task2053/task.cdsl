@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 205,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Ordered list",
+      "description": [
+        "Change the list to make sure that there's a number next to each list element",
+        "Don't forget to delete wrong attributes"
+      ]
+    },
+    "ru": {
+      "title": "Нумерованный список",
+      "description": [
+        "Измени список так, чтобы возле каждого пункта были выставлены цифры.",
+        "Не забудь удалить лишние атрибуты."
+      ]
+    }
+  }
+}

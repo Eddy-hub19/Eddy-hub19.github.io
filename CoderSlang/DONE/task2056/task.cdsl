@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 205,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Improve the list",
+      "description": [
+        "We have already added definitions to our reference book using the `<dd>` tags.",
+        "You just have to add terms for each of them.",
+        "Terms are the names of the technologies. Check out the lecture if you've forgotten them.",
+        "Do not change the order of definitions."
+      ]
+    },
+    "ru": {
+      "title": "Доделай справочник",
+      "description": [
+        "Мы уже добавили в наш справочник определения с помощью тегов `<dd>`.",
+        "Тебе осталось добавить только термины для каждого из них.",
+        "Термины - это названия технологий. Знаешь их?",
+        "Не меняй порядок определений."
+      ]
+    }
+  }
+}

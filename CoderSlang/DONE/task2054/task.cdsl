@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 205,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fix bugs",
+      "description": [
+        "Someone has worked on your list and introduced some bugs.",
+        "And it shows letters instead of numbers, and their order seems to be reversed.",
+        "Make numbering with Roman numerals in the correct order as well - from `I` to `III`."
+      ]
+    },
+    "ru": {
+      "title": "Исправь ошибки",
+      "description": [
+        "Кто-то потрудился над твоим списком и добавил пару багов.",
+        "Теперь вместо нумерации у нас буквы, да и порядок их похоже обратный.",
+        "Сделай нумерацию римскими цифрами в правильном порядке - от `I до `III`."
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 205,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "All messed up",
+      "description": [
+        "It looks like someone has mixed up the term and definition in the list",
+        "Let's fix it."
+      ]
+    },
+    "ru": {
+      "title": "Все перепуталось",
+      "description": [
+        "Похоже, что кто-то перепутал местами термин и определение",
+        "А исправлять тебе :)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 205,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Change the marker",
+      "description": [
+        "The list items are marked with filled circles.",
+        "Let's change them to empty circles."
+      ]
+    },
+    "ru": {
+      "title": "Измени маркер",
+      "description": [
+        "Элементы списка маркированы закрашенным кружочком.",
+        "Давай заменим каждый на пустую окружность."
+      ]
+    }
+  }
+}
