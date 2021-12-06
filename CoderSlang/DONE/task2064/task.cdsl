@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 206,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Total",
+      "description": [
+        "At the end of the table add one more row.",
+        "It will be our final row and it should have two columns.",
+        "- First column will be the union of two horizontal cells and its content should be 'Total lectures'",
+        "- Second column will be the total amount of lectures and its content should be 37"
+      ]
+    },
+    "ru": {
+      "title": "Итого",
+      "description": [
+        "В конце таблицы добавь еще одну строку.",
+        "Это будет наша итоговая строка, в которой должно быть два столбца.",
+        "- Первый столбец будет представлять собой объединение двух горизонтальных ячеек, а его содержимое должно быть 'Total lectures'",
+        "- Второй - общее количество лекций - 37"
+      ]
+    }
+  }
+}

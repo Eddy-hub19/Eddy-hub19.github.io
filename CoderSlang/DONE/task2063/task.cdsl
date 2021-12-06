@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 206,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Information row",
+      "description": [
+        "Time to fill the table with data.",
+        "- Add second row to the table below the existing one.",
+        "- Add three `<td>` cells to the second row.",
+        "- Set first cell content to 'JS', second - to 3, third - to 25"
+      ]
+    },
+    "ru": {
+      "title": " Информационная строка",
+      "description": [
+        "Пора заполнить таблицу данными.",
+        "- Добавь в таблицу вторую строку сразу под существующей.",
+        "- Добавь три ячейки `<td>` во вторую строку.",
+        "- Содержимое первой ячейки второй строки должно быть 'JS', второй - 3, третьей - 25"
+      ]
+    }
+  }
+}

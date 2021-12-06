@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 206,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Cell definition",
+      "description": [
+        "You have to keep working on the table.",
+        "Change the content of the only cell to `Course name`.",
+        "Don't add any other elements"
+      ]
+    },
+    "ru": {
+      "title": "Определение ячейки",
+      "description": [
+        "Тебе прийдется продолжить работу над таблицей.",
+        "Измени контент единственной ячейки на `Course name`.",
+        "Не добавляй дополнительные элементы."
+      ]
+    }
+  }
+}

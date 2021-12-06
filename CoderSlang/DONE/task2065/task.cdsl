@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 206,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Table caption",
+      "description": [
+        "Add caption to the table in `index.html`",
+        "Its content should be `Courses list`"
+      ]
+    },
+    "ru": {
+      "title": "Подпись к таблице",
+      "description": [
+        "Добавь подпись к таблице в `index.html`",
+        "Ее содержимое должно быть `Courses list`"
+      ]
+    }
+  }
+}

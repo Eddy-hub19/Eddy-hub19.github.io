@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 206,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Header row",
+      "description": [
+        "There is a first column header and it must remain first.",
+        "Add two more columns to the header row:",
+        "- `Duration (month)`",
+        "- `Lectures`",
+        "Use `<th>` tag fot each column."
+      ]
+    },
+    "ru": {
+      "title": "Заглавная строка",
+      "description": [
+        "Есть заголовок первого столбца, и он должен остаться первым.",
+        "Добавь еще два столбца в строку заголовка:",
+        "- `Duration (month)`",
+        "- `Lectures`",
+        "Используй тег <th> для каждого столбца."
+      ]
+    }
+  }
+}

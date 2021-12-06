@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 206,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Rowspan",
+      "description": [
+        "In `index.html` there's a table with two rows.",
+        "The first cell of the first row should be stretched to the second row too.",
+        "You can do it by adding a `rowspan` attribute to that cell.",
+        "Its value should be equal to the number of rows this cell should combine."
+      ]
+    },
+    "ru": {
+      "title": "Rowspan",
+      "description": [
+        "В файле `index.html` есть таблица на две строки.",
+        "Первую ячейку в первой строке нужно растянуть и на вторую строку.",
+        "Ты можешь это сделать, добавив к этой ячейке атрибут `rowspan`.",
+        "Его значение равно количеству строк, которые эта ячейка должна объединить."
+      ]
+    }
+  }
+}
