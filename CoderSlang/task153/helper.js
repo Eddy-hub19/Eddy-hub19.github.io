@@ -1,3 +1,7 @@
 export const isKeyPresent = (obj, key) => {
-  return false;
+  if(obj === key) {
+    return obg.key;
+  }else{
+    return false;
+  }
 }

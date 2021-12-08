@@ -1,5 +1,9 @@
 export const checkAccess = (user, password) => {
-  return user.password === password;
+  if(user.role === 'admin') {
+    return user.password === password;
+  }else{
+    return false;
+  }
 }
 
 export const grantAccess = (name) => {
