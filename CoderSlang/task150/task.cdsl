@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 15,
+  "reward": 1,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Divide By",
+      "description": [
+        "Implement the function `divideBy(divisor)`.",
+        "",
+        "It should accept a **divisor** and return a function that takes the number **n**, divides it by the **divisor** and returns the the result."
+      ]
+    },
+    "ru": {
+      "title": "Раздели на",
+      "description": [
+        "Реализуй функцию `divideBy(divisor)`.",
+        "",
+        "Она должна принять число **divisor** и вернуть функцию, которая примет число **n**, разделит его на **divisor** и вернет результат."
+      ]
+    }
+  }
+}

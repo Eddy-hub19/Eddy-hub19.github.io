@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 15,
+  "reward": 4,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Starts with",
+      "description": [
+        "Implement a function `startsWith(start)`.",
+        "",
+        "It should accept a single parameter `start` and return a function that takes a string `s` and checks if `s` starts with `start`.",
+        "`start` is a string that consists of one or more characters",
+        "If `s` passes the check, the closure should return `true`, otherwise - `false`"
+      ]
+    },
+    "ru": {
+      "title": "Начнем с начала",
+      "description": [
+        "Реализуй функцию `startsWith(start)`.",
+        "",
+        "Она должна принять один параметр `start` и вернуть функцию, которая примет строку `s` и проверит начинается ли `s` со `start`.",
+        "`start` - это строка, которая может содержать один или более символов",
+        "Если `s` проходит тест, то наше замыкание должно вернуть `true`, иначе - `false`"
+      ]
+    }
+  }
+}

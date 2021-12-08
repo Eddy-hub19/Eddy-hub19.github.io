@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 207,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "From the very beginning",
+      "description": [
+        "Let's start developing your JS blog",
+        "Start by creating an html document and add a title to it",
+        "The title should be `My JS blog`"
+      ]
+    },
+    "ru": {
+      "title": "С самого начала",
+      "description": [
+        "Начнем разработку твоего JS блога",
+        "Начни с создания html документа и добавь ему заголовок",
+        "Заголовок должен быть `My JS blog`"
+      ]
+    }
+  }
+}

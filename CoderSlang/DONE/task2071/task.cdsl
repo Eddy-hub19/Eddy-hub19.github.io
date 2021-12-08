@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 207,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "First title",
+      "description": [
+        "Update the html document title",
+        "It should become `My first website`"
+      ]
+    },
+    "ru": {
+      "title": "Первый заголовок",
+      "description": [
+        "Обнови заголовок html-документа",
+        "Он должен быть `My first website`"
+      ]
+    }
+  }
+}

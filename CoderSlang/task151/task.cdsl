@@ -1,0 +1,38 @@
+{
+  "jsLectureId": 15,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Short words filter",
+      "description": [
+        "Implement the function `isShortWord(s)`.",
+        "",
+        "It should take a string and return `true` if the string meets both of the following conditions:",
+        "1. The length of the string is less than 10 characters.",
+        "2. The string consists of a single word (doesn't have spaces in it)",
+        "Otherwise, it should return `false`",
+        "",
+        "Take a note of how we pass the function `isShortWord` into a `filter` function.",
+        "We're not calling `isShortWord` immediately, it will happen inside of the `filter`."
+      ]
+    },
+    "ru": {
+      "title": "Фильтр коротких слов",
+      "description": [
+        "Реализуй функцию `isShortWord(s)`.",
+        "",
+        "Она должна принять строку и вернуть `true` если строка удовлетворяет двум требованиям:",
+        "1. Длина строки меньше 10 символов.",
+        "2. Строка состоит из одного слова (в ней нет пробелов)",
+        "Иначе, нужно вернуть `false`",
+        "",
+        "Обрати внимание на то, как мы передаем функцию `isShortWord` в функцию `filter`.",
+        "Мы сами не вызываем `isShortWord`, вызов произойдет внутри `filter`."
+      ]
+    }
+  }
+}

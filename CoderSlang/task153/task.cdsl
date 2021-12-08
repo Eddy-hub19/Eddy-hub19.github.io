@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 15,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Analyze object keys",
+      "description": [
+        "Implement the function `isKeyPresent(obj, key)` which checks if the object has a certain field"
+      ]
+    },
+    "ru": {
+      "title": "Анализируем ключи",
+      "description": [
+        "Реализуй функцию `isKeyPresent(obj, key)`, которая проверит, есть ли у объекта `obj` ключ `key`."
+      ]
+    }
+  }
+}

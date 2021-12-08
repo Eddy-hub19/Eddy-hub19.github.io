@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 15,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Fix auth",
+      "description": [
+        "Fix the code. Access should only be given to the users with the `admin` role.",
+        "",
+        "Make sure that the user name is logged to the screen."
+      ]
+    },
+    "ru": {
+      "title": "Чиним авторизацию",
+      "description": [
+        "Почини код. Доступ должны получить только пользователи с ролью `admin`.",
+        "",
+        "Убедись, что на экран выводится имя пользователя."
+      ]
+    }
+  }
+}

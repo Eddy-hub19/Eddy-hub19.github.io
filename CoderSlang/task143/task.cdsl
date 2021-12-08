@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 14,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Extract a number",
+      "description": [
+        "Implement the function extractNumber(s).",
+        "",
+        "It should accept a string and extract a number from it.",
+        "It's guaranteed that there will be a single number in the string.",
+        "Examples: `$59.99` -> `59.99`, `99 euro only!` -> 99, `1 BTC` -> 1"
+      ]
+    },
+    "ru": {
+      "title": "Выдели число",
+      "description": [
+        "Реализуй функцию extractNumber(s).",
+        "",
+        "Она должна принять строку и вернуть число найденное в ней.",
+        "В строке гарантированно будет ровно одно число.",
+        "Примеры: `$59.99` -> `59.99`, `99 euro only!` -> 99, `1400rub` -> 1400"
+      ]
+    }
+  }
+}

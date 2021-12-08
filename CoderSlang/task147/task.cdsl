@@ -1,0 +1,34 @@
+{
+  "jsLectureId": 14,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Task list",
+      "description": [
+        "Implement the function `formatTaskList`.",
+        "",
+        "It should transform each task object into a string by placing",
+        "a green checkmark (u2705) in front of the title if the task is DONE",
+        "Otherwise, use a red cross (u274c)",
+        "",
+        "Ultimately the goal is to return an array of strings that could be printed to the screen in a nice format."
+      ]
+    },
+    "ru": {
+      "title": "Список задач",
+      "description": [
+        "Реализуй функцию `formatTaskList`.",
+        "",
+        "Она должна преобразовать каждый объект с задачей в строку, поместив",
+        "зеленую галочку (u2705) перед названием задачи, если ее статус DONE.",
+        "Иначе - красный крест (u274c).",
+        "",
+        "В итоге нужно вернуть массив строк, который можно будет красиво вывести на экран."
+      ]
+    }
+  }
+}

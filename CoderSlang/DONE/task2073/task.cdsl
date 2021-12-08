@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 207,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Autograph",
+      "description": [
+        "Let's change the name of the blog author",
+        "Let it be `JS Master`"
+      ]
+    },
+    "ru": {
+      "title": "Автограф",
+      "description": [
+        "Давай изменим имя автора блога",
+        "Пусть будет `JS Master`"
+      ]
+    }
+  }
+}

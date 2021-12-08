@@ -1,0 +1,32 @@
+{
+  "jsLectureId": 14,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "String shortening",
+      "description": [
+        "Implement the function `shorten(s, n)`.",
+        "",
+        "It should accept a string, and a number.",
+        "It should return the new string that consists of maximum `n` characters of the original string.",
+        "If you have to cut off some chars, place `...` in the end.",
+        "So, shorten('this string is too long to fit our ad', 21) returns `this string is too lo...`"
+      ]
+    },
+    "ru": {
+      "title": "Обрезание",
+      "description": [
+        "Реализуй функцию shorten(s, n).",
+        "",
+        "Она должна принять строку и число.",
+        "Вернуть нужно новую строку, состоящую максимум из `n` символов оригинальной строки.",
+        "Если тебе нужно обрезать несколько символов, добавь `...` в конце.",
+        "Так, shorten('this string is too long to fit our ad', 21) вернет `this string is too lo...`"
+      ]
+    }
+  }
+}
