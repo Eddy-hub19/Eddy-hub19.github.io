@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 16,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Delayed Log",
+      "description": [
+        "Implement the function `delayedLog(s, n)`.",
+        "",
+        "It should print the string `s` to the console after `n` seconds."
+      ]
+    },
+    "ru": {
+      "title": "Отложенный вывод",
+      "description": [
+        "Реализуй функцию `delayedLog(s, n)`.",
+        "",
+        "Она должна вывести в консоль строку `s` через `n` секунд."
+      ]
+    }
+  }
+}

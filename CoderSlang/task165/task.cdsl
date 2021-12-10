@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 16,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Easy timeout",
+      "description": [
+        "Implement the function `setEasyTimout(func, time)`.",
+        "",
+        "It should execute the function `func` after the specific amount of `time`.",
+        "",
+        "`time` - is an object with `hours`, `minutes`, `seconds`. Examples in `solution.js`."
+      ]
+    },
+    "ru": {
+      "title": "Легкий таймаут",
+      "description": [
+        "Реализуй функцию `setEasyTimout(func, time)`.",
+        "",
+        "Она должна выполнить функцию `func` через время `time`.",
+        "",
+        "`time` - это объект с полями `hours`, `minutes`, `seconds`. Примеры в `solution.js`."
+      ]
+    }
+  }
+}

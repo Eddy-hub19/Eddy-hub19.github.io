@@ -1,0 +1,34 @@
+{
+  "jsLectureId": 16,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Progress is tough",
+      "description": [
+        "Fix the function `startProgressBar`",
+        "",
+        "Expected behavior:",
+        "- The function should display the progress bar on the screen and move it forward each `delay` ms.",
+        "- The interval should be cleared once the progress bar is full.",
+        "",
+        "Don't forget to run `npm install` in terminal before starting the task!"
+      ]
+    },
+    "ru": {
+      "title": "Прогресс - дело сложное",
+      "description": [
+        "Почини функцию `startProgressBar`",
+        "",
+        "Ожидаемое поведение:",
+        "- Функция должна запускать прогресс бар и продвигать его вперед каждый `delay` миллисекунд.",
+        "- Интервал должен быть очищен, когда прогресс будет завершен.",
+        "",
+        "Не забудь выполнить в терминале команду `npm install` перед тем как запускать задачу!"
+      ]
+    }
+  }
+}

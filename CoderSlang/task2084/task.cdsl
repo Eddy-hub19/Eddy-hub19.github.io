@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 208,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "More styles",
+      "description": [
+        "Improve the paragraph styling by adding all the styles we have already learned.",
+        "Make the text bold and the color orange.",
+        "The font size should be 16px."
+      ]
+    },
+    "ru": {
+      "title": "Много стилей не бывает",
+      "description": [
+        "Добавь параграфу все стили, которые мы уже выучили.",
+        "Сделай текст жирным, а цвет пусть будет оранжевым (orange).",
+        "Размер шрифта должен быть 16px."
+      ]
+    }
+  }
+}

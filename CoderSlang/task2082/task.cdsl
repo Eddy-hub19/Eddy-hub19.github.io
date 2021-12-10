@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 208,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Inline styles",
+      "description": [
+        "The font size is too small.",
+        "Let's add a `font-size` CSS property with a value of 18px."
+      ]
+    },
+    "ru": {
+      "title": "Строчные стили",
+      "description": [
+        "Какой-то у параграфа слишком мелкий шрифт.",
+        "Давай добавим ему CSS свойство font-size со значение 18px."
+      ]
+    }
+  }
+}

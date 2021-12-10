@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 208,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Bold text",
+      "description": [
+        "Make the text inside a paragraph bold using CSS.",
+        "Don't use the `<b>` tag, just styles."
+      ]
+    },
+    "ru": {
+      "title": "Жирный текст",
+      "description": [
+        "Сделай текст внутри параграфа жирным используя CSS.",
+        "Не используй тег `<b>`, только стили."
+      ]
+    }
+  }
+}

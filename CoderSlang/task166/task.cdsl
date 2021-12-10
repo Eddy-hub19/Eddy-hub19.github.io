@@ -1,0 +1,34 @@
+{
+  "jsLectureId": 16,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "The countdown",
+      "description": [
+        "Implement the function `startCountdown(n)` using `setInterval`.",
+        "",
+        "It should print to the console all number from `n` to 1 and then the string `GO!`.",
+        "The delay between calls to the `console.log` should be 0.1 second.",
+        "",
+        "The interval should be cleared once all the output was processed.",
+        "Different countdowns should be independent of each other."
+      ]
+    },
+    "ru": {
+      "title": "Обратный отсчет",
+      "description": [
+        "Реализуй функцию `startCountdown(n)` используя `setInterval`.",
+        "",
+        "Она должна печатать в консоль все числа от `n` до 1 и затем строку `GO!`.",
+        "Задержка между вызовами `console.log` должна составлять 0.1 секунду.",
+        "",
+        "Интервал должен быть очищен после того, как на экран выведено последнее сообщение.",
+        "Должна быть реализована возможность одновременного запуска независимых обратных отсчетов."
+      ]
+    }
+  }
+}

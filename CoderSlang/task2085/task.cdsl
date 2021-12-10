@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 208,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Part",
+      "description": [
+        "Select the CSS word inside the paragraph, using the `<span>` tag.",
+        "Make it bold and green."
+      ]
+    },
+    "ru": {
+      "title": "Часть",
+      "description": [
+        "Выдели внутри параграфа слово CSS, используя тег `<span>`.",
+        "Пусть слово CSS станет зеленым и жирным."
+      ]
+    }
+  }
+}

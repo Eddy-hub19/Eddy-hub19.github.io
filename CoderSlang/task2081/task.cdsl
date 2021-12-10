@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 208,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "UI revisions",
+      "description": [
+        "Designer has told you to do some changes.",
+        "The color of the text in the paragraph is green, you need to make it red."
+      ]
+    },
+    "ru": {
+      "title": "UI правки",
+      "description": [
+        "От дизайнера пришли правки.",
+        "Цвет текста в параграфе - зеленый, надо заменить его на красный."
+      ]
+    }
+  }
+}

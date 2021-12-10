@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 207,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Description",
+      "description": [
+        "There's one problem with the description in `index.html`.",
+        "Fix the issue, but don't change the description itself."
+      ]
+    },
+    "ru": {
+      "title": "Описание",
+      "description": [
+        "С описанием есть одна проблема.",
+        "Исправь ее, но не меняй само описание."
+      ]
+    }
+  }
+}
