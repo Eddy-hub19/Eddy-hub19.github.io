@@ -159,7 +159,6 @@
 
 // printStock(stock)
 
-
 // const positiveElements = (arr) => {
 //   let newArr = [];
 //   let positiveArr = [];
@@ -180,3 +179,90 @@
 
 // console.log(`${positiveElements(arr)}`); // [10, 20, 1, 5, 12]
 
+// SLICE
+
+// Slice — часть
+
+// Long string — длинная строка
+
+var longString = "Эта длинная строка такая длинная";
+longString.slice(4, 18);
+("длинная строка");
+
+// To upper case — в верхний регистр
+
+// Перевод строки в заглавный или строчный регистр
+
+"Эй, как дела?".toUpperCase();
+("ЭЙ, КАК ДЕЛА?");
+
+// .toUpperCase() возвращает новую строку, все буквы в которой — заглавные.
+
+// Можно произвести и обратную операцию, использовав toLowerCase:
+
+// To lower case — в нижний регистр
+
+"эЙ, кАК деЛа?".toLowerCase();
+("эй, как дела?");
+
+// Silly string — буквально «глупая строка»
+
+// Lower string — здесь «строка в нижнем регистре»
+
+// First character — здесь «первая буква»
+
+// First character upper — здесь «первая буква в верхнем регистре»
+
+// Rest of string — оставшаяся часть строки
+
+// let sillyString = "эЙ, кАК деЛа?";
+// let lowerString = sillyString.toLowerCase();
+// console.log(lowerString);
+// ("эй, как дела?");
+// let firstCharacter = lowerString[0];
+// console.log(firstCharacter);
+// ("э");
+// let firstCharacterUpper = firstCharacter.toUpperCase();
+// console.log(firstCharacterUpper);
+// ("Э");
+// let restOfString = lowerString.slice(1);
+// console.log(restOfString);
+// ("й, как дела?");
+
+// console.log(firstCharacter + restOfString);
+// ("эй, как дела?");
+
+// let sillyString = "эЙ, кАК деЛа?";
+// let result = sillyString[0].toUpperCase() + sillyString.slice(1).toLowerCase();
+// ("Эй, как дела?");
+// console.log(result);
+
+// Булевы значения
+
+// true (истина), либо false (ложь)
+
+// var javascriptIsCool = true;
+// javascriptIsCool;
+// true;
+
+// Логические операции
+
+// && -  and
+
+// || - or
+
+// Had shower — принял душ
+// Has backback — есть рюкзак
+
+var hadShower = true;
+var hasBackpack = false;
+hadShower && hasBackpack;
+false
+
+// Has apple — есть яблоко
+// Has orange — есть апельсин
+
+var hasApple = true;
+var hasOrange = false;
+hasApple || hasOrange;
+true
