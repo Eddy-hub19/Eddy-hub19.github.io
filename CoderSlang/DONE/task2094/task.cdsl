@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 209,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "The promised task",
+      "description": [
+        "As I promised in the lecture, we will work with relative sizes",
+        "The document has a block with two paragraphs.",
+        "Set the block height to 500px and the height of each paragraph to 40% of the parent's height",
+        "Don't use inline styles."
+      ]
+    },
+    "ru": {
+      "title": "Обещанная задачка",
+      "description": [
+        "Как я и обещал тебе в лекции - поработаем с относительными размерами",
+        "В документе есть блок с двумя параграфами.",
+        "Задай высоту блока 500px, а высоту каждого параграфа - 40% высоты родительского компонента",
+        "Не используй строчные стили."
+      ]
+    }
+  }
+}

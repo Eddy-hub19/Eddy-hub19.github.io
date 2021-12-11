@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 210,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "It's better to do everything yourself",
+      "description": [
+        "Create a `styles.css` file and include it in the `index.html` document.",
+        "In the `styles.css` file add styles for the paragraph and heading.",
+        "",
+        "- align the paragraphs to the middle",
+        "- change the heading color to red"
+      ]
+    },
+    "ru": {
+      "title": "Лучше все сделать самому",
+      "description": [
+        "Создай файл `styles.css` и подключи его в `index.html` документу.",
+        "В файле `styles.css` добавь стили для параграфа и заголовка.",
+        "",
+        "- добавь выравнивание по середине дла параграфов",
+        "- заголовок сделай красным"
+      ]
+    }
+  }
+}

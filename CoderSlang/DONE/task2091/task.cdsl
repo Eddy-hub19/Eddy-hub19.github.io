@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 209,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "All green",
+      "description": [
+        "Make the text in all paragraphs green.",
+        "Don't use inline styles.",
+        "Don't change the number of paragraphs."
+      ]
+    },
+    "ru": {
+      "title": "Все зеленые",
+      "description": [
+        "Сделай текст во всех параграфах зеленого цвета.",
+        "Не используй строчные стили.",
+        "Не изменяй количество параграфов."
+      ]
+    }
+  }
+}

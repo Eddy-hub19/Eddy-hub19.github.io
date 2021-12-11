@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 209,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Something new",
+      "description": [
+        "Let's practice a new style - the background color.",
+        "Give all paragraphs a blue background and white text for the text.",
+        "Don't use inline styles, don't change the number of paragraphs."
+      ]
+    },
+    "ru": {
+      "title": "Что-то новенькое",
+      "description": [
+        "Давай освоим на практике изменение цвета фона страницы.",
+        "Добавь всем параграфам синий задний фон и белый цвет текста.",
+        "Не используй строчные стили. Не изменяй количество параграфов."
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 209,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "A little fantasy",
+      "description": [
+        "Come up with a title for the page about your CSS adventures and add it to the `<h2>` tag.",
+        "Add a couple of paragraphs about what interests you the most in the course.",
+        "Use the existing heading `<h2>`.",
+        "Make each paragraph 150px high."
+      ]
+    },
+    "ru": {
+      "title": "Немного фантазии",
+      "description": [
+        "Придумай название к странице о своих CSS приключениях и добавь его в тег `<h2>`.",
+        "Напиши пару абзацев о том, что тебе больше всего понравилось.",
+        "Используй уже существующий заголовок `<h2>`.",
+        "Сделай высоту каждого параграфа 150px."
+      ]
+    }
+  }
+}

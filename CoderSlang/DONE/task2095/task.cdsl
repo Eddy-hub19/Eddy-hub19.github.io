@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 209,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Many elements to style",
+      "description": [
+        "Make the text of each paragraph brown.",
+        "The text of each `<h2>` header must be 18px size.",
+        "The first level heading text should be red and 22px size.",
+        "Don't use inline styles."
+      ]
+    },
+    "ru": {
+      "title": "Много элементов для стилизации",
+      "description": [
+        "Текст внутри всех параграфов должен быть коричневым.",
+        "Текст каждого заголовка `<h2>` должен быть жирным и размером 18px.",
+        "Текст заголовка первого уровня должен быть красным и размером 22px.",
+        "Не используй строчные стили."
+      ]
+    }
+  }
+}

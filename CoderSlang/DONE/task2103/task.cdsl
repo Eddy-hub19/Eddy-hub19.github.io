@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 210,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Wrong path",
+      "description": [
+        "Your colleague continues to make mistakes. The HTML document and styles are written again.",
+        "And the styles are even connected, but again nothing works. Most likely, the error lies in the path to the stylesheet.",
+        "Correct the path to the external styles in `index.html`."
+      ]
+    },
+    "ru": {
+      "title": "Неправильный путь",
+      "description": [
+        "Твой коллега продолжает делать ошибки. Снова написан HTML-документ и стили.",
+        "И стили даже подключены, но снова ничего не работает. Наверное ошибка в пути к файлу стилей.",
+        "Исправь в `index.html` путь к подключаемым стилям."
+      ]
+    }
+  }
+}

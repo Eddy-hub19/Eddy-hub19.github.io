@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 210,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "External Styles",
+      "description": [
+        "Styles are plugged in and everything works fine. Let's add a slight tweak to it.",
+        "Align the heading `<h1>` to the center of the screen."
+      ]
+    },
+    "ru": {
+      "title": "Внешние стили",
+      "description": [
+        "Стили подключены и все работает, остается их немного подправить.",
+        "Сделай выравнивание текста заголовка `<h1>` по середине экрана."
+      ]
+    }
+  }
+}

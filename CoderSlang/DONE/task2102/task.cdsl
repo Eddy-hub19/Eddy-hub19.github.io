@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 210,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Link styles",
+      "description": [
+        "Your colleague wrote both HTML and CSS, but something is wrong.",
+        "Apparently he forgot to link styles to the HTML document.",
+        "You should fix this by properly linking `styles.css` to `index.html`"
+      ]
+    },
+    "ru": {
+      "title": "Подключи стили",
+      "description": [
+        "Твой коллега написал и HTML, и CSS код, но что-то работает не так.",
+        "Видимо он забыл подключить стили к HTML документу.",
+        "Исправь это подключив файл `styles.css` к `index.html`."
+      ]
+    }
+  }
+}

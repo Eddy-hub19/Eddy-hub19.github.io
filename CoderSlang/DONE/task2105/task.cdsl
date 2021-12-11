@@ -1,0 +1,32 @@
+{
+  "jsLectureId": 210,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Asterisk puzzle",
+      "description": [
+        "Styles for paragraph are already written and linked.",
+        "But the heading styles are missing.",
+        "Create them in a separate file `heading-styles.css`, which should be placed in the `css` folder.",
+        "",
+        "- the heading text must be centered.",
+        "- the external stylesheet must be linked to `index.html` "
+      ]
+    },
+    "ru": {
+      "title": "Задачка со звездочкой",
+      "description": [
+        "Уже написаны и подключены стили для параграфа. Но нет стилей для заголовка.",
+        "Стили для заголовка должны быть в отдельном файле `heading-styles.css`, который нужно разместить в папке `css`.",
+        "",
+        "- заголовок должен находиться в центре экрана",
+        "- внешние стили должны быть корректно подключены к index.html`"
+      ]
+    }
+  }
+}
