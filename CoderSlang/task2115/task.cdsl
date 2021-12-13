@@ -1,0 +1,37 @@
+{
+  "jsLectureId": 211,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Refactoring",
+      "description": [
+        "You already know enough to not just fix other people's bugs, but also refactor (improve) the code.",
+        "",
+        "Your colleague used inline styles everywhere, and this isn't particularly good.",
+        "Let's refactor the code using classes and identifiers.",
+        "",
+        "- Use the 'tag-name' class to style the` <span> `elements",
+        "- Use the 'description' class to style the` <p> `elements",
+        "- Use the id 'page-header' to style the` <h1> `element"
+      ]
+    },
+    "ru": {
+      "title": "Рефакторинг",
+      "description": [
+        "Ты уже достаточно знаешь, что бы не просто исправлять чужие баги, но и рефакторить (улучшать) код.",
+        "",
+        "Твой коллега использовал везде строчные стили, и это не самый лучший подход.",
+        "Давай проведем рефакторинг и перенесем строчный стили в классы и идентификаторы.",
+        "",
+        "- Для добавления стилей элементам `<span>` используй класс 'tag-name'",
+        "- Для добавления стилей элементам `<p>` используй класс 'description'",
+        "- Для добавления стилей элементу `<h1>` используй идентификатор 'page-header'"
+      ]
+    }
+  }
+}

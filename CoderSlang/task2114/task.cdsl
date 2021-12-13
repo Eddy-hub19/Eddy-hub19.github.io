@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 211,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fibonacci Sequence",
+      "description": [
+        "Part of the Fibonacci sequence is specified in the `index.html` file.",
+        "But the numbers fuse. Let's improve the styling and make every second number bold.",
+        "",
+        "Use internal styles and classes. The class name should be `bold-item`.",
+        "Don't change the number of blocks."
+      ]
+    },
+    "ru": {
+      "title": "Последовательность Фибоначчи",
+      "description": [
+        "В файле `index.html` указана часть последовательности Фибоначчи.",
+        "Но числа сливаются... Давай улучшим стили и сделаем каждое второе число жирным.",
+        "Используй внутренние стили и классы. Имя класса пусть будет `bold-item`.",
+        "Не изменяй количество блоков."
+      ]
+    }
+  }
+}

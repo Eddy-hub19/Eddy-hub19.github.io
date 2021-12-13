@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 211,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "The paragraph id",
+      "description": [
+        "The text of the paragraph with the `#red-text` identifier should be red.",
+        "But someone misplaced the color.",
+        "Correct this mistake using internal stylesheet."
+      ]
+    },
+    "ru": {
+      "title": "Идентификатор параграфа",
+      "description": [
+        "Текст в параграфе с идентификатором `#red-text` должен быть красным.",
+        "Но кто-то неправильно указал цвет.",
+        "Исправь эту ошибку используя внутренние стили."
+      ]
+    }
+  }
+}

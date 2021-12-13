@@ -1,0 +1,32 @@
+{
+  "jsLectureId": 211,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fixing bugs",
+      "description": [
+        "There are 4 paragraphs in the `index.html` file.",
+        "Your colleague has added the styles, but forgot to use them.",
+        "",
+        "- The text of the second paragraph should be red.",
+        "- The text of the fourth paragraph should be bold.",
+        "- Add the correct ids to the second and fourth paragraphs."
+      ]
+    },
+    "ru": {
+      "title": "Исправляем баги",
+      "description": [
+        "В `index.html` файле есть 4 параграфа.",
+        "Твой коллега добавил стили, но забыл их использовать.",
+        "- Текст второго параграфа должен быть красным.",
+        "- Текст последнего параграфа должен быть жирным.",
+        "- Добавь правильные идентификаторы второму и четвертому параграфам."
+      ]
+    }
+  }
+}

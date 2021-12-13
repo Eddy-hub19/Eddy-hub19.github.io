@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 211,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Group styling",
+      "description": [
+        "Add a pink background to each block in `index.html`.",
+        "Use internal styles and classes, the name of the class can be anything you like.",
+        "Don't change the number of blocks."
+      ]
+    },
+    "ru": {
+      "title": "Групповой стиль",
+      "description": [
+        "Добавь каждому блоку в `index.html` задний фон розового цвета (pink).",
+        "Используй внутренние стили и классы, название класса может быть любым.",
+        "Не изменяй количество блоков."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "jsLectureId": 14,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Spam filter",
+      "description": [
+        "Implement the function checkSpam(text, spamKeywords).",
+        "",
+        "It should return `true` if `text` contains any of the `spamKeywords`, otherwise - `false`.",
+        "The comparison should be case insensitive."
+      ]
+    },
+    "ru": {
+      "title": "Спам фильтр",
+      "description": [
+        "Реализуй функцию checkSpam(text, spamKeywords).",
+        "",
+        "Она должна вернуть `true` если в `text` найдено хотя бы одно слово из `spamKeywords`, иначе - `false`.",
+        "Сравнение должно происходить без учета регистра (большие и маленькие буквы)."
+      ]
+    }
+  }
+}
