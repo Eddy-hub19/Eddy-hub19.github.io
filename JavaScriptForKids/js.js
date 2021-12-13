@@ -185,16 +185,16 @@
 
 // Long string — длинная строка
 
-var longString = "Эта длинная строка такая длинная";
-longString.slice(4, 18);
-("длинная строка");
+// var longString = "Эта длинная строка такая длинная";
+// longString.slice(4, 18);
+// ("длинная строка");
 
 // To upper case — в верхний регистр
 
 // Перевод строки в заглавный или строчный регистр
 
-"Эй, как дела?".toUpperCase();
-("ЭЙ, КАК ДЕЛА?");
+// "Эй, как дела?".toUpperCase();
+// ("ЭЙ, КАК ДЕЛА?");
 
 // .toUpperCase() возвращает новую строку, все буквы в которой — заглавные.
 
@@ -202,8 +202,8 @@ longString.slice(4, 18);
 
 // To lower case — в нижний регистр
 
-"эЙ, кАК деЛа?".toLowerCase();
-("эй, как дела?");
+// "эЙ, кАК деЛа?".toLowerCase();
+// ("эй, как дела?");
 
 // Silly string — буквально «глупая строка»
 
@@ -254,15 +254,38 @@ longString.slice(4, 18);
 // Had shower — принял душ
 // Has backback — есть рюкзак
 
-var hadShower = true;
-var hasBackpack = false;
-hadShower && hasBackpack;
-false
+// var hadShower = true;
+// var hasBackpack = false;
+// hadShower && hasBackpack;
+// false
 
 // Has apple — есть яблоко
 // Has orange — есть апельсин
 
-var hasApple = true;
-var hasOrange = false;
-hasApple || hasOrange;
-true
+// var hasApple = true;
+// var hasOrange = false;
+// hasApple || hasOrange;
+// true
+
+const status = document.querySelector(".status");
+
+let online = () => {
+  status.innerHTML = "Connection Avaliable";
+  status.style.backgroundColor = "#77D970";
+};
+
+let offline = () => {
+  status.innerHTML = "No Connection";
+  status.style.backgroundColor = "#E024";
+};
+
+// window.navigator.online - возврощает онлайн статус браузера
+
+if (window.navigator.online) {
+  online();
+} else {
+  offline();
+}
+
+window.addEventListener("online", online);
+window.addEventListener("offline", offline);
