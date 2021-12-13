@@ -1,9 +1,9 @@
 export const isKeyPresent = (obj, key) => {
   let result = Object.keys(obj);
-  console.log(result);
+  // console.log(result);
   for (let i = 0; i < result.length; i++) {
-    if (result[i] === key) {
-      console.log(result[i]);
+    if (key in obj === true) {
+      // console.log(result[i]);
       return true;
     } else {
       return false;

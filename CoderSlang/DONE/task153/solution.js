@@ -11,5 +11,7 @@ const user = {
   createdAt: '2020-01-01'
 }
 
+console.log(isKeyPresent(user, 'age'));
 console.log(isKeyPresent(user, 'name'));
 console.log(isKeyPresent(user, 'address'));
+console.log(isKeyPresent(user, 'isHappy'));
