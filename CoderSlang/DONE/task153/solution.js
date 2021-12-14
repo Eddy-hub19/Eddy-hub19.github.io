@@ -11,7 +11,7 @@ const user = {
   createdAt: '2020-01-01'
 }
 
-console.log(isKeyPresent(user, 'age'));
-console.log(isKeyPresent(user, 'name'));
-console.log(isKeyPresent(user, 'address'));
-console.log(isKeyPresent(user, 'isHappy'));
+console.log(isKeyPresent(user, 'age')); //true
+console.log(isKeyPresent(user, 'name')); //true
+console.log(isKeyPresent(user, 'address')); //false
+console.log(isKeyPresent(user, 'isHappy')); //true
