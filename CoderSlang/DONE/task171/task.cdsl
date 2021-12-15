@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 17,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Fix an arrow function",
+      "description": [
+        "Fix the function `sum` is `helper.js`.",
+        "When imported into `solution.js` it should return the sum of two numbers",
+        "Don't use curly braces and `return` statement"
+      ]
+    },
+    "ru": {
+      "title": "Исправь стрелочную функцию",
+      "description": [
+        "Исправь функцию `sum` в `helper.js`.",
+        "После импорта в `solution.js` она должна возвращать сумму двух чисел",
+        "Не используй фигурные скобки и `return`"
+      ]
+    }
+  }
+}

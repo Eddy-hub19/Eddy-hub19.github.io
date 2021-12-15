@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 17,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Fix test data",
+      "description": [
+        "Fix the function `getTestData` is `helper.js`.",
+        "It should return the object `{name: 'Jane', age: 22}` without using the `return` keyword."
+      ]
+    },
+    "ru": {
+      "title": "Исправь тестовые данные",
+      "description": [
+        "Исправь функцию `getTestData` в `helper.js`.",
+        "Она должна вернуть объект `{name: 'Jane', age: 22}` не используя ключевое слово `return`."
+      ]
+    }
+  }
+}

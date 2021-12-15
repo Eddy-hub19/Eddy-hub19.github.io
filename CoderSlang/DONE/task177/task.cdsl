@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 17,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Is of age?",
+      "description": [
+        "Implement the function `isOfAge` in `helper.js`.",
+        "It should accept the users age and return `false`, if it's less than 21, otherwise - `true`.",
+        "You can't use `if`, `switch` or ternary operator"
+      ]
+    },
+    "ru": {
+      "title": "Дорос уже?",
+      "description": [
+        "Реализуй функцию `isOfAge` в `helper.js`.",
+        "Она должна принять возраст пользователя и вернуть `false`, если он меньше 21, иначе - `true`.",
+        "Нельзя использовать `if`, `switch` или тернарный оператор"
+      ]
+    }
+  }
+}

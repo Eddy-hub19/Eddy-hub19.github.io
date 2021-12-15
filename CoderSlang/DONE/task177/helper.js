@@ -1,0 +1,1 @@
+export const isOfAge = (age) => age > 21 === true || age < 21 === false;
