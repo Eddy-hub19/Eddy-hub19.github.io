@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 212,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Spacing",
+      "description": [
+        "Add 40px spacing between words and 10px spacing between letters.",
+        "Use internal stylesheet and the tag selector to add styles."
+      ]
+    },
+    "ru": {
+      "title": "Интервал",
+      "description": [
+        "Добавь параграфу интервал между словами 40px, а между буквами - 10px.",
+        "Использую встроенные стили и селектор по имени тега."
+      ]
+    }
+  }
+}

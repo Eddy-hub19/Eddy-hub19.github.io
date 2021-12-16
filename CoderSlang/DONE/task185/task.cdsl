@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 18,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Check its fields",
+      "description": [
+        "Implement the function `isKeyPresent` which checks if the object has a certain field"
+      ]
+    },
+    "ru": {
+      "title": "Проверь его поля",
+      "description": [
+        "Реализуй функцию `isKeyPresent`, которая проверяет есть ли у объекта определенное поле."
+      ]
+    }
+  }
+}

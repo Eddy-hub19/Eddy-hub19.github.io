@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 18,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Print array elements",
+      "description": [
+        "The function `printArrayElements` should use console.log to print out all the array elements to the screen.",
+        "But it doesn't work as expected. For some reason only the indices and not the elements are printed.",
+        "Change 2 characters in the code to fix the issue."
+      ]
+    },
+    "ru": {
+      "title": "Печать элементов массива",
+      "description": [
+        "Функция `printArrayElements` должна вывести на экран все элементы массива с помощью `console.log`.",
+        "К сожалению, она работает не так, как ожидается. Выводятся только индексы, а не сами элементы.",
+        "Исправь два символа в коде, чтобы исправить проблему."
+      ]
+    }
+  }
+}

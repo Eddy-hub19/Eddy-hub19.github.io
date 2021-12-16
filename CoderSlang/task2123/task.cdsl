@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 212,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Text decoration",
+      "description": [
+        "Add some decoration to the highlighted word in the paragraph.",
+        "To do this, use the id 'with-decoration' for `<span>` tag.",
+        "",
+        "A wavy red line should be drawn over the highlighted word.",
+        "Use external stylesheet. Use only one CSS property."
+      ]
+    },
+    "ru": {
+      "title": "Украшение текста",
+      "description": [
+        "Добавь немного украшение выделенному в параграфе слову.",
+        "Для этого используй идентификатор 'with-decoration' для тега `<span>`.",
+        "",
+        "Над выделенным словом словом должна быть нарисована красная волнистая линия.",
+        "Используй встроенные стили. Используй только одно CSS свойство."
+      ]
+    }
+  }
+}

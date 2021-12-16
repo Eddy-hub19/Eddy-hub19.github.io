@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 18,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Are objects identical?",
+      "description": [
+        "Implement the function `isIdentical` in `helper.js`",
+        "",
+        "It should take two objects and return a boolean value that tells if the fields of the objects are the same.",
+        "",
+        "Objects will only have plain fields (strings, numbers or booleans)"
+      ]
+    },
+    "ru": {
+      "title": "Одинаковы ли объекты?",
+      "description": [
+        "Реализуй функцию `isIdentical` в `helper.js`",
+        "",
+        "Она должна принять два объекта и вернуть логическое значение, которое скажет совпадают ли значения всех полей в объектах.",
+        "",
+        "Полями объектов будут только примитивные значения (строки, числа или true/false)"
+      ]
+    }
+  }
+}

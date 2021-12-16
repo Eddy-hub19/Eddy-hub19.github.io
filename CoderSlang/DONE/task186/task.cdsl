@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 18,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Get object keys",
+      "description": [
+        "Implement the function `getObjectKeys`.",
+        "",
+        "It should return an array of strings that represent all keys of the object"
+      ]
+    },
+    "ru": {
+      "title": "Верни поля объекта",
+      "description": [
+        "Реализуй функцию `getObjectKeys`, которая вернет массив строк, описывающий все ключи объекта."
+      ]
+    }
+  }
+}

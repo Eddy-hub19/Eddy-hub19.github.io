@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 18,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Early return",
+      "description": [
+        "The function `find` return the index of the element in the array or -1 if it's not found.",
+        "The only issue is that it's suboptimal.",
+        "Improve the code and return the index of the element as soon as it's found in the array."
+      ]
+    },
+    "ru": {
+      "title": "Ранний возврат",
+      "description": [
+        "Функция `find` возвращает индекс элемента в массиве или -1, если он не найден.",
+        "Единственная проблема в том, что мы вынуждены просматривать весь массив даже после того как нашли нужный элемент.",
+        "Улучши код и верни индекс элемента как только он будет найден в массиве."
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 212,
+  "reward": 1,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Indent",
+      "description": [
+        "Indent the first line for each paragraph.",
+        "- For the first paragraph set indent to 10px, use id paragraph-1.",
+        "- For the second paragraph set indent to 20px, use id paragraph-2.",
+        "- For the third paragraph set indent to 30px, use id paragraph-3.",
+        "Use internal styles."
+      ]
+    },
+    "ru": {
+      "title": "Отступ",
+      "description": [
+        "Каждому из параграфов добавь отступ первой строки.",
+        "- Первому параграфу 10px, используй id paragraph-1.",
+        "- Второму параграфу 20px, используй id paragraph-2.",
+        "- Третьему параграфу 30px, используй id paragraph-3.",
+        "Используй встроенные стили."
+      ]
+    }
+  }
+}

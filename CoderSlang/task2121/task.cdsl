@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 212,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Color palette",
+      "description": [
+        "There are three paragraphs in the `index.html` file.",
+        "Let's add color to each of them, use the internal stylesheet.",
+        "- The text of the first paragraph should be red.",
+        "- The text of the second paragraph must be specified using the HEX code - 808000.",
+        "- The text of the third paragraph must be specified with rgb code - (0, 128, 128)."
+      ]
+    },
+    "ru": {
+      "title": "Палитра цветов",
+      "description": [
+        "В файле `index.html` написано три параграфа.",
+        "Давай каждому из них добавим цвет, используй внутренние стили.",
+        "- Текст первого параграфа должен быть красным.",
+        "- Текст второго параграфа должен быть задан с помощью HEX кода - 808000.",
+        "- Текст третьего параграфа должен быть задан с помощью rgb кода - (0, 128, 128)."
+      ]
+    }
+  }
+}

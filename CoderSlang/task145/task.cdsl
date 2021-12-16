@@ -1,0 +1,36 @@
+{
+  "jsLectureId": 14,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Shorten by words",
+      "description": [
+        "Implement the function `shortenByWords(s, n)`.",
+        "",
+        "It should accept a string, and a number.",
+        "It should return the new string that consists of maximum `n` characters of the original string.",
+        "If you have to cut off some chars, place `...` in the end.",
+        "",
+        "You can't cut in the middle of the word, so the result should include only the full words.",
+        "So, shortenByWords('this string is too long to fit our ad', 21) returns `this string is too...`"
+      ]
+    },
+    "ru": {
+      "title": "Обрезание c учетом слов",
+      "description": [
+        "Реализуй функцию shortenByWords(s, n).",
+        "",
+        "Она должна принять строку и число.",
+        "Вернуть нужно новую строку, состоящую максимум из `n` символов оригинальной строки.",
+        "Если тебе нужно обрезать несколько символов, добавь `...` в конце.",
+        "",
+        "Нельзя обрезать строку посередине слова, поэтому включай в результат только полные слова",
+        "Так, shortenByWords('this string is too long to fit our ad', 21) вернет `this string is too...`"
+      ]
+    }
+  }
+}

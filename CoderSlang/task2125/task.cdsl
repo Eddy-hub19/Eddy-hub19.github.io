@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 212,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Case",
+      "description": [
+        "In the first paragraph, all text should be displayed in uppercase.",
+        "In the second paragraph, all text should be displayed in lowercase.",
+        "In the third paragraph, each word should be capitalized.",
+        "Use inline styles.",
+        "Don't change the content of the paragraphs, all the changed should be made with CSS."
+      ]
+    },
+    "ru": {
+      "title": "Регистр",
+      "description": [
+        "В первом параграфе весь текст должен отображаться в верхнем регистре.",
+        "Во втором параграфе весь текст должен отображаться в нижнем регистре.",
+        "В третьем параграфе каждое слово должно отображаться с заглавной буквы.",
+        "Используй строчные стили.",
+        "Не изменяй содержимое страницы, все улучшения должны быть сделаны с помощью CSS."
+      ]
+    }
+  }
+}

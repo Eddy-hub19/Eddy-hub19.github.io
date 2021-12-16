@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 212,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Alignment",
+      "description": [
+        "The first paragraph should be aligned to the left.",
+        "The second paragraph should be aligned to the center.",
+        "The third paragraph should be aligned to the right.",
+        "Use internal stylesheet to add styles."
+      ]
+    },
+    "ru": {
+      "title": "Выравнивание",
+      "description": [
+        "Первый параграф должен быть выровнен по левому краю.",
+        "Второй параграф должен быть выровнен по середине.",
+        "Третий параграф должен быть выровнен по правому краю.",
+        "Для добавления стилей используй встроенные стили."
+      ]
+    }
+  }
+}
