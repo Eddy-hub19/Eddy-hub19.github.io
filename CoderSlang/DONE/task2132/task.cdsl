@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 213,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Style",
+      "description": [
+        "Your colleague highlighted the word in the text in bold, but forgot to add the italic styling.",
+        "Add the appropriate style for the `<span>` tag"
+
+      ]
+    },
+    "ru": {
+      "title": "Стиль",
+      "description": [
+        "Твой коллега выделил слово в тексте жирным, а нужен был еще и курсив.",
+        "Добавь нужный стиль для тега `<span>`"
+      ]
+    }
+  }
+}

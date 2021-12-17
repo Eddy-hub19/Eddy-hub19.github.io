@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 213,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Font family",
+      "description": [
+        "Add 'Times New Roman' font to every element in the `index.html` file.",
+        "The font in the `<h1>` heading should be italic."
+      ]
+    },
+    "ru": {
+      "title": "Выбор шрифта",
+      "description": [
+        "Добавь каждому элементу в файле `index.html` шрифт 'Times New Roman'.",
+        "Шрифт в заголовке `<h1>` должен выводиться курсивом."
+      ]
+    }
+  }
+}

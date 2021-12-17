@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 213,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Font size",
+      "description": [
+        "Give the paragraph a font size of 18px",
+        "The font size of words highlighted with the `<span>` tag should be 3px larger and the weight should be 600."
+      ]
+    },
+    "ru": {
+      "title": "Размер шрифта",
+      "description": [
+        "Укажи параграфу размер шрифта 18px",
+        "Размер шрифта слов, выделенных с помощью тега `<span>`, должен быть на 3px больше, а насыщенность должна быть 600."
+      ]
+    }
+  }
+}

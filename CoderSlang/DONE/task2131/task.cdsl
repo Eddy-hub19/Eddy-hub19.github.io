@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 213,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Weight",
+      "description": [
+        "In the block about CSS, one word is highlighted using the `<span>` tag.",
+        "We need to add weight to this fragment with a value of 800.",
+        "Use inline styles."
+      ]
+    },
+    "ru": {
+      "title": "Насыщенность",
+      "description": [
+        "В блоке, посвященному CSS, с помощью тега `<span>` выделено одно слово.",
+        "Нужно этому фрагменту добавить насыщенности со значением 800.",
+        "Используй строчные стили."
+      ]
+    }
+  }
+}

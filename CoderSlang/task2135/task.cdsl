@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 213,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fix font link",
+      "description": [
+        "Your colleague has already connected the font, but something doesn't look right.",
+        "Fix the font link to make it work, and set the fallback 'serif' family for all `<p>` tags."
+      ]
+    },
+    "ru": {
+      "title": "Исправь подключение шрифта",
+      "description": [
+        "Твой коллега уже подключил шрифт, но что-то все выглядит не так, как надо.",
+        "Исправь ссылку на шрифт, что бы все заработало, и добавь параграфам в качестве запасного шрифта семейство 'serif'."
+      ]
+    }
+  }
+}
