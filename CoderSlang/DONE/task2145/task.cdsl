@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 214,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Background image #3",
+      "description": [
+        "You should add the background image to the `<body>` tag.",
+        "Use the image `html.jpg`.",
+        "The background image must not be repeated and should be centered with dimensions: 40% width and 45% height."
+      ]
+    },
+    "ru": {
+      "title": "Фоновое изображение #3",
+      "description": [
+        "Тегу `<body>` необходимо добавить фоновое изображение.",
+        "Для этого используй изображение `html.jpg`.",
+        "Фоновое изображение не должно повторяться и должно быть расположено по центру с размерами: 40% ширины и 45% высоты."
+      ]
+    }
+  }
+}

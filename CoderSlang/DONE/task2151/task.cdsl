@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 215,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Border change",
+      "description": [
+        "The paragraph has a border, let's change it a bit.",
+        "- Change the border style from `solid` to `double`.",
+        "- Set the border color to `green`",
+        "- Use internal styles"
+      ]
+    },
+    "ru": {
+      "title": "Изменение границы",
+      "description": [
+        "У параграфа задана граница, давай немного ее изменим.",
+        "- Измени стиль границы с цельной на двойную.",
+        "- Цвет границы задай зеленый (green)",
+        "- Используй встроенные стили"
+      ]
+    }
+  }
+}

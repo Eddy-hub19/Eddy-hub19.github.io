@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 217,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Nav bar",
+      "description": [
+        "Today we need to add styles for the site navigation.",
+        "The  `.nav` block should be locked at the very top of the screen.",
+        "Its height should be 50px and its width should be the entire browser window.",
+        "Every `.nav-item` element must have 25px spacing. Use the right margin for this."
+      ]
+    },
+    "ru": {
+      "title": "Навигация",
+      "description": [
+        "Сегодня надо добавить стили для навигации сайта.",
+        "Блок `.nav` должен быть зафиксирован в самом вверху экрана.",
+        "Его высота должна быть 50px, а ширина - все окно браузера.",
+        "Между элементами `.nav-item должно быть расстояние 25px. Используй правое поле для этого."
+      ]
+    }
+  }
+}

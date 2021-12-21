@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 216,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Default values",
+      "description": [
+        "Change the default margin and padding values for the `<ul>` list.",
+        "The font size of the list is 18px, the vertical margins should be the half the font-size (use `em`).",
+        "Left padding should be 10px.",
+        "The distance between each list item should be 10px. Use the bottom margin for this."
+      ]
+    },
+    "ru": {
+      "title": "Значения по умолчанию",
+      "description": [
+        "Измени значения полей и отступов по умолчанию для списка `<ul>`.",
+        "Размер шрифта списка пусть будет 18px, вертикальные поля - половина шрифта (используй `em`).",
+        "Отступ слева должен быть 10px.",
+        "Расстояние между каждым элементом списка должно быть 10px. Для этого используй верхнее поле."
+      ]
+    }
+  }
+}

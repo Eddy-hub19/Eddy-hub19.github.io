@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 217,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Relative size",
+      "description": [
+        "Give your paragraphs a `20px` font size.",
+        "The paragraph height must be 2.5 times larger then the font size.",
+        "Use relative units to indicate height."
+      ]
+    },
+    "ru": {
+      "title": "Относительный размер",
+      "description": [
+        "Задай параграфам размер шрифта `20px`.",
+        "Высота параграфа должна быть в 2.5 раза больше размера шрифта.",
+        "Для указания высоты используй относительные единицы."
+      ]
+    }
+  }
+}

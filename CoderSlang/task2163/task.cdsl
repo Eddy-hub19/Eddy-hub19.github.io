@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 216,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Padding",
+      "description": [
+        "Add padding to each paragraph.",
+        "Top and bottom padding should be 20px.",
+        "The left and right sides should be 10px."
+      ]
+    },
+    "ru": {
+      "title": "Отступы",
+      "description": [
+        "Добавь каждому параграфу отступы.",
+        "Вверху и внизу отступы должны быть 20px.",
+        "Слева и справа отступы должны быть 10px."
+      ]
+    }
+  }
+}

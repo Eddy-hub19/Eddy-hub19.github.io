@@ -1,0 +1,10 @@
+@font-face {
+    font-family: OpenSans, serif;
+    font-weight: 600;
+    font-style: italic;
+    src: url("./fonts/OpenSans-SemiBoldItalic.ttf") format('truetype');
+}
+
+p {
+    font-family: OpenSans, serif;
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 215,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Top and bottom borders.",
+      "description": [
+        "Add a solid border to the paragraph.",
+        "- The top should be 2px, the bottom should be 4px, both should be green.",
+        "- The left and right borders should be 0px wide and transparent.",
+        "You can only use these properties: `border-width`, `border-color`, `border-style`"
+      ]
+    },
+    "ru": {
+      "title": "Верхняя и нижняя границы.",
+      "description": [
+        "Добавь параграфу цельную границу.",
+        "- Толщина верхней должна быть 2px, нижней - 4px, обе должны быть зелеными.",
+        "- Левая и правая границы должны быть прозрачными, толщина - 0px.",
+        "Можно использовать только свойства `border-width`, `border-color`, `border-style`"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 214,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Background image #2",
+      "description": [
+        "The `<body>` tag needs to add a background image.",
+        "For this use the image `html.jpg`.",
+        "The background-size property should be set to `contain`.",
+        "The background image should not be repeated if it doesn't fit the screen."
+      ]
+    },
+    "ru": {
+      "title": "Фоновое изображение #2",
+      "description": [
+        "Тегу `<body>` необходимо добавить фоновое изображение.",
+        "Для этого используй изображение `html.jpg`.",
+        "Свойство `background-size` должно быть установлено как `contain`.",
+        "Фоновое изображение не должно повторяться, если оно не умещается на экране"
+      ]
+    }
+  }
+}

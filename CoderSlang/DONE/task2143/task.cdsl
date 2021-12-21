@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 214,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Sized background image",
+      "description": [
+        "You need to add a background to the `<body>` tag.",
+        "We'll use the image `https://images.unsplash.com/photo-1610128114197-485d933885c5` for this.",
+        "This time lets make this image fit the screen.",
+        "Add `background-size` property with `cover` as value"
+      ]
+    },
+    "ru": {
+      "title": "Размер фонового изображения",
+      "description": [
+        "Нужно добавить тегу `<body>` задний фон.",
+        "Для этого будем использовать изображение `https://images.unsplash.com/photo-1610128114197-485d933885c5`.",
+        "На этот раз давайте сделаем это изображение размером с экран.",
+        "Добавить свойство `background-size` со значением `cover` для этого"
+      ]
+    }
+  }
+}

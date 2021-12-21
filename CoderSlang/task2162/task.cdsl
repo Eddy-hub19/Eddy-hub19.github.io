@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 216,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Separate margins",
+      "description": [
+        "Add top and left margins to the `<h2>` heading.",
+        "The top margin should be 15px. The left margin should be 20px."
+      ]
+    },
+    "ru": {
+      "title": "Отдельные поля",
+      "description": [
+        "Добавь заголовку `<h2>` поля сверху и слева.",
+        "Верхнее поле должно быть 15px. Левое поле - 20px."
+      ]
+    }
+  }
+}

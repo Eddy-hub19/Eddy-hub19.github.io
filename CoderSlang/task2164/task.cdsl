@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 216,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Negative fields",
+      "description": [
+        "There are three `<div>` blocks in the `index.html` file.",
+        "The 2nd and the 3rd paragraphs need to be 5px raised to the previous."
+      ]
+    },
+    "ru": {
+      "title": "Отрицательные поля",
+      "description": [
+        "В `index.html` есть три `<div>` блока.",
+        "2й и 3й параграфы нужно поднять к предыдущему на 5px."
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 215,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Left border",
+      "description": [
+        "Add a left border to the paragraph.",
+        "Use only one CSS property for this.",
+        "Border must be solid, black, 2px wide."
+      ]
+    },
+    "ru": {
+      "title": "Левая граница",
+      "description": [
+        "Добавь границу параграфу только слева.",
+        "Для этого используй только одно CSS свойство.",
+        "Граница должна быть цельной, черной, шириной 2px."
+      ]
+    }
+  }
+}

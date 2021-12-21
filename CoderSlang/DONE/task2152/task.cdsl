@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 215,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Two elements - two borders",
+      "description": [
+        "Add a 2px red double border to the `<div>` element.",
+        "Add a 1px green dashed border to the `<p>` element.",
+        "Do not change the number of HTML elements."
+      ]
+    },
+    "ru": {
+      "title": "Два элемента - две границы",
+      "description": [
+        "Добавь элементу `<div>` двойную границу толщиной `2px` красного цвета.",
+        "Добавь элементу `<p>` штрих-пунктирная границу толщиной `1px` зеленого цвета.",
+        "Не изменяй количество HTML элементов."
+      ]
+    }
+  }
+}

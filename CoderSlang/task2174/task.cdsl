@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 217,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fix position",
+      "description": [
+        "Your colleague added numbering for two blocks with class `block`.",
+        "Numbers should appear in the lower right corner of each block.",
+        "But they don't appear there, you need to fix this.",
+        "Set the desired values ​​for the position, right and bottom properties for elements with class `block-number`."
+      ]
+    },
+    "ru": {
+      "title": "Исправь позиционирование",
+      "description": [
+        "Твой коллега добавил для двух блоков нумерацию.",
+        "Номера должны появится в нижнем правом углу каждого блока.",
+        "Но они там не появляются, нужно внести правки.",
+        "Задай нужное значения для свойств position, right и bottom для элементов с классом `block-number`."
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 214,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Background color",
+      "description": [
+        "Add background color to each paragraph.",
+        "- First paragraph should have `#E9A87C` background color.",
+        "- Second paragraph should have `#C38D9E` background color.",
+        "- Third paragraph should have `rgb(64,179,161)` background color."
+      ]
+    },
+    "ru": {
+      "title": "Цвет заднего фона",
+      "description": [
+        "Добавь цвет фона к каждому абзацу.",
+        "- Цвет фона первого абзаца должен быть `#E9A87C`.",
+        "- Цвет фона второго абзаца должен быть `#C38D9E`.",
+        "- Цвет фона третьего абзаца должен быть `rgb(64,179,161)`."
+      ]
+    }
+  }
+}

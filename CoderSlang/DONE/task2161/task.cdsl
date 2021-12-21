@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 216,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Margins",
+      "description": [
+        "Add 10px margins to each` <div> `block.",
+        "Use only one property with one value."
+      ]
+    },
+    "ru": {
+      "title": "Поля",
+      "description": [
+        "Добавь каждому блоку `<div>` поля размером 10px.",
+        "Используй только одно свойство с одним значением."
+      ]
+    }
+  }
+}

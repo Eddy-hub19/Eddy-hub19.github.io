@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 214,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Background image",
+      "description": [
+        "You need to add a background to the `<body>` tag.",
+        "We'll use the image `https://images.unsplash.com/photo-1610128114197-485d933885c5` for this"
+      ]
+    },
+    "ru": {
+      "title": "Фоновое изображение",
+      "description": [
+        "Нужно добавить тегу `<body>` задний фон.",
+        "Для этого будем использовать изображение `https://images.unsplash.com/photo-1610128114197-485d933885c5`"
+      ]
+    }
+  }
+}

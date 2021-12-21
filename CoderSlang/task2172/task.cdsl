@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 217,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Relative size #2",
+      "description": [
+        "The height of the heading `<h2>` is given in relative units of `rem`.",
+        "Without changing the height of the heading, make it so that its height is `50px`."
+      ]
+    },
+    "ru": {
+      "title": "Относительный размер #2",
+      "description": [
+        "Высота заголовка `<h2>` задана в относительных единицах `rem`.",
+        "Не изменяя значения высоты заголовка, сделай так, что бы его высота составляла `50px`."
+      ]
+    }
+  }
+}

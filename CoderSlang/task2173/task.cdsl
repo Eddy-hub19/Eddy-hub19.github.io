@@ -1,0 +1,23 @@
+{
+  "jsLectureId": 217,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Move me",
+      "description": [
+        "Move the `<h2>` heading to make sure it's located 45px away from left side of the page."
+      ]
+    },
+    "ru": {
+      "title": "Move me",
+      "description": [
+        "Перемести заголовок `<h2>` на 45 пикселей от левого края"
+      ]
+    }
+  }
+}

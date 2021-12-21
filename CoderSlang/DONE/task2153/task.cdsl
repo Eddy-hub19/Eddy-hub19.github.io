@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 215,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "4 sides - 4 colors",
+      "description": [
+        "Let's change the border color.",
+        "- The top border should be yellow",
+        "- The bottom border should be red",
+        "- The left border should turn violet.",
+        "- The right one should remain green.",
+        "Do not change the number of paragraphs, or the width and style of the border."
+      ]
+    },
+    "ru": {
+      "title": "4 стороны - 4 цвета",
+      "description": [
+        "Давай изменим цвет границ.",
+        "- Верхняя граница должна быть желтой (yellow)",
+        "- Нижняя - красной (red)",
+        "- Левая - фиолетовой (violet)",
+        "- Правая должна остаться зеленой",
+        "Не изменяй количество параграфов, а также ширину и стиль границы."
+      ]
+    }
+  }
+}
