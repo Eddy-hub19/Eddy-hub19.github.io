@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 221,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Page layout",
+      "description": [
+        "With Grid, you can easily create a page structure. That's what we'll do.",
+        "Let's start by making the `.page-layout` element a grid container. ",
+        "Our page should have two columns: 50px and auto, one for navigation and one for page content.",
+        "There should be three lines: first 50px, second auto, third 50px.",
+        "The `.page-header` and `.page-footer` elements must completely occupy the first and second lines (two columns).",
+        "The `.page-sidebar` and `.page-content` elements must occupy the first and second columns of the second line, respectively."
+      ]
+    },
+    "ru": {
+      "title": "Структура страницы",
+      "description": [
+        "С помощью Grid можно легко создать структуру страницы. Этим и займемся.",
+        "Начнем с того, что элемент `.page-layout` станет grid-контейнером.",
+        "У нашей страницы должно быть две колонки: 50px и auto, одна из которых будет для навигации, вторая для контента страницы.",
+        "Строчек должно быть три: первая 50px, вторая auto, третья - 50px.",
+        "Элементы `.page-header` и `.page-footer` должны полностью занимать первую и вторую строку (две колонки).",
+        "Элементы `.page-sidebar` и `.page-content` должны занимать первую и вторую колонку второй строчки соответственно."
+      ]
+    }
+  }
+}

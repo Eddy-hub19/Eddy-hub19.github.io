@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "chalk": "^4.1.2",
+    "express": "^4.17.2",
     "jquery": "^3.6.0",
     "readline-sync": "^1.4.10",
     "terminal-kit": "^2.3.0"

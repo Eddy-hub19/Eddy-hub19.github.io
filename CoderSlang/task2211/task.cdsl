@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 221,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Grid item position",
+      "description": [
+        "The document already has a grid container with one single item.",
+        "But this element is stretched to full screen.",
+        "Make the item sit in the middle of the grid container, not stretch.",
+        "Use the same properties for both vertical and horizontal."
+      ]
+    },
+    "ru": {
+      "title": "Позиция grid элемента",
+      "description": [
+        "В документе уже есть grid-контейнер с одним единственным элементом.",
+        "Но этот элемент растянуть на весь экран.",
+        "Сделай так, что бы элемент располагался посередине grid контейнера, а не растягивался.",
+        "Используй одно свойства и для вертикального расположения, и для горизонтального."
+      ]
+    }
+  }
+}

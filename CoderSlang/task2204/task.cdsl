@@ -1,0 +1,32 @@
+{
+  "jsLectureId": 220,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title":
+      "Fix order",
+      "description": [
+        "The numbers are in the wrong order, and the items do not fit on one line yet.",
+        "Make it so that the elements are spread over several lines.",
+        "Each line must contain the numbers in the correct order.",
+        "Cells must be aligned to the left (hint - if the order of the elements in the row is reversed, the value of the justify-content property also changes direction).",
+        "The number in each cell should be in the middle (use flexbox for this)."
+      ]
+    },
+    "ru": {
+      "title": "Поправить порядок",
+      "description": [
+        "Цифры идут в неправильном порядке, а элементы еще и не помещаются в одну строку.",
+        "Сделай так, чтобы элементы располагались на несколько строчек.",
+        "В каждой строке цифры должны идти в правильном порядке.",
+        "Ячейки должны быть выровнены по левому краю (подсказка - при обратном порядке элементов в строке значения свойства justify-content тоже меняет свое направление).",
+        "Цифра в каждой ячейке должны быть по середине (используй для этого flexbox)."
+      ]
+    }
+  }
+}

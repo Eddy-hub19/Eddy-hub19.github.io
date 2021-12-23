@@ -1,0 +1,35 @@
+{
+  "jsLectureId": 221,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "December",
+      "description": [
+        "We need to make a calendar for December. The markup itself is already done. Styles remain.",
+        "An item with `grid-container` class should become a grid container.",
+        "The calendar should have 7 columns, the width of each should be determined automatically.",
+        "The height of each line that is added must be 4vh.",
+        "There must be a distance of 1vw between the cells of the calendar.",
+        "It only remains to indicate when the month begins. Let it be Wednesday.",
+        "Since the calendar has been counted since Sunday, the `.month-start` element beginning must be specified in column 4."
+      ]
+    },
+    "ru": {
+      "title": "Декабрь",
+      "description": [
+        "Надо сделать календарь на декабрь. Сама разметка уже готова. Остались стили.",
+        "Элемент с классом `grid-container` должен стать grid контейнером.",
+        "У календаря должно быть 7 колонок, ширина каждой должно определятся автоматически.",
+        "Высота каждой строчки, которая добавляется, должна быть 4vh.",
+        "Между клетками календаря должно быть расстояние 1vw.",
+        "Остается только указать, когда месяц начинается. Пусть это будет среда.",
+        "Поскольку счет в календаре ведется с воскресенья, нужно элементу `.month-start` указать колонку начала 4."
+      ]
+    }
+  }
+}

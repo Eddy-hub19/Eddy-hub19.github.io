@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 103,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "Server greeting",
+      "description": [
+        "Figure out how the program works and change it to make sure that if we open `localhost:8080/hello` in the browser, we see the message 'Hello, Coderslang!'.",
+        "",
+        "Don't forget to install node modules before running the server!"
+      ]
+    },
+    "ru": {
+      "title": "Серверное приветствие",
+      "description": [
+        "Разберись как работает программа и сделай так, чтобы при переходе на `localhost:8080/hello` на экран было выведено сообщение 'Hello, Coderslang!'.",
+        "",
+        "Не забудь установить `npm` модули прежде чем запускать сервер!"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "jsLectureId": 220,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Duration",
+      "description": [
+
+        "Let's try displaying the duration with flex.",
+        "Make the block with class `container` a flex container.",
+        "Allocate free space among all flex items.",
+        "The first should be given only 1 unit, the second twice as much, the third 6",
+        "Elements must be vertically aligned with the baseline"
+      ]
+    },
+    "ru": {
+      "title": "Длительность",
+      "description": [
+        "Давай попробуем отобразить длительность с помощью flex.",
+        "Сделай блок с классом `container` flex-контейнером.",
+        "Среди всех flex элементов надо распределить свободное пространство.",
+        "Первому надо отдать только 1 единицу, второму в два раза больше, третьему 6",
+        "Вертикально элементы должны быть выравнены по базовой линии"
+      ]
+    }
+  }
+}

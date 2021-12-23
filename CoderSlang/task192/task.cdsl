@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 19,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Safe call",
+      "description": [
+        "Add a `try/catch` block to the function `safeCall`.",
+        "It should still call `dangerousFunction`, but it should not let the Error move any further."
+      ]
+    },
+    "ru": {
+      "title": "Безопасный вызов",
+      "description": [
+        "Добавь блок `try/catch` в функцию `safeCall`.",
+        "Она должна вызывать `dangerousFunction`, но не должна позволить ошибке пройти дальше."
+      ]
+    }
+  }
+}

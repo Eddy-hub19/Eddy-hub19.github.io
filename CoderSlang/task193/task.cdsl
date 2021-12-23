@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 19,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Bake a cake",
+      "description": [
+        "Improve the function `bakeMyCake`.",
+        "It should throw an error if the ingredients are missing."
+      ]
+    },
+    "ru": {
+      "title": "Печём пирог",
+      "description": [
+        "Улучши функцию `bakeMyCake`.",
+        "Она должна бросить ошибку, если не хватает ингредиентов."
+      ]
+    }
+  }
+}

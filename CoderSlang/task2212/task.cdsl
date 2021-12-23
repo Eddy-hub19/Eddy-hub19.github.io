@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 221,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Grid",
+      "description": [
+        "An item with class` grid-container` should become a grid container. ",
+        "All elements inside it should fit in three columns and four lines.",
+        "Specify both columns and lines of automatic width and height. Use repeat()."
+      ]
+    },
+    "ru": {
+      "title": "Сетка",
+      "description": [
+        "Элемент с классом `grid-container` должен стать grid контейнером.",
+        "Все элементы внутри него должны расположится в три колонки и четыре строчки.",
+        "Укажи и колонки, и строчки автоматической ширины и высоты. Используй конструкцию repeat()."
+      ]
+    }
+  }
+}

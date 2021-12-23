@@ -1,0 +1,55 @@
+{
+  "jsLectureId": 221,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Start and end",
+      "description": [
+        "Let's work on the elements placement."
+      ],
+      "stages": {
+        "1": [
+          "The `.grid-container` block needs to be made a grid container.",
+          "The grid must have three columns.",
+          "The first is `20vw` wide, the names of the lines are `start` and `col-1-end`.",
+          "The second with automatic width, the names of the lines are `col-2-start` and `col-2-end`.",
+          "The third is `20vw` wide, the names of the lines are `col-3-start` and `end`.",
+          "Another Grid should consist of 4 lines.",
+          "The name of the dividing lines must be `line1`, `line2`, `line3`, `line4`, `line5`.",
+          "The height of the second and third lines should be `20vh`, the first and last `auto`."
+        ],
+        "2": [
+          "The `.grid-item` must start at the second line (`line2`) and must go through two lines.",
+          "It must also start at the vertical line `col-2-start` and end at the line `col-2-end`"
+        ]
+      }
+    },
+    "ru": {
+      "title": "Начало и конец",
+      "description": [
+        "Поработаем над размещением элементов."
+      ],
+      "stages": {
+        "1": [
+          "Блок `.grid-container` надо сделать grid контейнером.",
+          "Grid должен состоять из трех колонок.",
+          "Первая шириной `20vw`, название линий - `start` и `col-1-end`.",
+          "Вторая с автоматической шириной, название линий - `col-2-start` и `col-2-end`.",
+          "Третья шириной `20vw`, название линий - `col-3-start` и `end`.",
+          "Еще Grid должен состоять из 4х строчек.",
+          "Названия разделительных линий должны быть `line1`, `line2`, `line3`, `line4`, `line5`.",
+          "Высота второй и третей строк должна быть `20vh`, первой и последней `auto`."
+        ],
+        "2": [
+          "Элемент `.grid-item` должен начинаться со второй линии (`line2`) и должен проходить через две строчки.",
+          "Также он должен начинаться с вертикальной линии `col-2-start` и заканчиваться на линии `col-2-end`"
+        ]
+      }
+    }
+  }
+}

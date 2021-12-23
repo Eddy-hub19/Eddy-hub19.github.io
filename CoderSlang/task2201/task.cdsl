@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 220,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Flex-контейнер",
+      "description": [
+        "We need to add a flex module to the page.",
+        "A block with class `container` should become a flex container.",
+        "Elements must be distributed with the same distance between them."
+      ]
+    },
+    "ru": {
+      "title": "Flex-контейнер",
+      "description": [
+        "Нужно добавить flex модуль на страницу.",
+        "Блок с классом `container` должен стать flex-контейнером.",
+        "Элементы должны распределяться с одинаковым расстоянием между ними."
+      ]
+    }
+  }
+}

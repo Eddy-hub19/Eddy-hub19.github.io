@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 19,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Calling a cab",
+      "description": [
+        "Improve the function `getCar`.",
+        "It should throw an error if the `numberOfPassengers` is greater than 4."
+      ]
+    },
+    "ru": {
+      "title": "Вызываем такси",
+      "description": [
+        "Улучши функцию `getCar`.",
+        "Она должна бросить ошибку, если параметр `numberOfPassengers` больше четырех."
+      ]
+    }
+  }
+}

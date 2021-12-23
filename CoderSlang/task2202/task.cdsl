@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 220,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Aligning elements",
+      "description": [
+        "Let's align the elements a bit.",
+        "A block with class `container` must be a flex container. ",
+        "Items inside a flex container should be vertically centered.",
+        "Items must be horizontally aligned with the same spacing between them and the edges of the container."
+      ]
+    },
+    "ru": {
+      "title": "Выравнивание элементов",
+      "description": [
+        "Давай немного выровняем расположение элементов.",
+        "Блок с классом `container` должен быть flex-контейнером.",
+        "Элементы внутри flex-контейнера по вертикали должны быть по середине.",
+        "По горизонтали элементы должны быть выровнены с одинаковым расстояние между ними и краями контейнера."
+      ]
+    }
+  }
+}

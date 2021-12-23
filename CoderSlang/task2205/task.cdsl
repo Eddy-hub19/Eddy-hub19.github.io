@@ -1,0 +1,69 @@
+{
+  "jsLectureId": 220,
+  "reward": 5,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Sidebar navigation.",
+      "description": [
+        "It's easy to do side navigation with flexbox."
+      ],
+      "final": [
+        "Great, now you know how to do side navigation and have repeated a lot of CSS properties."
+      ],
+      "stages": {
+        "1": [
+          "It is enough to make a block with the `nav` class a flex container and distribute the elements in it with a bell. ",
+          "Another thing to add is a width, say `150px`.",
+          "For the body element, give a margin of `0px`."
+        ],
+        "2": [
+          "Let's decorate our navigation a little.",
+          "Set the background of the `.nav` unit to the background color of `#EPS8EF`.",
+          "Add 10px vertical padding and `15px` horizontal padding for the `.nav` block",
+          "The height of the navigation block must be full-page, let's set it to `100vh`.",
+          "The total width of the block should not exceed `150px` and the height `100vh`."
+        ],
+        "3": [
+          "For each link with the class `nav-item`, add a `15px` margin below it add a padding of `5px`.",
+          "The background color should be `#bac2d5` and the test color `#232324`.",
+          "Also remove the underscore from the link (use the `text-decoration` property).",
+          "The font must be `Courier New`, a fallback `sans-serif`."
+        ]
+      }
+    },
+    "ru": {
+      "title": "Боковая навигация.",
+      "description": [
+        "С помощью flexbox легко делать боковую навигацию."
+      ],
+      "final": [
+        "Супер, теперь ты знаешь, как делать боковую навигацию и повторил много свойств CSS."
+      ],
+      "stages": {
+        "1": [
+          "Достаточно  сделать блок с классом `nav` flex-контейнером и распределить в нем элементы колонкой.",
+          "Еще стоит добавить ширину, скажем `150px`.",
+          "Элементу `body` укажи `margin` `0px`."
+        ],
+        "2": [
+          "Давай немного украсим нашу навигацию.",
+          "Задай задний фон блоку `.nav` цвет заднего фона `#E5E8EF`.",
+          "Добавь блоку `.nav` блоку вертикальный padding `10px`, горизонтальный - `15px`.",
+          "Высота блока навигации должна быть во всю страницу, давай укажем `100vh`.",
+          "Суммарная ширина блока не должна превышать `150px`, а высота `100vh`."
+        ],
+        "3": [
+          "Каждой ссылке с классом `nav-item` добавь снизу поля `15px` и `padding` `5px`.",
+          "Цвет заднего фона должен быть `#bac2d5`, а цвет теста - `#232324`.",
+          "Также стоит убрать нижнее подчеркивание у ссылки (используй свойство `text-decoration`).",
+          "Шрифт должен быть `Courier New`, запасной `sans-serif`."
+        ]
+      }
+    }
+  }
+}

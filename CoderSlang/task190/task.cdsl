@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 19,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Throw it!",
+      "description": [
+        "Fix the function `errorPractice`.",
+        "If called without any arguments, it should throw an error."
+      ]
+    },
+    "ru": {
+      "title": "Бросай её!",
+      "description": [
+        "Исправь функцию `errorPractice`.",
+        "При вызове без аргументов, она должна бросить ошибку."
+      ]
+    }
+  }
+}

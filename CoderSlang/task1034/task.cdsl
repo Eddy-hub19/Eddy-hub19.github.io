@@ -1,0 +1,28 @@
+{
+  "jsLectureId": 103,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "Start server",
+      "description": [
+        "Our team started some refactoring, but hasn't finished it.",
+        "",
+        "You should implement the function `startServer(server, port)` in `functions.js`.",
+        "It shouldn't do anything complicated. Just start the server on port."
+      ]
+    },
+    "ru": {
+      "title": "Запускаем сервер",
+      "description": [
+        "Наша команда начала рефакторинг, но не закончила его.",
+        "",
+        "Ты должен реализовать функцию `startServer(server, port)` в `functions.js`.",
+        "Она не должна делать ничего сложного. Просто запустить сервер."
+      ]
+    }
+  }
+}

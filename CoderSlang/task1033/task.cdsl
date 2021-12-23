@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 103,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "New route",
+      "description": [
+        "Implement a new route `GET /about`.",
+        "",
+        "It should return a string `Lorem ipsum dolor sit amet`"
+      ]
+    },
+    "ru": {
+      "title": "Новый маршрут",
+      "description": [
+        "Реализуй новый роут `GET /about`.",
+        "",
+        "Он должен вернуть клиенту строку `Lorem ipsum dolor sit amet`"
+      ]
+    }
+  }
+}
