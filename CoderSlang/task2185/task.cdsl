@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 218,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Weekend",
+      "description": [
+        "A calendar for March has been created in` index.html`. ",
+        "Every 7th day is Sunday.",
+        "It should be marked with a `red` background in the calendar.",
+        "Use the correct pseudo-class for the class `.day`"
+      ]
+    },
+    "ru": {
+      "title": "Выходной",
+      "description": [
+        "В `index.html` создан календарь на март.",
+        "Каждый 7й день - воскресенье.",
+        "В календаре он должен быть отмечен красным (`red`) фоном.",
+        "Используй нужный псевдо-класс для класса `.day`"
+      ]
+    }
+  }
+}

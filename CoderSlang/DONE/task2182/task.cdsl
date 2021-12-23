@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 218,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Hover styling",
+      "description": [
+        "The `index.html` file contains a list of links to lectures.",
+        "When hovering over each link, it should have a right padding of 30px."
+      ]
+    },
+    "ru": {
+      "title": "Стили при наведении",
+      "description": [
+        "В `index.html` файле сделан список ссылок на лекции.",
+        "При наведении на каждую ссылку у нее должен правый отступ становится `30px`."
+      ]
+    }
+  }
+}

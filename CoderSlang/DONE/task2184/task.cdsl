@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 218,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "First - Second - First - Second",
+      "description": [
+        "The `index.html` file contains a list of US cities.",
+        "The text color of each odd list item must be `#white`.",
+        "The text color of every even list item must be `#38287F`."
+      ]
+    },
+    "ru": {
+      "title": "Первый - Второй - Первый - Второй",
+      "description": [
+        "В `index.html` файле дан список городов США.",
+        "Цвет текста каждого нечетного элемент списка должен быть `#white`.",
+        "Цвет текста каждого четного элемент списка должен быть `#38287F`."
+      ]
+    }
+  }
+}

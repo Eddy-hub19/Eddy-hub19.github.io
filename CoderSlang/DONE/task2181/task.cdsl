@@ -1,0 +1,23 @@
+{
+  "jsLectureId": 218,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Visited link",
+      "description": [
+        "Change the text color for the visited link from `red` to `green`."
+      ]
+    },
+    "ru": {
+      "title": "Посещенная ссылка",
+      "description": [
+        "Измени цвет текста для посещенной ссылки с `red` на `green`."
+      ]
+    }
+  }
+}

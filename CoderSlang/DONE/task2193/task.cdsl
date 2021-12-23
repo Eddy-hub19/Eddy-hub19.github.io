@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 219,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Hide me",
+      "description": [
+        "We received urgent edits from the designer - we need to temporarily hide the second paragraph.",
+        "Use the `display` property for this, specify styles using the `hidden` identifier."
+      ]
+    },
+    "ru": {
+      "title": "Спрячь меня",
+      "description": [
+        "Пришли срочные правки от дизайнера - нужно временно скрыть второй параграф.",
+        "Используй для этого свойство `display`, стили указывай с помощью идентификатора `hidden`."
+      ]
+    }
+  }
+}

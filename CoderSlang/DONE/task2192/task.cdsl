@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 219,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Inline elements",
+      "description": [
+        "Your colleague gave the `<span>` element a width of 200px.",
+        "But `<span>` is an inline element and cannot be given a width.",
+        "Change the display of the `<span>` element so that it continues to be in the text and the width property works."
+      ]
+    },
+    "ru": {
+      "title": "Строчные элементы",
+      "description": [
+        "Твой коллега указал элементу `<span>` ширину 200px.",
+        "Но `<span>` - это строчный элемент и ему нельзя задавать ширину.",
+        "Измени отображение элемента `<span>`, что бы он продолжил находится в тексте и работало свойство ширины."
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 219,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Block display",
+      "description": [
+        "There are three `<div>` blocks in the `index.html` file.",
+        "For some reason, all three fit in one line, although the new one should be wrapped.",
+        "There must be something wrong with the display property, fix it."
+      ]
+    },
+    "ru": {
+      "title": "Блочное отображение",
+      "description": [
+        "В файле `index.html` есть три `<div>` блока.",
+        "По каким-то причинам все три разместились в одной строке, хотя должны переноситься но новую.",
+        "Наверное что-то не так со свойством отображения, исправь это."
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+ {
+  "jsLectureId": 219,
+  "reward": 5,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Box model",
+      "description": [
+        "Your colleague specified the `<div>` block to be 100vw width.",
+        "He expected the block to be exactly as wide as the viewport.",
+        "He also added padding and border to the block.",
+        "The block has become wider than the viewport, which causes horizontal scrolling at the bottom.",
+        "Probably colleague completely forgot about the block model.",
+        "Without changing the existing styles, make the block 100vw wide."
+      ]
+    },
+    "ru": {
+      "title": "Блочная модель",
+      "description": [
+        "Твой коллега указал блоку `<div>` ширину 100vw.",
+        "Он ожидал, что блок будет шириной именно с ширину окна.",
+        "Также он добавил блоку padding и border.",
+        "Блок стал шире окна, из за чего внизу появился горизонтальная прокрутка.",
+        "Наверно коллега совсем забыл про блочную модель.",
+        "Не изменяя уже существующие стили, сделай так, что бы блок был шириной именно 100vw."
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 218,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Tags",
+      "description": [
+        "`index.html` file contains a list of tags that describes the skills of the developer.",
+        "The first tag is the most important - let's highlight it with `#78B3AB` background.",
+        "Use the appropriate pseudo-class (not `:nth-child`)."
+      ]
+    },
+    "ru": {
+      "title": "Тэги",
+      "description": [
+        "В файле `index.html` указан список тэгов, которые описывают навыки программиста.",
+        "Первый тег самый важный - давай выделим его фоном цвета `#78B3AB`.",
+        "Используй соответствующий псевдокласс (не `:nth-child`)"
+      ]
+    }
+  }
+}
