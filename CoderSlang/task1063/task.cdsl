@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Concatenate arrays unique",
+      "description": [
+        "Implement the function `concatenateArraysUnique` in `helper.js`",
+        "",
+        "It should return a new array that has the second array \"glued\" to the end of the first one. There should be no duplicates in the result.",
+        "",
+        "Example: concatenateArraysUnique([1,2,3], [1,2,4]) returns [1,2,3,4]"
+      ]
+    },
+    "ru": {
+      "title": "Уникальное склеивание массивов",
+      "description": [
+        "Реализуй функцию `concatenateArraysUnique` в `helper.js`",
+        "",
+        "Она должна вернуть новый массив, который \"приклеивает\" второй массив к концу первого. В возвращенном массиве не должно быть повторяющихся элементов.",
+        "",
+        "Пример: concatenateArraysUnique([1,2,3], [1,2,4]) возвращает [1,2,3,4]"
+      ]
+    }
+  }
+}

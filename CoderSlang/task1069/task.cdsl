@@ -1,0 +1,48 @@
+{
+  "jsLectureId": 106,
+  "reward": 10,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Advanced number formatting",
+      "description": [
+        "Implement the function `formatNumber`.",
+        "It's essentially the same function that you've implemented in the end of the `Gold Mine` game.",
+        "The difference is that here we want to handle really large numbers. We'll add a suffix to then: (aa, ab, ac, ...).",
+        "",
+        "Here's expected behavior:",
+        "- If `n < 1000`, it should be rounded to a single digit after a decimal point",
+        "- Else, to cut down the length of a number, we need to use letters 'K', 'M', 'B', 'T' to represent",
+        "thousands, millions, billions or trillions. We're not really interested in being super precise here.",
+        "So we'll then round the result to two digits after a decimal point.",
+        "- If the number exceeds `999.99T` it becomes `1.00aa`, after `999.99aa` goes `1.00ab`.",
+        "- When the number gets as high as `999.99az` it will next turn into `1.00ba` and so on.",
+        "Examples: 12352.1 => 12.35K, 1234321 => 1.23M, 12343210000000 => 12.34T, 12343210000000000 => 12.34aa",
+        "12343210000000000000 => 12.34ab",
+        "Also, make sure to keep trailing zeroes. 5 * 1e12 should become 5.00T and not 5T."
+      ]
+    },
+    "ru": {
+      "title": "Продвинутое форматирование чисел",
+      "description": [
+        "Реализуй функцию `formatNumber`.",
+        "Это почти та же функция, которую ты писал в конце игры `Золотая Шахта`",
+        "Отличие только в том, как мы обрабатываем большие числа. Мы будем добавлять к ним суффикс: (aa, ab, ac, ...)",
+        "",
+        "Вот ожидаемое поведение:",
+        "- Если `n < 1000`, число должно быть округлено до первого знака после запятой",
+        "- Иначе, чтобы сократить длину строки, мы используем буквы 'K', 'M', 'B', 'T' чтобы описать",
+        "тысячи, миллионы, миллиарды или триллионы. Точность нам не слишком важна, поэтому мы также используем округление.",
+        "В этот раз, до двух знаков после запятой.",
+        "- Если число становится больше `999.99T` оно превращается в `1.00aa`, после `999.99aa` идет `1.00ab`.",
+        "- Когда буквы заканчиваются, то после `999.99az` будет идти `1.00ba` и так далее.",
+        "Examples: 12352.1 => 12.35K, 1234321 => 1.23M, 12343210000000 => 12.34T, 12343210000000000 => 12.34aa",
+        "12343210000000000000 => 12.34ab",
+        "Также, не забудь оставить нули в конце. 5 * 1e12 должно стать 5.00T, а не 5T."
+      ]
+    }
+  }
+}

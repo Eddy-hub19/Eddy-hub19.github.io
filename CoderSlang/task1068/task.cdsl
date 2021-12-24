@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "String reversal",
+      "description": [
+        "Implement a function `revertMe` that reverts a string."
+      ]
+    },
+    "ru": {
+      "title": "Переверни строку",
+      "description": [
+        "Реализуй функцию `revertMe`, которая переворачивает строку."
+      ]
+    }
+  }
+}

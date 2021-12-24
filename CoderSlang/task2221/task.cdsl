@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 222,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "New york is important",
+      "description": [
+        "The text color of the first paragraph must be the same color as defined by the`#firstP` selector.",
+        "You cannot delete or change existing styles, only add to them."
+      ]
+    },
+    "ru": {
+      "title": "Нью Йорк важен",
+      "description": [
+        "Надо, что бы цвет текста первого параграфа был таким, как определен селектором `#firstP`.",
+        "Нельзя удалять или изменять уже существующие стили, только дополнять их."
+      ]
+    }
+  }
+}

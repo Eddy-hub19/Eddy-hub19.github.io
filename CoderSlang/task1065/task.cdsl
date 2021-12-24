@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Uppercase?",
+      "description": [
+        "Implement a function `hasUpperCaseLetters` that checks if there are any upperCase letters in a string."
+      ]
+    },
+    "ru": {
+      "title": "Большие буквы?",
+      "description": [
+        "Реализуй функцию `hasUpperCaseLetters`, которая проверяет есть ли в строке большие буквы."
+      ]
+    }
+  }
+}

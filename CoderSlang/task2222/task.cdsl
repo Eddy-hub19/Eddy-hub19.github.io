@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 222,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "General sibling combinator",
+      "description": [
+        "The text color in all paragraphs after `#secondP` must be `#01BBE2`.",
+        "Do not add new classes, identifiers, or inline styles to paragraphs.",
+        "Use a common sibling combinator."
+      ]
+    },
+    "ru": {
+      "title": "Общий родственный комбинатор",
+      "description": [
+        "Цвет текста во всех параграфах после `#secondP` должен быть `#01BBE2`.",
+        "Не добавляй параграфам ни новый классов, ни идентификаторов, ни строчных стилей.",
+        "Используй общий родственный комбинатор."
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Factorial",
+      "description": [
+        "Implement a function `factorial` in `helper.js` that returns a factorial of a certain number.",
+        "",
+        "Factorial of a number is a product of all positive integers below it."
+      ]
+    },
+    "ru": {
+      "title": "Факториал",
+      "description": [
+        "Реализуй функцию `factorial` в `helper.js`, которая возвращает факториал числа.",
+        "",
+        "Факториал числа - это произведение всех натуральных чисел меньше заданного."
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Slow log",
+      "description": [
+        "Implement a function `slowLog` that takes a string and prints it to the console after a 3 sec delay",
+        "",
+        "Use `console.log` and `setTimeout`"
+      ]
+    },
+    "ru": {
+      "title": "Медленный лог",
+      "description": [
+        "Реализуй функцию `slowLog`, которая принимает стоку и выводит ее на экран с задержкой 3 секунды."
+      ]
+    }
+  }
+}

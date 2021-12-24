@@ -1,0 +1,22 @@
+{
+  "jsLectureId": 106,
+  "reward": 1,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Max of 3",
+      "description": [
+        "Implement a function `max` that takes three numbers and returns the biggest one."
+      ]
+    },
+    "ru": {
+      "title": "Максимум из трех",
+      "description": [
+        "Реализуй функцию `max`, которая принимает три числа и возвращает самое большое."
+      ]
+    }
+  }
+}

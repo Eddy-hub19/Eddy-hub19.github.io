@@ -1,0 +1,36 @@
+{
+  "jsLectureId": 106,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Palindrome",
+      "description": [
+        "Implement a function `isPalindrome` that checks if the string is a palindrome",
+        "",
+        "A palindrome is a string that reads the same way even if reverted.",
+        "",
+        "isPalindrome('abba') // true",
+        "isPalindrome('baba'  // false",
+        "",
+        "An empty string is a palindrome too."
+      ]
+    },
+    "ru": {
+      "title": "Палиндром",
+      "description": [
+        "Реализуй функцию `isPalindrome`, которая проверяет является ли строка палиндромом",
+        "",
+        "Палиндром - это строка, которая не изменяется если ее перевернуть.",
+        "",
+        "isPalindrome('abba') // true",
+        "isPalindrome('baba'  // false",
+        "",
+        "Пустая строка - это тоже палиндром."
+      ]
+    }
+  }
+}

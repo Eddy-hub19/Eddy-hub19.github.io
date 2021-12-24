@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 108,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Log Promise",
+      "description": [
+        "Fix the function `printUserCount`.",
+        "Right now it prints to the console the string `Promise { <pending> }`, but it should print the number of users."
+      ]
+    },
+    "ru": {
+      "title": "Log Promise",
+      "description": [
+        "Почини функцию `printUserCount`.",
+        "Сейчас она выводит на экран строку `Promise { <pending> }`, а должна - количество пользователей."
+      ]
+    }
+  }
+}

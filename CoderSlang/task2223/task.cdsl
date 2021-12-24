@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 222,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "",
+      "description": [
+        "There is a calendar for March in the `index.html` file.",
+        "On each line, every 7th day should be marked with a red background.",
+        "The text color in this cell must be white.",
+        "Use the `weekend` class to add new styles.",
+        "Don't use pseudo classes, ids and inline styles.",
+        "Do not change styles already added."
+      ]
+    },
+    "ru": {
+      "title": "",
+      "description": [
+        "В `index.html` файле добавлен календарь на март.",
+        "В каждой строке каждый 7й день должен быть отмечен красным фоном (`red`).",
+        "Цвет текста в этой ячейке должен быть белого цвета.",
+        "Для добавления новых стилей используй класс `weekend`.",
+        "Не используй псевдо-классы, идентификаторы и строчные стили.",
+        "Не изменяй уже добавленные стили."
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 222,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Sibling combinator",
+      "description": [
+        "In the `index.html` file, each `<span>` element has a `margin-left` property.",
+        "But in this case, the style will be added to the first element as well.",
+        "We need to fix this. Move the `margin-left` property to another selector.",
+        "Don't use identifiers, classes and inline styles - only related combinators."
+      ]
+    },
+    "ru": {
+      "title": "Родственный комбинатор",
+      "description": [
+        "В `index.html` файле каждому элементу `<span>` добавлено свойство `margin-left`.",
+        "Но в таком случае стиль будет добавлен и первому элементу.",
+        "Надо это исправить. Перенеси свойство `margin-left` в другой селектор.",
+        "Не используй идентификаторы, классы и строчные стили - только родственные комбинаторы."
+      ]
+    }
+  }
+}

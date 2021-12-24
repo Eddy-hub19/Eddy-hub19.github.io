@@ -1,0 +1,306 @@
+{
+  "jsLectureId": 107,
+  "reward": 40,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "Mining Empire - Backend",
+      "description": [
+        "We'll implement the backend that will serve the config for the gold mining game."
+      ],
+      "final": [
+        "Congratulations, Hero! The backend is implemented, now you can run it and enjoy the game.",
+        "You can download the Mining Empire app, set your new config in settings and start experimenting!",
+        "",
+        "To avoid the hassle of moving the backend to the remove server you can use `localtunnel` or `ngrok` to make it available to the world",
+        "You'll find all the materials on [learn.coderslang.com](https://learn.coderslang.com)"
+      ],
+      "stages": {
+        "1": [
+          "Our backend will be built on `Express.js`, so let's install it with `npm install --save express` first.",
+          "",
+          "Take a look at the files you have. We'll be adding our routes to the `server` constant in `server.js` later.",
+          "For now, let's create one more file `functions.js` and export the function `startServer(port, server)`",
+          "The function `startServer(port, server)` should call the `server.listen(port, callback)` to start a server",
+          "You can include anything you like in the callback, i.e. `console.log('Server is running on port' + port)`"
+        ],
+        "2": [
+          "Now, we need to import `server` from `server.js` and `startServer` from `functions.js` into `index.js`",
+          "and actually start a server!",
+          "You can start it on any free port, but I suggest using port 8080 for us to be on the same page",
+          "",
+          "If everything goes well, you should see the message `Server is running on port 8080` in the console.",
+          "It will be printed by the callback passed into `server.listen`"
+        ],
+        "3": [
+          "Let's add our first route to the server to be able to test it.",
+          "In `server.js`, right below the comment add the `GET /check` route.",
+          "The payload served on this route should be `{ version: '0.0.1' }` in JSON format.",
+          "",
+          "To verify the implementation, you can run the solution and try to open the link [http://localhost:8080/check](http://localhost:8080/check) in your browser."
+        ],
+        "4": [
+          "Follow up with creating the object that we will serve as a config to our Mining Empire app",
+          "",
+          "Create the file `constants.js` and export the object `CONFIG` from it",
+          "You can take a look at the example on [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "The `CONFIG` object has a deep structure, but for now, let's focus on the top level properties:",
+          "title: string",
+          "currency: object",
+          "producers: array",
+          "upgrades: array",
+          "achievements: array",
+          "chitChat: array",
+          "prestigeLevels: array",
+          "",
+          "We'll fill in those properties later, right now we'll only verify types."
+        ],
+        "5": [
+          "Now that we have the `CONFIG` constant, we can import it into `server.js` and add a new route",
+          "`GET /config` that will serve it.",
+          "",
+          "Implement this route and make sure it works by going to [http://localhost:8080/config](http://localhost:8080/config) in the browser"
+        ],
+        "6": [
+          "Awesome! We have the config and we can access it!",
+          "Now, let's make it functional.",
+          "The easy way would be to copy and tweak the structure from [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "A bit harder approach is to write everything yourself.",
+          "Whatever you choose, in the next couple of stages we'll test if the structure of your config is correct.",
+          "",
+          "Producers is an array of objects.",
+          "Each object represents an individual producer that has following fields:",
+          "- `id`: a unique number which is used to identify a producer",
+          "- `title`: a string that sets producers name",
+          "- `baseCost`: a number, the price of the first producer of this type",
+          "- `growthRate`: a number, the multiplier that increases the cost of the next producer of this type",
+          "- `baseProduction`: a number, the amount of gold that producers of this type will make",
+          "- `pictureURL`: a string, an https link to the producer picture in `.svg` format",
+          "",
+          "Add at least 5 objects to the producers array, which should have all the properties listed above."
+        ],
+        "7": [
+          "Good job! Now we move on to describing the upgrades.",
+          "Upgrades is an array of objects. Each upgrade improves the performance of one or more producers.",
+          "Here's the structure of a single upgrade:",
+          "- `id`: a unique number which is used to identify an upgrade",
+          "- `title`: a string that sets the name of the upgrade",
+          "- `description`: a string that describes the upgrade",
+          "- `multiplier`: a number, is used to determine the effect of the upgrade on certain producers",
+          "- `appliesTo`: a array of numbers which are the ids of the producers that will be affected by the upgrade",
+          "- `pictureURL`: a string, an https link to the upgrade picture in `.svg` format",
+          "- `price`: the amount of gold needed to purchase the upgrade",
+          "- `availabilityCondition`: an object that defines the condition when you can purchase the upgrade.",
+          "Let's look at the examples: a simple `availabilityCondition` is based on currency and looks like this:",
+          "`{ currency: 1000 }` - this means that the upgrade will be available for purchase once the user has enough money in the bank",
+          "Here's a more complex one:",
+          "`{ producers: [{ id: 2, quantity: 100 }, { id: 3, quantity: 100 }] }`",
+          "In this case, the upgrade will be available when the user has 100 producers where id=2 and 100 producers where id=3",
+          "",
+          "Fill in the upgrades array with at least 3 elements based on the description above."
+        ],
+        "8": [
+          "The upgrades are done, so let's add the achievements that the user can unlock within the game.",
+          "Once again, we need an array of objects:",
+          "- `id`: a unique number which is used to identify an achievement",
+          "- `title`: a string that sets the name of the achievement",
+          "- `description`: a string that describes the achievement",
+          "- `pictureURL`: a string, an https link to the achievement picture in `.svg` format",
+          "- `condition`: an object that defines the condition when the achievement will be unlocked and awarded to the user.",
+          "The structure is the same as for `availabilityCondition`",
+          "",
+          "Fill in the achievements array with at least 3 elements based on the description above."
+        ],
+        "9": [
+          "Our mining empire should be playable for the extended periods of time, so let's add prestige levels.",
+          "`prestigeLevels` is an array of objects:",
+          "- `id`: a unique number which is used to identify the prestige level",
+          "- `title`: a string that sets the name of the prestige level",
+          "- `multiplier`: a number that defines increased production on this prestige level",
+          "- `pictureURL`: a string, an https link to the prestige level picture in `.svg` format",
+          "- `condition`: an object that defines the condition when the user is able to move to this prestige level.",
+          "The structure similar to the one in `achievements`, but here we can only use `currency` and not `producers`",
+          "",
+          "Fill in the `prestigeLevels` array with at least 2 elements based on the description above."
+        ],
+        "10": [
+          "On this stage, let's fill all the remaining fields at once.",
+          "`chitChat` array is used to display messages in a sort of 'news ticker':",
+          "- `message`: a message that will be pushed to the ticker when the condition is met",
+          "- `condition`: an object that defines the condition when the message should start displaying in the ticker.",
+          "The structure is almost the same as `availabilityCondition` in upgrades, but here instead of `producers`,",
+          "we use `clicks`, or `achievementId`. Like this: condition: { clicks: 100 } or { achievementId: 2 }",
+          "",
+          "Next, we'll add `currency`, which is an object:",
+          "- `title`: a string that holds the name of the game currency, i.e. gold",
+          "- `bigPictureURL`: a string, an https link to the game currency picture in `.svg` format",
+          "- `smallPictureURL`: a string, same as `bigPictureURL`, but less detailed",
+          "- `bankPictureURL`: a string, an https link to the bank picture in `.svg` format",
+          "",
+          "Fill in the currency and chitChat with relevant data and let's finalize our backend in the next stage.",
+          "Oh, and if you haven't already done it, pick a good `title` for the game."
+        ],
+        "11": [
+          "WOW! That's an awesome job! The `CONFIG` is ready!",
+          "Now we'll add a logger middleware to our express server to see which requests are coming in.",
+          "",
+          "Install the npm module `morgan` and use it according to the [instructions](https://www.npmjs.com/package/morgan)",
+          "",
+          "Once you're done, spin up the server, open your browser and verify 2 things:",
+          "- the response from [http://localhost:8080/config](http://localhost:8080/config) should have the same structure as",
+          "the original on on [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "- the requests to your server should appear in the terminal like this `GET /config 200 4451 - 2.061 ms`"
+        ]
+      }
+    },
+    "ru": {
+      "title": "Mining Empire - Бекэнд",
+      "description": [
+        "Привет, Герой! Сегодня будешь писать бекэнд для игры Mining Empire."
+      ],
+      "final": [
+        "Поздравляю, Герой! Это был нелегкий путь, но ты это сделал.",
+        "Качай приложение Mining Empire, устанавливай свой конфиг через настройки и экспериментируй!"
+      ],
+      "stages": {
+        "1": [
+          "Наш бекэнд будет построен на `Express.js`, поэтому давай установим его с помощью `npm install --save express`.",
+          "",
+          "Посмотри на файлы, которые у тебя есть. Мы добавим роутинг к константе `server` в файле `server.js` позже.",
+          "Сейчас, давай создадим еще один файл `functions.js` и экспортируем из него функцию `startServer(port, server)`",
+          "Функция `startServer(port, server)` должна вызвать метод `server.listen(port, callback)`, чтобы запустить сервер.",
+          "В `callback` ты можешь добавить что угодно, например `console.log('Server is running on port' + port)`"
+        ],
+        "2": [
+          "Сейчас, нам нужно импортировать `server` из `server.js` и `startServer` из `functions.js` в `index.js`.",
+          "И запустить сервер!",
+          "Ты можешь использовать любой свободный порт в системе, например 8080, чтобы мы были на одной волне.",
+          "",
+          "Если все прошло хорошо, то ты увидишь сообщение `Server is running on port 8080` в консоли.",
+          "Его выведет коллбек из `server.listen`"
+        ],
+        "3": [
+          "Давай добавим наш первый роут к серверу, чтобы мы могли его протестировать.",
+          "В `server.js`, прямо под комментарием добавь роут `GET /check`.",
+          "Сервер должен будет ответить одним объектом: `{ version: '0.0.1' }` в формате JSON.",
+          "",
+          "Чтобы проверить работоспособность сервера, ты можешь запустить `index.js` и открыть ссылку [http://localhost:8080/check](http://localhost:8080/check) в браузере."
+        ],
+        "4": [
+          "Продолжим созданием объекта в котором будет храниться конфиг для нашей игры Mining Empire",
+          "",
+          "Создай файл `constants.js` и экспортируй из него объект `CONFIG`",
+          "Можешь посмотреть на пример: [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "Объект `CONFIG` имеет глубокую структуру, сейчас рассмотрим только поля верхнего уровня:",
+          "title: string",
+          "currency: object",
+          "producers: array",
+          "upgrades: array",
+          "achievements: array",
+          "chitChat: array",
+          "prestigeLevels: array",
+          "",
+          "Заполни объект `CONFIG` в соответствии с описанием выше."
+        ],
+        "5": [
+          "Сейчас, когда у нас есть константа `CONFIG`, мы можем импортировать ее в `server.js` и добавить новый роут",
+          "`GET /config`, который будет отдавать наружу объект `CONFIG` в JSON формате.",
+          "",
+          "Реализуй этот роут и убедись, что он работает перейдя по ссылке [http://localhost:8080/config](http://localhost:8080/config) в браузере"
+        ],
+        "6": [
+          "Круто! У нас есть конфиг и доступ к нему!",
+          "Теперь, сделаем его функциональным.",
+          "Простой путь - скопировать и изменить конфиг с [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "Чуть сложнее, но полезнее, написать все самостоятельно с нуля.",
+          "Что бы ты ни выбрал, на нескольких следующих этапах мы будем проверять структуру конфига.",
+          "",
+          "`producers` - это массив объектов.",
+          "Каждый объект описывает производителя, у которого есть такие поля:",
+          "- `id`: уникальное число, которое используется для идентификации производителя",
+          "- `title`: строка, которая устанавливает имя производителя",
+          "- `baseCost`: число, цена первого производителя этого типа",
+          "- `growthRate`: число, мультипликатор, который определяет рост стоимости будущих производителей",
+          "- `baseProduction`: число, количество валюты которое будет приносить производитель",
+          "- `pictureURL`: строка, ссылка https к картинке производителя в формате `.svg`",
+          "",
+          "Добавь минимум 5 объектов в массив `producers` по шаблону описанному выше."
+        ],
+        "7": [
+          "Отлично! Теперь перейдем к описанию массива `upgrades`.",
+          "Апгрейды - это массив объектов. Каждый апгрейд улучшает одного или более производителей.",
+          "Вот структура одного апгрейда:",
+          "- `id`: уникальное число, которое используется для идентификации апгрейда",
+          "- `title`: строка, которая устанавливает имя апгрейда",
+          "- `description`: строка, которая описывает суть апгрейда",
+          "- `multiplier`: число, используется как мультипликатор производства",
+          "- `appliesTo`: массив `id` производителей, для которых предназначен этот апгрейд",
+          "- `pictureURL`: строка, ссылка https на картинку в формате `.svg`",
+          "- `price`: число, количество валюты, необходимое для покупки апгрейда",
+          "- `availabilityCondition`: объект, который определяет условия, при которых апгрейд станет доступен для покупки.",
+          "Простой `availabilityCondition` состоит из валюты и выглядит так:",
+          "`{ currency: 1000 }` - значит, что апгрейд станет доступен как только у пользователя будет достаточно денег (1000) в банке",
+          "Вот более сложный пример:",
+          "`{ producers: [{ id: 2, quantity: 100 }, { id: 3, quantity: 100 }] }`",
+          "В этом случае, апгрейд можно будет купить, когда у нас будет 100 производителей с id=2 и 100 производителей с id=3",
+          "",
+          "Заполни массив `upgrades`, минимум тремя объектами по шаблону выше."
+        ],
+        "8": [
+          "С апгрейдами закончили, теперь перейдем к наградам, которые пользователь сможет заработать во время игры.",
+          "Нам снова будет нужен массив объектов с такими полями:",
+          "- `id`: уникальное число, которое используется для идентификации награды",
+          "- `title`: строка, которая устанавливает имя награды",
+          "- `description`: строка, которая описывает суть награды",
+          "- `pictureURL`: строка, ссылка https на картинку награды в формате `.svg`",
+          "- `condition`: объект, который описывает условия получения награды. Структура такая же как и у `availabilityCondition`",
+          "",
+          "Заполни массив `achievements` тремя объектами по описанию выше."
+        ],
+        "9": [
+          "Мы хотим, чтобы игровой процесс Mining Empire был интересным и долгим. Добавим уровни престижа в игру.",
+          "`prestigeLevels` - это массив таких объектов:",
+          "- `id`: уникальное число, которое используется для идентификации уровня престижа",
+          "- `title`: строка, которая устанавливает название уровня престижа",
+          "- `multiplier`: число, мультипликатор, который будет применяться ко всему производству на этом уровне",
+          "- `pictureURL`: строка, ссылка https на картинку награды в формате `.svg`",
+          "- `condition`: объект, который определяет условие при котором пользователь может перейти на этот уровень престижа.",
+          "Структура похожа на `condition` в `achievements`, но тут мы можем использовать только `currency` а не `producers`",
+          "",
+          "Заполни массив `prestigeLevels` хотя бы двумя элементами по шаблону."
+        ],
+        "10": [
+          "Осталось немного, добьем оставшиеся поля за один заход.",
+          "`chitChat` - это массив который позволит нам показывать сообщения пользователю в бегущей строке:",
+          "- `message`: строка, сообщение которое увидит пользователь",
+          "- `condition`: объект, который определяет условие, при котором сообщение будет показано в бегущей строке.",
+          "Структура почти такая же, как у `availabilityCondition` в апгрейдах, только вместо `producers`,",
+          "мы используем `clicks`. Примерно так: condition: { clicks: 100 }. Вариант с валютой остается без изменений.",
+          "",
+          "Дальше, добавим объект `currency`:",
+          "- `title`: строка, содержит название валюты, например 'золото'",
+          "- `bigPictureURL`: строка, ссылка https на картинку валюты в формате `.svg`",
+          "- `smallPictureURL`: строка, ссылка https на картинку валюты в формате `.svg`, менее детализированная, но можно и продублировать `bigPictureUrl`",
+          "- `bankPictureURL`: строка, ссылка https на картинку банка в формате `.svg`",
+          "",
+          "Заполни оставшиеся поля и перейдем к тестированию задачи.",
+          "О, и если ты еще это не сделал, то выбери подходящее название(`title`) для игры."
+        ],
+        "11": [
+          "ОГО! Это отличная работа! Наш `CONFIG` - готов!",
+          "Теперь мы добавим логгирование запросов к серверу, чтобы иметь больше информации о том, что происходит.",
+          "",
+          "Установи npm модуль `morgan` и используй его в режиме 'tiny' по [инструкциям](https://www.npmjs.com/package/morgan)",
+          "",
+          "Когда закончишь, запусти сервер, открой браузер и проверь две вещи:",
+          "- ответ от [http://localhost:8080/config](http://localhost:8080/config) должен иметь ту же структуру, что и",
+          "оригинал на [https://v2.coderslang.com/evil-empire-config](https://v2.coderslang.com/evil-empire-config)",
+          "- запросы от сервера должны быть видны в терминале в таком формате: `GET /config 200 4451 - 2.061 ms`"
+        ]
+      }
+    }
+  }
+}

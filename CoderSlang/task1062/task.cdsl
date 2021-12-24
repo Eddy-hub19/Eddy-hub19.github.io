@@ -1,0 +1,30 @@
+{
+  "jsLectureId": 106,
+  "reward": 2,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Concatenate arrays",
+      "description": [
+        "Implement the function `concatenateArrays` in `helper.js`",
+        "",
+        "It should return a new array that has the second array \"glued\" to the end of the first one",
+        "",
+        "Example: concatenateArrays([1,2,3], [1,2,4]) returns [1,2,3,1,2,4]"
+      ]
+    },
+    "ru": {
+      "title": "Склеивание массивов",
+      "description": [
+        "Реализуй функцию `concatenateArrays` в `helper.js`",
+        "",
+        "Она должна вернуть новый массив, который \"приклеивает\" второй массив к концу первого",
+        "",
+        "Пример: concatenateArrays([1,2,3], [1,2,4]) возвращает [1,2,3,1,2,4]"
+      ]
+    }
+  }
+}

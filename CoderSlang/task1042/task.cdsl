@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 104,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "Add middleware",
+      "description": [
+        "Add the `logRequestType` function as a server middleware",
+        "",
+        "You should only make changes to `server.js`."
+      ]
+    },
+    "ru": {
+      "title": "Добавляем middleware",
+      "description": [
+        "Добавь функцию `logRequestType` как серверное middleware",
+        "",
+        "Ты должен изменить только `server.js`."
+      ]
+    }
+  }
+}

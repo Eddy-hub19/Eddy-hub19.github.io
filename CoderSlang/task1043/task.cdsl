@@ -1,0 +1,28 @@
+{
+  "jsLectureId": 104,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "Log request timestamp",
+      "description": [
+        "Implement the function `logRequestTimestamp` and use it as middleware.",
+        "",
+        "The function `logRequestTimestamp` should print the current date and time to the screen in UTC format, i.e. `Mon, 23 Nov 3027 10:15:26 GMT`.",
+        "You can get the current date and time the function `getFormattedDate` from `functions.js`."
+      ]
+    },
+    "ru": {
+      "title": "Записываем время",
+      "description": [
+        "Реализуй функцию `logRequestTimestamp` и используй ее как middleware.",
+        "",
+        "Функция `logRequestTimestamp` должна выводить на экран текущую дату и время в формате UTC, например `Mon, 23 Nov 3027 10:15:26 GMT`.",
+        "Текущую дату и время ты можешь получить с помощью функции `getFormattedDate` из `functions.js`."
+      ]
+    }
+  }
+}

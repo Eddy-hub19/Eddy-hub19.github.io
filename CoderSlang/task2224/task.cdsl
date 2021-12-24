@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 222,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Attribute selector",
+      "description": [
+        "Links to lectures have been added to` index.html`.",
+        "Some links open in a new window.",
+        "All of these links must have a background of `#41CCC7`.",
+        "Don't use IDs, classes, and inline styles - just attribute selectors."
+      ]
+    },
+    "ru": {
+      "title": "Стили по атрибутам",
+      "description": [
+        "В `index.html` добавлены ссылки на лекции.",
+        "Некоторые ссылки открываются в новом окне.",
+        "У всех этих ссылок должен быть задний фон `#41CCC7`.",
+        "Не используй идентификаторы, классы и строчные стили - только селекторы по атрибутам."
+      ]
+    }
+  }
+}

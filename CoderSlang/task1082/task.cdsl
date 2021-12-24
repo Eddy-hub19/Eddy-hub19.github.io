@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 108,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "runAs": "node",
+  "i18n": {
+    "en": {
+      "title": "Unhandled rejection",
+      "description": [
+        "Fix the function `printUserCount`.",
+        "It should call `handleUnknownError` if the Promise is rejected."
+      ]
+    },
+    "ru": {
+      "title": "Ошибка в промисе",
+      "description": [
+        "Почини функцию `printUserCount`.",
+        "Она должна вызывать `handleUnknownError`, если в промисе возникает ошибка."
+      ]
+    }
+  }
+}

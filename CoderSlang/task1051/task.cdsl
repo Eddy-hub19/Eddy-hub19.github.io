@@ -1,0 +1,26 @@
+{
+  "jsLectureId": 105,
+  "reward": 3,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "index.js",
+  "i18n": {
+    "en": {
+      "title": "First JSON response",
+      "description": [
+        "Implement the `GET /config` route.",
+        "",
+        "You should send back the object `config` from `constants.js` in JSON format."
+      ]
+    },
+    "ru": {
+      "title": "Первый JSON ответ",
+      "description": [
+        "Реализуй маршрут `GET /config`.",
+        "",
+        "Он должен отправить клиенту объект `config` из `constants.js` в формате JSON."
+      ]
+    }
+  }
+}
