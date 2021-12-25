@@ -1,0 +1,25 @@
+{
+  "jsLectureId": 223,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Semantic refactoring #2",
+      "description": [
+        "We need to refactor the code a little to make it semantically correct.",
+        "Existing tags need to be grouped into logical blocks for this to be semantically correct."
+      ]
+    },
+    "ru": {
+      "title": "Семантический рефакторинг #2",
+      "description": [
+        "Надо немного отрефакторить код, что бы он был семантически верным.",
+        "Существующие теги нужно сгруппировать по логическим блокам, что бы это было семантически верно."
+      ]
+    }
+  }
+}

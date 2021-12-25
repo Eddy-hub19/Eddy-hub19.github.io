@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 223,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Semantic refactoring #3",
+      "description": [
+        "We need to refactor the code a little to make it semantically correct.",
+        "Replace the required tags with semantic ones.",
+        "For the title, use the tags `h1`, `h2` and `h3` in decreasing order of block sizes.",
+        "The element must retain the class when replacing tags."
+      ]
+    },
+    "ru": {
+      "title": "Семантический рефакторинг #4",
+      "description": [
+        "Надо немного отрефакторить код, что бы он был семантически верным.",
+        "Замени нужные теги на семантические.",
+        "Для заголовком используй теги `h1`, `h2` и `h3` в порядке уменьшения размеров блока.",
+        "У элементом при замене тегов должен сохранится класс."
+      ]
+    }
+  }
+}
