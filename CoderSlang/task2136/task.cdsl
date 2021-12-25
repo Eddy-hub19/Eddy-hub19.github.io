@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 213,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fonts link",
+      "description": [
+        "There are two fonts in the fonts folder - they need to be included in the` styles.css` file. ",
+        "- The font `OpenSans-Regular.ttf` should be connected with a weight value of 400 and normal style",
+        "- The font `OpenSans-LightItalic.ttf` should be connected with a weight of 300 and italic style",
+        "- The first font should be used for the `<div>` element, the second for the paragraph."
+      ]
+    },
+    "ru": {
+      "title": "Подключение шрифтов",
+      "description": [
+        "В папке fonts есть два шрифта - их нужно подключить в файле `styles.css`.",
+        "- Шрифт `OpenSans-Regular.ttf` подключи с насыщенностью 400 и стилем normal",
+        "- Шрифт `OpenSans-LightItalic.ttf` - с насыщенностью 300 и стилем italic",
+        "- Для элемента `<div>` используй первый вариант шрифта, для параграфа - второй"
+      ]
+    }
+  }
+}

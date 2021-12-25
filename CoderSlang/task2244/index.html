@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Font-sizes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+      body {
+          font-family: "Andale Mono", "Monotype.com", monospace;
+          margin: 0;
+          display: grid;
+          place-content: center;
+          height: 100vh;
+          padding: 0 20px;
+      }
+      ol {
+          padding: 0;
+          list-style: none;
+      }
+      li::before,
+      li::after {
+          content: "\01F525";
+          padding: 0 15px;
+      }
+      h1, h3, li {
+          text-align: center;
+      }
+      h1 {
+          font-size: 3rem;
+          margin: 10px 0;
+      }
+      h3 {
+          font-size: 2.1rem;
+          margin: 5px 0;
+      }
+      li {
+          font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Junior Software Developers</h1>
+    <h3>9 Tips</h3>
+    <ol>
+      <li>Start a side project</li>
+      <li>Take notes, lots of notes</li>
+      <li>Plan before you code</li>
+      <li>Take an interest in security</li>
+      <li>Plan your day</li>
+      <li>Understand the product you're building</li>
+      <li>Take an interesting in system architecture</li>
+      <li>Test your code and test it well</li>
+      <li>Ask for help</li>
+    </ol>
+  </body>
+</html>

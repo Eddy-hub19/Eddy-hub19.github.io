@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 224,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Responsive font size",
+      "description": [
+        "All text inside `h1`, `h3`, `li` looks too large on screens smaller than `640px`.",
+        "Let's fix it. We need to reduce the font sizes for these screens by 1.6 times.",
+        "Prerequisite - the font size must be changed using another element.",
+        "This is because the dimensions are relative."
+      ]
+    },
+    "ru": {
+      "title": "Отзывчивый размер шрифта",
+      "description": [
+        "Весь текст внутри `h1`, `h3`, `li` выглядит слишком большим на экранах, ширина которых меньше `640px`.",
+        "Давай это исправим. Надо размеры шрифтом для этих экранов уменьшить в 1.6 раза.",
+        "Обязательное условие - размер шрифта нужно изменить с помощью другого элемента.",
+        "Это связано с тем, что размеры указаны относительные."
+      ]
+    }
+  }
+}

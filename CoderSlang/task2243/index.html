@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+      body {
+        font-family: monospace;
+        margin: 0;
+        background-color: #E4D9FF;
+      }
+      .wrapper {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        gap: 16px;
+        grid-template-columns: repeat(4, 300px);
+      }
+      .card {
+        width: 300px;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 16px;
+        padding: 15px 30px;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+      }
+      .price-details {
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .price{
+        font-size: 35px;
+        font-weight: 600;
+        position: relative;
+      }
+      .price-details .price::before,
+      .price-details .price::after{
+        position: absolute;
+        font-weight: 400;
+      }
+      .price-details .price::before{
+        content: "$";
+        left: -13px;
+        top: 6px;
+        font-size: 14px;
+      }
+      .price-details .price::after{
+        content: "/mon";
+        right: -33px;
+        bottom: 6px;
+        font-size: 13px;
+      }
+      .price-details p{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .features {
+        list-style: none;
+        padding: 0;
+      }
+      .features li span {
+        padding-right: 15px;
+        font-size: 16px;
+        color: #018E42;
+      }
+      button {
+        width: 100%;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: #7D82B8;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+          background-color: #613F75;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="price-details">
+          <span class="price">19</span>
+          <p>For beginner use</p>
+        </div>
+        <ul class="features">
+          <li><span>&#10003;</span>100 GB Premium Bandwidth</li>
+          <li><span>&#10003;</span>FREE 50+ Installation Scripts WordPress Supported</li>
+        </ul>
+        <button>Choose plan</button>
+      </div>
+      <div class="card">
+        <div class="price-details">
+          <span class="price">49</span>
+          <p>For beginner use</p>
+        </div>
+        <ul class="features">
+          <li><span>&#10003;</span>200 GB Premium Bandwidth</li>
+          <li><span>&#10003;</span>FREE 100+ Installation Scripts WordPress Supported</li>
+        </ul>
+        <button>Choose plan</button>
+      </div>
+      <div class="card">
+        <div class="price-details">
+          <span class="price">99</span>
+          <p>For beginner use</p>
+        </div>
+        <ul class="features">
+          <li><span>&#10003;</span>300 GB Premium Bandwidth</li>
+          <li><span>&#10003;</span>FREE 300+ Installation Scripts WordPress Supported</li>
+        </ul>
+        <button>Choose plan</button>
+      </div>
+      <div class="card">
+        <div class="price-details">
+          <span class="price">199</span>
+          <p>For beginner use</p>
+        </div>
+        <ul class="features">
+          <li><span>&#10003;</span>1000 GB Premium Bandwidth</li>
+          <li><span>&#10003;</span>FREE 600+ Installation Scripts WordPress Supported</li>
+        </ul>
+        <button>Choose plan</button>
+      </div>
+    </div>
+  </body>
+</html>

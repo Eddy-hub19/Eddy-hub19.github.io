@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 224,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Rebuild navigation",
+      "description": [
+        "Your colleague added a navigation layout. But it won't look very good on small devices.",
+        "Let's tweak a bit. All changes should only show on screens smaller than 480px.",
+        "Navigation should be positioned at the top of the screen for its full width, with a height of `50px`.",
+        "The font size of the list items should be `0.8rem` (on mobile we don't need such a large font).",
+        "The list itself should be displayed as a line with horizontal paddings of `10px`.",
+        "The distance between list items and screen edges must be the same."
+      ]
+    },
+    "ru": {
+      "title": "Перестроение навигации",
+      "description": [
+        "Твой коллега добавил макет навигации. Но на маленьких устройствах будет выглядит не очень.",
+        "Давай немного подправим. Все изменения должны отображаться только на экранах с размером меньше 480px.",
+        "Навигация должно размещаться в верхней части экрана на всю его ширину, высотой `50px`.",
+        "Размер шрифта элементов списка должен стать `0.8rem` (на мобильных нам не нужен такой большой шрифт).",
+        "Сам список должен отображаться строкой с горизонтальными отступам `10px`.",
+        "Расстояние между элементами списка и краями экранов должно быть одинаковым."
+      ]
+    }
+  }
+}

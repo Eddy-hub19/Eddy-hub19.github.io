@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 224,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "The minimum width",
+      "description": [
+        "Paragraphs render well on mobile displays.",
+        "But for large displays, it's worth a little tweak.",
+        "Let's change the paragraph styles for all devices with a display width greater than `480px`: ",
+        "font size should be` 14px`, vertical padding `20px`, horizontal padding `60px`. ",
+        "Use internal scripts."
+      ]
+    },
+    "ru": {
+      "title": "Минимальная ширина",
+      "description": [
+        "Параграфы неплохо отображаются на мобильных дисплеях.",
+        "Но для больших дисплеев стоит немного подправить.",
+        "Давай для всех устройств с шириной дисплея больше, чем `480px`, изменим стили параграфа:",
+        "размер шрифта должен стать `14px`, вертикальные отступы `20px`, горизонтальные - `60px`.",
+        "Используй встроенные скрипты."
+      ]
+    }
+  }
+}
