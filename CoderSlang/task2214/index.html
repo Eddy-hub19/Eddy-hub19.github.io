@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Grid layout</title>
     <style>
-      body {
-        margin: 0;
-      }
-      .grid-container {
-        height: 100vh;
-        width: 100vw;
-      }
-      .grid-item {
-        background-color: rgb(255, 198, 0);
-        padding: 2vw;
-        font-size: 10vw;
-        font-style: italic;
-        font-family: Tahoma;
-      }
+        body {
+            margin: 0;
+        }
+        
+        .grid-container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: [start] 20vw [col-1-end col-2-start] auto [col-2-end col-3-start] 20vw [end];
+            grid-template-rows: [line1] auto [line2] 20vh [line3] 20vh [line4] auto [line5];
+        }
+        
+        .grid-item {
+            background-color: rgb(255, 198, 0);
+            padding: 2vw;
+            font-size: 10vw;
+            font-style: italic;
+            font-family: Tahoma;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="grid-container">
-      <div class="grid-item">
-        Center Me
-      </div>
+        <div class="grid-item">
+            Center Me
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
