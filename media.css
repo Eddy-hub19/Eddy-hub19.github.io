@@ -1,158 +1,153 @@
 @media (min-width: 150px) and (max-width: 480px) {
-  body {
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-    background: no-repeat;
-    background-image: url(/img/Big-forest.jpg);
-  }
-  .header-class {
-    flex-direction: row;
-    align-items: flex-start;
-    color: gainsboro;
-  }
-  .header-class h1 {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-  .header-class h2 {
-    display: none;
-  }
-  .header-main {
-    display: flex;
-    color: white;
-    font-family: "Indie Flower";
-    flex-direction: column;
-  }
-  .header-main > h1 {
-    display: none;
-  }
-  .header-main > p {
-    display: none;
-  }
-  .main-content > h3 {
-    font-size: 25px;
-    mix-blend-mode: overlay;
-  }
-  .slick-next:before {
-    font-size: 20px;
-    margin-right: -10px;
-  }
-  .slick-prev:before {
-    font-size: 20px;
-    margin-left: -20px;
-  }
-
-  ul,
-  li {
-    list-style: none;
-  }
-
-  .read-more {
-    display: none;
-  }
-
-  @keyframes color-change {
-    0% {
-      color: white;
+    body {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: no-repeat;
+        background-image: url(/img/Big-forest.jpg);
     }
-    50% {
-      color: black;
+    .header-class {
+        flex-direction: row;
+        align-items: flex-start;
+        color: gainsboro;
     }
-    100% {
-      color: white;
+    .header-class h1 {
+        visibility: hidden;
+        font-size: 20px;
+        margin-top: 30px;
     }
-  }
-  .animation {
-    animation: color-change 4s infinite;
-  }
-
-  .bar-top {
-    position: relative;
-    top: 68px;
-    right: 45%;
-  }
-
-  #bar {
-    display: none;
-    position: absolute;
-    top: -4em;
-    padding: 0.5em;
-    left: 156px;
-    margin: 0;
-    width: 40px;
-    height: 80px;
-    background: rgb(101, 126, 150);
-    color: black;
-    transition: top 1.5s ease-out 0.5s;
-  }
-  .arrow {
-    font-size: 30px;
-  }
-  #bar:hover :active {
-    top: 0;
-    color: red;
-  }
-  li img {
-    width: 25px;
-  }
-  footer {
-    position: absolute;
-    left: 25%;
-    top: 750px;
-    color: white;
-  }
-  .img {
-    width: 43px;
-    position: absolute;
-    left: -55px;
-    right: 73px;
-    bottom: 1px;
-  }
-  .dark-theme {
-    background-image: url(/img/veeterzy.jpg);
-  }
-
-  .dropdown {
-    top: -20px;
-    right: 56px;
-    position: relative;
-  }
-
-  .dropbtn {
-    color: white;
-    padding: 16px;
-    cursor: pointer;
-    position: relative;
-    top: 12rem;
-    left: 0;
-    background-color: rgb(49, 61, 73);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 15px;
-    width: 170px;
-    border-radius: 20px;
-  }
-
-  .dropdown-content {
-    position: relative;
-    border: 2px black solid;
-    left: 0;
-    top: 210px;
-    z-index: 1;
-    font-size: 15px;
-    min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgb(9 28 46);
-    filter: drop-shadow(2px 4px 6px black);
-    font-weight: normal;
-    white-space: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-    background: #636c66;
-    border-radius: 10px;
-  }
-
-  footer {
-    display: none;
-  }
+    .header-class h2 {
+        display: none;
+    }
+    .header-main {
+        display: flex;
+        color: white;
+        font-family: "Indie Flower";
+        flex-direction: column;
+    }
+    .header-main>h1 {
+        display: none;
+    }
+    .header-main>p {
+        display: none;
+    }
+    .main-content>h3 {
+        font-size: 25px;
+        mix-blend-mode: overlay;
+    }
+    .slick-next:before {
+        font-size: 20px;
+        margin-right: -10px;
+    }
+    .slick-prev:before {
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    ul,
+    li {
+        list-style: none;
+    }
+    .read-more {
+        display: none;
+    }
+    @keyframes color-change {
+        0% {
+            color: white;
+        }
+        50% {
+            color: black;
+        }
+        100% {
+            color: white;
+        }
+    }
+    .animation {
+        animation: color-change 4s infinite;
+    }
+    .bar-top {
+        position: relative;
+        top: 68px;
+        right: 45%;
+    }
+    #bar {
+        display: none;
+        position: absolute;
+        top: -4em;
+        padding: 0.5em;
+        left: 156px;
+        margin: 0;
+        width: 40px;
+        height: 80px;
+        background: rgb(101, 126, 150);
+        color: black;
+        transition: top 1.5s ease-out 0.5s;
+    }
+    .arrow {
+        font-size: 30px;
+    }
+    #bar:hover :active {
+        top: 0;
+        color: red;
+    }
+    li img {
+        width: 25px;
+    }
+    footer {
+        position: absolute;
+        left: 25%;
+        top: 750px;
+        color: white;
+    }
+    .img {
+        width: 43px;
+        position: absolute;
+        left: -55px;
+        right: 73px;
+        bottom: 1px;
+    }
+    .dark-theme {
+        background-image: url(/img/veeterzy.jpg);
+    }
+    main {
+        height: 200px;
+    }
+    .dropdown {
+        top: -20px;
+        right: 10rem;
+        position: relative;
+    }
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        cursor: pointer;
+        position: relative;
+        top: 39px;
+        left: 30px;
+        background-color: rgb(49, 61, 73);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 15px;
+        width: 170px;
+        border-radius: 20px;
+    }
+    .dropdown-content {
+        position: relative;
+        border: 2px black solid;
+        left: 0;
+        top: 50px;
+        z-index: 1;
+        font-size: 15px;
+        min-width: 90px;
+        box-shadow: 0px 8px 16px 0px rgb(9 28 46);
+        filter: drop-shadow(2px 4px 6px black);
+        font-weight: normal;
+        white-space: nowrap;
+        min-height: 1.2em;
+        padding: 0px 2px 1px;
+        background: #636c66;
+        border-radius: 10px;
+    }
+    footer {
+        display: none;
+    }
 }
