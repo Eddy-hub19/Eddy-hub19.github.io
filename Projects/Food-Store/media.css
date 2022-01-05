@@ -280,7 +280,7 @@
         z-index: 2;
         bottom: 10px;
         display: flex;
-        transition: left cubic-bezier(0, 0, 0.29, 0.99) 10s;
+        transition: width 1.7s 1.5s linear;
         background: rgb(0 150 136 / 86%);
     }
     nav {
