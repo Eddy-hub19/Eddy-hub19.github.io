@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+/* font-family: 'Maven Pro', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,19 +27,23 @@ ul li {
 }
 
 .bg {
-    margin-top: 40px;
+    margin-top: 15px;
     background: url(./images/header-bg.png) no-repeat;
     background-position-x: right;
 }
 
 header {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .header__logo {
-    margin: 26px 30px;
+    position: relative;
     font-size: 13px;
+}
+
+.header__logo img {
+    position: relative;
+    left: 253px;
 }
 
 nav {
@@ -48,32 +55,34 @@ nav {
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    margin-left: 484px;
 }
 
 .header-nav__menu a {
     color: white;
     font-family: 'Acme', sans-serif;
-    margin-left: 60px;
+    margin-left: 63px;
+    font-size: 16px;
 }
 
 .social-network {
     color: white;
     background-color: transparent;
+    margin: 0 45px;
 }
 
 .fab,
 .far {
-    margin-left: 40px;
+    margin-left: 30px;
     font-size: 25px;
 }
 
 main {
-    display: flex;
+    position: relative;
 }
 
 .info__main {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
     margin: 94px -5px 15px 294px;
@@ -95,16 +104,22 @@ main {
     font-family: 'Acme', sans-serif;
 }
 
+.main-btn {
+    position: relative;
+    right: 60px;
+    top: 34px;
+}
+
 .btn {
     color: black;
     width: 240px;
-    height: 60px;
+    height: 68px;
     border-radius: 40px;
     margin: 50px 20px;
 }
 
 .primary {
-    background: blue;
+    background: #5698fc;
     color: white;
     border: 5px solid white;
 }
@@ -115,22 +130,23 @@ main {
     border: 5px solid blue;
 }
 
-.right-bg {
-    position: relative;
-}
-
 .main__right-bg {
     display: flex;
     flex-direction: row-reverse;
-    position: relative;
-    right: 10px;
-    top: 23px;
+    position: absolute;
+    right: 143px;
+    top: 60px;
 }
 
 .content-section {
     display: flex;
     justify-content: space-around;
     margin-top: 20rem;
+}
+
+.bg-left {
+    background: url(./images/bg-bg.png) no-repeat;
+    width: 100%;
 }
 
 .right-info__section {
@@ -140,8 +156,9 @@ main {
     align-items: center;
 }
 
-
-/* font-family: 'Maven Pro', sans-serif; */
+.bg-different-platform {
+    background: url(./images/macbook-platform.png);
+}
 
 
 /* font-size: 1.5em; */
@@ -154,12 +171,6 @@ main {
 
 
 /* color: #e5e5e5; */
-
-
-/* color: #18a0fb; */
-
-
-/* color: #ffffff; */
 
 
 /* color: #222222; */
