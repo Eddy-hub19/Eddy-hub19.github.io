@@ -32,6 +32,9 @@ ul li {
     background-position-x: right;
 }
 
+
+/* Header */
+
 header {
     display: flex;
 }
@@ -77,6 +80,9 @@ nav {
     font-size: 25px;
 }
 
+
+/* Main */
+
 main {
     position: relative;
 }
@@ -94,34 +100,36 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 705px;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .info__main p {
     display: flex;
     flex-wrap: wrap;
-    width: 693px;
+    font-size: 23px;
+    width: 758px;
+    margin: 14px -37px;
     font-family: 'Acme', sans-serif;
 }
 
 .main-btn {
     position: relative;
-    right: 60px;
-    top: 34px;
+    right: 61px;
+    bottom: 42px;
 }
 
 .btn {
-    color: black;
+    text-transform: uppercase;
     width: 240px;
-    height: 68px;
+    height: 54px;
     border-radius: 40px;
-    margin: 50px 20px;
+    margin: 59px 20px;
 }
 
 .primary {
     background: #5698fc;
     color: white;
-    border: 5px solid white;
+    border: none;
 }
 
 .secondary {
@@ -130,30 +138,98 @@ main {
     border: 5px solid blue;
 }
 
+.btn:hover {
+    background: #5698fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
 .main__right-bg {
     display: flex;
     flex-direction: row-reverse;
     position: absolute;
     right: 143px;
-    top: 60px;
+    top: -32px;
 }
+
+
+/* Sections */
 
 .content-section {
     display: flex;
     justify-content: space-around;
-    margin-top: 20rem;
+    margin: 19.5rem 140px;
 }
 
-.bg-left {
-    background: url(./images/bg-bg.png) no-repeat;
-    width: 100%;
+.bg-left__content-section::before {
+    content: url(./images/bg-bg.png);
+    position: absolute;
+    left: 0;
+    top: 829px;
+    z-index: -2;
 }
 
 .right-info__section {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 75px 199px 47px;
+}
+
+.right-info__section h2 {
+    font-size: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 683px;
+}
+
+.right-info__section p {
+    margin: 25px 19px;
+    font-size: 22px;
+}
+
+.btn-primary_position {
+    margin: 0;
+}
+
+
+/* section-platform */
+
+.section-platform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+    position: relative;
+}
+
+.section-platform h2 {
+    position: absolute;
+    left: 260px;
+    font-size: 80px;
+    max-width: 650px;
+    bottom: 499px;
+    word-spacing: 9px;
+}
+
+.about-platform {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 200px;
+    flex-direction: column;
+    max-width: 678px;
+}
+
+.about-platform li:nth-child(odd) {
+    font-size: 25px;
+    color: #5698fc;
 }
 
 .bg-different-platform {
@@ -161,28 +237,61 @@ main {
 }
 
 
-/* font-size: 1.5em; */
+/* benefit-to-you */
 
+.benefit-to-you {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18rem;
+}
 
-/* color: #aaaaaa; */
+.items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-/* color: #b3b3b3; */
+.benefit-to-you button {
+    text-transform: uppercase;
+    width: 240px;
+    height: 54px;
+    border-radius: 40px;
+    background: #5698fc;
+    color: white;
+    border: none;
+    margin-top: 190px;
+}
 
+.section__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
-/* color: #e5e5e5; */
+.left-bg__section-items {
+    display: flex;
+}
 
+.about-trust-brands {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+    max-width: 280px;
+}
 
-/* color: #222222; */
-
-
-/* color: #2c2c2c; */
-
-
-/* color: #5698fc; */
-
-
-/* #000000 - opacity 10.0% */
-
-
-/* #ffffff - opacity 80.0% */
+.brands {
+    margin-top: 50rem;
+    display: flex;
+}
