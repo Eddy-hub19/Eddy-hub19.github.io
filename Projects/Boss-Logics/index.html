@@ -12,14 +12,14 @@
 
 <body class="bg">
     <header class="header header__logo">
-        <img src="./images/logo.png" alt="logo">
+        <a href=""><img src="./images/logo.png" alt="logo"></a>
         <nav class="nav header-nav__menu">
-            <a href="Solutions">Solutions </a>
-            <a href="Together">Together</a>
-            <a href="Customers">Customers</a>
-            <a href="Pricing">Pricing </a>
-            <a href="About">About</a>
-            <a href="Contact">Contact</a>
+            <a href="#Solutions">Solutions </a>
+            <a href="#Together">Together</a>
+            <a href="#Customers">Customers</a>
+            <a href="#Pricing">Pricing </a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
         </nav>
         <!-- icons social network -->
         <div class="social-network header__social-network">
@@ -29,9 +29,12 @@
             <i class="fab fa-linkedin-in"></i>
         </div>
     </header>
+
+    <!-- main -->
     <main class="main">
-        <div class="info__main">
-            <h1>Software that works the way tou do</h1>
+        <div class="main__info">
+            <h1 class='first-title'>Software that works the way tou do <span class='first-title__span'>(really)</span>
+            </h1>
             <p>Simplify, transform, and automate your product creation, sales, and management with BOSS Logics—so you can get products to market faster and more effectively.</p>
             <div class="main-btn">
                 <button class="btn primary">Get Started</button>
@@ -46,43 +49,46 @@
         </div>
 
         <section class="content-section">
-            <div class="bg-left__content-section">
+            <div class="content-section__bg content-section__bg_left">
                 <img width="517px" height="557px" src="./images/rings.png" alt="rings">
             </div>
-            <div class="right-info__section">
-                <h2>Your customers don't have to be in-store for you to be together.</h2>
-                <p>Introducing a virtual in-store experience that sets a new standard for personalized online interactions.
+            <div class="right-info">
+                <h2 class="title-right__info">Your customers don' t have to be in-store for you to be together.</h2>
+                <p class="dscr-right__info">Introducing a virtual in-store experience that sets a new standard for personalized online interactions.
                 </p>
                 <button class="btn primary btn-primary_position">Get Started</button>
             </div>
         </section>
 
-        <section class="section-platform">
-            <h2>A different type of software platform</h2>
-            <ul class="about-platform">
-                <li href="Modeled">Modeled</li>
-                <li>
-                    <p>During development, we model against your existing (or aspirational) processes and workflows. It’s the closest thing to bespoke software you’ll find.</p>
+        <!-- sections-platform -->
 
-                    <li> Collaborative</li>
-                    <li>
-                        <p>System workflows that are created around your product development process, not the other way around.
-                        </p>
-                    </li>
-                    <li> Communicative</li>
-                    <li>
-                        <p>Your products don’t live in a vacuum, and neither should your software. BOSS Logics is designed to integrate directly with your other systems.</p>
-                    </li>
-                </li>
+        <section class="sections-platform">
+            <div class="section-platform">
+                <div class="wrap-right__section">
+                    <h2 class="title-section__platform">A different type of software platform</h2>
+                    <ul class="about-platform-list__section">
+                        <li id="Modeled">Modeled</li>
+                        <li>During development, we model against your existing (or aspirational) processes and workflows. It’s the closest thing to bespoke software you’ll find.</li>
+                        <li> Collaborative</li>
+                        <li>System workflows that are created around your product development process, not the other way around.
+                        </li>
+                        <li> Communicative</li>
+                        <li>Your products don’t live in a vacuum, and neither should your software. BOSS Logics is designed to integrate directly with your other systems.
+                        </li>
+                    </ul>
+                </div>
                 <div class="bg-different-platform">
                     <picture>
                         <img src="./images/macbook-platform.png" alt="bg-macbook">
                     </picture>
                 </div>
+            </div>
         </section>
 
+        <!-- benefit-to-you -->
+
         <div class="benefit-to-you">
-            <h2 style="text-align: center;" ">What does mean for you?</h2>
+            <h2 style="text-align: center;">What does mean for you?</h2>
             <div class="items ">
                 <div class="item ">
                     <img src="./images/setting.png " alt="setting ">
@@ -100,37 +106,91 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
                 </div>
             </div>
-            <button class="btn-benefit ">learn more</button>
+            <button class="btn-benefit">learn more</button>
         </div>
-
-        <section class="section__items ">
-            <div class="left-bg__section-items "></div>
-            <div class="about-trust-brands ">
-                <h2>Trusted by leading brands</h2>
-                <p>“Our actual go-live was perfect. It was seamless. The integration has been amazing. Our old system involved manual data entry for everything, but with the BOSS Integration, it’s as easy as changing a flag and getting updates from our ERP
+        <!-- section-items -->
+        <section class="section-items">
+            <div class="left-bg__section-items">
+                <img src="./images/trusts-brands.png" alt="trust brand">
+            </div>
+            <div class="about-trust-brands">
+                <h2 class="title__about-trust-brands">Trusted by leading brands</h2>
+                <p class="dscr__about-trust-brands">“Our actual go-live was perfect. It was seamless. The integration has been amazing. Our old system involved manual data entry for everything, but with the BOSS Integration, it’s as easy as changing a flag and getting updates from our ERP
                     system.”
                 </p>
-                <ul>
+                <ul class="list-about-brands">
                     <li>Dean LENEVE</li>
                     <li>Director of Operations, David Webb</li>
                 </ul>
             </div>
         </section>
-        <div class="brands ">
-            <picture>
-                <a href="# "><img src="./images/H&M-Logo.png " alt=" "></a>
-                <a href="# "><img src="./images/Alcone-Company.png " alt=" "></a>
-                <a href="# "><img src="./images/david-webb-logo.png " alt=" "></a>
-                <a href="# "><img src="./images/david-yurman-logo.png " alt=" "></a>
-                <a href="# "><img src="./images/luxbond-green-logo.png " alt=" "></a>
-                <a href="# "><img src="./images/guinness-logo.png " alt=" "></a>
-                <a href="# "><img src="./images/logo-american-family.png " alt=" "></a>
-                <a href="# "> <img src="./images/lagos-logo.png " alt=" "></a>
-            </picture>
+        <!-- brands -->
+        <div class="brands">
+            <div class="picture-brands__brands">
+                <a href="#"><img src="./images/david-yurman-logo.png" alt="david-yurman-logo"></a>
+                <a href="#"><img src="./images/david-webb-logo.png" alt="david-webb-logo"></a>
+                <a href="#"> <img src="./images/lagos-logo.png" alt="lagos-logo.png"></a>
+                <a href="#"><img src="./images/Alcone-Company.png" alt="Alcone-Company"></a>
+                <a href="#"><img src="./images/luxbond-green-logo.png" alt="luxbond-green-logo"></a>
+                <a href="#"><img src="./images/logo-american-family.png" alt="logo-american-family"></a>
+                <a href="#"><img src="./images/guinness-logo.png" alt="guinness-logo"></a>
+                <a href="#"><img src="./images/H&M-Logo.png" alt="H&M-Logo"></a>
+
+            </div>
         </div>
+
+        <div class="our-privileges">
+            <div class="wrap__our-privileges">
+                <h2>Ready to see what BOSS Logics can do for you?</h2>
+                <button class="btn primary btn__our-privileges_pos">get a demo</button>
+            </div>
+            <div class="bg__our-privileges">
+                ed
+            </div>
+        </div>
+
     </main>
 
-    <footer>
+
+    <footer class="footer">
+        <div class="container-menu__footer">
+            <div class="for-store">
+                <a href=""><img src="./images/logo.png" alt="logo"></a>
+                <!-- make to border-bottom -->
+                <p>Simplify, transform, and automate your product creation, sales, and management.
+                </p>
+            </div>
+            <div class="container-categories">
+                <a href="#">POPULAR LINKS </a>
+                <a href="Solutions">Solutions</a>
+                <a href="Together">Together</a>
+                <a href="Customers">Customers</a>
+                <a href="Pricing">Pricing</a>
+                <a href="About">About</a>
+                <a href="Contact">Contact</a>
+            </div>
+            <div class="contact-info">
+                <a href="">get in touch</a>
+                <a type="email" href="info@bosslogics.com">info@bosslogics.com</a>
+                <a type="number" href="">212-372-3399</a>
+                <a type="map" href="">BOSS Logics
+                    30-30 47th Ave
+                    #470
+                    LIC, NY 11101</a>
+            </div>
+            <div class="newsletter">
+                <form class="container-subscribe">
+                    <input type="email" placeholder="Your email..">
+                    <button type="submit">contact</button>
+                </form>
+                <div class="social-network footer__social-network">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
