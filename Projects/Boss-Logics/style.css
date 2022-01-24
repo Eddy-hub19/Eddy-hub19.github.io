@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-
-/* font-family: 'Maven Pro', sans-serif; */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +16,7 @@ html {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul li {
@@ -92,16 +89,26 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: 94px -5px 15px 294px;
+    position: relative;
 }
 
 .first-title {
     font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
     font-size: 4.5em;
     display: flex;
     flex-wrap: wrap;
-    width: 705px;
-    margin-top: 180px;
-    position: relative;
+    max-width: 705px;
+    margin-top: 177px;
+}
+
+.first-title::before {
+    content: '';
+    border-left: 3px solid #73cbfd;
+    height: 127px;
+    position: absolute;
+    left: -46px;
+    top: 200px;
 }
 
 .first-title__span {
@@ -110,9 +117,9 @@ main {
     -webkit-text-stroke: 1px #5698fc;
     text-transform: uppercase;
     position: absolute;
-    left: 511px;
+    left: 503px;
     font-size: 41px;
-    top: 100px;
+    top: 281px;
 }
 
 .main__info p {
@@ -191,19 +198,19 @@ main {
 .title-right__info {
     font-size: 70px;
     display: flex;
-    flex-wrap: wrap;
-    width: 683px;
-    margin: 0 100px 30px;
+    width: 733px;
+    margin: 0px 0 0px 120px;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .dscr-right__info {
-    margin: 10px 95px;
+    margin: 20px 16px 0 90px;
     font-size: 22px;
     width: 600px;
 }
 
 .btn-primary_position {
-    margin: 45px 0 -69px 87px;
+    margin: 46px 0 -31px 73px;
 }
 
 
@@ -226,9 +233,10 @@ main {
 
 .title-section__platform {
     font-size: 80px;
-    max-width: 650px;
-    word-spacing: -1px;
-    margin: 0px 280px;
+    max-width: 680px;
+    word-spacing: -14px;
+    margin: 0px 273px;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .about-platform-list__section {
@@ -240,11 +248,13 @@ main {
     color: #5698fc;
     text-transform: uppercase;
     margin-top: 60px;
+    font-family: 'Acme', sans-serif;
 }
 
 .about-platform-list__section li:nth-child(even) {
     max-width: 662px;
     font-size: 21px;
+    font-family: 'Acme', sans-serif;
 }
 
 .bg-different-platform {
@@ -261,12 +271,14 @@ main {
     position: relative;
     justify-content: center;
     align-items: center;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .benefit-to-you h2 {
     margin-top: 19rem;
     text-align: center;
     font-size: 90px;
+    font-family: 'Acme', sans-serif;
 }
 
 .items {
@@ -280,6 +292,8 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
 }
 
 .item>h4 {
@@ -295,6 +309,7 @@ main {
     max-inline-size: 215px;
     text-align: center;
     font-size: 19px;
+    font-family: 'Acme', sans-serif;
 }
 
 .benefit-to-you button {
@@ -309,7 +324,7 @@ main {
 }
 
 
-/* section__items */
+/* section-items */
 
 .section-items {
     display: flex;
@@ -334,12 +349,14 @@ main {
     top: 0;
     font-size: 81px;
     max-width: 544px;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .dscr__about-trust-brands {
     max-width: 541px;
     margin: 20px -9rem;
     font-size: 29px;
+    font-family: 'Acme', sans-serif;
 }
 
 .list-about-brands {
@@ -360,37 +377,29 @@ main {
 /* brands */
 
 .brands {
-    margin-top: 14rem;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    margin-top: 15rem;
+    justify-content: space-around;
 }
 
-.brands>picture {
-    width: 881px;
+.picture-brands__brands {
+    width: 890px;
+    height: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
     align-items: center;
-    vertical-align: baseline;
-}
-
-.brands>picture a {
-    margin-left: 20px;
+    justify-content: space-between;
 }
 
 
 /* after brands */
 
-.our-privileges {
-    position: relative;
-}
-
 .wrap__our-privileges {
     display: flex;
     flex-direction: column;
-    margin-top: 30rem;
+    margin-top: 24rem;
+    position: relative;
 }
 
 .wrap__our-privileges h2 {
@@ -413,6 +422,9 @@ main {
     height: 1026px;
     background-position-x: right;
     z-index: -3;
+    position: absolute;
+    left: 12px;
+    bottom: -640px;
 }
 
 
@@ -420,19 +432,25 @@ main {
 
 .footer {
     display: flex;
-    background: #c1c1c1;
-    /* margin-top: 38rem; */
+    background: #111d2a;
+    height: 346px;
+    width: 100%;
     align-items: center;
+    flex-direction: column;
     /* min-height: calc(100vh - 800px); */
+    align-content: center;
+    justify-content: center;
+    margin-top: 32.5rem;
 }
 
 .container-menu__footer {
     display: flex;
     color: white;
     flex-direction: row;
+    width: 100%;
+    margin-top: 38px;
     justify-content: space-evenly;
-    width: 93%;
-    margin-left: 60px;
+    align-items: stretch;
 }
 
 .for-store {
@@ -440,6 +458,11 @@ main {
     align-content: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin: 7px 0px;
+}
+
+.for-store img {
+    border-bottom: 1px solid #5698fc;
 }
 
 .for-store p {
@@ -451,11 +474,13 @@ main {
     flex-direction: column;
     font-size: 19px;
     color: white;
-    margin: 16px -19px;
+    margin: 16px -18px 20px;
 }
 
 .container-categories a:nth-child(1) {
     color: #5698fc;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -464,42 +489,79 @@ main {
     flex-direction: column;
     align-content: center;
     justify-content: space-around;
-    margin-left: -50px;
+    margin: 6px -50px;
+}
+
+.bg-contact-info {
+    position: absolute;
+    left: 880px;
 }
 
 .contact-info a {
-    display: flex;
     max-width: 120px;
+}
+
+.contact-info a:nth-child(1) {
+    color: #5698fc;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .newsletter {
     display: flex;
-    align-content: flex-start;
-    justify-content: space-evenly;
     flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-around;
 }
 
 .container-subscribe {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    height: 60px;
+    height: 50px;
+    width: 100%;
 }
 
 input {
     width: 290px;
     border-radius: 35px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
 }
 
 .container-subscribe button {
     width: 160px;
     border-radius: 34px;
+    margin: 0px 20px;
 }
 
 .footer__social-network {
-    margin: 1px -34px;
+    margin: 0px -43px;
 }
 
-.bottom-line {
-    border-bottom: 2px solid white;
+.last-line {
+    border-top: 2px solid white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-line p:nth-child(2) {
+    margin-left: 45rem;
 }
