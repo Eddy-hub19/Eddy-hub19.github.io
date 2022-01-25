@@ -5,9 +5,12 @@
     "jquery": "^3.6.0",
     "module": "^1.2.5",
     "readline-sync": "^1.4.10",
+    "sass": "^1.49.0",
     "terminal-kit": "^2.3.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0"
   }
 }
