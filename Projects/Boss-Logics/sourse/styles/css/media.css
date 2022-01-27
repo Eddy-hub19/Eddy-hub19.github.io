@@ -1,0 +1,39 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 910px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1140px
+    }
+}
+
+@media (min-width: 1500px) {
+    .wrapper {
+        max-width: 1440px
+    }
+}

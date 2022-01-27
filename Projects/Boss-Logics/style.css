@@ -1,65 +1,23 @@
 @font-face {
     font-family: "Geometria";
-    src: url('./sourse/fonts/Geometria/Geometria.ttf'), format('ttf'), format('truetype');
+    src: url('./sourse/fonts/Geometria/Geometria.ttf'), format('ttf'), ;
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Geometria-Medium";
-    src: url('./sourse/fonts/Geometria/Geometria-Medium.ttf'), format('ttf'), format('truetype');
+    src: url('./sourse/fonts/Geometria/Geometria-Medium.ttf'), format('ttf'), url('./sourse/fonts/Geometria/Geometria-Medium.eot'), format('eot'), url('./sourse/fonts/Geometria/Geometria-Medium.woff'), format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Geometria-Bold";
-    src: url('./sourse/fonts/Geometria/Geometria-Bold.ttf'), format('ttf'), format('truetype');
+    src: url('./sourse/fonts/Geometria/Geometria-Bold.ttf'), format('ttf'), url('./sourse/fonts/Geometria/Geometria-Bold.woff'), format('woff');
     font-weight: bold;
     font-style: normal;
 }
-
-
-/* @-ms-viewport {
-    width: device-width;
-} */
-
-
-/* @media (min-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 910px;
-        padding-left: 15px;
-        padding-right: 15px
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px
-    }
-}
-
-@media (min-width: 1500px) {
-    .container {
-        max-width: 1440px
-    }
-} */
 
 * {
     margin: 0;
@@ -136,9 +94,10 @@ nav {
 
 .header-nav__menu a {
     color: white;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
-    margin-left: 63px;
-    font-size: 18px;
+    margin-left: 47px;
+    font-size: 16px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -194,8 +153,8 @@ main {
 }
 
 .first-title {
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial;
-    font-weight: 400;
     font-size: 4.4em;
     display: flex;
     flex-wrap: wrap;
@@ -230,6 +189,7 @@ main {
     font-size: 21px;
     width: 758px;
     margin: 14px -37px;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
 }
 
@@ -303,32 +263,35 @@ main {
 .title-right__info {
     font-size: 70px;
     display: flex;
-    width: 733px;
-    margin: 0px 0 0px 120px;
+    max-width: 774px;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     position: relative;
+    top: -30px;
+    left: 53px;
+    letter-spacing: 2px;
 }
 
 .title-right__info::before {
     content: "";
     position: absolute;
-    width: 5px;
+    width: 3px;
     background-color: #09f;
-    left: -30px;
-    top: 15px;
-    bottom: 10px;
-    height: 260px;
+    left: -26px;
+    top: 17px;
+    bottom: 0;
+    height: 209px;
 }
 
 .dscr-right__info {
     font-family: "Geometria", Arial, Helvetica, sans-serif;
-    margin: 20px 16px 0 90px;
+    margin: 0px 39px -141px;
     font-size: 22px;
     width: 600px;
 }
 
 .btn-primary_position {
-    margin: 46px 0 -31px 73px;
+    margin: 180px 0 0 25px;
 }
 
 
@@ -352,10 +315,11 @@ main {
 .title-section__platform {
     font-size: 70px;
     max-width: 680px;
-    margin: 0px 273px;
-    font-family: "Geometria";
+    margin: 0 282px;
+    font-family: "Geometria", Arial, Helvetica, sans-serif;
     position: relative;
     line-height: 1em;
+    font-weight: 400;
 }
 
 .title-section__platform::before {
@@ -363,31 +327,33 @@ main {
     border-left: 3px solid #09f;
     height: 127px;
     position: absolute;
-    left: -46px;
-    top: 20px;
+    left: -29px;
+    top: 0;
 }
 
 .about-platform-list__section {
-    margin: -3rem 16rem;
+    margin: 0.5rem 16rem;
 }
 
 .about-platform-list__section li:nth-child(odd) {
-    font-size: 25px;
+    font-size: 22px;
     color: #5698fc;
     text-transform: uppercase;
-    margin-top: 60px;
+    margin-top: 32px;
+    padding-bottom: 21px;
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif;
 }
 
 .about-platform-list__section li:nth-child(even) {
-    max-width: 662px;
+    max-width: 724px;
     font-size: 21px;
+    letter-spacing: -0.5px;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
 }
 
 .bg-different-platform {
     background: url(./sourse/img/macbook-platform.png) no-repeat;
-    margin: 30px -190px;
+    margin: 5px -234px;
 }
 
 
@@ -399,13 +365,14 @@ main {
     position: relative;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
 }
 
 .benefit-to-you h2 {
-    margin-top: 19rem;
-    text-align: center;
-    font-size: 90px;
+    margin-top: 17rem;
+    font-size: 75px;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
 }
 
@@ -426,15 +393,15 @@ main {
 .item>h4 {
     margin: 21px 103px;
     font-size: 24px;
-    max-width: 220px;
+    max-width: 210px;
     text-align: center;
     text-transform: uppercase;
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif;
 }
 
 .item p {
-    margin-top: 0px;
-    max-inline-size: 215px;
+    margin-top: -8px;
+    max-inline-size: 237px;
     text-align: center;
     font-size: 19px;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
@@ -456,7 +423,7 @@ main {
 
 .section-items {
     display: flex;
-    margin-top: 18rem;
+    margin-top: 12rem;
     justify-content: space-evenly;
 }
 
@@ -467,36 +434,51 @@ main {
 
 .about-trust-brands {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
 .title__about-trust-brands {
     position: relative;
-    right: 95px;
-    top: 0;
-    font-size: 70px;
+    right: 133px;
+    top: 68px;
+    letter-spacing: 3px;
+    font-size: 67px;
     max-width: 544px;
     color: #1a1a1a;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
 }
 
+.title__about-trust-brands::before {
+    content: '';
+    border-left: 3px solid #09f;
+    height: 127px;
+    position: absolute;
+    left: -28px;
+    top: 16px;
+}
+
 .dscr__about-trust-brands {
-    max-width: 541px;
-    margin: 20px -9rem;
+    max-width: 551px;
+    margin: 100px -10rem;
     font-size: 21px;
+    letter-spacing: 2px;
     color: #1a1a1a;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
 }
 
 .list-about-brands {
-    margin: -10px -9rem;
+    margin: -51px -10rem;
 }
 
 .list-about-brands li:nth-child(1) {
     color: #0099ff;
     text-transform: uppercase;
     font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 5px;
 }
 
 .list-about-brands li:nth-child(2) {
@@ -510,7 +492,7 @@ main {
 .brands {
     width: 100%;
     display: flex;
-    margin-top: 5rem;
+    margin-top: 14rem;
     justify-content: space-around;
 }
 
@@ -539,14 +521,23 @@ main {
     position: relative;
 }
 
+.wrap__our-privileges::before {
+    content: '';
+    border-left: 3px solid #09f;
+    height: 207px;
+    position: absolute;
+    left: 262px;
+    top: -25px;
+}
+
 .wrap__our-privileges h2 {
     position: absolute;
     left: 289px;
     top: -39px;
     font-size: 70px;
-    max-width: 579px;
-    /* line-height: 20.7px; */
-    /* letter-spacing: normal; */
+    max-width: 580px;
+    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .btn__our-privileges_pos {
@@ -620,12 +611,14 @@ main {
 .container-categories a:nth-child(1) {
     font-size: 18px;
     color: #0099ff;
+    font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
 }
 
 .container-categories a:nth-child(n+2) {
     font-size: 14px;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
+    margin-top: -8px;
 }
 
 .contact-info {
@@ -638,19 +631,19 @@ main {
 }
 
 .bg-contact-info {
-    position: absolute;
-    left: 880px;
+    padding-right: 10px;
 }
 
 .contact-info a {
-    max-width: 120px;
+    max-width: 177px;
 }
 
 .contact-info a:nth-child(1) {
     color: #0099ff;
     text-transform: uppercase;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .newsletter {
@@ -666,6 +659,7 @@ main {
     color: #5698fc;
     text-transform: uppercase;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .container-subscribe {
@@ -683,6 +677,7 @@ main {
     background: transparent;
     border: 2px solid white;
     font-size: 14px;
+    color: white;
     padding: 10px;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
     -webkit-border-radius: 25px;
