@@ -1,39 +1,131 @@
-@-ms-viewport {
-    width: device-width;
-}
-
-@media (min-width: 576px) {
-    .wrapper {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px
+/* @media (min-width: 320px) and (max-width: 480px) {
+    body {
+        max-width: 480px;
     }
 }
 
-@media (min-width: 768px) {
-    .wrapper {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        max-width: 767px;
+    }
+} */
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 100% !important;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+    img {
+        max-width: 95%;
+        background-repeat: no-repeat;
+    }
+    .header__logo img {
+        position: relative;
+        left: 191px;
+        top: 5px;
+    }
+    .header-nav__menu {
+        margin-left: 233px;
+    }
+    .header-nav__menu a {
+        font-size: 13px;
+    }
+    .bg {
+        background-size: 75%;
+    }
+    .main__info {
+        margin: 84px -5px -5px 154px;
+    }
+    .main__info p {
+        max-width: 537px;
+    }
+    .first-title {
+        max-width: 387px;
+        margin-top: 67px;
+        font-size: 62px;
+    }
+    .first-title::before {
+        min-height: 181px;
+        left: -32px;
+        top: 81px;
+    }
+    .first-title__span {
+        left: 311px;
+        top: 153px;
+        font-size: 35px;
+    }
+    .main-btn {
+        right: 68px;
+        bottom: 47px;
+    }
+    .btn {
+        font-size: 16px;
+        width: 210px;
+        height: 48px;
+    }
+    .main__right-bg {
+        right: 30px;
+    }
+    .title-right__info {
+        font-size: 64px;
+    }
+    .about-platform-list__section li:nth-child(even) {
+        max-width: 565px;
+    }
+    .left-bg__section-items {
+        display: flex;
+        margin-left: 5rem;
+    }
+    .title__about-trust-brands {
+        position: relative;
+        right: 40px;
+        top: 68px;
+        letter-spacing: 3px;
+        font-size: 67px;
+        max-width: 544px;
+        color: #1a1a1a;
+        font-weight: 500;
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+    }
+    .dscr__about-trust-brands {
+        max-width: 551px;
+        margin: 100px -5rem;
+        font-size: 21px;
+        letter-spacing: 2px;
+        color: #1a1a1a;
+        font-family: "Geometria", Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+    }
+    .list-about-brands {
+        margin: -51px -5rem;
+    }
+    .wrap__our-privileges::before {
+        left: 171px;
+    }
+    .wrap__our-privileges h2 {
+        left: 207px;
+        font-size: 63px;
+    }
+    .bg__our-privileges {
+        height: 870px;
+        right: 0;
+        bottom: -762px;
+        background-size: 43%;
+    }
+    .last-line {
+        width: 90%;
+    }
+    .footer-line {
+        margin-top: 20px;
     }
 }
 
-@media (min-width: 992px) {
-    .wrapper {
-        max-width: 910px;
-        padding-left: 15px;
-        padding-right: 15px
-    }
-}
 
-@media (min-width: 1200px) {
-    .wrapper {
-        max-width: 1140px
+/* @media (min-width: 1440px) and (max-width: 1660px) {
+    body {
+        width: 1660px;
     }
-}
-
-@media (min-width: 1500px) {
-    .wrapper {
-        max-width: 1440px
-    }
-}
+} */
