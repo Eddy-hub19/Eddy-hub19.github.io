@@ -21,6 +21,7 @@
         max-width: 95%;
         background-repeat: no-repeat;
     }
+    /* header */
     .header__logo img {
         position: relative;
         left: 191px;
@@ -35,6 +36,7 @@
     .bg {
         background-size: 75%;
     }
+    /* main */
     .main__info {
         margin: 84px -5px -5px 154px;
     }
@@ -71,6 +73,7 @@
     .title-right__info {
         font-size: 64px;
     }
+    /* sections-platform */
     .about-platform-list__section li:nth-child(even) {
         max-width: 565px;
     }
@@ -78,26 +81,14 @@
         display: flex;
         margin-left: 5rem;
     }
+    .bg-different-platform {
+        padding: 0;
+    }
     .title__about-trust-brands {
-        position: relative;
         right: 40px;
-        top: 68px;
-        letter-spacing: 3px;
-        font-size: 67px;
-        max-width: 544px;
-        color: #1a1a1a;
-        font-weight: 500;
-        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     }
     .dscr__about-trust-brands {
-        max-width: 551px;
         margin: 100px -5rem;
-        font-size: 21px;
-        letter-spacing: 2px;
-        color: #1a1a1a;
-        font-family: "Geometria", Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-weight: 200;
     }
     .list-about-brands {
         margin: -51px -5rem;
