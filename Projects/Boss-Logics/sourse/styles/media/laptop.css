@@ -1,0 +1,128 @@
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        width: 100% !important;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+    img {
+        max-width: 100%;
+        background-repeat: no-repeat;
+    }
+    /* header */
+    .header__logo img {
+        position: relative;
+        left: 191px;
+        top: 5px;
+    }
+    .header-nav__menu {
+        margin-left: 233px;
+    }
+    .header-nav__menu a {
+        font-size: 13px;
+    }
+    .bg {
+        background-size: 75%;
+    }
+    /* main */
+    .main__info {
+        margin: 84px -5px -5px 154px;
+    }
+    .main__info p {
+        max-width: 537px;
+    }
+    .first-title {
+        position: relative;
+        max-width: 387px;
+        margin-top: 67px;
+        font-size: 62px;
+    }
+    .first-title::before {
+        height: 100%;
+        left: -32px;
+        top: 11px;
+    }
+    .first-title__span {
+        position: relative;
+        left: 0;
+        top: 4px;
+        font-size: 35px;
+    }
+    .main-btn {
+        right: 68px;
+        bottom: 47px;
+    }
+    .btn {
+        font-size: 16px;
+        width: 210px;
+        height: 48px;
+    }
+    .main__right-bg {
+        right: 30px;
+    }
+    .title-right__info {
+        font-size: 64px;
+    }
+    .title-right__info::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: #09f;
+        left: -28px;
+        top: 17px;
+        bottom: 0;
+        height: 209px;
+    }
+    .dscr-right__info {
+        margin: 0px 6px -142px;
+    }
+    .content-section__bg_left {
+        padding: 80px 100px;
+    }
+    .content-section__bg_left::before {
+        left: 0px;
+        top: 799px;
+    }
+    /* sections-platform */
+    .about-platform-list__section li:nth-child(even) {
+        max-width: 565px;
+    }
+    .left-bg__section-items {
+        display: flex;
+        margin-left: 5rem;
+    }
+    .bg-different-platform {
+        padding: 0;
+    }
+    .title__about-trust-brands {
+        right: 40px;
+    }
+    .dscr__about-trust-brands {
+        margin: 100px -5rem;
+    }
+    .list-about-brands {
+        margin: -51px -5rem;
+    }
+    .wrap__our-privileges::before {
+        left: 171px;
+    }
+    .wrap__our-privileges h2 {
+        left: 207px;
+        font-size: 63px;
+    }
+    .bg__our-privileges {
+        height: 870px;
+        right: 0;
+        bottom: -605px;
+        background-size: 43%;
+    }
+    .container-menu__footer {
+        width: 100%;
+    }
+    .last-line {
+        width: 90%;
+    }
+    .footer-line {
+        margin-top: 20px;
+    }
+}

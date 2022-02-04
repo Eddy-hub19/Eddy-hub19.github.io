@@ -1,0 +1,60 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 100% !important;
+    }
+    html,
+    body {
+        overflow-x: hidden;
+        height: 100% !important;
+        font-size: 18px !important;
+    }
+    .header-nav__menu {
+        visibility: hidden;
+    }
+    .main__right-bg {
+        position: absolute;
+        right: 0;
+        top: -50px;
+    }
+    .main__info {
+        margin: 0 auto;
+    }
+    .main__info p {
+        font-size: 18px;
+        max-width: 330px;
+    }
+    .main-btn {
+        position: relative;
+        left: 8px;
+        margin: 0;
+    }
+    .btn {
+        width: 260px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .first-title {
+        font-size: 26px;
+    }
+    .title-right__info {
+        font-size: 35px;
+    }
+    .title-section__platform {
+        font-size: 18px;
+    }
+    .benefit-to-you h2 {
+        font-size: 30px;
+    }
+    .item>h4 {
+        font-size: 18px;
+    }
+    .title__about-trust-brands {
+        font-size: 18px;
+    }
+    footer {
+        width: 100%;
+    }
+    .container-menu__footer {
+        width: auto;
+    }
+}

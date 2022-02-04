@@ -97,25 +97,22 @@ nav {
 }
 
 .header-nav__menu a {
+    border: hidden;
     color: white;
     font-weight: 500;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     margin-left: 47px;
     font-size: 16px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-
-.header-nav__menu a:active {
-    color: #3f4750d5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .header-nav__menu a:hover {
     width: auto;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     color: black;
 }
 
@@ -127,7 +124,7 @@ nav {
 }
 
 .social-network a:hover {
-    color: black;
+    color: #615b5e;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -158,6 +155,7 @@ main {
 }
 
 .first-title {
+    position: relative;
     font-weight: 500;
     font-family: "Geometria-Medium", Arial;
     font-size: 4.4em;
@@ -173,7 +171,7 @@ main {
     height: 127px;
     position: absolute;
     left: -46px;
-    top: 200px;
+    top: 15px;
 }
 
 .first-title__span {
@@ -185,7 +183,7 @@ main {
     position: absolute;
     left: 503px;
     font-size: 41px;
-    top: 282px;
+    top: 105px;
 }
 
 .main__info p {
@@ -235,7 +233,7 @@ main {
 
 .primary:hover {
     background: #fff;
-    color: #09f;
+    color: black;
     border: 2px solid #09f;
     cursor: pointer
 }
@@ -290,7 +288,7 @@ main {
     left: -38px;
     top: 17px;
     bottom: 0;
-    height: 209px;
+    height: 100%;
 }
 
 .dscr-right__info {
@@ -334,9 +332,9 @@ main {
 .title-section__platform::before {
     content: '';
     border-left: 3px solid #09f;
-    height: 127px;
+    height: 100%;
     position: absolute;
-    left: 208px;
+    left: 198px;
     top: 0;
 }
 
@@ -460,10 +458,10 @@ main {
 .title__about-trust-brands::before {
     content: '';
     border-left: 3px solid #09f;
-    height: 127px;
+    height: 100%;
     position: absolute;
     left: -28px;
-    top: 16px;
+    top: 12px;
 }
 
 .dscr__about-trust-brands {
@@ -557,7 +555,7 @@ main {
 }
 
 .wrap__our-privileges h2 {
-    position: absolute;
+    position: relative;
     left: 289px;
     top: -39px;
     font-size: 70px;
@@ -580,7 +578,7 @@ main {
     position: absolute;
     left: 1px;
     background-position: right top;
-    bottom: -520px;
+    bottom: -360px;
 }
 
 
@@ -589,25 +587,24 @@ main {
 .footer {
     display: flex;
     background: #001726;
-    height: 346px;
+    height: 405px;
     width: 100%;
     align-items: center;
     flex-direction: column;
-    /* min-height: calc(100vh - 800px); */
+    /* min-height: calc(100vh - 100px); */
     align-content: center;
     justify-content: center;
-    margin-top: 32.5rem;
+    margin-top: 22.5rem;
 }
 
 .container-menu__footer {
     display: flex;
     color: white;
     flex-direction: row;
-    width: 100%;
+    width: 1920px;
     margin-top: 38px;
     justify-content: space-evenly;
-    align-items: stretch;
-    line-height: 30px;
+    line-height: 33px;
 }
 
 .for-store {
@@ -632,6 +629,14 @@ main {
     flex-direction: column;
     font-size: 14px;
     color: white;
+}
+
+.container-categories a {
+    border-bottom: 0 solid black;
+}
+
+.container-categories a:hover {
+    border-bottom: 1px solid orange;
 }
 
 .container-categories a:nth-child(1) {
@@ -680,7 +685,7 @@ main {
     line-height: 0px;
 }
 
-.newsletter a:nth-child(1) {
+.newsletter-title {
     font-size: 18px;
     color: #5698fc;
     text-transform: uppercase;
@@ -736,7 +741,7 @@ main {
     justify-content: space-around;
     color: white;
     align-items: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .footer-line {
