@@ -1,10 +1,24 @@
 @import url(../media/laptop.css);
 @import url(../media/mobile.css);
-@media (max-width: 1660px) {
+@media (max-width: 1600px) {
     .container {
-        width: 100%;
+        width: 1600px !important;
     }
     body {
-        max-width: 1660px;
+        overflow-x: hidden;
+    }
+    .header-nav__menu {
+        margin-left: 313px;
+    }
+    .main__info {
+        position: relative;
+        left: 0px;
+        top: -66px;
+    }
+    .main__right-bg {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: 610px;
     }
 }

@@ -660,6 +660,7 @@ footer {
     font-size: 15px;
     line-height: 22px;
     color: #3d3d3d;
+    border-bottom: 1px solid white;
 }
 
 .footer-section a:hover {
