@@ -1,12 +1,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
-        width: 100% !important;
+        width: max-content;
     }
     html,
     body {
         overflow-x: hidden;
-        height: 100% !important;
-        font-size: 18px !important;
+        font-size: 18px;
     }
     .header-nav__menu {
         visibility: hidden;

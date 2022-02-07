@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 120px) and (max-width: 480px) {
     html,
     body {
         overflow-x: hidden;
@@ -594,5 +594,85 @@
     }
     .tablink {
         display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-wrapper {
+        width: 768px !important;
+    }
+    body {
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding: 19px;
+    }
+    .full-page-tabs {
+        position: relative !important;
+        right: 0 !important;
+        top: 0 !important;
+    }
+    .top-menu {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+    .goods {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 58px;
+    }
+    .right {
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        margin: 1px 0 0 40px;
+    }
+    .left h3 {
+        margin-top: 30px;
+    }
+    .wrap-item {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .item {
+        margin: 40px;
+    }
+    .food-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 80px;
+    }
+    .sections {
+        width: auto;
+    }
+    .section-left button {
+        margin-top: 20px;
+    }
+    .inf-section {
+        width: auto;
+    }
+    .wrap-slider {
+        overflow-x: clip;
+    }
+    footer {
+        padding: 57px 72px;
+    }
+    .footer-section {
+        margin-left: 43px;
     }
 }

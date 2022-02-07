@@ -1,4 +1,6 @@
-@media (min-width: 1500px) and (max-width: 1660px) {
+@import url(../media/laptop.css);
+@import url(../media/mobile.css);
+@media (max-width: 1660px) {
     .container {
         width: 100%;
     }
