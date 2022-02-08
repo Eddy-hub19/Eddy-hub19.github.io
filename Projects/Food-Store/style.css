@@ -43,7 +43,7 @@ html {
 
 a {
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 ul li {

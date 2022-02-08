@@ -10,14 +10,13 @@ html {
 
 /* Style tab links */
 
-.nav-link {
+.tablink {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    color: black;
 }
 
 .tablink:hover {
@@ -27,32 +26,19 @@ html {
 
 /* Style the tab content (and add height:100% for full page content) */
 
-.tab-content {
+.tabcontent {
     color: white;
-    padding: 80px 20px;
+    display: none;
+    padding: 100px 20px;
     height: 50%;
-    width: 620px;
-    position: absolute;
-    left: 287px;
-    z-index: 2;
-    top: 18px;
+    width: 530px;
 }
 
-.nav-pills {
+.full-page-tabs {
     position: absolute;
     right: 430px;
     top: 45px;
     z-index: 5;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background: #716e6e;
-}
-
-.nav-link:focus,
-.nav-link:hover {
-    color: rgb(124, 120, 120);
 }
 
 .delete {
@@ -63,28 +49,18 @@ html {
     display: none;
 }
 
-.pills-tabContent {
-    width: 200px;
-    height: 50px;
-}
-
-#pills-home {
-    background: rgb(156, 87, 87);
-}
-
-#pills-profile {
+#Occasions {
     background-color: rgb(31, 123, 139);
-    padding: 40px;
 }
 
-#pills-our_brands {
-    background-color: rgba(194, 136, 29, 0.822);
-}
-
-#pills-contact {
+#All_Categories {
     background-color: green;
 }
 
-#pills-gifts-bundles {
-    background: #c2e8ce;
+#GiftsBundles {
+    background-color: #757598ba;
+}
+
+#Our_Brands {
+    background-color: rgba(194, 136, 29, 0.822);
 }
