@@ -1,14 +1,22 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
-        width: max-content;
+        min-width: 320px !important;
     }
     html,
     body {
         overflow-x: hidden;
         font-size: 18px;
     }
+    .bg {
+        background-size: 232px;
+    }
     .header-nav__menu {
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: none;
+    }
+    .social-network {
+        position: absolute;
+        left: 130px;
     }
     .main__right-bg {
         position: absolute;
@@ -16,39 +24,195 @@
         top: -50px;
     }
     .main__info {
-        margin: 0 auto;
+        margin: auto;
+        left: 55px;
     }
     .main__info p {
         font-size: 18px;
-        max-width: 330px;
+        max-width: 210px;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .first-title {
+        font-size: 33px;
+        max-width: 230px;
+    }
+    .first-title::before {
+        height: 100%;
+        position: absolute;
+        left: -30px;
+        top: 0;
+    }
+    .first-title__span {
+        position: relative;
+        left: 0;
+        font-size: 38px;
+        top: 0;
     }
     .main-btn {
         position: relative;
-        left: 8px;
+        left: 0;
         margin: 0;
+        top: 40px;
     }
     .btn {
-        width: 260px;
+        width: 180px;
         height: 50px;
         font-size: 17px;
+        margin: 20px 0px;
     }
-    .first-title {
-        font-size: 26px;
+    .btn-primary_position {
+        margin: 20px -41px;
+    }
+    .content-section {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        flex-direction: column;
     }
     .title-right__info {
         font-size: 35px;
+        max-width: 260px;
+        letter-spacing: 0;
+        position: relative;
+        left: -52px;
+        margin-top: 8rem;
+    }
+    .title-right__info::before {
+        left: -21px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+    .dscr-right__info {
+        font-size: 20px;
+        max-width: 300px;
+        margin-left: -75px;
+    }
+    .sections-platform {
+        margin-top: 13rem;
+    }
+    .section-platform {
+        display: flex;
+        justify-content: flex-end;
     }
     .title-section__platform {
-        font-size: 18px;
+        font-size: 34px;
+        padding-left: 21px;
+        max-width: 250px;
+    }
+    .title-section__platform::before {
+        content: '';
+        border-left: 3px solid #09f;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0;
+    }
+    .about-platform-list__section li:nth-child(odd) {
+        font-size: 22px;
+        color: #5698fc;
+        text-transform: uppercase;
+        margin-top: 32px;
+        padding-bottom: 21px;
+        font-family: "Geometria-Bold", Arial, Helvetica, sans-serif;
+    }
+    .about-platform-list__section li:nth-child(even) {
+        max-width: 184px;
+        font-size: 21px;
+        letter-spacing: -0.5px;
+        font-family: "Geometria", Arial, Helvetica, sans-serif;
+    }
+    .benefit-to-you {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     }
     .benefit-to-you h2 {
         font-size: 30px;
     }
+    .benefit-to-you button {
+        text-transform: uppercase;
+        width: 213px;
+        height: 54px;
+        border-radius: 40px;
+        background: #5698fc;
+        color: white;
+        border: none;
+        margin-top: 75px;
+    }
+    .items {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 400;
+        margin-top: 40px;
+    }
     .item>h4 {
         font-size: 18px;
     }
+    .item p {
+        margin-top: 2px;
+        max-inline-size: 237px;
+        text-align: center;
+        font-size: 19px;
+    }
     .title__about-trust-brands {
-        font-size: 18px;
+        font-size: 38px;
+        display: block;
+        position: unset;
+    }
+    .dscr__about-trust-brands {
+        max-width: 270px;
+        margin: 0 auto;
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    .list-about-brands li:nth-child(1) {
+        padding-top: 32px;
+        padding-bottom: 25px;
+    }
+    .brands {
+        width: 100%;
+        display: flex;
+        margin-top: 10rem;
+    }
+    .picture-brands__brands {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-privileges {
+        position: relative;
+        left: 100px;
+    }
+    .wrap__our-privileges h2 {
+        position: relative;
+        left: -30px;
+        display: flex;
+        bottom: 150px;
+        font-size: 32px;
+        max-width: 240px;
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .wrap__our-privileges::before {
+        height: 100%;
+        position: absolute;
+        left: -58px;
+        top: -150px;
     }
     footer {
         width: 100%;

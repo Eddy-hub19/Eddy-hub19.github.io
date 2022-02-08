@@ -1,6 +1,6 @@
 @import url(../media/laptop.css);
 @import url(../media/mobile.css);
-@media (max-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 2560px) {
     .container {
         width: 1600px !important;
     }
