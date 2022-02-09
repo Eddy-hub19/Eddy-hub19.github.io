@@ -10,7 +10,49 @@
 </head>
 
 <body>
+    <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="menu">
+        <nav>
+            <li><a class="menuLink" href="#">Occasions</a></li>
+            <li><a class="menuLink" href="#">All Categories</a></li>
+            <li><a class="menuLink" href="#">Gifts & Bundles</a></li>
+            <li><a class="menuLink" href="#">Our Brands</a></li>
+            <li><a class="menuLink" href="#">About Us</a></li>
+        </nav>
+    </div>
+    <!-- <button class="hamburger" id="hamburger">
+        <span>
+            <ul class="menu">
+                <li><a class="menuLink" href="#">Occasions</a></li>
+                <li><a class="menuLink" href="#">All Categories</a></li>
+                <li><a class="menuLink" href="#">Gifts & Bundles</a></li>
+                <li><a class="menuLink" href="#">Our Brands</a></li>
+                <li><a class="menuLink" href="#">About Us</a></li>
+            </ul>
+        </span>
+    </button> -->
+    <script>
+        let menuBtn = document.querySelector('.menu-btn');
+        let menu = document.querySelector('.menu');
+        menuBtn.addEventListener('click', function() {
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+        })
 
+        // Show Hamburger menu
+
+        // const hamburger = document.querySelector('.hamburger')
+        // const menu = document.querySelector('.menu')
+        // hamburger.addEventListener('click', function() {
+        //     menu.classList.toggle('show')
+        // })
+    </script>
 </body>
 
 </html>
