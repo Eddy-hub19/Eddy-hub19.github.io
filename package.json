@@ -6,7 +6,7 @@
     "jquery": "^3.6.0",
     "module": "^1.2.5",
     "readline-sync": "^1.4.10",
-    "sass": "^1.49.0",
+    "sass": "^1.49.7",
     "terminal-kit": "^2.3.0"
   },
   "devDependencies": {

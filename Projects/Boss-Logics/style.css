@@ -435,7 +435,7 @@ main {
 
 .left-bg__section-items {
     display: flex;
-    margin-left: 9rem;
+    /* margin-left: 9rem; */
 }
 
 .about-trust-brands {
