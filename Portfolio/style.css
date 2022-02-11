@@ -1,297 +1,316 @@
 body {
-  padding: 0;
-  margin: 0 auto;
-  background: no-repeat;
-  background-size: 100%;
-  background-image: url(/img/veeterzy.jpg);
+    padding: 0;
+    margin: 0 auto;
+    background: no-repeat;
+    background-size: 100%;
+    background-image: url(/img/veeterzy.jpg);
 }
 
 html {
-  scroll-behavior: smooth;
-  height: 100%;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 .header-class {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  color: gainsboro;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: gainsboro;
 }
 
 .header-class h1 {
-  font-family: "Indie Flower", cursive;
-  font-size: 50px;
+    font-family: "Indie Flower", cursive;
+    font-size: 50px;
 }
 
 .header-class h2 {
-  color: rgb(116 147 177);
-  font-family: "Indie Flower", cursive;
-  font-size: 4em;
+    color: rgb(116 147 177);
+    font-family: "Indie Flower", cursive;
+    font-size: 4em;
 }
 
-.header-class > h3 {
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 0;
-  text-align: center;
-  color: black;
-  font-size: 55px;
+.header-class>h3 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    font-size: 55px;
 }
 
 .header-main {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 35px;
-  font-family: "Indie Flower";
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Indie Flower";
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .read-more {
-  width: 550px;
-  height: 50px;
-  color: white;
-  font-size: 25px;
-  filter: drop-shadow(2px 4px 6px black);
+    width: 550px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
-.read-more > p {
-  font-size: 30px;
-  filter: drop-shadow(2px 4px 6px black);
-  color: rgb(211, 211, 211);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+.read-more>p {
+    font-size: 30px;
+    filter: drop-shadow(2px 4px 6px black);
+    color: rgb(211, 211, 211);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
+
 .read-more ul li {
-  filter: drop-shadow(2px 4px 6px black);
-  font-size: 35px;
-  transition: 3s;
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
+    filter: drop-shadow(2px 4px 6px black);
+    font-size: 35px;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
 }
 
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 @keyframes color-change {
-  0% {
-    color: white;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: white;
-  }
+    0% {
+        color: white;
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+    }
 }
 
 .animation {
-  animation: color-change 4s infinite;
+    animation: color-change 4s infinite;
 }
 
 .bar-top {
-  position: relative;
+    position: relative;
 }
 
 #bar {
-  top: -9.8em;
-  right: 90%;
-  padding: 0.5em;
-  margin: 0;
-  position: absolute;
-  width: 10em;
-  background: rgb(101, 126, 150);
-  color: white;
-  text-align: center;
-  transition: top 1.5s ease-out 0.5s;
-  border-radius: 40px;
+    top: -9.8em;
+    right: 90%;
+    padding: 0.5em;
+    margin: 0;
+    position: absolute;
+    width: 10em;
+    background: rgb(101, 126, 150);
+    color: white;
+    text-align: center;
+    transition: top 1.5s ease-out 0.5s;
+    border-radius: 40px;
 }
 
 #bar:hover {
-  top: 20px;
+    top: 20px;
 }
 
 .dark-theme {
-  background-image: url(/img/Big-forest.jpg);
+    background-image: url(/img/Big-forest.jpg);
 }
 
 .img {
-  position: absolute;
-  left: -55px;
-  right: 73px;
-  bottom: 1px;
+    position: absolute;
+    left: -55px;
+    right: 73px;
+    bottom: 1px;
 }
 
 .theme-button {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  width: 70px;
-  height: 50px;
-  color: rgb(48, 142, 219);
-  background: rgb(34, 51, 66);
-  border-radius: 40px;
-  z-index: 999;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 70px;
+    height: 50px;
+    color: rgb(48, 142, 219);
+    background: rgb(34, 51, 66);
+    border-radius: 40px;
+    z-index: 999;
 }
 
 @keyframes blink {
-  0%,
-  75%,
-  100% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
+    0%,
+    75%,
+    100% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
 }
 
 main {
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-size: cover;
-  font-size: 34px;
-  color: white;
-  position: static;
-  padding: 20px;
-  text-align: center;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    font-size: 34px;
+    color: white;
+    position: static;
+    padding: 20px;
+    text-align: center;
 }
 
-.main-content > h3 {
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 0;
-  text-align: center;
-  color: black;
-  font-size: 55px;
-  filter: drop-shadow(2px 4px 6px black);
+.main-content>h3 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    font-size: 55px;
+    filter: drop-shadow(2px 4px 6px black);
 }
+
 
 /* Change-theme */
 
 .change-theme {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
 /* Carousel */
+
 .carousel {
-  display: flex;
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .carousel img {
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .slick-prev:before {
-  content: "←";
-  font-size: 60px;
-  margin-left: -40px;
+    content: "←";
+    font-size: 60px;
+    margin-left: -40px;
 }
+
 .slick-next:before {
-  content: "→";
-  font-size: 60px;
-  margin-left: 10px;
+    content: "→";
+    font-size: 60px;
+    margin-left: 10px;
 }
+
 
 /* DROPDOWN */
 
+
 /* Dropdown Button */
+
 .dropbtn {
-  color: white;
-  padding: 16px;
-  cursor: pointer;
-  position: relative;
-  bottom: 80px;
-  left: 90px;
-  background-color: rgb(49, 61, 73);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 25px;
-  width: 200px;
-  border-radius: 20px;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 80px;
+    left: 90px;
+    background-color: rgb(49, 61, 73);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    width: 200px;
+    border-radius: 20px;
 }
 
 .dropbtn::after {
-  content: "\2304";
-  margin-left: 10px;
+    content: "\2304";
+    margin-left: 10px;
 }
+
 
 /* Dropdown button on hover & focus */
+
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #33434e;
+    background-color: #33434e;
 }
+
 
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
-  display: none;
-  position: absolute;
-  border: 2px black solid;
-  left: 6.5rem;
-  top: -13px;
-  z-index: 1;
-  font-size: 25px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgb(9 28 46);
-  font-weight: normal;
-  white-space: nowrap;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
-  background: #636c66;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+    display: none;
+    position: absolute;
+    border: 2px black solid;
+    left: 6.5rem;
+    top: -13px;
+    z-index: 1;
+    font-size: 25px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(9 28 46);
+    font-weight: normal;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #636c66;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
 
 /* Links inside the dropdown */
+
 .dropdown-content a {
-  color: lightgray;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-bottom: 1px black solid;
+    color: lightgray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px black solid;
 }
 
+
 /* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {
-  background-color: rgb(153, 149, 149);
+    background-color: rgb(153, 149, 149);
 }
+
 
 /* Show the dropdown menu */
 
 .show {
-  display: block;
+    display: block;
 }
 
 footer {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
 }
