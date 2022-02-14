@@ -101,14 +101,14 @@ ul li {
     width: 24px;
     height: 30px;
     background-repeat: no-repeat;
-    background-image: url("./img/svg/profile.svg");
+    background-image: url(profile.svg);
 }
 
 .menu3 {
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-image: url("./img/svg/cart.svg");
+    background-image: url(cart.svg);
     position: relative;
 }
 
@@ -605,7 +605,7 @@ ul li {
     white-space: nowrap;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url(/Projects/Food-Store/images/arrow-right.svg);
+    background-image: url(/Projects/Food-Store/img/arrow-right.svg);
 }
 
 .communication {
@@ -613,7 +613,7 @@ ul li {
     height: 260px;
     display: flex;
     flex-direction: column;
-    background-image: url(/Projects/Food-Store/images/Bg-Our-Partner.png);
+    background-image: url(/Projects/Food-Store./img/bg-our-partner.png);
 }
 
 .communication h4 {
