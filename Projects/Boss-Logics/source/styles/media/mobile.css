@@ -1,46 +1,58 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
-        min-width: 320px !important;
+        width: 100% !important;
     }
     html,
     body {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         font-size: 18px;
     }
     .bg {
-        background-size: 232px;
+        position: relative;
+        background-size: 100%;
+        width: 100% !important;
+    }
+    .header__logo {
+        background: white;
+    }
+    .header__logo img {
+        position: relative;
+        left: 80px;
     }
     .header-nav__menu {
-        /* visibility: hidden; */
         display: none;
     }
     .social-network {
         position: absolute;
-        left: 130px;
+        left: 120px;
+        top: 50px;
     }
     .main__right-bg {
         position: absolute;
         right: 0;
-        top: -50px;
+        top: 70px;
     }
     .main__info {
-        margin: auto;
-        left: 55px;
+        margin: 0 auto;
+        position: relative;
+        top: 150px;
     }
     .main__info p {
         font-size: 18px;
-        max-width: 210px;
+        max-width: 280px;
         margin: 0;
+        padding-left: 20px;
         padding-top: 20px;
     }
     .first-title {
         font-size: 33px;
         max-width: 230px;
+        padding-left: 25px;
     }
     .first-title::before {
         height: 100%;
         position: absolute;
-        left: -30px;
+        left: 10px;
         top: 0;
     }
     .first-title__span {
@@ -50,16 +62,14 @@
         top: 0;
     }
     .main-btn {
-        position: relative;
-        left: 0;
-        margin: 0;
-        top: 40px;
+        position: unset;
+        margin: 0 16%;
     }
     .btn {
         width: 180px;
         height: 50px;
         font-size: 17px;
-        margin: 20px 0px;
+        margin: 30px auto;
     }
     .btn-primary_position {
         margin: 20px -41px;
@@ -67,38 +77,56 @@
     .content-section {
         display: flex;
         align-items: center;
-        margin: 0px;
         flex-direction: column;
+        margin: 6rem auto;
+        width: 100% !important;
+        text-align: center;
+    }
+    .content-section__bg_left {
+        display: none;
+    }
+    .right-info {
+        position: relative;
+        top: 5rem;
     }
     .title-right__info {
         font-size: 35px;
         max-width: 260px;
         letter-spacing: 0;
         position: relative;
-        left: -52px;
-        margin-top: 8rem;
+        left: 10px;
     }
     .title-right__info::before {
-        left: -21px;
+        left: -10px;
         top: 0;
         bottom: 0;
         height: 100%;
     }
     .dscr-right__info {
         font-size: 20px;
-        max-width: 300px;
-        margin-left: -75px;
+        max-width: 231px;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
     }
+    /* sections-platform */
     .sections-platform {
         margin-top: 13rem;
     }
     .section-platform {
         display: flex;
         justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+    .wrap-right__section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 60px;
     }
     .title-section__platform {
         font-size: 34px;
-        padding-left: 21px;
+        padding-left: 16px;
         max-width: 250px;
     }
     .title-section__platform::before {
@@ -122,6 +150,9 @@
         font-size: 21px;
         letter-spacing: -0.5px;
         font-family: "Geometria", Arial, Helvetica, sans-serif;
+    }
+    .bg-different-platform {
+        padding-bottom: 70px;
     }
     .benefit-to-you {
         display: flex;
@@ -167,38 +198,74 @@
         text-align: center;
         font-size: 19px;
     }
+    .section-items {
+        display: block;
+        margin-top: 0;
+    }
+    .left-bg__section-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-trust-brands {
+        display: flex;
+        flex-direction: column;
+    }
     .title__about-trust-brands {
         font-size: 38px;
         display: block;
         position: unset;
+        margin: 10px 11px;
     }
     .dscr__about-trust-brands {
         max-width: 270px;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: 15px;
         padding-top: 30px;
+    }
+    .list-about-brands {
+        margin: auto;
     }
     .list-about-brands li:nth-child(1) {
         padding-top: 32px;
         padding-bottom: 25px;
+        margin-left: 21px;
     }
+    .list-about-brands li:nth-child(2) {
+        font-size: 21px;
+        color: rgb(143, 143, 143);
+    }
+    /* brands  */
     .brands {
-        width: 100%;
+        width: 100% !important;
         display: flex;
-        margin-top: 10rem;
+        margin-top: 6rem;
+        flex-wrap: wrap;
     }
     .picture-brands__brands {
-        height: auto;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
+        height: 100%;
+        width: 100% !important;
+    }
+    .picture-brands__brands a {
+        padding: 40px 0;
+        margin-left: 0;
+        box-sizing: border-box;
+        transition: transform 0.4s ease-in-out 0s;
+        cursor: pointer;
+    }
+    .pos-img {
+        padding-right: 0;
     }
     .our-privileges {
-        position: relative;
-        left: 100px;
+        display: none;
+    }
+    .bg__our-privileges {
+        display: none;
     }
     .wrap__our-privileges h2 {
+        display: none;
         position: relative;
         left: -30px;
         display: flex;
@@ -209,15 +276,48 @@
         font-weight: 500;
     }
     .wrap__our-privileges::before {
-        height: 100%;
-        position: absolute;
-        left: -58px;
-        top: -150px;
+        display: block;
+        content: none;
     }
-    footer {
+    .footer {
+        display: flex;
+        background: rgb(0, 23, 38);
         width: 100%;
+        height: 100% !important;
+        align-items: center;
+        flex-direction: column;
+        place-content: center;
+        margin-top: 5.5rem;
     }
     .container-menu__footer {
-        width: auto;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .for-store {
+        display: flex;
+        place-content: center space-around;
+        flex-direction: column;
+    }
+    .newsletter {
+        display: none;
+    }
+    .container-categories {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: white;
+        padding-right: 60px;
+    }
+    .contact-info {
+        display: flex;
+        color: white;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .contact-info a {
+        max-width: 207px;
     }
 }

@@ -83,6 +83,12 @@
         left: 0px;
         top: 799px;
     }
+    .wrap-right__section {
+        padding-left: 7rem;
+    }
+    .title-section__platform {
+        max-width: 620px;
+    }
     /* sections-platform */
     .about-platform-list__section li:nth-child(even) {
         max-width: 565px;
