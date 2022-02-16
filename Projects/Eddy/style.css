@@ -12,22 +12,23 @@
 body {
     margin: 0 auto;
     height: 100%;
+    background: url(./img/coding.jpg) center;
+    color: white;
 }
 
 img:hover {
-    filter: blur(5px);
+    filter: url(/index.html);
     transition: all 1.3s;
-    -webkit-filter: blur(5px);
+    -webkit-filter: url(/index.html);
 }
 
 a {
     text-decoration: none;
     color: black;
-    border-bottom: none;
 }
 
-a:hover {
-    text-decoration: revert;
+a:active {
+    color: rgb(124, 137, 161);
 }
 
 ul li {
@@ -41,12 +42,9 @@ ul li {
 }
 
 .header {
+    position: fixed;
     top: -20px;
     width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding-top: 40px;
     z-index: 2;
     padding-bottom: 40px;
@@ -63,13 +61,19 @@ ul li {
 }
 
 .header__nav {
-    width: 300px;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
 .header__nav a {
     display: flex;
+    border-bottom: 3px solid transparent;
+}
+
+.header__nav a:hover {
+    border-bottom: 3px solid black;
 }
 
 main {

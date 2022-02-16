@@ -51,7 +51,7 @@ ul li {
 }
 
 .list li:before {
-    content: url(.img/svg/check-mark.svg);
+    content: url(/Projects/Food-Store/img/svg/check-mark.svg);
     padding: 2px 7px;
     background: #ff8126;
     border-radius: 50%;
@@ -81,7 +81,7 @@ ul li {
     display: inline-block;
     width: 10px;
     height: 7px;
-    background-image: url("./img/svg/arrow-down.svg");
+    background-image: url(/Projects/Food-Store/img/svg/arrow-down.svg);
 }
 
 .top-menu {
@@ -94,21 +94,21 @@ ul li {
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
-    background-image: url("./img/svg/search.svg");
+    background-image: url(/Projects/Food-Store/img/svg/search.svg);
 }
 
 .menu2 {
     width: 24px;
     height: 30px;
     background-repeat: no-repeat;
-    background-image: url(profile.svg);
+    background-image: url(/Projects/Food-Store/img/svg/profile.svg);
 }
 
 .menu3 {
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-image: url(cart.svg);
+    background-image: url(/Projects/Food-Store/img/svg/cart.svg);
     position: relative;
 }
 
@@ -216,11 +216,12 @@ ul li {
 
 .item {
     width: 270px;
-    height: 332px;
+    height: 100%;
     background: #f7f5f0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     margin-left: 20px;
+    padding-bottom: 40px;
 }
 
 .item h4 {
@@ -379,8 +380,8 @@ ul li {
     justify-content: space-around;
     align-self: center;
     width: 100%;
-    height: 395px;
-    background-image: url(./img/Bg-Our-Partner.png);
+    height: 100%;
+    background-image: url(/Projects/Food-Store/img/bg-our-partner.png);
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -405,6 +406,7 @@ ul li {
     background: #ff8126;
     border-radius: 5px;
     border: none;
+    margin-top: 50px;
     margin-bottom: 60px;
     font-family: "Poppins";
     font-style: normal;
@@ -479,7 +481,7 @@ ul li {
 .section-right {
     display: flex;
     background-repeat: no-repeat;
-    background-image: url("./img/section-left");
+    background-image: url(/Projects/Food-Store/img/section-left.png);
     width: 1720px;
     height: 432px;
 }
@@ -604,16 +606,17 @@ ul li {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    background-image: url(/Projects/Food-Store/img/svg/arrow-right.svg);
     background-repeat: no-repeat;
-    background-image: url(/Projects/Food-Store/img/arrow-right.svg);
 }
 
 .communication {
     margin-top: 80px;
     height: 260px;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    background-image: url(/Projects/Food-Store./img/bg-our-partner.png);
+    background-image: url(/Projects/Food-Store/img/bg-tell-friend.png);
 }
 
 .communication h4 {
