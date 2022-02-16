@@ -5,8 +5,8 @@ const sass = require('gulp-sass')(require('sass'));
 
 gulp.task("sass", function() {
     return gulp
-        .src("./styles/sass/style.sass")
+        .src("./source/styles/sass/style.sass")
         .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest("./styles/test"));
+        .pipe(concat('./style.css'))
+        .pipe(gulp.dest("./source/styles/test"));
 });

@@ -41,8 +41,8 @@ a
     margin: 0
     padding: 0
 
-&:active
-    color: rgb(78, 74, 74)
+    &:active
+        color: rgb(78, 74, 74)
 
 ul li
     list-style: none
@@ -77,18 +77,18 @@ nav
     text-transform: uppercase
     margin-left: 484px
 
-a
-    border-bottom: 1px solid transparent
-    color: rgb(0, 0, 0)
-    font-weight: 500
-    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
-    margin-left: 47px
-    font-size: 16px
-    transition: 0.3s
-    -webkit-transition: 0.3s
-    -moz-transition: 0.3s
-    -ms-transition: 0.3s
-    -o-transition: 0.3s
+    &:a
+        border-bottom: 1px solid transparent
+        color: rgb(0, 0, 0)
+        font-weight: 500
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
+        margin-left: 47px
+        font-size: 16px
+        transition: 0.3s
+        -webkit-transition: 0.3s
+        -moz-transition: 0.3s
+        -ms-transition: 0.3s
+        -o-transition: 0.3s
 
     &:hover
         width: auto
@@ -101,13 +101,13 @@ a
     margin: 0 45px
     cursor: pointer
 
-a:hover
-    color: #615b5e
-    transition: 0.5s
-    -webkit-transition: 0.5s
-    -moz-transition: 0.5s
-    -ms-transition: 0.5s
-    -o-transition: 0.5s
+    &:a:hover
+        color: #615b5e
+        transition: 0.5s
+        -webkit-transition: 0.5s
+        -moz-transition: 0.5s
+        -ms-transition: 0.5s
+        -o-transition: 0.5s
 
 .fab, .far
     margin-left: 30px
@@ -136,13 +136,13 @@ main
     max-width: 705px
     margin-top: 178px
 
-&::before
-    content: ''
-    border-left: 3px solid #09f
-    height: 127px
-    position: absolute
-    left: -46px
-    top: 15px
+    &::before
+        content: ''
+        border-left: 3px solid #09f
+        height: 127px
+        position: absolute
+        left: -46px
+        top: 15px
 
 .first-title__span
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
@@ -181,25 +181,25 @@ main
     background: transparent
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
 
-&:hover
-    background: #5698fc
-    color: white
-    cursor: pointer
-    transition: 1.5s
-    -webkit-transition: 1.5s
-    -moz-transition: 1.5s
-    -ms-transition: 1.5s
-    -o-transition: 1.5s
+    &:hover
+        background: #5698fc
+        color: white
+        cursor: pointer
+        transition: 1.5s
+        -webkit-transition: 1.5s
+        -moz-transition: 1.5s
+        -ms-transition: 1.5s
+        -o-transition: 1.5s
 
 .primary
     background: #5698fc
     color: white
 
-&:hover
-    background: #fff
-    color: black
-    border: 2px solid #09f
-    cursor: pointer
+    &:hover
+        background: #fff
+        color: black
+        border: 2px solid #09f
+        cursor: pointer
 
 .main__right-bg
     display: flex
@@ -217,14 +217,15 @@ main
     margin: 19.5rem 0
 
 .content-section__bg_left
-&::before
-    content: url(./sourse/img/bg.png)
-    position: absolute
-    left: 0
-    top: 829px
-    z-index: -2
+    &::before
+        content: url(./sourse/img/bg.png)
+        position: absolute
+        left: 0
+        top: 829px
+        z-index: -2
 
-    padding-right: 121px
+    &
+        padding-right: 121px
 
 .title-right__info
     font-size: 70px
@@ -237,15 +238,15 @@ main
     left: 0
     letter-spacing: 2px
 
-&::before
-    content: ""
-    position: absolute
-    width: 3px
-    background-color: #09f
-    left: -38px
-    top: 17px
-    bottom: 0
-    height: 100%
+    &::before
+        content: ""
+        position: absolute
+        width: 3px
+        background-color: #09f
+        left: -38px
+        top: 17px
+        bottom: 0
+        height: 100%
 
 .dscr-right__info
     font-family: "Geometria", Arial, Helvetica, sans-serif
@@ -278,31 +279,30 @@ main
     font-weight: 400
     padding-left: 14rem
 
-&::before
-    content: ''
-    border-left: 3px solid #09f
-    height: 100%
-    position: absolute
-    left: 198px
-    top: 0
+    &::before
+        content: ''
+        border-left: 3px solid #09f
+        height: 100%
+        position: absolute
+        left: 198px
+        top: 0
 
 .about-platform-list__section
     padding-left: 12rem
 
-&li
-    &:nth-child(odd)
-        font-size: 22px
-        color: #5698fc
-        text-transform: uppercase
-        margin-top: 32px
-        padding-bottom: 21px
-        font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
+.about-platform-list__section li:nth-child(odd)
+    font-size: 22px
+    color: #5698fc
+    text-transform: uppercase
+    margin-top: 32px
+    padding-bottom: 21px
+    font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
 
-    &:nth-child(even)
-        max-width: 724px
-        font-size: 21px
-        letter-spacing: -0.5px
-        font-family: "Geometria", Arial, Helvetica, sans-serif
+.about-platform-list__section li:nth-child(even)
+    max-width: 724px
+    font-size: 21px
+    letter-spacing: -0.5px
+    font-family: "Geometria", Arial, Helvetica, sans-serif
 
 .bg-different-platform
     padding-right: 267px
@@ -318,11 +318,11 @@ main
     font-weight: 500
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
 
-h2
-    margin-top: 15rem
-    font-size: 75px
-    font-weight: 500
-    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
+    &:h2
+        margin-top: 15rem
+        font-size: 75px
+        font-weight: 500
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
 
 .items
     display: flex
@@ -336,20 +336,20 @@ h2
     flex-direction: column
     font-weight: 400
 
-> h4
-    margin: 21px 103px
-    font-size: 24px
-    max-width: 210px
-    text-align: center
-    text-transform: uppercase
-    font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
+    &:h4
+        margin: 21px 103px
+        font-size: 24px
+        max-width: 210px
+        text-align: center
+        text-transform: uppercase
+        font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
 
-p
-    margin-top: -8px
-    max-inline-size: 237px
-    text-align: center
-    font-size: 19px
-    font-family: "Geometria", Arial, Helvetica, sans-serif
+    &:p
+        margin-top: -8px
+        max-inline-size: 237px
+        text-align: center
+        font-size: 19px
+        font-family: "Geometria", Arial, Helvetica, sans-serif
 
 .benefit-to-you button
     text-transform: uppercase
@@ -386,13 +386,13 @@ p
     font-weight: 500
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
 
-&::before
-    content: ''
-    border-left: 3px solid #09f
-    height: 100%
-    position: absolute
-    left: -28px
-    top: 12px
+    &::before
+        content: ''
+        border-left: 3px solid #09f
+        height: 100%
+        position: absolute
+        left: -28px
+        top: 12px
 
 .dscr__about-trust-brands
     max-width: 551px
@@ -407,17 +407,17 @@ p
 .list-about-brands
     margin: -51px -10rem
 
-li
-    &:nth-child(1)
-        color: #0099ff
-        text-transform: uppercase
-        font-size: 20px
-        padding-top: 2px
-        padding-bottom: 5px
+    &:li
+        &:nth-child(1)
+            color: #0099ff
+            text-transform: uppercase
+            font-size: 20px
+            padding-top: 2px
+            padding-bottom: 5px
 
-    &:nth-child(2)
-        font-size: 21px
-        color: #8f8f8f
+        &:nth-child(2)
+            font-size: 21px
+            color: #8f8f8f
 
 /* brands
 
@@ -435,16 +435,16 @@ li
     align-items: center
     justify-content: space-between
 
-a
-    padding: 20px 47px
-    margin-left: -37px
-    box-sizing: border-box
-    transition: transform 0.4s ease-in-out
-    -webkit-transition: transform 0.4s ease-in-out
-    -moz-transition: transform 0.4s ease-in-out
-    -ms-transition: transform 0.4s ease-in-out
-    -o-transition: transform 0.4s ease-in-out
-    cursor: pointer
+    &:a
+        padding: 20px 47px
+        margin-left: -37px
+        box-sizing: border-box
+        transition: transform 0.4s ease-in-out
+        -webkit-transition: transform 0.4s ease-in-out
+        -moz-transition: transform 0.4s ease-in-out
+        -ms-transition: transform 0.4s ease-in-out
+        -o-transition: transform 0.4s ease-in-out
+        cursor: pointer
 
 .pos-img
     padding-right: 80px
@@ -464,22 +464,22 @@ a
     margin-top: 24rem
     position: relative
 
-&::before
-    content: ''
-    border-left: 3px solid #09f
-    height: 207px
-    position: absolute
-    left: 262px
-    top: -25px
+    &::before
+        content: ''
+        border-left: 3px solid #09f
+        height: 207px
+        position: absolute
+        left: 262px
+        top: -25px
 
-&:h2
-    position: relative
-    left: 289px
-    top: -39px
-    font-size: 70px
-    max-width: 580px
-    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
-    font-weight: 500
+    &:h2
+        position: relative
+        left: 289px
+        top: -39px
+        font-size: 70px
+        max-width: 580px
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
+        font-weight: 500
 
 .btn__our-privileges_pos
     position: absolute
@@ -524,13 +524,13 @@ a
     justify-content: space-evenly
     flex-direction: column
 
-img
-    border-bottom: 1px solid #0cf
+    &:img
+        border-bottom: 1px solid #0cf
 
-p
-    font-size: 14px
-    max-width: 200px
-    font-family: "Geometria", Arial, Helvetica, sans-serif
+    &:p
+        font-size: 14px
+        max-width: 200px
+        font-family: "Geometria", Arial, Helvetica, sans-serif
 
 .container-categories
     display: flex
@@ -538,8 +538,8 @@ p
     font-size: 14px
     color: white
 
-a
-    border-bottom: 0 solid black
+    &:a
+        border-bottom: 0 solid black
 
     &:hover
         border-bottom: 1px solid orange
@@ -566,15 +566,16 @@ a
 .bg-contact-info
     padding-right: 10px
 
-.contact-info a
-    max-width: 177px
+.contact-info
+    &:a
+        max-width: 177px
 
-&:nth-child(1)
-    color: #0099ff
-    text-transform: uppercase
-    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
-    font-size: 16px
-    font-weight: 500
+    &:nth-child(1)
+        color: #0099ff
+        text-transform: uppercase
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
+        font-size: 16px
+        font-weight: 500
 
 .newsletter
     display: flex
@@ -643,5 +644,5 @@ a
     width: 100%
     margin-top: 20px
 
-p:nth-child(2)
-    margin-left: 45rem
+    p:nth-child(2)
+        margin-left: 45rem
