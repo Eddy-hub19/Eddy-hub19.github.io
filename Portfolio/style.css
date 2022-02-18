@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     background: no-repeat;
     background-size: 100%;
-    background-image: url(/img/veeterzy.jpg);
+    background-image: url(/Portfolio/images/veeterzy.jpg);
 }
 
 html {
@@ -122,7 +122,7 @@ li {
 }
 
 .dark-theme {
-    background-image: url(/img/Big-forest.jpg);
+    background-image: url(/Portfolio/images/Big-forest.jpg);
 }
 
 .img {
