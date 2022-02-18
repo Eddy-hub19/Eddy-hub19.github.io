@@ -33,9 +33,8 @@ img {
     max-width: 100%;
 }
 
-body,
 html {
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
     scroll-behavior: smooth;
 }
@@ -107,12 +106,13 @@ nav {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    color: black;
 }
 
 .header-nav__menu a:hover {
     width: auto;
     border-bottom: 1px solid white;
-    color: black;
+    color: rgba(156, 154, 154, 0.904);
 }
 
 .social-network {
@@ -237,12 +237,14 @@ main {
     cursor: pointer
 }
 
-.main__right-bg {
-    display: flex;
-    flex-direction: row-reverse;
+.right-bg {
+    position: relative;
+}
+
+.main__right-bg picture {
+    right: 154px;
+    bottom: 100px;
     position: absolute;
-    right: 143px;
-    top: -32px;
 }
 
 
@@ -256,7 +258,7 @@ main {
 }
 
 .content-section__bg_left::before {
-    content: url(./source/img/bg.png);
+    content: url(./source/img/bg2.png);
     position: absolute;
     left: 0;
     top: 829px;
@@ -499,6 +501,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 150px;
 }
 
 .picture-brands__brands a {
@@ -528,14 +531,42 @@ main {
 
 /* after brands */
 
-.wrap__our-privileges {
+.our-privileges {
     display: flex;
-    flex-direction: column;
-    margin-top: 24rem;
-    position: relative;
 }
 
-.wrap__our-privileges::before {
+.our-privileges_pos__btn {
+    position: absolute;
+    left: 240px;
+    top: 179px;
+}
+
+.our-privileges__bg {
+    background: url(./source/img/bg4.png) no-repeat;
+    min-width: 100%;
+    min-height: 908px;
+    z-index: -3;
+    position: absolute;
+    left: 1px;
+    background-position: right top;
+    bottom: -360px;
+}
+
+.our-privileges__bg picture {
+    position: relative;
+    left: 337px;
+    top: 240px;
+    width: 100%;
+}
+
+.our-privileges__wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 360px;
+}
+
+.our-privileges__wrap::before {
     content: '';
     border-left: 3px solid #09f;
     height: 207px;
@@ -544,31 +575,14 @@ main {
     top: -25px;
 }
 
-.wrap__our-privileges h2 {
+.our-privileges__wrap h2 {
     position: relative;
     left: 289px;
     top: -39px;
     font-size: 70px;
-    max-width: 580px;
+    max-width: 920px;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     font-weight: 500;
-}
-
-.btn__our-privileges_pos {
-    position: absolute;
-    left: 240px;
-    top: 179px;
-}
-
-.bg__our-privileges {
-    background: url(./source/img/demo-banner.png) no-repeat;
-    min-width: 100%;
-    min-height: 908px;
-    z-index: -3;
-    position: absolute;
-    left: 1px;
-    background-position: right top;
-    bottom: -360px;
 }
 
 

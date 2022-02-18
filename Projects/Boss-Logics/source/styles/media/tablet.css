@@ -1,5 +1,5 @@
 @media (min-width: 481px) and (max-width: 767px) {
-    body {
-        max-width: 767px;
+    .container {
+        width: 100%;
     }
 }

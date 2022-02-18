@@ -1,4 +1,4 @@
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
     .container {
         width: 100% !important;
     }
@@ -60,6 +60,9 @@
     .main__right-bg {
         right: 30px;
     }
+    .main__right-bg picture {
+        right: 0;
+    }
     .title-right__info {
         font-size: 64px;
     }
@@ -109,18 +112,29 @@
     .list-about-brands {
         margin: -51px -5rem;
     }
-    .wrap__our-privileges::before {
-        left: 171px;
+    .our-privileges {
+        padding-top: 13rem;
     }
-    .wrap__our-privileges h2 {
-        left: 207px;
-        font-size: 63px;
+    .our-privileges__wrap {
+        left: -130px;
+        width: 100% !important;
     }
-    .bg__our-privileges {
-        height: 870px;
+    .our-privileges__wrap h2 {
+        position: relative;
+        left: 289px;
+        top: -39px;
+        font-size: 70px;
+        max-width: 595px;
+        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .our-privileges__bg {
         right: 0;
-        bottom: -605px;
-        background-size: 43%;
+    }
+    .picture-bg {
+        position: relative;
+        top: 210px;
+        width: 100% !important;
     }
     .container-menu__footer {
         width: 100%;
