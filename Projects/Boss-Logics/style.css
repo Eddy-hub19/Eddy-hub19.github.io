@@ -145,13 +145,29 @@ main {
     display: block;
 }
 
+.main__wrap {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+}
+
 .main__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 240px;
+    padding-top: 170px;
+}
+
+
+/* .main__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 94px -5px 15px 294px;
     position: relative;
-}
+} */
 
 .first-title {
     position: relative;
@@ -161,7 +177,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 705px;
-    margin-top: 178px;
 }
 
 .first-title::before {
@@ -239,12 +254,6 @@ main {
 
 .right-bg {
     position: relative;
-}
-
-.main__right-bg picture {
-    right: 154px;
-    bottom: 100px;
-    position: absolute;
 }
 
 
