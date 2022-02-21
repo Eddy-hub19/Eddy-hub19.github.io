@@ -80,8 +80,11 @@
     .dscr-right__info {
         margin: 0px 6px -142px;
     }
+    .content-section {
+        margin: 11.5rem 0;
+    }
     .content-section__bg_left {
-        padding: 80px 100px;
+        padding: 0 100px;
     }
     .content-section__bg_left::before {
         left: 0px;

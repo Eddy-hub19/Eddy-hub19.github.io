@@ -4,7 +4,7 @@
     }
     html,
     body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         font-size: 18px;
     }
     .bg {
@@ -63,7 +63,9 @@
     }
     .main-btn {
         position: unset;
-        margin: 0 16%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
     .btn {
         width: 180px;
