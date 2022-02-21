@@ -573,6 +573,7 @@ main {
     flex-direction: column;
     position: relative;
     top: 360px;
+    left: 0;
 }
 
 .our-privileges__wrap::before {
@@ -589,9 +590,15 @@ main {
     left: 289px;
     top: -39px;
     font-size: 70px;
-    max-width: 920px;
+    max-width: 710px;
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     font-weight: 500;
+}
+
+.picture-bg {
+    position: relative;
+    right: -370px;
+    top: 240px;
 }
 
 

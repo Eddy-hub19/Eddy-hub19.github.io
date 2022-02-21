@@ -21,13 +21,13 @@
     .header-nav__menu a {
         font-size: 13px;
     }
+    .social-network {
+        margin: 0 32px;
+    }
     .bg {
         background-size: 75%;
     }
     /* main */
-    .main__info {
-        margin: 84px -5px -5px 154px;
-    }
     .main__info p {
         max-width: 537px;
     }
@@ -49,6 +49,7 @@
         font-size: 35px;
     }
     .main-btn {
+        display: flex;
         right: 68px;
         bottom: 47px;
     }
@@ -133,7 +134,8 @@
     }
     .picture-bg {
         position: relative;
-        top: 210px;
+        top: 220px !important;
+        right: 51px !important;
         width: 100% !important;
     }
     .container-menu__footer {
@@ -150,9 +152,6 @@
 @media (max-width: 1800px) {
     .container {
         width: 100% !important;
-    }
-    body {
-        background: rgba(78, 123, 190, 0.698) !important;
     }
     .main__wrap {
         width: 100%;
@@ -176,9 +175,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-    body {
-        background: rgba(0, 0, 0, 0.13) !important;
-    }
     .header__logo img {
         left: 175px;
     }
@@ -194,5 +190,10 @@
     }
     .right-bg {
         padding-right: 30px;
+    }
+    .picture-bg {
+        position: relative;
+        right: -140px;
+        top: 180px;
     }
 }
