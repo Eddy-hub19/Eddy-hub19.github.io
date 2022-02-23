@@ -24,6 +24,13 @@
     padding: 0;
 }
 
+section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .container {
     width: 1920px !important;
     margin: 0 auto;
@@ -150,6 +157,7 @@ main {
     position: relative;
     display: flex;
     padding-top: 50px;
+    padding-bottom: 34rem;
 }
 
 .main__info {
@@ -160,19 +168,10 @@ main {
     padding-top: 170px;
 }
 
-
-/* .main__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 94px -5px 15px 294px;
-    position: relative;
-} */
-
 .first-title {
     position: relative;
     font-weight: 500;
-    font-family: "Geometria-Medium", Arial;
+    font-family: "Geometria";
     font-size: 4.4em;
     display: flex;
     flex-wrap: wrap;
@@ -182,10 +181,10 @@ main {
 .first-title::before {
     content: '';
     border-left: 3px solid #09f;
-    height: 127px;
+    height: 100%;
     position: absolute;
-    left: -46px;
-    top: 15px;
+    left: -30px;
+    top: 0;
 }
 
 .first-title__span {
@@ -195,7 +194,7 @@ main {
     -webkit-text-stroke: 1px #5698fc;
     text-transform: uppercase;
     position: absolute;
-    left: 503px;
+    right: -10px;
     font-size: 41px;
     top: 105px;
 }
@@ -207,13 +206,13 @@ main {
     width: 758px;
     margin: 14px -37px;
     font-weight: 500;
-    font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+    font-family: "Geometria-Medium", "Arial", "Helvetica", "sans-serif";
 }
 
 .main-btn {
     position: relative;
     right: 68px;
-    bottom: 62px;
+    bottom: 30px;
 }
 
 .btn {
@@ -263,14 +262,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 17.5rem 0;
 }
 
 .content-section__bg_left::before {
     content: url(./source/img/bg2.png);
     position: absolute;
     left: 0;
-    top: 829px;
+    top: 66rem;
     z-index: -2;
 }
 
@@ -650,12 +648,8 @@ main {
     color: white;
 }
 
-.container-categories a {
-    border-bottom: 0 solid black;
-}
-
 .container-categories a:hover {
-    border-bottom: 1px solid orange;
+    text-decoration: underline;
 }
 
 .container-categories a:nth-child(1) {

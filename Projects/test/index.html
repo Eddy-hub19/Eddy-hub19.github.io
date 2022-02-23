@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Projects/Boss-Logics/source/js/panelsnap.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new PanelSnap();
+        });
+    </script>
+
+    <style>
+        section {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 100vh;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <section>
+            <h2>SECTION1</h2>
+            <img src="/Portfolio/images/Big-forest.jpg" alt="">
+        </section>
+    </section>
+    <section>
+        <section>
+            <h2>SECTION2</h2>
+            <img src="/Portfolio/images/veeterzy.jpg" alt="">
+        </section>
+    </section>
+    <section>
+        <section>
+            <h2>SECTION3</h2>
+            <img src="/Portfolio/images/forest.jpeg" alt="">
+        </section>
+    </section>
+</body>
+<!-- jQuery Is Optional -->
+<script src="/Other/jquery-1.11.0.min.js"></script>
+<script src="/Other/jquery-migrate-1.2.1.min.js"></script>
+<!-- panelSnap Plugin -->
+<script src="/Projects/test/panelsnap.umd.js"></script>
+<script>
+    var defaultOptions = {
+        container: document.body,
+        panelSelector: '> section',
+        directionThreshold: 50,
+        delay: 2,
+        duration: 300,
+        easing: function(t) {
+            return t
+        },
+    };
+
+    new PanelSnap(defaultOptions);
+</script>
+
+</html>
