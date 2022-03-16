@@ -1,71 +1,242 @@
 @media (min-width: 320px) and (max-width: 480px) {
-    body{
+    body {
         width: 100% !important;
         margin: 0 auto;
         overflow-x: none;
     }
-
-    .container-top-line{
+    .top-line {
+        width: 100%;
+        /* height: 124px; */
+        height: 286px;
+        background-color: #000000;
+    }
+    .container-top-line {
         display: none;
     }
-
+    .second-line {
+        margin-top: 0;
+    }
+    .second-line h1 {
+        margin-top: 30px;
+    }
     .second-line nav {
-        display: none;
+        /* display: none; */
+        display: block;
+        position: absolute;
+        left: 81px;
+        top: 65px;
+        flex-direction: column;
     }
-
-    .first-screen{
+    .store {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .search {
+        margin-left: 65px;
+        margin-bottom: 18px;
+    }
+    /* main  */
+    .first-screen {
         background-size: cover;
         width: auto;
     }
-
-    .frame{
-        width: 120px;
-        height: 120px;
+    .frame {
+        width: 200px;
+        height: 200px;
     }
-
-    .frame h2{
+    .frame h2 {
         font: bold 26px/1 PT Sans;
     }
-
-    .frame h3{
+    .frame h3 {
         font: 12px/28px PT Sans;
     }
-
-    .txt-porten{
-        width: 200px;
-        font: 14px/130% PT Sans;
+    .txt-porten {
+        width: 240px;
+        font: 16px/130% PT Sans;
     }
-
-    .right-left{
-        width: auto;
-    }
-
-    .right{
-        width: auto;
-        height: 370px;
-    }
-
-    .items{
+    /* right-left  */
+    .right-left {
         display: flex;
+        width: 100%;
         flex-direction: column;
     }
-
+    .right {
+        width: 100%;
+    }
+    .right h3 {
+        font: normal bold 24px/47px Playfair Display;
+        margin: 0 32px;
+    }
+    .right div {
+        margin-bottom: 28px;
+        width: 120px;
+    }
+    .right a {
+        margin-bottom: 100px;
+        padding: 12px 28px;
+        height: 47px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font: 18px/23px PT Sans;
+        letter-spacing: 0.1em;
+    }
+    .left {
+        padding-top: 40px;
+        width: 100%;
+        background: #0f0f0f;
+        display: flex;
+        justify-content: center;
+    }
+    .line-season {
+        margin: 50px;
+        width: 120px;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .item-season {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 325px;
+    }
+    .watch {
+        text-align: center;
+    }
+    .watch h3 {
+        font: 20px Playfair Display;
+        margin: 0 50px;
+    }
+    .watch p {
+        font: normal bold 16px/21px Playfair Display;
+        margin: 20px auto;
+    }
+    /* collection-left_right  */
+    .collection-left_right {
+        display: flex;
+        flex-direction: column;
+        background: no-repeat;
+        width: 100%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
+    .img-2018 {
+        width: 100%;
+        min-height: 170px;
+    }
+    .collection2018 {
+        width: 100%;
+        margin: 0 auto;
+    }
     .rectangle {
         display: flex;
         flex-direction: column;
-        width: 350px;
         align-items: flex-start;
     }
-
-    .container-new-goods{
+    .rectangle h2 {
+        font: 36px/48px Playfair Display;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .rectangle div {
+        margin: 10px auto;
+        width: 40%;
+        text-align: center;
+    }
+    .rectangle p {
+        margin: 10px;
+        font: 14px/150% PT Sans;
+        text-align: center;
+    }
+    .rectangle a {
+        padding: 15px;
+        font-size: 19px;
+        margin: 0 auto;
+    }
+    /* new-goods  */
+    .new-goods {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .new-goods h2 {
+        font: normal bold 22px/31px Playfair Display;
+        margin-top: 50px;
+    }
+    .line-new-goods {
+        height: 0;
+        width: 120px;
+        margin: 10px auto;
+    }
+    .container-new-goods {
         width: auto;
     }
-
-    .new-goods h2{
-        font: normal bold 30px/48px Playfair Display;
+    .item-new-goods {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 32px 0;
+        width: 230px;
     }
-    .for_a_store{
-        margin: 0 13px;
-        width: 350px;
+    .ractangle-brand {
+        display: flex;
+    }
+    .ractangle-brand h2 {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font: normal bold 36px/48px Playfair Display;
+        text-align: center;
+    }
+    .for-brand,
+    .brand {
+        margin: 12px;
+    }
+    .picture {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+    .container-menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+    .for_a_store {
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .container-menu h2 {
+        margin: 20px auto;
+        text-transform: uppercase;
+        font: 22px/32px Playfair Display;
+        color: white;
+        text-align: center;
+    }
+    .for_a_store p {
+        font: 13px/150% PT Sans;
+        margin-top: 40px;
+    }
+    .container-for-watch {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-for-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .last-line {
+        display: none;
     }
 }
