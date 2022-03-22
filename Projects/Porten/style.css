@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-html {
-    /* width: 1920px; */
-}
-
 body {
     margin: 0 auto;
     overflow-x: hidden;
@@ -324,10 +320,10 @@ li {
 
 .rectangle p {
     margin-bottom: 40px;
-    width: 471px;
     font: 14px/150% PT Sans;
     text-align: center;
     color: #ffffff;
+    max-width: 471px;
 }
 
 .rectangle a {
@@ -374,7 +370,7 @@ li {
 }
 
 .line-new-goods {
-    margin: 40px, 0;
+    margin: 40px 0;
     height: 0;
     width: 120px;
     border: 1px solid #ffffff;
@@ -573,16 +569,16 @@ li {
 
 @keyframes color-change {
     0% {
-        color: #0f0f0f;
+        color: transparent;
     }
     50% {
         color: #ffffff;
     }
     100% {
-        color: #0f0f0f;
+        color: transparent;
     }
 }
 
 .animation {
-    animation: color-change 4s infinite;
+    animation: color-change 5s infinite;
 }
