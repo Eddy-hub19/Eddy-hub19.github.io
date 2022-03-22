@@ -6,7 +6,7 @@
 
 body {
     margin: 0 auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -26,7 +26,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin-left: 406.33px; */
 }
 
 .top-line {
@@ -417,7 +416,7 @@ li {
     background-color: rgba(16, 63, 70, 0.527);
 }
 
-.ractangle-brand {
+.rectangle-brand {
     width: 100%;
     height: 362px;
     display: flex;
@@ -427,11 +426,11 @@ li {
     background: #0f0f0f;
 }
 
-.ractangle-brand {
+.rectangle-brand {
     display: flex;
 }
 
-.ractangle-brand h2 {
+.rectangle-brand h2 {
     margin-top: 104px;
     margin-bottom: 60px;
     font: normal bold 36px/48px Playfair Display;
@@ -567,6 +566,9 @@ li {
     text-decoration-line: underline;
     color: #d0d0d0;
 }
+
+
+/* animation  */
 
 @keyframes color-change {
     0% {
