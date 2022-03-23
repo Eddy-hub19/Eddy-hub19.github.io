@@ -1,151 +1,206 @@
 /* media 485/767 */
 
-@media (min-width: 485px) and (max-width: 767px) {
-  body {
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-    background: no-repeat;
-    background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
-  }
-  .header-class {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    margin-right: 70px;
-    color: gainsboro;
-  }
-  .header-class h1 {
-    font-size: 20px;
-  }
-  .header-class h2 {
-    display: none;
-  }
-  .header-main {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 15px;
-    font-family: "Indie Flower";
-  }
-
-  ul,
-  li {
-    list-style: none;
-  }
-  @keyframes color-change {
-    0% {
-      color: white;
+@media (min-width: 425px) and (max-width: 767px) {
+    body {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        background: no-repeat;
+        background-image: url(https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/105343/rock-mountain-under-cloudy-sky-iphone-8-wallpaper-ilikewallpaper_com_750.jpg);
     }
-    50% {
-      color: black;
+    .header-class {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-right: 70px;
+        color: gainsboro;
     }
-    100% {
-      color: white;
+    .header-class h1 {
+        font-size: 20px;
     }
-  }
-  .animation {
-    animation: color-change 4s infinite;
-  }
+    .header-class h2 {
+        display: none;
+    }
+    .header-main {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        font-family: "Indie Flower";
+    }
+    ul,
+    li {
+        list-style: none;
+    }
+    @keyframes color-change {
+        0% {
+            color: white;
+        }
+        50% {
+            color: black;
+        }
+        100% {
+            color: white;
+        }
+    }
+    .animation {
+        animation: color-change 4s infinite;
+    }
+    .bar-top {
+        display: none;
+    }
+    #bar {
+        position: absolute;
+        top: -4em;
+        padding: 0.5em;
+        left: 156px;
+        margin: 0;
+        width: 40px;
+        height: 80px;
+        background: rgb(101, 126, 150);
+        color: black;
+        transition: top 1.5s ease-out 0.5s;
+    }
+    .arrow {
+        font-size: 20px;
+    }
+    #bar:hover :active {
+        top: 0;
+        color: red;
+    }
+    li img {
+        width: 25px;
+    }
+    .img {
+        width: 43px;
+        position: absolute;
+        left: -55px;
+        right: 73px;
+        bottom: 1px;
+    }
+    .dark-theme {
+        background-image: url(/img/nature.jpg);
+    }
+    .read-more {
+        width: 550px;
+        height: 50px;
+        color: white;
+        background: none !important;
+        font-size: 25px;
+    }
+    .read-more>p {
+        font-size: 30px;
+        filter: drop-shadow(2px 2px 5px black);
+        color: rgb(211, 211, 211);
+        background: none !important;
+        transition: 2s;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+    }
+    .read-more>ul li {
+        background: none;
+    }
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        left: 0;
+        background-color: rgb(49, 61, 73);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 15px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    .dropdown-content {
+        border: 2px black solid;
+        left: 0;
+        top: 70px;
+        z-index: 1;
+        font-size: 25px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgb(9 28 46);
+        font-weight: normal;
+        white-space: nowrap;
+        min-height: 1.2em;
+        padding: 0px 2px 1px;
+        background: #636c66;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+        color: white;
+    }
+}
 
-  .bar-top {
-    display: none;
-  }
 
-  #bar {
-    position: absolute;
-    top: -4em;
-    padding: 0.5em;
-    left: 156px;
-    margin: 0;
-    width: 40px;
-    height: 80px;
-    background: rgb(101, 126, 150);
-    color: black;
-    transition: top 1.5s ease-out 0.5s;
-  }
-  .arrow {
-    font-size: 20px;
-  }
-  #bar:hover :active {
-    top: 0;
-    color: red;
-  }
-  li img {
-    width: 25px;
-  }
-  .img {
-    width: 43px;
-    position: absolute;
-    left: -55px;
-    right: 73px;
-    bottom: 1px;
-  }
-  .dark-theme {
-    background-image: url(/img/nature.jpg);
-  }
+/* Tablet 768*1024 */
 
-  .read-more {
-    width: 550px;
-    height: 50px;
-    color: white;
-    background: none !important;
-    font-size: 25px;
-  }
-
-  .read-more > p {
-    font-size: 30px;
-    filter: drop-shadow(2px 2px 5px black);
-    color: rgb(211, 211, 211);
-    background: none !important;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-  }
-
-  .read-more > ul li {
-    background:none;
-  }
-
-  .dropbtn {
-    color: white;
-    padding: 16px;
-    cursor: pointer;
-    position: relative;
-    top: 10px;
-    left: 0;
-    background-color: rgb(49, 61, 73);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 15px;
-    width: 150px;
-    border-radius: 20px;
-  }
-
-  .dropdown-content {
-    border: 2px black solid;
-    left: 0;
-    top: 70px;
-    z-index: 1;
-    font-size: 25px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(9 28 46);
-    font-weight: normal;
-    white-space: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-    background: #636c66;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-
-  footer {
-    text-align: center;
-    color: white;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(./images/forest.jpeg);
+    }
+    .header-class h2 {
+        display: none;
+    }
+    .header-class h1 {
+        display: none;
+    }
+    .header-main {
+        font-size: 20px;
+    }
+    .header-main h1 {
+        margin-left: 85px;
+    }
+    #bar {
+        top: -156px;
+        right: 78%;
+        padding: 0.5em;
+        margin: 0;
+        position: absolute;
+        transition: top 1.5s ease-out 0.5s;
+        border-radius: 40px;
+    }
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        position: relative;
+        bottom: 4px;
+        left: -283px;
+        border: 1px solid black;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+    .dropdown-content {
+        left: -267px;
+        top: 77px;
+        font-size: 25px;
+    }
+    .main-content>h3 {
+        color: #d0c8c8;
+        font-size: 37px;
+    }
+    .slick-prev:before {
+        font-size: 42px;
+    }
+    .slick-next:before {
+        font-size: 42px;
+    }
+    .read-more {
+        left: 100px;
+        position: relative;
+        font-size: 25px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    .read-more ul li {
+        font-size: 25px;
+    }
 }
