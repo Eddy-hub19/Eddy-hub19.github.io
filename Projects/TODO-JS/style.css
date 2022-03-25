@@ -31,13 +31,13 @@ h1 {
 }
 
 input[type="text"] {
-    width: 363px;
+    width: -webkit-fill-available;
     padding: 10px;
 }
 
 .add {
     margin-top: 10px;
-    width: 384px;
+    width: -webkit-fill-available;
     padding: 10px;
     cursor: pointer;
     background: darkgrey;
