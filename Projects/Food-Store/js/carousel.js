@@ -39,10 +39,11 @@ $(document).ready(function() {
 
 
 // Show Hamburger menu
-const hamburger = document.querySelector('.hamburger')
+const hamburger = document.querySelector('.menu-btn')
 const menu = document.querySelector('.menu')
 hamburger.addEventListener('click', function() {
-    menu.classList.toggle('show')
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active')
 })
 
 // jQuery style
