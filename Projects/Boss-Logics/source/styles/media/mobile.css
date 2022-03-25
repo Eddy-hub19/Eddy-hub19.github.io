@@ -27,6 +27,13 @@
         left: 120px;
         top: 50px;
     }
+    .main__wrap {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
     .main__right-bg {
         position: absolute;
         right: 0;
