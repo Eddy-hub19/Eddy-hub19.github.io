@@ -189,12 +189,12 @@
         margin: 32px 0;
         width: 230px;
     }
-    .ractangle-brand {
+    .rectangle-brand {
         display: flex;
         padding-top: 50px;
         padding-bottom: 100px;
     }
-    .ractangle-brand h2 {
+    .rectangle-brand h2 {
         margin-top: 60px;
         margin-bottom: 10px;
         font: normal bold 36px/48px Playfair Display;
