@@ -118,8 +118,8 @@ nav {
 
 .header-nav__menu a:hover {
     width: auto;
-    border-bottom: 1px solid white;
-    color: rgba(156, 154, 154, 0.904);
+    border-bottom: 1px solid black;
+    color: rgb(246 246 246 / 90%);
 }
 
 .social-network {
