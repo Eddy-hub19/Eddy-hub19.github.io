@@ -286,7 +286,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .top-line {
         width: 100%;
         height: auto;
@@ -315,6 +315,7 @@
         margin: 0 auto;
         margin-top: 20px;
         flex-direction: column;
+        position: relative;
     }
     .second-line h1 {
         font: normal bold 36px PT Sans;
@@ -322,7 +323,9 @@
         display: block;
     }
     .second-line nav {
-        margin-left: 5%;
+        margin: 0 auto;
+        left: 27%;
+        top: 180%;
     }
     .right-left {
         margin: 0 auto;
