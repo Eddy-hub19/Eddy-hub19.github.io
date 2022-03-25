@@ -21,9 +21,10 @@
         /* display: none; */
         display: block;
         position: absolute;
-        right: 70px;
+        left: 25%;
         top: 95px;
         flex-direction: column;
+        margin-left: 0;
     }
     .store {
         margin-left: 40px;
@@ -282,5 +283,160 @@
     }
     .last-line {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-line {
+        width: 100%;
+        height: auto;
+    }
+    .container-top-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .container-top-line>nav {
+        display: flex;
+    }
+    .registration {
+        display: flex;
+        margin-left: 0;
+        font: 14px/16px PT Sans;
+    }
+    .tel {
+        display: flex;
+        font: 14px/16px PT Sans;
+    }
+    .second-line {
+        width: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .second-line h1 {
+        font: normal bold 36px PT Sans;
+        margin-bottom: 23px;
+        display: block;
+    }
+    .second-line nav {
+        margin-left: 5%;
+    }
+    .right-left {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .right {
+        min-height: 730px;
+        width: 70%;
+        height: auto;
+    }
+    .left {
+        flex-wrap: wrap;
+        width: auto;
+        background: #0f0f0f;
+        height: 100%;
+    }
+    .items {
+        flex-direction: column;
+    }
+    .item-season {
+        border: 2px solid #191b1c;
+        margin-bottom: 17px;
+        width: 160px;
+        height: 235px;
+        background: #191b1c;
+    }
+    .watch {
+        width: -webkit-fill-available;
+    }
+    .for-brand,
+    .brand {
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .rectangle-brand {
+        height: auto;
+    }
+    .rectangle-brand h2 {
+        margin-top: 44px;
+        margin-bottom: 40px;
+        font: normal bold 36px/48px Playfair Display;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .line-brand {
+        margin-bottom: 30px;
+        width: 120px;
+        height: 0px;
+    }
+    .container-menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .container-menu h2 {
+        margin-top: 60px;
+        text-transform: uppercase;
+        font: 22px/32px Playfair Display;
+        margin-left: 18px;
+    }
+    .for_a_store {
+        margin-right: 0;
+        width: 350px;
+    }
+    .for_a_store p {
+        padding-left: 12px;
+    }
+    .container-for-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: auto;
+        height: auto;
+    }
+    .container-for-watch {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter {
+        display: flex;
+        width: min-content;
+        flex-direction: column;
+        color: #ffffff;
+    }
+    .newsletter p {
+        font: 15px/150% PT Sans;
+    }
+    .container-subscribe {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .container-subscribe input {
+        width: 220px;
+        padding: 20px;
+        height: 42px;
+        margin-right: 20px;
+    }
+    .container-subscribe button {
+        padding: 10px 60px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .second-line nav {
+        margin-left: 5%;
+    }
+    .container-new-goods {
+        width: auto !important;
     }
 }
