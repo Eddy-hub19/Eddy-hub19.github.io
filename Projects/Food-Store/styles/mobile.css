@@ -4,6 +4,16 @@
         overflow-x: hidden;
         height: 100% !important;
     }
+    ol,
+    ul {
+        padding-left: 0rem;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .top-menu {
         margin-top: 15px;
         margin-left: 0;
@@ -18,7 +28,7 @@
         width: 13px;
         height: 13px;
         position: absolute;
-        right: 10px;
+        right: 0;
         top: 4px;
     }
     .header {
@@ -44,12 +54,12 @@
         font-size: 15px;
     }
     .banner .details {
-        left: 35px;
+        left: 18px;
         top: 26px;
     }
     .banner h1 {
-        font-size: 18px;
-        margin-top: -22px;
+        font-size: 22px;
+        margin-top: -36px;
     }
     .banner h2 {
         line-height: 28px;
@@ -70,7 +80,7 @@
         width: 100%;
     }
     .left {
-        margin: 0 0px -6px 54px;
+        margin: 0 0px -6px 23px;
     }
     .left h3 {
         font-size: 30px;
@@ -84,6 +94,7 @@
     }
     .our-partner {
         width: 100%;
+        background-image: url(/Projects/Food-Store/img/bg-our-partner.png);
     }
     .our-partner button {
         width: 298px;
@@ -97,6 +108,7 @@
     .section-left p {
         font-size: 21px;
         font-family: "Poppins";
+        margin: 20px 0;
     }
     .communication {
         width: 100%;
@@ -166,18 +178,19 @@
         min-width: 100% !important;
     }
     .section-left h3 {
-        font-size: 40px;
+        font-size: 36px;
     }
     .section-left b {
         font-size: 24px;
     }
     .section-left p {
         flex-wrap: wrap;
-        width: 38%;
+        width: 100%;
         font-weight: normal;
+        max-width: 270px;
     }
     .section-left button {
-        width: 330px;
+        width: 240px;
     }
     .section-right {
         display: inline-flex;
@@ -208,12 +221,20 @@
     }
     .communication {
         width: auto;
+        height: auto;
     }
     .communication h4 {
         font-size: 34px;
     }
+    .com-item {
+        height: auto;
+        flex-direction: column;
+    }
     .com-item img {
-        width: 30px;
+        width: auto;
+    }
+    .com-item a {
+        margin: 8px auto;
     }
     .bakery-quality a {
         font-size: 17px;
@@ -261,38 +282,42 @@
     .menu {
         position: absolute;
         left: 675px;
-        top: -40px;
+        top: 0;
         visibility: hidden;
         width: 300px;
-        height: 282px;
+        height: auto;
         background: rgb(2, 0, 36);
         background: linear-gradient( 60deg, rgba(2, 0, 36, 1) 0%, rgba(208, 213, 211, 1) 60%, rgba(0, 212, 255, 1) 100%);
         border-radius: 20px;
         justify-content: space-evenly;
         flex-direction: column;
         transition: all ease 2s;
+        backdrop-filter: blur(3px);
     }
     .menu.show {
         visibility: visible;
         left: 0;
         width: 100%;
         position: fixed;
-        height: 44rem;
+        height: 100%;
+        text-decoration: underline;
         z-index: 2;
-        bottom: 10px;
+        bottom: 0;
         display: flex;
         transition: width 1.7s 1.5s linear;
-        background: rgb(0 150 136 / 86%);
+        background: rgb(188 194 194 / 86%);
     }
     nav {
         display: none;
     }
     .menuLink {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Poppins';
         font-size: 20px;
         font-weight: bold;
         font-style: oblique;
         color: #ffffff;
+        text-shadow: 1px 0 1px #c4c4c4, 0 1px 1px #fff, -1px 0 1px #607d8b, 0 -1px 1px #607d8b;
+        width: 100%;
     }
     .menuLink:hover {
         color: rgba(10, 10, 10, 0.424);
