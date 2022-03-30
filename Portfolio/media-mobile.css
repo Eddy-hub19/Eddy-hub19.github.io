@@ -66,13 +66,14 @@
     }
     .bar-top {
         position: relative;
-        top: 68px;
-        right: 45%;
+        top: 80px;
+        left: -150px;
+        display: block;
     }
     #bar {
-        display: none;
+        display: block;
         position: absolute;
-        top: -4em;
+        top: -10rem;
         padding: 0.5em;
         left: 156px;
         margin: 0;
@@ -106,14 +107,14 @@
         bottom: 1px;
     }
     .dark-theme {
-        background-image: url(/img/veeterzy.jpg);
+        background-image: url(./images/veeterzy.jpg);
     }
     main {
         height: 200px;
     }
     .dropdown {
         top: -20px;
-        right: 10rem;
+        right: 6rem;
         position: relative;
     }
     .dropbtn {
@@ -133,7 +134,7 @@
     .dropdown-content {
         position: relative;
         border: 2px black solid;
-        left: 0;
+        left: 30px;
         top: 50px;
         z-index: 1;
         font-size: 15px;
