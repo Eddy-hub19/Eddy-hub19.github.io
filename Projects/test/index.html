@@ -5,68 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thing</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="/Projects/Boss-Logics/source/js/panelsnap.js" defer></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             new PanelSnap();
         });
     </script>
-
-    <style>
-        section {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            min-height: 100vh;
-            background-position: center;
-        }
-        
-        div:nth-child(1n-2) {
-            width: 100%;
-            height: 1000px;
-            background: rgb(18, 88, 105);
-        }
-        
-        div:nth-child(1) {
-            width: 100%;
-            height: 1000px;
-            background: rgb(182, 164, 164);
-        }
-    </style>
 </head>
 
 <body>
-    <section>
-        <section>
-            <h2>SECTION1</h2>
-            <div>1</div>
-        </section>
-    </section>
-    <section>
-        <section>
-            <h2>SECTION2</h2>
-            <div>2</div>
-        </section>
-    </section>
-    <section>
-        <section>
-            <h2>SECTION3</h2>
-            <div>3</div>
-        </section>
-    </section>
-    <section>
-        <section>
-            <h2>SECTION4</h2>
-            <div>4</div>
-        </section>
-    </section>
-    <section>
-        <section>
-            <h2>SECTION5</h2>
-            <div>5</div>
-        </section>
-    </section>
+    <header class="header">
+        <div id="id1">
+            <div class="top">
+                <nav>
+                    <a href="#id1">Home</a>
+                    <a href="#id2">Projects</a>
+                    <a href="#id3">Contact</a>
+                    <a href="#id4">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="id2">
+        <h1>Projects</h1>
+    </div>
+    <div id="id3">
+        <h2>Contact</h2>
+    </div>
+    <div id="id4">
+        <h3>About</h3>
+    </div>
+    <footer>
+        <h4>FOOTER</h4>
+    </footer>
 </body>
 <!-- jQuery Is Optional -->
 <script src="/Other/jquery-1.11.0.min.js"></script>
@@ -76,7 +49,7 @@
 <script>
     var defaultOptions = {
         container: document.body,
-        panelSelector: '> section',
+        panelSelector: '> div,section',
         directionThreshold: 50,
         delay: 2,
         duration: 300,
