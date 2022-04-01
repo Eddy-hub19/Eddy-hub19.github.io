@@ -99,6 +99,14 @@
         display: flex;
         align-items: flex-start;
         align-self: center;
+        flex-wrap: wrap;
+        width: 450px;
+    }
+    .info-item {
+        width: 190px;
+        margin-top: 40px;
+        text-align: left;
+        font-family: "Poppins";
     }
     .wrap img {
         width: 158px;
@@ -111,10 +119,11 @@
         margin-top: 11px;
     }
     .inf-section {
-        width: auto;
+        width: 100%;
+        padding: 0 60px;
     }
     .inf-section h2 {
-        margin: 46px 0 36px 0;
+        margin: 0;
         font-size: 28px;
     }
     .right {
