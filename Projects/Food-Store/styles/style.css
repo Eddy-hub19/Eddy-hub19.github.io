@@ -1,14 +1,6 @@
 * {
     margin: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
     box-sizing: border-box;
 }
 
@@ -402,7 +394,7 @@ ul li {
     align-self: center;
     width: 100%;
     height: 100%;
-    background-image: url(/Projects/Food-Store/img/bg-our-partner.png);
+    background-image: url(../img/our-partner.png);
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -712,27 +704,8 @@ footer {
 
 /*  BURGER  */
 
-.hamburger::after {
-    margin-left: 10px;
-    border: none;
-}
-
-#hamburger {
-    position: fixed;
-    left: 0px;
-    top: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
+.menu {
     display: none;
-}
-
-.hamburger span::after {
-    display: none;
-    content: "\2261";
-    font-size: 70px;
-    width: 40px;
-    z-index: 2;
 }
 
 .hamburger span {
@@ -744,29 +717,6 @@ footer {
 
 #hamburger:focus {
     outline: none;
-}
-
-.menu {
-    position: absolute;
-    left: -2px;
-    top: 260px;
-    display: none;
-    width: 700px;
-    height: 324px;
-    background: rgb(31, 182, 174);
-    border-radius: 20px;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.menuLink {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-}
-
-.menuLink:hover {
-    color: rgba(10, 10, 10, 0.424);
-    background: rgba(31, 182, 175, 0.664);
 }
 
 .banner button:hover,

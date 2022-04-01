@@ -1,45 +1,20 @@
-@media (min-width: 120px) and (max-width: 480px) {
-    html,
-    body {
-        overflow-x: hidden;
-        height: 100% !important;
-    }
-    ol,
-    ul {
-        padding-left: 0rem;
-    }
-    p {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .top-menu {
-        margin-top: 15px;
-        margin-left: 0;
-    }
+@media (min-width: 481px) and (max-width: 768px) {
     .hidden-item {
         display: none;
     }
-    .warning p {
-        font-size: 10px;
-    }
-    .warning .close-btn {
-        width: 13px;
-        height: 13px;
-        position: absolute;
-        right: 0;
-        top: 4px;
+    nav {
+        display: block;
     }
     .header {
         font-size: 22px;
     }
     .header nav {
-        display: block;
-        font-size: 9px;
-        margin: 14px;
+        visibility: visible;
+        font-size: 18px;
+        margin: 20px;
     }
     .header nav a {
+        visibility: visible;
         margin-right: 10px;
     }
     .content-wrapper {
@@ -54,24 +29,14 @@
         font-size: 15px;
     }
     .banner .details {
-        left: 18px;
+        left: 35px;
         top: 26px;
     }
     .banner h1 {
-        font-size: 22px;
-        margin-top: -36px;
+        font-size: 33px;
     }
     .banner h2 {
-        line-height: 28px;
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-    .banner button {
-        width: 100px;
-        height: 24px;
-        border-radius: 10px;
-        font-size: 10px;
-        line-height: 14px;
+        line-height: 58px;
     }
     .img-banner {
         width: 100%;
@@ -80,11 +45,11 @@
         width: 100%;
     }
     .left {
-        margin: 0 0px -6px 23px;
+        margin: 0 0px -6px 54px;
     }
     .left h3 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 35px;
+        line-height: 18px;
         margin-top: 37px;
     }
     .left button {
@@ -94,7 +59,6 @@
     }
     .our-partner {
         width: 100%;
-        background-image: url(../img/our-partner.png);
     }
     .our-partner button {
         width: 298px;
@@ -108,33 +72,25 @@
     .section-left p {
         font-size: 21px;
         font-family: "Poppins";
-        margin: 20px 0;
     }
     .communication {
-        width: 100%;
+        width: 80em;
     }
     .goods {
         margin-top: 0;
     }
-    .goods h2 {
+    .good h2 {
         margin: 52px 0 30px 0;
     }
     .item {
-        width: 122px;
-        height: 190px;
-        margin: 10px;
-    }
-    .inf-section {
-        display: none;
-    }
-    .hidden-item {
-        display: none;
+        width: 158px;
+        height: 225px;
     }
     .item h4 {
-        font-size: 14px;
+        font-size: 15px;
     }
     .cost-color {
-        font-size: 13px;
+        font-size: 15px;
     }
     .line-through {
         font-size: 12px;
@@ -145,12 +101,12 @@
         align-self: center;
     }
     .wrap img {
-        width: 121px;
-        height: 75px;
+        width: 158px;
+        height: 105px;
     }
     .wrap button {
-        width: 105px;
-        height: 25px;
+        width: 111px;
+        height: 31px;
         border-radius: 10px;
         margin-top: 11px;
     }
@@ -168,29 +124,21 @@
         width: 100%;
     }
     .list li {
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 13px;
     }
     .sections {
-        display: block;
-    }
-    .section-left {
-        min-width: 100% !important;
+        display: none;
     }
     .section-left h3 {
-        font-size: 36px;
+        font-size: 40px;
     }
     .section-left b {
         font-size: 24px;
     }
     .section-left p {
         flex-wrap: wrap;
-        width: 100%;
+        width: 38%;
         font-weight: normal;
-        max-width: 270px;
-    }
-    .section-left button {
-        width: 240px;
     }
     .section-right {
         display: inline-flex;
@@ -201,6 +149,9 @@
         background-position: left;
         height: 432px;
         width: 100% !important;
+    }
+    .section-left {
+        min-width: 100% !important;
     }
     .carousel {
         display: flex;
@@ -216,31 +167,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 94px;
-        height: 102px;
+        width: 95px;
+        height: 95px;
     }
     .communication {
         width: auto;
-        height: auto;
-    }
-    .communication h4 {
-        font-size: 34px;
-    }
-    .com-item {
-        height: auto;
-        flex-direction: column;
-    }
-    .com-item img {
-        width: auto;
-    }
-    .com-item a {
-        margin: 8px auto;
     }
     .bakery-quality a {
-        font-size: 17px;
+        font-size: 30px;
     }
     .bakery-quality i {
-        font-size: 18px;
+        font-size: 30px;
     }
     .footer-section h5 {
         margin: 33px 19px 21px 0px;
@@ -248,7 +185,22 @@
     footer {
         display: none !important;
     }
-    /*  BURGER  */
+    .slick-slider {
+        width: 470px;
+    }
+    .slick-next {
+        top: 50px;
+    }
+    .slick-prev {
+        top: 50px;
+    }
+    .top-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 30px 30px 0 0;
+    }
+    /*  HAMBURGER  */
     #hamburger {
         display: block;
         position: absolute;
@@ -260,13 +212,16 @@
         z-index: 4;
         transition: all ease 2s;
     }
+    #hamburger:focus {
+        outline: none;
+    }
     .menu-btn {
         width: 30px;
         height: 30px;
         position: absolute;
-        z-index: 5;
-        bottom: 140px;
-        right: 85%;
+        left: 10%;
+        top: 20%;
+        z-index: 4;
         overflow: hidden;
     }
     .menu-btn span {
@@ -279,53 +234,41 @@
         background-color: #222222;
         transition: all 0.5s;
     }
-    .menu-btn span:nth-of-type(2) {
-        top: calc(40% - 5px);
-    }
-    .menu-btn span:nth-of-type(3) {
-        top: calc(60% + 5px);
-    }
-    .menu-btn::after {
-        margin-left: 10px;
-        border: none;
-    }
-    #hamburger:focus {
-        outline: none;
-    }
     .menu {
         position: absolute;
         left: 0;
         top: 0;
         visibility: hidden;
-        width: 100%;
-        height: 65%;
+        width: 60%;
+        height: auto;
         border-radius: 20px;
         justify-content: space-evenly;
         flex-direction: column;
         backdrop-filter: blur(2px);
         transform: translateX(-100%);
         transition: transform 0.5s;
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
     }
     .menu.active {
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        -o-transform: translateX(0%);
         visibility: visible;
         left: 0;
         width: 100%;
         position: fixed;
         height: 100%;
         text-decoration: underline;
-        z-index: 2;
+        z-index: 3;
+        bottom: 0;
         display: flex;
-        transition: height 1s 1s linear;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: width 1.7s 1.5s linear;
         background: rgb(188 194 194 / 86%);
+        transform: translateX(0%);
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(40% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(60% + 5px);
     }
     /* Меняем гамбургер иконку, когда меню открыто */
     .menu-btn.active span:nth-of-type(1) {
@@ -339,14 +282,10 @@
         top: 50%;
         transform: translate(-50%, 0%) rotate(-45deg);
     }
-    nav {
-        display: none;
-    }
     .menuLink {
         display: flex;
-        justify-content: center;
         font-family: 'Poppins';
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         font-style: oblique;
         color: #ffffff;
@@ -356,25 +295,6 @@
     .menuLink:hover {
         color: rgba(10, 10, 10, 0.424);
         background: rgba(201, 209, 209, 0.664);
-    }
-    .slick-slider {
-        width: 470px;
-    }
-    .slick-next .slick-arrow {
-        display: none;
-    }
-    .slick-list {
-        display: flex;
-        width: 400px;
-        min-width: 0;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .slick-next {
-        display: none !important;
-    }
-    .slick-prev {
-        display: none !important;
     }
     .tablink {
         display: none;
