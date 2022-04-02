@@ -6,7 +6,6 @@
 
 body {
     margin: 0 auto;
-    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -99,7 +98,6 @@ li {
     white-space: nowrap;
     background: #0f0f0f;
     color: white;
-    /* padding: 10px; */
     padding: 20px 30px 20px;
 }
 
@@ -530,10 +528,11 @@ li {
 }
 
 .container-subscribe input {
-    color: black;
+    color: white;
     width: 222px;
     height: 42px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 20px;
     background: rgba(255, 255, 255, 0.4);
 }
 
