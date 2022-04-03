@@ -16,26 +16,22 @@ a {
 body {
     margin: 0 auto;
     position: relative;
-    width: 100%;
     height: min-content;
     background-position: center;
     scroll-behavior: smooth;
     background: gray;
     font-size: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-div {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 #id1,
 #id2,
 #id3,
 #id4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
     padding-top: 20px;
     width: 100%;
     display: flex;
@@ -62,14 +58,15 @@ h2 {
     color: white;
 }
 
-section {
+
+/* section {
     position: relative;
     width: 100%;
     min-height: 100vh;
     background-position: center;
     scroll-behavior: smooth;
     background: darkblue;
-}
+} */
 
 header {
     display: flex;
@@ -114,4 +111,22 @@ footer {
 
 footer h4 {
     color: white;
+}
+
+.items {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrap-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: auto;
 }
