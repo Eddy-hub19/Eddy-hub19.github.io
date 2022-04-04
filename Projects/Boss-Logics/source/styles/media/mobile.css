@@ -1,3 +1,5 @@
+/* Smartphones (вертикальная и горизонтальная ориентация) */
+
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
         width: 100% !important;

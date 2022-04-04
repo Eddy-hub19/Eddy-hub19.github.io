@@ -3,6 +3,9 @@
 
 /* bg-red -- 80% */
 
+
+/* Большие экраны  */
+
 @media (max-width: 1800px) {
     .container {
         width: 100% !important;

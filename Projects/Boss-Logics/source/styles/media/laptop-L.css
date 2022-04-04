@@ -3,6 +3,9 @@
 
 /* bg-gray */
 
+
+/* Настольные компьютеры и ноутбуки */
+
 @media (max-width: 1441px) {
     .container {
         width: 100% !important;

@@ -1,5 +1,8 @@
 /* TABLET - 767px */
 
+
+/* iPads (вертикальная и горизонтальная) */
+
 @media (min-width: 481px) and (max-width: 767px) {
     .container {
         width: 100%;
