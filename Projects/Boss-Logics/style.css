@@ -24,13 +24,6 @@
     padding: 0;
 }
 
-section {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 100vh;
-}
-
 .container {
     width: 1920px !important;
     margin: 0 auto;

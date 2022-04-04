@@ -173,6 +173,10 @@
         max-width: 835px !important;
         margin: 0;
     }
+    .first-title__span {
+        right: 1%;
+        font-size: 45px;
+    }
     .container-menu__footer {
         width: 100%;
     }
