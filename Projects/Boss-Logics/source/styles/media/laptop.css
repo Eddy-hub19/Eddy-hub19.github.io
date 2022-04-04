@@ -170,6 +170,7 @@
         padding-top: 170px;
     }
     .first-title {
+        max-width: 778px;
         margin: 0;
     }
     .container-menu__footer {
