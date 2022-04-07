@@ -179,10 +179,18 @@
         font-size: 25px;
         border-radius: 20px;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        left: 300px;
+    }
     .dropdown-content {
         left: -267px;
         top: 77px;
         font-size: 25px;
+    }
+    main {
+        padding-top: 3rem;
     }
     .main-content>h3 {
         color: #d0c8c8;
@@ -195,10 +203,14 @@
         font-size: 42px;
     }
     .read-more {
-        left: 100px;
+        left: 80px;
         position: relative;
         font-size: 25px;
         filter: drop-shadow(2px 4px 6px black);
+    }
+    .read-more>p {
+        max-width: 540px;
+        font-size: 22px;
     }
     .read-more ul li {
         font-size: 25px;
