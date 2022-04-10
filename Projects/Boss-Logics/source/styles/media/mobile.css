@@ -44,24 +44,24 @@
     .main__info {
         margin: 0 auto;
         position: relative;
-        top: 150px;
+        top: 26rem;
+        padding-top: 0;
     }
     .main__info p {
         font-size: 18px;
-        max-width: 280px;
-        margin: 0;
-        padding-left: 20px;
-        padding-top: 20px;
+        max-width: 390px;
+        margin: 0 auto;
+        padding-top: 40px;
     }
     .first-title {
         font-size: 33px;
-        max-width: 230px;
-        padding-left: 25px;
+        max-width: 330px !important;
+        margin: 0 auto;
     }
     .first-title::before {
         height: 100%;
         position: absolute;
-        left: 10px;
+        left: -30px;
         top: 0;
     }
     .first-title__span {
@@ -74,7 +74,10 @@
         position: unset;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .main-btn a {
+        padding-right: 20px;
     }
     .btn {
         width: 180px;
@@ -89,23 +92,24 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 6rem auto;
+        padding-top: 13rem;
         width: 100% !important;
         text-align: center;
+        margin: 0 auto;
     }
     .content-section__bg_left {
         display: none;
     }
     .right-info {
         position: relative;
-        top: 5rem;
+        top: 18rem;
     }
     .title-right__info {
         font-size: 35px;
-        max-width: 260px;
         letter-spacing: 0;
         position: relative;
-        left: 10px;
+        left: 0;
+        max-width: 360px;
     }
     .title-right__info::before {
         left: -10px;
@@ -115,38 +119,42 @@
     }
     .dscr-right__info {
         font-size: 20px;
-        max-width: 231px;
+        max-width: 320px;
         margin: 0 auto;
         margin-top: 20px;
         width: 100%;
     }
     /* sections-platform */
     .sections-platform {
-        margin-top: 13rem;
+        margin-top: 15rem;
     }
     .section-platform {
         display: flex;
         justify-content: flex-end;
         flex-direction: column-reverse;
+        padding-top: 50%;
     }
     .wrap-right__section {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        padding-left: 60px;
+        padding-left: 0 !important;
     }
     .title-section__platform {
         font-size: 34px;
-        padding-left: 16px;
-        max-width: 250px;
+        padding-left: 0;
+        max-width: 310px;
     }
     .title-section__platform::before {
         content: '';
         border-left: 3px solid #09f;
         height: 100%;
         position: absolute;
-        left: 0px;
+        left: -20px;
         top: 0;
+    }
+    .about-platform-list__section {
+        margin: 0 auto;
     }
     .about-platform-list__section li:nth-child(odd) {
         font-size: 22px;
@@ -217,6 +225,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
     .about-trust-brands {
         display: flex;
