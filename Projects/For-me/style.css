@@ -118,7 +118,7 @@ body {
     width: 145px;
     height: 60px;
     border-radius: 100%;
-    background: #ffffff
+    background: #515050
 }
 
 .about__text {
@@ -157,7 +157,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 100%;
-    background: #ffa501
+    background: #98948a
 }
 
 .about__skills-circle:before {
@@ -238,11 +238,11 @@ body {
 }
 
 .portfolio__item:hover {
-    transform: scale(120%);
-    -webkit-transform: scale(120%);
-    -moz-transform: scale(120%);
-    -ms-transform: scale(120%);
-    -o-transform: scale(120%);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
 }
 
 .portfolio__item img {
