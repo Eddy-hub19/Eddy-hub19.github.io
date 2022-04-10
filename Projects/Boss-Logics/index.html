@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./source/fonts/Geometria/stylesheet.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./source/styles/css/media.css">
     <script src="https://kit.fontawesome.com/4ac3930615.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Boss-Logics</title>
 </head>
 
@@ -41,33 +43,44 @@
                     <h1 class='first-title'>Software that works the way tou do <span class='first-title__span'>(really)</span>
                     </h1>
                     <p>Simplify, transform, and automate your product creation, sales, and management with BOSS Logics—so you can get products to market faster and more effectively.</p>
-                    <div class="main-btn">
-                        <a href="#"> <button class="btn primary">Get Started</button></a>
-                        <a href="#section"> <button class="btn primary-">Learn More</button></a>
+                    <div data-aos="zoom-out-down">
+                        <div class="main-btn">
+                            <a href="#"> <button class="btn primary">Get Started</button></a>
+                            <a href="#section"> <button class="btn primary-">Learn More</button></a>
+                        </div>
                     </div>
                 </div>
                 <div class="right-bg main__right-bg">
-                    <picture>
-                        <img src="./source/img/Macbook.png" alt="bg-macbook">
-                    </picture>
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <picture>
+                            <img src="./source/img/Macbook.png" alt="bg-macbook">
+                        </picture>
+                    </div>
                 </div>
             </div>
-            <section class="content-section">
-                <div class="content-section__bg content-section__bg_left">
+        </div>
+        <section class="content-section">
+
+            <div class="content-section__bg content-section__bg_left">
+                <div data-aos="flip-left">
                     <img width="517px" height="557px" src="./source/img/rings.png" alt="rings">
                 </div>
-                <div class="right-info">
+            </div>
+            <div class="right-info">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h2 class="title-right__info">Your customers don' t have to be in-store for you to be together.</h2>
-                    <p class="dscr-right__info">Introducing a virtual in-store experience that sets a new standard for personalized online interactions.
-                    </p>
-                    <a href=""><button class="btn primary btn-primary_position">Get Started</button></a>
                 </div>
-            </section>
+                <p class="dscr-right__info">Introducing a virtual in-store experience that sets a new standard for personalized online interactions.
+                </p>
+                <a href="#"><button class="btn primary btn-primary_position">Get Started</button></a>
+            </div>
+        </section>
 
-            <!-- sections-platform -->
-            <section id="section" class="sections-platform">
-                <div class="section-platform">
-                    <div class="wrap-right__section">
+        <!-- sections-platform -->
+        <section id="section" class="sections-platform">
+            <div class="section-platform">
+                <div class="wrap-right__section">
+                    <div data-aos="fade-right">
                         <h2 class="title-section__platform">A different type of software platform</h2>
                         <ul class="about-platform-list__section">
                             <li id="Modeled">Modeled</li>
@@ -80,18 +93,23 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-different-platform">
+                </div>
+                <div class="bg-different-platform">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <picture>
                             <img src="./source/img/macbook-platform.png" alt="bg-macbook">
                         </picture>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </div>
 
         <!-- benefit-to-you -->
         <div class="benefit-to-you">
-            <h2 style="text-align: center;">What does that mean for you?</h2>
+            <div data-aos="fade-up" data-aos-duration="4000">
+                <h2 style="text-align: center;">What does that mean for you?</h2>
+            </div>
             <div class="items">
                 <div class="item">
                     <img src="./source/img/setting.png " alt="setting ">
@@ -118,7 +136,9 @@
                     <img width="450px" height="550px" src="./source/img/trusts-brands.png" alt="trust brand">
                 </div>
                 <div class="about-trust-brands">
-                    <h2 class="title__about-trust-brands">Trusted by leading brands</h2>
+                    <div data-aos="zoom-out-left">
+                        <h2 class="title__about-trust-brands">Trusted by leading brands</h2>
+                    </div>
                     <p class="dscr__about-trust-brands">“Our actual go-live was perfect. It was seamless. The integration has been amazing. Our old system involved manual data entry for everything, but with the BOSS Integration, it’s as easy as changing a flag and getting updates from our
                         ERP system.”
                     </p>
@@ -145,7 +165,9 @@
             <div class="container">
                 <div class="our-privileges">
                     <div class="our-privileges__wrap">
-                        <h2>Ready to see what BOSS Logics can do for you?</h2>
+                        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                            <h2>Ready to see what BOSS Logics can do for you?</h2>
+                        </div>
                         <a href="#"> <button class="btn primary our-privileges_pos__btn">get a demo</button></a>
                     </div>
                     <div class="our-privileges__bg"> </div>
@@ -210,6 +232,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
