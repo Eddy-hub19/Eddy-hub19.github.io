@@ -23,6 +23,11 @@ html {
     background-color: rgb(240 240 240);
 }
 
+.test {
+    display: block;
+    background: red;
+}
+
 
 /* Style the tab content (and add height:100% for full page content) */
 
@@ -63,4 +68,8 @@ html {
 
 #Our_Brands {
     background-color: rgba(194, 136, 29, 0.822);
+}
+
+.test {
+    visibility: hidden;
 }

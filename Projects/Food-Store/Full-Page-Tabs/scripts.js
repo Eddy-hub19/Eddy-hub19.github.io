@@ -3,7 +3,7 @@ function openPage(pageName, element, color) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = 'none'
     }
 
     // Remove the background color of all tablinks/buttons
@@ -12,15 +12,20 @@ function openPage(pageName, element, color) {
         tablinks[i].style.backgroundColor = "";
     }
 
-    // Hide elements
-
     // Show the specific tab content
 
     document.getElementById(pageName).style.display = "block";
 
     // Add the specific color to the button used to open the tab content
     element.style.backgroundColor = color;
+
+    // Hide elements
+
+    // document.addEventListener('click', function(event) {
+    //     let e = document.getElementById("test");
+    //     if (!e.contains(event.target)) e.style.display = "none"
+    // });
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
