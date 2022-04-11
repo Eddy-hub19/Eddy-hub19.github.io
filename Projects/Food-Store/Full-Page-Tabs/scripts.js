@@ -16,11 +16,11 @@ function openPage(pageName, element, color) {
 
     // Show the specific tab content
 
-    // document.getElementById(pageName).style.display = "block";
+    document.getElementById(pageName).style.display = "block";
 
     // Add the specific color to the button used to open the tab content
     element.style.backgroundColor = color;
 }
 
 // Get the element with id="defaultOpen" and click on it
-// document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();

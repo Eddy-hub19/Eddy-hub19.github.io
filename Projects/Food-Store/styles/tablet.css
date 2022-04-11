@@ -1,6 +1,6 @@
 /*  TABLET  */
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1300px) {
     .content-wrapper {
         width: 768px !important;
     }

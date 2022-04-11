@@ -228,7 +228,12 @@
     }
     .com-item {
         height: auto;
-        flex-direction: column;
+        font-size: 10px;
+        flex-direction: row;
+        display: flex;
+        width: 230px;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
     .com-item img {
         width: auto;

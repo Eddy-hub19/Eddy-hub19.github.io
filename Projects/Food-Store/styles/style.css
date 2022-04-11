@@ -708,6 +708,10 @@ footer {
     display: none;
 }
 
+.menu-btn {
+    display: none;
+}
+
 .hamburger span {
     display: none;
     flex-direction: column-reverse;
