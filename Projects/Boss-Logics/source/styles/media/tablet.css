@@ -1,44 +1,74 @@
-/* TABLET - 767px */
-
-
-/* iPads (вертикальная и горизонтальная) */
-
-@media (min-width: 481px) and (max-width: 767px) {
-    .container {
-        width: 100%;
-    }
-}
-
-
-/* Laptop - 1600px */
-
-
-/* bg-green -- 90% */
-
-@media screen and (max-width: 1600px) {
-    .header__logo img {
-        left: 175px;
-    }
-    .header-nav__menu {
-        margin-left: 302px;
-    }
-    .main__info {
-        margin-left: 170px;
-        padding-top: 160px;
-    }
-    .first-title__span {
-        right: 0;
-        font-size: 45px;
-    }
-    .first-title::before {
-        left: -25px;
-    }
-    .right-bg {
-        padding-right: 30px;
-    }
-    .picture-bg {
-        position: relative;
-        right: -140px;
-        top: 180px;
-    }
-}
+        /* TABLET - 767px */
+        /* iPads (вертикальная и горизонтальная) */
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+            .container {
+                width: 100%;
+            }
+            .header-nav__menu {
+                margin-left: 0 !important;
+            }
+        }
+        /* @media (min-width: 768px) and (max-width: 1600px) {
+            .container {
+                width: 100%;
+            }
+            .header-nav__menu {
+                margin-left: 0 !important;
+            }
+            .main__wrap {
+                padding-bottom: 14rem;
+            }
+            .title-right__info {
+                font-size: 58px;
+            }
+            .content-section {
+                margin: 0 auto;
+            }
+            .main__info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 0;
+                padding: 0;
+                align-content: center;
+                align-items: center;
+            }
+            .bg {
+                background-size: 98%;
+            }
+            .first-title {
+                font-size: 41px;
+                max-width: 300px !important;
+            }
+        } */
+        /* Laptop - 1600px */
+        /* bg-green -- 90% */
+        
+        @media (width: 1600px) {
+            .header__logo img {
+                left: 175px;
+            }
+            .header-nav__menu {
+                margin-left: 302px;
+            }
+            .main__info {
+                margin-left: 170px;
+                padding-top: 160px;
+            }
+            .first-title__span {
+                right: 0;
+                font-size: 45px;
+            }
+            .first-title::before {
+                left: -25px;
+            }
+            .right-bg {
+                padding-right: 30px;
+            }
+            .picture-bg {
+                position: relative;
+                right: -140px;
+                top: 180px;
+            }
+        }
