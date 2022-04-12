@@ -161,3 +161,30 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+.progres-skroll {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    align-items: flex-start;
+    .scroll {
+        position: relative;
+        width: 3px;
+        height: 240px;
+        left: 0px;
+        top: 0;
+        background: #FFFFFF;
+        opacity: 0.5;
+        .pr-item::after {
+            content: '';
+            position: absolute;
+            width: 72px;
+            height: 2px;
+            left: -35px;
+            top: 35px;
+            transform: rotate(89deg);
+            background: #b7b5b5;
+            // margin-top: 10px;
+        }
+    }
+}

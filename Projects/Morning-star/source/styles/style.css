@@ -179,4 +179,37 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.progres-skroll {
+  position: absolute;
+  right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.progres-skroll .scroll {
+  position: relative;
+  width: 3px;
+  height: 240px;
+  left: 0px;
+  top: 0;
+  background: #FFFFFF;
+  opacity: 0.5;
+}
+
+.progres-skroll .scroll .pr-item::after {
+  content: '';
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  left: -35px;
+  top: 35px;
+  -webkit-transform: rotate(89deg);
+          transform: rotate(89deg);
+  background: #b7b5b5;
+}
 /*# sourceMappingURL=style.css.map */
