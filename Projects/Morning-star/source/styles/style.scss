@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+$font: 'Cairo',
+sans-serif;
+$font-s: 'Fira Sans',
+sans-serif;
+/////
+// font-family: 'Cairo', sans-serif;
+// font-style: normal;
+// font-weight: 600;
+/////////
+// font-family: 'Fira Sans', sans-serif;
+// font-style: normal;
+// font-weight: 700;
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +19,22 @@
 }
 
 body {
+    width: 100%;
     font-size: 1em;
-    background: #0B1D26;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     color: white;
+    height: auto;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat;
+    height: 100%;
+    min-height: max-content;
+    font-family: $font;
+    margin: 0 auto;
+}
+
+html {
+    width: 1920px;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 a {
@@ -26,7 +52,7 @@ ul li {
 
 .header__top {
     display: flex;
-    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .header__nav {
@@ -34,17 +60,104 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.header__nav-link {
-    padding-left: 20px;
+    margin-top: 70px;
+    position: relative;
 }
 
 .header__nav-logo {
-    width: 50px;
+    width: 40px;
+    margin-left: 80px;
+}
+
+.header__nav-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 0;
+    margin-right: 90px;
+    margin-left: -36px;
+}
+
+.nav-link_profile {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+main {
+    display: block;
 }
 
 .main {
+    height: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main__first-screen {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.main__details {
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 500px;
+    padding-top: 144px;
+    // position: absolute;
+    // top: 200px;
+    // left: 500px;
+}
+
+.main__first-title {
+    position: relative;
+    font-family: $font-s;
+    margin-left: 107px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 72px;
+        height: 2px;
+        left: -110px;
+        top: 10px;
+        background: #FBD784;
+    }
+}
+
+.main__second-title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 32px 0px;
+    max-width: 1000px;
+}
+
+.down-scroll {
+    display: flex;
+    svg {
+        margin-left: 25px;
+    }
+}
+
+.main__section {
+    padding-top: 80rem;
     height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
