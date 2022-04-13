@@ -13,6 +13,8 @@ body {
   color: white;
   height: auto;
   background: url(/Projects/Morning-star/source/img/banner.png) no-repeat;
+  -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   height: 100%;
   min-height: -webkit-max-content;
   min-height: -moz-max-content;
@@ -22,7 +24,7 @@ body {
 }
 
 html {
-  width: 1920px;
+  min-width: 1920px;
   height: auto;
   min-height: 100%;
   margin: 0 auto;
@@ -80,6 +82,11 @@ ul li {
   margin-left: -36px;
 }
 
+.header__nav-link:hover {
+  text-decoration: underline;
+  color: #c7c7c7;
+}
+
 .nav-link_profile {
   position: absolute;
   right: 0;
@@ -100,6 +107,7 @@ main {
   width: 100%;
   padding: 0;
   margin-top: 50px;
+  height: 100vh;
 }
 
 .main__details {
@@ -113,8 +121,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 500px;
-  padding-top: 144px;
+  padding-left: 31rem;
+  padding-top: 9rem;
 }
 
 .main__first-title {
@@ -148,8 +156,43 @@ main {
   line-height: 100px;
   text-transform: capitalize;
   color: #FFFFFF;
-  margin: 32px 0px;
+  margin: 30px 0px;
   max-width: 1000px;
+}
+
+.sidepanel {
+  position: absolute;
+  left: 54px;
+  top: 245px;
+}
+
+.sidepanel .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+.sidepanel .social .social__icon {
+  margin-top: 42px;
+}
+
+.sidepanel .social .sidepanel__link {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .down-scroll {
@@ -162,8 +205,54 @@ main {
   margin-left: 25px;
 }
 
+.progress-scroll {
+  position: absolute;
+  right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.progress-scroll span {
+  margin-right: 20px;
+}
+
+.progress-scroll .scroll {
+  position: relative;
+  width: 3px;
+  height: 240px;
+  left: 0px;
+  top: 0;
+  background: #FFFFFF;
+  opacity: 0.5;
+}
+
+.progress-scroll .scroll .pr-item::after {
+  content: '';
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  left: -35px;
+  top: 35px;
+  -webkit-transform: rotate(89deg);
+          transform: rotate(89deg);
+  background: #b7b5b5;
+}
+
+.bg-shadow {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(61.38%, #0B1D26));
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+
+.main__descr {
+  max-width: 500px;
+}
+
 .main__section {
-  padding-top: 80rem;
+  padding-top: 40rem;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,38 +267,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.progres-skroll {
-  position: absolute;
-  right: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.progres-skroll .scroll {
-  position: relative;
-  width: 3px;
-  height: 240px;
-  left: 0px;
-  top: 0;
-  background: #FFFFFF;
-  opacity: 0.5;
-}
-
-.progres-skroll .scroll .pr-item::after {
-  content: '';
-  position: absolute;
-  width: 72px;
-  height: 2px;
-  left: -35px;
-  top: 35px;
-  -webkit-transform: rotate(89deg);
-          transform: rotate(89deg);
-  background: #b7b5b5;
+  background: #0B1D26;
 }
 /*# sourceMappingURL=style.css.map */
