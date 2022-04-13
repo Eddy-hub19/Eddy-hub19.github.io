@@ -244,12 +244,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .item-season {
     border: 2px solid #191b1c;
-    margin-right: 50px;
-    margin-bottom: -13px;
+    margin: 10px 20px;
     width: 260px;
     height: 325px;
     background: #191b1c;
@@ -257,6 +257,7 @@ li {
 
 .watch {
     margin-left: 20px;
+    border: 2px solid transparent;
 }
 
 .watch h3 {
@@ -359,7 +360,7 @@ li {
 }
 
 .new-goods h2 {
-    background: #191b1c;
+    background: transparent;
     font: normal bold 36px/48px Playfair Display;
     text-align: center;
     text-transform: uppercase;
@@ -384,14 +385,15 @@ li {
 }
 
 .container-new-goods h2 {
-    margin: 20px 100px 0 0;
+    margin: 20px 0 0;
     color: #ffffff;
     font: 18px/24px Playfair Display;
+    background: transparent;
 }
 
 .container-new-goods p {
     color: #d0d0d0;
-    margin-right: 100px;
+    margin: 10px auto;
     font: normal bold 16px/21px Playfair Display;
 }
 

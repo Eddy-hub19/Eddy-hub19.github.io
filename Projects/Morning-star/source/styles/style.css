@@ -8,10 +8,12 @@
 }
 
 body {
+  display: block;
+  max-width: 100%;
+  height: auto;
   width: 100%;
   font-size: 1em;
   color: white;
-  height: auto;
   background: url(/Projects/Morning-star/source/img/banner.png) no-repeat;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
@@ -20,11 +22,10 @@ body {
   min-height: -moz-max-content;
   min-height: max-content;
   font-family: "Cairo", sans-serif;
-  margin: 0 auto;
 }
 
 html {
-  min-width: 1920px;
+  width: 1920px;
   height: auto;
   min-height: 100%;
   margin: 0 auto;

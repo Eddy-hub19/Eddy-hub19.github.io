@@ -12,20 +12,21 @@ sans-serif;
 }
 
 body {
+    display: block;
+    max-width: 100%;
+    height: auto;
     width: 100%;
     font-size: 1em;
     color: white;
-    height: auto;
     background: url(/Projects/Morning-star/source/img/banner.png) no-repeat;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     height: 100%;
     min-height: max-content;
     font-family: $font;
-    margin: 0 auto;
 }
 
 html {
-    min-width: 1920px;
+    width: 1920px;
     height: auto;
     min-height: 100%;
     margin: 0 auto;
