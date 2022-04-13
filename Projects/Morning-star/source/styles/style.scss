@@ -89,6 +89,8 @@ main {
 }
 
 .main {
+    display: block;
+    position: relative;
     height: 100%;
     font-family: 'Cairo', sans-serif;
 }
@@ -144,9 +146,11 @@ main {
 }
 
 .sidepanel {
-    position: absolute;
-    left: 54px;
-    top: 245px;
+    display: flex;
+    position: sticky;
+    z-index: 3;
+    top: 350px;
+    margin-left: 70px;
     .social {
         display: flex;
         flex-direction: column;
