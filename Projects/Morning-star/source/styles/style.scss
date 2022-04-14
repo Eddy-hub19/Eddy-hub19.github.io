@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 // variables
 $font: 'Cairo',
-sans-serif;
+sans-serif; // in place of: font-family: 'Chronicle Display';
 $font-s: 'Fira Sans',
-sans-serif;
+sans-serif; // in place of: font-family: 'Gilroy';
+$primary: #FBD784;
+$base: #FFFFFF;
 * {
     margin: 0;
     padding: 0;
@@ -103,7 +105,7 @@ main {
     height: 100vh;
 }
 
-.main__details {
+.main__content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -121,7 +123,7 @@ main {
     line-height: 22px;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: #FBD784;
+    color: $primary;
     &::before {
         content: '';
         position: absolute;
@@ -129,7 +131,7 @@ main {
         height: 2px;
         left: -110px;
         top: 10px;
-        background: #FBD784;
+        background: $primary;
     }
 }
 
@@ -140,32 +142,35 @@ main {
     font-size: 88px;
     line-height: 100px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: $base;
     margin: 30px 0px;
     max-width: 1000px;
 }
 
 .sidepanel {
     display: flex;
-    position: sticky;
+    position: fixed;
     z-index: 3;
-    top: 350px;
-    margin-left: 70px;
-    .social {
+    top: 394px;
+    left: 0;
+    margin-left: 50px;
+    .socials {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: auto;
+        margin-bottom: 20px;
         .social__icon {
-            margin-top: 42px;
+            margin-top: 45px;
+            margin-bottom: -20px;
         }
-        .sidepanel__link {
+        .social__link {
             font-family: $font-s;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 22px;
-            color: #FFFFFF;
+            color: $base;
             transform: rotate(90deg);
         }
     }
@@ -180,11 +185,17 @@ main {
 
 .progress-scroll {
     position: absolute;
-    right: 100px;
+    top: 186px;
+    right: 80px;
     display: flex;
     align-items: flex-start;
     span {
-        margin-right: 20px;
+        font-family: $font-s;
+        margin-right: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        color: $base;
     }
     .scroll {
         position: relative;
@@ -192,7 +203,7 @@ main {
         height: 240px;
         left: 0px;
         top: 0;
-        background: #FFFFFF;
+        background: $base;
         opacity: 0.5;
         .pr-item::after {
             content: '';
@@ -202,13 +213,15 @@ main {
             left: -35px;
             top: 35px;
             transform: rotate(89deg);
-            background: #b7b5b5;
+            background: $base;
         }
     }
 }
 
 .bg-shadow {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    // padding-left: 380px;
+    // padding-top: 470px;
 }
 
 .main__descr {

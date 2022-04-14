@@ -113,7 +113,7 @@ main {
   height: 100vh;
 }
 
-.main__details {
+.main__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,14 +167,14 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 3;
-  top: 350px;
-  margin-left: 70px;
+  top: 394px;
+  left: 0;
+  margin-left: 50px;
 }
 
-.sidepanel .social {
+.sidepanel .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,13 +186,15 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: auto;
+  margin-bottom: 20px;
 }
 
-.sidepanel .social .social__icon {
-  margin-top: 42px;
+.sidepanel .socials .social__icon {
+  margin-top: 45px;
+  margin-bottom: -20px;
 }
 
-.sidepanel .social .sidepanel__link {
+.sidepanel .socials .social__link {
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -215,7 +217,8 @@ main {
 
 .progress-scroll {
   position: absolute;
-  right: 100px;
+  top: 186px;
+  right: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +228,12 @@ main {
 }
 
 .progress-scroll span {
-  margin-right: 20px;
+  font-family: "Fira Sans", sans-serif;
+  margin-right: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
 }
 
 .progress-scroll .scroll {
@@ -247,7 +255,7 @@ main {
   top: 35px;
   -webkit-transform: rotate(89deg);
           transform: rotate(89deg);
-  background: #b7b5b5;
+  background: #FFFFFF;
 }
 
 .bg-shadow {
