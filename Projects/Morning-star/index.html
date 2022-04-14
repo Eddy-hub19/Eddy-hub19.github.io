@@ -116,8 +116,18 @@
         </section>
     </main>
     <footer class="footer">
-
+        <a id="down" href="">footer</a>
     </footer>
+    <script>
+        (function() {
+            $('a[href^="#"]').click(function() {
+                let _href = $(this).attr('href')
+                $('html body').animate({
+                    scrollTop: $(_href).offset().top + 'px'
+                }, 300)
+            })
+        })
+    </script>
 </body>
 
 </html>
