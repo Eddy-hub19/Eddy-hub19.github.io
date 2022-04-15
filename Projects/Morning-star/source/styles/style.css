@@ -44,7 +44,7 @@ ul li {
   width: 100%;
 }
 
-.header__top {
+.header .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +110,6 @@ main {
   width: 100%;
   padding: 0;
   margin-top: 50px;
-  height: 100vh;
 }
 
 .main__content {
@@ -258,7 +257,8 @@ main {
   background: #FFFFFF;
 }
 
-.bg--shadow {
+.bg-shadow {
+  margin-top: 32rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(61.38%, #0B1D26));
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
@@ -268,7 +268,7 @@ main {
 }
 
 .section {
-  padding-top: 30rem;
+  padding-top: 0rem;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +286,17 @@ main {
   background: #0B1D26;
 }
 
+.section .section--reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-left: 230px;
+}
+
 .main__c-left_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,30 +308,115 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 13.7rem;
 }
 
 .main__content-left {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20.5rem;
 }
 
 .main__content-left::before {
   content: url(/Projects/Morning-star/source/img/abstract1.png);
+  position: absolute;
+  left: 234px;
+  top: 400px;
+}
+
+.main__content-left .title--pos {
+  margin-top: 100px;
+}
+
+.read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FBD784;
+}
+
+.main__descr {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 664px;
+  margin-right: -60px;
+  margin-bottom: 71px;
+  color: #FFFFFF;
 }
 
 .m-width {
-  max-width: 680px;
+  max-width: 578px;
   font-size: 60px;
+  margin: 30px 0;
 }
 
 .main__content-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20px;
+  margin-right: 80px;
+}
+
+footer {
+  background: #0B1D26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding-top: 100px;
+  width: 100%;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.footer__logo {
+  width: 25px;
+}
+
+.footer__descr {
+  max-width: 250px;
+}
+
+.footer__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categoory-1 {
+  margin-right: 100px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,9 @@ sans-serif; // in place of: font-family: 'Chronicle Display';
 $font-s: 'Fira Sans',
 sans-serif; // in place of: font-family: 'Gilroy';
 $primary: #FBD784;
+$bg: #0B1D26;
 $base: #FFFFFF;
+$width: 100%;
 * {
     margin: 0;
     padding: 0;
@@ -43,13 +45,13 @@ ul li {
     list-style: none;
 }
 
+// Header
 .header {
     width: 100%;
-}
-
-.header__top {
-    display: flex;
-    align-items: flex-end;
+    .header__top {
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .header__nav {
@@ -86,6 +88,7 @@ ul li {
     bottom: 0;
 }
 
+// Main
 main {
     display: block;
 }
@@ -102,7 +105,7 @@ main {
     width: 100%;
     padding: 0;
     margin-top: 50px;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .main__content {
@@ -218,11 +221,9 @@ main {
     }
 }
 
-.bg--shadow {
+.bg-shadow {
+    margin-top: 32rem;
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
-    // padding-left: 380px;
-    // padding-top: 470px;
-    ////
 }
 
 .main__descr {
@@ -230,36 +231,105 @@ main {
 }
 
 .section {
-    padding-top: 30rem;
+    padding-top: 0rem;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #0B1D26;
+    background: $bg;
+    .section--reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 230px;
+    }
 }
 
 .main__c-left_wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 13.7rem;
 }
 
 .main__content-left {
+    position: relative;
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 20.5rem;
     &::before {
         content: url(/Projects/Morning-star/source/img/abstract1.png);
+        position: absolute;
+        left: 234px;
+        top: 400px;
+    }
+    .title--pos {
+        margin-top: 100px;
     }
 }
 
+.read-more {
+    display: flex;
+    color: $primary;
+}
+
+.main__descr {
+    font-family: $font-s;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 664px;
+    margin-right: -60px;
+    margin-bottom: 71px;
+    color: $base;
+}
+
 .m-width {
-    max-width: 680px;
+    max-width: 578px;
     font-size: 60px;
-    ;
+    margin: 30px 0;
 }
 
 .main__content-right {
     display: flex;
-    margin-left: 20px;
+    margin-right: 80px;
+}
+
+footer {
+    background: $bg;
+    display: flex;
+    height: auto;
+    padding-top: 100px;
+    width: 100%;
+    align-content: space-around;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer__logo {
+    width: 25px;
+}
+
+.footer__descr {
+    max-width: 250px;
+}
+
+.footer__categories {
+    display: flex;
+}
+
+.categoory-1 {
+    margin-right: 100px;
 }
