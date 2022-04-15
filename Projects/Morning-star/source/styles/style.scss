@@ -218,10 +218,11 @@ main {
     }
 }
 
-.bg-shadow {
+.bg--shadow {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
     // padding-left: 380px;
     // padding-top: 470px;
+    ////
 }
 
 .main__descr {
@@ -238,16 +239,27 @@ main {
     background: #0B1D26;
 }
 
-.main__content-left {
+.main__c-left_wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main__content-left {
+    display: flex;
     &::before {
         content: url(/Projects/Morning-star/source/img/abstract1.png);
     }
 }
 
+.m-width {
+    max-width: 680px;
+    font-size: 60px;
+    ;
+}
+
 .main__content-right {
+    display: flex;
     margin-left: 20px;
 }
