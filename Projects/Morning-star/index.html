@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/styles/style.css">
+    <link rel="stylesheet" href="./source/styles/scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     <title>Morning-star</title>
@@ -35,10 +36,10 @@
                 <div class="sidepanel">
                     <div class="socials">
                         <a class="social__link" href="#">Follow us</a>
-                        <a class="social__icon" href="#">
+                        <a class="social__icon" href="instagram">
                             <img src="./source/img/instagram.svg" alt="instagram">
                         </a>
-                        <a class="social__icon" href="#">
+                        <a class="social__icon" href="twitter">
                             <img src="./source/img/twitter.svg" alt="twitter">
                         </a>
                     </div>
@@ -60,23 +61,25 @@
                 </div>
             </div>
         </div>
-        <section class="main__main-section">
-            <div class="main__content bg-shadow">
-                <h2 class="main__first-title">GEt Started</h2>
-                <h1 class="main__second-title">What level of hiker are you?</h1>
-                <p class="main__descr">
-                    Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker
-                    are you – novice, moderate, advanced moderate, expert, or expert backpacker?
-                </p>
-                <div class="down-scroll">
-                    <a href="#down">read more
+        <section class="section__content">
+            <div class="main__content-left bg-shadow">
+                <div class="main__c-left_wrap">
+                    <h2 class="main__first-title">GEt Started</h2>
+                    <h1 class="main__second-title">What level of hiker are you?</h1>
+                    <p class="main__descr">
+                        Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker
+                        are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+                    </p>
+                    <div class="down-scroll">
+                        <a href="#down">read more
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
                     </svg>
                     </a>
-                </div>
-                <div class="main_content-right">
-                    <img src="./source/img/abstract1.png" alt="abstract1">
+                    </div>
+                    <div class="main__content-right">
+                        <img src="./source/img/1.png" alt="abstract1">
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,7 +127,7 @@
                 let _href = $(this).attr('href')
                 $('html body').animate({
                     scrollTop: $(_href).offset().top + 'px'
-                }, 300)
+                }, 3000)
             })
         })
     </script>
