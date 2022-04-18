@@ -78,6 +78,7 @@ header {
 }
 
 .banderogus-launch {
+    border: none;
     background: #FF6B0A;
     border-radius: 8px;
     padding: 12px 24px;
@@ -90,4 +91,89 @@ header {
 
 .banderogus-img {
     align-self: flex-end;
+}
+
+.gus-facts {
+    padding: 52px 0 72px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gus-title {
+    margin: 16px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100px;
+    color: #1B1D1F;
+}
+
+.gus-descr {
+    text-align: center;
+    width: 875px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1D1F;
+}
+
+.gus-facts-container {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gus-fact-item {
+    width: 33%;
+}
+
+.gus-fact-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 12px 0 32px 0;
+    color: #1B1D1F;
+}
+
+.gus-fact-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1D1F;
+    margin: 12px 0 32px 0;
+    width: 280px;
+}
+
+.victory-bg {
+    width: 1170px;
+    background: linear-gradient(270deg, #C1E8FF 0%, #FFFFFF 100%);
+    padding: 72px 0;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.victory-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.victory-title {
+    margin: 16px 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100px;
+    color: #1B1D1F;
+}
+
+.victory-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1B1D1F;
+    width: 875px;
 }
