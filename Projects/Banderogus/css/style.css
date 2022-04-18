@@ -10,7 +10,7 @@ body {
     width: 1170px;
     margin: 0 auto;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 .main-page {
