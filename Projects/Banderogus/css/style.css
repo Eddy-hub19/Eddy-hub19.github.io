@@ -328,11 +328,10 @@ header {
         text-align: center;
     }
     .banderogus-container {
-        /* padding: 60px 56px; */
+        padding: 0;
         background: white;
         align-self: center;
         width: 100%;
-        margin: 0 auto;
     }
     .banderogus-greeting {
         color: #1B1D1F;
@@ -380,7 +379,7 @@ header {
         width: -webkit-fill-available;
     }
     .gus-facts {
-        padding: 90px 0 62px 5px;
+        padding: 200px 0 62px 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
