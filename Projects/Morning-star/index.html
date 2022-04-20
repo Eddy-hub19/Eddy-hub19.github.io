@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__top">
-            <img class="header__nav-logo" src="./source/img/logo-symbol.png" alt="logo">
+            <a href="#"> <img class="header__nav-logo" src="./source/img/logo-symbol.png" alt="logo"></a>
             <nav class="header__nav">
                 <a class="header__nav-link" href="#section1">Equipment</a>
                 <a class="header__nav-link" href="#section2">About us</a>
@@ -45,12 +45,11 @@
                     </div>
                 </div>
                 <div class="progress-scroll">
-                    <span>Start</span>
+                    <span><a href="#header"> Start </a></span>
                     <div class="scroll pr-item">
                         <a class="header__nav-link link--scroll" href="#section1">Equipment</a>
                         <a class="header__nav-link link--scroll" href="#section2">About us</a>
                         <a class="header__nav-link link--scroll" href="#section3">Blog</a>
-
                     </div>
                 </div>
                 <div class="down-scroll">
@@ -65,6 +64,7 @@
         <!-- section 1 -->
         <section id="section1" class="bg-shadow">
             <div class="main__content-left">
+                <div class="abstract abstract1">01</div>
                 <div class="main__c-left_wrap">
                     <h2 class="main__first-title title--pos">GEt Started</h2>
                     <h1 class="main__second-title m--width">What level of hiker are you?</h1>
@@ -85,7 +85,8 @@
         </section>
         <!-- section 2 -->
         <section id="section2" class="section">
-            <div class="main__content-left section--reverse">
+            <div class="main__content-left  section--reverse">
+                <div class="abstract abstract2">02</div>
                 <div class="main__c-left_wrap">
                     <h2 class="main__first-title title--pos">Hiking Essentials</h2>
                     <h1 class="main__second-title m--width">Picking the right Hiking Gear!</h1>
@@ -106,6 +107,7 @@
         <!-- section 3 -->
         <section id="section3" class="section">
             <div class="main__content-left">
+                <div class="abstract abstract3">03</div>
                 <div class="main__c-left_wrap">
                     <h2 class="main__first-title title--pos">where you go is the key</h2>
                     <h1 class="main__second-title m--width">Understand Your Map & Timing</h1>
@@ -124,7 +126,6 @@
                 </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer__container">
             <div class="footer-wrap">
@@ -152,16 +153,17 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
+    <script>
         (function() {
             $('a[href^="#"]').click(function() {
                 let _href = $(this).attr('href')
-                $('html body').animate({
+                $('body html').animate({
                     scrollTop: $(_href).offset().top + 'px'
-                }, 3000)
+                }, 8000)
             })
         })
-    </script> -->
+    </script>
+    <script src="./jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

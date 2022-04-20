@@ -47,6 +47,9 @@
     }
     .main__content-left {
         flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: -282px;
+        padding-left: 75px;
         .title--pos {
             margin: 0 0;
         }

@@ -8,13 +8,11 @@
 }
 
 body {
-  display: block;
-  max-width: 100%;
   height: auto;
   width: 100%;
   font-size: 1em;
   color: white;
-  background: url(/Projects/Morning-star/source/img/banner.png) top no-repeat;
+  background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top #0B1D26;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -29,6 +27,7 @@ html {
   height: auto;
   min-height: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -105,7 +104,7 @@ ul li {
   width: 100%;
   padding: 0;
   margin-top: 50px;
-  padding-bottom: 40rem;
+  padding-bottom: 53rem;
 }
 
 .main__content {
@@ -275,11 +274,15 @@ ul li {
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
 
+#section2 {
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+}
+
 .section {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding-top: 30rem;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +319,9 @@ ul li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__content-left {
@@ -328,11 +334,42 @@ ul li {
           justify-content: space-evenly;
 }
 
-.main__content-left::before {
-  content: url(/Projects/Morning-star/source/img/abstract1.png);
+.main__content-left .title--pos {
+  margin-top: 100px;
+}
+
+.main__content-left .abstract {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 240px;
+  line-height: 240px;
+  color: #FFFFFF;
+  opacity: 0.1;
+  z-index: 4;
+}
+
+.main__content-left .abstract1 {
   position: absolute;
-  left: 234px;
-  top: 400px;
+  left: 0%;
+  right: 83.58%;
+  top: 5.28%;
+  bottom: 61.39%;
+}
+
+.main__content-left .abstract2 {
+  position: absolute;
+  left: 46.51%;
+  right: 34.68%;
+  top: 5.28%;
+}
+
+.main__content-left .abstract3 {
+  position: absolute;
+  left: 0%;
+  right: 81.12%;
+  top: 5.28%;
+  bottom: 61.39%;
 }
 
 .read-more {
@@ -363,6 +400,10 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 footer {
@@ -371,10 +412,16 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  padding-top: 100px;
   width: 100%;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  padding: 200px 0px;
 }
 
 .footer__container {

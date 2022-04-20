@@ -16,13 +16,12 @@ $width: 100%;
 }
 
 body {
-    display: block;
-    max-width: 100%;
     height: auto;
     width: 100%;
     font-size: 1em;
     color: white;
-    background: url(/Projects/Morning-star/source/img/banner.png) top no-repeat;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top $bg;
+    // background: url(/Projects/Morning-star/source/img/banner.png) no-repeat;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     height: 100%;
     min-height: max-content;
@@ -34,6 +33,7 @@ html {
     height: auto;
     min-height: 100%;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -100,7 +100,7 @@ ul li {
     width: 100%;
     padding: 0;
     margin-top: 50px;
-    padding-bottom: 40rem;
+    padding-bottom: 53rem;
 }
 
 .main__content {
@@ -229,14 +229,17 @@ ul li {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
 
+#section2 {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+
 .section {
     align-items: stretch;
-    padding-top: 30rem;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    // align-items: center;
     background: $bg;
     .section--reverse {
         display: flex;
@@ -249,6 +252,7 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     // margin-left: 13.7rem; // спробувати по флексах
 }
 
@@ -257,14 +261,38 @@ ul li {
     display: flex;
     justify-content: space-evenly;
     // padding-top: 20.5rem; // спробувати по флексах
-    &::before {
-        content: url(/Projects/Morning-star/source/img/abstract1.png);
-        position: absolute;
-        left: 234px;
-        top: 400px;
-    }
     .title--pos {
-        // margin-top: 100px;
+        margin-top: 100px;
+    }
+    .abstract {
+        font-family: $font-s;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 240px;
+        line-height: 240px;
+        color: #FFFFFF;
+        opacity: 0.1;
+        z-index: 4;
+    }
+    .abstract1 {
+        position: absolute;
+        left: 0%;
+        right: 83.58%;
+        top: 5.28%;
+        bottom: 61.39%;
+    }
+    .abstract2 {
+        position: absolute;
+        left: 46.51%;
+        right: 34.68%;
+        top: 5.28%;
+    }
+    .abstract3 {
+        position: absolute;
+        left: 0%;
+        right: 81.12%;
+        top: 5.28%;
+        bottom: 61.39%;
     }
 }
 
@@ -294,6 +322,8 @@ ul li {
 
 .main__content-right {
     display: flex;
+    min-height: auto;
+    max-width: fit-content;
     // margin-right: 80px; спробувати по флексах
 }
 
@@ -301,9 +331,11 @@ footer {
     background: $bg;
     display: flex;
     height: auto;
-    padding-top: 100px;
     width: 100%;
-    align-content: space-around;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    padding: 200px 0px;
 }
 
 .footer__container {
