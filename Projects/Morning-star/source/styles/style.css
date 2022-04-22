@@ -12,7 +12,7 @@ body {
   width: 100%;
   font-size: 1em;
   color: white;
-  background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top #0B1D26;
+  background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top white;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: #755e81;
+}
+
 ul li {
   list-style: none;
 }
@@ -52,7 +56,7 @@ ul li {
           align-items: flex-end;
 }
 
-.header__nav {
+.header .header__top .header__nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,7 +71,7 @@ ul li {
   position: relative;
 }
 
-.header__nav-logo {
+.header .header__top .header__nav-logo {
   width: 40px;
   margin-left: 80px;
 }
@@ -186,6 +190,11 @@ ul li {
 .sidepanel .socials .social__icon {
   margin-top: 45px;
   margin-bottom: -20px;
+}
+
+.sidepanel .socials .social__icon img {
+  width: 26px;
+  height: auto;
 }
 
 .sidepanel .socials .social__link {
@@ -421,16 +430,27 @@ footer {
           order: 3;
   -ms-flex-positive: 0;
       flex-grow: 0;
-  padding: 200px 0px;
+  padding: 157px 0px;
 }
 
-.footer__container {
+footer .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+}
+
+footer .footer__copyright {
+  margin-top: 123px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 .footer-wrap {
@@ -447,11 +467,18 @@ footer {
 }
 
 .footer__logo {
-  width: 25px;
+  width: 35px;
 }
 
 .footer__descr {
-  max-width: 250px;
+  max-width: 330px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 30px;
 }
 
 .footer__categories {
@@ -460,14 +487,33 @@ footer {
   display: flex;
 }
 
-.category-1 {
-  margin-right: 100px;
+.footer__categories ul li {
+  margin-top: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  html {
-    width: 100%;
-    background: black;
-  }
+.category-1 {
+  margin: 0 200px 20px 120px;
+}
+
+.category-1 ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Fira Sans", sans-serif;
+  color: #FFFFFF;
+}
+
+.category-title {
+  margin-bottom: 30px;
+}
+
+.category-title a {
+  color: #FBD784;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 /*# sourceMappingURL=style.css.map */
