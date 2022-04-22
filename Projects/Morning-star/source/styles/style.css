@@ -23,7 +23,7 @@ body {
   width: 100%;
   font-size: 1em;
   color: #FFFFFF;
-  background: url(https://images.unsplash.com/photo-1530688957198-8570b1819eeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2714&q=80) no-repeat top #0B1D26;
+  background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top #0B1D26;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   min-height: 100%;
