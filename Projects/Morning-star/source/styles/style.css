@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-img {
+.main__content-right img {
   max-width: 566px;
   max-height: 720px;
   background-size: contain;
@@ -22,8 +22,8 @@ body {
   height: auto;
   width: 100%;
   font-size: 1em;
-  color: white;
-  background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top #0B1D26;
+  color: #FFFFFF;
+  background: url(https://images.unsplash.com/photo-1530688957198-8570b1819eeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2714&q=80) no-repeat top #0B1D26;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   min-height: 100%;
@@ -43,7 +43,7 @@ html {
 }
 
 a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -83,12 +83,7 @@ ul li {
   position: relative;
 }
 
-.header .header__top .header__nav-logo {
-  width: 40px;
-  margin-left: 80px;
-}
-
-.header__nav-link {
+.header .header__top .header__nav .header__nav-link {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -98,9 +93,14 @@ ul li {
   margin-left: -36px;
 }
 
-.header__nav-link:hover {
+.header .header__top .header__nav .header__nav-link:hover {
   text-decoration: underline;
   color: #d9d1d1;
+}
+
+.header .header__top .header__nav-logo {
+  width: 40px;
+  margin-left: 80px;
 }
 
 .nav-link_profile {
@@ -115,7 +115,7 @@ ul li {
   font-family: 'Cairo', sans-serif;
 }
 
-.main__first-screen {
+.main .main__first-screen {
   position: relative;
   width: 100%;
   padding: 0;
@@ -123,7 +123,7 @@ ul li {
   height: 100vh;
 }
 
-.main__content {
+.main .main__first-screen .main__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,10 +241,15 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 40px 10px 10px 0px;
   margin: 3px 0 0 -80px;
 }
@@ -261,7 +266,7 @@ ul li {
 .progress-scroll .scroll {
   position: relative;
   width: 3px;
-  height: 240px;
+  height: auto;
   left: 0px;
   top: 0;
   background: #FFFFFF;
@@ -389,11 +394,22 @@ section > img {
   top: 140px;
 }
 
-.read-more {
+.section__read-more {
+  margin-top: 40px;
+}
+
+.section__read-more .read-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #FBD784;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.section__read-more svg {
+  margin-left: 20px;
 }
 
 .main__descr {
@@ -458,31 +474,7 @@ footer .footer__container {
   width: 100%;
 }
 
-footer .footer__copyright {
-  margin-top: 235px;
-  font-family: "Fira Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 32px;
-  color: #FFFFFF;
-  opacity: 0.5;
-}
-
-.footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-.footer__categories {
+footer .footer__container .footer__categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,8 +484,19 @@ footer .footer__copyright {
   width: 100%;
 }
 
-.footer__categories ul li {
+footer .footer__container .footer__categories ul li {
   margin-top: 40px;
+}
+
+footer .footer__copyright {
+  margin-top: 235px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 .category {
