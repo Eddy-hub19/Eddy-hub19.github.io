@@ -199,6 +199,10 @@ ul li {
   margin-bottom: 20px;
 }
 
+.sidepanel .socials a:hover {
+  color: #669999;
+}
+
 .sidepanel .socials .social__icon {
   margin-top: 45px;
   margin-bottom: -20px;
