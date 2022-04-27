@@ -185,7 +185,7 @@ ul li {
   z-index: 3;
   top: 315px;
   left: 0;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .sidepanel .socials {
@@ -232,7 +232,7 @@ ul li {
   z-index: 3;
   position: fixed;
   top: 285px;
-  right: 80px;
+  right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +485,6 @@ footer {
           order: 3;
   -ms-flex-positive: 0;
       flex-grow: 0;
-  padding: 240px 0px;
   margin-top: 50px;
 }
 
@@ -520,7 +519,6 @@ footer .footer__container .footer__categories ul li {
 }
 
 footer .footer__copyright {
-  margin-top: 235px;
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -565,6 +563,7 @@ footer .footer__copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px 0 50px;
 }
 
 .read-more:hover {
@@ -596,6 +595,14 @@ span:hover {
   .main .main__first-screen .main__content {
     margin-left: 22%;
     margin-top: 8rem;
+  }
+  .progress-scroll {
+    top: 225px;
+    right: 20px;
+  }
+  .sidepanel {
+    top: 255px;
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
