@@ -161,7 +161,7 @@ ul li {
     display: flex;
     position: fixed;
     z-index: 3;
-    top: 394px;
+    top: 315px;
     left: 0;
     margin-left: 50px;
     .socials {
@@ -175,7 +175,6 @@ ul li {
         }
         .social__icon {
             margin-top: 45px;
-            margin-bottom: -20px;
             img {
                 width: 26px;
                 height: auto;
@@ -197,26 +196,37 @@ ul li {
 .progress-scroll {
     z-index: 3;
     position: fixed;
-    top: 320px;
+    top: 285px;
     right: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    #arrow-up {
+        margin-bottom: 20px;
+        transform: rotate(180deg);
+    }
+    #arrow-down {
+        margin-top: 20px;
+    }
     .link--scroll {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-content: center;
-        align-items: flex-end;
-        padding: 40px 10px 10px 0px;
-        margin: 3px 0 0 -80px;
+        align-items: center;
+        padding: 40px 0px 0 0px;
+        margin-left: -90px;
+        cursor: pointer;
     }
     span {
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
         font-family: $font-s;
-        margin-right: 30px;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 20px;
         text-align: right;
         color: $base;
+        margin: -39px 0 0px 0;
     }
     .scroll {
         position: relative;
@@ -415,12 +425,18 @@ footer {
     }
 }
 
+.footer-bottom {
+    display: flex;
+    align-items: center;
+}
+
 // hovers 
 .read-more:hover {
     color: #86aeae;
 }
 
-.link--scroll:hover {
+.link--scroll:hover,
+span:hover {
     color: $primary;
 }
 
@@ -437,7 +453,16 @@ footer {
     opacity: 1;
 }
 
-.footer-bottom {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        width: 1440px !important;
+    }
+    .main {
+        .main__first-screen {
+            .main__content {
+                margin-left: 22%;
+                margin-top: 8rem;
+            }
+        }
+    }
 }

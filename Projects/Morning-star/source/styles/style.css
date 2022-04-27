@@ -183,7 +183,7 @@ ul li {
   display: flex;
   position: fixed;
   z-index: 3;
-  top: 394px;
+  top: 315px;
   left: 0;
   margin-left: 50px;
 }
@@ -209,7 +209,6 @@ ul li {
 
 .sidepanel .socials .social__icon {
   margin-top: 45px;
-  margin-bottom: -20px;
 }
 
 .sidepanel .socials .social__icon img {
@@ -232,7 +231,7 @@ ul li {
 .progress-scroll {
   z-index: 3;
   position: fixed;
-  top: 320px;
+  top: 285px;
   right: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,30 +245,51 @@ ul li {
           align-items: flex-end;
 }
 
+.progress-scroll #arrow-up {
+  margin-bottom: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.progress-scroll #arrow-down {
+  margin-top: 20px;
+}
+
 .progress-scroll .link--scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 40px 10px 10px 0px;
-  margin: 3px 0 0 -80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0px 0 0px;
+  margin-left: -90px;
+  cursor: pointer;
 }
 
 .progress-scroll span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Fira Sans", sans-serif;
-  margin-right: 30px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
   text-align: right;
   color: #FFFFFF;
+  margin: -39px 0 0px 0;
 }
 
 .progress-scroll .scroll {
@@ -538,11 +558,21 @@ footer .footer__copyright {
   color: #FFFFFF;
 }
 
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .read-more:hover {
   color: #86aeae;
 }
 
-.link--scroll:hover {
+.link--scroll:hover,
+span:hover {
   color: #FBD784;
 }
 
@@ -559,12 +589,13 @@ footer .footer__copyright {
   opacity: 1;
 }
 
-.footer-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 1440px !important;
+  }
+  .main .main__first-screen .main__content {
+    margin-left: 22%;
+    margin-top: 8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

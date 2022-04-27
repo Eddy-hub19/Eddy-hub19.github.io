@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     html {
         width: 100%;
         background-size: cover;
@@ -163,11 +163,14 @@
         width: 100%;
         align-items: center;
         flex-grow: 0;
-        padding: 200px 0px;
+        padding: 0px;
         flex-direction: column;
         .footer__logo {
             width: 30%;
             margin: auto;
+        }
+        .footer__copyright {
+            margin: 50px 0 50px;
         }
     }
     .footer__container {
