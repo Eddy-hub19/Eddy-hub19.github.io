@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="image/x-icon" type="image/x-icon" href="./source/img/favicon.ico">
-    <link type="image/x-icon" rel="shortcut icon" href="./source/img/favicon.ico">
-    <link type="image/png" sizes="16x16" rel="icon" href="./source/img/favicon.ico">
-    <link type="image/png" sizes="32x32" rel="icon" href="./source/img/favicon.ico">
-    <link type="image/png" sizes="96x96" rel="icon" href="./source/img/favicon.ico">
-    <link type="image/png" sizes="120x120" rel="icon" href="./source/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, maximum-scale=2.00, minimum-scale=1.00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content='true' name='HandheldFriendly' />
+    <meta content='width' name='MobileOptimized' />
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta name="Address" content="">
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Morning-star" />
+    <meta property="og:description" content="Описание страницы" />
+    <meta property="og:image" content="./source/img/banner.png" />
+    <meta property="og:url" content="ссылка на страницу" />
+    <meta property="og:site_name" content="Ранкова Зоря" />
+    <link rel="image/x-icon" type="image/x-icon" href="./source/img/star-icon.svg">
+    <link type="image/x-icon" rel="shortcut icon" href="./source/img/star-icon.svg">
+    <link type="image/png" sizes="16x16" rel="icon" href="./source/img/star-icon.svg">
+    <link type="image/png" sizes="32x32" rel="icon" href="./source/img/star-icon.svg">
+    <link type="image/png" sizes="96x96" rel="icon" href="./source/img/star-icon.svg">
+    <link type="image/png" sizes="120x120" rel="icon" href="./source/img/star-icon.svg">
     <link rel="stylesheet" href="./source/styles/style.css">
     <link rel="stylesheet" href="./source/styles/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -26,10 +38,16 @@
                 <a class="header__nav-link" href="#section1">Оборудование</a>
                 <a class="header__nav-link" href="#section2">О нас</a>
                 <a class="header__nav-link" href="#section3">Blog</a>
-                <a class="header__nav-link nav-link_profile" href="./index.html">
+                <div class="translate-row">
                     <lord-icon src="https://cdn.lordicon.com/dklbhvrt.json" trigger="hover" colors="primary:white" state="hover" style="width:34px;height:34px">
-                    </lord-icon> Uk/Eng
+                    </lord-icon>
+                    <a href="./home.html">
+                    Uk /
                 </a>
+                    <a href="./index.html">
+                    Eng
+                </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -38,8 +56,7 @@
         <div class="main__first-screen">
             <div class="wrapper">
                 <div class="main__content">
-                    <h2 class="main__first-title">Туристический гид
-                    </h2>
+                    <h2 class="main__first-title">Туристический гид</h2>
                     <h1 class="main__second-title">Будьте Готовы К Горам И Не Только!</h1>
                     <div class="sidepanel">
                         <div class="socials">
@@ -56,17 +73,22 @@
                         </div>
                     </div>
                     <div class="progress-scroll">
-                        <span><a href="#header"> Начинать </a></span>
                         <div class="scroll">
                             <div class="pr-item">
+                                <a class="header__nav-link link--scroll" href="#header">
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" id="arrow-up" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                                    </svg>В начало</span>
+                                </a>
                                 <a class="header__nav-link link--scroll" href="#section1">Оборудование</a>
                                 <a class="header__nav-link link--scroll" href="#section2">О нас</a>
                                 <a class="header__nav-link link--scroll" href="#section3">Блог</a>
                                 <a class="header__nav-link link--scroll" href="#down">В конец
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                    </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" id="arrow-down" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +125,7 @@
                 <div class="main__content-left  section--reverse">
                     <div class="abstract abstract2">2</div>
                     <div class="main__c-left_wrap">
-                        <h2 class="main__first-title title--pos">основы походов</h2>
+                        <h2 class="main__first-title title--pos">Основы походов</h2>
                         <h1 class="main__second-title m--width">Правильный Выбор Походного Снаряжения!</h1>
                         <p class="main__descr">
                             Самое приятное в начале пеших походов заключается в том, что вам на самом деле не нужно никакого специального снаряжения, вы, вероятно, можете обойтись тем, что у вас уже есть. Начнем с одежды. Типичная ошибка, которую допускают начинающие туристы, заключается
@@ -126,9 +148,7 @@
                 <div class="main__content-left">
                     <div class="abstract abstract3">3</div>
                     <div class="main__c-left_wrap">
-                        <h2 class="main__first-title title--pos">
-                            Куда вы идете, это ключ
-                        </h2>
+                        <h2 class="main__first-title title--pos"> Куда вы идете, это ключ</h2>
                         <h1 class="main__second-title m--width">Поймите Свою Карту И Время</h1>
                         <p class="main__descr">
                             Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в пакет Zip-Lock. Прочтите руководство, изучите карту и поймите, чего ожидать. Мне нравится знать, какой будет мой следующий ориентир во время похода. Например, я читаю путеводитель
@@ -160,7 +180,7 @@
                         <li><a href="#">Политика конфиденциальности</a></li>
                     </ul>
                     <ul class="category">
-                        <li class="category-title"><a href="#">Подробнее о МНТН</a></li>
+                        <li class="category-title"><a href="#">More on MNTN</a></li>
                         <li><a href="#">О МНТН</li>
                         <li><a href="#">Авторы и писатели</a></li>
                         <li><a href="#">Напишите нам</a></li>
@@ -179,7 +199,6 @@
                         <li><a href="#">Авторы и писатели</a></li>
                         <li><a href="#">Напишите нам</a></li>
                     </ul>
-
                 </div>
 
                 <div id="down" class="footer-bottom">

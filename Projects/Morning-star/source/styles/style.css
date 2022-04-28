@@ -107,10 +107,9 @@ ul li {
   margin-left: 80px;
 }
 
-.nav-link_profile {
+.header .translate-row {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 50px;
 }
 
 .main {
@@ -571,6 +570,7 @@ footer .footer__copyright {
 }
 
 .link--scroll:hover,
+.translate-link:hover,
 span:hover {
   color: #FBD784;
 }

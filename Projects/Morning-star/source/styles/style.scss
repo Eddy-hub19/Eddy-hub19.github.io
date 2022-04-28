@@ -94,12 +94,10 @@ ul li {
             margin-left: 80px;
         }
     }
-}
-
-.nav-link_profile {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    .translate-row {
+        position: absolute;
+        right: 50px;
+    }
 }
 
 // Main
@@ -437,6 +435,7 @@ footer {
 }
 
 .link--scroll:hover,
+.translate-link:hover,
 span:hover {
     color: $primary;
 }
