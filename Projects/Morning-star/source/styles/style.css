@@ -386,7 +386,7 @@ section > img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 270px;
+  padding-top: 306px;
 }
 
 .main__content-left .title--pos {
@@ -413,13 +413,13 @@ section > img {
 .main__content-left .abstract2 {
   position: absolute;
   left: 54.51%;
-  top: 225px;
+  top: 268px;
 }
 
 .main__content-left .abstract3 {
   position: absolute;
   left: 12%;
-  top: 200px;
+  top: 260px;
 }
 
 .section__read-more {
