@@ -22,7 +22,7 @@ $width: 100%;
 }
 
 .wrapper {
-    width: 1920px !important;
+    max-width: 1920px !important;
     margin: 0 auto;
 }
 
@@ -237,12 +237,17 @@ ul li {
         .pr-item::after {
             content: '';
             position: absolute;
-            width: 72px;
-            height: 2px;
-            left: -35px;
-            top: 35px;
-            transform: rotate(89deg);
-            background: $base;
+            // width: 72px;
+            // height: 2px;
+            // left: -35px;
+            // top: 35px;
+            // transform: rotate(89deg);
+            // background: $base;
+            width: 3px;
+            height: 75px;
+            top: 0;
+            transform: rotate(359deg);
+            background: #d90000;
         }
     }
 }
@@ -451,26 +456,4 @@ span:hover {
 
 .footer__copyright:hover {
     opacity: 1;
-}
-
-@media screen and (max-width: 1440px) {
-    .wrapper {
-        width: 1440px !important;
-    }
-    .main {
-        .main__first-screen {
-            .main__content {
-                margin-left: 22%;
-                margin-top: 8rem;
-            }
-        }
-    }
-    .progress-scroll {
-        top: 225px;
-        right: 20px;
-    }
-    .sidepanel {
-        top: 255px;
-        margin-left: 10px;
-    }
 }
