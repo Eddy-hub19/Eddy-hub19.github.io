@@ -238,17 +238,10 @@ ul li {
         .pr-item::after {
             content: '';
             position: absolute;
-            // width: 72px;
-            // height: 2px;
-            // left: -35px;
-            // top: 35px;
-            // transform: rotate(89deg);
-            // background: $base;
-            width: 3px;
+            width: 4px;
             height: 75px;
             top: 0;
-            transform: rotate(359deg);
-            background: #d90000;
+            background: #7e7878;
         }
     }
 }

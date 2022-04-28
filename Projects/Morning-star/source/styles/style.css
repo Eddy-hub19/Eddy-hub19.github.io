@@ -305,12 +305,10 @@ ul li {
 .progress-scroll .scroll .pr-item::after {
   content: '';
   position: absolute;
-  width: 3px;
+  width: 4px;
   height: 75px;
   top: 0;
-  -webkit-transform: rotate(359deg);
-          transform: rotate(359deg);
-  background: #d90000;
+  background: #7e7878;
 }
 
 section {
