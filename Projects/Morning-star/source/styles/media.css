@@ -434,17 +434,17 @@
   .main__content-left .abstract1 {
     position: absolute;
     left: 60px;
-    top: 205px;
+    top: 60px;
   }
   .main__content-left .abstract2 {
     position: absolute;
     left: 51%;
-    top: 220px;
+    top: 80px;
   }
   .main__content-left .abstract3 {
     position: absolute;
     left: 76px;
-    top: 200px;
+    top: 60px;
   }
 }
 

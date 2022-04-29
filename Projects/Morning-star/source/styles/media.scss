@@ -361,20 +361,22 @@
         top: 255px;
         margin-left: 0;
     }
-    .main__content-left .abstract1 {
-        position: absolute;
-        left: 60px;
-        top: 205px;
-    }
-    .main__content-left .abstract2 {
-        position: absolute;
-        left: 51%;
-        top: 220px;
-    }
-    .main__content-left .abstract3 {
-        position: absolute;
-        left: 76px;
-        top: 200px;
+    .main__content-left {
+        .abstract1 {
+            position: absolute;
+            left: 60px;
+            top: 60px;
+        }
+        .abstract2 {
+            position: absolute;
+            left: 51%;
+            top: 80px;
+        }
+        .abstract3 {
+            position: absolute;
+            left: 76px;
+            top: 60px;
+        }
     }
 }
 
