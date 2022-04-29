@@ -302,15 +302,6 @@ ul li {
   opacity: 1;
 }
 
-.progress-scroll .scroll .pr-item::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 75px;
-  top: 0;
-  background: #7e7878;
-}
-
 section {
   margin-top: 200px;
 }

@@ -235,14 +235,6 @@ ul li {
         top: 0;
         background: $base;
         opacity: 1;
-        .pr-item::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            height: 75px;
-            top: 0;
-            background: #7e7878;
-        }
     }
 }
 
