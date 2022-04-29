@@ -1,5 +1,5 @@
 // mobile
-@media (min-width: 0px) and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 768px) {
     html {
         width: 100% !important;
         background-size: cover;
@@ -204,7 +204,7 @@
 }
 
 // tablet to laptop
-@media (min-width: 600px) and (max-width: 1240px) {
+@media (min-width: 769px) and (max-width: 1240px) {
     .wrapper {
         width: 100% !important;
         overflow-x: hidden !important;
