@@ -5,12 +5,12 @@
 }
 
 body html {
-    /* width: 1920px; */
     margin: 0 auto;
     overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
 }
 
-body>a {
+a {
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ header {
 
 header>span>a {
     font-size: 40px;
-    font-family: "Raleway", sans-serif;
+    font-family: inherit;
 }
 
 header>h3 {
