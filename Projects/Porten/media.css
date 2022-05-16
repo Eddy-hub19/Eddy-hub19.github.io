@@ -79,8 +79,9 @@
         letter-spacing: 0.1em;
     }
     .left {
-        padding-top: 470px;
+        padding-top: 50px;
         width: 100%;
+        height: 100%;
         background: #0f0f0f;
         z-index: 2;
         display: flex;
@@ -99,12 +100,13 @@
     }
     .item-season {
         margin-right: 0;
-        width: 100%;
+        width: 60%;
         margin-top: 13px;
         height: auto;
         padding-top: 40px;
     }
     .watch {
+        margin-left: 0;
         text-align: center;
     }
     .watch h3 {
@@ -126,7 +128,7 @@
     .img-2018 {
         width: 100%;
         min-height: 100%;
-        margin-top: 418px;
+        margin-top: 0;
     }
     .collection2018 {
         width: 100%;
@@ -167,7 +169,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 500px;
+        padding-top: 50px;
     }
     .new-goods h2 {
         font: normal bold 22px/31px Playfair Display;
@@ -185,13 +187,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 32px 0;
+        margin: 32px 20px;
         width: 230px;
     }
     .rectangle-brand {
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
     }
     .rectangle-brand h2 {
         margin-top: 60px;
@@ -202,6 +205,9 @@
     .for-brand,
     .brand {
         margin: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .picture {
         display: flex;
@@ -218,10 +224,10 @@
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        padding-top: 300px;
+        padding-top: 50px;
     }
     .for_a_store {
-        margin: 80px auto;
+        margin: 30px auto;
         padding-left: 20px;
         width: auto;
     }
@@ -235,6 +241,7 @@
     .for_a_store p {
         font: 13px/150% PT Sans;
         margin-top: 40px;
+        padding: 0 30px;
     }
     .container-for-watch {
         display: flex;
@@ -243,8 +250,8 @@
     .container-for-menu {
         display: flex;
         flex-wrap: wrap;
-        align-content: center;
-        height: 100px;
+        justify-content: center;
+        height: 100%;
         margin-top: 40px;
         width: 100%;
     }
@@ -255,6 +262,12 @@
         color: #ffffff;
         margin-top: 100px;
     }
+    .newsletter p {
+        margin-top: 25px;
+        font: 14px/150% PT Sans;
+        padding: 25px;
+        text-align: center;
+    }
     .container-subscribe {
         display: flex;
         flex-direction: column;
@@ -263,9 +276,10 @@
     }
     .container-subscribe input {
         color: white;
-        width: 100%;
+        width: 80%;
         height: 50px;
         font-size: 18px;
+        margin: 0 auto;
         padding: 10px;
         background: rgba(255, 255, 255, 0.4);
     }
@@ -276,8 +290,8 @@
         padding: 18px 30px;
         background: #0f0f0f;
         color: white;
-        width: 70%;
-        margin: 20px 50px;
+        width: 60%;
+        margin: 15px auto;
         justify-content: center;
     }
     .last-line {
@@ -427,7 +441,7 @@
         font: 15px/150% PT Sans;
     }
     .container-new-goods {
-        width: 750px;
+        width: auto !important;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
