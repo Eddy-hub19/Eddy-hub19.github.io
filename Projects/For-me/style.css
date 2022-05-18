@@ -8,7 +8,7 @@ ul li {
 
 .swiper {
     z-index: -3;
-    width: 100%;
+    width: 80%;
     height: 100vh;
 }
 
@@ -25,7 +25,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    background: url(./images/Big-forest.jpg) 100%;
+    background: url(./img/Big-forest.jpg) 100%;
     background-attachment: fixed;
 }
 

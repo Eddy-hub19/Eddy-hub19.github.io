@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Portfolio/images/b.r.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/Other/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/Other/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./Portfolio/style.css" />
+    <link rel="stylesheet" href="./Portfolio/media-tablet.css" />
+    <link rel="stylesheet" href="./Portfolio/media-mobile.css" />
+</head>
+
+<body class="change-theme">
+    <header>
+        <div class="bar-top">
+            <ul id="bar">
+                <li>
+                    <a href="https://github.com/Eddy-hub19"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="icon-github" /></a>
+                </li>
+                <li>
+                    <a href="https://t.me/Edddy21"><img src="https://img.icons8.com/fluency/48/000000/telegram-app.png" alt="icon-telegram" /></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/ed_sekan21/">
+                        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="icon-instagram" />
+                    </a>
+                </li>
+                <span class="arrow">&darr;</span>
+            </ul>
+        </div>
+        <div class="header-class">
+            <h1 class="animation">Smart-Edek</h1>
+            <h2>SEKAN EDDY</h2>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Projects</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/Projects/Porten/index.html">PORTEN</a>
+                    <a href="/Projects/Food-Store/index.html">Food-Store</a>
+                    <a href="/Projects/TODO-JS/index.html">Todo-List-JS</a>
+                    <a href="/Projects/Boss-Logics/index.html">Boos-Logics</a>
+                    <a href="/Projects/Locus/index.html">Locus</a>
+                    <a href="https://banderogus22.netlify.app/">Бандерогусь</a>
+                    <a href="/Projects/Morning-star/index.html">Morning-start</a>
+                    <a href="/Projects/For-me/index.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="header-main">
+            <h2 class="title-main">My name is Eduard Sekan</h2>
+            <p class="dscr-main">I`m 21 years old and i`m a <i>PROGRAMMER</i></p>
+            <details class="read-more">
+                <summary>About me</summary>
+                <p class="ang-translate">
+                    I'm studying Front-end developer Eduard Sekan, 21 years old, I started studying one year ago I studied at the 'STEP Academy', I also took different courses, such as: 'Okten School', 'Hexlet', 'CodeBasic', 'HTML Academy', and "Internship Elogic Commerce"
+                </p>
+                <ul>
+                    <span> Good knowledge:</span>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <ol>
+                        <span> Basic knowledge:</span>
+                        <li>JavaScript</li>
+                        <li>Magento 2.4.2</li>
+                        <li>jQuery</li>
+                    </ol>
+                </ul>
+            </details>
+            <button class="theme-button">
+            <span> Change theme</span>
+                <span>
+                <img class="sun-eclipse" src="Portfolio/images/sun-eclipse.svg" alt="sun-eclipse" />
+            </span>
+                </button>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="/Other/jquery-1.11.0.min.js"></script>
+    <script src="/Other/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Other/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/Other/slick-1.8.1/slick/slick.js"></script>
+    <script src="/Other/carousel.js"></script>
+    <script src="/Other/script.js"></script>
+    <script>
+        // add script for changes theme
+        let header = document.querySelector(".change-theme");
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.onclick = function() {
+            header.classList.toggle("dark-theme");
+        };
+    </script>
+</body>
+
+</html>
