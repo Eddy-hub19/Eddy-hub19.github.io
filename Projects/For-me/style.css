@@ -6,11 +6,12 @@ ul li {
     list-style: none;
 }
 
-.swiper {
+
+/* .swiper {
     z-index: -3;
     width: 80%;
     height: 100vh;
-}
+} */
 
 a {
     color: white;
@@ -214,11 +215,17 @@ header {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 50px;
+    top: 530px;
     font-size: 16px;
-    margin-top: 28%;
-    transition: all 5s ease-in-out;
+    transition: all 2s ease-in;
 }
+
+.first-screen-btn:hover {
+    margin-top: 30px;
+}
+
+
+/* ABOUT  */
 
 .about {
     padding-top: 120px
@@ -319,6 +326,9 @@ header {
     line-height: 18px
 }
 
+
+/* SKILLS  */
+
 .skills {
     padding-top: 150px;
     padding-bottom: 120px;
@@ -365,6 +375,9 @@ header {
     line-height: 18px
 }
 
+
+/* PORTFOLIO  */
+
 .portfolio {
     padding-top: 120px;
     padding-bottom: 130px;
@@ -398,4 +411,8 @@ header {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.footer-copy {
+    text-align: center;
 }
