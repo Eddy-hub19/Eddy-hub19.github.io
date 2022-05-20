@@ -188,11 +188,6 @@ section h2 {
     margin-right: 30px;
 }
 
-.items {
-    display: flex;
-    justify-content: space-around;
-}
-
 
 /* our-teams  */
 
@@ -204,6 +199,11 @@ section h2 {
 
 .our-teams ul {
     justify-content: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
 }
 
 .item {
