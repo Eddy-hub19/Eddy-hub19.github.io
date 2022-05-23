@@ -53,7 +53,7 @@ a {
 }
 
 a:active {
-  color: #755e81;
+  color: #332b87;
 }
 
 ul li {
@@ -74,7 +74,7 @@ ul li {
 }
 
 .header .header__top .header__nav {
-  width: 100%;
+  width: 74%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,13 +104,14 @@ ul li {
 }
 
 .header .header__top .header__nav-logo {
-  width: 40px;
-  margin-left: 80px;
+  display: inline;
+  width: 16rem;
+  margin-left: 50px;
 }
 
 .header .translate-row {
   position: absolute;
-  right: 50px;
+  right: -100px;
 }
 
 .main {
@@ -169,8 +170,8 @@ ul li {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 88px;
-  line-height: 100px;
+  font-size: 42px;
+  line-height: 60px;
   text-transform: capitalize;
   color: #FFFFFF;
   margin: 30px 0px;

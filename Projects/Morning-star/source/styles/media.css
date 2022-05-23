@@ -6,6 +6,9 @@
   body {
     background-size: auto;
   }
+  .hidden-item {
+    visibility: hidden;
+  }
   .wrapper {
     width: 100% !important;
     overflow-x: hidden;
@@ -61,6 +64,7 @@
   .header .header__top .header__nav-logo {
     width: 100px !important;
     margin-left: 0;
+    display: block;
   }
   .main {
     margin: 0 auto;
@@ -105,14 +109,14 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 6px;
-    color: #FBD784;
+    color: #fbd784;
   }
   .main__second-title {
-    font-size: 38px;
-    line-height: 60px;
-    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 44px;
+    color: #ffffff;
     margin: 30px auto;
-    max-width: 400px;
+    max-width: 460px;
     padding-left: 10px;
   }
   .sidepanel {
@@ -194,11 +198,11 @@
     line-height: 35px;
     max-width: 414px;
     padding: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   footer {
     margin-top: 25px;
-    background: #0B1D26;
+    background: #0b1d26;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -255,6 +259,9 @@
     width: 100% !important;
     overflow-x: hidden !important;
   }
+  .hidden-item {
+    visibility: hidden;
+  }
   body {
     margin: 0 auto;
     background-size: auto;
@@ -263,6 +270,29 @@
     position: fixed;
     top: 190px;
     right: 10px;
+  }
+  .header .translate-row {
+    position: absolute;
+    right: 60px;
+  }
+  .header .header__top .header__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0px;
+    position: relative;
+  }
+  .header .header__top .header__nav-logo {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 10px;
   }
   .main .main__first-screen {
     width: 100%;
@@ -321,7 +351,7 @@
     line-height: 22px;
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .main .main__first-screen .main__content .sidepanel .socials .social__link .social__icon {
     margin-left: 30px;
@@ -335,8 +365,9 @@
   .main .main__second-title {
     max-width: 640px;
     margin: 30px auto;
-    font-size: 58px;
-    line-height: 80px;
+    font-size: 42px;
+    line-height: 54px;
+    text-align: center;
   }
   .main .main__content-left {
     -webkit-box-orient: vertical;
