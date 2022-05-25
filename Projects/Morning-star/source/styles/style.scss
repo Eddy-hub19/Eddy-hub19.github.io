@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 // variables
-$font: 'Cairo',
+$font: "Cairo",
 sans-serif; // in place of: font-family: 'Chronicle Display';
-$font-s: 'Fira Sans',
+$font-s: "Fira Sans",
 sans-serif; // in place of: font-family: 'Gilroy';
-$primary: #FBD784;
-$bg: #0B1D26;
-$base: #FFFFFF;
+$primary: #fbd784;
+$bg: #0b1d26;
+$base: #ffffff;
 $width: 100%;
 * {
     margin: 0;
@@ -48,7 +48,7 @@ html {
     scroll-behavior: smooth;
     --scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%
+    text-size-adjust: 100%;
 }
 
 a {
@@ -99,7 +99,7 @@ ul li {
     }
     .translate-row {
         position: absolute;
-        right: -100px;
+        right: 50px;
     }
 }
 
@@ -107,7 +107,7 @@ ul li {
 .main {
     display: block;
     height: 100%;
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cairo", sans-serif;
     .main__first-screen {
         position: relative;
         width: 100%;
@@ -136,7 +136,7 @@ ul li {
     text-transform: uppercase;
     color: $primary;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 72px;
         height: 2px;
@@ -152,7 +152,6 @@ ul li {
     font-weight: 600;
     font-size: 42px;
     line-height: 60px;
-    text-transform: capitalize;
     color: $base;
     margin: 30px 0px;
     max-width: 966px;
@@ -214,9 +213,12 @@ ul li {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        padding: 40px 0px 0 0px;
+        // padding: 40px 0px 0 0px;
+        // margin-left: -90px;
+        padding: 33px 30px 0px 0px;
         margin-left: -90px;
         cursor: pointer;
+        text-align: center;
     }
     span {
         align-items: center;
@@ -246,7 +248,7 @@ section {
 }
 
 .bg-shadow {
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
 }
 
 section>img {
@@ -422,7 +424,7 @@ footer {
     margin: 50px 0 50px;
 }
 
-// hovers 
+// hovers
 .read-more:hover {
     color: #86aeae;
 }
