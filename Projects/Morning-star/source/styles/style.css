@@ -140,14 +140,17 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 31rem;
-  margin-top: 12rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+  margin: 0;
 }
 
 .main__first-title {
   position: relative;
+  right: 270px;
   font-family: "Fira Sans", sans-serif;
-  margin-left: 107px;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
@@ -384,6 +387,7 @@ section > img {
 
 .main__content-left .title--pos {
   margin-top: 100px;
+  left: 0;
 }
 
 .main__content-left .abstract {

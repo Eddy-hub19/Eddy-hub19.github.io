@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 // variables
-$font: "Cairo",
-sans-serif; // in place of: font-family: 'Chronicle Display';
-$font-s: "Fira Sans",
-sans-serif; // in place of: font-family: 'Gilroy';
+$font: "Cairo", sans-serif; // in place of: font-family: 'Chronicle Display';
+$font-s: "Fira Sans", sans-serif; // in place of: font-family: 'Gilroy';
 $primary: #fbd784;
 $bg: #0b1d26;
 $base: #ffffff;
@@ -32,7 +30,8 @@ body {
     width: 100%;
     font-size: 1em;
     color: $base;
-    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top $bg;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top
+        $bg;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     min-height: 100%;
     height: 100%;
@@ -118,16 +117,17 @@ ul li {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
-            margin-left: 31rem;
-            margin-top: 12rem;
+            align-items: center;
+            margin-top: 8rem;
+            margin: 0;
         }
     }
 }
 
 .main__first-title {
     position: relative;
+    right: 270px;
     font-family: $font-s;
-    margin-left: 107px;
     font-weight: 800;
     font-style: normal;
     font-size: 18px;
@@ -213,8 +213,6 @@ ul li {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        // padding: 40px 0px 0 0px;
-        // margin-left: -90px;
         padding: 33px 30px 0px 0px;
         margin-left: -90px;
         cursor: pointer;
@@ -251,7 +249,7 @@ section {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
 }
 
-section>img {
+section > img {
     display: block;
     min-width: 566px;
     max-width: 100%;
@@ -292,6 +290,7 @@ section>img {
     padding-top: 130px;
     .title--pos {
         margin-top: 100px;
+        left: 0;
     }
     .abstract {
         font-family: $font-s;
@@ -365,7 +364,6 @@ footer {
     flex: none;
     order: 3;
     flex-grow: 0;
-    // padding: 240px 0px;
     margin-top: 50px;
     .footer__container {
         display: flex;
@@ -383,7 +381,6 @@ footer {
         }
     }
     .footer__copyright {
-        // margin-top: 235px;
         font-family: $font-s;
         font-style: normal;
         font-weight: 500;
@@ -439,7 +436,7 @@ span:hover {
     color: #669999 !important;
 }
 
-.category>li>a:hover {
+.category > li > a:hover {
     text-decoration: underline;
     color: $primary;
 }
