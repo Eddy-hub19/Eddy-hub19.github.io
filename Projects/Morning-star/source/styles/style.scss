@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 // variables
-$font: "Cairo", sans-serif; // in place of: font-family: 'Chronicle Display';
-$font-s: "Fira Sans", sans-serif; // in place of: font-family: 'Gilroy';
+$font: "Cairo",
+sans-serif; // in place of: font-family: 'Chronicle Display';
+$font-s: "Fira Sans",
+sans-serif; // in place of: font-family: 'Gilroy';
 $primary: #fbd784;
-$bg: #0b1d26;
+$accent-color: #0b1d26;
 $base: #ffffff;
 $width: 100%;
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,13 +29,33 @@ $width: 100%;
     padding: 0 15px;
 }
 
+.swiper {
+    height: auto;
+}
+
+.swiper-wrapper {
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    background: $accent-color;
+    width: 1920px;
+    height: 100vh !important;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
 body {
     height: auto;
     width: 100%;
     font-size: 1em;
     color: $base;
-    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top
-        $bg;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top $accent-color;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     min-height: 100%;
     height: 100%;
@@ -57,6 +81,10 @@ a {
 
 a:active {
     color: rgb(51, 43, 135);
+}
+
+ul ol {
+    margin: 0;
 }
 
 ul li {
@@ -249,7 +277,7 @@ section {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
 }
 
-section > img {
+section>img {
     display: block;
     min-width: 566px;
     max-width: 100%;
@@ -264,7 +292,7 @@ section > img {
 }
 
 .section {
-    align-items: stretch;
+    align-items: center;
     height: auto;
     display: flex;
     justify-content: center;
@@ -274,6 +302,13 @@ section > img {
         flex-direction: row-reverse;
         margin-left: 0;
     }
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
 }
 
 .main__c-left_wrap {
@@ -357,7 +392,7 @@ section > img {
 }
 
 footer {
-    background: $bg;
+    background: $accent-color;
     display: flex;
     height: auto;
     width: 100% !important;
@@ -436,7 +471,7 @@ span:hover {
     color: #669999 !important;
 }
 
-.category > li > a:hover {
+.category>li>a:hover {
     text-decoration: underline;
     color: $primary;
 }

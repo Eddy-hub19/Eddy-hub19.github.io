@@ -18,13 +18,15 @@
     <meta property="og:url" content="ссылка на страницу" />
     <meta property="og:site_name" content="Ранкова Зірка" />
     <link rel="icon" sizes="32x32" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link rel="icon" sizes="192x192" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=192%2C192" />
+    <link rel="icon" sizes="192x192" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png fit=192%2C192" />
     <link type="image/png" sizes="16x16" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
     <link type="image/png" sizes="32x32" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
     <link type="image/png" sizes="96x96" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
     <link type="image/png" sizes="120x120" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
     <link rel="stylesheet" href="./source/styles/style.css" />
     <link rel="stylesheet" href="./source/styles/media.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <script src="./source/js/index.js"></script>
     <title>Ранкова Зірка</title>
@@ -52,11 +54,11 @@
             Uk /
           </a>
                 <a class="translate-link" href="./index.html">
-            Eng /
+            Eng
           </a>
-                <a class="translate-link" href="./home.html">
+                <!-- <a class="translate-link" href="./home.html">
             Rus
-          </a>
+          </a> -->
             </div>
         </div>
     </header>
@@ -67,7 +69,7 @@
                 <div class="main__content">
                     <h2 class="main__first-title">Morning Star</h2>
                     <h1 class="main__second-title">
-                        "Очі мої підводжу я на гори: звідки прийде моя допомога? Допомога моя від Господа, що створив небо й землю." Пс 121:1-2
+                        "Очі мої підводжу я на гори: звідки прийде моя допомога? Допомога моя від Господа, що створив небо й землю." Пс: 121:1-2
                     </h1>
                     <div class="sidepanel">
                         <div class="socials">
@@ -85,52 +87,14 @@
                     </div>
                     <div class="progress-scroll">
                         <div class="scroll">
-                            <div class="pr-item">
-                                <a class="header__nav-link link--scroll" href="#header">
-                                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        id="arrow-up"
-                        class="bi bi-arrow-down"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                        />
-                      </svg>
-                      Хто ми
-                    </span>
-                                </a>
-                                <a class="header__nav-link link--scroll" href="#section1">
-                    Служіння
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#section2">
-                    Пастор
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#section3">
-                    Розклад
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#section4">
-                    Контакти
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#section5">
-                    Пожертви
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#section6">
-                    Молитва
-                  </a>
-                                <a class="header__nav-link link--scroll" href="#down">
-                    Корисні посилання
+                            <a class="header__nav-link link--scroll" href="#section1">
+                                <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
                       height="25"
                       fill="currentColor"
-                      id="arrow-down"
+                      id="arrow-up"
                       class="bi bi-arrow-down"
                       viewBox="0 0 16 16"
                     >
@@ -139,8 +103,47 @@
                         d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
                       />
                     </svg>
-                  </a>
-                            </div>
+                    Хто ми
+                  </span>
+                            </a>
+                            <a class="header__nav-link link--scroll" href="#section2">
+                  Служіння
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section3">
+                  Пастор
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section4">
+                  Фотогалерея
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section5">
+                  Розклад
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section6">
+                  Контакти
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section7">
+                  Пожертви
+                </a>
+                            <a class="header__nav-link link--scroll" href="#section8">
+                  Молитва
+                </a>
+                            <a class="header__nav-link link--scroll" href="#down">
+                  Корисні посилання
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    id="arrow-down"
+                    class="bi bi-arrow-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                    />
+                  </svg>
+                </a>
                         </div>
                     </div>
                 </div>
@@ -160,23 +163,6 @@
                             Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker
                             are you – novice, moderate, advanced moderate, expert, or expert backpacker?
                         </p>
-                        <div class="section__read-more">
-                            <a class="read-more" href="#read-more">
-                  read more
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#FBD784"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  >
-                    <path
-                      d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-                    />
-                  </svg>
-                </a>
-                        </div>
                     </div>
                     <div class="main__content-right">
                         <img src="./source/img/1.png" alt="1" />
@@ -228,26 +214,26 @@
                 </div>
             </div>
         </section>
-        <!-- section 4 -->
+        <!-- SLIDER  -->
         <section id="section4" class="section">
             <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">4</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Amazing_River_Flowing_Nature_Wallpapers.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://wallpapercave.com/wp/ixmt8JQ.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://i.pinimg.com/originals/bc/0f/e0/bc0fe08850512145f0ab62b503dc513d.jpg" alt="" />
+                        </div>
                     </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
-                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -323,23 +309,8 @@
         <!-- section 8 -->
         <section id="section8" class="section">
             <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">8</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
-                    </div>
+                <div class="content-wrap">
+                    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/5YNQOxTJO8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -373,32 +344,28 @@
             <div class="footer__container">
                 <div class="footer__categories">
                     <ul class="category">
-                        <li class="category-title"><a href="#">More on The Blog</a></li>
-                        <li><a href="#">About MNTN</a></li>
-                        <li><a href="#">Contributors & Writers</a></li>
-                        <li><a href="#">Write For Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li class="category-title"><a href="#">Служіння</a></li>
+                        <li><a href="#">Пастор</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Розклад</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Пожертви</a></li>
                     </ul>
                     <ul class="category">
-                        <li class="category-title"><a href="#">More on MNTN</a></li>
-                        <li><a href="#">About MNTN</a></li>
-                        <li><a href="#">Contributors & Writers</a></li>
-                        <li><a href="#">Write For Us</a></li>
+                        <li class="category-title"><a href="#">Пастор</a></li>
+                        <li><a href="#">Пастор</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Розклад</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Пожертви</a></li>
                     </ul>
                     <ul class="category">
-                        <li class="category-title"><a href="#">More on The Blog</a></li>
-                        <li><a href="#">About MNTN</a></li>
-                        <li><a href="#">Contributors & Writers</a></li>
-                        <li><a href="#">Write For Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                    <ul class="category">
-                        <li class="category-title"><a href="#">More on MNTN</a></li>
-                        <li><a href="#">About MNTN</a></li>
-                        <li><a href="#">Contributors & Writers</a></li>
-                        <li><a href="#">Write For Us</a></li>
+                        <li class="category-title"><a href="#">Контакти</a></li>
+                        <li><a href="#">Пастор</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Розклад</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Пожертви</a></li>
                     </ul>
                 </div>
 
@@ -411,6 +378,10 @@
         </div>
     </footer>
     <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./source/js/slider.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -17,6 +19,33 @@
   max-width: 1920px !important;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.swiper {
+  height: auto;
+}
+
+.swiper-wrapper {
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  background: #0b1d26;
+  width: 1920px;
+  height: 100vh !important;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-size: cover;
 }
 
 body {
@@ -55,6 +84,10 @@ a {
 
 a:active {
   color: #332b87;
+}
+
+ul ol {
+  margin: 0;
 }
 
 ul li {
@@ -331,9 +364,9 @@ section > img {
 }
 
 .section {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +389,19 @@ section > img {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin-left: 0;
+}
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1000px;
 }
 
 .main__c-left_wrap {
