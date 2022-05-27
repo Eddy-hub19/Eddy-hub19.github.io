@@ -432,8 +432,8 @@ section > img {
 }
 
 .main__content-left .title--pos {
-  margin-top: 100px;
-  left: 0;
+  margin-top: 0;
+  left: 100px;
 }
 
 .main__content-left .abstract {
