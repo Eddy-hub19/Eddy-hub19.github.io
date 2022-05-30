@@ -448,11 +448,12 @@
     width: 100% !important;
   }
   .main .main__first-screen .main__content {
-    margin-left: 22%;
-    margin-top: 8rem;
+    margin-top: 7rem;
   }
   .main .main__first-screen .main__content .main__second-title {
-    font-size: 75px;
+    max-width: 770px;
+    font-size: 33px;
+    line-height: 45px;
   }
   .progress-scroll {
     top: 225px;

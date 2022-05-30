@@ -7,13 +7,10 @@
     body {
         background-size: auto;
     }
-
     // for hidden items
-
     .hidden-item {
         visibility: hidden;
     }
-
     .wrapper {
         width: 100% !important;
         overflow-x: hidden;
@@ -379,10 +376,11 @@
     .main {
         .main__first-screen {
             .main__content {
-                margin-left: 22%;
-                margin-top: 8rem;
+                margin-top: 7rem;
                 .main__second-title {
-                    font-size: 75px;
+                    max-width: 770px;
+                    font-size: 33px;
+                    line-height: 45px;
                 }
             }
         }
