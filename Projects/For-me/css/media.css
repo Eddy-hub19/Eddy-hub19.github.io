@@ -78,6 +78,9 @@
 }
 
 @media (min-width: 769px) and (max-width: 1240px) {
+  body {
+    background: url(../img/big-forest.jpg) 100%;
+  }
     .container {
         width: 100%;
         margin: 0 auto;
@@ -106,6 +109,9 @@
 }
 
 @media (min-width: 1240px) and (max-width: 1440px) {
+  body {
+    background: url(../img/big-forest.jpg) 100%;
+  }
     .wrapper{
         width: 100%;
     }
