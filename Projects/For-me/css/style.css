@@ -1,0 +1,374 @@
+* ,*:after,*:before {
+    box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: #000;
+  background: url(../img/big-forest.jpg) 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Bar */
+
+.bar-top {
+  position: relative;
+}
+
+#bar {
+  top: -9.9em;
+  right: 89%;
+  padding: 0.5em;
+  margin: 0;
+  position: absolute;
+  width: 9em;
+  background: rgb(101, 126, 150);
+  color: white;
+  text-align: center;
+  transition: top 1.5s ease-out 0.5s;
+  border-radius: 40px;
+}
+
+#bar:hover {
+  top: 20px;
+}
+
+/* DROPDOWN */
+
+/* Dropdown Button */
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom: 45px;
+  left: 40px;
+  background-color: rgb(49, 61, 73);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.dropbtn::after {
+  content: '\2304';
+  margin-left: 10px;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #33434e;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  left: 70%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 2px black solid;
+  left: 3.5rem;
+  top: 30px;
+  z-index: 1;
+  font-size: 25px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(9 28 46);
+  font-weight: normal;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  background: #636c66;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: lightgray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px black solid;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: rgb(153, 149, 149);
+}
+
+/* Show the dropdown menu */
+
+.show {
+  display: block;
+}
+
+/* first screen  */
+
+.first-screen {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(/Portfolio/images/Big-forest.jpg) no-repeat 100% / cover;
+}
+
+.first-preview {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.first-preview > h1 {
+  font-size: 3rem;
+}
+
+.first-preview-btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.first-preview-btn a {
+  padding: 30px 80px;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: (rgb(111, 110, 110), rgb(14, 13, 13));
+  border-image: initial;
+  transition: all 2s ease;
+}
+
+.first-preview-btn a:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+
+.first-screen-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 530px;
+  font-size: 16px;
+  transition: all 2s ease-in;
+}
+
+.first-screen-btn:hover {
+  margin-top: 30px;
+}
+
+/* ABOUT  */
+
+.about {
+  padding-top: 120px;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 500px auto;
+  grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+  grid-auto-rows: minmax(245px, auto);
+  -moz-column-gap: 70px;
+  column-gap: 70px;
+  row-gap: 40px;
+}
+
+.about__photo {
+  grid-row: 1/3;
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about__descr {
+  padding-top: 6px;
+}
+
+.about__title {
+  position: relative;
+  padding: 1px 0 0 16px;
+}
+
+.about__subtitle {
+  font-size: 22px;
+}
+
+.about__title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 145px;
+  height: 60px;
+  border-radius: 100%;
+  background: #515050;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-size: 21px;
+  line-height: 1.6;
+  width: 450px;
+}
+
+/* SKILLS  */
+
+.skills {
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.skills__items {
+  margin-top: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 2 - 10px);
+  gap: 13px;
+}
+
+.skills__item {
+  border: 1px solid #000;
+  padding: 30px 30px 25px 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: border ease 1s;
+  -webkit-transition: border ease 1s;
+  -moz-transition: border ease 1s;
+  -ms-transition: border ease 1s;
+  -o-transition: border ease 1s;
+}
+
+.skills__item:hover {
+  border: 1px solid white;
+}
+
+.skills__item-img {
+  display: flex;
+  text-align: center;
+  min-height: 65px;
+}
+
+.skills__item h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.skills__item p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* PORTFOLIO  */
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  width: calc(100% / 2);
+  gap: 40px;
+}
+
+.portfolio__item {
+  display: flex;
+  width: 250px;
+  transition: transform ease 0.6s;
+  -webkit-transition: transform ease 0.6s;
+  -moz-transition: transform ease 0.6s;
+  -ms-transition: transform ease 0.6s;
+  -o-transition: transform ease 0.6s;
+}
+
+.portfolio__item:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-copy {
+  text-align: center;
+}

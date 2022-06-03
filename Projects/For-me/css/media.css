@@ -1,0 +1,119 @@
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header {
+    height: 130px;
+  }
+
+  .first-preview {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .first-preview-btn {
+    flex-direction: column;
+  }
+
+  .first-preview-btn a {
+    padding: 25px 60px;
+    margin: 30px auto;
+  }
+
+  .first-screen-btn {
+    top: 80%;
+    z-index: 3;
+  }
+
+  .about {
+    padding-top: 110px;
+  }
+
+  .about__photo {
+    grid-row: 2/3;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .about__wrapper {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: minmax(5px, auto) minmax(5px, auto);
+    grid-auto-rows: minmax(85px, auto);
+    column-gap: 70px;
+    row-gap: 40px;
+  }
+  .about__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .about__text {
+    width: auto;
+  }
+  .about-cvv {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .skills__items {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 1.5);
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .dropdown{
+      display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    #bar{
+        right: 80%;
+    }
+    .about__wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .first-screen-btn{
+        top: 190%;
+    }
+    .skills__items{
+        width: calc(100% / 1 - 10px);
+    }
+    .portfolio__wrapper{
+        width: calc(100% / 1);
+    }
+}
+
+@media (min-width: 1240px) and (max-width: 1440px) {
+    .wrapper{
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .about__wrapper{
+        grid-template-columns: 500px auto;
+    }
+}
