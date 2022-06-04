@@ -100,7 +100,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #0e252d;
-      background: url(../img/big-forest.jpg) no-repeat 100% / cover;
+      background: url(../img/forest.jpg) no-repeat 100% / cover;
     }
     .first-screen-btn{
         top: 190%;
@@ -131,7 +131,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #0e252d;
-      background: url(../img/big-forest.jpg) no-repeat 100% / cover;
+      background: url(../img/forest.jpg) no-repeat 100% / cover;
     }
 
     .first-screen-btn{
