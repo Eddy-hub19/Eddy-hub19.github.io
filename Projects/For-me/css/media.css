@@ -78,9 +78,6 @@
 }
 
 @media (min-width: 769px) and (max-width: 1240px) {
-  body {
-    background: url(../img/big-forest.jpg) 100%;
-  }
     .container {
         width: 100%;
         margin: 0 auto;
@@ -97,6 +94,13 @@
         width: 100%;
         margin: 0 auto;
     }
+    .first-screen {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      background: url(/Portfolio/images/big-forest.jpg) no-repeat 100% / cover;
+    }
     .first-screen-btn{
         top: 190%;
     }
@@ -109,9 +113,6 @@
 }
 
 @media (min-width: 1240px) and (max-width: 1440px) {
-  body {
-    background: url(../img/big-forest.jpg) 100%;
-  }
     .wrapper{
         width: 100%;
     }
@@ -121,5 +122,21 @@
 
     .about__wrapper{
         grid-template-columns: 500px auto;
+    }
+
+    .first-screen {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      background: url(/Portfolio/images/big-forest.jpg) no-repeat 100% / cover;
+    }
+
+    .first-screen-btn{
+      top: 60vh;
+    }
+
+    .skills__items{
+      width: calc(100% - 10px);
     }
 }
