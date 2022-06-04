@@ -27,7 +27,8 @@ body {
   line-height: 1.5;
   color: white;
   background-color: #000;
-  background: url(./Projects/For-me/img/forest.jpg) 100%;
+  /* background: url(./Projects/For-me/img/forest.jpg) 100%; */
+  background: url(../img/forest-two.jpeg) no-repeat 100% / cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -166,7 +167,7 @@ header {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: url(./Projects/For-me/img/forest.jpg) no-repeat 100% / cover;
+  background: url(../img/forest-two.jpeg) no-repeat 100% / cover;
 }
 
 .first-preview {

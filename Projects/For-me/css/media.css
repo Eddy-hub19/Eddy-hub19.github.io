@@ -8,6 +8,10 @@
     overflow: hidden;
   }
 
+  header {
+    height: 0;
+  }
+
   .first-preview {
     width: 100%;
     height: 100vh;
@@ -96,7 +100,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #0e252d;
-      background: url(/Projects/For-me/img/forest.jpg) no-repeat 100% / cover;
+      background: url(../img/forest-two.jpeg) no-repeat 100% / cover;
     }
     .first-screen-btn{
         top: 190%;
@@ -127,7 +131,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #0e252d;
-      background: url(/Projects/For-me/img/forest.jpg) no-repeat 100% / cover;
+      background: url(../img/forest-two.jpeg) no-repeat 100% / cover;
     }
 
     .first-screen-btn{
