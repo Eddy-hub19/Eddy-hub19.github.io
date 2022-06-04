@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
   color: white;
   background-color: #000;
-  /* background: url(./Projects/For-me/img/forest.jpg) 100%; */
+  background: url(/Projects/For-me/img/forest.jpg) 100%;
   background: url(../img/forest-two.jpeg) no-repeat 100% / cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -277,6 +277,20 @@ header {
   width: 450px;
 }
 
+.about-cv__link{
+  margin-top: 15px;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: background 1s ease-in;
+}
+
+.about-cv__link:hover,
+.about-cv__link:focus {
+  color: black;
+  background: white;
+}
+
 /* SKILLS  */
 
 .skills {
@@ -370,6 +384,7 @@ header {
   object-fit: contain;
 }
 
-.footer-copy {
+.footer__copyright {
   text-align: center;
+  cursor: pointer;
 }
