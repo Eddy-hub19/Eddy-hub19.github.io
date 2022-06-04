@@ -13,7 +13,7 @@
   }
 
   body {
-
+    background: url(./Projects/For-me/img/forest.jpg) no-repeat 100% / cover;
   }
 
   .first-preview {
@@ -28,10 +28,6 @@
   .first-preview-btn a {
     padding: 25px 60px;
     margin: 30px auto;
-  }
-
-  .first-screen{
-    background: black;
   }
 
   .first-screen-btn {
