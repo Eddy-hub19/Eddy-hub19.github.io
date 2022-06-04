@@ -26,6 +26,10 @@
     margin: 30px auto;
   }
 
+  .first-screen{
+    background: transparent;
+  }
+
   .first-screen-btn {
     top: 80%;
     z-index: 3;
