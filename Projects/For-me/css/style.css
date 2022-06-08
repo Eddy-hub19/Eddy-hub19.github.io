@@ -30,7 +30,7 @@ body {
   background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
   background: linear-gradient(to right, #E4E5E6, #00416A);
   /* background: linear-gradient(to bottom, #9b9996, #071813); */
-  background: url(/Projects/For-me/img/forest.jpg) 100%;
+  /* background: url(/Projects/For-me/img/forest.jpg) 100%; */
   /* background: url(../img/forest-two.jpeg) no-repeat 100% / cover; */
   background-position: center;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@ header {
   background: -webkit-linear-gradient(to right, #fff, #076585);
   background: linear-gradient(to right, #fff, #076585);
   /* background: url(../img/forest-two.jpeg) no-repeat 100% / cover; */
-  background: url(/Projects/For-me/img/forest.jpg) 100%;
+  /* background: url(/Projects/For-me/img/forest.jpg) 100%; */
   box-shadow: 0px 10px 20px 9px #000000bf;
 }
 
@@ -197,7 +197,6 @@ header {
   mix-blend-mode: color-burn;
   /* mix-blend-mode: color-dodge; */
   color: rgb(177, 187, 162);
-  /* clip-path: url(../img/forest-two.jpeg); */
 }
 
 .first-preview-btn {
