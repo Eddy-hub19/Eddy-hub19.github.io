@@ -194,8 +194,7 @@ header {
 .first-preview>h1 {
   font-size: 3rem;
   mix-blend-mode: color-burn;
-  /* mix-blend-mode: color-dodge; */
-  color: rgb(177, 187, 162);
+  color: rgba(85, 84, 99, 0.757);
 }
 
 .first-preview-btn {
