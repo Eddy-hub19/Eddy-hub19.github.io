@@ -249,6 +249,7 @@ ul li {
 
 .sidepanel .socials a:hover {
   color: #669999;
+  fill: #669999 !important;
 }
 
 .sidepanel .socials .social__icon {

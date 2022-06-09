@@ -207,6 +207,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 140px auto;
+    padding-right: 0;
   }
   .main__c-left_wrap .main__descr {
     font-size: 20px;
