@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 // variables
-$font: "Cairo",
-sans-serif; // in place of: font-family: 'Chronicle Display';
-$font-s: "Fira Sans",
-sans-serif; // in place of: font-family: 'Gilroy';
+$font: "Cairo", sans-serif; // in place of: font-family: 'Chronicle Display';
+$font-s: "Fira Sans", sans-serif; // in place of: font-family: 'Gilroy';
 $primary: #fbd784;
 $accent-color: #0b1d26;
 $base: #ffffff;
@@ -56,7 +54,8 @@ body {
     width: 100%;
     font-size: 1em;
     color: $base;
-    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top $accent-color;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top
+        $accent-color;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     min-height: 100%;
     height: 100%;
@@ -125,7 +124,7 @@ ul li {
             width: 16rem;
             margin-left: 50px;
         }
-        .header__nav-logo-mobile{
+        .header__nav-logo-mobile {
             display: none;
             width: 16rem;
             margin-left: 50px;
@@ -237,32 +236,17 @@ ul li {
     flex-direction: column;
     align-items: flex-end;
     #arrow-up {
-        margin-bottom: 20px;
         transform: rotate(180deg);
-    }
-    #arrow-down {
-        margin-top: 20px;
     }
     .link--scroll {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
-        padding: 33px 30px 0px 0px;
-        margin-left: -90px;
+        padding: 20px;
+        margin-left: -120px;
         cursor: pointer;
         text-align: center;
-    }
-    span {
-        align-items: center;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        font-family: $font-s;
-        font-size: 20px;
-        text-align: right;
-        color: $base;
-        margin: -39px 0 0px 0;
     }
     .scroll {
         position: relative;
@@ -284,7 +268,7 @@ section {
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
 }
 
-section>img {
+section > img {
     display: block;
     min-width: 566px;
     max-width: 100%;
@@ -359,20 +343,6 @@ section>img {
         position: absolute;
         left: 12%;
         top: 60px;
-    }
-}
-
-.section__read-more {
-    margin-top: 40px;
-    .read-more {
-        display: flex;
-        color: $primary;
-        font-size: 18px;
-        line-height: 22px;
-        font-family: $font-s;
-    }
-    svg {
-        margin-left: 20px;
     }
 }
 
@@ -466,21 +436,23 @@ footer {
 }
 
 // hovers
-.read-more:hover {
-    color: #86aeae;
-}
 
 .link--scroll:hover,
+.link--scroll:focus,
 .translate-link:hover,
-span:hover {
+.translate-link:focus,
+span:hover,
+span:focus {
     color: $primary;
 }
 
-.category-title a:hover {
+.category-title a:hover,
+.category-title a:focus {
     color: #669999 !important;
 }
 
-.category>li>a:hover {
+.category > li > a:hover,
+.category > li > a:focus {
     text-decoration: underline;
     color: $primary;
 }
