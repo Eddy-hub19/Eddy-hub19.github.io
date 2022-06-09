@@ -152,8 +152,7 @@ ul li {
 }
 
 .header .translate-row {
-  position: absolute;
-  right: 50px;
+  width: 100px;
 }
 
 .main {
