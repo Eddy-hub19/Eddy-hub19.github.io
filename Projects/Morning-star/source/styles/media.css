@@ -61,10 +61,10 @@
     margin-left: 0;
     margin-bottom: 100px;
   }
-  .header .header__top .header__nav-logo {
+  .header .header__top .header__nav-logo-mobile {
     width: 100px !important;
     margin-left: 0;
-    display: block;
+    display: inline-block;
   }
   .main {
     margin: 0 auto;

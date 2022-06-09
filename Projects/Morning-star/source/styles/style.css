@@ -145,6 +145,12 @@ ul li {
   margin-left: 50px;
 }
 
+.header .header__top .header__nav-logo-mobile {
+  display: none;
+  width: 16rem;
+  margin-left: 50px;
+}
+
 .header .translate-row {
   position: absolute;
   right: 50px;
