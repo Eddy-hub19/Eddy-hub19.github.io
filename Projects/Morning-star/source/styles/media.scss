@@ -239,13 +239,14 @@
     .header {
         .translate-row {
             position: absolute;
-            right: 0;
+            right: 35px;
+            top: 40px;
         }
         .header__top {
             display: flex;
             flex-direction: column;
             align-items: center;
-            .header__top-link{
+            .header__top-link {
                 display: none;
             }
             .header__nav {
@@ -254,6 +255,10 @@
                 justify-content: center;
                 margin-top: 0px;
                 position: relative;
+                .header__nav-link {
+                    margin: 21px 10px;
+                    padding: 20px;
+                }
             }
         }
     }
@@ -264,7 +269,7 @@
         padding-top: 10px;
         margin: 0 auto;
     }
-    .header .header__top .header__nav-logo-mobile{
+    .header .header__top .header__nav-logo-mobile {
         display: block;
         margin: 0 auto;
         width: 100px;
@@ -316,11 +321,13 @@
         .main__c-left_wrap {
             align-items: center;
             margin: 0 auto;
+            padding-bottom: 50px;
         }
         .main__second-title {
             max-width: 640px;
             margin: 30px auto;
-            font-size: 42px;
+            font-size: 31px;
+            padding: 0 55px;
             line-height: 54px;
             text-align: center;
         }
@@ -332,28 +339,26 @@
             padding-left: 0;
             padding-top: 200px;
             .m--width {
-                font-size: 44px !important;
+                font-size: 38px !important;
             }
             .abstract {
                 opacity: 0.6;
+                left: 50%;
+                top: 0;
+                transform: translate(-50px, 0px);
             }
             .abstract1 {
                 position: absolute;
-                left: 43%;
-                top: 0;
             }
             .abstract2 {
                 position: absolute;
-                left: 43%;
-                top: 0;
             }
             .abstract3 {
                 position: absolute;
-                left: 43%;
-                top: 0;
             }
             .title--pos {
                 margin: 50px 0;
+                left: 25px;
             }
         }
         .section {
@@ -379,7 +384,7 @@
     }
     .footer__categories {
         justify-content: space-around;
-        width: 530px !important;
+        width: calc((100% - 30px) / 1) !important;
         flex-wrap: wrap;
         .category {
             margin: 30px 0;
