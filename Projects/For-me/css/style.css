@@ -26,11 +26,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  background: #00416A;
-  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
-  background: linear-gradient(to right, #E4E5E6, #00416A);
+  /* background: #00416A; */
+  /* background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  */
+  /* background: linear-gradient(to right, #E4E5E6, #00416A); */
   /* background: linear-gradient(to bottom, #9b9996, #071813); */
-  /* background: url(/Projects/For-me/img/forest.jpg) 100%; */
+  background: url(/Projects/For-me/img/forest.jpg) 100%;
   /* background: url(../img/forest-two.jpeg) no-repeat 100% / cover; */
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ header {
   background: #076585;
   background: -webkit-linear-gradient(to right, #fff, #076585);
   background: linear-gradient(to right, #fff, #076585);
-  /* background: url(/Projects/For-me/img/forest.jpg) 100%; */
+  background: url(/Projects/For-me/img/forest.jpg) 100%;
   box-shadow: 0px 10px 20px 9px #000000bf;
 }
 
@@ -211,6 +211,7 @@ header {
   border-style: outset;
   border-color: (rgb(111, 110, 110), rgb(14, 13, 13));
   border-image: initial;
+  border-radius: 15px;
   transition: all 1.5s ease;
 }
 
