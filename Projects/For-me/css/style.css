@@ -218,7 +218,9 @@ header {
 .first-preview-btn a:hover {
   background: rgb(255, 255, 255);
   color: #000;
-  border-color: #415664;
+  /* border-color: #415664; */
+  color: #009688;
+  border-color: #009688;
 }
 
 .first-screen-btn {
