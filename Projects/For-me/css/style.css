@@ -118,7 +118,7 @@ header {
   position: relative;
   display: inline-block;
   top: 45px;
-  left: 70%;
+  left: 80%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -368,7 +368,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 60px;
-  width: calc(100% / 1);
+  width: calc(100% / 1.5);
   gap: 40px;
 }
 
