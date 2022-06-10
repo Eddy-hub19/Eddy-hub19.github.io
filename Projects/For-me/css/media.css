@@ -26,6 +26,10 @@
     margin: 30px auto;
   }
 
+  .first-screen{
+    background-repeat: repeat;
+  }
+
   .first-screen-btn {
     top: 100%;
     z-index: 3;
@@ -129,6 +133,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #0e252d;
+      background-repeat: repeat;
     }
 
     .first-screen-btn{
