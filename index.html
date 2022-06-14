@@ -4,23 +4,40 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="true" name="HandheldFriendly" />
+        <meta content="width" name="MobileOptimized" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta name="Address" content="" />
+        <meta property="og:locale" content="Ua_UA" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Portfolio" />
+        <meta
+            property="og:description"
+            content="My name is Eduard and i`m Front-end developer"
+        />
+        <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href="./Projects/Portfolio/img/icon/apple-icon.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="./Projects/Portfolio/img/icon/favicon-32x32.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="favicon-16x16.png"
-        /> -->
+            href="./Projects/Portfolio/img/icon/favicon-16x16.png"
+        />
+        <link
+            rel="icon"
+            type="image/ico"
+            href="./Projects/Portfolio/img/icon/favicon.ico"
+        />
         <title>My portfolio</title>
         <link
             rel="stylesheet"
@@ -40,7 +57,6 @@
 
     <body>
         <header class="header">
-            <div class="wrapper">
                 <div class="bar-top">
                     <ul id="bar">
                         <li>
@@ -108,26 +124,24 @@
                 </div>
                 <nav class="header__hamburger">
                     <div class="hamburger">
-                        <span><a
-                            target="_blank"
-                            href="/Projects/Boss-Logics/index.html"
-                            >Boos-Logics</a
-                        ></span>
-                        <span class="long"> <a
-                            target="_blank"
-                            href="/Projects/Food-Store/index.html"
-                            >Food-Store</a
-                        ></span>
-                        <span>Contact</span>
+                        <span></span>
+                        <span class="long"></span>
+                        <span></span>
                     </div>
-                </nav>
-            </div>
+                <ul class="menu">
+                    <li><a class="menuLink" href="#">Occasions</a></li>
+                    <li><a class="menuLink" href="#">All Categories</a></li>
+                    <li><a class="menuLink" href="#">Gifts & Bundles</a></li>
+                    <li><a class="menuLink" href="#">Our Brands</a></li>
+                    <li><a class="menuLink" href="#">About Us</a></li>
+                </ul>
+            </nav>
         </header>
         <main class="main">
             <div class="first-screen">
                 <div class="wrapper">
                     <div class="first-preview">
-                        <h1>I`m Front-end Developer</h1>
+                        <h1 class="first-preview-title">I`m Front-end Developer</h1>
                         <div class="first-preview-btn">
                             <a href="#about-me">About me</a>
                             <a href="#skills">Skills</a>
@@ -136,7 +150,7 @@
                         <a href="#about-me" class="first-screen-btn">
                             <img
                                 src="./Projects/Portfolio/img/down-arrow.svg"
-                                alt=""
+                                alt="down-arrow"
                             />
                         </a>
                     </div>
@@ -148,7 +162,7 @@
                         <div class="about__photo">
                             <img
                                 src="./Projects/Portfolio/img/im.jpeg"
-                                alt="photo"
+                                alt="my photo"
                             />
                         </div>
                         <div class="about__descr">
