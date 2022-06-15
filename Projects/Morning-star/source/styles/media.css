@@ -151,6 +151,9 @@
   .section__read-more .read-more {
     margin-left: 30px;
   }
+  #section1 {
+    margin-top: 2% !important;
+  }
   #section2 {
     padding-top: 0;
     padding-bottom: 0;
@@ -178,16 +181,19 @@
     left: 50%;
   }
   .main__content-left .abstract1 {
-    top: 130px;
+    top: 60px;
   }
   .main__content-left .abstract2 {
-    top: 130px;
+    top: 60px;
   }
   .main__content-left .abstract3 {
-    top: 130px;
+    top: 60px;
+  }
+  .main__content-left .abstract5 {
+    top: 60px;
   }
   .main__content-left .title--pos {
-    top: -100px;
+    top: 0;
     left: 0;
   }
   .main__c-left_wrap {

@@ -126,6 +126,9 @@
             margin-left: 30px;
         }
     }
+    #section1{
+        margin-top: 2% !important;
+    }
     #section2 {
         padding-top: 0;
         padding-bottom: 0;
@@ -144,16 +147,19 @@
             left: 50%;
         }
         .abstract1 {
-            top: 130px;
+            top: 60px;
         }
         .abstract2 {
-            top: 130px;
+            top: 60px;
         }
         .abstract3 {
-            top: 130px;
+            top: 60px;
+        }
+        .abstract5{
+            top: 60px;
         }
         .title--pos {
-            top: -100px;
+            top: 0;
             left: 0;
         }
     }
