@@ -211,9 +211,7 @@ header {
 
 .first-preview-title {
   font-size: 3rem;
-  background: url('../img/forest-two.jpeg') center;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgb(219, 210, 210);
 }
 
 .first-preview-btn {
