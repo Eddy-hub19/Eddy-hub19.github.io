@@ -1,31 +1,29 @@
-// ! IMPORTANT
+// Основной модуль
+import gulp from "gulp";
+// Ипорт путей
+import { path } from "./gulp/config/path.js";
 
-// npm i gulp-sass
-// npm i gulp-scss
+// Передаем значения в глобльаную переменную
+global.app = {
+    path: path,
+    path: gulp
+}
 
-// call command to compile your code
-// gulp less
-// gulp sass
-// gulp scss
+// Импорт задач
+import { copy } from "./gulp/tasks/copy.js";
 
-const gulp = require("gulp");
-const concat = require('gulp-concat');
-const sass = require('gulp-sass')(require('sass'));
+// Выполнение сценария по умолчанию
+gulp.task('default', copy)
 
-// compile file sass to css in folder > style
-gulp.task("sass", function() {
-    return gulp
-        .src("./source/styles/sass/style.sass")
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(concat('./style.css'))
-        .pipe(gulp.dest("./source/styles/test"));
-});
+// const gulp = require("gulp");
+// const concat = require('gulp-concat');
+// const sass = require('gulp-sass')(require('sass'));
 
-// compile file scss to css in folder > style
-// gulp.task("scss", function() {
+// // compile file sass to css in folder > style
+// gulp.task("sass", function() {
 //     return gulp
-//         .src("./source/styles/scss/mobile.scss")
+//         .source("./source/styles/sass/style.sass")
 //         .pipe(sass({ outputStyle: 'compressed' }))
-//         .pipe(concat('style.css'))
-//         .pipe(gulp.dest("./source/styles/mobile"));
+//         .pipe(concat('./style.css'))
+//         .pipe(gulp.dest("./source/styles/test"));
 // });
