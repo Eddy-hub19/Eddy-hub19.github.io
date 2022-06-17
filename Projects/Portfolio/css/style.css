@@ -423,7 +423,20 @@ header {
   flex-direction: column;
 }
 
+.social{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.social-icon {
+  fill: currentColor;
+  transition: transform 1.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.social-icon:hover{
+  transform: scale(1.5) rotate(357deg);
+}
 
 .footer-form-title {
   font-size: 14px;
