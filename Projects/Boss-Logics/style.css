@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Geometria";
-    src: url('./source/fonts/Geometria/Geometria.ttf'), format('ttf'), ;
+    src: url('./src/fonts/Geometria/Geometria.ttf'), format('ttf'), ;
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Geometria-Medium";
-    src: url('./source/fonts/Geometria/Geometria-Medium.ttf'), format('ttf'), url('./source/fonts/Geometria/Geometria-Medium.eot'), format('eot'), url('./source/fonts/Geometria/Geometria-Medium.woff'), format('woff');
+    src: url('./src/fonts/Geometria/Geometria-Medium.ttf'), format('ttf'), url('./src/fonts/Geometria/Geometria-Medium.eot'), format('eot'), url('./src/fonts/Geometria/Geometria-Medium.woff'), format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Geometria-Bold";
-    src: url('./source/fonts/Geometria/Geometria-Bold.ttf'), format('ttf'), url('./source/fonts/Geometria/Geometria-Bold.woff'), format('woff');
+    src: url('./src/fonts/Geometria/Geometria-Bold.ttf'), format('ttf'), url('./src/fonts/Geometria/Geometria-Bold.woff'), format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -62,7 +62,7 @@ ul li {
 
 .bg {
     margin-top: 42px;
-    background: url(./source/img/header-bg.png) no-repeat;
+    background: url(./src/img/header-bg.png) no-repeat;
     background-position-x: right;
 }
 
@@ -258,7 +258,7 @@ main {
 }
 
 .content-section__bg_left::before {
-    content: url(./source/img/bg2.png);
+    content: url(./src/img/bg2.png);
     position: absolute;
     left: 0;
     top: 66rem;
@@ -542,7 +542,7 @@ main {
 }
 
 .our-privileges__bg {
-    background: url(./source/img/bg4.png) no-repeat;
+    background: url(./src/img/bg4.png) no-repeat;
     min-width: 100%;
     min-height: 908px;
     z-index: -3;
