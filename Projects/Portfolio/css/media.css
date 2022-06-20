@@ -15,10 +15,9 @@
 
   .header__hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0%;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
     padding: 0;
     z-index: 2;
   }
@@ -31,6 +30,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .hamburger:hover {
+    transform: translateX(-350px);
   }
 
   .menu{
