@@ -1,0 +1,168 @@
+/* Laptop - 1440px */
+/* bg-gray */
+/* Настольные компьютеры и ноутбуки */
+/* header */
+/* main */
+/* sections-platform */
+@media (max-width: 1441px) {
+	.container {
+		width: 100% !important;
+	}
+	body {
+		overflow-x: hidden !important;
+	}
+	img {
+		max-width: 100%;
+		background-repeat: no-repeat;
+	}
+	.header__logo {
+		img {
+			position: relative;
+			left: 191px;
+			top: 5px;
+		}
+	}
+	.header-nav__menu {
+		margin-left: 233px;
+		a {
+			font-size: 13px;
+		}
+	}
+	.social-network {
+		margin: 0 32px;
+	}
+	.bg {
+		background-size: 75%;
+	}
+	.main-info {
+		padding-top: 80px !important;
+	}
+	.main__info {
+		p {
+			max-width: 537px;
+		}
+	}
+	.first-title {
+		position: relative;
+		max-width: 487px;
+		margin-top: 0;
+		font-size: 62px;
+		&::before {
+			height: 100%;
+			left: -32px;
+			top: 11px;
+		}
+	}
+	.first-title__span {
+		position: relative;
+		left: 0;
+		top: 4px;
+		font-size: 35px;
+	}
+	.main-btn {
+		display: flex;
+		right: 68px;
+		bottom: 47px;
+	}
+	.btn {
+		font-size: 16px;
+		width: 210px;
+		height: 48px;
+	}
+	.main__right-bg {
+		right: 30px;
+		picture {
+			right: 0;
+		}
+	}
+	.title-right__info {
+		font-size: 64px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 3px;
+			background-color: #09f;
+			left: -28px;
+			top: 17px;
+			bottom: 0;
+			height: 209px;
+		}
+	}
+	.dscr-right__info {
+		margin: 0px 6px -142px;
+	}
+	.content-section {
+		margin: 0;
+	}
+	.content-section__bg_left {
+		padding: 0 100px;
+		position: relative;
+		&::before {
+			left: 0px;
+			top: -80px;
+		}
+	}
+	.wrap-right__section {
+		padding-left: 7rem;
+	}
+	.title-section__platform {
+		max-width: 620px;
+	}
+	.about-platform-list__section {
+		li {
+			&:nth-child(even) {
+				max-width: 565px;
+			}
+		}
+	}
+	.left-bg__section-items {
+		display: flex;
+		margin-left: 5rem;
+	}
+	.bg-different-platform {
+		padding: 0;
+	}
+	.title__about-trust-brands {
+		right: 40px;
+	}
+	.dscr__about-trust-brands {
+		margin: 100px -5rem;
+	}
+	.list-about-brands {
+		margin: -51px -5rem;
+	}
+	.our-privileges {
+		padding-top: 13rem;
+	}
+	.our-privileges__wrap {
+		left: -130px;
+		width: 100% !important;
+		h2 {
+			position: relative;
+			left: 289px;
+			top: -39px;
+			font-size: 70px;
+			max-width: 595px;
+			font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
+			font-weight: 500;
+		}
+	}
+	.our-privileges__bg {
+		right: 0;
+	}
+	.picture-bg {
+		position: relative;
+		top: 220px !important;
+		right: 51px !important;
+		width: 100% !important;
+	}
+	.container-menu__footer {
+		width: 100%;
+	}
+	.last-line {
+		width: 90%;
+	}
+	.footer-line {
+		margin-top: 20px;
+	}
+}

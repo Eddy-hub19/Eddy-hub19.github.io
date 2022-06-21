@@ -1,18 +1,19 @@
+
 @font-face
     font-family: "Geometria"
-    src: url('./src/fonts/Geometria/Geometria.ttf'), format("ttf")
+    src: url("/Projects/Boss-Logics/src/fonts/Geometria/Geometria.ttf"), format("ttf")
     font-style: normal
     font-weight: normal
 
 @font-face
     font-family: "Geometria-Medium"
-    src: url('./src/fonts/Geometria/Geometria-Medium.ttf'), format("ttf"), url('./src/fonts/Geometria/Geometria-Medium.eot'), format("eot"), url('./src/fonts/Geometria/Geometria-Medium.woff'), format("woff")
+    src: url('/Projects/Boss-Logics/src/fonts/Geometria/Geometria-Medium.ttf'), format("ttf"), url('/Projects/Boss-Logics/src/fonts/Geometria-Medium.eot'), format("eot"), url('/Projects/Boss-Logics/src/fonts/Geometria-Medium.woff'), format("woff")
     font-weight: 500
     font-style: normal
 
 @font-face
     font-family: "Geometria-Bold"
-    src: url('./src/fonts/Geometria/Geometria-Bold.ttf'), format("ttf"), url('./src/fonts/Geometria/Geometria-Bold.woff'), format("woff")
+    src: url('/Projects/Boss-Logics/src/fonts/Geometria-Bold.ttf'), format("ttf"), url('/Projects/Boss-Logics/src/fonts/Geometria-Bold.woff'), format("woff")
     font-weight: bold
     font-style: normal
 
@@ -23,7 +24,6 @@
 .container
     width: 1920px !important
     margin: 0 auto
-
 img
     max-width: 100%
 
@@ -54,7 +54,7 @@ ul li
     background: url(/Projects/Boss-Logics/src/img/header-bg.png) no-repeat
     background-position-x: right
 
-/* Header
+/* Header */
 
 header
     display: flex
@@ -77,47 +77,46 @@ nav
     text-transform: uppercase
     margin-left: 484px
 
-    &:a
+    & a
         border-bottom: 1px solid transparent
         color: rgb(0, 0, 0)
         font-weight: 500
         font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
         margin-left: 47px
         font-size: 16px
-        transition: 0.3s
+        transition: color 0.3s easy
         -webkit-transition: 0.3s
         -moz-transition: 0.3s
         -ms-transition: 0.3s
         -o-transition: 0.3s
-
-    &:hover
-        width: auto
-        border-bottom: 1px solid white
-        color: black
+        &:hover
+            width: auto
+            border-bottom: 1px solid white
+            color: white
 
 .social-network
     color: white
     background-color: transparent
     margin: 0 45px
     cursor: pointer
-
-    &:a:hover
-        color: #615b5e
-        transition: 0.5s
-        -webkit-transition: 0.5s
-        -moz-transition: 0.5s
-        -ms-transition: 0.5s
-        -o-transition: 0.5s
+    & a
+        &:hover
+            color: #615b5e
+            transition: 0.5s
+            -webkit-transition: 0.5s
+            -moz-transition: 0.5s
+            -ms-transition: 0.5s
+            -o-transition: 0.5s
 
 .fab, .far
     margin-left: 30px
     font-size: 25px
 
-/* Main
+/* Main */
 
 main
-    position: relative
-    display: block
+    // position: relative
+    // display: block
 
 .main__info
     display: flex
@@ -135,7 +134,6 @@ main
     flex-wrap: wrap
     max-width: 705px
     margin-top: 178px
-
     &::before
         content: ''
         border-left: 3px solid #09f
@@ -155,7 +153,7 @@ main
     font-size: 41px
     top: 105px
 
-.main__info p
+.main__info > p
     display: flex
     flex-wrap: wrap
     font-size: 21px
@@ -180,7 +178,6 @@ main
     border: 2px solid #09f
     background: transparent
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
-
     &:hover
         background: #5698fc
         color: white
@@ -194,7 +191,6 @@ main
 .primary
     background: #5698fc
     color: white
-
     &:hover
         background: #fff
         color: black
@@ -205,10 +201,10 @@ main
     display: flex
     flex-direction: row-reverse
     position: absolute
-    right: 143px
-    top: -32px
+    right: 409px
+    top: 100px
 
-/* Sections
+/* Sections */
 
 .content-section
     display: flex
@@ -223,9 +219,8 @@ main
         left: 0
         top: 829px
         z-index: -2
-
-    &
-        padding-right: 121px
+        &
+            padding-right: 121px
 
 .title-right__info
     font-size: 70px
@@ -237,7 +232,6 @@ main
     top: -30px
     left: 0
     letter-spacing: 2px
-
     &::before
         content: ""
         position: absolute
@@ -307,7 +301,7 @@ main
 .bg-different-platform
     padding-right: 267px
 
-/* benefit-to-you
+/* benefit-to-you */
 
 .benefit-to-you
     display: flex
@@ -361,7 +355,7 @@ main
     border: none
     margin-top: 75px
 
-/* section-items
+/* section-items */
 
 .section-items
     display: flex
@@ -419,7 +413,7 @@ main
             font-size: 21px
             color: #8f8f8f
 
-/* brands
+/* brands */
 
 .brands
     width: 100%
@@ -456,7 +450,7 @@ main
     -ms-transform: translateY(-10px)
     -o-transform: translateY(-10px)
 
-/* after brands
+/* after brands */
 
 .wrap__our-privileges
     display: flex
@@ -567,7 +561,7 @@ main
     padding-right: 10px
 
 .contact-info
-    &:a
+    & a
         max-width: 177px
 
     &:nth-child(1)
