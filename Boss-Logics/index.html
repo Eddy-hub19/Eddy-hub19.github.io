@@ -1,39 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./src/fonts/Geometria/stylesheet.css" />
-        <link rel="stylesheet" href="./src/styles/css/media.css" />
-        <link rel="stylesheet" href="./src/styles/css/style.css" />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://kit.fontawesome.com/4ac3930615.js" crossorigin="anonymous"></script>
-        <title>Boss-Logics</title>
-    </head>
-
+    @@include('html/head.html', { "title": "Главная" })
     <body class="bg">
-        <header class="header">
-            <div class="container header-wrap">
-                <a class="header__logo" href="#logo"><img src="./src/img/logo.png" alt="logo" /></a>
-                <nav class="nav header-nav__menu">
-                    <a href="#Solutions">Solutions </a>
-                    <a href="#Together">Together</a>
-                    <a href="#Customers">Customers</a>
-                    <a href="#Pricing">Pricing </a>
-                    <a href="#About">About</a>
-                    <a href="#Contact">Contact</a>
-                </nav>
-                <!-- icons social network -->
-                <div class="social-network header__social-network">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/boss.logics/"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </header>
+        @@include('./html/header.html', {})
         <main class="main">
             <div class="container">
                 <div class="main__wrap">
@@ -179,62 +148,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="container-menu__footer">
-                <div class="for-store">
-                    <a href="logo"><img src="./src/img/logo-footer.png" alt="logo" /></a>
-                    <p>Simplify, transform, and automate your product creation, sales, and management.</p>
-                </div>
-                <div class="container-categories">
-                    <a href="#">POPULAR LINKS </a>
-                    <a href="Solutions">Solutions</a>
-                    <a href="Together">Together</a>
-                    <a href="Customers">Customers</a>
-                    <a href="Pricing">Pricing</a>
-                    <a href="About">About</a>
-                    <a href="Contact">Contact</a>
-                </div>
-                <div class="contact-info">
-                    <a href="">get in touch</a>
-
-                    <a type="email" href="mailto:info@bosslogics.com">
-                        <img class="bg-contact-info" width="15px" src="./src/img/envelope.svg" alt="email" />
-                        info@bosslogics.com
-                    </a>
-
-                    <a type="number" href="tel:212-372-3399">
-                        <img class="bg-contact-info" width="15px" src="./src/img/telephone.svg" alt="phone" />
-                        212-372-3399
-                    </a>
-
-                    <a type="map" href="map">
-                        <img class="bg-contact-info" width="15px" src="./src/img/pin.svg" alt="map" />
-                        BOSS Logics 30-30 47th Ave #470 LIC, NY 11101
-                    </a>
-                </div>
-                <div class="newsletter">
-                    <a class="newsletter-title" href="newsletter-title">INTERESTED IN MORE INFORMATION? </a>
-                    <form class="container-subscribe">
-                        <input required class="input-item" type="email" placeholder="Your email.." autocomplete="on" />
-                        <a href="submit"> <button class="btn primary" type="submit">contact</button></a>
-                    </form>
-                    <div class="social-network footer__social-network">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/boss.logics/"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="down" class="last-line">
-                <div class="footer-line">
-                    <p>© 2020 BOSS Logics</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms & Conditions</p>
-                </div>
-            </div>
-        </footer>
+        @@include('./html/footer.html', {})
         <script>
             AOS.init()
         </script>
