@@ -22,7 +22,7 @@
     padding: 0
 
 .container
-    width: 1920px !important
+    width: 1920px
     margin: 0 auto
 img
     max-width: 100%
@@ -58,14 +58,15 @@ ul li
 
 header
     display: flex
+    justify-content: center
+
+.header-wrap
+    display: flex
+    justify-content: center
 
 .header__logo
-    position: relative
     font-size: 13px
-
-img
-    position: relative
-    left: 253px
+    margin-left: 150px
 
 nav
     display: flex
@@ -76,7 +77,6 @@ nav
     align-items: center
     text-transform: uppercase
     margin-left: 484px
-
     & a
         border-bottom: 1px solid transparent
         color: rgb(0, 0, 0)
@@ -84,11 +84,7 @@ nav
         font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
         margin-left: 47px
         font-size: 16px
-        transition: color 0.3s easy
-        -webkit-transition: 0.3s
-        -moz-transition: 0.3s
-        -ms-transition: 0.3s
-        -o-transition: 0.3s
+        transition: color 400ms
         &:hover
             width: auto
             border-bottom: 1px solid white
@@ -114,16 +110,16 @@ nav
 
 /* Main */
 
-main
-    // position: relative
-    // display: block
+.main__wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 26rem
 
 .main__info
     display: flex
     flex-direction: column
     justify-content: center
-    margin: 94px -5px 15px 294px
-    position: relative
 
 .first-title
     position: relative
@@ -199,28 +195,26 @@ main
 
 .main__right-bg
     display: flex
-    flex-direction: row-reverse
-    position: absolute
-    right: 409px
-    top: 100px
 
 /* Sections */
 
 .content-section
     display: flex
-    justify-content: center
+    justify-content: space-around
     align-items: center
     margin: 19.5rem 0
 
+.content-section__bg
+    position: relative
+    left: 140px
+
 .content-section__bg_left
     &::before
-        content: url(./src/img/bg.png)
+        content: url('/Projects/Boss-Logics/src/img/bg2.png')
         position: absolute
         left: 0
-        top: 829px
+        top: 930px
         z-index: -2
-        &
-            padding-right: 121px
 
 .title-right__info
     font-size: 70px
@@ -251,10 +245,10 @@ main
 .btn-primary_position
     margin: 180px 0 0 -35px
 
-/* section-platform
+/* section-platform */
 
 .sections-platform
-    margin-top: 23rem
+    margin-bottom: 23rem
 
 .section-platform
     display: flex
@@ -298,9 +292,6 @@ main
     letter-spacing: -0.5px
     font-family: "Geometria", Arial, Helvetica, sans-serif
 
-.bg-different-platform
-    padding-right: 267px
-
 /* benefit-to-you */
 
 .benefit-to-you
@@ -312,8 +303,7 @@ main
     font-weight: 500
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
 
-    &:h2
-        margin-top: 15rem
+    & h2
         font-size: 75px
         font-weight: 500
         font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
@@ -330,7 +320,7 @@ main
     flex-direction: column
     font-weight: 400
 
-    &:h4
+    & h4
         margin: 21px 103px
         font-size: 24px
         max-width: 210px
@@ -338,7 +328,7 @@ main
         text-transform: uppercase
         font-family: "Geometria-Bold", Arial, Helvetica, sans-serif
 
-    &:p
+    & p
         margin-top: -8px
         max-inline-size: 237px
         text-align: center
@@ -429,7 +419,7 @@ main
     align-items: center
     justify-content: space-between
 
-    &:a
+    & a
         padding: 20px 47px
         margin-left: -37px
         box-sizing: border-box
@@ -452,6 +442,12 @@ main
 
 /* after brands */
 
+.our-privileges
+    display: flex
+    justify-content: space-evenly
+    align-content: center
+    margin-top: 13rem
+
 .wrap__our-privileges
     display: flex
     flex-direction: column
@@ -466,7 +462,7 @@ main
         left: 262px
         top: -25px
 
-    &:h2
+    & h2
         position: relative
         left: 289px
         top: -39px
@@ -476,12 +472,10 @@ main
         font-weight: 500
 
 .btn__our-privileges_pos
-    position: absolute
-    left: 240px
-    top: 179px
+
 
 .bg__our-privileges
-    background: url(./src/img/demo-banner.png) no-repeat
+    background: url() no-repeat
     min-width: 100%
     min-height: 908px
     z-index: -3
@@ -518,10 +512,10 @@ main
     justify-content: space-evenly
     flex-direction: column
 
-    &:img
+    & img
         border-bottom: 1px solid #0cf
 
-    &:p
+    & p
         font-size: 14px
         max-width: 200px
         font-family: "Geometria", Arial, Helvetica, sans-serif
@@ -532,22 +526,22 @@ main
     font-size: 14px
     color: white
 
-    &:a
+    & a
         border-bottom: 0 solid black
 
-    &:hover
-        border-bottom: 1px solid orange
+        &:hover
+            border-bottom: 1px solid orange
 
-    &:nth-child(1)
-        font-size: 18px
-        color: #0099ff
-        font-weight: 500
-        font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
+        &:nth-child(1)
+            font-size: 18px
+            color: #0099ff
+            font-weight: 500
+            font-family: "Geometria-Medium", Arial, Helvetica, sans-serif
 
-    &:nth-child(n+2)
-        font-size: 14px
-        font-family: "Geometria", Arial, Helvetica, sans-serif
-        margin-top: -8px
+        &:nth-child(n+2)
+            font-size: 14px
+            font-family: "Geometria", Arial, Helvetica, sans-serif
+            margin-top: -8px
 
 .contact-info
     display: flex
