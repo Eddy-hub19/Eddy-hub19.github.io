@@ -1,391 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="true" name="HandheldFriendly" />
+        <meta content="width" name="MobileOptimized" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta name="Address" content="" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Morning-star" />
+        <meta property="og:description" content="Описание страницы" />
+        <meta
+            property="og:image"
+            content="https://github.com/Eddy-hub19/Eddy-hub19.github.io/blob/main/Projects/Morning-star/source/img/banner.png"
+        />
+        <meta property="og:url" content="ссылка на страницу" />
+        <meta property="og:site_name" content="Ранкова Зірка" />
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32"
+        />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png fit=192%2C192"
+        />
+        <link
+            type="image/png"
+            sizes="16x16"
+            rel="icon"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32"
+        />
+        <link
+            type="image/png"
+            sizes="32x32"
+            rel="icon"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32"
+        />
+        <link
+            type="image/png"
+            sizes="96x96"
+            rel="icon"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32"
+        />
+        <link
+            type="image/png"
+            sizes="120x120"
+            rel="icon"
+            href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32"
+        />
+        <link rel="stylesheet" href="./source/styles/style.css" />
+        <link rel="stylesheet" href="./source/styles/media.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <script src="./source/js/index.js"></script>
+        <title>Morning-star</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta content="true" name="HandheldFriendly" />
-    <meta content="width" name="MobileOptimized" />
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta name="Address" content="" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Morning-star" />
-    <meta property="og:description" content="Описание страницы" />
-    <meta property="og:image" content="https://github.com/Eddy-hub19/Eddy-hub19.github.io/blob/main/Projects/Morning-star/source/img/banner.png" />
-    <meta property="og:url" content="ссылка на страницу" />
-    <meta property="og:site_name" content="Ранкова Зірка" />
-    <link rel="icon" sizes="32x32" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link rel="icon" sizes="192x192" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png fit=192%2C192" />
-    <link type="image/png" sizes="16x16" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="32x32" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="96x96" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="120x120" rel="icon" href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link rel="stylesheet" href="./source/styles/style.css" />
-    <link rel="stylesheet" href="./source/styles/media.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <script src="./source/js/index.js"></script>
-    <title>Ранкова Зірка</title>
-</head>
+    <body>
+        <header id="header" class="header">
+            <div class="header__top">
+                <a class="header__top-link" href="#">
+                    <img class="header__nav-logo hidden-item" src="./source/img/logo.png" alt="logo" />
+                </a>
+                <a class="header__top-link-moblie" href="#">
+                    <img class="header__nav-logo-mobile" src="./source/img/logo-symbol.png" alt="logo-mobile" />
+                </a>
 
-<body>
-    <header id="header" class="header">
-        <div class="header__top">
-            <a href="#">
-                <img class="header__nav-logo hidden-item" src="./source/img/logo.png" alt="logo" />
-                <!-- <img
-            class="header__nav-logo"
-            src="./source/img/logo-symbol.png"
-            alt="logo-mobile"
-          /> -->
-            </a>
-            <nav class="header__nav">
-                <a class="header__nav-link" href="#section1">Хто ми</a>
-                <a class="header__nav-link" href="#section2">Служіння</a>
-                <a class="header__nav-link" href="#section3">Пастор</a>
-                <a class="header__nav-link" href="#section4">Контакти</a>
-            </nav>
-            <div class="translate-row">
-                <a class="translate-link" href="./ukr.html">
-            Uk /
-          </a>
-                <a class="translate-link" href="./index.html">
-            Eng
-          </a>
-                <!-- <a class="translate-link" href="./home.html">
-            Rus
-          </a> -->
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="#section1">Хто ми</a>
+                    <a class="header__nav-link" href="#section2">Служіння</a>
+                    <a class="header__nav-link" href="#section3">Пастор</a>
+                    <a class="header__nav-link" href="#section4">Контакти</a>
+                </nav>
+                <div class="translate-row">
+                    <a class="translate-link" href="./index.html"> Uk / </a>
+                    <a class="translate-link" href="./home.html"> Eng </a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main">
-        <div class="main__first-screen">
-            <div class="wrapper">
-                <div class="main__content">
-                    <h2 data-aos="fade-right" class="main__first-title">
-                        Morning Star
-                    </h2>
+        <main class="main">
+            <div class="main__first-screen">
+                <div class="wrapper main__content">
+                    <h2 data-aos="fade-right" class="main__first-title">Ранкова Зірка</h2>
                     <h1 class="main__second-title">
-                        "Очі мої підводжу я на гори: звідки прийде моя допомога? Допомога моя від Господа, що створив небо й землю." Пс: 121:1-2
+                        "Очі мої підводжу я на гори: звідки прийде моя допомога? Допомога моя від Господа, що створив
+                        небо й землю." Пс: 121:1-2
                     </h1>
                     <div class="sidepanel">
                         <div class="socials">
-                            <a class="social__link" href="#">Follow us</a>
-                            <a class="social__icon" href="#instagram">
-                                <img src="./source/img/instagram.svg" alt="instagram" />
+                            <a target="_blank" class="social__link" href="#">Шукайте нас</a>
+                            <a target="_blank" class="social__icon" href="#instagram">
+                                <svg class="icon-instagram" width="30" height="30">
+                                    <use href="./source/img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
                             </a>
-                            <a class="social__icon" href="#youtube">
-                                <img src="./source/img/youtube.svg" alt="youtube" />
+                            <a target="_blank" class="social__icon" href="#youtube">
+                                <svg class="icon-youtube" width="30" height="30">
+                                    <use href="./source/img/symbol-defs.svg#icon-youtube"></use>
+                                </svg>
                             </a>
-                            <a class="social__icon" href="#facebook">
-                                <img src="./source/img/facebook.svg" alt="facebook" />
+                            <a target="_blank" class="social__icon" href="https://www.facebook.com/MorningStar.khm">
+                                <svg class="icon-facebook" width="30" height="30">
+                                    <use href="./source/img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>
                     <div class="progress-scroll">
                         <div class="scroll">
-                            <a class="header__nav-link link--scroll" href="#section1">
-                                <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      id="arrow-up"
-                      class="bi bi-arrow-down"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                      />
-                    </svg>
-                    Хто ми
-                  </span>
+                            <a class="header__nav-link link--scroll" href="#header">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="currentColor"
+                                    id="arrow-up"
+                                    class="bi bi-arrow-up"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                                    />
+                                </svg>
                             </a>
-                            <a class="header__nav-link link--scroll" href="#section2">
-                  Служіння
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section3">
-                  Пастор
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section4">
-                  Фотогалерея
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section5">
-                  Розклад
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section6">
-                  Контакти
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section7">
-                  Пожертви
-                </a>
-                            <a class="header__nav-link link--scroll" href="#section8">
-                  Молитва
-                </a>
+                            <a class="header__nav-link link--scroll" href="#section1"> Хто ми </a>
+                            <a class="header__nav-link link--scroll" href="#section2"> Служіння </a>
+                            <a class="header__nav-link link--scroll" href="#section3"> Пастор </a>
+                            <a class="header__nav-link link--scroll" href="#section4"> Фотогалерея </a>
+                            <a class="header__nav-link link--scroll" href="#section5"> Розклад </a>
+                            <a class="header__nav-link link--scroll" href="#section6"> Контакти </a>
+                            <a class="header__nav-link link--scroll" href="#section7"> Пожертви </a>
+                            <a class="header__nav-link link--scroll" href="#section8"> Молитва </a>
+                            <a class="header__nav-link link--scroll" href="#section9"> Корисні посилання </a>
                             <a class="header__nav-link link--scroll" href="#down">
-                  Корисні посилання
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    fill="currentColor"
-                    id="arrow-down"
-                    class="bi bi-arrow-down"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                    />
-                  </svg>
-                </a>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="currentColor"
+                                    id="arrow-down"
+                                    class="bi bi-arrow-down"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                                    />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- section 1 -->
-        <section id="section1" class="bg-shadow">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract1">1</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">GEt Started</h4>
-                        <h3 class="main__second-title m--width">
-                            What level of hiker are you?
-                        </h3>
-                        <p class="main__descr">
-                            Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker
-                            are you – novice, moderate, advanced moderate, expert, or expert backpacker?
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/1.png" alt="1" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section 2 -->
-        <section id="section2" class="section">
-            <div class="wrapper">
-                <div class="main__content-left section--reverse">
-                    <div class="abstract abstract2">2</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">Hiking Essentials</h4>
-                        <h3 class="main__second-title m--width">
-                            Picking the right Hiking Gear!
-                        </h3>
-                        <p class="main__descr">
-                            The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which
-                            will get heavy and chafe wif they get sweaty or wet.
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/2.png" alt="2" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section 3 -->
-        <section id="section3" class="section">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">3</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- SLIDER  -->
-        <section id="section4" class="section">
-            <div class="wrapper">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Amazing_River_Flowing_Nature_Wallpapers.jpg" alt="" />
+            <!-- section 1 -->
+            <section id="section1" class="bg-shadow">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract1">1</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">GEt Started</h4>
+                            <h3 class="main__second-title m--width">What level of hiker are you?</h3>
+                            <p class="main__descr">
+                                Determining what level of hiker you are can be an important tool when planning future
+                                hikes. This hiking level guide will help you plan hikes according to different hike
+                                ratings set by various websites like All Trails and Modern Hiker. What type of hiker are
+                                you – novice, moderate, advanced moderate, expert, or expert backpacker?
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="https://wallpapercave.com/wp/ixmt8JQ.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://i.pinimg.com/originals/bc/0f/e0/bc0fe08850512145f0ab62b503dc513d.jpg" alt="" />
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/1.png" alt="1" />
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </section>
-        <!-- section 5 -->
-        <section id="section5" class="section">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">5</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
+            </section>
+            <!-- section 2 -->
+            <section id="section2" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left section--reverse">
+                        <div class="abstract abstract2">2</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">Hiking Essentials</h4>
+                            <h3 class="main__second-title m--width">Picking the right Hiking Gear!</h3>
+                            <p class="main__descr">
+                                The nice thing about beginning hiking is that you don’t really need any special gear,
+                                you can probably get away with things you already have. Let’s start with clothing. A
+                                typical mistake hiking beginners make is wearing jeans and regular clothes, which will
+                                get heavy and chafe wif they get sweaty or wet.
+                            </p>
+                        </div>
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/2.png" alt="2" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- section 6 -->
-        <section id="section6" class="section">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">6</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
+            </section>
+            <!-- section 3 -->
+            <section id="section3" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract3">3</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">where you go is the key</h4>
+                            <h3 class="main__second-title m--width">Understand Your Map & Timing</h3>
+                            <p class="main__descr">
+                                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock
+                                bag. Read over the guide, study the map, and have a good idea of what to expect. I like
+                                to know what my next landmark is as I hike. For example, I’ll read the guide and know
+                                that say, in a mile, I make a right turn at the junction..
+                            </p>
+                        </div>
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/3.png" alt="3" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- section 7 -->
-        <section id="section7" class="section">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">7</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section 8 -->
-        <section id="section8" class="section">
-            <div class="wrapper">
-                <div class="content-wrap">
-                    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/5YNQOxTJO8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-        <!-- section 9 -->
-        <section id="section9" class="section">
-            <div class="wrapper">
-                <div class="main__content-left">
-                    <div class="abstract abstract3">9</div>
-                    <div class="main__c-left_wrap">
-                        <h4 class="main__first-title title--pos">
-                            where you go is the key
-                        </h4>
-                        <h3 class="main__second-title m--width">
-                            Understand Your Map & Timing
-                        </h3>
-                        <p class="main__descr">
-                            To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide
-                            and know that say, in a mile, I make a right turn at the junction..
-                        </p>
-                    </div>
-                    <div class="main__content-right">
-                        <img src="./source/img/3.png" alt="3" />
+            </section>
+            <!-- SLIDER  -->
+            <section id="section4" class="section">
+                <div class="wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Amazing_River_Flowing_Nature_Wallpapers.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://wallpapercave.com/wp/ixmt8JQ.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="https://i.pinimg.com/originals/bc/0f/e0/bc0fe08850512145f0ab62b503dc513d.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+            <!-- section 5 -->
+            <section id="section5" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract5">5</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">Розклад Богослужінь церкви:</h4>
+                            <h3 class="main__second-title m--width">
+                                Ранкові молитви з понеділка по п’ятниця з 08:00 до 09:00; на офісі церкви за адресою:
+                                <a href="#" class="section-address">вул. Івана Франка, 18 та Тернопільська 30/1</a>
+                            </h3>
+                            <ul class="main__descr">
+                                <li class="main__descr-item">
+                                    Середа - загальноцерковне молитовне служіння на 18:00 за адресою: Соборна, 57
+                                </li>
+                                <li class="main__descr-item">П’ятниця - молодіжне служіння на 18:00</li>
+                                <li class="main__descr-item">
+                                    Молодіжний служитель Максим
+                                    <a class="main__descr-phone" href="tel:096-03-03-054">096-03-03-054</a>
+                                </li>
+                                <li class="main__descr-item">
+                                    Неділя - загальноцерковне Богослужіння на 11:00 за адресою: Соборна, 57
+                                </li>
+                                <li class="main__descr-item">
+                                    Домашні церкви проходять протягом тижня (вівторок, четвер, п’ятниця, субота)
+                                </li>
+                                <li class="main__descr-item">
+                                    Координатор Богдан Михайлович-
+                                    <a class="main__descr-phone" href="tel:097-953-92-66">097-953-92-66</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__content-right">
+                            <img
+                                width="620"
+                                height="720"
+                                class="content__right-img"
+                                src="./source/img/prayer.jpeg"
+                                alt="3"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 6 -->
+            <section id="section6" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract6">6</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">where you go is the key</h4>
+                            <h3 class="main__second-title m--width">Understand Your Map & Timing</h3>
+                            <p class="main__descr">
+                                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock
+                                bag. Read over the guide, study the map, and have a good idea of what to expect. I like
+                                to know what my next landmark is as I hike. For example, I’ll read the guide and know
+                                that say, in a mile, I make a right turn at the junction..
+                            </p>
+                        </div>
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/3.png" alt="3" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 7 -->
+            <section id="section7" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract7">7</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">
+                                Церковні служіння проходять на постійній основі
+                            </h4>
+                            <h3 class="main__second-title m--width">
+                                всі пожертвувані кошти будуть використані згідно статутної діяльності та на підтримку та
+                                реалізацію служіння. Пожертви поверненню не підлягають
+                            </h3>
+                            <p class="main__descr">
+                                , працюємо згідно статутної діяльності. 💳 Якщо ви хочете підтримати служіння
+                                Християнської Церкви «Ранкова Зірка» Громада - Християнська Церква (Повного Євангелія)
+                                5169 3305 2117 6245 ❗ Обов'язково вкажіть призначення: «Добровільні пожертвування».
+                            </p>
+                        </div>
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/3.png" alt="3" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 8 YOUTUBE-->
+            <section id="section8" class="section">
+                <div class="wrapper">
+                    <div class="content-wrap">
+                        <iframe
+                            width="1000px"
+                            height="500px"
+                            src="https://www.youtube.com/embed/5YNQOxTJO8Y"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- section 9 -->
+            <section id="section9" class="section">
+                <div class="wrapper">
+                    <div class="main__content-left">
+                        <div class="abstract abstract9">9</div>
+                        <div class="main__c-left_wrap">
+                            <h4 class="main__first-title title--pos">where you go is the key</h4>
+                            <h3 class="main__second-title m--width">Understand Your Map & Timing</h3>
+                            <p class="main__descr">
+                                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock
+                                bag. Read over the guide, study the map, and have a good idea of what to expect. I like
+                                to know what my next landmark is as I hike. For example, I’ll read the guide and know
+                                that say, in a mile, I make a right turn at the junction..
+                            </p>
+                        </div>
+                        <div class="main__content-right">
+                            <img width="556" height="720" src="./source/img/3.png" alt="3" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__container">
-                <div class="footer__categories">
-                    <ul class="category">
-                        <li class="category-title"><a href="#">Служіння</a></li>
-                        <li><a href="#">Пастор</a></li>
-                        <li><a href="#">Фотогалерея</a></li>
-                        <li><a href="#">Розклад</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Пожертви</a></li>
-                    </ul>
-                    <ul class="category">
-                        <li class="category-title"><a href="#">Пастор</a></li>
-                        <li><a href="#">Пастор</a></li>
-                        <li><a href="#">Фотогалерея</a></li>
-                        <li><a href="#">Розклад</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Пожертви</a></li>
-                    </ul>
-                    <ul class="category">
-                        <li class="category-title"><a href="#">Контакти</a></li>
-                        <li><a href="#">Пастор</a></li>
-                        <li><a href="#">Фотогалерея</a></li>
-                        <li><a href="#">Розклад</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Пожертви</a></li>
-                    </ul>
-                </div>
-
+        <footer class="footer">
+            <div class="wrapper footer__categories">
+                <ul class="category">
+                    <li class="category-item">
+                        <a class="category-title" href="#">Служіння</a>
+                        <a class="category-link" href="#">Пастор</a>
+                        <a class="category-link" href="#">Фотогалерея</a>
+                        <a class="category-link" href="#">Розклад</a>
+                        <a class="category-link" href="#">Контакти</a>
+                        <a class="category-link" href="#">Пожертви</a>
+                    </li>
+                    <li class="category-item">
+                        <a class="category-title" href="#">Пастор</a>
+                        <a class="category-link" href="#">Пастор</a>
+                        <a class="category-link" href="#">Фотогалерея</a>
+                        <a class="category-link" href="#">Розклад</a>
+                        <a class="category-link" href="#">Контакти</a>
+                        <a class="category-link" href="#">Пожертви</a>
+                    </li>
+                    <li class="category-item">
+                        <a class="category-title" href="#">Контакти</a>
+                        <a class="category-link" href="#">Пастор</a>
+                        <a class="category-link" href="#">Фотогалерея</a>
+                        <a class="category-link" href="#">Розклад</a>
+                        <a class="category-link" href="#">Контакти</a>
+                        <a class="category-link" href="#">Пожертви</a>
+                    </li>
+                </ul>
                 <div id="down" class="footer-bottom">
-                    <p class="footer__copyright">
-                        Copyright 2022 MNTN, Inc. Terms & Privacy
-                    </p>
+                    <p class="footer__copyright">Copyright 2022 MNTN, Inc. Terms & Privacy</p>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./source/js/slider.js"></script>
-    <script>
-        AOS.init()
-    </script>
-</body>
-
+        </footer>
+        <script src="./jquery-3.6.0.min.js"></script>
+        <script src="./source/js/slider.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
 </html>

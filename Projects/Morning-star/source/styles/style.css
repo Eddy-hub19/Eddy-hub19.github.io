@@ -93,12 +93,13 @@ ul li {
 }
 .header .header__top {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 .header .header__top .header__nav {
-  width: 74%;
+  width: 1500px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 70px;
   position: relative;
@@ -108,9 +109,8 @@ ul li {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  padding-left: 0;
-  margin-right: 90px;
-  margin-left: -36px;
+  padding: 15px 15px;
+  margin-right: 40px;
 }
 .header .header__top .header__nav .header__nav-link:hover {
   text-decoration: underline;
@@ -184,7 +184,7 @@ ul li {
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
-  line-height: 60px;
+  line-height: 2;
   color: #ffffff;
   margin: 30px 0px;
   max-width: 966px;
@@ -330,6 +330,7 @@ section > img {
 .main__content-left .title--pos {
   margin-top: 0;
   left: 100px;
+  max-width: 600px;
 }
 .main__content-left .abstract {
   font-family: "Fira Sans", sans-serif;
@@ -364,7 +365,7 @@ section > img {
 }
 .main__content-left .abstract7 {
   left: 12%;
-  top: 60px;
+  top: 0;
 }
 .main__content-left .abstract9 {
   left: 12%;
@@ -376,11 +377,19 @@ section > img {
   flex-direction: column;
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  max-width: 504px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 2;
+  max-width: 464px;
   color: #ffffff;
+}
+.main__descr .main__descr-link {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main__descr .main__descr-link:hover {
+  color: rgb(30, 115, 155);
 }
 .main__descr .main__descr-item {
   margin-bottom: 20px;
@@ -396,10 +405,42 @@ section > img {
   color: #fbd784;
 }
 
+.main__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main__list-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: 100;
+}
+.main__list-item b {
+  color: rgba(184, 70, 70, 0.831);
+  font-size: 20px;
+}
+
+.main__list-btn {
+  cursor: pointer;
+  padding: 15px;
+  background: green;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 16px;
+  transition: background 1.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.main__list-btn:hover {
+  background: rgba(11, 109, 11, 0.772);
+  box-shadow: 0px 5px 11px 3px black;
+}
+
 .m--width {
   font-style: normal;
   max-width: 578px;
-  font-size: 31px;
+  font-size: 22px;
   margin: 30px 0;
 }
 

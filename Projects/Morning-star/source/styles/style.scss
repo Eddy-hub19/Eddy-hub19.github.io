@@ -43,8 +43,7 @@ $width: 100%;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-    .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 10px;
     background: darkgrey;
     width: 20px;
@@ -56,8 +55,7 @@ body {
     width: 100%;
     font-size: 1em;
     color: $base;
-    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top
-        $accent-color;
+    background: url(/Projects/Morning-star/source/img/banner.png) no-repeat top $accent-color;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     min-height: 100%;
     height: 100%;
@@ -99,11 +97,12 @@ ul li {
     width: 100%;
     .header__top {
         display: flex;
-        align-items: flex-end;
+        align-items: baseline;
+        justify-content: space-evenly;
         .header__nav {
-            width: 74%;
+            width: 1500px;
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
             margin-top: 70px;
             position: relative;
@@ -112,9 +111,8 @@ ul li {
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 22px;
-                padding-left: 0;
-                margin-right: 90px;
-                margin-left: -36px;
+                padding: 15px 15px;
+                margin-right: 40px;
                 &:hover {
                     text-decoration: underline;
                     color: rgb(217, 209, 209);
@@ -192,7 +190,7 @@ ul li {
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
-    line-height: 60px;
+    line-height: 2;
     color: $base;
     margin: 30px 0px;
     max-width: 966px;
@@ -234,7 +232,7 @@ ul li {
                 fill: currentColor;
                 transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
             }
-              .icon-facebook:hover {
+            .icon-facebook:hover {
                 color: blue;
             }
         }
@@ -339,6 +337,7 @@ section > img {
     .title--pos {
         margin-top: 0;
         left: 100px;
+        max-width: 600px;
     }
     .abstract {
         font-family: $font-s;
@@ -374,7 +373,7 @@ section > img {
     }
     .abstract7 {
         left: 12%;
-        top: 60px;
+        top: 0;
     }
     .abstract9 {
         left: 12%;
@@ -387,31 +386,72 @@ section > img {
     flex-direction: column;
     font-family: $font-s;
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    max-width: 504px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 2;
+    max-width: 464px;
     color: $base;
-    .main__descr-item{
+    .main__descr-link{
+        display: inline-block;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover{
+            color: rgb(30, 115, 155);
+        }
+    }
+    .main__descr-item {
         margin-bottom: 20px;
         color: $base;
         list-style: inside;
-        .main__descr-phone{
+        .main__descr-phone {
             text-decoration: underline;
             transition: color 330ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
     }
-    .main__descr-phone:hover{
+    .main__descr-phone:hover {
         cursor: pointer;
         color: $primary;
     }
 }
 
+.main__list {
+    margin: 0;
+    padding: 0;
+}
+
+.main__list-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 100;
+    b {
+        color: rgba(184, 70, 70, 0.831);
+        font-size: 20px;
+    }
+}
+
+.main__list-btn{
+    cursor: pointer;
+    padding: 15px;
+    background: green;
+    color: white;
+    font-family: $font-s;
+    font-size: 1.5em;
+    border: 1px solid white;
+    border-radius: 16px;
+    transition: background 1.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+        background: rgba(11, 109, 11, 0.772);
+        box-shadow: 0px 5px 11px 3px black;
+    }
+}
+
+
 
 .m--width {
     font-style: normal;
     max-width: 578px;
-    font-size: 31px;
+    font-size: 22px;
     margin: 30px 0;
 }
 
@@ -421,7 +461,7 @@ section > img {
 }
 
 .section-address:hover,
-.section-address:focus{
+.section-address:focus {
     color: $primary;
 }
 
@@ -495,7 +535,7 @@ footer {
 // hovers
 
 .social__link:hover,
-.social__link:focus{
+.social__link:focus {
     color: $primary !important;
 }
 
