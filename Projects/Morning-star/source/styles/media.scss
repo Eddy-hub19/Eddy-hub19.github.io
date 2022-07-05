@@ -25,6 +25,7 @@
         .translate-row {
             width: 100px;
             position: absolute;
+            top: 50px;
             right: 0;
         }
         .header__top {
@@ -37,7 +38,7 @@
                 display: inline-block;
             }
             .header__nav {
-                display: flex;
+                display: none;
                 align-items: center;
                 margin-top: 30px;
                 justify-content: center;
@@ -239,9 +240,7 @@
         background-size: auto;
     }
     .progress-scroll {
-        position: fixed;
-        top: 190px;
-        right: 10px;
+        display: none;
     }
     .header {
         .translate-row {
