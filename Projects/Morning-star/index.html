@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -60,7 +60,6 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-        <script src="./source/js/index.js"></script>
         <title>Ранкова Зірка</title>
     </head>
 
@@ -83,11 +82,31 @@
                     <a class="header__nav-link" href="#section6">Контакти </a>
                     <a class="header__nav-link" href="#section7">Пожертви </a>
                     <a class="header__nav-link" href="#section8">Молитва </a>
-                    <a class="header__nav-link" href="#section9">Корисні посилання </a>
+                    <a class="header__nav-link" href="#down">Корисні посилання </a>
                 </nav>
                 <div class="translate-row">
                     <a class="translate-link" href="./index.html"> Uk / </a>
                     <a class="translate-link" href="./home.html"> Eng </a>
+                </div>
+
+                <!-- menu  -->
+                <div class="menu-wrap">
+                    <div class="menu-btn" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu">
+                        <li><a class="menuLink" href="#section1">Хто ми </a></li>
+                        <li><a class="menuLink" href="#section2">Служіння </a></li>
+                        <li><a class="menuLink" href="#section3">Пастор </a></li>
+                        <li><a class="menuLink" href="#section4">Фотогалерея </a></li>
+                        <li><a class="menuLink" href="#section5">Розклад </a></li>
+                        <li><a class="menuLink" href="#section6">Контакти </a></li>
+                        <li><a class="menuLink" href="#section7">Пожертви </a></li>
+                        <li><a class="menuLink" href="#section8">Молитва </a></li>
+                        <li><a class="menuLink" href="#down">Корисні посилання </a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -146,7 +165,7 @@
                             <a class="header__nav-link link--scroll" href="#section6"> Контакти </a>
                             <a class="header__nav-link link--scroll" href="#section7"> Пожертви </a>
                             <a class="header__nav-link link--scroll" href="#section8"> Молитва </a>
-                            <a class="header__nav-link link--scroll" href="#section9"> Корисні посилання </a>
+                            <a class="header__nav-link link--scroll" href="#down"> Корисні посилання </a>
                             <a class="header__nav-link link--scroll" href="#down">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -260,6 +279,8 @@
                                         особистість.
                                     </p>
                                 </li>
+                            </ul>
+                            <ul class="main-list">
                                 <li class="main-list__item">
                                     <h4 class="main-list__title">Підліткове служіння</h4>
                                     <p class="main-list__descr">
@@ -490,7 +511,6 @@
                     </div>
                 </div>
             </section>
-            <!-- section 9 -->
             <section id="section9" class="section">
                 <div class="wrapper">
                     <div class="main__content-left">
@@ -550,6 +570,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./source/js/hamburger.js"></script>
         <script src="./jquery-3.6.0.min.js"></script>
         <script src="./source/js/slider.js"></script>
         <script>

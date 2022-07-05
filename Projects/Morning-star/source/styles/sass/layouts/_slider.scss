@@ -1,0 +1,28 @@
+.swiper {
+    height: auto;
+}
+
+.swiper-wrapper {
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    background: $accent-color;
+    width: 1920px;
+    height: 100vh !important;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 10px;
+    background: darkgrey;
+    width: 20px;
+    height: 20px;
+}

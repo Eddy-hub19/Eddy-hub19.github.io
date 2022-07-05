@@ -1,0 +1,45 @@
+.progress-scroll {
+    z-index: 3;
+    position: fixed;
+    top: 285px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    #arrow-up {
+        transform: rotate(180deg);
+    }
+    .link--scroll {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 18px;
+        margin-left: -120px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .scroll {
+        position: relative;
+        width: 3px;
+        height: auto;
+        left: 0px;
+        top: 0;
+        background: $base;
+        opacity: 1;
+    }
+}
+
+.social__link:hover,
+.social__link:focus {
+    color: $primary !important;
+}
+
+.link--scroll:hover,
+.link--scroll:focus,
+.translate-link:hover,
+.translate-link:focus,
+span:hover,
+span:focus {
+    color: $primary;
+}

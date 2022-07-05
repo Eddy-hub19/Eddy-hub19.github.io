@@ -1,5 +1,26 @@
+@mixin mobile {
+    @media (min-width: 0px) and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 769px) and (max-width: 1240px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: 1241px) and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1441px) and (max-width: 2560px) {
+        @content;
+    }
+}
+
 // mobile
-@media (min-width: 0px) and (max-width: 768px) {
+@include mobile {
     html {
         width: 100% !important;
         background-size: cover;
@@ -26,7 +47,7 @@
             width: 100px;
             position: absolute;
             top: 50px;
-            right: 0;
+            left: 30px;
         }
         .header__top {
             display: flex;
@@ -60,6 +81,11 @@
         margin: 0 auto;
         display: inline-block;
     }
+
+    .header .header__top .header__top-link{
+        display: none;
+    }
+
     .main {
         margin: 0 auto;
         .main__first-screen {
@@ -119,6 +145,7 @@
             display: flex;
             flex-direction: column;
             margin-left: auto;
+            margin-top: 60px;
         }
     }
     .section__read-more {
@@ -127,7 +154,7 @@
             margin-left: 30px;
         }
     }
-    #section1{
+    #section1 {
         margin-top: 2% !important;
     }
     #section2 {
@@ -140,10 +167,11 @@
         display: flex;
         align-items: center;
         .abstract {
+            position: absolute;
             font-size: 150px;
             line-height: 0;
             opacity: 1;
-            color: #b9c0c4bd;
+            color: rgb(68 74 78 / 81%);
             transform: translate(-50px, 0);
             left: 50%;
         }
@@ -151,12 +179,18 @@
             top: 60px;
         }
         .abstract2 {
-            top: 60px;
+            top: 0;
         }
         .abstract3 {
             top: 60px;
         }
-        .abstract5{
+        .abstract5 {
+            top: 60px;
+        }
+        .abstract6 {
+            top: 60px;
+        }
+        .abstract7 {
             top: 60px;
         }
         .title--pos {
@@ -183,11 +217,27 @@
         .main__descr {
             font-size: 20px;
             line-height: 35px;
-            max-width: 414px;
+            max-width: 500px;
             padding: 22px;
             color: #ffffff;
         }
     }
+    .main-list {
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .main-list-item {
+            & {
+                font-size: 23px;
+            }
+        }
+        .main-list__descr {
+            margin-bottom: 30px;
+            font-size: 21px;
+        }
+    }
+
     footer {
         margin-top: 25px;
         background: #0b1d26;
@@ -214,8 +264,11 @@
         }
     }
     .category {
-        margin: 0 0;
+        margin: 0 auto;
         text-align: center;
+        .category-item {
+            align-items: center;
+        }
     }
     .footer-bottom {
         margin: 10px 0 10px;
@@ -226,7 +279,7 @@
 }
 
 // tablet to laptop
-@media (min-width: 769px) and (max-width: 1240px) {
+@include tablet {
     .wrapper {
         width: 100% !important;
         overflow-x: hidden !important;
@@ -257,7 +310,7 @@
             }
             .header__nav {
                 width: 100%;
-                display: flex;
+                display: none;
                 justify-content: center;
                 margin-top: 0px;
                 position: relative;
@@ -350,7 +403,7 @@
             .abstract {
                 opacity: 0.6;
                 left: 50%;
-                top: 0;
+                top: 150px;
                 transform: translate(-50px, 0px);
             }
             .abstract1 {
@@ -361,6 +414,10 @@
             }
             .abstract3 {
                 position: absolute;
+            }
+            .abstract6 {
+                position: absolute;
+                top: 70px;
             }
             .title--pos {
                 margin: 50px 0;
@@ -388,6 +445,10 @@
             }
         }
     }
+
+    .main-list {
+        width: calc(100% / 1);
+    }
     .footer__categories {
         justify-content: space-around;
         width: calc((100% - 30px) / 1) !important;
@@ -399,7 +460,7 @@
 }
 
 // tablet to laptop L
-@media (min-width: 1241px) and (max-width: 1440px) {
+@include laptop {
     .wrapper {
         width: 100% !important;
     }
@@ -445,7 +506,7 @@
 }
 
 // laptop L to 4k
-@media (min-width: 1441px) and (max-width: 2560px) {
+@include desktop {
     .wrapper {
         width: 100% !important;
     }
