@@ -109,12 +109,16 @@ img {
   width: 100px;
 }
 
+.menu {
+  display: none;
+}
+
 /*  BURGER  */
 #hamburger {
   display: block;
   position: fixed;
   right: 30px;
-  top: 30px;
+  top: 40px;
   border: none;
   background: none;
   cursor: pointer;
@@ -792,7 +796,7 @@ footer .footer__copyright {
     padding-top: 30px;
   }
   .header .header__top .header__top-link {
-    display: inline-block;
+    display: none;
   }
   .header .header__top .header__nav {
     display: none;
@@ -819,6 +823,10 @@ footer .footer__copyright {
 
   .header .header__top .header__top-link {
     display: none;
+  }
+
+  .menu-wrap {
+    display: block;
   }
 
   .main {
@@ -1038,7 +1046,7 @@ footer .footer__copyright {
 
   .header .translate-row {
     position: absolute;
-    right: 35px;
+    left: 30px;
     top: 40px;
   }
   .header .header__top {
@@ -1061,11 +1069,11 @@ footer .footer__copyright {
     padding: 20px;
   }
 
-  .header .header__top .header__top-link-moblie {
+  .header .header__top .header__top-link-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 50px;
     margin: 0 auto;
   }
 
@@ -1200,6 +1208,7 @@ footer .footer__copyright {
 @media (min-width: 1241px) and (max-width: 1440px) {
   .wrapper {
     width: 100% !important;
+    padding: 0 100px;
   }
 
   .main .main__first-screen .main__content {
@@ -1211,9 +1220,39 @@ footer .footer__copyright {
     line-height: 45px;
   }
 
+  .main-content-iframe {
+    max-width: 580px;
+    padding-right: 70px;
+  }
+
+  #section1 {
+    margin-top: 10%;
+  }
+
+  .main__descr {
+    font-size: 21px;
+    padding-right: 15px;
+  }
+
+  .--main-descr-option {
+    max-width: 773px;
+  }
+
+  .main-list__descr {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .m--width {
+    padding-right: 20px;
+  }
+
   .progress-scroll {
     top: 225px;
     right: 10px;
+  }
+  .progress-scroll .scroll {
+    top: -60px;
   }
 
   .sidepanel {
@@ -1227,18 +1266,26 @@ footer .footer__copyright {
   }
   .main__content-left .abstract1 {
     position: absolute;
-    left: 60px;
-    top: 60px;
+    left: 110px;
+    top: -50px;
   }
   .main__content-left .abstract2 {
     position: absolute;
-    left: 51%;
-    top: 80px;
+    left: 42%;
+    top: 0;
   }
   .main__content-left .abstract3 {
     position: absolute;
-    left: 76px;
-    top: 60px;
+    left: 66px;
+    top: 100px;
+  }
+  .main__content-left .abstract6 {
+    position: absolute;
+    left: -50px;
+    top: -26px;
+  }
+  .main__content-left .title--pos {
+    max-width: 470px;
   }
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
