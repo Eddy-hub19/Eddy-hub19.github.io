@@ -91,6 +91,10 @@
         display: block;
     }
 
+    #hamburger {
+        display: block;
+    }
+
     .main {
         margin: 0 auto;
         .main__first-screen {
@@ -339,6 +343,16 @@
         margin: 0 auto;
         width: 100px;
     }
+
+    // BURGER MENU
+    .menu-wrap {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
     .main {
         .main__first-screen {
             width: 100%;
@@ -484,7 +498,7 @@
         }
     }
 
-    .main-content-iframe{
+    .main-content-iframe {
         max-width: 580px;
         padding-right: 70px;
     }
@@ -498,7 +512,7 @@
         padding-right: 15px;
     }
 
-    .--main-descr-option{
+    .--main-descr-option {
         max-width: 773px;
     }
 

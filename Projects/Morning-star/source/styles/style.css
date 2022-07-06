@@ -115,7 +115,7 @@ img {
 
 /*  BURGER  */
 #hamburger {
-  display: block;
+  display: none;
   position: fixed;
   right: 30px;
   top: 40px;
@@ -829,6 +829,10 @@ footer .footer__copyright {
     display: block;
   }
 
+  #hamburger {
+    display: block;
+  }
+
   .main {
     margin: 0 auto;
   }
@@ -1081,6 +1085,14 @@ footer .footer__copyright {
     display: block;
     margin: 0 auto;
     width: 100px;
+  }
+
+  .menu-wrap {
+    display: block;
+  }
+
+  #hamburger {
+    display: block;
   }
 
   .main .main__first-screen {
