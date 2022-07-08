@@ -104,7 +104,6 @@
         font-style: normal;
         font-weight: 700;
         font-size: 200px;
-        // line-height: 240px;
         color: $base;
         opacity: 0.1;
         z-index: 4;
@@ -132,13 +131,12 @@
         top: 0;
     }
     .abstract7 {
-        left: 12%;
-        top: -50px;
+        left: 8%;
+        top: 100px;
     }
     .abstract9 {
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, -50%);
+        left: 14%;
+        top: -50px;
     }
 }
 
@@ -244,14 +242,13 @@
     margin-bottom: 40px;
 }
 
-.main__list {
+.section-list {
     margin: 0;
     padding: 0;
 }
 
-.main__list-item {
+.section-list-item {
     display: flex;
-    justify-content: center;
     margin-top: 20px;
     font-weight: 100;
     b {

@@ -396,13 +396,12 @@ nav {
   top: 0;
 }
 .main-content-left .abstract7 {
-  left: 12%;
-  top: -50px;
+  left: 8%;
+  top: 100px;
 }
 .main-content-left .abstract9 {
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -50%);
+  left: 14%;
+  top: -50px;
 }
 
 .main__descr {
@@ -508,18 +507,17 @@ nav {
   margin-bottom: 40px;
 }
 
-.main__list {
+.section-list {
   margin: 0;
   padding: 0;
 }
 
-.main__list-item {
+.section-list-item {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
   font-weight: 100;
 }
-.main__list-item b {
+.section-list-item b {
   color: rgba(184, 70, 70, 0.831);
   font-size: 20px;
 }
