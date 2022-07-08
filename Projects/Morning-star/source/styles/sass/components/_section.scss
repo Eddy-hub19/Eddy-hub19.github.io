@@ -9,7 +9,6 @@
     flex-direction: column;
     .section--reverse {
         display: flex;
-        flex-direction: row-reverse;
     }
 }
 
@@ -31,7 +30,7 @@
 
 .m--width {
     font-style: normal;
-    max-width: 578px;
+    max-width: 778px;
     font-size: 22px;
     margin: 30px 0;
 }

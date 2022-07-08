@@ -56,39 +56,40 @@
     font-family: $font;
     font-style: normal;
     font-weight: 600;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 2;
     color: $base;
-    margin: 30px 0px;
+}
+.--option {
     max-width: 966px;
+    margin: 30px 0px;
 }
 
-.main-second__list{
+.main-second__list {
     font-size: 1.2em;
     .main-second__list-item {
         margin-top: 20px;
-        .main-second__list-link{
+        .main-second__list-link {
             color: #8c9396;
             transition: color 330ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
             margin-left: 10px;
-            &:hover{
-                color:#fbd784;
+            &:hover {
+                color: #fbd784;
             }
-            &:focus{
-                color:#fbd784;
+            &:focus {
+                color: #fbd784;
             }
         }
     }
 }
 
-.main__c-left_wrap {
+.main-content__wrap {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 }
 
-.main__content-left {
+.main-content-left {
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -102,8 +103,8 @@
         font-family: $font-s;
         font-style: normal;
         font-weight: 700;
-        font-size: 240px;
-        line-height: 240px;
+        font-size: 200px;
+        // line-height: 240px;
         color: $base;
         opacity: 0.1;
         z-index: 4;
@@ -123,7 +124,7 @@
         top: 11%;
     }
     .abstract5 {
-        left: 10%;
+        left: 7%;
         top: -50px;
     }
     .abstract6 {
@@ -132,29 +133,29 @@
     }
     .abstract7 {
         left: 12%;
-        top: 0;
+        top: -50px;
     }
     .abstract9 {
-        left: 12%;
-        top: 60px;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
     }
 }
 
 .main__descr {
     display: flex;
     flex-direction: column;
-    font-family: $font-s;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 1.8;
+    line-height: 1.4;
     max-width: 575px;
     color: $base;
-    .main__descr-link{
+    .main__descr-link {
         display: inline-block;
         text-decoration: underline;
         cursor: pointer;
-        &:hover{
+        &:hover {
             color: rgb(30, 115, 155);
         }
     }
@@ -226,9 +227,7 @@
     }
 }
 
-
-
-.--main-column{
+.--main-column {
     display: flex;
     justify-content: space-evenly;
     padding-top: 150px;
@@ -237,7 +236,7 @@
     margin-bottom: 20px;
 }
 
-.--main-descr-option{
+.--main-descr-option {
     display: block;
     margin-top: 20px;
     max-width: 1050px;
@@ -261,10 +260,9 @@
     }
 }
 
-
 // Служіння
 
-.wrap-content-service{
+.wrap-content-service {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,23 +270,31 @@
     padding-top: 55px;
 }
 
-.main-list{
+.main-list {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
-    width: calc(100% / 1.2);
     margin-top: 50px;
+    gap: 30px;
 }
 
-.main-list__item:not(:last-child){
-    margin-right: 30px;
+.main-list__item {
+    width: calc((100% - 30px) / 3);
 }
 
-.main-list__title{
+.main-list__title {
     font-size: 26px;
     margin-bottom: 20px;
 }
 
-.main-list__descr{
+.main-list__descr {
     max-width: 700px;
     font-size: 21px;
+}
+
+// 9 Bible
+
+.bible-iframe {
+    margin-top: 30px;
 }
