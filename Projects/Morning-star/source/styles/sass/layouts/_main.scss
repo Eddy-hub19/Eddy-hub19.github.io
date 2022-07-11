@@ -273,11 +273,18 @@
     align-content: center;
     justify-content: center;
     margin-top: 50px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .main-list__item {
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 40px) / 1);
+    @include tablet {
+        width: calc((100% - 40px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 40px) / 3);
+    }
 }
 
 .main-list__title {

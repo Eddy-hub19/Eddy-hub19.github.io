@@ -54,7 +54,7 @@
     visibility: hidden;
     width: 100vw;
     height: 100vh;
-    border-radius: 20px;
+    // border-radius: 20px;
     justify-content: space-evenly;
     flex-direction: column;
     backdrop-filter: blur(2px);
@@ -72,7 +72,7 @@
     position: fixed;
     height: 100%;
     text-decoration: underline;
-    z-index: 2;
+    z-index: 999;
     display: flex;
     transition: height 1s 1s linear;
     transform: translateX(0%);
@@ -80,7 +80,7 @@
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
-    background: rgb(188 194 194 / 86%);
+    background: rgb(188 194 194 / 0.9);
 }
 
 /* Меняем гамбургер иконку, когда меню открыто */

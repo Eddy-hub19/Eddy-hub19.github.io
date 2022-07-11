@@ -171,7 +171,6 @@ img {
   visibility: hidden;
   width: 100vw;
   height: 100vh;
-  border-radius: 20px;
   justify-content: space-evenly;
   flex-direction: column;
   -webkit-backdrop-filter: blur(2px);
@@ -191,7 +190,7 @@ img {
   position: fixed;
   height: 100%;
   text-decoration: underline;
-  z-index: 2;
+  z-index: 999;
   display: flex;
   transition: height 1s 1s linear;
   transform: translateX(0%);
@@ -199,7 +198,7 @@ img {
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
-  background: rgba(188, 194, 194, 0.86);
+  background: rgba(188, 194, 194, 0.9);
 }
 
 /* Меняем гамбургер иконку, когда меню открыто */
@@ -536,11 +535,11 @@ nav {
   align-content: center;
   justify-content: center;
   margin-top: 50px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .main-list__item {
-  width: calc((100% - 30px) / 3);
+  width: calc((100% - 40px) / 3);
 }
 
 .main-list__title {
