@@ -1238,9 +1238,6 @@ footer .footer__copyright {
     width: 100% !important;
     padding: 0 100px;
   }
-  .main .main__first-screen .main__content {
-    margin-top: 7rem;
-  }
   .main .main__first-screen .main__content .main__second-title {
     max-width: 770px;
     font-size: 33px;
@@ -1264,46 +1261,34 @@ footer .footer__copyright {
     font-size: 20px;
     line-height: 1.3;
   }
+  .main-list__item {
+    width: calc((100% - 200px) / 2);
+  }
   .m--width {
     padding-right: 20px;
   }
   .progress-scroll {
-    top: 225px;
     right: 10px;
+    top: 50%;
+    transform: translate(-50%, -40%);
   }
-  .progress-scroll .scroll {
-    top: -60px;
+  .progress-scroll .link--scroll {
+    padding: 13px;
   }
   .sidepanel {
-    top: 255px;
-    margin-left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 40px;
   }
   .main-content-left {
     display: flex;
     align-items: center;
   }
-  .main-content-left .abstract1 {
-    position: absolute;
-    left: 110px;
-    top: -50px;
-  }
-  .main-content-left .abstract2 {
-    position: absolute;
-    left: 42%;
-    top: 0;
-  }
-  .main-content-left .abstract3 {
-    position: absolute;
-    left: 66px;
-    top: 100px;
-  }
-  .main-content-left .abstract6 {
-    position: absolute;
-    left: -50px;
-    top: -26px;
-  }
   .main-content-left .title--pos {
     max-width: 470px;
+  }
+  .bible-iframe {
+    width: 80vw;
   }
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
