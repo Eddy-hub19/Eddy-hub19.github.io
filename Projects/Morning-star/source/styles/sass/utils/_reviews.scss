@@ -467,7 +467,10 @@
     }
 
     .main-list {
-        width: calc(100% / 1);
+        // width: calc(100% / 1);
+    }
+    .main-list__item {
+        width: calc((100% - 40px) / 2);
     }
     .footer__categories {
         justify-content: space-around;
