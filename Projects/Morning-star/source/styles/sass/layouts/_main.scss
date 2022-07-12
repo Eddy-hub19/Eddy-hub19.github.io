@@ -96,8 +96,9 @@
     padding-top: 150px;
     .title--pos {
         margin-top: 0;
-        left: 88px;
+        left: 50%;
         max-width: 600px;
+        transform: translate(0 50%);
     }
     .abstract {
         font-family: $font-s;
@@ -240,6 +241,7 @@
     max-width: 1050px;
     columns: 1;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 .section-list {
@@ -278,6 +280,7 @@
 
 .main-list__item {
     width: calc((100% - 40px) / 1);
+
     @include tablet {
         width: calc((100% - 40px) / 2);
     }
@@ -295,6 +298,7 @@
 .main-list__descr {
     max-width: 700px;
     font-size: 21px;
+    text-align: justify;
 }
 
 // 9 Bible

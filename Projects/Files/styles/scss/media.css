@@ -6,23 +6,19 @@
   .container {
     width: 100% !important;
   }
-
   html {
     overflow-x: hidden;
     font-size: 18px;
   }
-
   body {
     overflow-x: hidden;
     font-size: 18px;
   }
-
   .bg {
     position: relative;
     background-size: 100%;
     width: 100% !important;
   }
-
   .header__logo {
     background: white;
   }
@@ -30,17 +26,14 @@
     position: relative;
     left: 80px;
   }
-
   .header-nav__menu {
     display: none;
   }
-
   .social-network {
     position: absolute;
     left: 120px;
     top: 50px;
   }
-
   .main__wrap {
     width: 100%;
     position: relative;
@@ -48,13 +41,11 @@
     padding-top: 0;
     padding-bottom: 2rem;
   }
-
   .main__right-bg {
     position: absolute;
     right: 0;
     top: 70px;
   }
-
   .main__info {
     margin: 0 auto !important;
     position: relative;
@@ -67,7 +58,6 @@
     margin: 0 auto;
     padding-top: 40px;
   }
-
   .first-title {
     font-size: 33px;
     max-width: 330px !important;
@@ -79,14 +69,12 @@
     left: -30px;
     top: 0;
   }
-
   .first-title__span {
     position: relative;
     left: 0;
     font-size: 38px;
     top: 0;
   }
-
   .main-btn {
     position: unset;
     margin: 0 auto;
@@ -96,18 +84,15 @@
   .main-btn a {
     padding-right: 20px;
   }
-
   .btn {
     width: 180px;
     height: 50px;
     font-size: 17px;
     margin: 30px auto;
   }
-
   .btn-primary_position {
     margin: 20px -41px;
   }
-
   .content-section {
     display: flex;
     align-items: center;
@@ -117,16 +102,13 @@
     text-align: center;
     margin: 0 auto;
   }
-
   .content-section__bg_left {
     display: none;
   }
-
   .right-info {
     position: relative;
     top: 18rem;
   }
-
   .title-right__info {
     font-size: 35px;
     letter-spacing: 0;
@@ -140,7 +122,6 @@
     bottom: 0;
     height: 100%;
   }
-
   .dscr-right__info {
     font-size: 20px;
     max-width: 320px;
@@ -148,25 +129,21 @@
     margin-top: 20px;
     width: 100%;
   }
-
   .sections-platform {
     margin-top: 15rem;
   }
-
   .section-platform {
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
     padding-top: 50%;
   }
-
   .wrap-right__section {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding-left: 0 !important;
   }
-
   .title-section__platform {
     font-size: 34px;
     padding-left: 0;
@@ -180,7 +157,6 @@
     left: -20px;
     top: 0;
   }
-
   .about-platform-list__section {
     margin: 0 auto;
   }
@@ -200,11 +176,9 @@
     letter-spacing: -0.5px;
     font-family: "Geometria", Arial, Helvetica, sans-serif;
   }
-
   .bg-different-platform {
     padding-bottom: 70px;
   }
-
   .benefit-to-you {
     display: flex;
     flex-direction: column;
@@ -227,14 +201,12 @@
     border: none;
     margin-top: 75px;
   }
-
   .items {
     display: flex;
     align-items: center;
     margin-top: 10px;
     flex-direction: column-reverse;
   }
-
   .item {
     display: flex;
     align-items: center;
@@ -251,38 +223,32 @@
     text-align: center;
     font-size: 19px;
   }
-
   .section-items {
     display: block;
     margin-top: 0;
   }
-
   .left-bg__section-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
   }
-
   .about-trust-brands {
     display: flex;
     flex-direction: column;
   }
-
   .title__about-trust-brands {
     font-size: 38px;
     display: block;
     position: unset;
     margin: 10px 11px;
   }
-
   .dscr__about-trust-brands {
     max-width: 270px;
     margin: 0 auto;
     font-size: 15px;
     padding-top: 30px;
   }
-
   .list-about-brands {
     margin: auto;
   }
@@ -295,14 +261,12 @@
     font-size: 21px;
     color: rgb(143, 143, 143);
   }
-
   .brands {
     width: 100% !important;
     display: flex;
     margin-top: 6rem;
     flex-wrap: wrap;
   }
-
   .picture-brands__brands {
     display: flex;
     flex-direction: column;
@@ -316,19 +280,15 @@
     transition: transform 0.4s ease-in-out 0s;
     cursor: pointer;
   }
-
   .pos-img {
     padding-right: 0;
   }
-
   .our-privileges {
     display: none;
   }
-
   .bg__our-privileges {
     display: none;
   }
-
   .wrap__our-privileges h2 {
     display: none;
     position: relative;
@@ -344,7 +304,6 @@
     display: block;
     content: none;
   }
-
   .footer {
     display: flex;
     background: rgb(0, 23, 38);
@@ -355,7 +314,6 @@
     place-content: center;
     margin-top: 5.5rem;
   }
-
   .container-menu__footer {
     width: 100% !important;
     display: flex;
@@ -363,17 +321,14 @@
     height: 100%;
     align-items: center;
   }
-
   .for-store {
     display: flex;
     place-content: center space-around;
     flex-direction: column;
   }
-
   .newsletter {
     display: none;
   }
-
   .container-categories {
     display: flex;
     flex-direction: column;
@@ -381,7 +336,6 @@
     color: white;
     padding-right: 60px;
   }
-
   .contact-info {
     display: flex;
     color: white;
@@ -396,7 +350,6 @@
   .container {
     width: 100%;
   }
-
   .header-nav__menu {
     margin-left: 0 !important;
   }
@@ -405,23 +358,18 @@
   .container {
     width: 100%;
   }
-
   .header-nav__menu {
     margin-left: 0 !important;
   }
-
   .main__wrap {
     padding-bottom: 14rem;
   }
-
   .title-right__info {
     font-size: 58px;
   }
-
   .content-section {
     margin: 0 auto;
   }
-
   .main__info {
     width: 100%;
     display: flex;
@@ -431,11 +379,9 @@
     align-content: center;
     align-items: center;
   }
-
   .bg {
     background-size: 98%;
   }
-
   .first-title {
     font-size: 41px;
     max-width: 300px !important;
@@ -451,45 +397,36 @@
   .container {
     width: 100% !important;
   }
-
   body {
     overflow-x: hidden !important;
   }
-
   img {
     max-width: 100%;
     background-repeat: no-repeat;
   }
-
   .header__logo img {
     position: relative;
     left: 191px;
     top: 5px;
   }
-
   .header-nav__menu {
     margin-left: 233px;
   }
   .header-nav__menu a {
     font-size: 13px;
   }
-
   .social-network {
     margin: 0 32px;
   }
-
   .bg {
     background-size: 75%;
   }
-
   .main-info {
     padding-top: 80px !important;
   }
-
   .main__info p {
     max-width: 537px;
   }
-
   .first-title {
     position: relative;
     max-width: 487px;
@@ -501,33 +438,28 @@
     left: -32px;
     top: 11px;
   }
-
   .first-title__span {
     position: relative;
     left: 0;
     top: 4px;
     font-size: 35px;
   }
-
   .main-btn {
     display: flex;
     right: 68px;
     bottom: 47px;
   }
-
   .btn {
     font-size: 16px;
     width: 210px;
     height: 48px;
   }
-
   .main__right-bg {
     right: 30px;
   }
   .main__right-bg picture {
     right: 0;
   }
-
   .title-right__info {
     font-size: 64px;
   }
@@ -541,15 +473,12 @@
     bottom: 0;
     height: 209px;
   }
-
   .dscr-right__info {
     margin: 0px 6px -142px;
   }
-
   .content-section {
     margin: 0;
   }
-
   .content-section__bg_left {
     padding: 0 100px;
     position: relative;
@@ -558,44 +487,34 @@
     left: 0px;
     top: -80px;
   }
-
   .wrap-right__section {
     padding-left: 7rem;
   }
-
   .title-section__platform {
     max-width: 620px;
   }
-
   .about-platform-list__section li:nth-child(even) {
     max-width: 565px;
   }
-
   .left-bg__section-items {
     display: flex;
     margin-left: 5rem;
   }
-
   .bg-different-platform {
     padding: 0;
   }
-
   .title__about-trust-brands {
     right: 40px;
   }
-
   .dscr__about-trust-brands {
     margin: 100px -5rem;
   }
-
   .list-about-brands {
     margin: -51px -5rem;
   }
-
   .our-privileges {
     padding-top: 13rem;
   }
-
   .our-privileges__wrap {
     left: -130px;
     width: 100% !important;
@@ -609,26 +528,21 @@
     font-family: "Geometria-Medium", Arial, Helvetica, sans-serif;
     font-weight: 500;
   }
-
   .our-privileges__bg {
     right: 0;
   }
-
   .picture-bg {
     position: relative;
     top: 220px !important;
     right: 51px !important;
     width: 100% !important;
   }
-
   .container-menu__footer {
     width: 100%;
   }
-
   .last-line {
     width: 90%;
   }
-
   .footer-line {
     margin-top: 20px;
   }
