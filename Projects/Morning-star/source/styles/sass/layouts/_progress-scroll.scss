@@ -3,6 +3,9 @@
     position: fixed;
     top: 285px;
     right: 40px;
+    // top: 50%;
+    // right: 20px;
+    // transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -38,8 +41,6 @@
 .link--scroll:hover,
 .link--scroll:focus,
 .translate-link:hover,
-.translate-link:focus,
-span:hover,
-span:focus {
+.translate-link:focus {
     color: $primary;
 }

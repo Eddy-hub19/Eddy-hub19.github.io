@@ -7,13 +7,19 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: #0b1d26;
     .section--reverse {
         display: flex;
     }
 }
 
+.--bg-shadow {
+    box-shadow: 7px 1px 15px 15px black;
+}
+
 #section1 {
-    margin-top: 22%;
+    // margin-top: 22%;
+    background: #0b1d26;
 }
 
 .content-wrap {
@@ -23,15 +29,15 @@
     height: 1000px;
 }
 
-.wrap-img{
+.wrap-img {
     display: flex;
     justify-content: center;
 }
 
 .m--width {
     font-style: normal;
-    max-width: 778px;
-    font-size: 22px;
+    max-width: fit-content;
+    font-size: 21px;
     margin: 30px 0;
     text-align: justify;
 }

@@ -589,4 +589,8 @@
         top: 255px;
         margin-left: 0;
     }
+
+    .main-list__item {
+        width: calc((100% - 40px) / 3);
+    }
 }
