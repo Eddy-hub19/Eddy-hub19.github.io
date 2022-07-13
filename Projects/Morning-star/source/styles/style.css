@@ -358,7 +358,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 .main-content-left .title--pos {
   margin-top: 0;
@@ -386,37 +386,37 @@ nav {
 
 .abstract2 {
   left: 50%;
-  top: 40px;
+  top: 4%;
 }
 
 .abstract3 {
   left: 50%;
-  top: 20px;
+  top: 5%;
 }
 
 .abstract5 {
   left: 50%;
-  top: 0;
+  top: 10%;
 }
 
 .abstract6 {
   left: 50%;
-  top: 0;
+  top: 10%;
 }
 
 .abstract7 {
   left: 50%;
-  top: 0;
+  top: 10%;
 }
 
 .abstract8 {
   left: 50%;
-  top: 0;
+  top: 10%;
 }
 
 .abstract9 {
   left: 50%;
-  top: 0;
+  top: 10%;
 }
 
 .main__descr {
@@ -570,12 +570,20 @@ nav {
   text-align: justify;
 }
 
+.--column-pos {
+  flex-direction: column;
+}
+
 .bible-iframe {
   margin-top: 30px;
 }
 
 .main-content-iframe {
   margin-top: 30%;
+}
+
+.--upper-text {
+  text-transform: uppercase;
 }
 
 #section8 {
@@ -997,6 +1005,9 @@ footer .footer__copyright {
   .main-list .main-list__descr {
     margin-bottom: 30px;
     font-size: 21px;
+  }
+  .main-content-iframe {
+    width: 88vw;
   }
   footer {
     margin-top: 25px;

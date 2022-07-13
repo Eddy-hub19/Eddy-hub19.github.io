@@ -97,7 +97,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 100px;
     .title--pos {
         margin-top: 0;
         top: 0;
@@ -119,42 +119,36 @@
 }
 
 .abstract1 {
-    // left: 45.5%;
     left: 50%;
     top: 180px;
 }
 .abstract2 {
     left: 50%;
-    top: 40px;
+    top: 4%;
 }
 .abstract3 {
     left: 50%;
-    top: 20px;
+    top: 5%;
 }
 .abstract5 {
-    // left: 45.5%;
     left: 50%;
-    top: 0;
+    top: 10%;
 }
 .abstract6 {
-    // left: 45.5%;
     left: 50%;
-    top: 0;
+    top: 10%;
 }
 .abstract7 {
-    // left: 45.5%;
     left: 50%;
-    top: 0;
+    top: 10%;
 }
 .abstract8 {
-    // left: 45.5%;
     left: 50%;
-    top: 0;
+    top: 10%;
 }
 .abstract9 {
-    // left: 45.5%;
     left: 50%;
-    top: 0;
+    top: 10%;
 }
 
 .main__descr {
@@ -309,6 +303,16 @@
     text-align: justify;
 }
 
+// Pastor
+
+.--column-pos{
+    flex-direction: column;
+}
+
+.main-content-img{
+    // width: fit-content;
+}
+
 // Bible
 
 .bible-iframe {
@@ -321,9 +325,12 @@
     margin-top: 30%;
 }
 
+.--upper-text {
+    text-transform: uppercase;
+}
 
 // Pray
 
-#section8{
+#section8 {
     position: relative;
 }
