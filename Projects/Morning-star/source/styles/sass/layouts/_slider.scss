@@ -1,5 +1,6 @@
 .swiper {
     height: auto;
+    width: 80vw;
 }
 
 .swiper-wrapper {
@@ -7,16 +8,16 @@
 }
 
 .swiper-slide {
-    background: $accent-color;
-    width: 1920px;
-    height: 100vh !important;
+    // background: $accent-color;
+    width: 1000px;
+    height: 130vh !important;
     text-align: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-size: cover;
+    background-size: content;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
