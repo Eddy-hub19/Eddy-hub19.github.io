@@ -636,8 +636,9 @@ nav {
 .progress-scroll {
   z-index: 3;
   position: fixed;
-  top: 285px;
-  right: 40px;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -40%);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1299,7 +1300,7 @@ footer .footer__copyright {
     margin-top: 18rem;
   }
   .progress-scroll {
-    top: 225px;
+    top: 50%;
     right: 20px;
   }
   .sidepanel {

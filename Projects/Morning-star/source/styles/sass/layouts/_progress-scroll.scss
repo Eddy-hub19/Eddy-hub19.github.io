@@ -1,11 +1,9 @@
 .progress-scroll {
     z-index: 3;
     position: fixed;
-    top: 285px;
-    right: 40px;
-    // top: 50%;
-    // right: 20px;
-    // transform: translate(-50%, -50%);
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -40%);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
