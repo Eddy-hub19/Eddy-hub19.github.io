@@ -1,25 +1,25 @@
 // section
 
 .section {
-    margin-top: 20%;
+    margin-top: 8%;
     align-items: center;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #0b1d26;
+    // background: #0b1d26;
     .section--reverse {
         display: flex;
     }
 }
 
 .--bg-shadow {
-    box-shadow: 7px 1px 15px 15px black;
+    // box-shadow: 7px 1px 15px 15px black;
 }
 
 #section1 {
-    // margin-top: 22%;
-    background: #0b1d26;
+    // margin-top: 12%;
+    // background: #0b1d26;
 }
 
 .content-wrap {
