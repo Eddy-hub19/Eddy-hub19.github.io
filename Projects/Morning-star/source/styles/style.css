@@ -590,7 +590,7 @@ nav {
 }
 
 .section {
-  margin-top: 8%;
+  margin-top: 6%;
   align-items: center;
   height: auto;
   display: flex;
@@ -688,7 +688,6 @@ nav {
 
 .swiper-slide {
   width: 1000px;
-  height: 120vh !important;
   text-align: center;
   margin: 0 auto;
   display: flex;
