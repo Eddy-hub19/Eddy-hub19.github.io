@@ -227,7 +227,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #0e252d;
+    /* background-color: #0e252d; */
     background-repeat: repeat;
   }
 
