@@ -40,7 +40,7 @@
                             <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="icon-instagram" />
                         </a>
                     </li>
-                    <span class="arrow">&darr;</span>
+                    <button class="arrow">&darr;</button>
                 </ul>
             </div>
             <div class="dropdown">
@@ -89,7 +89,7 @@
                 <div class="container">
                     <div class="about__wrapper">
                         <div class="about__photo">
-                            <img src="./Projects/Portfolio/img/im.jpeg" alt="my photo" />
+                            <img id="profile" src="./Projects/Portfolio/img/profile.jpeg" alt="my profile" />
                         </div>
                         <div class="about__descr">
                             <h2 class="about__title">About me</h2>
@@ -100,14 +100,7 @@
                                 School', 'Hexlet', 'CodeBasic', 'HTML Academy', and "Internship Elogic Commerce"
                             </p>
                             <div class="about-cv">
-                                <a
-                                    class="about-cv__link"
-                                    href="./Projects/Portfolio/files/cv.pdf"
-                                    download=""
-                                    title="cv"
-                                >
-                                    Download CV
-                                </a>
+                                <a class="about-cv__link" download="" title="cv"> Download CV </a>
                             </div>
                         </div>
                     </div>
@@ -127,10 +120,9 @@
                                 </div>
                                 <h3 class="title title_fz14">HTML5</h3>
                                 <!-- <p>
-                Именно он создает каркас вашего сайта или приложения, а пятая
-                версия позволит мне создавать более SEO-оптимизированную
-                структуру вашего продукта
-              </p> -->
+                                    Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне
+                                    создавать более SEO-оптимизированную структуру вашего продукта
+                                </p> -->
                             </div>
                             <div class="skills__item">
                                 <div class="skills__item-img">
@@ -138,10 +130,9 @@
                                 </div>
                                 <h3 class="title title_fz14">CSS3</h3>
                                 <!-- <p>
-                Этот язык стилей позволяет мне создавать абсолютно любой внешний
-                вид вашего сайта или приложения. Все ограничивается только вашей
-                фантазией!
-              </p> -->
+                                    Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта
+                                    или приложения. Все ограничивается только вашей фантазией!
+                                </p> -->
                             </div>
                             <div class="skills__item">
                                 <div class="skills__item-img">
@@ -149,53 +140,50 @@
                                 </div>
                                 <h3 class="title title_fz14">Java Script</h3>
                                 <!-- <p>
-                Этот язык программирования позволяет оживить все что угодно:
-                слайдеры, окна, подсказки, вкладки, получение данных от сервера
-                и многое другое
-              </p> -->
+                                    Этот язык программирования позволяет оживить все что угодно: слайдеры, окна,
+                                    подсказки, вкладки, получение данных от сервера и многое другое
+                                </p> -->
                             </div>
-                            <div class="skills__item">
+                            <!-- <div class="skills__item">
                                 <div class="skills__item-img">
                                     <img src="./Projects/Portfolio/img/jquery.svg" alt="Jquery" />
                                 </div>
                                 <h3 class="title title_fz14">Jquery</h3>
+                                <p>
+                                    Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в
+                                    проект мы её не будем, но навык работы с ней присутствует
+                                </p>
+                            </div> -->
+                            <div class="skills__item">
+                                <div class="skills__item-img">
+                                    <img src="./Projects/Portfolio/img/react.svg " alt="React " />
+                                </div>
+                                <h3 class="title title_fz14">React</h3>
                                 <!-- <p>
-                Библиотека Jquery позволит ускорить разработку. Без
-                необходимости интегрировать в проект мы её не будем, но навык
-                работы с ней присутствует
-              </p> -->
+                                    Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально
+                                    интерактивный продукт именно под ваши цели
+                                </p> -->
                             </div>
-                            <!-- <div class="skills__item">
-              <div class="skills__item-img">
-                <img src="./Projects/Portfolio/img/react.svg " alt="React " />
-              </div>
-              <h3 class="title title_fz14">React</h3>
-              <p>
-                Эта библиотека позволяет создавать web-приложения. Мы можем
-                создать максимально интерактивный продукт именно под ваши цели
-              </p>
-            </div> -->
-                            <!-- <div class="skills__item">
-              <div class="skills__item-img">
-                <img src="./Projects/Portfolio/img/node.js.svg" alt="Node.js" />
-              </div>
-              <h3 class="title title_fz14">Node.js</h3>
-              <p>
-                Эта платформа позволяет создавать бэкенд для вашего продукта -
-                “мозги”, которые будут выполнять действия, которые пользователь
-                не видит
-              </p>
-            </div> -->
-                            <!-- <div class="skills__item">
-              <div class="skills__item-img">
-                <img src="./Projects/Portfolio/img/mongo.db.svg" alt="Mongo.db" />
-              </div>
-              <h3 class="title title_fz14">Mongo.db</h3>
-              <p>
-                Это нереляционная база данных, которая будет хранить данные
-                вашего сайта или приложения
-              </p>
-            </div> -->
+                            <div class="skills__item">
+                                <div class="skills__item-img">
+                                    <img src="./Projects/Portfolio/img/node.js.svg" alt="Node.js" />
+                                </div>
+                                <h3 class="title title_fz14">Node.js</h3>
+                                <!-- <p>
+                                    Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые
+                                    будут выполнять действия, которые пользователь не видит
+                                </p> -->
+                            </div>
+                            <div class="skills__item">
+                                <div class="skills__item-img">
+                                    <img src="./Projects/Portfolio/img/mongo.db.svg" alt="Mongo.db" />
+                                </div>
+                                <h3 class="title title_fz14">Mongo.db</h3>
+                                <!-- <p>
+                                    Это нереляционная база данных, которая будет хранить данные вашего сайта или
+                                    приложения
+                                </p> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,23 +196,33 @@
                     <div class="title title__section-subtitle">My projects</div>
                     <div class="portfolio__wrapper">
                         <a target="_blank" href="./Projects/Porten/index.html" class="portfolio__item">
+                            Porten
                             <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
                         </a>
                         <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio__item">
+                            Food-Store
                             <img src="./Projects/Portfolio/img/food-store.png" alt="Food-Store" />
                         </a>
 
+                        <!-- <a target="_blank" href="https://banderogus22.netlify.app/">
+                            banderogus
+                            <img src="./Projects/Portfolio/img/banderogus.png" alt="banderogus" />
+                        </a> -->
+
                         <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio__item">
+                            Morning star
                             <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning star" />
                         </a>
                         <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/" class="portfolio__item">
-                            <img src="./Other/for-meta.png" alt="ice-cream" />
+                            Ice-cream
+                            <img src="./Other/ice-cream.png" alt="ice-cream" />
                         </a>
                         <a
                             target="_blank"
                             href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
                             class="portfolio__item"
                         >
+                            Web-studio
                             <img src="./Projects/Portfolio/img/web-studio.png" alt="web-studio" />
                         </a>
                     </div>
