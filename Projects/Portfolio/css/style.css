@@ -29,6 +29,9 @@ ul li {
     background: none;
     border-radius: 20px;
 }
+.item-img:hover {
+    background: white;
+}
 
 a {
     color: white;
@@ -122,6 +125,9 @@ header {
     border: 0;
     background: none;
     cursor: pointer;
+}
+
+.arrow:hover {
     color: white;
 }
 
