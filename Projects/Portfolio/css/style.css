@@ -39,23 +39,31 @@ a {
     cursor: pointer;
 }
 
-.header__hamburger {
+/* .header__hamburger {
+    top: 20px;
+    right: 20px;
     position: fixed;
-    display: none;
-    /* background: #0a232c; */
-}
+    display: block;
+
+    width: 100%;
+    height: 100vh;
+} */
 
 .hamburger {
     display: none;
+}
+
+.active {
+    display: block;
 }
 
 .hamburger span {
     flex-direction: column-reverse;
     align-items: center;
     align-self: center;
+    cursor: pointer;
 }
-
-#hamburger:focus {
+*/ #hamburger:focus {
     outline: none;
 }
 
@@ -321,18 +329,6 @@ header {
 
 .about__subtitle {
     font-size: 22px;
-}
-
-.about__title:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -25%;
-    left: 0;
-    width: 145px;
-    height: 60px;
-    border-radius: 100%;
-    background: #515050;
 }
 
 .about__text {
