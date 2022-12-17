@@ -18,6 +18,10 @@
         height: auto;
     }
 
+    #bar {
+        left: 0%;
+    }
+
     .header__hamburger {
         display: block;
         position: relative;
@@ -74,6 +78,8 @@
         width: 100%;
         background: black;
         display: grid;
+        justify-items: center;
+    align-items: end;
         margin: 0;
         padding: 0;
     }

@@ -3,6 +3,11 @@
 *:before {
     box-sizing: border-box;
 }
+/* 
+:root {
+    --color-black: black;
+    --color-white: white;
+} */
 
 ul li {
     list-style: none;
@@ -66,8 +71,6 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    /* background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgb(93, 99, 103) 82.8% ); */
-    /* background-image: linear-gradient(76.3deg, rgb(255, 255, 255) 12.6%, rgb(0, 0, 0) 92.8%); */
     background-image: linear-gradient(76.3deg, rgb(0, 0, 0) -1.4%, rgb(176, 176, 176) 82.8%);
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +108,7 @@ header {
     width: 9em;
     /* width: 14em; */
     background-color: rgb(255 255 255);
-    color: #131313;
+    /* color: #131313; */
     text-align: center;
     transition: top 0.8s ease-in-out 0.3s, box-shadow 1.3s ease-in-out 0.3s;
     border-radius: 40px;
@@ -117,7 +120,6 @@ header {
     box-shadow: 0px 8px 16px 0px black;
     cursor: pointer;
     background: black;
-    color: white;
 }
 
 .arrow {
@@ -126,8 +128,8 @@ header {
     cursor: pointer;
 }
 
-.arrow:hover {
-    color: white;
+#bar:hover .arrow{
+    color: #fff;
 }
 
 /* DROPDOWN */
