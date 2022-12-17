@@ -122,13 +122,19 @@ header {
     background: black;
 }
 
+.hide{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
 .arrow {
     border: 0;
     background: none;
     cursor: pointer;
 }
 
-#bar:hover .arrow{
+#bar:hover .arrow {
     color: #fff;
 }
 

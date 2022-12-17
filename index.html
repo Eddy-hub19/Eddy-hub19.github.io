@@ -18,11 +18,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/style.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader-mask">
+          <h1 class="preloader-text animate slide-up">Sekan </h1>
+        </div>
+        <div class="preloader-mask">
+          <h1 class="preloader-text animate slide-up delay-1">Eduard</h1>
+        </div>
+        <div class="preloader-mask">
+          <h1 class="preloader-text animate slide-up delay-2">Developer.</h1>
+        </div>
+      </div>
     <header class="header">
         <div class="bar-top">
             <ul id="bar">
@@ -267,6 +279,7 @@
     </footer>
     <!-- scripts  -->
     <script src="./Projects/Portfolio/js/script.js"></script>
+    <script src="./Projects/Portfolio/js/onload.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
         AOS.init()
