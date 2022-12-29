@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+button {
+    cursor: pointer;
+}
+
 ol,
 ul {
     padding-left: 0;
@@ -533,7 +537,6 @@ ul li {
     color: black;
 }
 
-
 /* Slider */
 
 .wrap-slider {
@@ -700,7 +703,6 @@ footer {
 .footer-section h5 {
     margin-bottom: 15px;
 }
-
 
 /*  BURGER  */
 
