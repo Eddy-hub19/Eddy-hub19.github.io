@@ -3,16 +3,47 @@
 *:before {
     box-sizing: border-box;
 }
-/* 
-:root {
-    --color-black: black;
-    --color-white: white;
-} */
+
+body {
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-image: linear-gradient(76.3deg, rgb(0, 0, 0) -1.4%, rgb(176, 176, 176) 82.8%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 0;
+}
 
 ul li {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .wrapper {
@@ -38,12 +69,6 @@ ul li {
     background: white;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .hamburger,
 .menu {
     display: none;
@@ -63,36 +88,6 @@ a {
     outline: none;
 }
 
-body {
-    margin: 0 auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: white;
-    background-image: linear-gradient(76.3deg, rgb(0, 0, 0) -1.4%, rgb(176, 176, 176) 82.8%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-header {
-    height: 0;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
 /* Bar */
 
 .bar-top {
@@ -108,7 +103,6 @@ header {
     width: 9em;
     /* width: 14em; */
     background-color: rgb(255 255 255);
-    /* color: #131313; */
     text-align: center;
     transition: top 0.8s ease-in-out 0.3s, box-shadow 1.3s ease-in-out 0.3s;
     border-radius: 40px;
@@ -122,7 +116,7 @@ header {
     background: black;
 }
 
-.hide{
+.hide {
     display: none;
     opacity: 0;
     visibility: hidden;
@@ -216,8 +210,8 @@ header {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    background-image: linear-gradient(49deg, rgb(0, 0, 0) 81.6%, rgb(255 255 255) 65.8%);
-    color: white;
+    background: rgb(220, 217, 217);
+    color: black;
 }
 
 /* Show the dropdown menu */
@@ -233,7 +227,6 @@ header {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    /* background: url(/Projects/Portfolio/img/forest.jpg) 100%; */
     background-image: linear-gradient(76.3deg, rgb(0, 0, 0) 12.6%, rgb(176, 176, 176) 82.8%);
     box-shadow: 0px 10px 20px 9px #000000bf;
 }
