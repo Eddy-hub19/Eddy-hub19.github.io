@@ -1,4 +1,4 @@
 setInterval(function () {
     const elSpinenr = document.querySelector(".preloader")
     elSpinenr.classList.add("hide")
-}, 1000)
+}, 1200)
