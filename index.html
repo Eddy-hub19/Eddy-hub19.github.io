@@ -24,17 +24,6 @@
 </head>
 
 <body>
-    <div class="preloader">
-        <div class="preloader-mask">
-            <h1 class="preloader-text animate slide-up">Sekan </h1>
-        </div>
-        <div class="preloader-mask">
-            <h1 class="preloader-text animate slide-up delay-1">Eduard</h1>
-        </div>
-        <div class="preloader-mask">
-            <h1 class="preloader-text animate slide-up delay-2">Developer.</h1>
-        </div>
-    </div>
     <header class="header">
         <div class="bar-top">
             <ul id="bar">
@@ -98,26 +87,54 @@
                     </li>
                     <button class="arrow">&darr;</button>
                 </ul>
-                <li><a class="menuLink" target="_blank" href="/Projects/Porten/index.html">PORTEN</a></li>
-                <li><a class="menuLink" target="_blank" href="/Projects/Food-Store/index.html">Food-Store</a></li>
-                <li><a class="menuLink" target="_blank" href="./Boss-Logics/dist/index.html">Boos-Logics</a></li>
-                <li><a class="menuLink" target="_blank" href="https://banderogus22.netlify.app/">Бандерогусь</a></li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="/Projects/Porten/index.html">PORTEN</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="/Projects/Food-Store/index.html">Food-Store</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="./Boss-Logics/dist/index.html">Boos-Logics</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="https://banderogus22.netlify.app/">Бандерогусь</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank"
+                        href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"> Web-studio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="https://eddy-hub19.github.io/ice-cream/"> Ice-cream</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menuLink" target="_blank" href="https://eddy-hub19.github.io/filmoteka/"
+                        class="portfolio__item">
+                        Filmoteka
+                        <img class="filmoteka-img" src="./Projects/Portfolio/img/filmoteka.png" alt="filmoteka" />
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main class=" main">
         <div class="first-screen">
             <div class="wrapper">
                 <div class="first-preview">
+
                     <h1 class="first-preview-title">I`m Front-end Developer</h1>
                     <div class="first-preview-btn">
                         <a href="#about-me">About me</a>
                         <a href="#skills">Skills</a>
                         <a href="#portfolio">Portfolio</a>
                     </div>
-                    <a href="#about-me" class="first-screen-btn">
-                        <img src="./Projects/Portfolio/img/down-arrow.svg" alt="down-arrow" />
-                    </a>
+                    <div class="wrap-link-down">
+                        <a href="#about-me" class="first-screen-link">
+                            <img src="./Projects/Portfolio/img/down-arrow.svg" alt="down-arrow" />
+                        </a>
+                        <a href="#about-me" class="first-screen-link1">
+                            <img src="./Projects/Portfolio/img/down-arrow.svg" alt="down-arrow" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,9 +148,12 @@
                         <h2 class="title about__title">About me</h2>
                         <div class="about__subtitle">My name is Eduard</div>
                         <p class="about__text">
-                            I'm studying Front-end developer Eduard Sekan, 21 years old, I started studying one year
-                            ago I studied at the 'STEP Academy', I also took different courses, such as: 'Okten
-                            School', 'Hexlet', 'CodeBasic', 'HTML Academy', and "Internship Elogic Commerce"
+                            I'm studying Front-end developer Eduard Sekan, 21 years old, I started
+                            studying one year
+                            ago I studied at the 'STEP Academy', I also took different courses, such as:
+                            'Okten
+                            School', 'Hexlet', 'CodeBasic', 'HTML Academy', and "Internship Elogic
+                            Commerce"
                         </p>
                         <div class="about-cv">
                             <a href="./Projects/Portfolio/files/Sekan-Eduard-CV.pdf" class="about-cv__link" download
@@ -241,6 +261,7 @@
                         Boss-Logics
                         <img src="./Projects/Portfolio/img/boss-logic.png" alt="boss-logic" />
                     </a>
+
                     <a target="_blank" href="./Projects/DKO/index.html" class="portfolio__item">
                         DKO
                         <img src="./Projects/DKO/img/preview.png" alt="DKO" />
@@ -291,6 +312,19 @@
     <footer class="footer">
         <p class="footer__copyright">Copyright 2022 Terms & Privacy</p>
     </footer>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader-mask">
+            <h1 class="preloader-text animate slide-up">I`m</h1>
+        </div>
+        <div class="preloader-mask">
+            <h1 class="preloader-text animate slide-up delay-1">Front-end</h1>
+        </div>
+        <div class="preloader-mask">
+            <h1 class="preloader-text animate slide-up delay-2">Developer.</h1>
+        </div>
+
+    </div>
     <!-- scripts  -->
     <script src="./Projects/Portfolio/js/script.js"></script>
     <script src="./Projects/Portfolio/js/onload.js"></script>

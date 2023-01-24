@@ -44,11 +44,26 @@ a {
     align-items: center;
     width: 100%;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .wrapper {
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.test {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+#test {
+    border-radius: 160px;
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    box-shadow: -3px 1px 11px 3px black;
 }
 
 #profile {
@@ -272,17 +287,37 @@ a {
     margin-left: 10px;
 }
 
-.first-screen-btn {
+.first-screen-link {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 530px;
+    top: 50%;
     font-size: 16px;
     transition: all 2s ease-in;
+    animation: lavitate 5s ease-in infinite;
 }
 
-.first-screen-btn:hover {
-    margin-top: 30px;
+.first-screen-link1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    animation: lavitate 4s ease infinite;
+}
+
+@keyframes lavitate {
+    0% {
+        top: 550px;
+    }
+
+    50% {
+        top: 600px;
+    }
+
+    100% {
+        top: 550px;
+    }
 }
 
 /* ABOUT  */

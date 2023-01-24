@@ -3,6 +3,10 @@
         background-repeat: repeat;
     }
 
+    .first-screen-link1 {
+        display: none;
+    }
+
     .preloader-text {
         font-size: 2em;
     }
@@ -48,11 +52,12 @@
     }
 
     .menu-btn {
-        position: absolute;
+        position: fixed;
         width: 20px;
         height: 40px;
         top: 20px;
         right: 20px;
+        z-index: 5;
     }
 
     .menu {
@@ -75,6 +80,8 @@
     }
 
     .menu.active {
+        position: fixed;
+        top: 0;
         height: 100vh;
         width: 100%;
         background: black;
@@ -83,6 +90,8 @@
         align-content: space-evenly;
         margin: 0;
         padding: 0;
+        background: #2a2929de;
+        box-shadow: inset 1px 0px 18px 7px black;
     }
 
     .menu-btn span {
@@ -112,6 +121,57 @@
 
     .active {
         display: block;
+        width: 40px;
+        height: 50px;
+    }
+
+    .menuLink {
+        font-size: 22px;
+        box-shadow: 1px 3px 16px 4px black;
+        background: none;
+        letter-spacing: 20px;
+        padding: 20px;
+    }
+
+    .menu-item:nth-child(even) {
+        background: #520909;
+        padding: 20px;
+    }
+
+    /* .menu-item:nth-child(2) {
+        background: #520909;
+        padding: 20px;
+    }
+    .menu-item:nth-child(3) {
+        background: orange;
+        padding: 20px;
+    }
+    .menu-item:nth-child(4) {
+        background: #255b8a;
+        padding: 20px;
+    }
+    .menu-item:nth-child(5) {
+        padding: 20px;
+        background: black;
+    }
+    .menu-item:nth-child(6) {
+        padding: 20px;
+        background: gray;
+    }
+    .menu-item:nth-child(7) {
+        padding: 20px;
+        background: pink;
+    }
+    .menu-item:nth-child(8) {
+        padding: 20px;
+        background: #520909;
+    } */
+
+    .filmoteka-img{
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50px;
     }
 
     /* Bar */
@@ -126,7 +186,7 @@
 
     .first-preview {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     .first-preview-title {
@@ -143,10 +203,34 @@
         margin: 30px 0;
     }
 
-    .first-screen-btn {
-        top: 90%;
-        z-index: 1;
+    .wrap-link-down {
+        margin-top: 40px;
     }
+
+    .first-screen-link {
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* animation */
+
+    @keyframes lavitate {
+        0% {
+            top: 450px;
+        }
+
+        50% {
+            top: 500px;
+        }
+
+        100% {
+            top: 530px;
+        }
+    }
+
+    /* animation */
 
     .about {
         padding-top: 0;
@@ -241,7 +325,7 @@
         min-height: 100vh;
     }
 
-    .first-screen-btn {
+    .first-screen-link {
         top: 190%;
     }
 
@@ -276,11 +360,10 @@
         align-items: center;
         width: 100%;
         min-height: 100vh;
-        /* background-color: #0e252d; */
         background-repeat: repeat;
     }
 
-    .first-screen-btn {
+    .first-screen-link {
         top: 60vh;
     }
 
