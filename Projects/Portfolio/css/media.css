@@ -129,12 +129,12 @@
         font-size: 22px;
         box-shadow: 1px 3px 16px 4px black;
         background: none;
-        letter-spacing: 20px;
+        letter-spacing: 13px;
         padding: 20px;
     }
 
     .menu-item:nth-child(even) {
-        background: #520909;
+        background: black;
         padding: 20px;
     }
 
