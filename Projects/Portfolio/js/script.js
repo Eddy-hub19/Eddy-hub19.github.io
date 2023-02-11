@@ -5,11 +5,13 @@ function myFunction() {
 }
 
 // Show Hamburger menu
-const hamburger = document.querySelector('.menu-btn')
-const menu = document.querySelector('.menu')
-hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('active');
-    menu.classList.toggle('active')
+const hamburger = document.querySelector(".menu-btn")
+const menu = document.querySelector(".menu")
+const body = document.querySelector("body")
+hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("active")
+    menu.classList.toggle("active")
+    body.classList.toggle('overflow-hidden')
 })
 
 // Close the dropdown menu if the user clicks outside of it

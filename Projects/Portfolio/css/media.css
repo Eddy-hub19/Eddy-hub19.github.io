@@ -3,8 +3,8 @@
         background-repeat: repeat;
     }
 
-    .first-screen-link1 {
-        display: none;
+    .overflow-hidden{
+        overflow: hidden;
     }
 
     .preloader-text {
@@ -130,44 +130,19 @@
         box-shadow: 1px 3px 16px 4px black;
         background: none;
         letter-spacing: 13px;
-        padding: 20px;
+        padding: 5px;
+    }
+
+    .menuLink:active, .menuLink:focus {
+        color: black;
+        background: white;
     }
 
     .menu-item:nth-child(even) {
-        background: black;
-        padding: 20px;
+        padding: 5px;
     }
 
-    /* .menu-item:nth-child(2) {
-        background: #520909;
-        padding: 20px;
-    }
-    .menu-item:nth-child(3) {
-        background: orange;
-        padding: 20px;
-    }
-    .menu-item:nth-child(4) {
-        background: #255b8a;
-        padding: 20px;
-    }
-    .menu-item:nth-child(5) {
-        padding: 20px;
-        background: black;
-    }
-    .menu-item:nth-child(6) {
-        padding: 20px;
-        background: gray;
-    }
-    .menu-item:nth-child(7) {
-        padding: 20px;
-        background: pink;
-    }
-    .menu-item:nth-child(8) {
-        padding: 20px;
-        background: #520909;
-    } */
-
-    .filmoteka-img{
+    .filmoteka-img {
         width: 300px;
         display: block;
         margin: 0 auto;
@@ -184,9 +159,14 @@
         height: 0;
     }
 
+    .first-screen {
+        position: relative;
+    }
+
     .first-preview {
         width: 100%;
         height: 100%;
+        position: static;
     }
 
     .first-preview-title {
@@ -203,34 +183,21 @@
         margin: 30px 0;
     }
 
-    .wrap-link-down {
-        margin-top: 40px;
-    }
-
     .first-screen-link {
         z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     /* animation */
 
     @keyframes lavitate {
         0% {
-            top: 450px;
-        }
-
-        50% {
-            top: 500px;
+            top: 90%;
         }
 
         100% {
-            top: 530px;
+            top: 98%;
         }
     }
-
-    /* animation */
 
     .about {
         padding-top: 0;

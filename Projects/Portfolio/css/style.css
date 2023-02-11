@@ -268,7 +268,7 @@ a {
 .first-preview-btn a {
     padding: 30px 80px;
     text-align: center;
-    margin-left: 20px;
+    margin-right: 20px;
     color: white;
     background: transparent;
     font-size: 18px;
@@ -292,31 +292,24 @@ a {
     height: 30px;
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 16px;
     transition: all 2s ease-in;
-    animation: lavitate 5s ease-in infinite;
-}
-
-.first-screen-link1 {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    font-size: 16px;
-    animation: lavitate 4s ease infinite;
+    animation: lavitate 4s ease-in-out infinite alternate;
 }
 
 @keyframes lavitate {
     0% {
-        top: 550px;
+        top: 480px;
     }
 
     50% {
-        top: 600px;
+        top: 530px;
     }
 
     100% {
-        top: 550px;
+        top: 480px;
     }
 }
 
