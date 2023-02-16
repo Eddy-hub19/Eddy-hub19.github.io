@@ -11,7 +11,7 @@ const body = document.querySelector("body")
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active")
     menu.classList.toggle("active")
-    body.classList.toggle('overflow-hidden')
+    // body.classList.toggle('overflow-hidden')
 })
 
 // Close the dropdown menu if the user clicks outside of it
@@ -26,4 +26,12 @@ window.onclick = function (event) {
             }
         }
     }
+}
+// change-theme
+
+function changeTheme() {
+    const body = document.body
+    const el = document.querySelector('.first-screen')
+    el.classList.toggle("dark-mode")
+    body.classList.toggle("dark-mode")
 }
