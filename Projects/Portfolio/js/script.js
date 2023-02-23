@@ -31,7 +31,17 @@ window.onclick = function (event) {
 
 function changeTheme() {
     const body = document.body
-    const el = document.querySelector('.first-screen')
-    el.classList.toggle("dark-mode")
-    body.classList.toggle("dark-mode")
+    const moon = document.querySelector(".moon")
+    const tdnn = document.querySelector(".tdnn")
+    const el = document.querySelector(".first-screen")
+    body.classList.toggle("light")
+    el.classList.toggle('light')
+    moon.classList.toggle("sun")
+    tdnn.classList.toggle("day")
 }
+
+// $('.tdnn').click(function () {
+//     $("body").toggleClass('light');
+//     $(".moon").toggleClass('sun');
+//     $(".tdnn").toggleClass('day');
+//   });

@@ -264,10 +264,9 @@
 
     /* ChangeTheme */
 
-    .changeTheme {
-        position: absolute;
-        left: 35%;
-        z-index: 999;
+    .tdnn {
+        left: 10px;
+        z-index: 2;
     }
 }
 

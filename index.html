@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/style.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/changeTheme.css">
     <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -60,8 +61,9 @@
                 <a href="https://eddy-hub19.github.io/Eddy-hub19/">in progress</a>
             </div>
         </div>
-        <div class="changeTheme">
-            <button class="change-theme" onclick=changeTheme() type="button">changeTheme</button>
+        <div class="tdnn" onclick=changeTheme()>
+            <div class="moon">
+            </div>
         </div>
         <nav class="header__hamburger">
             <div class="menu-btn" id="hamburger">
@@ -312,6 +314,17 @@
             </div>
         </section>
     </main>
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+        (function (w, d, v3) {
+            w.chaportConfig = {
+                appId: '63f788a49c0cb84c4733ba59'
+            };
+
+            if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss)
+        })(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
     <footer class="footer">
         <p class="footer__copyright">Copyright 2022 Terms & Privacy</p>
     </footer>

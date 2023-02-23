@@ -16,6 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: background-image 2s ease;
 }
 
 html {
@@ -188,7 +189,7 @@ button {
     position: relative;
     display: inline-block;
     top: 45px;
-    left: 80%;
+    left: 30%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -586,32 +587,4 @@ button {
 .footer__copyright {
     text-align: center;
     cursor: pointer;
-}
-
-/* CHangeTheme  */
-
-.changeTheme {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.change-theme {
-    display: inline-block;
-    text-align: center;
-    background: transparent;
-    color: white;
-    font-weight: bold;
-    padding: 9px;
-    line-height: 1;
-    border-radius: 1em;
-    min-width: 8.23em;
-    text-decoration: none;
-    font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1.25rem;
-}
-
-.dark-mode {
-    background-image: linear-gradient(76.3deg, rgb(183, 97, 97) -1.4%, rgb(0, 0, 0) 82.8%) !important;
-    color: white;
 }
