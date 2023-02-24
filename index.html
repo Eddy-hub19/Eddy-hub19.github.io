@@ -24,6 +24,18 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
+<style>
+    .skills__items {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .skills__item {
+        width: calc(100% / 4 - 30px);
+    }
+</style>
+
 <body>
     <header class="header">
         <div class="bar-top">
@@ -41,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/ed_sekan21/">
+                    <a href="https://www.instagram.com/ed_sekan22/">
                         <img class="item-img" src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
                             alt="icon-instagram" />
                     </a>
@@ -86,7 +98,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/ed_sekan21/">
+                        <a href="https://www.instagram.com/ed_sekan22/">
                             <img class="item-img" src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
                                 alt="icon-instagram" />
                         </a>
@@ -145,18 +157,24 @@
                     </div>
                     <div class="about__descr">
                         <h2 class="title about__title">About me</h2>
-                        <div class="about__subtitle">My name is Eduard</div>
+                        <div class="about__subtitle">Hello, I’m Eduard</div>
                         <p class="about__text">
-                            I'm studying Front-end developer Eduard Sekan, 21 years old, I started
-                            studying one year
-                            ago I studied at the 'STEP Academy', I also took different courses, such as:
-                            'Okten
-                            School', 'Hexlet', 'CodeBasic', 'HTML Academy', and "Internship Elogic
-                            Commerce"
+                            I am looking for a Trainee/Junior Front-End position.
+                            I’m familiar with HTML, CSS,JavaScript, and React.
+                            I have tech lead experience.
+                            I also took different courses, such as:
+                            'Okten School', 'Hexlet', 'CodeBasic',
+                            'HTML Academy', and 'Internship Elogic Commerce'
+                            I overcome difficulties, find answers and enjoy it,
+                            programming teaches me to think
+                        </p>
+                        <p>
+
                         </p>
                         <div class="about-cv">
-                            <a href="./Projects/Portfolio/files/Sekan-Eduard-CV.pdf" class="about-cv__link" download
-                                title="cv"> Download
+                            <a target="_blank" href="./Projects/Portfolio/files/Sekan-Eduard-CV.pdf"
+                                class="about-cv__link" title="cv">
+                                Download
                                 CV
                             </a>
                         </div>
@@ -164,7 +182,7 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills">
+        <!-- <section id="skills" class="skills">
             <div class="wrapper">
                 <div class="container">
                     <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -207,6 +225,94 @@
                                 <img src="./Projects/Portfolio/img/mongo.db.svg" alt="Mongo.db" />
                             </div>
                             <h3 class="title_fz14">Mongo.db</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- skill 2  -->
+        <section id="skills" class="skills">
+            <div class="wrapper">
+                <div class="container">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h2 class="title title__section-title">Skills</h2>
+                    </div>
+                    <div class="title title__section-subtitle">What i use</div>
+                    <div class="skills__items">
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/html5.svg" alt="html5" />
+                            </div>
+                            <h3 class="title title_fz14">HTML5</h3>
+                            <p>
+                                Именно он создает каркас вашего сайта или приложения, а пятая
+                                версия позволит мне создавать более SEO-оптимизированную
+                                структуру вашего продукта
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/css3.svg" alt="css3" />
+                            </div>
+                            <h3 class="title title_fz14">CSS3</h3>
+                            <p>
+                                Этот язык стилей позволяет мне создавать абсолютно любой внешний
+                                вид вашего сайта или приложения. Все ограничивается только вашей
+                                фантазией!
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/js.svg" alt="java script" />
+                            </div>
+                            <h3 class="title title_fz14">Java Script</h3>
+                            <p>
+                                Этот язык программирования позволяет оживить все что угодно:
+                                слайдеры, окна, подсказки, вкладки, получение данных от сервера
+                                и многое другое
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/jquery.svg" alt="Jquery" />
+                            </div>
+                            <h3 class="title title_fz14">Jquery</h3>
+                            <p>
+                                Библиотека Jquery позволит ускорить разработку. Без
+                                необходимости интегрировать в проект мы её не будем, но навык
+                                работы с ней присутствует
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/react.svg " alt="React " />
+                            </div>
+                            <h3 class="title title_fz14">React</h3>
+                            <p>
+                                Эта библиотека позволяет создавать web-приложения. Мы можем
+                                создать максимально интерактивный продукт именно под ваши цели
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/node.js.svg" alt="Node.js" />
+                            </div>
+                            <h3 class="title title_fz14">Node.js</h3>
+                            <p>
+                                Эта платформа позволяет создавать бэкенд для вашего продукта -
+                                “мозги”, которые будут выполнять действия, которые пользователь
+                                не видит
+                            </p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__item-img">
+                                <img src="./Projects/Portfolio/img/mongo.db.svg" alt="Mongo.db" />
+                            </div>
+                            <h3 class="title title_fz14">Mongo.db</h3>
+                            <p>
+                                Это нереляционная база данных, которая будет хранить данные
+                                вашего сайта или приложения
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -265,20 +371,11 @@
                         DKO
                         <img src="./Projects/DKO/img/preview.png" alt="DKO" />
                     </a>
-
-                    <!-- <a target="_blank" href="https://eddy-hub19.github.io/Eddy-hub19/old-projects/MusicApp/index.html"
-                        class="portfolio__item">
-                        MusicApp
-                        <img src="./Other/musicApp.jpeg" alt="MusicApp" />
-                    </a> -->
                 </div>
             </div>
         </section>
         <section id="connect" class="connect">
             <div class="container">
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <!-- <h2 class="title title__section-title">Connect</h2> -->
-                </div>
                 <div class="title__section-subtitle">
                     <h2 class="title__section-title">IN PROGRESS..</h2>
                     <p style="text-align: center">Connect with me</p>
@@ -300,17 +397,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- footer-form -->
-
-                <!-- <form class="footer-form">
-                    <input type="text" placeholder="Name" id="footer-email" class="footer-form-input" required />
-
-                    <input type="email" placeholder="E-mail" id="footer-email" class="footer-form-input" required />
-                    <textarea class="footer-form-textarea" placeholder="Your message"></textarea>
-
-                    <button class="footer-form-button" type="submit">Send</button>
-                </form> -->
             </div>
         </section>
     </main>

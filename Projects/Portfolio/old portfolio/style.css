@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     background: no-repeat;
     background-size: 100%;
-    background-image: url(/Portfolio/images/veeterzy.jpg);
+    background-image: url(./veeterzy.jpg);
     font-size: 1em;
 }
 

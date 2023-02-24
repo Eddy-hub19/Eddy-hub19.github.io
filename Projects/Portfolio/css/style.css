@@ -124,7 +124,7 @@ button {
     /* width: 14em; */
     background-color: rgb(255 255 255);
     text-align: center;
-    transition: top 0.8s ease-in-out 0.3s, box-shadow 1.3s ease-in-out 0.3s;
+    transition: top 1.5s ease-out 0.5s, box-shadow 1.3s ease-in-out 0.3s;
     border-radius: 40px;
     cursor: pointer;
 }
