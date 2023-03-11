@@ -169,7 +169,6 @@
     font-family: "Geometria-Bold", Arial, Helvetica, sans-serif;
   }
   .about-platform-list__section li:nth-child(even) {
-    max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
     font-size: 21px;

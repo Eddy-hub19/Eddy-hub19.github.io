@@ -656,10 +656,6 @@ nav {
   color: white;
   opacity: 1;
 }
-.input-item:-ms-input-placeholder {
-  color: white;
-  opacity: 1;
-}
 .input-item::placeholder {
   color: white;
   opacity: 1;

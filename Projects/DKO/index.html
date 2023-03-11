@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event DKO</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/main/main.css">
+  <link rel="stylesheet" href="./media.css">
 </head>
 
 <body>
@@ -18,6 +19,11 @@
             <img src="./img/header/logo.svg" alt="logo">
             <h1 class="logo-title">DKO</h1>
           </a>
+        </div>
+        <div class="hamburger">
+          <div class="stroke"></div>
+          <div class="stroke"></div>
+          <div class="stroke"></div>
         </div>
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -61,12 +67,10 @@
             </li>
           </ul>
         </div>
-
         <div class="hero-down">
           <h3 class="hero-down__title">all are eco</h3>
           <button class="btn primary">buy ticket</button>
         </div>
-
       </div>
       <div class="works">
         <h2 class="works-title">Waht we Do</h2>
@@ -223,6 +227,17 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    let strokesArr = document.querySelectorAll('.stroke');
+
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      strokesArr.forEach(function (el) {
+        console.log(el.classList);
+        el.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 
 </html>
