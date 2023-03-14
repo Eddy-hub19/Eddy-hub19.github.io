@@ -13,7 +13,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./Projects/Portfolio/img/icon/apple-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/icon/favicon-16x16.png" />
-    <link rel="icon" type="image/ico" href="./Projects/Portfolio/img/icon/favicon.ico" />
+    <link rel="icon" href="./Projects/Portfolio/img/icon/favicon1.ico">
+    <link rel="icon" href="./Projects/Portfolio/img/icon/logo.svg">
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -24,20 +25,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<style>
-    .skills__items {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .skills__item {
-        width: calc(100% / 4 - 30px);
-    }
-</style>
-
 <body>
     <header class="header">
+        <div class="wrap-logo-mobile">
+            <img src="./Projects/Portfolio/img/icon/Ed-logo.svg" alt="logo">
+        </div>
         <div class="bar-top">
             <ul id="bar">
                 <li>
@@ -73,6 +65,7 @@
                 <a href="https://eddy-hub19.github.io/Eddy-hub19/">in progress</a>
             </div>
         </div> -->
+
         <div class="tdnn" onclick=changeTheme()>
             <div class="moon">
             </div>
@@ -129,9 +122,6 @@
                 </li>
             </ul>
         </nav>
-        <marquee behavior="scroll" direction="right" scrollamount="30">
-           FRONT END DEVELOPPER
-        </marquee>
     </header>
     <main class="main">
         <div class="first-screen">

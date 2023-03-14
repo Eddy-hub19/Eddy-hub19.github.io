@@ -108,9 +108,6 @@ h2 {
   padding: 13px 20px;
   text-transform: uppercase;
 }
-.primary:hover {
-  background: linear-gradient(273.31deg, #ff1c60 0.79%, #7f1cfc 98.6%);
-}
 
 .nav {
   display: flex;

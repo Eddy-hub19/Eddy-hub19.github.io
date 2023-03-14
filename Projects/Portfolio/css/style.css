@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.wrap-logo-mobile {
+    display: none;
+}
+
 body {
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -385,6 +389,25 @@ button {
     padding-bottom: 120px;
 }
 
+/* .skills__items {
+    margin-top: 60px;
+    padding: 20px 50px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills__item {
+    width: calc(100% / 3 - 30px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #000;
+    transition: border ease 1s;
+} */
+
 .skills__items {
     margin-top: 60px;
     padding: 0 10px;
@@ -416,7 +439,7 @@ button {
 .skills__item-img {
     display: flex;
     text-align: center;
-    min-height: 65px;
+    min-height: 116px;
 }
 
 .skills__item h3 {

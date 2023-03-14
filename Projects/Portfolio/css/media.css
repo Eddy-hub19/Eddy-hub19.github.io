@@ -3,6 +3,22 @@
         background-repeat: repeat;
     }
 
+    .wrap-logo-mobile {
+        display: block;
+        position: relative;
+        top: 89px;
+        z-index: 4;
+        padding-bottom: 40px;
+    }
+
+    .wrap-logo-mobile > img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 440px;
+        height: 440px;
+    }
+
     .overflow-hidden {
         overflow: hidden;
     }
@@ -305,7 +321,7 @@
     }
 
     .skills__items {
-        width: calc(100% / 1 - 10px);
+        width: calc(100% / 2 - 10px);
     }
 
     .portfolio__wrapper {
