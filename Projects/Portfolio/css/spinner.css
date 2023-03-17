@@ -11,6 +11,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.preloader-wrap {
+    display: flex;
+}
+
 .preloader-mask {
     overflow: hidden;
     padding-right: 13px;
@@ -25,6 +30,10 @@
     color: rgb(219, 210, 210);
     text-shadow: 1px 2px 4px black;
 }
+
+.preloader .first-preview-btn {
+    display: flex;
+}
 .preloader .animate {
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
@@ -38,6 +47,7 @@
 }
 .preloader .animate.delay-2 {
     animation-delay: 0.4s;
+    display: block;
 }
 .preloader.loaded .animate {
     animation-name: slideDown;

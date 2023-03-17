@@ -10,11 +10,12 @@
     <meta property="og:locale" content="Ua_UA" />
     <meta property="og:title" content="Portfolio" />
     <meta property="og:description" content="My name is Eduardo and i`m Full Stack Developer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./Projects/Portfolio/img/icon/apple-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/icon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/icon/favicon-16x16.png" />
-    <link rel="icon" href="./Projects/Portfolio/img/icon/favicon1.ico">
-    <link rel="icon" href="./Projects/Portfolio/img/icon/logo.svg">
+    <link rel="icon" sizes="512x512" href="./Projects/Portfolio/img/ed/android-chrome-512x512.png" />
+    <link rel="icon" sizes="192x192" href="./Projects/Portfolio/img/ed/android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Projects/Portfolio/img/ed/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/ed/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/ed/favicon-16x16.png" />
+    <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico">
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -22,14 +23,10 @@
     <link rel="stylesheet" href="./Projects/Portfolio/css/changeTheme.css">
     <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="wrap-logo-mobile">
-            <img src="./Projects/Portfolio/img/icon/Ed-logo.svg" alt="logo">
-        </div>
         <div class="bar-top">
             <ul id="bar">
                 <li>
@@ -120,12 +117,18 @@
                 <li class="menu-item">
                     <a class="menuLink" target="_blank" href="https://eddy-hub19.github.io/filmoteka">Filmoteka</a>
                 </li>
+                <li class="menu-item">
+                    <a href="https://eddy-hub19.github.io/Eddy-hub19/">in progress</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <div class="first-screen">
             <div class="wrapper">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ctqgzmyh.json"
+                    background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></lottie-player>
                 <div class="first-preview">
                     <h1 class="first-preview-title">I`m Front-end Developer</h1>
                     <div class="first-preview-btn">
@@ -145,17 +148,31 @@
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__photo">
-                        <img id="profile" src="./Projects/Portfolio/img/3.jpg" alt="my profile" />
+                        <img class="card" id="profile" src="./Projects/Portfolio/img/3.jpg" alt="my profile" />
                     </div>
                     <div class="about__descr">
                         <h2 class="title about__title">About me</h2>
-                        <div class="about__subtitle">Hello, I’m Eduard</div>
+
                         <ul class="about__text">
-                            <li>
+                            <div class="wrap-icon" style="margin-left: 100px;">
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    autoplay></lottie-player>
+                            </div>
+                            <div class="about__subtitle">
+                                <h3>Hello, I’m Eduard</h3>
+                            </div>
+                            <li style="margin-bottom: 20px;">
                                 <b>I am looking for a Trainee/Junior Front-End position.</b>
                                 I’m familiar with HTML, CSS,JavaScript, and React.
+                            </li>
+                            <li>
                                 I have tech <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/">
-                                    <i>lead</i>> </a> experience.
+                                    <i style="text-decoration: underline;">lead</i></a> experience.
+                            </li>
+                            <li>
                                 I also took different courses, such as:
 
                                 'Okten School', 'Hexlet', 'CodeBasic',
@@ -165,11 +182,15 @@
                             </li>
                         </ul>
                         <div class="about-cv">
-                            <a target="_blank" href="./Projects/Portfolio/files/Sekan Eduard.pdf" class="about-cv__link"
-                                title="cv">
-                                Download
-                                CV
-                            </a>
+                            <button class="button">
+                                <a target="_blank" href="./Projects/Portfolio/files/Sekan Eduard.pdf"
+                                    class="about-cv__link" title="cv">
+                                    <span class="button-content">
+                                        Download
+                                        CV
+                                    </span>
+                                </a>
+
                         </div>
                     </div>
                 </div>
@@ -185,37 +206,65 @@
                     <div class="skills__items">
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/html5.svg" alt="html5" />
+                                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/nholumov.json" trigger="hover"
+                                    colors="outline:#121331,primary:#3a3347,secondary:#d1e3fa"
+                                    style="width:150px;height:150px">
+                                </lord-icon>
                             </div>
                             <h3 class="title_fz14">HTML5</h3>
                         </div>
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/css3.svg" alt="css3" />
+                                <img width="150" height="150" src="./Projects/Portfolio/img/css3.png" alt="">
                             </div>
                             <h3 class="title_fz14">CSS3</h3>
                         </div>
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/js.svg" alt="java script" />
+                                <img width="150" height="150" src="./Projects/Portfolio/img/javascript-logo.png"
+                                    alt="java script" />
                             </div>
                             <h3 class="title_fz14">Java Script</h3>
                         </div>
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/react.svg " alt="React " />
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json"
+                                    background="transparent" speed="1" style="width: 150px; height: 150px;" autoplay
+                                    loop></lottie-player>
                             </div>
                             <h3 class="title_fz14">React</h3>
                         </div>
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/node.js.svg" alt="Node.js" />
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+                                <lottie-player
+                                    src="https://lottie.host/1d4a68ce-2d82-428c-a89e-e9396c81390b/a1ZHUCdjLX.json"
+                                    background="transparent" speed="1" style="width: 150px; height: 150px;" loop
+                                    autoplay></lottie-player>
                             </div>
                             <h3 class="title_fz14">Node.js</h3>
                         </div>
                         <div class="skills__item">
                             <div class="skills__item-img">
-                                <img src="./Projects/Portfolio/img/mongo.db.svg" alt="Mongo.db" />
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#5d4037"
+                                        d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z">
+                                    </path>
+                                    <path fill="#4caf50"
+                                        d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z">
+                                    </path>
+                                    <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
+                                    <path fill="#4caf50"
+                                        d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z">
+                                    </path>
+                                    <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+                                </svg>
                             </div>
                             <h3 class="title_fz14">Mongo.db</h3>
                         </div>
@@ -231,55 +280,80 @@
                 </div>
                 <div class="title__section-subtitle">My projects</div>
                 <div class="portfolio__wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a target="_blank" href="./Projects/Porten/index.html" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
+                                    <!-- <p>Porten</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/food-store.png" alt="Food-Store" />
+                                    <!-- <p>Food-Store</p> -->
+                                </a>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <a target="_blank" href="https://banderogus22.netlify.app/" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/banderogus.png" alt="banderogus" />
+                                    <p>Banderogus</p> -->
+                            <!-- </a>
+                            </div> -->
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning star" />
+                                    <!-- <p>Morning star</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/"
+                                    class="portfolio__item">
+                                    <img src="./Other/ice-cream.png" alt="ice-cream" />
+                                    <!-- <p>Ice-cream</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
+                                    class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/web-studio.png" alt="web-studio" />
+                                    <!-- <p>Web-studio</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/"
+                                    class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/filmoteka.png" alt="filmoteka" />
+                                    <!-- <p>Filmoteka</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="./Boss-Logics/dist/index.html" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/boss-logic.png" alt="boss-logic" />
+                                    <!-- <p>Boss-Logics</p> -->
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a target="_blank" href="./Projects/DKO/index.html" class="portfolio__item">
+                                    <img src="./Projects/DKO/img/preview.png" alt="DKO" />
+                                    <!-- <p>DKO</p> -->
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
 
-                    <a target="_blank" href="./Projects/Porten/index.html" class="portfolio__item">
-                        Porten
-                        <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
-                    </a>
-
-                    <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio__item">
-                        Food-Store
-                        <img src="./Projects/Portfolio/img/food-store.png" alt="Food-Store" />
-                    </a>
-
-                    <a target="_blank" href="https://banderogus22.netlify.app/" class="portfolio__item">
-                        Banderogus
-                        <img src="./Projects/Portfolio/img/banderogus.png" alt="banderogus" />
-                    </a>
-
-                    <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio__item">
-                        Morning star
-                        <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning star" />
-                    </a>
-
-                    <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/" class="portfolio__item">
-                        Ice-cream
-                        <img src="./Other/ice-cream.png" alt="ice-cream" />
-                    </a>
-
-                    <a target="_blank" href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
-                        class="portfolio__item">
-                        Web-studio
-                        <img src="./Projects/Portfolio/img/web-studio.png" alt="web-studio" />
-                    </a>
-
-                    <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/" class="portfolio__item">
-                        Filmoteka
-                        <img src="./Projects/Portfolio/img/filmoteka.png" alt="filmoteka" />
-                    </a>
-
-                    <a target="_blank" href="./Boss-Logics/dist/index.html" class="portfolio__item">
-                        Boss-Logics
-                        <img src="./Projects/Portfolio/img/boss-logic.png" alt="boss-logic" />
-                    </a>
-
-                    <a target="_blank" href="./Projects/DKO/index.html" class="portfolio__item">
-                        DKO
-                        <img src="./Projects/DKO/img/preview.png" alt="DKO" />
-                    </a>
+                        <!-- If we need navigation buttons -->
+                        <div style="color: gray;" class="swiper-button-prev"></div>
+                        <div style="color: gray;" class="swiper-button-next"></div>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section id="connect" class="connect">
             <div class="container">
                 <div class="title__section-subtitle">
@@ -321,7 +395,7 @@
         <p class="footer__copyright">Copyright 2022 Terms & Privacy</p>
     </footer>
     <!-- preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="preloader-mask">
             <h1 class="preloader-text animate slide-up">I`m</h1>
         </div>
@@ -331,14 +405,62 @@
         <div class="preloader-mask">
             <h1 class="preloader-text animate slide-up delay-2">Developer.</h1>
         </div>
+    </div> -->
 
     </div>
     <!-- scripts  -->
     <script src="./Projects/Portfolio/js/script.js"></script>
     <script src="./Projects/Portfolio/js/onload.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         AOS.init()
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            autoHeight: true,
+
+            slidesPerView: 1,
+            spaceBetween: 10,
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                }
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
     </script>
 </body>
 
