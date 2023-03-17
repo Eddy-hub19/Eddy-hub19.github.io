@@ -126,9 +126,9 @@
     <main class="main">
         <div class="first-screen">
             <div class="wrapper">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ctqgzmyh.json"
-                    background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></lottie-player>
+                    background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></lottie-player> -->
                 <div class="first-preview">
                     <h1 class="first-preview-title">I`m Front-end Developer</h1>
                     <div class="first-preview-btn">
@@ -154,7 +154,7 @@
                         <h2 class="title about__title">About me</h2>
 
                         <ul class="about__text">
-                            <div class="wrap-icon" style="margin-left: 100px;">
+                            <div class="wrap-icon">
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
@@ -439,19 +439,23 @@
             breakpoints: {
                 // when window width is >= 320px
                 320: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20
                 },
                 // when window width is >= 480px
                 480: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
                     spaceBetween: 30
                 },
                 // when window width is >= 640px
                 640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+                900: {
                     slidesPerView: 2,
                     spaceBetween: 40
-                }
+                },
             },
 
             // Navigation arrows

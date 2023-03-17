@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.wrap-logo-mobile {
-    display: none;
+.wrap-icon {
+    margin-left: 100px;
 }
 
 body {
@@ -494,7 +494,7 @@ button {
 }
 
 .portfolio__item:hover {
-    transform: scale(0.80);
+    transform: scale(0.8);
 }
 
 .portfolio__item img {
@@ -634,7 +634,6 @@ button {
     background: gray !important;
 }
 
-
 .button {
     position: relative;
     overflow: hidden;
@@ -644,19 +643,19 @@ button {
     background: #3d3a4e;
     background-size: 400%;
     color: #fff;
-  }
-  
-  .button:hover::before {
+}
+
+.button:hover::before {
     transform: scaleX(1);
-  }
-  
-  .button-content {
+}
+
+.button-content {
     position: relative;
     z-index: 1;
-  }
-  
-  .button::before {
-    content: '';
+}
+
+.button::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -665,10 +664,6 @@ button {
     width: 100%;
     height: inherit;
     border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgb(88, 88, 89) 10.8%,
-      rgb(57, 57, 59) 94.3%
-    );
+    background: linear-gradient(82.3deg, rgb(88, 88, 89) 10.8%, rgb(57, 57, 59) 94.3%);
     transition: all 0.475s;
-  }
+}
