@@ -19,7 +19,7 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/style.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/scss/main.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/changeTheme.css">
     <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
@@ -284,12 +284,6 @@
                                     <!-- <p>Food-Store</p> -->
                                 </a>
                             </div>
-                            <!-- <div class="swiper-slide">
-                                <a target="_blank" href="https://banderogus22.netlify.app/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/banderogus.png" alt="banderogus" />
-                                    <p>Banderogus</p> -->
-                            <!-- </a>
-                            </div> -->
                             <div class="swiper-slide">
                                 <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio__item">
                                     <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning star" />
@@ -347,7 +341,7 @@
                     <h2 class="title__section-title">IN PROGRESS..</h2>
                     <p style="text-align: center">Connect with me</p>
                     <div class="social">
-                        <a target="_blank" href="https://www.instagram.com/ed_sekan21/">
+                        <a target="_blank" href="https://www.instagram.com/ed_sekan22/">
                             <svg class="social-icon" width="30" height="30">
                                 <use href="./Projects/Portfolio/img/sprite.svg#icon-instagram"></use>
                             </svg>
@@ -397,25 +391,23 @@
     </div>
     <!-- scripts  -->
     <script src="./Projects/Portfolio/js/script.js"></script>
+    <script src="./Projects/Portfolio/js/slider.js"></script>
     <script src="./Projects/Portfolio/js/onload.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         AOS.init()
-    </script>
 
-    <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper(".swiper", {
             // Optional parameters
-            direction: 'horizontal',
+            direction: "horizontal",
             loop: true,
             speed: 1000,
 
             // If we need pagination
             pagination: {
-                el: '.swiper-pagination',
+                el: ".swiper-pagination",
             },
 
             autoHeight: true,
@@ -427,31 +419,31 @@
                 // when window width is >= 320px
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 20
+                    spaceBetween: 20,
                 },
                 // when window width is >= 480px
                 480: {
                     slidesPerView: 1,
-                    spaceBetween: 30
+                    spaceBetween: 30,
                 },
                 // when window width is >= 640px
                 640: {
                     slidesPerView: 1,
-                    spaceBetween: 40
+                    spaceBetween: 40,
                 },
                 900: {
-                    slidesPerView: 2,
-                    spaceBetween: 40
+                    slidesPerView: 1,
+                    spaceBetween: 40,
                 },
             },
 
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
+        })
 
-        });
     </script>
 </body>
 

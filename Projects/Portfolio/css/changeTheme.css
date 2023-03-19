@@ -1,7 +1,7 @@
 :root {
     --darkbg: linear-gradient(76.3deg, rgb(183, 97, 97) -1.4%, rgb(0, 0, 0) 82.8%);
     --whiteclr: white;
-    --lightbg: linear-gradient(76.3deg, rgb(183, 97, 97) -1.4%, rgb(0, 0, 0) 82.8%);
+    --lightbg: linear-gradient(76.3deg, rgb(0 0 0) -1.4%, rgb(57 56 56) 82.8%);
     --lightt: white;
 
     --toggleHeight: 16em;
@@ -17,7 +17,6 @@
 
 body {
     transition: all 0.2s ease-in-out;
-    background-image: linear-gradient(76.3deg, rgb(0, 0, 0) -1.4%, rgb(176, 176, 176) 82.8%);
     color: var(--whiteclr);
     text-align: center;
 }

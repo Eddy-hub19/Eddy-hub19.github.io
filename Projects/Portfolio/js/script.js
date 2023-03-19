@@ -27,7 +27,7 @@ window.onclick = function (event) {
         }
     }
 }
-// change-theme
+// Сhange-theme
 
 function changeTheme() {
     const body = document.body
@@ -39,9 +39,3 @@ function changeTheme() {
     moon.classList.toggle("sun")
     tdnn.classList.toggle("day")
 }
-
-// $('.tdnn').click(function () {
-//     $("body").toggleClass('light');
-//     $(".moon").toggleClass('sun');
-//     $(".tdnn").toggleClass('day');
-//   });
