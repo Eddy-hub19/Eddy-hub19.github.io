@@ -1,7 +1,7 @@
 :root {
     --darkbg: linear-gradient(76.3deg, rgb(183, 97, 97) -1.4%, rgb(0, 0, 0) 82.8%);
     --whiteclr: white;
-    --lightbg: linear-gradient(76.3deg, rgb(0 0 0) -1.4%, rgb(57 56 56) 82.8%);
+    --lightbg: linear-gradient(76.3deg, rgb(0 0 0) -1.4%, rgb(48 30 30) 82.8%);
     --lightt: white;
 
     --toggleHeight: 16em;
