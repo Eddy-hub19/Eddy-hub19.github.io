@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="Address" content="" />
     <meta property="og:locale" content="Ua_UA" />
     <meta property="og:title" content="Portfolio" />
     <meta property="og:description" content="My name is Eduardo and i`m Full Stack Developer" />
@@ -100,9 +99,9 @@
     <main class="main">
         <div class="first-screen">
             <div class="wrapper">
-                <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ctqgzmyh.json"
-                    background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></lottie-player> -->
+                    background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></lottie-player>
                 <div class="first-preview">
                     <h1 class="first-preview-title">I`m Front-end Developer</h1>
                     <div class="first-preview-btn">
@@ -360,7 +359,14 @@
         })(window, document);
     </script>
     <footer class="footer">
-        <p class="footer__copyright">Copyright 2022 Terms & Privacy</p>
+        <p class="footer__copyright">Copyright
+            <script>
+                currentDate = new Date();
+                document.write(currentDate.getFullYear());
+            </script> Terms & Privacy
+        </p>
+
+
     </footer>
     <!-- preloader -->
     <!-- <div class="preloader">
