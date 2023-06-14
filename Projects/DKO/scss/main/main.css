@@ -103,10 +103,11 @@ h2 {
 }
 
 .primary {
-  background: linear-gradient(273.31deg, #7f1cfc 0.79%, #ff1c60 98.6%);
+  background: linear-gradient(273.31deg, #7f1cfcba 0.79%, #a56a7c 98.6%);
   border-radius: 50px;
   padding: 13px 20px;
   text-transform: uppercase;
+  border: none;
 }
 
 .nav {
