@@ -180,7 +180,7 @@
     position: static;
   }
 
-  .typing-demo{
+  .typing-demo {
     white-space: wrap;
   }
 
@@ -283,7 +283,14 @@
     left: 10px;
     z-index: 2;
   }
+
+  .swiper-slide {
+    display: flex !important; 
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 @media (min-width: 769px) and (max-width: 1240px) {
   .container {
     width: 100%;
@@ -357,6 +364,12 @@
     flex-direction: column;
 
     transition: all 2s;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .slider-wrapper .swiper-slide:hover {

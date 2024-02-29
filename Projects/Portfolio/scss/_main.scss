@@ -477,6 +477,14 @@ button {
     background: gray;
   }
 }
+
+
+.swiper-slide {
+  display: flex !important; 
+  justify-content: center;
+  align-items: center;
+}
+
 .about-cv {
   position: relative;
   overflow: hidden;
