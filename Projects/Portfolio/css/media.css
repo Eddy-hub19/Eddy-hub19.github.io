@@ -180,8 +180,12 @@
     position: static;
   }
 
+  .typing-demo{
+    white-space: wrap;
+  }
+
   .first-preview-title {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
