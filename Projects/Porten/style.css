@@ -132,6 +132,7 @@ li {
     background: url(/Projects/Porten/img/first-screen.jpg) center;
     padding-top: 29px;
     background-size: cover;
+    position: relative;
 }
 
 .frame {

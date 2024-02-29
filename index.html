@@ -24,6 +24,10 @@
     <!-- <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" /> -->
 </head>
 
+<style>
+
+</style>
+
 <body>
     <header class="header">
         <div class="bar-top">
@@ -97,22 +101,32 @@
         </nav>
     </header>
     <main class="main">
+
         <div class="first-screen">
             <div class="wrapper">
                 <div class="first-preview">
-                    <h1 class="first-preview-title">I`m Front-end Developer</h1>
+
+                    <div class="typing-demo">
+                        <h1 class="first-preview-title">I`m Front-end Developer</h1>
+                    </div>
+
                     <div class="first-preview-btn">
                         <a href="#about-me">About me</a>
                         <a href="#skills">Skills</a>
                         <a href="#portfolio">Portfolio</a>
                     </div>
-                    <div class="wrap-link-down">
-                        <a href="#about-me" class="first-screen-link">
-                            <img src="./Projects/Portfolio/img/down-arrow.svg" alt="down-arrow" />
-                        </a>
-                    </div>
                 </div>
             </div>
+
+
+        </div>
+
+        <div class="arrow-down">
+            <a href="#about-me">
+                <div class="arrow arrow-first"></div>
+                <div class="arrow arrow-second"></div>
+            </a>
+
         </div>
 
         <section id="about-me" class="about">
@@ -249,13 +263,19 @@
                 <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <h2 class="title title__section-title">Portfolio</h2>
                 </div>
-                <div class="title__section-subtitle">My projects</div>
+                <div class="title__section-subtitle">All my projects</div>
                 <div class="portfolio__wrapper">
                     <!-- Slider main container -->
                     <div class="swiper" autoplay="true">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a target="_blank" href="https://eddy-hub19.github.io/way-to-health/"
+                                    class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/way-to-health.png" alt="Soyummy" />
+                                </a>
+                            </div>
                             <div class="swiper-slide">
                                 <a target="_blank" href="https://eddy-hub19.github.io/soyummy/" class="portfolio__item">
                                     <img src="./Projects/Portfolio/img/SoYummy.png" alt="Soyummy" />
@@ -321,6 +341,31 @@
             </div>
         </section>
 
+        <section id="portfolio2" class="portfolio">
+            <div class="container">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h2 class="title title__section-title">WP Projects</h2>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://way-to-health.com.ua/" class="portfolio__item">
+                            <img src="./Projects/Portfolio/img/way-to-health-wp.png" alt="way-to-health-wp" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://rankova-zirka.terytoriiadobra.com.ua/" class="portfolio__item">
+                            <img src="./Projects/Portfolio/img/rankova-zirka-wp.png" alt="rankova-zirka" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a target="_blank" href="https://autoangel.km.ua/" class="portfolio__item">
+                            <img src="./Projects/Portfolio/img/auto-angel.png" alt="autoangel" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="connect" class="connect">
             <div class="container">
                 <div class="title__section-subtitle">
@@ -365,6 +410,12 @@
         </p>
     </footer>
 
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
     <!-- scripts  -->
     <script src="./Projects/Portfolio/js/script.js"></script>
     <script src="./Projects/Portfolio/js/slider.js"></script>
@@ -388,7 +439,57 @@
 
             autoHeight: true,
 
-            slidesPerView: 1,
+            slidesPerView: 2,
+            spaceBetween: 10,
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                900: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+
+    </script>
+
+    <script>
+
+        const swiper1 = new Swiper(".swiper1", {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            speed: 1000,
+
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            autoHeight: true,
+
+            slidesPerView: 2,
             spaceBetween: 10,
 
             breakpoints: {
