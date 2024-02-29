@@ -17,11 +17,13 @@
     <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico">
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./Projects/Portfolio/scss/style.css" />
     <link rel="stylesheet" href="./Projects/Portfolio/css/changeTheme.css">
     <!-- <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" /> -->
-    <!-- <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" /> -->
+    <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
 </head>
 
 <style>
@@ -118,15 +120,12 @@
                 </div>
             </div>
 
-
-        </div>
-
-        <div class="arrow-down">
-            <a href="#about-me">
-                <div class="arrow arrow-first"></div>
-                <div class="arrow arrow-second"></div>
-            </a>
-
+            <div class="arrow-down">
+                <a href="#about-me">
+                    <div class="arroww arrow-first"></div>
+                    <div class="arroww arrow-second"></div>
+                </a>
+            </div>
         </div>
 
         <section id="about-me" class="about">
@@ -134,7 +133,6 @@
                 <div class="about__wrapper">
                     <div class="about__photo">
                         <img class="card" id="profile" src="./Projects/Portfolio/img/3.jpg" alt="my profile" />
-                        </li>
                     </div>
                     <div class="about__descr">
                         <h2 class="title about__title">About me</h2>
@@ -278,7 +276,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <a target="_blank" href="https://eddy-hub19.github.io/soyummy/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/SoYummy.png" alt="Soyummy" />
+                                    <img src="./Projects/Portfolio/img/soyummy-black.png" alt="Soyummy" />
                                 </a>
                             </div>
                             <div class="swiper-slide">
@@ -403,6 +401,7 @@
         })(window, document);
     </script>
     <footer class="footer">
+
         <p class="footer__copyright">
             Copyright &copy;
             <script> document.write(new Date().getFullYear()); </script>
@@ -437,57 +436,7 @@
                 el: ".swiper-pagination",
             },
 
-            autoHeight: true,
-
-            slidesPerView: 2,
-            spaceBetween: 10,
-
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                },
-                900: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                },
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        })
-
-
-    </script>
-
-    <script>
-
-        const swiper1 = new Swiper(".swiper1", {
-            // Optional parameters
-            direction: "horizontal",
-            loop: true,
-            speed: 1000,
-
-            // If we need pagination
-            pagination: {
-                el: ".swiper-pagination",
-            },
-
-            autoHeight: true,
+            // autoHeight: true,
 
             slidesPerView: 2,
             spaceBetween: 10,
@@ -522,6 +471,7 @@
         })
 
     </script>
+
 </body>
 
 </html>
