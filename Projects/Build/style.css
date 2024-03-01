@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: tan;
+  width: 100vw;
+  height: 100vh;
+  color: #555;
+  font-family: "Arvo", serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+a,
+a:active {
+  color: white;
+}
+main {
+  position: relative;
+  perspective-origin: center bottom;
+  transform-origin: center bottom 0;
+  
+  /* transform-style: preserve-3d; */
+  /* transform: perspective(1000px) rotateX(45deg); */
+
+  transform: perspective(500vh) rotate3d(1, 0, 0, 45deg);
+  backface-visibility: hidden;
+}
+section {
+  position: absolute;
+  top: -0vh;
+  left: 0;
+  width: 78vw;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid #00000022;
+  box-shadow: -2px -1px 8px #00000088;
+  background-color: papayawhip;
+  background-image: url("https://happy358.github.io/Images/textures/noiseTexture.png");
+  background-size: 400px auto;
+  background-repeat: repeat;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: max(2vw, 10px);
+  transform-origin: 50% 50% 0;
+  backface-visibility: hidden;
+  z-index: 0;
+}
+
+#section1 {
+  top: 20vh;
+  left: -50vw;
+  transform: rotateZ(5deg);
+}
+#section2 {
+  top: 0;
+  left: 60vw;
+  transform: rotateZ(-70deg);
+}
+#section3 {
+  top: -50vh;
+  left: 35vw;
+  transform: rotateZ(70deg);
+}
+#section4 {
+  top: -50vh;
+  left: -10vw;
+  transform: rotateZ(-35deg);
+}
+#section5 {
+  top: 70vh;
+  left: 40vw;
+  transform: rotateZ(15deg);
+}
+#section6 {
+  width: 50vw;
+  top: 50vh;
+  left: 15vw;
+  transform: rotateZ(200deg);
+}
+#book {
+  height: 117vh;
+  left: 12vw;
+  padding: 1rem 1rem 20px;
+  color: #333;
+  text-shadow: -1px -1px 1px cornsilk;
+  box-shadow: -5px 5px 10px #00000078;
+  z-index: 1;
+  transform-origin: center bottom 0;
+  transform: rotateZ(-2deg);
+}
+#book article {
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1;
+}
+#book h1 {
+  font-size: max(5vw, 22px);
+  color: #555;
+  line-height: 1;
+  text-align: center;
+}
+#book p {
+  font-size: max(3vw, 14px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #book p {
+    font-size: max(5vw, 14px);
+  }
+}
+
+section p {
+  margin: 0.5rem 0 0;
+}
+img {
+  pointer-events: none;
+  width: 45%;
+  /* filter: grayscale(100%) sepia(1); */
+}
+.img_L {
+  float: left;
+}
+.img_R {
+  float: right;
+}
+footer {
+  position: fixed;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  color: white;
+  z-index: 1;
+  text-align: right;
+}
