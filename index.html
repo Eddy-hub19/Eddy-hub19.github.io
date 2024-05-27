@@ -132,7 +132,7 @@
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__photo">
-                        <img class="card" id="profile" src="./Projects/Portfolio/img/3.jpg" alt="my profile" />
+                        <img class="card" id="profile" src="./Projects/Portfolio/img/portfolio3.jpg" alt="my profile" />
                     </div>
                     <div class="about__descr">
                         <h2 class="title about__title">About me</h2>
@@ -269,6 +269,11 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
+                                <a target="_blank" href="https://xxllogistics.com.ua/" class="portfolio__item">
+                                    <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="xxllogistics" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
                                 <a target="_blank" href="https://eddy-hub19.github.io/way-to-health/"
                                     class="portfolio__item">
                                     <img src="./Projects/Portfolio/img/way-to-health.png" alt="Soyummy" />
@@ -344,7 +349,7 @@
                 <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <h2 class="title title__section-title">WP Projects</h2>
                 </div>
-                <div class="slider-wrapper">
+                <div class="slider-wrapper" style="display: flex; flex-direction: column;">
                     <div class="swiper-slide">
                         <a target="_blank" href="https://way-to-health.com.ua/" class="portfolio__item">
                             <img src="./Projects/Portfolio/img/way-to-health-wp.png" alt="way-to-health-wp" />
@@ -401,7 +406,6 @@
         })(window, document);
     </script>
     <footer class="footer">
-        <a href="./Projects/Build/index.html">Sakura</a>
         <p class="footer__copyright">
             Copyright &copy;
             <script> document.write(new Date().getFullYear()); </script>
@@ -424,53 +428,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         AOS.init()
-
-        const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            loop: true,
-            speed: 1000,
-
-            // If we need pagination
-            pagination: {
-                el: ".swiper-pagination",
-            },
-
-            // autoHeight: true,
-
-            slidesPerView: 1,
-            spaceBetween: 10,
-
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                },
-                900: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        })
-
     </script>
+
+    <script type="module" src="./Projects/Portfolio/js/slider.js"></script>
+    <script type="module" src="./Projects/Portfolio/js/cursor.js"></script>
 
 </body>
 

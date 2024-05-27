@@ -97,7 +97,7 @@ button {
   text-shadow: 1px 2px 4px black;
   font-size: 30px;
 
-  &__section-title{
+  &__section-title {
     margin-bottom: 20px;
   }
 }
@@ -288,15 +288,17 @@ button {
 .skills {
   padding-top: 150px;
   padding-bottom: 120px;
+
+  &__items {
+    margin-top: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
-.skills__items {
-  margin-top: 60px;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+
 .skills__item {
   width: calc(100% / 3 - 30px);
   padding: 30px 30px 25px 30px;
@@ -305,9 +307,13 @@ button {
   flex-direction: column;
   justify-content: center;
   border: 1px solid #000;
-  transition: border ease 1s;
+  transition: border ease 0.6s;
+  transition: transform ease 0.6s;
+  
   &:hover {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.602);
+    transform: rotate(5deg);
+    background: rgba(74, 72, 72, 0.352);
   }
   h3 {
     margin-top: 20px;
@@ -462,7 +468,7 @@ button {
   cursor: pointer;
 }
 .swiper {
-  width: 800px;
+  width: 1200px;
   height: 400px;
 }
 .swiper-horizontal {
@@ -478,9 +484,8 @@ button {
   }
 }
 
-
 .swiper-slide {
-  display: flex !important; 
+  display: flex !important;
   justify-content: center;
   align-items: center;
 }
@@ -679,3 +684,13 @@ button {
   }
 }
 
+.portfolio__item {
+  transition: 0.4s ease-in;
+}
+
+.portfolio__item:hover {
+  box-shadow: 2px 1px 10px black !important;
+  transition: 0.5s ease-in;
+  transform: scale(1.1);
+  z-index: 3;
+}

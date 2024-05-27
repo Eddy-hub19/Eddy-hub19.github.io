@@ -307,7 +307,6 @@ button {
   padding-top: 150px;
   padding-bottom: 120px;
 }
-
 .skills__items {
   margin-top: 60px;
   padding: 0 10px;
@@ -325,10 +324,13 @@ button {
   flex-direction: column;
   justify-content: center;
   border: 1px solid #000;
-  transition: border ease 1s;
+  transition: border ease 0.6s;
+  transition: transform ease 0.6s;
 }
 .skills__item:hover {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.602);
+  transform: rotate(5deg);
+  background: rgba(74, 72, 72, 0.352);
 }
 .skills__item h3 {
   margin-top: 20px;
@@ -515,7 +517,7 @@ button {
 }
 
 .swiper {
-  width: 800px;
+  width: 1200px;
   height: 400px;
 }
 
@@ -708,6 +710,17 @@ button {
     flex-direction: column;
   }
 }
+.portfolio__item {
+  transition: 0.4s ease-in;
+}
+
+.portfolio__item:hover {
+  box-shadow: 2px 1px 10px black !important;
+  transition: 0.5s ease-in;
+  transform: scale(1.1);
+  z-index: 3;
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
   body {
     background-repeat: repeat;
