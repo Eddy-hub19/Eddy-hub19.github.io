@@ -717,7 +717,6 @@ button {
 .portfolio__item:hover {
   box-shadow: 2px 1px 10px black !important;
   transition: 0.5s ease-in;
-  transform: scale(1.1);
   z-index: 3;
 }
 
@@ -832,8 +831,8 @@ button {
     align-content: space-evenly;
     margin: 0;
     padding: 0;
-    background: rgba(42, 41, 41, 0.8705882353);
-    box-shadow: inset 1px 0px 18px 7px black;
+    background: rgba(42, 41, 41, 0.9254901961);
+    box-shadow: inset 1px 0px 18px 14px black;
   }
   .active {
     display: block;
@@ -890,6 +889,20 @@ button {
   }
   .first-screen-link {
     z-index: 1;
+  }
+  .typing-demo {
+    width: 32ch;
+    animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2.5em;
+  }
+  @keyframes typing {
+    from {
+      width: 200px;
+    }
   }
   .about {
     padding-top: 0;

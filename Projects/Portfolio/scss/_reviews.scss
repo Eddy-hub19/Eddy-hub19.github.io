@@ -136,8 +136,8 @@
     align-content: space-evenly;
     margin: 0;
     padding: 0;
-    background: #2a2929de;
-    box-shadow: inset 1px 0px 18px 7px black;
+    background: #2a2929ec;
+    box-shadow: inset 1px 0px 18px 14px black;
   }
   .active {
     display: block;
@@ -196,6 +196,24 @@
   }
   .first-screen-link {
     z-index: 1;
+  }
+
+  .typing-demo {
+    width: 32ch;
+    animation:
+      typing 2s steps(10),
+      blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2.5em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 200px;
+    }
   }
 
   .about {
