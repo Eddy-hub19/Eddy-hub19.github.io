@@ -1,0 +1,84 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.miror {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+	content: url('./my.jpg');
+  position: absolute;
+  top: -80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.miror-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 700px;
+  background: #aba8a896;
+  font-size: 24px;
+  border-radius: 30px;
+  border: 5px solid rgb(17, 68, 94);
+}
+
+.miror-list li {
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 12px 0;
+	padding: 5px;
+	border: 2px solid whitesmoke;
+	width: 70%;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: transform 10s ease-in;
+}
+
+svg {
+	margin-right: 10px;
+}
+
+.miror-list li:hover{
+	transform: scale(50);
+}
