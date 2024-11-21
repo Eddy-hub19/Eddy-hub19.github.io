@@ -69,7 +69,7 @@ canvas {
 	padding: 5px;
 	border: 2px solid whitesmoke;
 	width: 70%;
-	text-align: center;
+	/* text-align: center; */
 	border-radius: 20px;
 	cursor: pointer;
 	transition: transform 10s ease-in;
