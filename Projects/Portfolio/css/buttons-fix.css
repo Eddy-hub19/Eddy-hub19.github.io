@@ -1,0 +1,115 @@
+/* Ensure all buttons and links are always clickable */
+
+/* Hero buttons - highest priority */
+.hero-cta,
+.hero-cta a,
+.cta-primary,
+.cta-secondary,
+.cta-tertiary,
+.hero-main-content a,
+.hero-main-content button {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    -webkit-tap-highlight-color: rgba(102, 126, 234, 0.3);
+}
+
+/* Content wrapper must be interactive */
+.hero-content-wrapper,
+.hero-main-content {
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 100 !important;
+}
+
+/* Parallax scene must not block clicks */
+.parallax-scene,
+.parallax-layer {
+    pointer-events: none !important;
+}
+
+/* All background elements non-interactive */
+.parallax-bg-element,
+.parallax-circle,
+.parallax-code,
+.parallax-shape,
+.parallax-icon {
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+/* Status badge clickable if it becomes a link */
+.status-badge {
+    pointer-events: auto;
+    z-index: 1000;
+}
+
+/* Hero illustration interactive */
+.hero-illustration {
+    pointer-events: none;
+}
+
+/* Scroll arrow clickable */
+.arrow-down,
+.arrow-down a {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    z-index: 999 !important;
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+    .hero-cta a,
+    .cta-primary,
+    .cta-secondary,
+    .cta-tertiary {
+        min-height: 48px !important;
+        min-width: 120px !important;
+        touch-action: manipulation !important;
+    }
+}
+
+/* Focus states for accessibility */
+.hero-cta a:focus,
+.cta-primary:focus,
+.cta-secondary:focus,
+.cta-tertiary:focus {
+    outline: 3px solid rgba(102, 126, 234, 0.6) !important;
+    outline-offset: 4px !important;
+}
+
+/* Active state feedback */
+.hero-cta a:active {
+    transform: translateY(-1px) scale(0.98) !important;
+}
+
+/* Hover effects preserved */
+.hero-cta a:hover {
+    filter: brightness(1.1);
+}
+
+/* Debug helper - remove in production */
+.debug-clickable {
+    outline: 2px dashed lime;
+}
+
+/* Ensure SVG in buttons doesn't block clicks */
+.hero-cta svg,
+.cta-icon {
+    pointer-events: none !important;
+}
+
+/* Bio links if any */
+.hero-bio a {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+}
+
+/* Location badge */
+.hero-location {
+    pointer-events: none;
+    user-select: none;
+}
+

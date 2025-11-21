@@ -191,6 +191,8 @@
 
   .slider-wrapper {
     width: 90%;
+    display: flex;
+    flex-direction: column;
   }
 
   .first-preview-btn {
@@ -361,8 +363,8 @@
 
   .slider-wrapper {
     width: 80%;
+    display: flex;
     flex-direction: column;
-
     transition: all 2s;
   }
 

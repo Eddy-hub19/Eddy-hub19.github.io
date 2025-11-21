@@ -1,360 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta property="og:locale" content="Ua_UA" />
     <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="My name is Eduardo and i`m Full Stack Developer" />
+    <meta property="og:description" content="My name is Eduardo and I'm Full Stack Developer" />
     <link rel="icon" sizes="512x512" href="./Projects/Portfolio/img/ed/android-chrome-512x512.png" />
     <link rel="icon" sizes="192x192" href="./Projects/Portfolio/img/ed/android-chrome-192x192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./Projects/Portfolio/img/ed/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/ed/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/ed/favicon-16x16.png" />
-    <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico">
+    <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico" />
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./Projects/Portfolio/scss/style.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/changeTheme.css">
-    <!-- <link rel="stylesheet" href="./Projects/Portfolio/css/spinner.css" /> -->
     <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- New Design Styles -->
+    <link rel="stylesheet" href="./Projects/Portfolio/css/loader.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/animated-background.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/3d-effects.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/modern-responsive.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/override-styles.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/hero-enhanced.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/contact-enhanced.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/parallax-hero.css" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/buttons-fix.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Parallax.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  </head>
 
-<style>
+  <body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <div class="loader">
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="loader-text">Loading Portfolio...</div>
+    </div>
 
-</style>
+    <!-- Animated Background -->
+    <div class="animated-background"></div>
 
-<body>
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
     <header class="header">
-        <div class="bar-top">
-            <ul id="bar">
-                <li>
-                    <a href="https://github.com/Eddy-hub19">
-                        <img class="item-img" src="https://img.icons8.com/fluent/48/000000/github.png"
-                            alt="icon-github" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/EEddy23">
-                        <img class="item-img" src="https://img.icons8.com/fluency/48/000000/telegram-app.png"
-                            alt="icon-telegram" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ed_sekan23/">
-                        <img class="item-img" src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-                            alt="icon-instagram" />
-                    </a>
-                </li>
-                <button class="arrow">&darr;</button>
-            </ul>
+      <nav class="header__hamburger">
+        <div class="menu-btn" id="hamburger">
+          <span></span>
+          <span class="long"></span>
+          <span></span>
         </div>
-        <div class="tdnn" onclick=changeTheme()>
-            <div class="moon">
-            </div>
-        </div>
-        <nav class="header__hamburger">
-            <div class="menu-btn" id="hamburger">
-                <span></span>
-                <span class="long"></span>
-                <span></span>
-            </div>
-            <ul class="menu">
-                <ul id="bar">
-                    <li>
-                        <a href="https://github.com/Eddy-hub19">
-                            <img class="item-img" src="https://img.icons8.com/fluent/48/000000/github.png"
-                                alt="icon-github" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/EEddy23">
-                            <img class="item-img" src="https://img.icons8.com/fluency/48/000000/telegram-app.png"
-                                alt="icon-telegram" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ed_sekan23/">
-                            <img class="item-img" src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-                                alt="icon-instagram" />
-                        </a>
-                    </li>
-                    <button class="arrow">&darr;</button>
-                </ul>
-                <li class="menu-item">
-                    <a class="menuLink" href="#about-me">About-me</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menuLink" href="#skills">Skills</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menuLink" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menuLink" href="#connect">Connect</a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="menu">
+          <ul id="bar">
+            <li>
+              <a href="https://github.com/Eddy-hub19">
+                <img class="item-img" src="https://img.icons8.com/fluent/48/000000/github.png" alt="icon-github" />
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/EEddy23">
+                <img
+                  class="item-img"
+                  src="https://img.icons8.com/fluency/48/000000/telegram-app.png"
+                  alt="icon-telegram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ed_sekan23/">
+                <img
+                  class="item-img"
+                  src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+                  alt="icon-instagram"
+                />
+              </a>
+            </li>
+            <button class="arrow">&darr;</button>
+          </ul>
+          <li class="menu-item">
+            <a class="menuLink" href="#about-me">About-me</a>
+          </li>
+          <li class="menu-item">
+            <a class="menuLink" href="#skills">Skills</a>
+          </li>
+          <li class="menu-item">
+            <a class="menuLink" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menuLink" href="#connect">Connect</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
+      <div class="first-screen parallax-hero loading">
+        <!-- Parallax Scene Container -->
+        <div id="parallax-scene" class="parallax-scene">
+          <div class="parallax-layer" data-depth="0.1">
+            <div class="parallax-dots"></div>
+          </div>
 
-        <div class="first-screen">
-            <div class="wrapper">
-                <div class="first-preview">
+          <div class="parallax-layer" data-depth="0.2">
+            <div class="parallax-bg-element parallax-circle parallax-circle-1"></div>
+            <div class="parallax-bg-element parallax-circle parallax-circle-2"></div>
+            <div class="parallax-bg-element parallax-circle parallax-circle-3"></div>
+          </div>
 
-                    <div class="typing-demo">
-                        <h1 class="first-preview-title">I`m Front-end Developer</h1>
-                    </div>
+          <div class="parallax-layer" data-depth="0.3">
+            <div class="parallax-bg-element parallax-code parallax-code-1">const developer = 'Eduard';</div>
+            <div class="parallax-bg-element parallax-code parallax-code-2">function buildAmazing() { }</div>
+            <div class="parallax-bg-element parallax-code parallax-code-3">&lt;React.Component /&gt;</div>
+            <div class="parallax-bg-element parallax-code parallax-code-4">npm run awesome</div>
+          </div>
 
-                    <div class="first-preview-btn">
-                        <a href="#about-me">About me</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#portfolio">Portfolio</a>
-                    </div>
-                </div>
-            </div>
+          <div class="parallax-layer" data-depth="0.4">
+            <div class="parallax-bg-element parallax-shape parallax-square"></div>
+            <div class="parallax-bg-element parallax-triangle"></div>
+          </div>
 
-            <div class="arrow-down">
-                <a href="#about-me">
-                    <div class="arroww arrow-first"></div>
-                    <div class="arroww arrow-second"></div>
-                </a>
-            </div>
+          <div class="parallax-layer" data-depth="0.5">
+            <div class="parallax-bg-element parallax-icon parallax-icon-1">⚡</div>
+            <div class="parallax-bg-element parallax-icon parallax-icon-2">🚀</div>
+            <div class="parallax-bg-element parallax-icon parallax-icon-3">💻</div>
+          </div>
+
+          <div class="parallax-layer" data-depth="0.05">
+            <div class="parallax-gradient-overlay"></div>
+          </div>
         </div>
 
-        <section id="about-me" class="about">
-            <div class="container">
-                <div class="about__wrapper">
-                    <div class="about__photo">
-                        <img class="card" id="profile" src="./Projects/Portfolio/img/portfolio3.jpg" alt="my profile" />
-                    </div>
-                    <div class="about__descr">
-                        <h2 class="title about__title">About me</h2>
+        <div class="hero-content-wrapper">
+          <div class="hero-main-content">
+            <p class="hero-greeting">Hi, I'm 👋</p>
+            <h1 class="hero-name">Eduard Sekan</h1>
+            <p class="hero-title">Front-End Developer & FullStack </p>
 
-                        <ul class="about__text">
-                            <div class="wrap-icon">
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
-                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-                                    autoplay></lottie-player>
-                            </div>
-                            <div class="about__subtitle">
-                                <h3>Hello, I’m Eduard</h3>
-                            </div>
-                            <li style="margin-bottom: 20px;">
-                                <b>I am looking for a Trainee/Junior Front-End position.</b>
-                                I’m familiar with HTML, CSS,JavaScript, and React.
-                            </li>
-                            <li>
-                                I have tech <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/">
-                                    <i style="text-decoration: underline;">lead</i></a> experience.
-                            </li>
-                            <li>
-                                I also took different courses, such as:
+            <p class="hero-bio">
+              <span class="hero-location"> <span class="flag">🇺🇦</span> Based in Ukraine </span>
+              <br />
+              I transform ideas into beautiful, functional web applications
+            </p>
 
-                                'Okten School', 'Hexlet', 'CodeBasic',
-                                'HTML Academy', and 'Internship Elogic Commerce'
-                                I overcome difficulties, find answers and enjoy it,
-                                programming teaches me to think
-                            </li>
-                        </ul>
-                        <div class="about-cv">
-                            <a target="_blank" href="./Projects/Portfolio/files/Sekan Eduard.pdf" class="about-cv__link"
-                                title="cv">
-                                <span class="button-content">
-                                    Download
-                                    CV
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-illustration"></div>
+
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Available for freelance & full-time
             </div>
-        </section>
 
-        <section id="skills" class="skills">
-            <div class="wrapper">
-                <div class="container">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <h2 class="title title__section-title">Skills</h2>
-                    </div>
-                    <div class="title__section-subtitle">What i use</div>
-                    <div class="skills__items">
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                                <lord-icon src="https://cdn.lordicon.com/nholumov.json" trigger="hover"
-                                    colors="outline:#121331,primary:#3a3347,secondary:#d1e3fa"
-                                    style="width:150px;height:150px">
-                                </lord-icon>
-                            </div>
-                            <h3 class="title_fz14">HTML5</h3>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <img width="150" height="150" src="./Projects/Portfolio/img/css3.png" alt="">
-                            </div>
-                            <h3 class="title_fz14">CSS3</h3>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <img width="150" height="150" src="./Projects/Portfolio/img/javascript-logo.png"
-                                    alt="java script" />
-                            </div>
-                            <h3 class="title_fz14">Java Script</h3>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json"
-                                    background="transparent" speed="1" style="width: 150px; height: 150px;" autoplay
-                                    loop></lottie-player>
-                            </div>
-                            <h3 class="title_fz14">React</h3>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-                                <lottie-player
-                                    src="https://lottie.host/1d4a68ce-2d82-428c-a89e-e9396c81390b/a1ZHUCdjLX.json"
-                                    background="transparent" speed="1" style="width: 150px; height: 150px;" loop
-                                    autoplay></lottie-player>
-                            </div>
-                            <h3 class="title_fz14">Node.js</h3>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__item-img">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150"
-                                    viewBox="0 0 48 48">
-                                    <path fill="#5d4037"
-                                        d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z">
-                                    </path>
-                                    <path fill="#4caf50"
-                                        d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z">
-                                    </path>
-                                    <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
-                                    <path fill="#4caf50"
-                                        d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z">
-                                    </path>
-                                    <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="title_fz14">Mongo.db</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-cta">
+              <a href="#portfolio" class="cta-primary">
+                <span class="cta-icon">🚀</span>
+                <span>Explore My Work</span>
+              </a>
+              <a href="#connect" class="cta-secondary">
+                <span class="cta-icon">💬</span>
+                <span>Let's Connect</span>
+              </a>
+              <a href="#about-me" target="_blank" class="cta-tertiary">
+                <span class="cta-icon">📄</span>
+                <span>View Resume</span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <h2 class="title title__section-title">Portfolio</h2>
-                </div>
-                <div class="title__section-subtitle">All my projects</div>
-                <div class="portfolio__wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper" autoplay="true">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://xxllogistics.com.ua/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="xxllogistics" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/Auto-Angel/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/auto-angel.png" alt="xxllogistics" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/way-to-health/"
-                                    class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/way-to-health.png" alt="way-to-health" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/soyummy/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/soyummy-black.png" alt="Soyummy" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="./Projects/Porten/index.html" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/food-store.png" alt="Food-Store" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning star" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/"
-                                    class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/ice-cream.png" alt="ice-cream" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
-                                    class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/web-studio.png" alt="web-studio" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/"
-                                    class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/filmoteka.jpeg" alt="filmoteka" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="./Boss-Logics/dist/index.html" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/boss-logic.png" alt="boss-logic" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="./Projects/DKO/index.html" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/DKO.jpeg" alt="DKO" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a target="_blank" href="https://eddy-hub19.github.io/UpSells" class="portfolio__item">
-                                    <img src="./Projects/Portfolio/img/UpSells.png" alt="UpSells" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div style="color: gray;" class="swiper-button-prev"></div>
-                        <div style="color: gray;" class="swiper-button-next"></div>
-                    </div>
-                </div>
+      <section id="about-me" class="about">
+        <div class="container">
+          <div class="about__wrapper glass-effect" style="padding: 40px; border-radius: 20px; margin: 20px 0">
+            <div class="about__photo">
+              <img class="card" id="profile" src="./Projects/Portfolio/img/portfolio3.jpg" alt="my profile" />
             </div>
-        </section>
+            <div class="about__descr">
+              <h2 class="title about__title">About me</h2>
 
-        <section id="portfolio2" class="portfolio">
+              <ul class="about__text">
+                <div class="wrap-icon">
+                  <lottie-player
+                    src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </div>
+                <li>
+                  I am seeking a Trainee/Junior Front-End Developer position. I have a solid understanding of HTML, CSS,
+                  JavaScript, and React, and I apply these technologies confidently in practice. I completed the
+                  Front-End course at GOIT, which strengthened my knowledge and helped me build a structured approach to
+                  development. I also studied at Okten School, Hexlet, CodeBasic, HTML Academy, and completed the Elogic
+                  Commerce Internship.
+                </li>
+              </ul>
+              <div class="about-cv">
+                <a
+                  target="_blank"
+                  href="./Projects/Portfolio/files/Sekan Eduard.pdf"
+                  class="about-cv__link btn-3d"
+                  title="cv"
+                  style="text-decoration: none; display: inline-block"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="wrapper">
+          <div class="container">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <h2 class="title title__section-title">Skills</h2>
+            </div>
+            <div class="title__section-subtitle">What i use</div>
+            <div class="skills__items">
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/nholumov.json"
+                    trigger="hover"
+                    colors="outline:#121331,primary:#3a3347,secondary:#d1e3fa"
+                    style="width: 150px; height: 150px"
+                  >
+                  </lord-icon>
+                </div>
+                <h3 class="title_fz14">HTML5</h3>
+              </div>
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <img width="150" height="150" src="./Projects/Portfolio/img/css3.png" alt="" />
+                </div>
+                <h3 class="title_fz14">CSS3</h3>
+              </div>
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <img width="150" height="150" src="./Projects/Portfolio/img/javascript-logo.png" alt="java script" />
+                </div>
+                <h3 class="title_fz14">Java Script</h3>
+              </div>
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <lottie-player
+                    src="https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 150px; height: 150px"
+                    autoplay
+                    loop
+                  ></lottie-player>
+                </div>
+                <h3 class="title_fz14">React</h3>
+              </div>
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <lottie-player
+                    src="https://lottie.host/1d4a68ce-2d82-428c-a89e-e9396c81390b/a1ZHUCdjLX.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 150px; height: 150px"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </div>
+                <h3 class="title_fz14">Node.js</h3>
+              </div>
+              <div
+                class="skills__item tilt-card depth-shadow"
+                style="
+                  padding: 30px;
+                  border-radius: 20px;
+                  background: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                "
+              >
+                <div class="skills__item-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0 0 48 48">
+                    <path
+                      fill="#5d4037"
+                      d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"
+                    ></path>
+                    <path
+                      fill="#4caf50"
+                      d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z"
+                    ></path>
+                    <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
+                    <path
+                      fill="#4caf50"
+                      d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z"
+                    ></path>
+                    <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+                  </svg>
+                </div>
+                <h3 class="title_fz14">Mongo.db</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h2 class="title title__section-title">Portfolio</h2>
+          </div>
+          <div class="title__section-subtitle">All my projects</div>
+          <div class="portfolio__wrapper">
+            <!-- Slider main container -->
+            <div class="swiper" autoplay="true">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://future-for-kids.vercel.app/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/future-for-kids.png"
+                        alt="Podillya Majster"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://podillya-majster.km.ua/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/podillya-majster.png"
+                        alt="Podillya Majster"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://www.terytoriiadobra.com.ua/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/terytoriiadobra.png"
+                        alt="Terytoriia Dobra"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://xxllogistics.com.ua/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/xxllogistics.jpeg"
+                        alt="XXL Logistics"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/Auto-Angel/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/auto-angel.png"
+                        alt="Auto Angel"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/way-to-health/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/way-to-health.png"
+                        alt="way-to-health"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/soyummy/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/soyummy-black.png"
+                        alt="Soyummy"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="./Projects/Porten/index.html"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/porten.jpeg"
+                        alt="Porten"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="./Projects/Food-Store/index.html"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/food-store.png"
+                        alt="Food-Store"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://rankova-zirka.km.ua/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/morning-star.png"
+                        alt="Morning star"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/ice-cream/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/ice-cream.png"
+                        alt="ice-cream"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/web-studio.png"
+                        alt="web-studio"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/filmoteka/"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/filmoteka.jpeg"
+                        alt="filmoteka"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="./Boss-Logics/dist/index.html"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/boss-logic.png"
+                        alt="boss-logic"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="./Projects/DKO/index.html"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img src="./Projects/Portfolio/img/DKO.jpeg" alt="DKO" style="display: block; width: 100%" />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    target="_blank"
+                    href="https://eddy-hub19.github.io/UpSells"
+                    class="portfolio__item card-3d depth-shadow"
+                    style="border-radius: 15px; overflow: hidden; display: block"
+                  >
+                    <div class="card-3d-content">
+                      <img
+                        src="./Projects/Portfolio/img/UpSells.png"
+                        alt="UpSells"
+                        style="display: block; width: 100%"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="portfolio2" class="portfolio">
             <div class="container">
                 <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <h2 class="title title__section-title">WP Projects</h2>
                 </div>
-                <div class="slider-wrapper" style="display: flex; flex-direction: column;">
+                <div class="slider-wrapper">
                     <div class="swiper-slide">
                         <a target="_blank" href="https://www.xxllogistics.com.ua/" class="portfolio__item">
                             <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="xxllogistics" />
@@ -377,75 +680,117 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="connect" class="connect">
-            <div class="container">
+      <section id="connect" class="connect connect-enhanced">
+        <div class="container">
+          <!-- Header -->
+          <div class="connect-header" data-aos="fade-up">
+            <h2 class="connect-title-main">Let's Turn Your Vision Into Reality</h2>
+            <p class="connect-subtitle">I'm always excited to discuss new projects and opportunities</p>
+          </div>
 
-                <div class="title__section-subtitle">
-                    <h2 class="title__section-title">IN PROGRESS..</h2>
-                    <p style="text-align: center">Connect with me</p>
-                    <div class="social">
-                        <a target="_blank" href="https://www.instagram.com/ed_sekan23/">
-                            <svg class="social-icon" width="30" height="30">
-                                <use href="./Projects/Portfolio/img/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                        <a target="_blank" href="https://t.me/EEddy23">
-                            <svg class="social-icon" width="30" height="30">
-                                <use href="./Projects/Portfolio/img/sprite.svg#icon-telegram"></use>
-                            </svg>
-                        </a>
-                        <a target="_blank" href="https://github.com/Eddy-hub19">
-                            <svg class="social-icon" width="30" height="30">
-                                <use href="./Projects/Portfolio/img/sprite.svg#icon-github"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="telegram-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="telegram-card-content">
+              <div class="telegram-icon-large">📱</div>
+              <h3 class="telegram-card-title">Prefer Telegram?</h3>
+              <p class="telegram-card-text">Message me directly for quick and easy communication</p>
+
+              <ul class="telegram-features">
+                <li>Project inquiries & collaboration</li>
+                <li>Technical questions & consultations</li>
+                <li>Quick responses & availability</li>
+              </ul>
+
+              <div class="telegram-username">
+                <span>@</span>
+                <span>EEddy24</span>
+              </div>
+
+              <a href="https://t.me/EEddy24" target="_blank" class="telegram-cta-button">
+                <span>Chat on Telegram</span>
+                <span class="arrow">→</span>
+              </a>
+
+              <div class="response-badge">
+                <span class="lightning-icon">⚡</span>
+                <span>Usually responds within 2 hours</span>
+              </div>
             </div>
-        </section>
+          </div>
 
+          <!-- Social Links -->
+          <div class="social-links-section" data-aos="fade-up" data-aos-delay="400">
+            <p class="social-links-title">Or find me on</p>
+            <div class="social-links-enhanced">
+              <a href="https://www.instagram.com/ed_sekan23/" target="_blank" class="social-link-card">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                  <circle cx="18" cy="6" r="1" fill="currentColor" />
+                </svg>
+                <span class="social-link-name">Instagram</span>
+              </a>
+
+              <a href="https://github.com/Eddy-hub19" target="_blank" class="social-link-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                  />
+                </svg>
+                <span class="social-link-name">GitHub</span>
+              </a>
+
+              <a href="https://t.me/EEddy23" target="_blank" class="social-link-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
+                  />
+                </svg>
+                <span class="social-link-name">Telegram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- Begin of Chaport Live Chat code -->
-    <script type="text/javascript">
-        (function (w, d, v3) {
-            w.chaportConfig = {
-                appId: '63f788a49c0cb84c4733ba59'
-            };
-
-            if (w.chaport) return; v3 = w.chaport = {}; v3._q = []; v3._l = {}; v3.q = function () { v3._q.push(arguments) }; v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn) }; var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://app.chaport.com/javascripts/insert.js'; var ss = d.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss)
-        })(window, document);
-    </script>
 
     <footer class="footer">
-        <p class="footer__copyright">
-            Copyright &copy;
-            <script> document.write(new Date().getFullYear()); </script>
-            Terms & Privacy
-        </p>
+      <p class="footer__copyright">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        Terms & Privacy
+      </p>
     </footer>
 
     <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
     </div>
 
     <!-- scripts  -->
-    <script src="./Projects/Portfolio/js/script.js"></script>
-    <script src="./Projects/Portfolio/js/slider.js"></script>
-    <script src="./Projects/Portfolio/js/onload.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        AOS.init()
-    </script>
-
+    <script src="./Projects/Portfolio/js/script.js"></script>
+    <script src="./Projects/Portfolio/js/onload.js"></script>
     <script type="module" src="./Projects/Portfolio/js/slider.js"></script>
     <script type="module" src="./Projects/Portfolio/js/cursor.js"></script>
-
-</body>
-
+    <!-- New Design Scripts -->
+    <script src="./Projects/Portfolio/js/loader.js"></script>
+    <script src="./Projects/Portfolio/js/3d-parallax.js"></script>
+    <script src="./Projects/Portfolio/js/performance-boost.js"></script>
+    <script src="./Projects/Portfolio/js/developer-svg.js"></script>
+    <script src="./Projects/Portfolio/js/parallax-init.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: "ease-out-cubic",
+      })
+    </script>
+  </body>
 </html>

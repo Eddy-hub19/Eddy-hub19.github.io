@@ -1,0 +1,322 @@
+/* Parallax Hero Section - Clean & Interactive */
+
+/* Remove old 3D effects */
+.hero-3d {
+  perspective: none !important;
+  transform-style: flat !important;
+}
+
+.hero-3d-layer {
+  position: static !important;
+  transform: none !important;
+}
+
+/* New Parallax Container */
+.parallax-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.parallax-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Important: allows clicking through to content */
+}
+
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content layer - must be clickable */
+.hero-content-wrapper {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto; /* Enable clicking */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Parallax Background Elements */
+.parallax-bg-element {
+  position: absolute;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Animated Shapes */
+.parallax-circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+  filter: blur(40px);
+}
+
+.parallax-circle-1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 10%;
+}
+
+.parallax-circle-2 {
+  width: 400px;
+  height: 400px;
+  top: 60%;
+  right: 10%;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.3), rgba(239, 68, 68, 0.3));
+}
+
+.parallax-circle-3 {
+  width: 250px;
+  height: 250px;
+  bottom: 20%;
+  left: 15%;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(59, 130, 246, 0.3));
+}
+
+/* Code Snippets floating */
+.parallax-code {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.parallax-code-1 {
+  top: 15%;
+  left: 5%;
+}
+
+.parallax-code-2 {
+  top: 40%;
+  right: 8%;
+}
+
+.parallax-code-3 {
+  bottom: 25%;
+  left: 8%;
+}
+
+.parallax-code-4 {
+  top: 70%;
+  right: 15%;
+}
+
+/* Geometric shapes */
+.parallax-shape {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.parallax-square {
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  top: 25%;
+  right: 20%;
+}
+
+.parallax-triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid rgba(102, 126, 234, 0.3);
+  bottom: 30%;
+  right: 25%;
+  filter: blur(2px);
+}
+
+/* Tech Icons/Symbols */
+.parallax-icon {
+  font-size: 40px;
+  opacity: 0.3;
+}
+
+.parallax-icon-1 {
+  top: 20%;
+  right: 12%;
+}
+
+.parallax-icon-2 {
+  bottom: 15%;
+  left: 12%;
+}
+
+.parallax-icon-3 {
+  top: 65%;
+  left: 20%;
+}
+
+/* Hero Content Styles */
+.hero-main-content {
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure all interactive elements are clickable */
+.hero-main-content * {
+  pointer-events: auto;
+}
+
+.hero-main-content a,
+.hero-main-content button {
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+/* Enhanced button hover */
+.hero-cta a {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.hero-cta a:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+/* Parallax intensity layers */
+[data-depth="0.1"] {
+  transform: translateZ(0);
+}
+[data-depth="0.2"] {
+  transform: translateZ(0);
+}
+[data-depth="0.3"] {
+  transform: translateZ(0);
+}
+[data-depth="0.4"] {
+  transform: translateZ(0);
+}
+[data-depth="0.5"] {
+  transform: translateZ(0);
+}
+
+/* Smooth transitions */
+.parallax-layer {
+  transition: transform 0.1s ease-out;
+}
+
+/* Grid dots background */
+.parallax-dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.3;
+}
+
+/* Gradient overlay */
+.parallax-gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .parallax-circle-1,
+  .parallax-circle-2,
+  .parallax-circle-3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .parallax-code,
+  .parallax-icon,
+  .parallax-square,
+  .parallax-triangle {
+    display: none; /* Hide on mobile for performance */
+  }
+
+  .parallax-scene {
+    transform: none !important; /* Disable parallax on mobile */
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .parallax-circle-1,
+  .parallax-circle-2,
+  .parallax-circle-3 {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Disable parallax on touch devices if needed */
+@media (hover: none) and (pointer: coarse) {
+  .parallax-scene {
+    transform: none !important;
+  }
+
+  .parallax-layer {
+    transform: none !important;
+  }
+}
+
+/* Loading state */
+.parallax-hero.loading {
+  opacity: 0;
+}
+
+.parallax-hero.loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Accessibility - respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-scene,
+  .parallax-layer {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .parallax-bg-element {
+    animation: none !important;
+  }
+}
+
+.cursor-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+}

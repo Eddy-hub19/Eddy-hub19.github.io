@@ -1,0 +1,210 @@
+/* Modern Responsive Improvements */
+
+/* Enhanced mobile styles */
+@media (max-width: 768px) {
+    .hero-3d {
+        height: 100vh;
+        min-height: 600px;
+    }
+    
+    .first-preview-title {
+        font-size: 1.8rem !important;
+        padding: 0 20px;
+    }
+    
+    .first-preview-btn {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    
+    .btn-3d {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    
+    .glass-effect {
+        padding: 20px !important;
+        margin: 10px !important;
+    }
+    
+    .skills__item {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 20px auto !important;
+    }
+    
+    .about__photo img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .floating-shapes .shape {
+        display: none;
+    }
+    
+    .hero-3d-layer-3 {
+        display: none;
+    }
+    
+    .loader-text {
+        font-size: 18px;
+    }
+    
+    .card-3d:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .first-preview-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .btn-3d {
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+    
+    .skills__item {
+        width: calc(50% - 20px) !important;
+        margin: 15px 10px !important;
+    }
+    
+    .glass-effect {
+        padding: 30px !important;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .first-preview-title {
+        font-size: 4rem !important;
+    }
+    
+    .skills__items {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Smooth scrolling for all */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better link transitions */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Enhanced portfolio hover on desktop */
+@media (min-width: 1025px) {
+    .portfolio__item.card-3d:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .tilt-card:hover {
+        transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-5px);
+    }
+}
+
+/* Accessibility improvements */
+.btn-3d:focus,
+.portfolio__item:focus,
+.tilt-card:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 4px;
+}
+
+/* Better text readability */
+.title,
+h1, h2, h3 {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Loading performance */
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .animated-background {
+        animation: none !important;
+    }
+    
+    .float-3d {
+        animation: none !important;
+    }
+    
+    .floating-shapes .shape {
+        animation: none !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .glass-effect {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Print styles */
+@media print {
+    .loader-wrapper,
+    .animated-background,
+    .floating-shapes,
+    .hero-3d-layer-3 {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .btn-3d {
+        border: 2px solid currentColor;
+    }
+    
+    .glass-effect {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .card-3d:hover,
+    .tilt-card:hover {
+        transform: none;
+    }
+    
+    .btn-3d:hover {
+        transform: translateY(-2px);
+    }
+}
+

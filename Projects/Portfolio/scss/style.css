@@ -1,8 +1,5 @@
 @charset "UTF-8";
-/* ABOUT  */
-/* SKILLS  */
-/* PORTFOLIO  */
-/* FOOTER */
+
 * {
   box-sizing: border-box;
 }
@@ -19,12 +16,19 @@
 
 body {
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  background: linear-gradient(315deg, rgb(35, 30, 54) 3%, rgba(57, 84, 110, 0.609) 38%, rgb(71, 74, 75) 68%, rgb(142, 108, 108) 98%);
+  background: linear-gradient(
+    315deg,
+    rgb(35, 30, 54) 3%,
+    rgba(57, 84, 110, 0.609) 38%,
+    rgb(71, 74, 75) 68%,
+    rgb(142, 108, 108) 98%
+  );
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
@@ -135,33 +139,6 @@ button {
   outline: none;
 }
 
-.bar-top {
-  position: relative;
-}
-
-#bar {
-  top: -11em;
-  left: 10%;
-  padding: 0.5em;
-  margin: 0;
-  position: absolute;
-  width: 9em;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  transition: top 1.5s ease-out 0.5s, box-shadow 1.3s ease-in-out 0.3s;
-  border-radius: 40px;
-  cursor: pointer;
-}
-#bar:hover {
-  top: 20px;
-  box-shadow: 0px 8px 16px 0px black;
-  cursor: pointer;
-  background: rgb(202, 200, 200);
-}
-#bar:hover .arrow {
-  color: #fff;
-}
-
 .hide {
   display: none;
   opacity: 0;
@@ -235,7 +212,7 @@ button {
   border-width: 2px;
   border-style: outset;
   -o-border-image: initial;
-     border-image: initial;
+  border-image: initial;
   border-radius: 15px;
   transition: all 1.5s ease;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -371,11 +348,20 @@ button {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .portfolio__item p {
   position: sticky;
   z-index: 99;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: gray;
+}
+
+.connect-text {
+  text-align: center;
 }
 
 .footer-form {
@@ -537,13 +523,7 @@ button {
 
 .about-cv {
   position: relative;
-  overflow: hidden;
-  height: 3rem;
-  width: 210px;
-  padding: 13px 2rem;
   border-radius: 1.5rem;
-  background: #23212a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #fff;
   margin: 30px auto;
   text-align: center;
@@ -570,58 +550,6 @@ button {
   z-index: 1;
 }
 
-.arroww {
-  opacity: 0;
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform-origin: 50% 50%;
-  transform: translate3d(-50%, -50%, 0);
-  cursor: pointer;
-}
-
-.arrow-first {
-  animation: arrow-movement 4s ease-in-out infinite;
-}
-
-.arrow-second {
-  animation: arrow-movement 4s 1s ease-in-out infinite;
-}
-
-.arroww:before,
-.arroww:after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-}
-
-.arroww:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
-}
-
-.arroww:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
-}
-
-@keyframes arrow-movement {
-  0% {
-    opacity: 0;
-    top: 80%;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -676,7 +604,7 @@ button {
     transform: translateX(1);
   }
 }
-.typing-demo {
+/* .typing-demo {
   width: 36ch;
   animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -695,7 +623,7 @@ button {
   50% {
     border-color: transparent;
   }
-}
+} */
 .slider-wrapper {
   display: flex;
   justify-content: center;
@@ -918,7 +846,7 @@ button {
     grid-template-rows: minmax(5px, auto) minmax(5px, auto);
     grid-auto-rows: minmax(85px, auto);
     -moz-column-gap: 70px;
-         column-gap: 70px;
+    column-gap: 70px;
     row-gap: 40px;
   }
   .about__descr {
@@ -1052,4 +980,4 @@ button {
     position: absolute;
     right: 40%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

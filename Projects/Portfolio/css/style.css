@@ -523,8 +523,6 @@ button {
 
 .about-cv {
   position: relative;
-  overflow: hidden;
-  height: 3rem;
   padding: 0 2rem;
   border-radius: 1.5rem;
   background: #3d3a4e;
@@ -554,4 +552,3 @@ button {
   background: linear-gradient(82.3deg, rgb(88, 88, 89) 10.8%, rgb(57, 57, 59) 94.3%);
   transition: all 0.475s;
 }
-

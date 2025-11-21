@@ -336,10 +336,6 @@
   .portfolio__wrapper {
     width: calc(100% / 1);
   }
-  .changeTheme {
-    position: absolute;
-    left: 50%;
-  }
 }
 
 @include laptop {
@@ -364,9 +360,5 @@
   }
   .first-screen-link {
     top: 60vh;
-  }
-  .changeTheme {
-    position: absolute;
-    right: 40%;
   }
 }
