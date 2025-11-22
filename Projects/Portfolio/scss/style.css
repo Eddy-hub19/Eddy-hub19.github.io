@@ -30,6 +30,28 @@ body {
   transition: background-image 2s ease;
 }
 
+.neon-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  mix-blend-mode: screen;
+  background: radial-gradient(circle, #00f7ff 0%, #00e1ff 40%, rgba(0, 255, 255, 0) 70%);
+  filter: blur(3px);
+  transition: opacity 0.3s ease;
+}
+
+.parallax-card {
+  display: inline-block;
+  will-change: transform;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -224,6 +246,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
 }
 
 .card {
@@ -246,8 +269,10 @@ button {
 }
 
 .about__descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 6px;
-  margin-left: 3%;
 }
 
 .about__title {
@@ -264,6 +289,9 @@ button {
   font-size: 21px;
   line-height: 1.6;
   width: 550px;
+}
+.about__text li {
+  font-size: 27px;
 }
 
 .about-cv__link {
