@@ -44,10 +44,12 @@
   .container {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 20px;
   }
   .wrapper {
     width: 100%;
     overflow: hidden;
+    padding: 0 20px;
   }
   #profile {
     width: calc(200% - 10%);
@@ -57,93 +59,7 @@
     left: 0%;
     width: 5em;
   }
-  .header__hamburger {
-    display: block;
-    position: relative;
-    top: 0%;
-    right: 0;
-    padding: 0;
-    z-index: 2;
-    cursor: pointer;
-  }
-  .hamburger {
-    position: absolute;
-    top: 50px;
-    right: 22px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .menu-btn {
-    position: fixed;
-    width: 20px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-    z-index: 5;
-    span {
-      width: 30px;
-      height: 3px;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      background-color: #ffffff;
-      &:nth-of-type(1) {
-        top: calc(40% - 5px);
-      }
-      &:nth-of-type(2) {
-        top: calc(40% - 15px);
-      }
-      &:nth-of-type(3) {
-        top: calc(40% + 5px);
-      }
-    }
-    &::after {
-      margin-left: 10px;
-      border: none;
-    }
-  }
-  .menu {
-    display: none;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .menu-btn.active {
-    span {
-      &:nth-of-type(1) {
-        top: calc(20% - 5px);
-        transform: rotate(229deg);
-      }
-      &:nth-of-type(2) {
-        transform: rotate(128deg);
-      }
-      &:nth-of-type(3) {
-        transform: rotate(240deg);
-        visibility: hidden;
-      }
-    }
-  }
-  .menu.active {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background: black;
-    display: grid;
-    justify-items: center;
-    align-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    background: #2a2929ec;
-    box-shadow: inset 1px 0px 18px 14px black;
-  }
-  .active {
-    display: block;
-    width: 40px;
-    height: 50px;
-  }
+  // Old hamburger styles removed - now using _menu.scss
   .menuLink {
     font-size: 22px;
     background: none;
@@ -172,9 +88,7 @@
   .bar-top {
     display: none;
   }
-  header {
-    height: 0;
-  }
+  // header styles removed - now managed by _menu.scss
   .first-screen {
     position: relative;
   }

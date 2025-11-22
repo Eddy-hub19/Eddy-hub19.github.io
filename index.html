@@ -24,21 +24,8 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./Projects/Portfolio/scss/style.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/media.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- New Design Styles -->
-    <link rel="stylesheet" href="./Projects/Portfolio/css/loader.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/animated-background.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/3d-effects.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/modern-responsive.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/override-styles.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/hero-enhanced.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/contact-enhanced.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/parallax-hero.css" />
-    <link rel="stylesheet" href="./Projects/Portfolio/css/buttons-fix.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Parallax.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </head>
 
   <body>
@@ -80,120 +67,111 @@
       <nav class="header__hamburger">
         <div class="menu-btn" id="hamburger">
           <span></span>
-          <span class="long"></span>
+          <span></span>
           <span></span>
         </div>
         <ul class="menu">
-          <ul id="bar">
-            <li>
-              <a href="https://github.com/Eddy-hub19">
-                <img class="item-img" src="https://img.icons8.com/fluent/48/000000/github.png" alt="icon-github" />
-              </a>
-            </li>
-            <li>
-              <a href="https://t.me/EEddy23">
-                <img
-                  class="item-img"
-                  src="https://img.icons8.com/fluency/48/000000/telegram-app.png"
-                  alt="icon-telegram"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/ed_sekan23/">
-                <img
-                  class="item-img"
-                  src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-                  alt="icon-instagram"
-                />
-              </a>
-            </li>
-            <button class="arrow">&darr;</button>
-          </ul>
-          <li class="menu-item">
-            <a class="menuLink" href="#about-me">About-me</a>
+          <li class="menu-item menu-item-close">
+            <span></span>
+            <span></span>
           </li>
           <li class="menu-item">
-            <a class="menuLink" href="#skills">Skills</a>
+            <a class="menu-link" href="#about-me">
+              <span class="menu-link-text">About Me</span>
+              <span class="menu-link-icon">👤</span>
+            </a>
           </li>
           <li class="menu-item">
-            <a class="menuLink" href="#portfolio">Portfolio</a>
+            <a class="menu-link" href="#skills">
+              <span class="menu-link-text">Skills</span>
+              <span class="menu-link-icon">💼</span>
+            </a>
           </li>
           <li class="menu-item">
-            <a class="menuLink" href="#connect">Connect</a>
+            <a class="menu-link" href="#portfolio">
+              <span class="menu-link-text">Portfolio</span>
+              <span class="menu-link-icon">🚀</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#connect">
+              <span class="menu-link-text">Connect</span>
+              <span class="menu-link-icon">💬</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item-social">
+            <div class="menu-social-links">
+              <a href="https://github.com/Eddy-hub19" target="_blank" class="menu-social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                  />
+                </svg>
+              </a>
+              <a href="https://t.me/EEddy23" target="_blank" class="menu-social-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/ed_sekan23/"
+                target="_blank"
+                class="menu-social-link"
+                aria-label="Instagram"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
           </li>
         </ul>
+        <div class="menu-overlay"></div>
       </nav>
     </header>
     <main class="main">
-      <div class="first-screen parallax-hero loading">
-        <!-- Parallax Scene Container -->
-        <div id="parallax-scene" class="parallax-scene">
-          <div class="parallax-layer" data-depth="0.1">
-            <div class="parallax-dots"></div>
-          </div>
-
-          <div class="parallax-layer" data-depth="0.2">
-            <div class="parallax-bg-element parallax-circle parallax-circle-1"></div>
-            <div class="parallax-bg-element parallax-circle parallax-circle-2"></div>
-            <div class="parallax-bg-element parallax-circle parallax-circle-3"></div>
-          </div>
-
-          <div class="parallax-layer" data-depth="0.3">
-            <div class="parallax-bg-element parallax-code parallax-code-1">const developer = 'Eduard';</div>
-            <div class="parallax-bg-element parallax-code parallax-code-2">function buildAmazing() { }</div>
-            <div class="parallax-bg-element parallax-code parallax-code-3">&lt;React.Component /&gt;</div>
-            <div class="parallax-bg-element parallax-code parallax-code-4">npm run awesome</div>
-          </div>
-
-          <div class="parallax-layer" data-depth="0.4">
-            <div class="parallax-bg-element parallax-shape parallax-square"></div>
-            <div class="parallax-bg-element parallax-triangle"></div>
-          </div>
-
-          <div class="parallax-layer" data-depth="0.5">
-            <div class="parallax-bg-element parallax-icon parallax-icon-1">⚡</div>
-            <div class="parallax-bg-element parallax-icon parallax-icon-2">🚀</div>
-            <div class="parallax-bg-element parallax-icon parallax-icon-3">💻</div>
-          </div>
-
-          <div class="parallax-layer" data-depth="0.05">
-            <div class="parallax-gradient-overlay"></div>
-          </div>
-        </div>
-
+      <div class="first-screen">
         <div class="hero-content-wrapper">
           <div class="hero-main-content">
-            <p class="hero-greeting">Hi, I'm 👋</p>
-            <h1 class="hero-name">Eduard Sekan</h1>
-            <p class="hero-title">Front-End Developer & FullStack </p>
+            <div class="hero-left">
+              <p class="hero-greeting">Hi, I'm 👋</p>
+              <h1 class="hero-name">Eduard Sekan</h1>
+              <p class="hero-title">Front-End Developer & FullStack</p>
 
-            <p class="hero-bio">
-              <span class="hero-location"> <span class="flag">🇺🇦</span> Based in Ukraine </span>
-              <br />
-              I transform ideas into beautiful, functional web applications
-            </p>
+              <p class="hero-bio">
+                <span class="hero-location"> <span class="flag">🇺🇦</span> Based in Ukraine </span>
+                <br />
+                I transform ideas into beautiful, functional web applications
+              </p>
 
-            <div class="hero-illustration"></div>
+              <div class="status-badge">
+                <span class="status-dot"></span>
+                Available for freelance & full-time
+              </div>
 
-            <div class="status-badge">
-              <span class="status-dot"></span>
-              Available for freelance & full-time
+              <div class="hero-cta">
+                <a href="#portfolio" class="cta-primary">
+                  <span class="cta-icon">🚀</span>
+                  <span>Explore My Work</span>
+                </a>
+                <a href="#connect" class="cta-secondary">
+                  <span class="cta-icon">💬</span>
+                  <span>Let's Connect</span>
+                </a>
+                <a href="#about-me" target="_blank" class="cta-tertiary">
+                  <span class="cta-icon">📄</span>
+                  <span>View Resume</span>
+                </a>
+              </div>
             </div>
-
-            <div class="hero-cta">
-              <a href="#portfolio" class="cta-primary">
-                <span class="cta-icon">🚀</span>
-                <span>Explore My Work</span>
-              </a>
-              <a href="#connect" class="cta-secondary">
-                <span class="cta-icon">💬</span>
-                <span>Let's Connect</span>
-              </a>
-              <a href="#about-me" target="_blank" class="cta-tertiary">
-                <span class="cta-icon">📄</span>
-                <span>View Resume</span>
-              </a>
+            <div class="hero-right">
+              <div class="hero-photo-wrapper">
+                <img src="./Projects/Portfolio/img/icon-myportfolio.svg" alt="Eduard Sekan" class="hero-photo" />
+              </div>
             </div>
           </div>
         </div>
@@ -376,277 +354,197 @@
         </div>
       </section>
 
+      <!-- Projects -->
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2 class="title title__section-title">Portfolio</h2>
           </div>
           <div class="title__section-subtitle">All my projects</div>
-          <div class="portfolio__wrapper">
-            <!-- Slider main container -->
-            <div class="swiper" autoplay="true">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://future-for-kids.vercel.app/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/future-for-kids.png"
-                        alt="Podillya Majster"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
+          <div class="portfolio__wrapper portfolio-grid">
+            <div class="portfolio-card">
+              <a target="_blank" href="https://future-for-kids.vercel.app/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/future-for-kids.png" alt="Future for Kids" />
                 </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://podillya-majster.km.ua/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/podillya-majster.png"
-                        alt="Podillya Majster"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">Next.js, React, TypeScript</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--nextjs">Next.js</span>
                 </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://www.terytoriiadobra.com.ua/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/terytoriiadobra.png"
-                        alt="Terytoriia Dobra"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://xxllogistics.com.ua/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/xxllogistics.jpeg"
-                        alt="XXL Logistics"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/Auto-Angel/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/auto-angel.png"
-                        alt="Auto Angel"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/way-to-health/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/way-to-health.png"
-                        alt="way-to-health"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/soyummy/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/soyummy-black.png"
-                        alt="Soyummy"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="./Projects/Porten/index.html"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/porten.jpeg"
-                        alt="Porten"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="./Projects/Food-Store/index.html"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/food-store.png"
-                        alt="Food-Store"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://rankova-zirka.km.ua/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/morning-star.png"
-                        alt="Morning star"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/ice-cream/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/ice-cream.png"
-                        alt="ice-cream"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/web-studio.png"
-                        alt="web-studio"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/filmoteka/"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/filmoteka.jpeg"
-                        alt="filmoteka"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="./Boss-Logics/dist/index.html"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/boss-logic.png"
-                        alt="boss-logic"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="./Projects/DKO/index.html"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img src="./Projects/Portfolio/img/DKO.jpeg" alt="DKO" style="display: block; width: 100%" />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a
-                    target="_blank"
-                    href="https://eddy-hub19.github.io/UpSells"
-                    class="portfolio__item card-3d depth-shadow"
-                    style="border-radius: 15px; overflow: hidden; display: block"
-                  >
-                    <div class="card-3d-content">
-                      <img
-                        src="./Projects/Portfolio/img/UpSells.png"
-                        alt="UpSells"
-                        style="display: block; width: 100%"
-                      />
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+              </a>
+            </div>
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+            <div class="portfolio-card">
+              <a target="_blank" href="https://podillya-majster.km.ua/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/podillya-majster.png" alt="Podillya Majster" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--wp">WordPress</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://www.terytoriiadobra.com.ua/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/terytoriiadobra.png" alt="Terytoriia Dobra" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">WordPress, PHP, CSS</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--wp">WordPress</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://xxllogistics.com.ua/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="XXL Logistics" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">WordPress, PHP, JavaScript</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--wp">WordPress</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/Auto-Angel/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/auto-angel.png" alt="Auto Angel" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/way-to-health/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/way-to-health.png" alt="Way to Health" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/soyummy/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/soyummy-black.png" alt="Soyummy" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">React, JavaScript, CSS</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="./Projects/Porten/index.html" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/food-store.png" alt="Food Store" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning Star" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">WordPress, PHP, CSS</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--wp">WordPress</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/ice-cream.png" alt="Ice Cream" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a
+                target="_blank"
+                href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
+                class="portfolio-card__link"
+              >
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/web-studio.png" alt="Web Studio" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/filmoteka.jpeg" alt="Filmoteka" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">JavaScript, HTML, CSS</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="./Boss-Logics/dist/index.html" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/boss-logic.png" alt="Boss Logic" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="./Projects/DKO/index.html" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/DKO.jpeg" alt="DKO" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="https://eddy-hub19.github.io/UpSells" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/UpSells.jpeg" alt="UpSells" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">React, JavaScript, CSS</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -723,7 +621,7 @@
           <div class="social-links-section" data-aos="fade-up" data-aos-delay="400">
             <p class="social-links-title">Or find me on</p>
             <div class="social-links-enhanced">
-              <a href="https://www.instagram.com/ed_sekan23/" target="_blank" class="social-link-card">
+              <a href="https://www.instagram.com/ed_sekan24/" target="_blank" class="social-link-card">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
                   <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
@@ -741,7 +639,7 @@
                 <span class="social-link-name">GitHub</span>
               </a>
 
-              <a href="https://t.me/EEddy23" target="_blank" class="social-link-card">
+              <a href="https://t.me/EEddy24" target="_blank" class="social-link-card">
                 <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
@@ -780,10 +678,8 @@
     <script type="module" src="./Projects/Portfolio/js/cursor.js"></script>
     <!-- New Design Scripts -->
     <script src="./Projects/Portfolio/js/loader.js"></script>
-    <script src="./Projects/Portfolio/js/3d-parallax.js"></script>
     <script src="./Projects/Portfolio/js/performance-boost.js"></script>
     <script src="./Projects/Portfolio/js/developer-svg.js"></script>
-    <script src="./Projects/Portfolio/js/parallax-init.js"></script>
     <script>
       AOS.init({
         duration: 1000,

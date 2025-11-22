@@ -1,2 +1,11 @@
-@import "./main";
-@import "./reviews";
+@use "./main";
+@use "./reviews";
+@use "./loader";
+@use "./animated-background";
+@use "./hero";
+@use "./portfolio";
+@use "./sections";
+@use "./contact";
+@use "./buttons";
+@use "./media";
+@use "./menu"; // Must be last to override all other styles

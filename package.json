@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build:css": "sass Projects/Portfolio/scss/style.scss Projects/Portfolio/scss/style.css --style=expanded",
+    "watch:css": "sass --watch Projects/Portfolio/scss/style.scss:Projects/Portfolio/scss/style.css --style=expanded"
+  },
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.1.3",

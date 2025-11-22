@@ -1,0 +1,75 @@
+// Fix sections spacing to prevent overlapping
+section {
+  position: relative;
+  padding: 80px 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.connect {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.first-screen {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+// Ensure proper spacing between sections
+section + section {
+  margin-top: 0;
+}
+
+// Container spacing
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+// Responsive spacing
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .about,
+  .skills,
+  .portfolio,
+  .connect {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .first-screen {
+    min-height: auto;
+    padding: 40px 0;
+  }
+}
+

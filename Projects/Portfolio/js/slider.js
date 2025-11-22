@@ -1,6 +1,7 @@
 const slider = document.querySelector(".swiper")
 
-const swiper = new Swiper(".swiper", {
+if (slider) {
+  const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -44,4 +45,5 @@ const swiper = new Swiper(".swiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
-})
+  })
+}
