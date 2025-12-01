@@ -1,3 +1,4 @@
+// ...existing code...
 // Elements
 const hamburger = document.querySelector(".menu-btn")
 const menu = document.querySelector(".menu")
@@ -39,66 +40,135 @@ if (hamburger && menu) {
   })
 }
 
+// Performance helpers
+const isTouchDevice = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0
+
+const prefersHover = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches
+
+const LARGE_SCREEN_MIN = 820
+
+// Parallax card (throttled via rAF)
 const card = document.querySelector(".parallax-card")
-
-gsap.from(card, {
-  opacity: 0,
-  y: 60,
-  scale: 0.9,
-  duration: 1.2,
-  ease: "power3.out",
-})
-
-window.addEventListener("mousemove", (e) => {
-  const x = (e.clientX / window.innerWidth - 0.5) * 20
-  const y = (e.clientY / window.innerHeight - 0.5) * 20
-
-  gsap.to(card, {
-    x: x,
-    y: y,
-    duration: 0.8,
+if (card && typeof gsap !== "undefined" && !isTouchDevice() && window.innerWidth >= LARGE_SCREEN_MIN) {
+  gsap.from(card, {
+    opacity: 0,
+    y: 60,
+    scale: 0.9,
+    duration: 1.2,
     ease: "power3.out",
   })
-})
 
-const neonCursor = document.querySelector(".neon-cursor")
+  let targetX = 0
+  let targetY = 0
+  let rafPending = false
 
-window.addEventListener("mousemove", (e) => {
-  neonCursor.style.opacity = 1
-
-  gsap.to(neonCursor, {
-    x: e.clientX,
-    y: e.clientY,
-    duration: 0.18,
-    ease: "power2.out",
-  })
-})
-
-window.addEventListener("mouseleave", () => {
-  neonCursor.style.opacity = 0
-})
-
-const interactiveSelectors = "a, button, .interactive, .parallax-card"
-
-// Увеличение при наведении
-document.addEventListener("mouseover", (e) => {
-  if (e.target.closest(interactiveSelectors)) {
-    gsap.to(neonCursor, {
-      scale: 2.5,
-      opacity: 1,
+  function flushCard() {
+    rafPending = false
+    if (!card) return
+    gsap.to(card, {
+      x: targetX,
+      y: targetY,
       duration: 0.6,
       ease: "power3.out",
     })
   }
-})
 
-document.addEventListener("mouseout", (e) => {
-  if (e.target.closest(interactiveSelectors)) {
-    gsap.to(neonCursor, {
-      scale: 1,
-      opacity: 1,
-      duration: 0.3,
-      ease: "power3.out",
+  window.addEventListener(
+    "mousemove",
+    (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20
+      const y = (e.clientY / window.innerHeight - 0.5) * 20
+      targetX = x
+      targetY = y
+      if (!rafPending) {
+        rafPending = true
+        requestAnimationFrame(flushCard)
+      }
+    },
+    { passive: true }
+  )
+
+  window.addEventListener("mouseleave", () => {
+    if (!card) return
+    gsap.to(card, { x: 0, y: 0, duration: 0.6, ease: "power3.out" })
+  })
+} else if (card) {
+  // Ensure no transform left on touch/small devices
+  card.style.transform = ""
+}
+
+// Neon cursor (disabled on touch / small screens)
+const neonCursor = document.querySelector(".neon-cursor")
+if (neonCursor) {
+  if (isTouchDevice() || window.innerWidth < LARGE_SCREEN_MIN) {
+    neonCursor.style.display = "none"
+  } else {
+    neonCursor.style.opacity = 0
+    let cx = 0
+    let cy = 0
+    let tx = 0
+    let ty = 0
+    let rafId = null
+
+    function renderCursor() {
+      cx += (tx - cx) * 0.18
+      cy += (ty - cy) * 0.18
+      neonCursor.style.transform = `translate3d(${cx}px, ${cy}px, 0)`
+      rafId = requestAnimationFrame(renderCursor)
+    }
+
+    window.addEventListener(
+      "mousemove",
+      (e) => {
+        neonCursor.style.opacity = 1
+        tx = e.clientX
+        ty = e.clientY
+        if (!rafId) renderCursor()
+      },
+      { passive: true }
+    )
+
+    window.addEventListener("mouseleave", () => {
+      neonCursor.style.opacity = 0
+      if (rafId) {
+        cancelAnimationFrame(rafId)
+        rafId = null
+      }
     })
+
+    const interactiveSelectors = "a, button, .interactive, .parallax-card"
+
+    if (prefersHover && typeof gsap !== "undefined") {
+      document.addEventListener(
+        "pointerover",
+        (e) => {
+          if (e.target.closest(interactiveSelectors)) {
+            gsap.to(neonCursor, {
+              scale: 2.5,
+              opacity: 1,
+              duration: 0.45,
+              ease: "power3.out",
+            })
+          }
+        },
+        { passive: true }
+      )
+
+      document.addEventListener(
+        "pointerout",
+        (e) => {
+          if (e.target.closest(interactiveSelectors)) {
+            gsap.to(neonCursor, {
+              scale: 1,
+              opacity: 1,
+              duration: 0.25,
+              ease: "power3.out",
+            })
+          }
+        },
+        { passive: true }
+      )
+    }
   }
-})
+}
+// ...existing code...

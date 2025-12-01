@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (document.readyState === 'complete') {
             hideLoader();
         }
-    }, 500);
+    }, 300);
     
     function hideLoader() {
         if (loaderWrapper) {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove loader from DOM after animation
             setTimeout(function() {
                 loaderWrapper.style.display = 'none';
-            }, 500);
+            }, 300);
         }
     }
 });

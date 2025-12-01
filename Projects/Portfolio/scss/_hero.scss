@@ -70,7 +70,8 @@
 }
 
 @keyframes gradientShiftText {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% center;
   }
   50% {
@@ -197,7 +198,8 @@
 }
 
 @keyframes pulse-dot {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -256,6 +258,7 @@
 
   .hero-cta {
     flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
 
@@ -265,11 +268,9 @@
     width: 100%;
     max-width: 280px;
     justify-content: center;
-    margin: 0 auto;
   }
 
   .hero-photo-wrapper {
     max-width: 300px;
   }
 }
-

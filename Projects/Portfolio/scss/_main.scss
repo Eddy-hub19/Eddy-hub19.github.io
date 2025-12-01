@@ -243,7 +243,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 .card {
   width: 190px;
@@ -288,9 +288,8 @@ button {
   }
 }
 .about-cv__link {
-  margin-top: 15px;
-  padding: 20px;
   border-radius: 20px;
+  text-align: center;
 }
 .skills {
   &__items {
@@ -494,7 +493,6 @@ button {
 
 .about-cv {
   position: relative;
-  width: 210px;
   height: auto;
   padding: 10px 2rem;
   border-radius: 1.5rem;
