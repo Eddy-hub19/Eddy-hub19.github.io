@@ -28,34 +28,10 @@ body {
   );
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   transition: background-image 2s ease;
-}
-
-.neon-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  opacity: 0;
-  mix-blend-mode: screen;
-
-  background: radial-gradient(circle, #00f7ff 0%, #00e1ff 40%, rgba(0, 255, 255, 0) 70%);
-  filter: blur(3px);
-  transition: opacity 0.3s ease;
-}
-
-.parallax-card {
-  display: inline-block;
-  will-change: transform;
 }
 
 html {
@@ -126,76 +102,6 @@ button {
     background: white;
   }
 }
-// Old hamburger styles removed - now using _menu.scss
-#hamburger {
-  &:focus {
-    outline: none;
-  }
-}
-.bar-top {
-  position: relative;
-}
-#bar {
-  top: -11em;
-  left: 10%;
-  padding: 0.5em;
-  margin: 0;
-  position: absolute;
-  width: 9em;
-  background-color: rgb(255 255 255);
-  text-align: center;
-  transition:
-    top 1.5s ease-out 0.5s,
-    box-shadow 1.3s ease-in-out 0.3s;
-  border-radius: 40px;
-  cursor: pointer;
-  &:hover {
-    top: 20px;
-    box-shadow: 0px 8px 16px 0px black;
-    cursor: pointer;
-    // background: black;
-    background: rgb(202, 200, 200);
-    .arrow {
-      color: #fff;
-    }
-  }
-}
-.hide {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-.arrow {
-  border: 0;
-  background: none;
-  cursor: pointer;
-}
-.dropbtn {
-  position: relative;
-  bottom: 48px;
-  left: 0;
-  color: black;
-  padding: 13px;
-  width: 150px;
-  border: 0px solid black;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 17px;
-  cursor: pointer;
-  &::after {
-    content: "\2304";
-    margin-left: 10px;
-  }
-  &:hover {
-    background-color: #1f1f1f;
-    color: white;
-  }
-  &:focus {
-    background-color: #1f1f1f;
-    color: white;
-  }
-}
-
 .first-screen {
   display: flex;
   align-items: center;
@@ -203,42 +109,6 @@ button {
   min-height: 100vh;
   box-shadow: 0px 10px 20px 9px #000000bf;
 }
-.first-preview {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 0 0 0;
-}
-.first-preview-title {
-  font-size: 3rem;
-  color: rgb(219, 210, 210);
-  text-shadow: 1px 2px 4px black;
-}
-.first-preview-btn {
-  display: flex;
-  a {
-    padding: 30px 80px;
-    text-align: center;
-    margin-right: 20px;
-    color: white;
-    background: transparent;
-    font-size: 18px;
-    border-width: 2px;
-    border-style: outset;
-    border-image: initial;
-    border-radius: 15px;
-    transition: all 1.5s ease;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-shadow: 1px 2px 4px black;
-    &:hover {
-      color: rgb(255, 255, 255);
-      background-color: rgb(33, 34, 36);
-      margin-left: 10px;
-    }
-  }
-}
-
 .about__wrapper {
   display: flex;
   justify-content: center;
@@ -302,6 +172,17 @@ button {
   }
 }
 
+.about-wrapper--padded {
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.lottie-about {
+  width: 300px;
+  height: 300px;
+}
+
 .skills__item {
   width: calc(100% / 4 - 30px);
   padding: 30px 30px 25px 30px;
@@ -330,33 +211,29 @@ button {
     line-height: 18px;
   }
 }
+.skills__item--glass {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.skills__item-img > * {
+  width: 150px;
+  height: 150px;
+}
+
+.skill-icon-animated {
+  width: 150px;
+  height: 150px;
+}
 .skills__item-img {
   display: flex;
   text-align: center;
   min-height: 116px;
 }
 
-.portfolio__wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  width: 100%;
-  gap: 40px;
-}
-.portfolio__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  p {
-    position: sticky;
-    z-index: 99;
-  }
-}
+// Legacy portfolio slider styles (unused)
 .footer-form {
   display: flex;
   align-items: center;
@@ -491,82 +368,7 @@ button {
   align-items: center;
 }
 
-.about-cv {
-  position: relative;
-  height: auto;
-  padding: 10px 2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  margin: 30px auto;
-  text-align: center;
-
-  &:hover {
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.5s ease;
-  }
-}
-.button-content {
-  position: relative;
-  z-index: 1;
-}
-
-// arrow down
-
-.arroww {
-  padding: 10px;
-  opacity: 0;
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform-origin: 50% 50%;
-  transform: translate3d(-50%, -50%, 0);
-  cursor: pointer;
-}
-
-.arrow-first {
-  animation: arrow-movement 4s ease-in-out infinite;
-}
-.arrow-second {
-  animation: arrow-movement 4s 1s ease-in-out infinite;
-}
-
-.arroww:before,
-.arroww:after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-}
-
-.arroww:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
-}
-
-.arroww:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
-}
-
-// Animation
-@keyframes arrow-movement {
-  0% {
-    opacity: 0;
-    top: 80%;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
+// Optional background + wave animations (used across layout)
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -627,55 +429,4 @@ button {
   100% {
     transform: translateX(1);
   }
-}
-
-// typing writer
-
-.typing-demo {
-  width: 36ch;
-  animation:
-    typing 3s steps(22),
-    blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.slider-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 500px;
-  height: auto;
-  gap: 30px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .slider-wrapper {
-    flex-direction: column;
-  }
-}
-
-.portfolio__item {
-  transition: 0.4s ease-in;
-}
-
-.portfolio__item:hover {
-  box-shadow: 2px 1px 10px black !important;
-  transition: 0.5s ease-in;
-  z-index: 3;
 }

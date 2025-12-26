@@ -13,11 +13,6 @@
     @content;
   }
 }
-// @mixin desktop {
-//   @media (min-width: 1441px) and (max-width: 2560px) {
-//     @content;
-//   }
-// }
 
 @include mobile {
   body {
@@ -159,7 +154,7 @@
     text-shadow: 1px 2px 4px black;
   }
   .about__text {
-    width: calc(100% / 1 - 10px);
+    width: calc(100% / 2 - 10px);
     padding: 0;
     text-align: left;
     text-shadow: 1px 2px 4px black;
