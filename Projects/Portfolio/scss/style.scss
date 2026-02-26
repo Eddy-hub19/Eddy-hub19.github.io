@@ -1,6 +1,5 @@
 @use "./main";
 @use "./reviews";
-@use "./loader";
 @use "./animated-background";
 @use "./hero";
 @use "./portfolio";
@@ -8,7 +7,7 @@
 @use "./contact";
 @use "./buttons";
 @use "./media";
-@use "./menu"; // Must be last to override all other styles
+@use "./menu";
 
 .about {
   padding: 80px 0;

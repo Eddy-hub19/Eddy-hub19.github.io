@@ -1,7 +1,10 @@
 {
   "scripts": {
     "build:css": "sass Projects/Portfolio/scss/style.scss Projects/Portfolio/scss/style.css --style=expanded",
-    "watch:css": "sass --watch Projects/Portfolio/scss/style.scss:Projects/Portfolio/scss/style.css --style=expanded"
+    "build:css:prod": "sass Projects/Portfolio/scss/style.scss Projects/Portfolio/scss/style.css --style=compressed",
+    "watch:css": "sass --watch Projects/Portfolio/scss/style.scss:Projects/Portfolio/scss/style.css --style=expanded",
+    "images:webp": "node scripts/convert-images-to-webp.js Projects/Portfolio/img",
+    "images:webp:watch": "node scripts/watch-images-to-webp.js Projects/Portfolio/img"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -19,8 +22,10 @@
     "terminal-kit": "^2.3.0"
   },
   "devDependencies": {
+    "chokidar": "^3.6.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "sharp": "^0.33.5"
   }
 }

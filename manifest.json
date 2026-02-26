@@ -1,0 +1,69 @@
+{
+  "name": "Eduard Sekan - Full Stack Developer Portfolio",
+  "short_name": "Eduard Sekan",
+  "description": "Professional portfolio of Eduard Sekan - Front-End and Full Stack Web Developer specializing in React, Next.js, Node.js, and WordPress",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#231e36",
+  "theme_color": "#231e36",
+  "orientation": "portrait-primary",
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./Projects/Portfolio/img/ed/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./Projects/Portfolio/img/ed/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./Projects/Portfolio/img/ed/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "./Projects/Portfolio/img/ed/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./Projects/Portfolio/img/ed/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "business", "development"],
+  "screenshots": [
+    {
+      "src": "./Projects/Portfolio/img/icon-myportfolio.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "label": "Eduard Sekan Portfolio Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Portfolio",
+      "url": "/#portfolio",
+      "description": "View my project portfolio"
+    },
+    {
+      "name": "Skills",
+      "url": "/#skills",
+      "description": "View my technical skills"
+    },
+    {
+      "name": "Contact",
+      "url": "/#connect",
+      "description": "Get in touch with me"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

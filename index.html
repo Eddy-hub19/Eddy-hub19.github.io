@@ -1,61 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta property="og:locale" content="Ua_UA" />
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="My name is Eduardo and I'm Full Stack Developer" />
+    <meta name="theme-color" content="#231e36" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Eduard Sekan - Front-End & Full Stack Developer specializing in React, Next.js, Node.js, and WordPress. Available for freelance and full-time opportunities. View my portfolio of 15+ web projects."
+    />
+    <meta
+      name="keywords"
+      content="Eduard Sekan, Front-End Developer, Full Stack Developer, React Developer, Next.js, Node.js, JavaScript, WordPress, Web Development, Portfolio, Freelance Developer"
+    />
+    <meta name="author" content="Eduard Sekan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://eddy-hub19.github.io/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Eduard Sekan Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Eduard Sekan - Front-End & Full Stack Developer | Portfolio" />
+    <meta
+      property="og:description"
+      content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. Explore my portfolio of 15+ completed projects and let's build something amazing together!"
+    />
+    <meta property="og:url" content="https://eddy-hub19.github.io/" />
+    <meta property="og:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/icon-myportfolio.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Eduard Sekan - Full Stack Developer Portfolio" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eduard Sekan - Front-End & Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. View my portfolio and let's connect!"
+    />
+    <meta name="twitter:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/icon-myportfolio.svg" />
+    <meta name="twitter:creator" content="@ed_sekan23" />
     <link rel="icon" sizes="512x512" href="./Projects/Portfolio/img/ed/android-chrome-512x512.png" />
     <link rel="icon" sizes="192x192" href="./Projects/Portfolio/img/ed/android-chrome-192x192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./Projects/Portfolio/img/ed/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/ed/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/ed/favicon-16x16.png" />
     <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico" />
-    <title>My portfolio</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="./sitemap.xml" />
+
+    <title>Eduard Sekan - Front-End & Full Stack Developer | React, Next.js Portfolio</title>
+    <!-- DNS Prefetch for faster lookups -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.lordicon.com" />
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
+    <link rel="dns-prefetch" href="https://assets9.lottiefiles.com" />
+    <link rel="dns-prefetch" href="https://lottie.host" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
+      media="print"
+      onload="this.media = 'all'"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <noscript
+      ><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    /></noscript>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media = 'all'" />
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /></noscript>
     <link rel="stylesheet" href="./Projects/Portfolio/scss/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" /></noscript>
+    <link rel="preload" href="./Projects/Portfolio/img/icon-myportfolio.svg" as="image" />
   </head>
 
   <body>
-    <div class="neon-cursor"></div>
-    <!-- Loader -->
-    <div class="loader-wrapper">
-      <div class="loader">
-        <div class="loader-inner">
-          <div class="loader-line-wrap">
-            <div class="loader-line"></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line"></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line"></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line"></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="loader-text">Loading Portfolio...</div>
-    </div>
-
     <!-- Animated Background -->
     <div class="animated-background"></div>
 
@@ -139,17 +181,13 @@
     <main class="main">
       <div class="first-screen">
         <div class="hero-content-wrapper">
-            <div class="hero-main-content">
-              <div class="hero-left">
-                <p class="hero-greeting">Hi, I'm 👋</p>
-                <h1 class="hero-name">Eduard Sekan</h1>
-                <p class="hero-title">Front-End Developer & FullStack</p>
+          <div class="hero-main-content">
+            <div class="hero-left">
+              <p class="hero-greeting">Hi, I'm 👋</p>
+              <h1 class="hero-name">Eduard Sekan</h1>
+              <p class="hero-title">Front-End Developer & FullStack</p>
 
-              <p class="hero-bio">
-                <span class="hero-location"> <span class="flag">🇺🇦</span> Based in Ukraine </span>
-                <br />
-                I transform ideas into beautiful, functional web applications
-              </p>
+              <p class="hero-bio">I transform ideas into beautiful, functional web applications</p>
 
               <div class="status-badge">
                 <span class="status-dot"></span>
@@ -165,7 +203,7 @@
                   <span class="cta-icon">💬</span>
                   <span>Let's Connect</span>
                 </a>
-                <a href="#about-me" target="_blank" class="cta-tertiary">
+                <a href="./Projects/Portfolio/files/Sekan-Eduard-CV.pdf" target="_blank" class="cta-tertiary">
                   <span class="cta-icon">📄</span>
                   <span>View Resume</span>
                 </a>
@@ -173,51 +211,17 @@
             </div>
             <div class="hero-right">
               <div class="hero-photo-wrapper">
-                <img src="./Projects/Portfolio/img/icon-myportfolio.svg" alt="Eduard Sekan" class="hero-photo" />
+                <img
+                  src="./Projects/Portfolio/img/icon-myportfolio.svg"
+                  alt="Eduard Sekan"
+                  class="hero-photo"
+                  fetchpriority="high"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- <section id="about-me" class="about">
-        <div class="container">
-          <div class="about__wrapper glass-effect about-wrapper--padded">
-            <div class="about__descr">
-              <h2 class="title about__title">About me</h2>
-
-              <ul class="about__text">
-                <div class="wrap-icon">
-                  <lottie-player
-                    src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
-                    background="transparent"
-                    speed="1"
-                    class="lottie-about"
-                    loop
-                    autoplay
-                  ></lottie-player>
-                </div>
-                <li>
-                  I am seeking a Trainee/Junior Front-End Developer position. I have a solid understanding of HTML, CSS,
-                  JavaScript, and React. I completed the Front-End course at GOIT and built a structured approach to
-                  development. I also studied at Okten School, Hexlet, CodeBasic, HTML Academy, and completed the Elogic
-                  Commerce Internship.
-                </li>
-              </ul>
-              <div class="about-cv cta-secondary">
-                <a
-                  target="_blank"
-                  href="./Projects/Portfolio/files/Sekan Eduard.pdf"
-                  class="about-cv__link btn-3d"
-                  title="cv"
-                  >
-                  Download CV
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <section id="about-me" class="about section">
         <div class="container">
@@ -265,10 +269,6 @@
                 Internship. Built several real projects including multi-page websites, e-commerce modules and React
                 apps.
               </p>
-
-              <a target="_blank" href="./Projects/Portfolio/files/Sekan Eduard.pdf" class="about-btn fade-in">
-                Download CV
-              </a>
             </div>
           </div>
         </div>
@@ -280,13 +280,10 @@
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <h2 class="title title__section-title">Skills</h2>
             </div>
-            <div class="title__section-subtitle">What i use</div>
+            <div class="title__section-subtitle">What I Use</div>
             <div class="skills__items">
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
-                  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                   <lord-icon
                     src="https://cdn.lordicon.com/nholumov.json"
                     trigger="hover"
@@ -297,25 +294,31 @@
                 </div>
                 <h3 class="title_fz14">HTML5</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
-                  <img width="150" height="150" src="./Projects/Portfolio/img/css3.png" alt="" />
+                  <img
+                    width="150"
+                    height="150"
+                    src="./Projects/Portfolio/img/webp/css3.webp"
+                    alt="CSS3"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 class="title_fz14">CSS3</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
-                  <img width="150" height="150" src="./Projects/Portfolio/img/javascript-logo.png" alt="java script" />
+                  <img
+                    width="150"
+                    height="150"
+                    src="./Projects/Portfolio/img/webp/javascript-logo.webp"
+                    alt="JavaScript"
+                    loading="lazy"
+                  />
                 </div>
-                <h3 class="title_fz14">Java Script</h3>
+                <h3 class="title_fz14">JavaScript</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
                   <lottie-player
                     src="https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json"
@@ -328,9 +331,7 @@
                 </div>
                 <h3 class="title_fz14">React</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
                   <lottie-player
                     src="https://lottie.host/1d4a68ce-2d82-428c-a89e-e9396c81390b/a1ZHUCdjLX.json"
@@ -343,9 +344,7 @@
                 </div>
                 <h3 class="title_fz14">Node.js</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0 0 48 48">
                     <path
@@ -366,19 +365,27 @@
                 </div>
                 <h3 class="title_fz14">Mongo.db</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
-                  <img width="150" height="150" src="./Projects/Portfolio/img/next.png" alt="java script" />
+                  <img
+                    width="150"
+                    height="150"
+                    src="./Projects/Portfolio/img/webp/next.webp"
+                    alt="Next.js"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 class="title_fz14">Next.js</h3>
               </div>
-              <div
-                class="skills__item tilt-card depth-shadow skills__item--glass"
-              >
+              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
                 <div class="skills__item-img">
-                  <img width="150" height="150" src="./Projects/Portfolio/img/wp.png" alt="java script" />
+                  <img
+                    width="150"
+                    height="150"
+                    src="./Projects/Portfolio/img/webp/wp.webp"
+                    alt="WordPress"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 class="title_fz14">WordPress</h3>
               </div>
@@ -395,10 +402,10 @@
           </div>
           <div class="title__section-subtitle">All my projects</div>
           <div class="portfolio__wrapper portfolio-grid">
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://future-for-kids.vercel.app/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/future-for-kids.png" alt="Future for Kids" />
+                  <img src="./Projects/Portfolio/img/webp/future-for-kids.webp" alt="Future for Kids" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">Next.js, React, TypeScript</div>
@@ -407,10 +414,14 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://podillya-majster.km.ua/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/podillya-majster.png" alt="Podillya Majster" />
+                  <img
+                    src="./Projects/Portfolio/img/webp/podillya-majster.webp"
+                    alt="Podillya Majster"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -419,10 +430,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://www.terytoriiadobra.com.ua/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/terytoriiadobra.png" alt="Terytoriia Dobra" />
+                  <img src="./Projects/Portfolio/img/webp/terytoriiadobra.webp" alt="Terytoriia Dobra" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">WordPress, PHP, CSS</div>
@@ -431,10 +442,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://xxllogistics.com.ua/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="XXL Logistics" />
+                  <img src="./Projects/Portfolio/img/webp/xxllogistics.webp" alt="XXL Logistics" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">WordPress, PHP, JavaScript</div>
@@ -443,10 +454,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://eddy-hub19.github.io/Auto-Angel/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/auto-angel.png" alt="Auto Angel" />
+                  <img src="./Projects/Portfolio/img/webp/auto-angel.webp" alt="Auto Angel" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -454,10 +465,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://eddy-hub19.github.io/way-to-health/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/way-to-health.png" alt="Way to Health" />
+                  <img src="./Projects/Portfolio/img/webp/way-to-health.webp" alt="Way to Health" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -465,10 +476,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://eddy-hub19.github.io/soyummy/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/soyummy-black.png" alt="Soyummy" />
+                  <img src="./Projects/Portfolio/img/webp/soyummy-black.webp" alt="Soyummy" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">React, JavaScript, CSS</div>
@@ -476,10 +487,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="./Projects/Porten/index.html" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/porten.jpeg" alt="Porten" />
+                  <img src="./Projects/Portfolio/img/webp/porten.webp" alt="Porten" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -487,10 +498,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="./Projects/Food-Store/index.html" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/food-store.png" alt="Food Store" />
+                  <img src="./Projects/Portfolio/img/webp/food-store.webp" alt="Food Store" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -498,22 +509,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://rankova-zirka.km.ua/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/morning-star.png" alt="Morning Star" />
-                </div>
-                <div class="portfolio-card__info">
-                  <div class="portfolio-card__tech">WordPress, PHP, CSS</div>
-                  <span class="portfolio-card__badge portfolio-card__badge--wp">WordPress</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="portfolio-card">
-              <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/" class="portfolio-card__link">
-                <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/ice-cream.png" alt="Ice Cream" />
+                  <img src="./Projects/Portfolio/img/webp/morning-star.webp" alt="Morning Star" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -521,14 +520,25 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
+              <a target="_blank" href="https://eddy-hub19.github.io/ice-cream/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/webp/ice-cream.webp" alt="Ice Cream" loading="lazy" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card" data-aos="fade-up">
               <a
                 target="_blank"
                 href="https://eddy-hub19.github.io/goit-markup-hw-08/index.html"
                 class="portfolio-card__link"
               >
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/web-studio.png" alt="Web Studio" />
+                  <img src="./Projects/Portfolio/img/webp/web-studio.webp" alt="Web Studio" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS</div>
@@ -536,10 +546,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://eddy-hub19.github.io/filmoteka/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/filmoteka.jpeg" alt="Filmoteka" />
+                  <img src="./Projects/Portfolio/img/webp/filmoteka.webp" alt="Filmoteka" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">JavaScript, HTML, CSS</div>
@@ -547,21 +557,10 @@
               </a>
             </div>
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="./Boss-Logics/dist/index.html" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/boss-logic.png" alt="Boss Logic" />
-                </div>
-                <div class="portfolio-card__info">
-                  <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
-                </div>
-              </a>
-            </div>
-
-            <div class="portfolio-card">
-              <a target="_blank" href="./Projects/DKO/index.html" class="portfolio-card__link">
-                <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/DKO.jpeg" alt="DKO" />
+                  <img src="./Projects/Portfolio/img/webp/boss-logic.webp" alt="Boss Logic" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
                   <div class="portfolio-card__tech">HTML, CSS, JavaScript</div>
@@ -572,46 +571,27 @@
             <div class="portfolio-card">
               <a target="_blank" href="https://eddy-hub19.github.io/UpSells" class="portfolio-card__link">
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/UpSells.jpeg" alt="UpSells" />
+                  <img src="./Projects/Portfolio/img/webp/UpSells.webp" alt="UpSells" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
-                  <div class="portfolio-card__tech">React, JavaScript, CSS</div>
+                  <div class="portfolio-card__tech">HTML, JavaScript, CSS</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card">
+              <a target="_blank" href="./Projects/Locus/index.html" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/webp/Locus.webp" alt="Locus" loading="lazy" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, JavaScript, CSS</div>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <section id="portfolio2" class="portfolio">
-            <div class="container">
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <h2 class="title title__section-title">WP Projects</h2>
-                </div>
-                <div class="slider-wrapper">
-                    <div class="swiper-slide">
-                        <a target="_blank" href="https://www.xxllogistics.com.ua/" class="portfolio__item">
-                            <img src="./Projects/Portfolio/img/xxllogistics.jpeg" alt="xxllogistics" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="https://www.way-to-health.in.ua/" class="portfolio__item">
-                            <img src="./Projects/Portfolio/img/way-to-health-wp.png" alt="way-to-health-wp" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="https://rankova-zirka.terytoriiadobra.com.ua/" class="portfolio__item">
-                            <img src="./Projects/Portfolio/img/rankova-zirka-wp.png" alt="rankova-zirka" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="https://autoangel.km.ua/" class="portfolio__item">
-                            <img src="./Projects/Portfolio/img/auto-angel.png" alt="autoangel" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
       <section id="connect" class="connect connect-enhanced">
         <div class="container">
@@ -635,10 +615,10 @@
 
               <div class="telegram-username">
                 <span>@</span>
-                <span>EEddy24</span>
+                <span>EEddy25</span>
               </div>
 
-              <a href="https://t.me/EEddy24" target="_blank" class="telegram-cta-button">
+              <a href="https://t.me/EEddy25" target="_blank" class="telegram-cta-button">
                 <span>Chat on Telegram</span>
                 <span class="arrow">→</span>
               </a>
@@ -686,13 +666,16 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
       <p class="footer__copyright">
         Copyright &copy;
         <script>
           document.write(new Date().getFullYear())
         </script>
-        Terms & Privacy
+        <span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Eduard Sekan</span>
+        </span>
+        <br />
       </p>
     </footer>
 
@@ -703,19 +686,26 @@
     </div>
 
     <!-- scripts  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./Projects/Portfolio/js/script.js"></script>
-    <script src="./Projects/Portfolio/js/onload.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="./Projects/Portfolio/js/script.js" defer></script>
+    <script src="./Projects/Portfolio/js/onload.js" defer></script>
     <!-- New Design Scripts -->
-    <script src="./Projects/Portfolio/js/loader.js"></script>
-    <script src="./Projects/Portfolio/js/developer-svg.js"></script>
+    <script src="./Projects/Portfolio/js/developer-svg.js" defer></script>
     <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100,
-        easing: "ease-out-cubic",
+      window.addEventListener("load", function () {
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: "ease-out-cubic",
+          })
+        }
       })
     </script>
   </body>

@@ -164,11 +164,10 @@ button {
 .skills {
   &__items {
     margin-top: 60px;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -184,8 +183,8 @@ button {
 }
 
 .skills__item {
-  width: calc(100% / 4 - 30px);
-  padding: 30px 30px 25px 30px;
+  width: calc(100% / 4 - 20px);
+  padding: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -201,7 +200,7 @@ button {
     background: rgba(74, 72, 72, 0.352);
   }
   h3 {
-    margin-top: 20px;
+    margin-top: 12px;
     margin-bottom: 0;
   }
   p {
@@ -212,25 +211,25 @@ button {
   }
 }
 .skills__item--glass {
-  padding: 30px;
+  padding: 8px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
 
 .skills__item-img > * {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 .skill-icon-animated {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 .skills__item-img {
   display: flex;
   text-align: center;
-  min-height: 116px;
+  min-height: 96px;
 }
 
 // Legacy portfolio slider styles (unused)
