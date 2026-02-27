@@ -975,6 +975,11 @@ button {
   font-weight: 500;
   margin-top: 20px;
 }
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .status-badge {
+    max-width: 100%;
+  }
+}
 
 .status-dot {
   width: 8px;

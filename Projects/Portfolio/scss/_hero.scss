@@ -188,6 +188,10 @@
   font-size: 0.9rem;
   font-weight: 500;
   margin-top: 20px;
+
+  @media screen and (min-width: 350px) and (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .status-dot {
