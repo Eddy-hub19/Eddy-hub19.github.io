@@ -104,7 +104,7 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
                 </div>
             </div>
-            <a href="#"> <button class="btn primary">learn more</button>></a>
+            <a href="#"> <button class="btn primary">learn more</button></a>
         </div>
         <!-- section-items -->
         <div class="container">
@@ -143,6 +143,44 @@
     @@include('./html/footer.html', {})
     <script>
         AOS.init()
+
+        const header = document.querySelector('.header')
+        const menuToggle = document.querySelector('.menu-toggle')
+        const menuPanel = document.querySelector('.header-controls')
+
+        if (header && menuToggle && menuPanel) {
+            const closeMenu = () => {
+                header.classList.remove('menu-open')
+                menuToggle.setAttribute('aria-expanded', 'false')
+            }
+
+            menuToggle.addEventListener('click', () => {
+                const isOpen = header.classList.toggle('menu-open')
+                menuToggle.setAttribute('aria-expanded', String(isOpen))
+            })
+
+            menuPanel.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', closeMenu)
+            })
+
+            document.addEventListener('click', (event) => {
+                if (!header.contains(event.target)) {
+                    closeMenu()
+                }
+            })
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeMenu()
+                }
+            })
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1024) {
+                    closeMenu()
+                }
+            })
+        }
     </script>
 </body>
 

@@ -21,20 +21,28 @@
     <header class="header">
     <div class="container header-wrap">
         <a class="header__logo" href="#logo"><img src="./img/logo.png" alt="logo" /></a>
-        <nav class="nav header-nav__menu">
-            <a href="#Solutions">Solutions </a>
-            <a href="#Together">Together</a>
-            <a href="#Customers">Customers</a>
-            <a href="#Pricing">Pricing </a>
-            <a href="#About">About</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-        <!-- icons social network -->
-        <div class="social-network header__social-network">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/boss.logics/"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-menu"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header-controls" id="main-menu">
+            <nav class="nav header-nav__menu">
+                <a href="#Solutions">Solutions </a>
+                <a href="#Together">Together</a>
+                <a href="#Customers">Customers</a>
+                <a href="#Pricing">Pricing </a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <!-- icons social network -->
+            <div class="social-network header__social-network">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/boss.logics/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </div>
 </header>
@@ -138,7 +146,7 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
                 </div>
             </div>
-            <a href="#"> <button class="btn primary">learn more</button>></a>
+            <a href="#"> <button class="btn primary">learn more</button></a>
         </div>
         <!-- section-items -->
         <div class="container">
@@ -233,6 +241,44 @@
 
     <script>
         AOS.init()
+
+        const header = document.querySelector('.header')
+        const menuToggle = document.querySelector('.menu-toggle')
+        const menuPanel = document.querySelector('.header-controls')
+
+        if (header && menuToggle && menuPanel) {
+            const closeMenu = () => {
+                header.classList.remove('menu-open')
+                menuToggle.setAttribute('aria-expanded', 'false')
+            }
+
+            menuToggle.addEventListener('click', () => {
+                const isOpen = header.classList.toggle('menu-open')
+                menuToggle.setAttribute('aria-expanded', String(isOpen))
+            })
+
+            menuPanel.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', closeMenu)
+            })
+
+            document.addEventListener('click', (event) => {
+                if (!header.contains(event.target)) {
+                    closeMenu()
+                }
+            })
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeMenu()
+                }
+            })
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1024) {
+                    closeMenu()
+                }
+            })
+        }
     </script>
 </body>
 

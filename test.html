@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* Убираем отступы и полосы прокрутки, чтобы 3D-холст был на весь экран */
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+
+    <script type="module">
+      import * as THREE from "three"
+
+      // 1. СОЗДАЕМ СЦЕНУ
+      // Это наш виртуальный мир. Пока он пустой и темный.
+      const scene = new THREE.Scene()
+
+      // Можно задать цвет фона (например, темно-серый)
+      scene.background = new THREE.Color(0x112221)
+
+      // 2. СОЗДАЕМ КАМЕРУ
+      const fov = 40 // Угол обзора (Field of View) в градусах
+      const aspect = window.innerWidth / window.innerHeight // Соотношение сторон
+      const near = 0.1 // Ближняя граница (всё, что ближе — не видно)
+      const far = 1000 // Дальняя граница (всё, что дальше — исчезает)
+
+      const camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
+
+      // По умолчанию камера создается в точке (0, 0, 0).
+      // Отодвинем её немного назад по оси Z, чтобы мы видели центр сцены.
+      camera.position.z = 5
+
+      // 3. СОЗДАЕМ РЕНДЕРЕР
+      const renderer = new THREE.WebGLRenderer({
+        antialias: true, // Включаем сглаживание, чтобы края не были "лесенкой"
+      })
+
+      // Устанавливаем размер области отрисовки на весь экран
+      renderer.setSize(window.innerWidth, window.innerHeight)
+
+      // Добавляем созданный холст (canvas) в HTML-документ
+      document.body.appendChild(renderer.domElement)
+
+      // 4. СОЗДАЕМ ОБЪЕКТ
+      // Форма: куб со сторонами 1x1x1 единица
+      const geometry = new THREE.BoxGeometry(1, 1, 1)
+
+      // Материал: пока возьмем простой Basic, он не требует света для отображения
+      const material = new THREE.MeshBasicMaterial({
+        color: 0x003319, // Приятный мятный цвет
+        wireframe: false, // Если поставить true, увидишь только сетку
+      })
+
+      // Соединяем их в Меш
+      const cube = new THREE.Mesh(geometry, material)
+
+      // Добавляем куб на сцену
+      scene.add(cube)
+
+      // 5. ФУНКЦИЯ АНИМАЦИИ
+      function animate() {
+        // Этот метод говорит браузеру, что мы хотим обновить анимацию перед следующей перерисовкой
+        requestAnimationFrame(animate)
+
+        // Немного вращаем наш куб в каждом кадре
+        cube.rotation.x += 0.01
+        cube.rotation.y += 0.01
+
+        // Самая важная строчка: Рендерер делает "фото" сцены глазами камеры
+        renderer.render(scene, camera)
+      }
+
+      // Запускаем цикл
+      animate()
+
+      window.addEventListener("resize", () => {
+        // Обновляем соотношение сторон камеры
+        camera.aspect = window.innerWidth / window.innerHeight
+        camera.updateProjectionMatrix()
+
+        // Обновляем размер холста
+        renderer.setSize(window.innerWidth, window.innerHeight)
+      })
+    </script>
+  </body>
+</html>

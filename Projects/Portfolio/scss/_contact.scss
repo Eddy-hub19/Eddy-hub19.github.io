@@ -40,42 +40,27 @@
   transition: all 2s ease;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-    animation: rotate 2s linear infinite;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 70px rgba(102, 126, 234, 0.4);
-    border-color: rgba(102, 126, 234, 0.3);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
 .telegram-card-content {
   position: relative;
   z-index: 1;
+  transition: all 0.6s ease;
 }
 
 .telegram-icon-large {
   width: 80px;
   height: 80px;
   margin: 0 auto 30px;
-  background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+  background: linear-gradient(135deg, #2aabee 0%, #229ed9 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -86,7 +71,8 @@
 }
 
 @keyframes float-icon {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -123,7 +109,7 @@
     gap: 12px;
 
     &::before {
-      content: '✓';
+      content: "✓";
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -156,7 +142,7 @@
   align-items: center;
   gap: 12px;
   padding: 18px 40px;
-  background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+  background: linear-gradient(135deg, #2aabee 0%, #229ed9 100%);
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
@@ -169,7 +155,7 @@
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(42, 171, 238, 0.6);
-    background: linear-gradient(135deg, #229ED9 0%, #2AABEE 100%);
+    background: linear-gradient(135deg, #229ed9 0%, #2aabee 100%);
 
     .arrow {
       transform: translateX(5px);
@@ -297,4 +283,3 @@
     font-size: 2.5rem;
   }
 }
-

@@ -190,9 +190,8 @@ button {
   flex-direction: column;
   justify-content: center;
   border: 1px solid transparent;
-  transition: border ease 0.6s;
-  transition: transform ease 0.6s;
   box-shadow: 1px 1px 4px 1px;
+  transition: all 1s ease-out;
 
   &:hover {
     border: 1px solid rgba(255, 255, 255, 0.602);
@@ -215,6 +214,7 @@ button {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .skills__item-img > * {
@@ -226,6 +226,7 @@ button {
   width: 120px;
   height: 120px;
 }
+
 .skills__item-img {
   display: flex;
   text-align: center;

@@ -47,6 +47,10 @@ html {
 body {
     margin: 0 auto;
 }
+
+.main {
+    padding: 0 20px;
+}
 a {
     text-decoration: none;
     color: white;
@@ -76,9 +80,38 @@ header {
     display: flex;
     justify-content: center;
 }
+.header-controls {
+    display: flex;
+    align-items: center;
+}
 .header__logo {
     font-size: 13px;
     margin-left: 150px;
+}
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(0, 153, 255, 0.45);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #0b3d62;
+        transition: transform 0.35s ease, opacity 0.25s ease;
+        -webkit-transition: transform 0.35s ease, opacity 0.25s ease;
+        -moz-transition: transform 0.35s ease, opacity 0.25s ease;
+        -ms-transition: transform 0.35s ease, opacity 0.25s ease;
+        -o-transition: transform 0.35s ease, opacity 0.25s ease;
+    }
 }
 nav {
     display: flex;
@@ -220,7 +253,7 @@ nav {
 }
 .content-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 19.5rem 0;
 }
@@ -537,9 +570,6 @@ nav {
     color: white;
     a {
         border-bottom: 0 solid black;
-        &:hover {
-            border-bottom: 1px solid orange;
-        }
         &:nth-child(1) {
             font-size: 18px;
             color: #0099ff;
@@ -636,5 +666,755 @@ nav {
         &:nth-child(2) {
             margin-left: 45rem;
         }
+    }
+}
+
+/* Responsive layout overrides */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(1200px, 100%);
+    padding: 0 24px;
+}
+
+.bg {
+    background-size: clamp(460px, 55vw, 920px);
+}
+
+.header-wrap {
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__logo {
+    margin-left: 0;
+}
+
+.header-nav__menu {
+    margin-left: 0;
+    gap: 22px;
+    a {
+        margin-left: 0;
+    }
+}
+
+.social-network {
+    margin: 0;
+}
+
+.main__wrap {
+    margin-bottom: 12rem;
+}
+
+.main__info {
+    > p {
+        width: 100%;
+        max-width: 680px;
+        margin: 18px 0 0;
+    }
+}
+
+.first-title {
+    margin-top: 120px;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+.first-title__span {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+    font-size: clamp(1.1rem, 2.6vw, 2rem);
+}
+
+.main-btn {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.btn {
+    margin: 0;
+}
+
+.content-section {
+    margin: 10rem 0;
+    gap: 56px;
+}
+
+.content-section__bg {
+    position: static;
+}
+
+.title-right__info {
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    max-width: 640px;
+}
+
+.dscr-right__info {
+    margin: 24px 0 0;
+    width: 100%;
+    max-width: 560px;
+}
+
+.btn-primary_position {
+    margin: 40px 0 0;
+}
+
+.sections-platform {
+    margin-bottom: 10rem;
+}
+
+.title-section__platform {
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    padding-left: 3.4rem;
+    &::before {
+        left: 0;
+    }
+}
+
+.about-platform-list__section {
+    padding-left: 3.4rem;
+}
+
+.benefit-to-you {
+    h2 {
+        font-size: clamp(2rem, 5vw, 4.2rem);
+    }
+}
+
+.items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.item h4 {
+    margin: 18px 0;
+}
+
+.section-items {
+    margin-top: 8rem;
+    gap: 32px;
+}
+
+.title__about-trust-brands {
+    right: 0;
+    top: 0;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    max-width: 620px;
+}
+
+.dscr__about-trust-brands {
+    margin: 36px 0 0;
+    max-width: 640px;
+}
+
+.list-about-brands {
+    margin: 20px 0 0;
+}
+
+.picture-brands__brands {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    a {
+        margin-left: 0;
+    }
+}
+
+.footer {
+    margin-top: 12rem;
+    height: auto;
+    padding: 48px 0 28px;
+}
+
+.container-menu__footer {
+    width: min(1200px, 100%);
+    padding: 0 24px;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.footer-line {
+    p {
+        &:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .section-platform {
+        justify-content: center;
+    }
+
+    .bg-contact-info {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer {
+        padding: 56px 0 24px;
+    }
+
+    .container-menu__footer {
+        width: min(1240px, 100%);
+        display: grid;
+        grid-template-columns: 1.05fr 0.8fr 0.95fr 1.45fr;
+        align-items: start;
+        gap: 40px;
+        line-height: 1.5;
+    }
+
+    .for-store,
+    .container-categories,
+    .contact-info,
+    .newsletter {
+        min-width: 0;
+    }
+
+    .for-store {
+        gap: 14px;
+        justify-content: flex-start;
+    }
+
+    .for-store p {
+        max-width: 250px;
+        line-height: 1.75;
+    }
+
+    .container-categories {
+        gap: 8px;
+    }
+
+    .container-categories a:nth-child(n + 2) {
+        margin-top: 0;
+    }
+
+    .contact-info {
+        margin-top: 0;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .contact-info a {
+        max-width: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        line-height: 1.55;
+    }
+
+    .newsletter {
+        gap: 20px;
+    }
+
+    .newsletter-title {
+        margin-bottom: 0;
+    }
+
+    .container-subscribe {
+        justify-content: flex-start;
+        width: auto;
+        gap: 14px;
+    }
+
+    .container-subscribe button {
+        margin: 0;
+    }
+
+    .footer__social-network {
+        margin: 0;
+    }
+
+    .last-line {
+        margin-top: 24px;
+    }
+
+    .footer-line {
+        margin-top: 14px;
+        justify-content: space-between;
+    }
+}
+
+@keyframes fade-up-soft {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main__info,
+.content-section,
+.sections-platform,
+.benefit-to-you,
+.section-items,
+.brands {
+    opacity: 0;
+    animation: fade-up-soft 0.85s ease-out forwards;
+}
+
+.content-section {
+    animation-delay: 0.12s;
+}
+
+.sections-platform {
+    animation-delay: 0.2s;
+}
+
+.benefit-to-you {
+    animation-delay: 0.28s;
+}
+
+.section-items,
+.brands {
+    animation-delay: 0.36s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main__info,
+    .content-section,
+    .sections-platform,
+    .benefit-to-you,
+    .section-items,
+    .brands {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-wrap {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        margin-left: auto;
+        z-index: 5;
+    }
+
+    .header-controls {
+        position: absolute;
+        right: 24px;
+        left: 24px;
+        top: calc(100% + 12px);
+        z-index: 4;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: linear-gradient(170deg, rgba(3, 129, 210, 0.95), rgba(7, 83, 141, 0.96));
+        box-shadow: 0 18px 30px rgba(0, 23, 38, 0.25);
+        padding: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(-14px);
+        pointer-events: none;
+        transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease;
+        -webkit-transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease;
+        -moz-transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease;
+        -ms-transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease;
+        -o-transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.35s ease;
+    }
+
+    .header-nav__menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        a {
+            color: white;
+            font-size: 15px;
+        }
+    }
+
+    .header__social-network {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .header.menu-open {
+        .header-controls {
+            opacity: 1;
+            max-height: 420px;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .menu-toggle span {
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+                -webkit-transform: translateY(8px) rotate(45deg);
+                -moz-transform: translateY(8px) rotate(45deg);
+                -ms-transform: translateY(8px) rotate(45deg);
+                -o-transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+                -webkit-transform: translateY(-8px) rotate(-45deg);
+                -moz-transform: translateY(-8px) rotate(-45deg);
+                -ms-transform: translateY(-8px) rotate(-45deg);
+                -o-transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+
+    .header__social-network a,
+    .footer__social-network a {
+        color: #fff;
+    }
+
+    .main__info > p,
+    .dscr-right__info,
+    .about-platform-list__section li:nth-child(even),
+    .dscr__about-trust-brands {
+        font-size: 19px;
+        line-height: 1.55;
+        letter-spacing: 0;
+    }
+
+    .bg {
+        margin-top: 24px;
+        background-size: 620px;
+        background-position: 140% -40px;
+    }
+
+    .main__wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .main__right-bg {
+        align-self: center;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .right-info {
+        width: 100%;
+        max-width: 760px;
+    }
+
+    .section-platform {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .bg-different-platform {
+        align-self: center;
+    }
+
+    .section-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-trust-brands {
+        width: 100%;
+        max-width: 760px;
+    }
+
+    .footer-line {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__social-network a,
+    .footer__social-network a {
+        color: #000;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .bg {
+        background-size: 420px;
+        background-position: 160% -18px;
+    }
+
+    .header-controls {
+        right: 16px;
+        left: 16px;
+        padding: 16px;
+    }
+
+    .header-nav__menu {
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .header__social-network {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .bg-contact-info {
+        width: 30px;
+    }
+
+    .fab,
+    .far {
+        margin-left: 18px;
+        font-size: 20px;
+    }
+
+    .first-title {
+        margin-top: 54px;
+        &::before {
+            left: -16px;
+            height: 100%;
+            top: 0;
+        }
+    }
+
+    .main__info > p {
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+    .content-section,
+    .sections-platform,
+    .benefit-to-you,
+    .section-items,
+    .brands {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .main-btn {
+        width: 100%;
+        a {
+            width: 100%;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .content-section__bg_left::before {
+        display: none;
+    }
+
+    .title-right__info,
+    .title-section__platform,
+    .title__about-trust-brands {
+        letter-spacing: 0;
+        line-height: 1.1;
+    }
+
+    .title-right__info::before {
+        left: -16px;
+        top: 5px;
+    }
+
+    .title__about-trust-brands::before {
+        left: -16px;
+        top: 6px;
+    }
+
+    .about-platform-list__section,
+    .title-section__platform {
+        padding-left: 1.5rem;
+    }
+
+    .about-platform-list__section li {
+        &:nth-child(odd) {
+            font-size: 18px;
+            margin-top: 22px;
+            padding-bottom: 10px;
+        }
+
+        &:nth-child(even) {
+            font-size: 17px;
+            letter-spacing: 0;
+        }
+    }
+
+    .benefit-to-you button {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .left-bg__section-items img {
+        height: auto;
+    }
+
+    .picture-brands__brands a {
+        flex: 1 1 40%;
+        max-width: 48%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .container-menu__footer {
+        padding: 0 16px;
+    }
+
+    .container-subscribe {
+        flex-direction: column;
+        gap: 14px;
+        align-items: stretch;
+        button {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .input-item {
+        width: 100%;
+    }
+
+    .last-line {
+        width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-controls {
+        right: 12px;
+        left: 12px;
+        padding: 14px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .bg {
+        background-size: 325px;
+        background-position: 190% 6px;
+    }
+
+    .first-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .first-title__span {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .main__info > p,
+    .dscr-right__info,
+    .about-platform-list__section li:nth-child(even),
+    .dscr__about-trust-brands {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .title-right__info,
+    .title-section__platform,
+    .title__about-trust-brands,
+    .benefit-to-you h2 {
+        font-size: 1.8rem;
+    }
+
+    .title-right__info::before,
+    .title__about-trust-brands::before,
+    .title-section__platform::before {
+        width: 2px;
+    }
+
+    .about-platform-list__section,
+    .title-section__platform {
+        padding-left: 1rem;
+    }
+
+    .about-platform-list__section li:nth-child(odd) {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .item h4 {
+        font-size: 18px;
+        max-width: 260px;
+    }
+
+    .item p {
+        font-size: 16px;
+        max-inline-size: 280px;
+    }
+
+    .picture-brands__brands a {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .footer {
+        margin-top: 8rem;
+        padding: 40px 0 20px;
+    }
+
+    .container-menu__footer {
+        gap: 24px;
+    }
+
+    .footer-line {
+        font-size: 13px;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .first-title {
+        font-size: 1.75rem;
+    }
+
+    .main__info > p,
+    .dscr-right__info,
+    .about-platform-list__section li:nth-child(even),
+    .dscr__about-trust-brands,
+    .item p {
+        font-size: 15px;
+    }
+
+    .btn {
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .title-right__info,
+    .title-section__platform,
+    .title__about-trust-brands,
+    .benefit-to-you h2 {
+        font-size: 1.6rem;
     }
 }

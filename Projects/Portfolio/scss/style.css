@@ -196,9 +196,8 @@ button {
   flex-direction: column;
   justify-content: center;
   border: 1px solid transparent;
-  transition: border ease 0.6s;
-  transition: transform ease 0.6s;
   box-shadow: 1px 1px 4px 1px;
+  transition: all 1s ease-out;
 }
 .skills__item:hover {
   border: 1px solid rgba(255, 255, 255, 0.602);
@@ -221,6 +220,7 @@ button {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .skills__item-img > * {
@@ -1272,32 +1272,19 @@ section + section {
   width: 200%;
   height: 200%;
   background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-  animation: rotate 2s linear infinite;
-}
-.telegram-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 70px rgba(102, 126, 234, 0.4);
-  border-color: rgba(102, 126, 234, 0.3);
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .telegram-card-content {
   position: relative;
   z-index: 1;
+  transition: all 0.6s ease;
 }
 
 .telegram-icon-large {
   width: 80px;
   height: 80px;
   margin: 0 auto 30px;
-  background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+  background: linear-gradient(135deg, #2aabee 0%, #229ed9 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1375,7 +1362,7 @@ section + section {
   align-items: center;
   gap: 12px;
   padding: 18px 40px;
-  background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+  background: linear-gradient(135deg, #2aabee 0%, #229ed9 100%);
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
@@ -1388,7 +1375,7 @@ section + section {
 .telegram-cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(42, 171, 238, 0.6);
-  background: linear-gradient(135deg, #229ED9 0%, #2AABEE 100%);
+  background: linear-gradient(135deg, #229ed9 0%, #2aabee 100%);
 }
 .telegram-cta-button:hover .arrow {
   transform: translateX(5px);
