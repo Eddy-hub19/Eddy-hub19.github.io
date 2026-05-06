@@ -29,7 +29,7 @@
       content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. Explore my portfolio of 15+ completed projects and let's build something amazing together!"
     />
     <meta property="og:url" content="https://eddy-hub19.github.io/" />
-    <meta property="og:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/icon-myportfolio.svg" />
+    <meta property="og:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/logo.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Eduard Sekan - Full Stack Developer Portfolio" />
@@ -41,11 +41,11 @@
       name="twitter:description"
       content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. View my portfolio and let's connect!"
     />
-    <meta name="twitter:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/icon-myportfolio.svg" />
+    <meta name="twitter:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/logo.png" />
     <meta name="twitter:creator" content="@ed_sekan23" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/ed/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/ed/favicon-16x16.png" />
-    <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/logo.png" />
+    <link rel="icon" href="./Projects/Portfolio/img/logo.png" />
 
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="./sitemap.xml" />
@@ -54,7 +54,6 @@
     <!-- DNS Prefetch for faster lookups -->
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link rel="dns-prefetch" href="https://unpkg.com" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://cdn.lordicon.com" />
     <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
     <link rel="dns-prefetch" href="https://assets9.lottiefiles.com" />
@@ -63,7 +62,6 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link
@@ -71,22 +69,13 @@
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-      media="print"
-      onload="this.media = 'all'"
     />
     <noscript
       ><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     /></noscript>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media = 'all'" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /></noscript>
     <link rel="stylesheet" href="./Projects/Portfolio/scss/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-      media="print"
-      onload="this.media = 'all'"
-    />
-    <noscript><link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" /></noscript>
     <link rel="preload" href="./Projects/Portfolio/img/icon-myportfolio.svg" as="image" />
   </head>
 
@@ -116,25 +105,21 @@
           <li class="menu-item">
             <a class="menu-link" href="#about-me">
               <span class="menu-link-text">About Me</span>
-              <span class="menu-link-icon">👤</span>
             </a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#skills">
               <span class="menu-link-text">Skills</span>
-              <span class="menu-link-icon">💼</span>
             </a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#portfolio">
               <span class="menu-link-text">Portfolio</span>
-              <span class="menu-link-icon">🚀</span>
             </a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#connect">
               <span class="menu-link-text">Connect</span>
-              <span class="menu-link-icon">💬</span>
             </a>
           </li>
           <li class="menu-item menu-item-social">
@@ -174,42 +159,105 @@
     <main class="main">
       <div class="first-screen">
         <div class="hero-content-wrapper">
+          <div class="hero-photo-wrapper hero-glass-bg" aria-hidden="true"></div>
           <div class="hero-main-content">
             <div class="hero-left">
-              <p class="hero-greeting">Hi, I'm 👋</p>
+              <p class="hero-greeting">Hi, I'm</p>
               <h1 class="hero-name">Eduard Sekan</h1>
               <p class="hero-title">Front-End Developer & FullStack</p>
 
               <p class="hero-bio">I transform ideas into beautiful, functional web applications</p>
+
+              <div class="hero-highlights" aria-label="Core strengths">
+                <span>UI with product thinking</span>
+                <span>Performance-first builds</span>
+                <span>Clean and scalable code</span>
+              </div>
 
               <div class="status-badge">
                 <span class="status-dot"></span>
                 Available for freelance & full-time
               </div>
 
+              <div class="hero-code-glyph" aria-hidden="true">
+                <svg viewBox="0 0 420 196" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                  <rect x="1" y="1" width="418" height="194" rx="16" fill="rgba(7,12,24,0.35)" stroke="rgba(167,203,255,0.45)" />
+                  <path d="M22 35H398" stroke="rgba(196,221,255,0.35)" stroke-width="1" />
+                  <circle cx="34" cy="18" r="4" fill="rgba(255,130,130,0.9)" />
+                  <circle cx="50" cy="18" r="4" fill="rgba(255,210,120,0.9)" />
+                  <circle cx="66" cy="18" r="4" fill="rgba(124,240,170,0.9)" />
+
+                  <text x="26" y="56" fill="rgba(235,244,255,0.9)" font-size="12" font-family="monospace">const greeting = "Hi, I am Eduard";</text>
+                  <text x="26" y="74" fill="rgba(149,209,255,0.92)" font-size="12" font-family="monospace">const role = "Front-End &amp; Full-Stack Developer";</text>
+                  <text x="26" y="92" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">const mission = "Build fast, clean, human products";</text>
+                  <text x="26" y="110" fill="rgba(198,224,255,0.92)" font-size="12" font-family="monospace">const stack = ["Next.js", "React", "Node.js", "MongoDB"];</text>
+                  <text x="26" y="128" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">function aboutMe() { return "Code by day, music by night"; }</text>
+                  <text x="26" y="146" fill="rgba(167,219,255,0.9)" font-size="12" font-family="monospace">const currentFocus = "UI quality, performance, storytelling";</text>
+                  <text x="26" y="164" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">ship(ideas).iterate().improve();</text>
+                  <text x="26" y="182" fill="rgba(167,219,255,0.88)" font-size="12" font-family="monospace">&lt;/code&gt; // welcome to my world</text>
+
+                  <path d="M324 66 L338 82 L324 98" stroke="rgba(135,194,255,0.95)" stroke-width="2" fill="none" />
+                  <path d="M354 66 L340 82 L354 98" stroke="rgba(135,194,255,0.95)" stroke-width="2" fill="none" />
+                  <line x1="364" y1="104" x2="392" y2="104" stroke="rgba(176,248,217,0.9)" stroke-width="2" />
+                </svg>
+              </div>
+
               <div class="hero-cta">
                 <a href="#portfolio" class="cta-primary">
-                  <span class="cta-icon">🚀</span>
                   <span>Explore My Work</span>
                 </a>
                 <a href="#connect" class="cta-secondary">
-                  <span class="cta-icon">💬</span>
                   <span>Let's Connect</span>
                 </a>
                 <a href="./Projects/Portfolio/files/Sekan-Eduard-CV.pdf" target="_blank" class="cta-tertiary">
-                  <span class="cta-icon">📄</span>
                   <span>View Resume</span>
                 </a>
               </div>
-            </div>
-            <div class="hero-right">
-              <div class="hero-photo-wrapper">
-                <img
-                  src="./Projects/Portfolio/img/icon-myportfolio.svg"
-                  alt="Eduard Sekan"
-                  class="hero-photo"
-                  fetchpriority="high"
-                />
+
+              <div class="hero-stats" aria-label="Key metrics">
+                <article class="hero-stat">
+                  <strong>18+</strong>
+                  <span>Production projects</span>
+                </article>
+                <article class="hero-stat">
+                  <strong>4+</strong>
+                  <span>Years of learning and shipping</span>
+                </article>
+                <article class="hero-stat">
+                  <strong>24h</strong>
+                  <span>Typical first response</span>
+                </article>
+              </div>
+
+              <div class="social-links-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="social-links-enhanced">
+                  <a href="https://www.instagram.com/ed_sekan24/" target="_blank" class="social-link-card">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                      <circle cx="18" cy="6" r="1" fill="currentColor" />
+                    </svg>
+                    <span class="social-link-name">Instagram</span>
+                  </a>
+
+                  <a href="https://github.com/Eddy-hub19" target="_blank" class="social-link-card">
+                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                      />
+                    </svg>
+                    <span class="social-link-name">GitHub</span>
+                  </a>
+
+                  <a href="https://t.me/EEddy25" target="_blank" class="social-link-card">
+                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
+                      />
+                    </svg>
+                    <span class="social-link-name">Telegram</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -218,57 +266,74 @@
 
       <section id="about-me" class="about section">
         <div class="container">
-          <div class="about-card">
-            <div class="about-left">
-              <lottie-player
-                src="https://assets9.lottiefiles.com/private_files/lf30_igfaivqx.json"
-                background="transparent"
-                speed="1"
-                class="lottie-about"
-                loop
-                autoplay
-              ></lottie-player>
+          <div class="about-card about-bento" data-aos="fade-up">
+            <div class="about-bento__music" aria-label="Creative side">
+              <button class="about-bento__music-btn" type="button" aria-label="Music mode">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <span class="about-bento__music-tip">Building apps by day, producing music by night</span>
             </div>
 
-            <div class="about-right">
-              <h2 class="about-title fade-in">About Me</h2>
-
-              <p class="about-text fade-in">
-                I’m a Front-End Developer who loves creating clean, fast and intuitive user experiences. I transform
-                ideas into functional products using modern technologies and best practices.
+            <div class="about-bento__head">
+              <h2 class="about-title">About Me</h2>
+              <div class="about-title-line"></div>
+              <p class="about-text">
+                Front-End and Full-Stack developer focused on fast, clean products with thoughtful UX. I like turning
+                complex ideas into interfaces that feel effortless.
               </p>
+            </div>
 
-              <div class="skills-grid fade-in">
-                <div class="skill-item">
-                  <i class="skill-icon">
-                    <img src="./Projects/Portfolio/img/icon/icon-buld.svg" alt="Problem Solving" />
-                  </i>
-                  <p>Problem Solving</p>
-                </div>
-                <div class="skill-item">
-                  <i class="skill-icon">
-                    <img src="./Projects/Portfolio/img/icon/icon-react.svg" alt="React / Next.js" />
-                  </i>
-                  <p>React / Next.js</p>
-                </div>
-                <div class="skill-item">
-                  <i class="skill-icon">
-                    <img src="./Projects/Portfolio/img/icon/icon-paint.svg" alt="UI Development" />
-                  </i>
-                  <p>UI Development</p>
-                </div>
-                <div class="skill-item">
-                  <i class="skill-icon">
-                    <img src="./Projects/Portfolio/img/icon/icon-wp.svg" alt="WordPress / Webpack" />
-                  </i>
-                  <p>WordPress / Webpack</p>
-                </div>
-              </div>
+            <div class="about-bento__grid">
+              <article class="about-cell about-cell--story" data-aos="fade-up" data-aos-delay="80">
+                <span class="about-cell__eyebrow">Story</span>
+                <h3>From learning tracks to production-ready builds</h3>
+                <p>
+                  Completed intensive programs and transformed that foundation into real multi-page sites,
+                  e-commerce modules, and React applications for real users.
+                </p>
+              </article>
 
-              <p class="about-desc fade-in">
-                Completed courses at GOIT, Okten School, Hexlet, CodeBasics, HTML Academy and the Elogic Commerce
-                Internship. Built several real projects including multi-page websites, e-commerce modules and React
-                apps.
+              <article class="about-cell about-cell--stack" data-aos="fade-up" data-aos-delay="140">
+                <span class="about-cell__eyebrow">Core Stack</span>
+                <h3>Full-Stack focus</h3>
+                <div class="about-stack" aria-label="Primary stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>Node.js</span>
+                  <span>React</span>
+                </div>
+              </article>
+
+              <article class="about-cell about-cell--education" data-aos="fade-up" data-aos-delay="200">
+                <span class="about-cell__eyebrow">Education</span>
+                <h3>Learning ecosystem</h3>
+                <ul class="about-schools" aria-label="Schools and programs">
+                  <li>GOIT</li>
+                  <li>Hexlet</li>
+                  <li>CodeBasics</li>
+                  <li>HTML Academy</li>
+                  <li>Okten School</li>
+                  <li>Elogic Internship</li>
+                </ul>
+              </article>
+
+              <article class="about-cell about-cell--principles" data-aos="fade-up" data-aos-delay="260">
+                <span class="about-cell__eyebrow">Principles</span>
+                <h3>Quiet luxury in code</h3>
+                <p>
+                  Minimal visual noise, strong hierarchy, reliable performance, and detail-first execution from layout
+                  to deployment.
+                </p>
+              </article>
+            </div>
+
+            <div class="about-desc">
+              <p>
+                I collaborate with teams that value aesthetics and engineering quality equally, building products that
+                are both useful and memorable.
               </p>
             </div>
           </div>
@@ -281,115 +346,52 @@
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <h2 class="title title__section-title">Skills</h2>
             </div>
-            <div class="title__section-subtitle">What I Use</div>
-            <div class="skills__items">
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/nholumov.json"
-                    trigger="hover"
-                    colors="outline:#121331,primary:#3a3347,secondary:#d1e3fa"
-                    class="skill-icon-animated"
-                  >
-                  </lord-icon>
+            <div class="title__section-subtitle">Roadmap by Skill Depth</div>
+
+            <p class="skills__intro" data-aos="fade-up" data-aos-delay="60">
+              Text-first progression of my current stack: from markup fundamentals to full-stack delivery.
+            </p>
+
+            <div class="skills__roadmap" data-aos="fade-up" data-aos-delay="120">
+              <article class="skills__step">
+                <span class="skills__step-phase">Step 01</span>
+                <h3>Foundation Layer</h3>
+                <p>Semantic markup, adaptive layout systems, and clean CSS architecture.</p>
+                <div class="skills__step-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
                 </div>
-                <h3 class="title_fz14">HTML5</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <img
-                    width="150"
-                    height="150"
-                    src="./Projects/Portfolio/img/webp/css3.webp"
-                    alt="CSS3"
-                    loading="lazy"
-                  />
+              </article>
+
+              <article class="skills__step">
+                <span class="skills__step-phase">Step 02</span>
+                <h3>Interactive Frontend</h3>
+                <p>Building dynamic UI logic, stateful interfaces, and reusable components.</p>
+                <div class="skills__step-tags">
+                  <span>JavaScript</span>
+                  <span>React</span>
                 </div>
-                <h3 class="title_fz14">CSS3</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <img
-                    width="150"
-                    height="150"
-                    src="./Projects/Portfolio/img/webp/javascript-logo.webp"
-                    alt="JavaScript"
-                    loading="lazy"
-                  />
+              </article>
+
+              <article class="skills__step">
+                <span class="skills__step-phase">Step 03</span>
+                <h3>Production Frameworks</h3>
+                <p>Structured rendering, routing, and performance-focused application delivery.</p>
+                <div class="skills__step-tags">
+                  <span>Next.js</span>
+                  <span>WordPress</span>
                 </div>
-                <h3 class="title_fz14">JavaScript</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <lottie-player
-                    src="https://assets9.lottiefiles.com/packages/lf20_b23ll34c.json"
-                    background="transparent"
-                    speed="1"
-                    class="skill-icon-animated"
-                    autoplay
-                    loop
-                  ></lottie-player>
+              </article>
+
+              <article class="skills__step">
+                <span class="skills__step-phase">Step 04</span>
+                <h3>Backend & Data</h3>
+                <p>Server-side logic and scalable data modeling for full-stack products.</p>
+                <div class="skills__step-tags">
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
                 </div>
-                <h3 class="title_fz14">React</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <lottie-player
-                    src="https://lottie.host/1d4a68ce-2d82-428c-a89e-e9396c81390b/a1ZHUCdjLX.json"
-                    background="transparent"
-                    speed="1"
-                    class="skill-icon-animated"
-                    loop
-                    autoplay
-                  ></lottie-player>
-                </div>
-                <h3 class="title_fz14">Node.js</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0 0 48 48">
-                    <path
-                      fill="#5d4037"
-                      d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"
-                    ></path>
-                    <path
-                      fill="#4caf50"
-                      d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z"
-                    ></path>
-                    <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
-                    <path
-                      fill="#4caf50"
-                      d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z"
-                    ></path>
-                    <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
-                  </svg>
-                </div>
-                <h3 class="title_fz14">Mongo.db</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <img
-                    width="150"
-                    height="150"
-                    src="./Projects/Portfolio/img/webp/next.webp"
-                    alt="Next.js"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="title_fz14">Next.js</h3>
-              </div>
-              <div class="skills__item tilt-card depth-shadow skills__item--glass" data-aos="fade-up">
-                <div class="skills__item-img">
-                  <img
-                    width="150"
-                    height="150"
-                    src="./Projects/Portfolio/img/webp/wp.webp"
-                    alt="WordPress"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="title_fz14">WordPress</h3>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -468,6 +470,21 @@
             </div>
 
             <div class="portfolio-card" data-aos="fade-up">
+              <a target="_blank" href="https://eddy-hub19.github.io/LuxureDetails/" class="portfolio-card__link">
+                <div class="portfolio-card__image">
+                  <img
+                    src="./Projects/Portfolio/img/webp/luxury-car-detailing.webp"
+                    alt="Luxury Car Detailing"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">HTML, SCSS, JavaScript</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="portfolio-card" data-aos="fade-up">
               <a target="_blank" href="https://eddy-hub19.github.io/Auto-Angel/" class="portfolio-card__link">
                 <div class="portfolio-card__image">
                   <img src="./Projects/Portfolio/img/webp/auto-angel.webp" alt="Auto Angel" loading="lazy" />
@@ -495,7 +512,7 @@
                   <img src="./Projects/Portfolio/img/webp/soyummy-black.webp" alt="Soyummy" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
-                  <div class="portfolio-card__tech">React, JavaScript, CSS</div>
+                  <div class="portfolio-card__tech">React, JavaScript, SCSS</div>
                 </div>
               </a>
             </div>
@@ -617,9 +634,8 @@
         </div>
       </section>
 
-      <section id="connect" class="connect connect-enhanced">
+      <!-- <section id="connect" class="connect connect-enhanced">
         <div class="container">
-          <!-- Header -->
           <div class="connect-header" data-aos="fade-up">
             <h2 class="connect-title-main">Let's Turn Your Vision Into Reality</h2>
             <p class="connect-subtitle">I'm always excited to discuss new projects and opportunities</p>
@@ -653,54 +669,32 @@
               </div>
             </div>
           </div>
-
-          <!-- Social Links -->
-          <div class="social-links-section" data-aos="fade-up" data-aos-delay="400">
-            <p class="social-links-title">Or find me on</p>
-            <div class="social-links-enhanced">
-              <a href="https://www.instagram.com/ed_sekan24/" target="_blank" class="social-link-card">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
-                  <circle cx="18" cy="6" r="1" fill="currentColor" />
-                </svg>
-                <span class="social-link-name">Instagram</span>
-              </a>
-
-              <a href="https://github.com/Eddy-hub19" target="_blank" class="social-link-card">
-                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
-                  />
-                </svg>
-                <span class="social-link-name">GitHub</span>
-              </a>
-
-              <a href="https://t.me/EEddy24" target="_blank" class="social-link-card">
-                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
-                  />
-                </svg>
-                <span class="social-link-name">Telegram</span>
-              </a>
-            </div>
-          </div>
+         
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
-      <p class="footer__copyright">
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Eduard Sekan</span>
-        </span>
-        <br />
-      </p>
+      <div class="footer__inner">
+        <div class="footer__brand" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
+          <span class="footer__name" itemprop="name">Eduard Sekan</span>
+          <p class="footer__tagline">Front-End Developer and Independent Musician</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer links">
+          <a href="#about-me">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="./music.html" class="footer__music-link">Music Journal</a>
+        </nav>
+
+        <p class="footer__copyright">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+        </p>
+      </div>
     </footer>
 
     <div>
@@ -711,17 +705,14 @@
 
     <!-- scripts  -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="./Projects/Portfolio/js/script.js" defer></script>
-    <script src="./Projects/Portfolio/js/onload.js" defer></script>
     <!-- New Design Scripts -->
     <script src="./Projects/Portfolio/js/developer-svg.js" defer></script>
     <script>
-      window.addEventListener("load", function () {
+      const initAOS = function () {
         if (typeof AOS !== "undefined") {
           AOS.init({
             duration: 1000,
@@ -730,7 +721,15 @@
             easing: "ease-out-cubic",
           })
         }
-      })
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initAOS, { once: true })
+      } else if (typeof requestIdleCallback === "function") {
+        requestIdleCallback(initAOS)
+      } else {
+        setTimeout(initAOS, 0)
+      }
     </script>
   </body>
 </html>

@@ -188,9 +188,7 @@
 
 // Social Links Section
 .social-links-section {
-  margin-top: 60px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
 }
 
 .social-links-title {
@@ -202,7 +200,7 @@
 
 .social-links-enhanced {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
 }

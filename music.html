@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduard Sekan | Music Journal</title>
+    <meta
+      name="description"
+      content="Музыкальная страница Eduard Sekan: о проекте, песни, альбомы и плейлист с встраиванием треков по ссылкам площадок."
+    />
+    <link rel="icon" href="./Projects/Portfolio/img/ed/favicon.ico" />
+    <link rel="stylesheet" href="./Projects/Portfolio/css/music-page.css" />
+  </head>
+  <body>
+    <main class="music-page">
+      <header class="music-hero">
+        <a class="music-back" href="./index.html">Back to Portfolio</a>
+        <p class="music-hero__eyebrow">Musician Space</p>
+        <h1>Я музыкант. Здесь живет моя музыка.</h1>
+        <p>
+          Building apps by day, producing music by night. На этой странице я собираю свои релизы, заметки и
+          музыкальные идеи.
+        </p>
+      </header>
+
+      <section class="music-section music-about" aria-labelledby="music-about-title">
+        <div class="music-section__head">
+          <h2 id="music-about-title">Обо мне</h2>
+          <button id="saveAbout" type="button" class="music-btn">Сохранить текст</button>
+        </div>
+        <textarea id="aboutText" rows="6" class="music-textarea" placeholder="Расскажи о себе как о музыканте..."></textarea>
+      </section>
+
+      <section class="music-section" aria-labelledby="music-songs-title">
+        <div class="music-section__head">
+          <h2 id="music-songs-title">Мои песни</h2>
+          <p>Добавляй ссылки Spotify / YouTube / SoundCloud. Если возможно, плеер встроится автоматически.</p>
+        </div>
+
+        <form id="songForm" class="music-form">
+          <input id="songTitle" type="text" placeholder="Название трека" required />
+          <input id="songUrl" type="url" placeholder="Ссылка на трек" required />
+          <textarea id="songNote" rows="3" placeholder="Текст/описание трека"></textarea>
+          <button type="submit" class="music-btn">Добавить трек</button>
+        </form>
+
+        <div id="songsList" class="music-list"></div>
+      </section>
+
+      <section class="music-section" aria-labelledby="music-albums-title">
+        <div class="music-section__head">
+          <h2 id="music-albums-title">Альбомы</h2>
+          <p>Сохраняй список альбомов и заметки по каждому релизу.</p>
+        </div>
+
+        <form id="albumForm" class="music-form">
+          <input id="albumTitle" type="text" placeholder="Название альбома" required />
+          <input id="albumUrl" type="url" placeholder="Ссылка на альбом" />
+          <textarea id="albumNote" rows="3" placeholder="Текст/концепт/треклист"></textarea>
+          <button type="submit" class="music-btn">Добавить альбом</button>
+        </form>
+
+        <div id="albumsList" class="music-list"></div>
+      </section>
+    </main>
+
+    <script src="./Projects/Portfolio/js/music-page.js" defer></script>
+  </body>
+</html>
