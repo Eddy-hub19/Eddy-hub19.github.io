@@ -393,6 +393,12 @@
   }
 }
 
+@media (min-width: 769px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     position: fixed;

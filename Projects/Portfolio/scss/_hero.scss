@@ -38,8 +38,6 @@
   max-width: none;
   border-radius: 36px;
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(7, 9, 16, 0.45);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.11));
   backdrop-filter: blur(12px);
   padding: 0;
 
@@ -73,7 +71,6 @@
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  border: 1px solid rgba(255, 255, 255, 0.14);
 
   &::before,
   &::after {
@@ -224,7 +221,7 @@
 }
 
 .cta-secondary {
-  background: rgba(255, 255, 255, 0.18);
+  // background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(10px);
   color: rgba(244, 248, 255, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.38);
@@ -237,7 +234,7 @@
 }
 
 .cta-tertiary {
-  background: rgba(12, 18, 31, 0.5);
+  // background: rgba(12, 18, 31, 0.5);
   color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -258,7 +255,7 @@
   gap: 8px;
   padding: 8px 16px;
   max-width: 300px;
-  background: rgba(40, 146, 93, 0.46);
+  background: rgba(43, 131, 87, 0.647);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(34, 197, 94, 0.42);
   border-radius: 20px;
@@ -272,10 +269,42 @@
   }
 }
 
-.hero-code-glyph {
-  width: min(420px, 46%);
+.hero-brand-chip {
   position: absolute;
-  right: clamp(16px, 2vw, 28px);
+  top: clamp(12px, 1.6vw, 24px);
+  right: clamp(12px, 1.8vw, 28px);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(13, 22, 40, 0.55);
+  border: 1px solid rgba(167, 203, 255, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 26px rgba(5, 10, 24, 0.28);
+
+  img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  span {
+    color: rgba(235, 244, 255, 0.96);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+.hero-code-glyph {
+  width: min(580px, 46%);
+  position: absolute;
+  right: clamp(16px, 2vw, 48px);
   top: clamp(60px, 8vw, 96px);
   border-radius: 16px;
   overflow: hidden;
@@ -292,7 +321,7 @@
 .hero-stats {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -423,6 +452,23 @@
     padding: 20px 14px;
   }
 
+  .hero-brand-chip {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 12px;
+    padding: 7px 11px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+    }
+  }
+
   .hero-highlights {
     gap: 8px;
 
@@ -445,6 +491,7 @@
   }
 
   .hero-cta {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 10px;

@@ -29,7 +29,7 @@
       content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. Explore my portfolio of 15+ completed projects and let's build something amazing together!"
     />
     <meta property="og:url" content="https://eddy-hub19.github.io/" />
-    <meta property="og:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/logo.png" />
+    <meta property="og:image" content="./favicon.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Eduard Sekan - Full Stack Developer Portfolio" />
@@ -43,9 +43,8 @@
     />
     <meta name="twitter:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/logo.png" />
     <meta name="twitter:creator" content="@ed_sekan23" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./Projects/Portfolio/img/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./Projects/Portfolio/img/logo.png" />
-    <link rel="icon" href="./Projects/Portfolio/img/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.svg" />
 
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="./sitemap.xml" />
@@ -162,17 +161,16 @@
           <div class="hero-photo-wrapper hero-glass-bg" aria-hidden="true"></div>
           <div class="hero-main-content">
             <div class="hero-left">
+              <div class="hero-brand-chip" aria-label="Brand signature">
+                <img src="./favicon.svg" alt="Sekan Eduard logo" width="34" height="34" />
+                <span>SEKAN EDUARD</span>
+              </div>
+
               <p class="hero-greeting">Hi, I'm</p>
               <h1 class="hero-name">Eduard Sekan</h1>
               <p class="hero-title">Front-End Developer & FullStack</p>
 
               <p class="hero-bio">I transform ideas into beautiful, functional web applications</p>
-
-              <div class="hero-highlights" aria-label="Core strengths">
-                <span>UI with product thinking</span>
-                <span>Performance-first builds</span>
-                <span>Clean and scalable code</span>
-              </div>
 
               <div class="status-badge">
                 <span class="status-dot"></span>
@@ -181,24 +179,47 @@
 
               <div class="hero-code-glyph" aria-hidden="true">
                 <svg viewBox="0 0 420 196" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                  <rect x="1" y="1" width="418" height="194" rx="16" fill="rgba(7,12,24,0.35)" stroke="rgba(167,203,255,0.45)" />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="418"
+                    height="194"
+                    rx="16"
+                    fill="rgba(7,12,24,0.35)"
+                    stroke="rgba(167,203,255,0.45)"
+                  />
                   <path d="M22 35H398" stroke="rgba(196,221,255,0.35)" stroke-width="1" />
                   <circle cx="34" cy="18" r="4" fill="rgba(255,130,130,0.9)" />
                   <circle cx="50" cy="18" r="4" fill="rgba(255,210,120,0.9)" />
                   <circle cx="66" cy="18" r="4" fill="rgba(124,240,170,0.9)" />
 
-                  <text x="26" y="56" fill="rgba(235,244,255,0.9)" font-size="12" font-family="monospace">const greeting = "Hi, I am Eduard";</text>
-                  <text x="26" y="74" fill="rgba(149,209,255,0.92)" font-size="12" font-family="monospace">const role = "Front-End &amp; Full-Stack Developer";</text>
-                  <text x="26" y="92" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">const mission = "Build fast, clean, human products";</text>
-                  <text x="26" y="110" fill="rgba(198,224,255,0.92)" font-size="12" font-family="monospace">const stack = ["Next.js", "React", "Node.js", "MongoDB"];</text>
-                  <text x="26" y="128" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">function aboutMe() { return "Code by day, music by night"; }</text>
-                  <text x="26" y="146" fill="rgba(167,219,255,0.9)" font-size="12" font-family="monospace">const currentFocus = "UI quality, performance, storytelling";</text>
-                  <text x="26" y="164" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">ship(ideas).iterate().improve();</text>
-                  <text x="26" y="182" fill="rgba(167,219,255,0.88)" font-size="12" font-family="monospace">&lt;/code&gt; // welcome to my world</text>
+                  <text x="26" y="56" fill="rgba(235,244,255,0.9)" font-size="12" font-family="monospace">
+                    const greeting = "Hi, I am Eduard";
+                  </text>
+                  <text x="26" y="74" fill="rgba(149,209,255,0.92)" font-size="12" font-family="monospace">
+                    const role = "Front-End &amp; Full-Stack Developer";
+                  </text>
+                  <text x="26" y="92" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">
+                    const mission = "Build fast, clean, human products";
+                  </text>
+                  <text x="26" y="110" fill="rgba(198,224,255,0.92)" font-size="12" font-family="monospace">
+                    const stack = ["Next.js", "React", "TypeScript"];
+                  </text>
+                  <text x="26" y="128" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">
+                    function aboutMe() { return "Code by day"; }
+                  </text>
+                  <text x="26" y="146" fill="rgba(167,219,255,0.9)" font-size="12" font-family="monospace">
+                    const currentFocus = "UI quality, performance, ";
+                  </text>
+                  <text x="26" y="164" fill="rgba(176,248,217,0.9)" font-size="12" font-family="monospace">
+                    ship(ideas).iterate().improve();
+                  </text>
+                  <text x="26" y="182" fill="rgba(167,219,255,0.88)" font-size="12" font-family="monospace">
+                    &lt;/code&gt; // welcome to my world
+                  </text>
 
                   <path d="M324 66 L338 82 L324 98" stroke="rgba(135,194,255,0.95)" stroke-width="2" fill="none" />
                   <path d="M354 66 L340 82 L354 98" stroke="rgba(135,194,255,0.95)" stroke-width="2" fill="none" />
-                  <line x1="364" y1="104" x2="392" y2="104" stroke="rgba(176,248,217,0.9)" stroke-width="2" />
                 </svg>
               </div>
 
@@ -215,15 +236,19 @@
               </div>
 
               <div class="hero-stats" aria-label="Key metrics">
-                <article class="hero-stat">
-                  <strong>18+</strong>
+                <article class="hero-stat" data-aos="fade-left" data-aos-delay="80" data-aos-duration="850">
+                  <strong>10+</strong>
                   <span>Production projects</span>
                 </article>
-                <article class="hero-stat">
-                  <strong>4+</strong>
+                <article class="hero-stat" data-aos="fade-left" data-aos-delay="140" data-aos-duration="900">
+                  <strong>20+</strong>
+                  <span>Completed projects</span>
+                </article>
+                <article class="hero-stat" data-aos="fade-right" data-aos-delay="210" data-aos-duration="880">
+                  <strong>5+</strong>
                   <span>Years of learning and shipping</span>
                 </article>
-                <article class="hero-stat">
+                <article class="hero-stat" data-aos="fade-right" data-aos-delay="280" data-aos-duration="920">
                   <strong>24h</strong>
                   <span>Typical first response</span>
                 </article>
@@ -267,49 +292,59 @@
       <section id="about-me" class="about section">
         <div class="container">
           <div class="about-card about-bento" data-aos="fade-up">
-            <div class="about-bento__music" aria-label="Creative side">
-              <button class="about-bento__music-btn" type="button" aria-label="Music mode">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <span class="about-bento__music-tip">Building apps by day, producing music by night</span>
-            </div>
-
             <div class="about-bento__head">
               <h2 class="about-title">About Me</h2>
               <div class="about-title-line"></div>
               <p class="about-text">
-                Front-End and Full-Stack developer focused on fast, clean products with thoughtful UX. I like turning
-                complex ideas into interfaces that feel effortless.
+                Front-End Engineer with a Full-Stack mindset. I build high-performance web applications where clean
+                architecture meets seamless user experience.
               </p>
             </div>
 
             <div class="about-bento__grid">
-              <article class="about-cell about-cell--story" data-aos="fade-up" data-aos-delay="80">
+              <article
+                class="about-cell about-cell--story"
+                data-aos="fade-left"
+                data-aos-delay="80"
+                data-aos-duration="900"
+              >
                 <span class="about-cell__eyebrow">Story</span>
-                <h3>From learning tracks to production-ready builds</h3>
+                <h3>Front-End Specialization</h3>
                 <p>
-                  Completed intensive programs and transformed that foundation into real multi-page sites,
-                  e-commerce modules, and React applications for real users.
+                  While my core expertise lies in building sophisticated client-side applications, my experience with
+                  Nest.js and databases allows me to architect entire products. I focus on bridging logic and aesthetics
+                  to create scalable, maintainable systems.
                 </p>
               </article>
 
-              <article class="about-cell about-cell--stack" data-aos="fade-up" data-aos-delay="140">
+              <article
+                class="about-cell about-cell--stack"
+                data-aos="fade-down"
+                data-aos-delay="140"
+                data-aos-duration="1050"
+              >
                 <span class="about-cell__eyebrow">Core Stack</span>
-                <h3>Full-Stack focus</h3>
+                <h3>Tech Stack</h3>
                 <div class="about-stack" aria-label="Primary stack">
                   <span>Next.js</span>
                   <span>TypeScript</span>
                   <span>Prisma</span>
                   <span>Node.js</span>
                   <span>React</span>
+                  <span>Axios</span>
+                  <span>Nest.js</span>
+                  <span>PostgreSQL</span>
                 </div>
               </article>
 
-              <article class="about-cell about-cell--education" data-aos="fade-up" data-aos-delay="200">
+              <article
+                class="about-cell about-cell--education"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1200"
+              >
                 <span class="about-cell__eyebrow">Education</span>
-                <h3>Learning ecosystem</h3>
+                <h3>Professional Training</h3>
                 <ul class="about-schools" aria-label="Schools and programs">
                   <li>GOIT</li>
                   <li>Hexlet</li>
@@ -320,21 +355,24 @@
                 </ul>
               </article>
 
-              <article class="about-cell about-cell--principles" data-aos="fade-up" data-aos-delay="260">
+              <article
+                class="about-cell about-cell--principles"
+                data-aos="fade-right"
+                data-aos-delay="260"
+                data-aos-duration="1000"
+              >
                 <span class="about-cell__eyebrow">Principles</span>
-                <h3>Quiet luxury in code</h3>
+                <h3>Production Standards</h3>
                 <p>
-                  Minimal visual noise, strong hierarchy, reliable performance, and detail-first execution from layout
-                  to deployment.
+                  I prioritize clean, modular code and strict architectural patterns. My workflow includes deep SEO
+                  optimization, accessibility (a11y), and performance tuning to ensure products are not just beautiful,
+                  but fast and discoverable.
                 </p>
               </article>
             </div>
 
             <div class="about-desc">
-              <p>
-                I collaborate with teams that value aesthetics and engineering quality equally, building products that
-                are both useful and memorable.
-              </p>
+              <p>Focused on delivering clean code, optimized performance, and scalable architecture.</p>
             </div>
           </div>
         </div>
@@ -349,47 +387,69 @@
             <div class="title__section-subtitle">Roadmap by Skill Depth</div>
 
             <p class="skills__intro" data-aos="fade-up" data-aos-delay="60">
-              Text-first progression of my current stack: from markup fundamentals to full-stack delivery.
+              My skill set is organized into four key areas that reflect my comprehensive approach to web development.
+              Each area represents a critical aspect of building modern, high-quality web applications, from the
+              client-side experience to server infrastructure and data management.
             </p>
 
             <div class="skills__roadmap" data-aos="fade-up" data-aos-delay="120">
               <article class="skills__step">
-                <span class="skills__step-phase">Step 01</span>
-                <h3>Foundation Layer</h3>
-                <p>Semantic markup, adaptive layout systems, and clean CSS architecture.</p>
+                <h3>Client Side & Motion</h3>
+                <p>
+                  High-end interfaces with fluid animations and responsive design, with a strong focus on Next.js and
+                  Framer Motion.
+                </p>
+                <div class="skills__step-tags">
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>PWA</span>
+                  <span>WordPress</span>
+                  <span>Framer Motion</span>
+                </div>
+              </article>
+
+              <article class="skills__step">
+                <h3>Server & Infrastructure</h3>
+                <p>
+                  Scalable server-side logic, real-time communication, and cloud architecture with Nest.js and Node.js
+                  as core backend tools.
+                </p>
+                <div class="skills__step-tags">
+                  <span>Node.js</span>
+                  <span>Nest.js</span>
+                  <span>Socket.io</span>
+                  <span>Railway</span>
+                  <span>Docker</span>
+                </div>
+              </article>
+
+              <article class="skills__step">
+                <h3>Data Management</h3>
+                <p>
+                  Relational and NoSQL databases with secure cloud storage integration for reliable product data flows.
+                </p>
+                <div class="skills__step-tags">
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+                  <span>Supabase</span>
+                  <span>Neon</span>
+                  <span>Cloudinary</span>
+                </div>
+              </article>
+
+              <article class="skills__step">
+                <h3>Technical Foundation</h3>
+                <p>
+                  Semantic architecture, modern CSS systems, and performance optimization across production-ready
+                  interfaces.
+                </p>
                 <div class="skills__step-tags">
                   <span>HTML5</span>
                   <span>CSS3</span>
-                </div>
-              </article>
-
-              <article class="skills__step">
-                <span class="skills__step-phase">Step 02</span>
-                <h3>Interactive Frontend</h3>
-                <p>Building dynamic UI logic, stateful interfaces, and reusable components.</p>
-                <div class="skills__step-tags">
+                  <span>TypeScript</span>
                   <span>JavaScript</span>
-                  <span>React</span>
-                </div>
-              </article>
-
-              <article class="skills__step">
-                <span class="skills__step-phase">Step 03</span>
-                <h3>Production Frameworks</h3>
-                <p>Structured rendering, routing, and performance-focused application delivery.</p>
-                <div class="skills__step-tags">
-                  <span>Next.js</span>
-                  <span>WordPress</span>
-                </div>
-              </article>
-
-              <article class="skills__step">
-                <span class="skills__step-phase">Step 04</span>
-                <h3>Backend & Data</h3>
-                <p>Server-side logic and scalable data modeling for full-stack products.</p>
-                <div class="skills__step-tags">
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>Tailwind CSS</span>
                 </div>
               </article>
             </div>
@@ -678,14 +738,13 @@
       <div class="footer__inner">
         <div class="footer__brand" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
           <span class="footer__name" itemprop="name">Eduard Sekan</span>
-          <p class="footer__tagline">Front-End Developer and Independent Musician</p>
+          <p class="footer__tagline">Front-End & Full-Stack Developer</p>
         </div>
 
         <nav class="footer__nav" aria-label="Footer links">
           <a href="#about-me">About</a>
           <a href="#skills">Skills</a>
           <a href="#portfolio">Portfolio</a>
-          <a href="./music.html" class="footer__music-link">Music Journal</a>
         </nav>
 
         <p class="footer__copyright">

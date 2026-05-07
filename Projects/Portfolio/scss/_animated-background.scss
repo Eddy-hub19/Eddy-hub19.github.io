@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   z-index: -2;
-  background: linear-gradient(-45deg, #060b16, #0d1730, #132545, #091222);
+  background: linear-gradient(-45deg, #0e1730, #17284a, #1d345b, #111f3c);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
 }
@@ -48,13 +48,13 @@
 
 .shape {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.14;
   animation: float 20s infinite ease-in-out;
 
   &:nth-child(1) {
     width: 80px;
     height: 80px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.14);
     border-radius: 50%;
     top: 10%;
     left: 10%;
@@ -65,7 +65,7 @@
   &:nth-child(2) {
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 50%;
     top: 70%;
     left: 80%;
@@ -76,7 +76,7 @@
   &:nth-child(3) {
     width: 100px;
     height: 100px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     top: 40%;
     left: 50%;
@@ -87,7 +87,7 @@
   &:nth-child(4) {
     width: 120px;
     height: 120px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.09);
     border-radius: 50%;
     top: 80%;
     left: 20%;
@@ -98,7 +98,7 @@
   &:nth-child(5) {
     width: 90px;
     height: 90px;
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.11);
     border-radius: 50%;
     top: 20%;
     left: 70%;

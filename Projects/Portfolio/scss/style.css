@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  background: linear-gradient(315deg, rgb(8, 12, 22) 4%, rgba(16, 27, 44, 0.96) 34%, rgba(12, 20, 36, 0.94) 68%, rgb(6, 10, 20) 98%);
+  background: linear-gradient(315deg, rgb(14, 22, 38) 4%, rgba(24, 40, 64, 0.95) 34%, rgba(20, 34, 56, 0.93) 68%, rgb(12, 20, 36) 98%);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-position: center;
@@ -767,7 +767,7 @@ button {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background: linear-gradient(-45deg, #060b16, #0d1730, #132545, #091222);
+  background: linear-gradient(-45deg, #0e1730, #17284a, #1d345b, #111f3c);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
 }
@@ -806,13 +806,13 @@ button {
 
 .shape {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.14;
   animation: float 20s infinite ease-in-out;
 }
 .shape:nth-child(1) {
   width: 80px;
   height: 80px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.14);
   border-radius: 50%;
   top: 10%;
   left: 10%;
@@ -822,7 +822,7 @@ button {
 .shape:nth-child(2) {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   top: 70%;
   left: 80%;
@@ -832,7 +832,7 @@ button {
 .shape:nth-child(3) {
   width: 100px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   top: 40%;
   left: 50%;
@@ -842,7 +842,7 @@ button {
 .shape:nth-child(4) {
   width: 120px;
   height: 120px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.09);
   border-radius: 50%;
   top: 80%;
   left: 20%;
@@ -852,7 +852,7 @@ button {
 .shape:nth-child(5) {
   width: 90px;
   height: 90px;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.11);
   border-radius: 50%;
   top: 20%;
   left: 70%;
@@ -921,8 +921,6 @@ button {
   max-width: none;
   border-radius: 36px;
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(7, 9, 16, 0.45);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.11));
   backdrop-filter: blur(12px);
   padding: 0;
 }
@@ -954,7 +952,6 @@ button {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 .hero-photo-wrapper.hero-glass-bg::before, .hero-photo-wrapper.hero-glass-bg::after {
   display: none;
@@ -1095,7 +1092,6 @@ button {
 }
 
 .cta-secondary {
-  background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(10px);
   color: rgba(244, 248, 255, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.38);
@@ -1107,7 +1103,6 @@ button {
 }
 
 .cta-tertiary {
-  background: rgba(12, 18, 31, 0.5);
   color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1126,7 +1121,7 @@ button {
   gap: 8px;
   padding: 8px 16px;
   max-width: 300px;
-  background: rgba(40, 146, 93, 0.46);
+  background: rgba(43, 131, 87, 0.647);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(34, 197, 94, 0.42);
   border-radius: 20px;
@@ -1141,10 +1136,40 @@ button {
   }
 }
 
-.hero-code-glyph {
-  width: min(420px, 46%);
+.hero-brand-chip {
   position: absolute;
-  right: clamp(16px, 2vw, 28px);
+  top: clamp(12px, 1.6vw, 24px);
+  right: clamp(12px, 1.8vw, 28px);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(13, 22, 40, 0.55);
+  border: 1px solid rgba(167, 203, 255, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 26px rgba(5, 10, 24, 0.28);
+}
+.hero-brand-chip img {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.hero-brand-chip span {
+  color: rgba(235, 244, 255, 0.96);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-code-glyph {
+  width: min(580px, 46%);
+  position: absolute;
+  right: clamp(16px, 2vw, 48px);
   top: clamp(60px, 8vw, 96px);
   border-radius: 16px;
   overflow: hidden;
@@ -1160,7 +1185,7 @@ button {
 .hero-stats {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -1273,6 +1298,20 @@ button {
     border-radius: 20px;
     padding: 20px 14px;
   }
+  .hero-brand-chip {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 12px;
+    padding: 7px 11px;
+  }
+  .hero-brand-chip img {
+    width: 30px;
+    height: 30px;
+  }
+  .hero-brand-chip span {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
   .hero-highlights {
     gap: 8px;
   }
@@ -1291,6 +1330,7 @@ button {
     text-align: left;
   }
   .hero-cta {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -2304,6 +2344,11 @@ section + section {
   transform: translateY(-3px) scale(1.05);
 }
 
+@media (min-width: 769px) {
+  .header__hamburger {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header {
     position: fixed;
