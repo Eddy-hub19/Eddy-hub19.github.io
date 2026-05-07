@@ -108,11 +108,21 @@
       import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js"
 
       // --- 1. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ---
-      let bird, particles, trashcan
+      let bird, particles, trashcan, fountain
       const moveSpeed = 0.02
       const rotationSpeed = 0.03
+      const jumpSpeed = 0.12
+      const gravity = 0.006
+      let verticalVelocity = 0
+      let isJumping = false
       const keys = { forward: false, backward: false, left: false, right: false }
       const controlButtons = document.querySelectorAll(".ctrl-btn")
+
+      const tryJump = () => {
+        if (!bird || isJumping) return
+        isJumping = true
+        verticalVelocity = jumpSpeed
+      }
 
       const setKeyState = (keyName, isPressed) => {
         if (Object.prototype.hasOwnProperty.call(keys, keyName)) {
@@ -183,7 +193,7 @@
       scene.add(sun)
 
       // --- 6. ОБЪЕКТЫ (ПОЛ) ---
-      const ground = new THREE.Mesh(new THREE.PlaneGeometry(8, 10), new THREE.MeshStandardMaterial({ color: 0x228b22 }))
+      const ground = new THREE.Mesh(new THREE.PlaneGeometry(10, 12), new THREE.MeshStandardMaterial({ color: 0x228b22 }))
       ground.rotation.x = -Math.PI / 2
       ground.receiveShadow = true
       scene.add(ground)
@@ -224,20 +234,34 @@
         scene.add(bird)
       })
 
-      // Деревья
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 2, 2, 0.5)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 1, 2, 0.5)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", -1, -2, 0.5)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 0, -2, 0.5)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.6, 1.8, 0.75)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.6, -1.8, 0.7)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.2, -0.8, 0.65)
-      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.3, 0.9, 0.7)
+      // Деревья (аллея вдоль центра)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.2, -3.6, 0.72)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.2, -1.8, 0.7)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", -2.2, 0.1, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.2, 2, 0.72)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", -2.2, 3.8, 0.48)
+
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.2, -3.6, 0.72)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.2, -1.8, 0.7)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 2.2, 0.1, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.2, 2, 0.72)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 2.2, 3.8, 0.48)
+
+      // Фонтан в центре аллеи
+      loader.load("./Test-Theejs/Pretty-park-set-glb/Fountain.glb", (gltf) => {
+        fountain = gltf.scene
+        fountain.position.set(0, 0, 0)
+        fountain.scale.set(0.55, 0.55, 0.55)
+        fountain.traverse((n) => {
+          if (n.isMesh) n.castShadow = true
+        })
+        scene.add(fountain)
+      })
 
       // Дерево
       loader.load("./Test-Theejs/Pretty-park-set-glb/Trashcan.glb", (gltf) => {
         trashcan = gltf.scene
-        trashcan.position.set(0.1, 0, 1)
+        trashcan.position.set(3.7, 0, 4.2)
         trashcan.scale.set(0.5, 0.5, 0.5)
         trashcan.traverse((n) => {
           if (n.isMesh) n.castShadow = true
@@ -251,6 +275,10 @@
         if (e.code === "KeyS" || e.code === "ArrowDown") keys.backward = true
         if (e.code === "KeyA" || e.code === "ArrowLeft") keys.left = true
         if (e.code === "KeyD" || e.code === "ArrowRight") keys.right = true
+        if (e.code === "Space") {
+          e.preventDefault()
+          tryJump()
+        }
       })
 
       window.addEventListener("keyup", (e) => {
@@ -275,8 +303,17 @@
           if (keys.forward) bird.position.addScaledVector(forwardVec, moveSpeed)
           if (keys.backward) bird.position.addScaledVector(forwardVec, -moveSpeed)
 
-          // Эффект прыжка при ходьбе
-          if (keys.forward || keys.backward) {
+          // Прыжок и вертикальная физика
+          if (isJumping) {
+            bird.position.y += verticalVelocity
+            verticalVelocity -= gravity
+
+            if (bird.position.y <= 0) {
+              bird.position.y = 0
+              verticalVelocity = 0
+              isJumping = false
+            }
+          } else if (keys.forward || keys.backward) {
             bird.position.y = Math.abs(Math.sin(Date.now() * 0.01)) * 0.15
           } else {
             bird.position.y = THREE.MathUtils.lerp(bird.position.y, 0, 0.1)
