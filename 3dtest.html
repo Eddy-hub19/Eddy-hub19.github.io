@@ -12,9 +12,75 @@
       canvas {
         display: block;
       }
+
+      .mobile-controls {
+        position: fixed;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%);
+        z-index: 20;
+        display: none;
+        grid-template-columns: 64px 64px 64px;
+        grid-template-rows: 64px 64px 64px;
+        grid-template-areas:
+          ". up ."
+          "left . right"
+          ". down .";
+        gap: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: none;
+      }
+
+      .ctrl-btn {
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 14px;
+        background: rgba(20, 28, 45, 0.7);
+        color: #fff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+      }
+
+      .ctrl-btn:active {
+        transform: scale(0.96);
+        background: rgba(35, 52, 82, 0.9);
+      }
+
+      .ctrl-up {
+        grid-area: up;
+      }
+
+      .ctrl-left {
+        grid-area: left;
+      }
+
+      .ctrl-right {
+        grid-area: right;
+      }
+
+      .ctrl-down {
+        grid-area: down;
+      }
+
+      @media (max-width: 900px), (pointer: coarse) {
+        .mobile-controls {
+          display: grid;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="mobile-controls" aria-label="Mobile movement controls">
+      <button type="button" class="ctrl-btn ctrl-up" data-key="forward" aria-label="Move forward">▲</button>
+      <button type="button" class="ctrl-btn ctrl-left" data-key="left" aria-label="Turn left">◀</button>
+      <button type="button" class="ctrl-btn ctrl-right" data-key="right" aria-label="Turn right">▶</button>
+      <button type="button" class="ctrl-btn ctrl-down" data-key="backward" aria-label="Move backward">▼</button>
+    </div>
+
     <script type="importmap">
       {
         "imports": {
@@ -37,6 +103,41 @@
       const moveSpeed = 0.02
       const rotationSpeed = 0.03
       const keys = { forward: false, backward: false, left: false, right: false }
+      const controlButtons = document.querySelectorAll(".ctrl-btn")
+
+      const setKeyState = (keyName, isPressed) => {
+        if (Object.prototype.hasOwnProperty.call(keys, keyName)) {
+          keys[keyName] = isPressed
+        }
+      }
+
+      const resetMovementKeys = () => {
+        keys.forward = false
+        keys.backward = false
+        keys.left = false
+        keys.right = false
+      }
+
+      controlButtons.forEach((button) => {
+        const keyName = button.dataset.key
+
+        button.addEventListener("pointerdown", (event) => {
+          event.preventDefault()
+          setKeyState(keyName, true)
+        })
+
+        const release = (event) => {
+          event.preventDefault()
+          setKeyState(keyName, false)
+        }
+
+        button.addEventListener("pointerup", release)
+        button.addEventListener("pointercancel", release)
+        button.addEventListener("pointerleave", release)
+      })
+
+      window.addEventListener("blur", resetMovementKeys)
+      window.addEventListener("pagehide", resetMovementKeys)
 
       // --- 2. СЦЕНА, КАМЕРА, РЕНДЕРЕР ---
       const scene = new THREE.Scene()
