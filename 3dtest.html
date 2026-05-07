@@ -20,8 +20,8 @@
         transform: translateX(-50%);
         z-index: 20;
         display: none;
-        grid-template-columns: 64px 64px 64px;
-        grid-template-rows: 64px 64px 64px;
+        grid-template-columns: 72px 72px 72px;
+        grid-template-rows: 72px 72px 72px;
         grid-template-areas:
           ". up ."
           "left . right"
@@ -37,7 +37,7 @@
         border-radius: 14px;
         background: rgba(20, 28, 45, 0.7);
         color: #fff;
-        font-size: 26px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 1;
         backdrop-filter: blur(6px);
@@ -69,6 +69,15 @@
       @media (max-width: 900px), (pointer: coarse) {
         .mobile-controls {
           display: grid;
+          bottom: 16px;
+          grid-template-columns: 94px 94px 94px;
+          grid-template-rows: 94px 94px 94px;
+          gap: 12px;
+        }
+
+        .ctrl-btn {
+          font-size: 36px;
+          border-radius: 18px;
         }
       }
     </style>
@@ -99,7 +108,7 @@
       import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js"
 
       // --- 1. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ---
-      let bird, tree, particles, bush, hedge, trashcan
+      let bird, particles, trashcan
       const moveSpeed = 0.02
       const rotationSpeed = 0.03
       const keys = { forward: false, backward: false, left: false, right: false }
@@ -193,6 +202,18 @@
       // --- 8. ЗАГРУЗКА МОДЕЛЕЙ ---
       const loader = new GLTFLoader()
 
+      const addTreeModel = (modelPath, x, z, scale = 0.5) => {
+        loader.load(modelPath, (gltf) => {
+          const treeModel = gltf.scene
+          treeModel.position.set(x, 0, z)
+          treeModel.scale.set(scale, scale, scale)
+          treeModel.traverse((n) => {
+            if (n.isMesh) n.castShadow = true
+          })
+          scene.add(treeModel)
+        })
+      }
+
       // Птица
       loader.load("./Test-Theejs/Pretty-park-set-glb/Bird.glb", (gltf) => {
         bird = gltf.scene
@@ -203,47 +224,15 @@
         scene.add(bird)
       })
 
-      // Дерево
-      loader.load("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", (gltf) => {
-        tree = gltf.scene
-        tree.position.set(2, 0, 2)
-        tree.scale.set(0.5, 0.5, 0.5)
-        tree.traverse((n) => {
-          if (n.isMesh) n.castShadow = true
-        })
-        scene.add(tree)
-      })
-
-      loader.load("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", (gltf) => {
-        tree = gltf.scene
-        tree.position.set(1, 0, 2)
-        tree.scale.set(0.5, 0.5, 0.5)
-        tree.traverse((n) => {
-          if (n.isMesh) n.castShadow = true
-        })
-        scene.add(tree)
-      })
-
-      // Дерево
-      loader.load("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", (gltf) => {
-        tree = gltf.scene
-        tree.position.set(-1, 0, -2)
-        tree.scale.set(0.5, 0.5, 0.5)
-        tree.traverse((n) => {
-          if (n.isMesh) n.castShadow = true
-        })
-        scene.add(tree)
-      })
-      // Дерево
-      loader.load("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", (gltf) => {
-        tree = gltf.scene
-        tree.position.set(0, 0, -2)
-        tree.scale.set(0.5, 0.5, 0.5)
-        tree.traverse((n) => {
-          if (n.isMesh) n.castShadow = true
-        })
-        scene.add(tree)
-      })
+      // Деревья
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 2, 2, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 1, 2, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", -1, -2, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree Large.glb", 0, -2, 0.5)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.6, 1.8, 0.75)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.6, -1.8, 0.7)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", -2.2, -0.8, 0.65)
+      addTreeModel("./Test-Theejs/Pretty-park-set-glb/Tree.glb", 2.3, 0.9, 0.7)
 
       // Дерево
       loader.load("./Test-Theejs/Pretty-park-set-glb/Trashcan.glb", (gltf) => {
