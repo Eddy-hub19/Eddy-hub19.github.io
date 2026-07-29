@@ -30,8 +30,8 @@
     />
     <meta property="og:url" content="https://eddy-hub19.github.io/" />
     <meta property="og:image" content="./favicon.svg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
     <meta property="og:image:alt" content="Eduard Sekan - Full Stack Developer Portfolio" />
 
     <!-- Twitter Card Meta Tags -->
@@ -41,8 +41,7 @@
       name="twitter:description"
       content="Professional web developer specializing in React, Next.js, Node.js, and WordPress. View my portfolio and let's connect!"
     />
-    <meta name="twitter:image" content="https://eddy-hub19.github.io/Projects/Portfolio/img/logo.png" />
-    <meta name="twitter:creator" content="@ed_sekan23" />
+    <meta name="twitter:image" content="./favicon.svg" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="shortcut icon" href="./favicon.svg" />
 
@@ -227,10 +226,10 @@
                 <a href="#portfolio" class="cta-primary">
                   <span>Explore My Work</span>
                 </a>
-                <a href="#connect" class="cta-secondary">
+                <a href="https://t.me/EEddy25" class="cta-secondary">
                   <span>Let's Connect</span>
                 </a>
-                <a href="./Projects/Portfolio/files/Eduard_Sekan_CV_English.pdf" target="_blank" class="cta-tertiary">
+                <a href="./Projects/Portfolio/files/Eduard_SekanCV.pdf" target="_blank" class="cta-tertiary">
                   <span>View Resume</span>
                 </a>
               </div>
@@ -364,9 +363,9 @@
                 <span class="about-cell__eyebrow">Principles</span>
                 <h3>Production Standards</h3>
                 <p>
-                  I prioritize clean, modular code and strict architectural patterns. My workflow includes deep SEO
-                  optimization, accessibility (a11y), and performance tuning to ensure products are not just beautiful,
-                  but fast and discoverable.
+                  I write clean code with strong architecture and sharp attention to detail. I focus on high
+                  performance, smooth UI interactions, and accessibility (a11y) to build web applications that are a
+                  pleasure to use.
                 </p>
               </article>
             </div>
@@ -394,18 +393,19 @@
 
             <div class="skills__roadmap" data-aos="fade-up" data-aos-delay="120">
               <article class="skills__step">
-                <h3>Client Side & Motion</h3>
+                <h3>Client Side & Interactive UI</h3>
                 <p>
-                  High-end interfaces with fluid animations and responsive design, with a strong focus on Next.js and
-                  Framer Motion.
+                  Building fast, responsive web applications with modular architecture, seamless user flows, and smooth
+                  interactive experiences using Next.js, React, and TypeScript.
                 </p>
                 <div class="skills__step-tags">
                   <span>React</span>
                   <span>Next.js</span>
                   <span>TypeScript</span>
-                  <span>PWA</span>
+                  <span>TanStack Query</span>
                   <span>WordPress</span>
-                  <span>Framer Motion</span>
+                  <span>Webpack/Vite</span>
+                  <span>PWA</span>
                 </div>
               </article>
 
@@ -447,9 +447,7 @@
                 <div class="skills__step-tags">
                   <span>HTML5</span>
                   <span>CSS3</span>
-                  <span>TypeScript</span>
                   <span>JavaScript</span>
-                  <span>Tailwind CSS</span>
                 </div>
               </article>
             </div>
@@ -679,17 +677,50 @@
                 </div>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- <div class="portfolio-card">
-              <a target="_blank" href="./Projects/Locus/index.html" class="portfolio-card__link">
+      <section id="my-apps" class="portfolio">
+        <div class="container">
+          <div data-aos="fade-right">
+            <h2 class="title title__section-title">Featured Application</h2>
+            <div class="title__section-subtitle">Full-stack Web Platform</div>
+          </div>
+
+          <div class="portfolio__wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="portfolio-card" data-aos="fade-up">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://neskai.vercel.app/"
+                class="portfolio-card__link"
+              >
                 <div class="portfolio-card__image">
-                  <img src="./Projects/Portfolio/img/webp/Locus.webp" alt="Locus" loading="lazy" />
+                  <img src="./Projects/Portfolio/img/webp/Neskai.webp" alt="Neskai App" loading="lazy" />
                 </div>
                 <div class="portfolio-card__info">
-                  <div class="portfolio-card__tech">HTML, JavaScript, CSS</div>
+                  <div class="portfolio-card__tech">Next.js, TypeScript, PostgreSQL, NestJS, REST API, Axios</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--nextjs">Next.js</span>
                 </div>
               </a>
-            </div> -->
+            </div>
+            <div class="portfolio-card" data-aos="fade-up">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://christ-app-sigma.vercel.app/en"
+                class="portfolio-card__link"
+              >
+                <div class="portfolio-card__image">
+                  <img src="./Projects/Portfolio/img/webp/christ-app.webp" alt="Christ App" loading="lazy" />
+                </div>
+                <div class="portfolio-card__info">
+                  <div class="portfolio-card__tech">Next.js, TypeScript, PostgreSQL, NestJS, REST API, Axios</div>
+                  <span class="portfolio-card__badge portfolio-card__badge--nextjs">Next.js</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -745,6 +776,7 @@
           <a href="#about-me">About</a>
           <a href="#skills">Skills</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#my-apps">My Apps</a>
         </nav>
 
         <p class="footer__copyright">
